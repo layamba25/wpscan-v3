@@ -29,7 +29,7 @@ shared_examples 'App::Views::MainTheme' do
         let(:expected_view) { 'no_verbose' }
 
         it 'outputs the expected string' do
-          expect(theme).to receive(:version)
+          expect(theme).to receive(:version).at_least(1)
 
           @tpl_vars = tpl_vars.merge(theme: theme)
         end

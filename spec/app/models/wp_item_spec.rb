@@ -74,6 +74,22 @@ describe WPScan::WpItem do
     end
   end
 
+  describe '#latest_version' do
+    # Handled in plugin_spec / theme_spec
+  end
+
+  describe '#popular?' do
+    # Handled in plugin_spec / theme_spec
+  end
+
+  describe '#last_updated' do
+    # Handled in plugin_spec / theme_spec
+  end
+
+  describe '#outdated?' do
+    # Handled in plugin_spec / theme_spec
+  end
+
   describe '#to_s' do
     its(:to_s) { should eql name }
   end

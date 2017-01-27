@@ -55,13 +55,27 @@ module WPScan
 
     # @return [ String ]
     def latest_version
-      @latest_version ||= db_data['latest_version']
+      @latest_version ||= db_data['latest_version'] ? WPScan::Version.new(db_data['latest_version']) : nil
     end
 
     # Not used anywhere ATM
     # @return [ Boolean ]
     def popular?
       @popular ||= db_data['popular']
+    end
+
+    # @return [ String ]
+    def last_updated
+      @last_updated ||= db_data['last_updated']
+    end
+
+    # @return [ Boolean ]
+    def outdated?
+      @outdated ||= if version && latest_version
+                      version < latest_version
+                    else
+                      false
+                    end
     end
 
     # URI.encode is preferered over Addressable::URI.encode as it will encode

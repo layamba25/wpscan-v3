@@ -6,22 +6,7 @@
 <% @plugins.each do |plugin| -%>
 
 <%= info_icon %> <%= plugin %>
- | Location: <%= plugin.url %>
-<% if plugin.latest_version -%>
- | Latest Version: <%= plugin.latest_version %>
-<% end -%>
-<% if plugin.readme_url -%>
- | Readme: <%= plugin.readme_url %>
-<% end -%>
-<% if plugin.changelog_url -%>
- | Changelog: <%= plugin.changelog_url %>
-<% end -%>
-<% if plugin.directory_listing? -%>
- | <%= critical_icon %> Directory listing is enabled
-<% end -%>
-<% if plugin.error_log? -%>
- | <%= critical_icon %> An error log file has been found: <%= plugin.url('error_log') %>
-<% end -%>
+<%= render('@wp_item', wp_item: plugin) -%>
  |
 <%= render('@finding', item: plugin) -%>
  |

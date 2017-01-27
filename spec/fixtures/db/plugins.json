@@ -3,11 +3,11 @@
     "vulnerabilities": [],
     "popular": true,
     "latest_version": "2.0",
-    "latest_updated": "2015-05-16T00:00:00.000Z"
+    "last_updated": "2015-05-16T00:00:00.000Z"
   },
   "vulnerable-not-popular": {
-    "latest_version": "7.0",
-    "latest_updated": "2015-05-16T00:00:00.000Z",
+    "latest_version": null,
+    "last_updated": null,
     "popular": false,
     "vulnerabilities" : [
       {

@@ -3,6 +3,8 @@
     "name": "test",
     "location": "http://ex.lo/wp-content/themes/test/",
     "latest_version": null,
+    "last_updated": null,
+    "outdated": false,
     "readme_url": "http://ex.lo/wp-content/themes/test/readme.txt",
     "changelog_url": "http://ex.lo/wp-content/themes/test/changelog.txt",
     "directory_listing": false,

@@ -68,6 +68,66 @@ describe WPScan::Plugin do
     end
   end
 
+  describe '#latest_version, #last_updated' do
+    context 'when none' do
+      let(:name) { 'vulnerable-not-popular' }
+
+      its(:latest_version) { should be_nil }
+      its(:last_updated) { should be_nil }
+    end
+
+    context 'when values' do
+      let(:name) { 'no-vulns-popular' }
+
+      its(:latest_version) { should eql WPScan::Version.new('2.0') }
+      its(:last_updated) { should eql '2015-05-16T00:00:00.000Z' }
+    end
+  end
+
+  describe '#outdated?' do
+    context 'when last_version' do
+      let(:name) { 'no-vulns-popular' }
+
+      context 'when no version' do
+        before { expect(plugin).to receive(:version).at_least(1).and_return(nil) }
+
+        its(:outdated?) { should eql false }
+      end
+
+      context 'when version' do
+        before { expect(plugin).to receive(:version).at_least(1).and_return(WPScan::Version.new(version_number)) }
+
+        context 'when version < last_version' do
+          let(:version_number) { '1.2' }
+
+          its(:outdated?) { should eql true }
+        end
+
+        context 'when version >= last_version' do
+          let(:version_number) { '3.0' }
+
+          its(:outdated?) { should eql false }
+        end
+      end
+    end
+
+    context 'when no last_version' do
+      let(:name) { 'vulnerable-not-popular' }
+
+      context 'when no version' do
+        before { expect(plugin).to receive(:version).at_least(1).and_return(nil) }
+
+        its(:outdated?) { should eql false }
+      end
+
+      context 'when version' do
+        before { expect(plugin).to receive(:version).at_least(1).and_return(WPScan::Version.new('1.0')) }
+
+        its(:outdated?) { should eql false }
+      end
+    end
+  end
+
   describe '#vulnerabilities' do
     after do
       expect(plugin.vulnerabilities).to eq @expected

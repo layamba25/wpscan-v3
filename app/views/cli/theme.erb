@@ -1,19 +1,4 @@
- | Location: <%= @theme.url %>
-<% if @theme.latest_version -%>
- | Latest Version: <%= @theme.latest_version %>
-<% end -%>
-<% if @theme.readme_url -%>
- | Readme: <%= @theme.readme_url %>
-<% end -%>
-<% if @theme.changelog_url -%>
- | Changelog: <%= @theme.changelog_url %>
-<% end -%>
-<% if @theme.directory_listing? -%>
- | <%= critical_icon %> Directory listing is enabled
-<% end -%>
-<% if @theme.error_log? -%>
- | <%= critical_icon %> An error log file has been found: <%= @theme.url('error_log') %>
-<% end -%>
+<%= render('@wp_item', wp_item: @theme) -%>
  | Style URL: <%= @theme.style_url %>
 <% if @theme.style_name -%>
  | Style Name: <%= @theme.style_name %>
