@@ -1,8 +1,11 @@
 # Gems
+# Believe it or not, active_support MUST be the first one,
+# otherwise encoding issues can happen when using JSON format.
+# Not kidding.
+require 'active_support/all'
 require 'cms_scanner'
 require 'yajl/json_gem'
 require 'addressable/uri'
-require 'active_support/all'
 # Standard Lib
 require 'uri'
 require 'time'
