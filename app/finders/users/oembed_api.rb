@@ -7,7 +7,7 @@ module WPScan
         # @param [ Hash ] opts
         #
         # @return [ Array<User> ]
-        def passive_(_opts = {})
+        def passive(_opts = {})
           # TODO: get the api_url from the Homepage and query it if present,
           # then discard the aggressive check if same/similar URL
         end
@@ -17,7 +17,7 @@ module WPScan
         # TODO: make this code pretty :x
         #
         # @return [ Array<User> ]
-        def passive(_opts = {})
+        def aggressive(_opts = {})
           found        = []
           found_by_msg = 'Oembed API - %s (Aggressive Detection)'
 
