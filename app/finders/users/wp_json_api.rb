@@ -13,7 +13,11 @@ module WPScan
           found = []
 
           JSON.parse(Browser.get(api_url).body).each do |user|
-            found << WPScan::User.new(user['slug'], id: user['id'], found_by: found_by, confidence: 100)
+            found << WPScan::User.new(user['slug'],
+                                      id: user['id'],
+                                      found_by: found_by,
+                                      confidence: 100,
+                                      interesting_entries: [api_url])
           end
 
           found
