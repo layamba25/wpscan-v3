@@ -22,6 +22,18 @@ Gem::Specification.new do |s|
       |Gemfile
       |Rakefile
       |Dockerfile
+      |coverage\/.*
+      |.+\.gem
+      |.+\.rbc
+      |\.bundle
+      |\.config
+      |pkg\/.*
+      |rdoc\/.*
+      |Gemfile\.lock
+      |.yardoc\/.*
+      |_yardoc\/.*
+      |doc\/.*
+      |wpscan\.gemspec
       |\.rspec
       |\.gitignore
       |\.gitlab-ci.yml
