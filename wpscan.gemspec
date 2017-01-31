@@ -42,6 +42,7 @@ Gem::Specification.new do |s|
       |\.ruby-gemset
       |\.ruby-version
       |\.dockerignore
+      |.*\.sublime\-.*
       )$}x
   end
   s.test_files            = []
