@@ -8,6 +8,7 @@ module WPScan
             target.target.comments_from_page(self.class::PATTERN) do |match|
               # Avoid nil version, i.e a pattern allowing both versionable and non
               # versionable string to be detected
+
               next unless match[1]
 
               return WPScan::Version.new(
@@ -17,6 +18,7 @@ module WPScan
                 interesting_entries: ["#{target.target.url}, Match: '#{match}'"]
               )
             end
+            nil # In case nothing is found, otherwise the latest match is returned and cause problems
           end
         end
       end
