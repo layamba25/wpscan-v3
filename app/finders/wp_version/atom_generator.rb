@@ -17,7 +17,7 @@ module WPScan
               found << create_version(
                 node['version'],
                 found_by: found_by,
-                entries: ["#{res.effective_url}, #{node}"]
+                entries: ["#{res.effective_url}, #{node.to_s.strip}"]
               )
             end
           end

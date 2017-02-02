@@ -12,7 +12,7 @@ module WPScan
               match[1],
               found_by: 'Sitemap Generator (Aggressive Detection)',
               confidence: 80,
-              interesting_entries: ["#{target.url('sitemap.xml')}, #{node}"]
+              interesting_entries: ["#{target.url('sitemap.xml')}, #{node.to_s.strip}"]
             )
           end
           nil
