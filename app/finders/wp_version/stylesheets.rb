@@ -13,8 +13,8 @@ module WPScan
             found << WPScan::WpVersion.new(
               version_number,
               found_by: 'Stylesheet Numbers (Passive Detection)',
-              confidence: 5 * occurences,
-              interesting_entries: [target.homepage_url]
+              confidence: 5 * occurences.count,
+              interesting_entries: occurences
             )
           end
 
@@ -23,7 +23,6 @@ module WPScan
 
         protected
 
-        # TODO: use target.in_scope_urls to get the URLs
         # @param [ String ] url
         #
         # @return [ Hash ]
@@ -31,20 +30,14 @@ module WPScan
           found   = {}
           pattern = /\bver=([0-9\.]+)/i
 
-          Browser.get(url).html.css('link,script').each do |tag|
-            %w(href src).each do |attribute|
-              attr_value = tag.attribute(attribute).to_s
+          target.in_scope_urls(Browser.get(url), '//link|//script') do |stylesheet_url, _tag|
+            uri = Addressable::URI.parse(stylesheet_url)
+            next unless uri.query && uri.query.match(pattern)
 
-              next if attr_value.nil? || attr_value.empty?
+            version = Regexp.last_match[1].to_s
 
-              uri = Addressable::URI.parse(attr_value)
-              next unless uri.query && uri.query.match(pattern)
-
-              version = Regexp.last_match[1].to_s
-
-              found[version] ||= 0
-              found[version] += 1
-            end
+            found[version] ||= []
+            found[version] << stylesheet_url
           end
 
           found
