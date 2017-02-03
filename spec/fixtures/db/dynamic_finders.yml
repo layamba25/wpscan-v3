@@ -95,6 +95,9 @@ plugins:
     Comments:
       pattern: 'START REVOLUTION SLIDER ([\d\.]+) ?'
       version: true
+  shareaholic:
+    UrlsInPage:
+      xpath: '//meta[@name="shareaholic:wp_version"]'
   simple-share-button-adder:
     Comments:
       pattern: 'Simple Share Buttons Adder \(([\d\.]+)\)'
