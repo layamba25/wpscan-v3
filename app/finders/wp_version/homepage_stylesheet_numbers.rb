@@ -1,18 +1,31 @@
 module WPScan
   module Finders
     module WpVersion
-      # Stylesheets Version Finder
-      class Stylesheets < CMSScanner::Finders::Finder
-        # @return [ WpVersion ]
+      # Stylesheets Version Finder from Homepage
+      #
+      # TODO: Maybe put such methods in the CMSScanner to have a generic
+      # way of getting those versions, and allow the confidence to be
+      # customised
+      class HomepageStylesheetNumbers < CMSScanner::Finders::Finder
+        # @return [ Array<WpVersion> ]
         def passive(_opts = {})
+          wp_versions(target.homepage_url)
+        end
+
+        protected
+
+        # @param [ String ] url
+        #
+        # @return [ Array<WpVersion> ]
+        def wp_versions(url)
           found = []
 
-          scan_page(target.homepage_url).each do |version_number, occurences|
+          scan_page(url).each do |version_number, occurences|
             next unless WPScan::WpVersion.valid?(version_number) # Skip invalid versions
 
             found << WPScan::WpVersion.new(
               version_number,
-              found_by: 'Stylesheet Numbers (Passive Detection)',
+              found_by: found_by,
               confidence: 5 * occurences.count,
               interesting_entries: occurences
             )
@@ -20,8 +33,6 @@ module WPScan
 
           found
         end
-
-        protected
 
         # @param [ String ] url
         #

@@ -19,7 +19,7 @@ module WPScan
             number,
             found_by: 'Readme (Aggressive Detection)',
             # Since WP 4.7, the Readme only contains the major version (ie 4.7, 4.8 etc)
-            confidence: number >= '4.7' ? 50 : 90,
+            confidence: number >= '4.7' ? 10 : 90,
             interesting_entries: ["#{readme_url}, Match: '#{node.text.to_s.strip}'"]
           )
         end

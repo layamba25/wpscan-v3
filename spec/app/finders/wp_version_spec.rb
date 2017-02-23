@@ -8,7 +8,8 @@ describe WPScan::Finders::WpVersion::Base do
   describe '#finders' do
     let(:expected) do
       %w(
-        MetaGenerator RSSGenerator AtomGenerator Stylesheets RDFGenerator Readme
+        MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers
+        InstallStylesheetNumbers UpgradeStylesheetNumbers RDFGenerator Readme
         SitemapGenerator OpmlGenerator UniqueFingerprinting
       )
     end

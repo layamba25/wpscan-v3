@@ -5,7 +5,9 @@ require_relative 'wp_version/rdf_generator'
 require_relative 'wp_version/readme'
 require_relative 'wp_version/sitemap_generator'
 require_relative 'wp_version/opml_generator'
-require_relative 'wp_version/stylesheets'
+require_relative 'wp_version/homepage_stylesheet_numbers'
+require_relative 'wp_version/install_stylesheet_numbers'
+require_relative 'wp_version/upgrade_stylesheet_numbers'
 require_relative 'wp_version/unique_fingerprinting'
 
 module WPScan
@@ -21,7 +23,9 @@ module WPScan
             WpVersion::MetaGenerator.new(target) <<
             WpVersion::RSSGenerator.new(target) <<
             WpVersion::AtomGenerator.new(target) <<
-            WpVersion::Stylesheets.new(target) <<
+            WpVersion::HomepageStylesheetNumbers.new(target) <<
+            WpVersion::InstallStylesheetNumbers.new(target) <<
+            WpVersion::UpgradeStylesheetNumbers.new(target) <<
             WpVersion::RDFGenerator.new(target) <<
             WpVersion::Readme.new(target) <<
             WpVersion::SitemapGenerator.new(target) <<
