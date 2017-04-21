@@ -12,3 +12,4 @@ Dockerfile
 **/*.orig
 *.orig
 bin/wpscan-docker*
+.wpscan/
