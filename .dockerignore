@@ -11,4 +11,4 @@ spec/
 Dockerfile
 **/*.orig
 *.orig
-
+bin/wpscan-docker*

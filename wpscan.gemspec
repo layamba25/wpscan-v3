@@ -43,6 +43,7 @@ Gem::Specification.new do |s|
       |\.ruby-version
       |\.dockerignore
       |.*\.sublime\-.*
+      |bin\/wpscan-docker.*
       )$}x
   end
   s.test_files            = []
