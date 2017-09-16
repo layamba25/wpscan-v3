@@ -29,7 +29,7 @@ module WPScan
           def potential_urls
             # Recent versions seem to use the 'locales' directory instead of the 'languages' one.
             # Maybe also check other locales ?
-            %w(locales languages).reduce([]) do |a, e|
+            %w[locales languages].reduce([]) do |a, e|
               a << target.url("#{e}/LayerSlider-en_US.po")
             end
           end

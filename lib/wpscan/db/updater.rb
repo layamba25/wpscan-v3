@@ -4,11 +4,11 @@ module WPScan
     # :nocov:
     class Updater
       # /!\ Might want to also update the Enumeration#cli_options when some filenames are changed here
-      FILES = %w(
+      FILES = %w[
         plugins.json themes.json wordpresses.json
         timthumbs-v3.txt user-agents.txt config_backups.txt
         dynamic_finders.yml wordpress.db LICENSE
-      ).freeze
+      ].freeze
 
       attr_reader :repo_directory
 

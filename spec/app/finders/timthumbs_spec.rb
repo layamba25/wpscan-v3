@@ -7,7 +7,7 @@ describe WPScan::Finders::Timthumbs::Base do
 
   describe '#finders' do
     it 'contains the expected finders' do
-      expect(timthumb.finders.map { |f| f.class.to_s.demodulize }).to eq %w(KnownLocations)
+      expect(timthumb.finders.map { |f| f.class.to_s.demodulize }).to eq %w[KnownLocations]
     end
   end
 end

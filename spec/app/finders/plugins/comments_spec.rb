@@ -33,7 +33,7 @@ describe WPScan::Finders::Plugins::Comments do
       let(:unique_expected) do
         expected = []
 
-        WPScan::DB::DynamicPluginFinders.comments.each do |name, _config|
+        WPScan::DB::DynamicPluginFinders.comments.each_key do |name|
           expected << plugin(name) if name != 'rspec-failure'
         end
 
@@ -53,13 +53,13 @@ describe WPScan::Finders::Plugins::Comments do
           @expected = unique_expected
 
           # Adds the plugins detected more than once (due to pattern variations)
-          %w(
+          %w[
             all-in-one-seo-pack enhanced-links google-analytics-for-wordpress google-analytics-for-wordpress
             kontera-official nginx-helper
             optin-monster revslider w3-total-cache
             wordpress-seo wordpress-seo wow-analytics wow-analytics wow-analytics
             wp-piwik wp-piwik wp-piwik wp-spamfree
-          ).each do |p|
+          ].each do |p|
             @expected << plugin(p)
           end
         end

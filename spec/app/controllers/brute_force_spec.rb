@@ -15,7 +15,7 @@ describe WPScan::Controller::BruteForce do
     its(:cli_options) { should be_a Array }
 
     it 'contains to correct options' do
-      expect(controller.cli_options.map(&:to_sym)).to eq [:passwords, :username, :usernames]
+      expect(controller.cli_options.map(&:to_sym)).to eq %i[passwords username usernames]
     end
   end
 
@@ -39,7 +39,7 @@ describe WPScan::Controller::BruteForce do
       let(:parsed_options) { super().merge(usernames: File.join(FIXTURES, 'users.txt')) }
 
       it 'returns an array with the users' do
-        expected = %w(admin editor).reduce([]) do |a, e|
+        expected = %w[admin editor].reduce([]) do |a, e|
           a << WPScan::User.new(e)
         end
 

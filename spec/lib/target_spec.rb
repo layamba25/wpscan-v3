@@ -6,10 +6,10 @@ describe WPScan::Target do
 
   it_behaves_like WPScan::Target::Platform::WordPress
 
-  [:wp_version, :main_theme, :plugins, :themes, :timthumbs, :config_backups, :medias, :users].each do |method|
+  %i[wp_version main_theme plugins themes timthumbs config_backups medias users].each do |method|
     describe "##{method}" do
       before do
-        return_value = [:wp_version, :main_theme].include?(method) ? false : []
+        return_value = %i[wp_version main_theme].include?(method) ? false : []
 
         expect(WPScan::Finders.const_get("#{method.to_s.camelize}::Base"))
           .to receive(:find).with(target, opts).and_return(return_value)

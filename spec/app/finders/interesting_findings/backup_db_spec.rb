@@ -56,7 +56,7 @@ describe WPScan::Finders::InterestingFindings::BackupDB do
         let(:body) { File.read(File.join(fixtures, 'dir_listing.html')) }
 
         it 'returns the expected interesting_findings attribute' do
-          @expected_entries = %w(sqldump.sql test.txt)
+          @expected_entries = %w[sqldump.sql test.txt]
         end
       end
     end

@@ -122,7 +122,7 @@ describe WPScan::Theme do
           .to_return(body: File.read(File.join(fixtures, 'style.css')))
       end
 
-      %w(child_style windows_line_endings).each do |fixture|
+      %w[child_style windows_line_endings].each do |fixture|
         context "when #{fixture}" do
           let(:main_theme) { "#{fixture}.css" }
 

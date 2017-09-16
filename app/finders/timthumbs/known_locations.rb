@@ -43,8 +43,8 @@ module WPScan
         end
 
         def main_theme_timthumbs_paths
-          %w(timthumb.php lib/timthumb.php inc/timthumb.php includes/timthumb.php
-             scripts/timthumb.php tools/timthumb.php functions/timthumb.php)
+          %w[timthumb.php lib/timthumb.php inc/timthumb.php includes/timthumb.php
+             scripts/timthumb.php tools/timthumb.php functions/timthumb.php]
         end
 
         def create_progress_bar(opts = {})

@@ -7,7 +7,7 @@ describe WPScan::Finders::Medias::Base do
 
   describe '#finders' do
     it 'contains the expected finders' do
-      expect(media.finders.map { |f| f.class.to_s.demodulize }).to eq %w(AttachmentBruteForcing)
+      expect(media.finders.map { |f| f.class.to_s.demodulize }).to eq %w[AttachmentBruteForcing]
     end
   end
 end

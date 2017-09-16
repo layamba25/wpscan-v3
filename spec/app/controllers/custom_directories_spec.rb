@@ -15,7 +15,7 @@ describe WPScan::Controller::CustomDirectories do
     its(:cli_options) { should be_a Array }
 
     it 'contains to correct options' do
-      expect(controller.cli_options.map(&:to_sym)).to eq [:wp_content_dir, :wp_plugins_dir]
+      expect(controller.cli_options.map(&:to_sym)).to eq %i[wp_content_dir wp_plugins_dir]
     end
   end
 

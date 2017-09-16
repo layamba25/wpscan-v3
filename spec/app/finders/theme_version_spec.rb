@@ -5,7 +5,7 @@ describe WPScan::Finders::ThemeVersion::Base do
   let(:theme)             { WPScan::Plugin.new(name, target) }
   let(:target)            { WPScan::Target.new('http://wp.lab/') }
   let(:name)              { 'spec' }
-  let(:default_finders)   { %w(Style WooFrameworkMetaGenerator) }
+  let(:default_finders)   { %w[Style WooFrameworkMetaGenerator] }
 
   describe '#finders' do
     after do

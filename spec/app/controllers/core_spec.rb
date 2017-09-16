@@ -41,7 +41,7 @@ describe WPScan::Controller::Core do
     end
 
     context 'when no --server supplied' do
-      [:Apache, :IIS, :Nginx].each do |server|
+      %i[Apache IIS Nginx].each do |server|
         it "loads the #{server} module and returns :#{server}" do
           @stubbed_server = server
           @expected       = server
@@ -50,7 +50,7 @@ describe WPScan::Controller::Core do
     end
 
     context 'when --server' do
-      [:apache, :iis, :nginx].each do |server|
+      %i[apache iis nginx].each do |server|
         context "when #{server}" do
           let(:parsed_options) { super().merge(server: server) }
 

@@ -9,7 +9,7 @@ module WPScan
             ['--wp-version-detection MODE',
              'Use the supplied mode for the WordPress version detection, ' \
              'instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive),
+            choices: %w[mixed passive aggressive],
             normalize: :to_sym
           )
         ]

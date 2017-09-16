@@ -7,11 +7,11 @@ describe WPScan::Finders::InterestingFindings::Base do
 
   describe '#finders' do
     let(:expected) do
-      %w(
+      %w[
         Readme DebugLog FullPathDisclosure
         Multisite MuPlugins Registration UploadDirectoryListing TmmDbMigrate
         UploadSQLDump
-      )
+      ]
     end
 
     it 'contains the expected finders' do

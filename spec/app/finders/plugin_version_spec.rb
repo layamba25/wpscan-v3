@@ -5,7 +5,7 @@ describe WPScan::Finders::PluginVersion::Base do
   let(:plugin)             { WPScan::Plugin.new(name, target) }
   let(:target)             { WPScan::Target.new('http://wp.lab/') }
   let(:name)               { 'spec' }
-  let(:default_finders)    { %w(Readme) }
+  let(:default_finders)    { %w[Readme] }
 
   describe '#finders' do
     after do
@@ -31,10 +31,10 @@ describe WPScan::Finders::PluginVersion::Base do
     # like for the revslider plugin
     context 'when specific finders' do
       {
-        'sitepress-multilingual-cms' => %w(VersionParameter MetaGenerator),
-        'w3-total-cache' => %w(Headers Comments),
-        'LayerSlider' => %w(TranslationFile),
-        'revslider' => %w(ReleaseLog Comments)
+        'sitepress-multilingual-cms' => %w[VersionParameter MetaGenerator],
+        'w3-total-cache' => %w[Headers Comments],
+        'LayerSlider' => %w[TranslationFile],
+        'revslider' => %w[ReleaseLog Comments]
       }.each do |plugin_name, specific_finders|
         context "when #{plugin_name} plugin" do
           let(:name) { plugin_name }

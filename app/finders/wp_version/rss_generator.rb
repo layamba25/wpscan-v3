@@ -33,7 +33,7 @@ module WPScan
         end
 
         def aggressive_urls(_opts = {})
-          %w(feed/ comments/feed/ feed/rss/ feed/rss2/).reduce([]) do |a, uri|
+          %w[feed/ comments/feed/ feed/rss/ feed/rss2/].reduce([]) do |a, uri|
             a << target.url(uri)
           end
         end

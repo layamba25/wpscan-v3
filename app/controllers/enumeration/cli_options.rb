@@ -26,7 +26,7 @@ module WPScan
               m:  OptIntegerRange.new(['--medias', 'Media ids range. e.g m1-15'], value_if_empty: '1-100')
             },
             value_if_empty: 'vp,vt,tt,cb,u,m',
-            incompatible: [[:vp, :ap, :p], [:vt, :at, :t]]
+            incompatible: [%i[vp ap p], %i[vt at t]]
           ),
           OptRegexp.new(
             [
@@ -46,7 +46,7 @@ module WPScan
           OptChoice.new(
             ['--plugins-detection MODE',
              'Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive), normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym
           ),
           OptBoolean.new(['--plugins-version-all', 'Check all the plugins version locations'])
         ]
@@ -59,7 +59,7 @@ module WPScan
           OptChoice.new(
             ['--themes-detection MODE',
              'Use the supplied mode to enumerate Themes, instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive), normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym
           ),
           OptBoolean.new(['--themes-version-all', 'Check all the themes version locations'])
         ]
@@ -75,7 +75,7 @@ module WPScan
           OptChoice.new(
             ['--timthumbs-detection MODE',
              'Use the supplied mode to enumerate Timthumbs, instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive), normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym
           )
         ]
       end
@@ -90,7 +90,7 @@ module WPScan
           OptChoice.new(
             ['--config-backups-detection MODE',
              'Use the supplied mode to enumerate Configs, instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive), normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym
           )
         ]
       end
@@ -101,7 +101,7 @@ module WPScan
           OptChoice.new(
             ['--medias-detection MODE',
              'Use the supplied mode to enumerate Medias, instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive), normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym
           )
         ]
       end
@@ -117,7 +117,7 @@ module WPScan
           OptChoice.new(
             ['--users-detection MODE',
              'Use the supplied mode to enumerate Users, instead of the global (--detection-mode) mode.'],
-            choices: %w(mixed passive aggressive), normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym
           )
         ]
       end

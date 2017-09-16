@@ -7,7 +7,7 @@ describe WPScan::Finders::TimthumbVersion::Base do
 
   describe '#finders' do
     it 'contains the expected finders' do
-      expect(timthumb_version.finders.map { |f| f.class.to_s.demodulize }).to eq %w(BadRequest)
+      expect(timthumb_version.finders.map { |f| f.class.to_s.demodulize }).to eq %w[BadRequest]
     end
   end
 end

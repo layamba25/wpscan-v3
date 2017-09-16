@@ -18,7 +18,7 @@ module WPScan
 
         # @retun [ Array<String> ] The list of potential readme files
         def potential_files
-          %w(readme.html olvasdel.html lisenssi.html liesmich.html)
+          %w[readme.html olvasdel.html lisenssi.html liesmich.html]
         end
       end
     end

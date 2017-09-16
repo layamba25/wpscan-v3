@@ -7,7 +7,7 @@ describe WPScan::Finders::ConfigBackups::Base do
 
   describe '#finders' do
     it 'contains the expected finders' do
-      expect(config_backups.finders.map { |f| f.class.to_s.demodulize }).to eq %w(KnownFilenames)
+      expect(config_backups.finders.map { |f| f.class.to_s.demodulize }).to eq %w[KnownFilenames]
     end
   end
 end

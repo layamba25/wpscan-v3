@@ -30,7 +30,7 @@ describe WPScan::Finders::InterestingFindings::FullPathDisclosure do
           confidence: 100,
           found_by: described_class::DIRECT_ACCESS
         )
-        expect(found.interesting_entries).to eql %w(/blog/wp-includes/rss-functions.php)
+        expect(found.interesting_entries).to eql %w[/blog/wp-includes/rss-functions.php]
       end
     end
   end

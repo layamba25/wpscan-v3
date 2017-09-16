@@ -17,7 +17,7 @@ shared_examples WPScan::References do
     context 'when an unknown reference key is provided' do
       let(:references) { { cve: 1, unknown: 12 } }
 
-      its(:references) { should eql(cve: %w(1)) }
+      its(:references) { should eql(cve: %w[1]) }
     end
 
     context 'when references provided as string' do
@@ -28,11 +28,11 @@ shared_examples WPScan::References do
         }
       end
 
-      its(:cves)     { should eql %w(11) }
-      its(:cve_urls) { should eql %w(https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-11) }
+      its(:cves)     { should eql %w[11] }
+      its(:cve_urls) { should eql %w[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-11] }
 
-      its(:wpvulndb_ids)  { should eql %w(12) }
-      its(:wpvulndb_urls) { should eql %w(https://wpvulndb.com/vulnerabilities/12) }
+      its(:wpvulndb_ids)  { should eql %w[12] }
+      its(:wpvulndb_urls) { should eql %w[https://wpvulndb.com/vulnerabilities/12] }
 
       its(:references_urls) do
         should eql [

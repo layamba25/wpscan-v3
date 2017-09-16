@@ -2,7 +2,6 @@ module WPScan
   # WP Version
   class WpVersion < CMSScanner::Version
     include Vulnerable
-    attr_reader :db_data
 
     def initialize(number, opts = {})
       raise InvalidWordPressVersion unless WpVersion.valid?(number.to_s)

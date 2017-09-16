@@ -6,7 +6,7 @@ module WPScan
       #
       # @return [ String ] The related enumration message depending on the parsed_options and type supplied
       def enum_message(type)
-        return unless type == 'plugins' || type == 'themes'
+        return unless %w[plugins themes].include?(type)
 
         details = if parsed_options[:enumerate][:"vulnerable_#{type}"]
                     'Vulnerable'

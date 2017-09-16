@@ -10,8 +10,8 @@ describe WPScan::Finders::Themes::UrlsInHomepage do
     let(:type)                { 'themes' }
     let(:uniq_links)          { true }
     let(:uniq_codes)          { true }
-    let(:expected_from_links) { %w(dl-1) }
-    let(:expected_from_codes) { %w(dc-1) }
+    let(:expected_from_links) { %w[dl-1] }
+    let(:expected_from_codes) { %w[dc-1] }
   end
 
   describe '#passive' do

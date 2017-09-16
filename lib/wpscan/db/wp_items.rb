@@ -14,7 +14,7 @@ module WPScan
 
       # @return [ Array<String> ] The slug of all vulnerable items
       def self.vulnerable_slugs
-        db.select { |_key, item| !item['vulnerabilities'].empty? }.keys
+        db.reject { |_key, item| item['vulnerabilities'].empty? }.keys
       end
     end
   end

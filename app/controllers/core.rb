@@ -8,8 +8,8 @@ module WPScan
           super.drop(1) + # delete the --url from CMSScanner
           [
             OptChoice.new(['--server SERVER', 'Force the supplied server module to be loaded'],
-                          choices: %w(apache iis nginx),
-                          normalize: [:downcase, :to_sym]),
+                          choices: %w[apache iis nginx],
+                          normalize: %i[downcase to_sym]),
             OptBoolean.new(['--force', 'Do not check if the target is running WordPress']),
             OptBoolean.new(['--[no-]update', 'Wether or not to update the Database'], required_unless: :url)
           ]

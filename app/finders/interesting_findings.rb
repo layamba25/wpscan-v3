@@ -19,11 +19,11 @@ module WPScan
         def initialize(target)
           super(target)
 
-          %w(
+          %w[
             Readme DebugLog FullPathDisclosure BackupDB DuplicatorInstallerLog
             Multisite MuPlugins Registration UploadDirectoryListing TmmDbMigrate
             UploadSQLDump
-          ).each do |f|
+          ].each do |f|
             finders << InterestingFindings.const_get(f).new(target)
           end
         end

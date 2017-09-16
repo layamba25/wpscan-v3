@@ -8,7 +8,7 @@ module WPScan
       def before_scan
         # Create the Dynamic Finders
         DB::DynamicPluginFinders.db_data.each do |name, config|
-          %w(Comments).each do |klass|
+          %w[Comments].each do |klass|
             next unless config[klass] && config[klass]['version']
 
             constant_name = name.tr('-', '_').camelize
@@ -42,7 +42,7 @@ module WPScan
         enum_plugins if enum_plugins?(enum)
         enum_themes  if enum_themes?(enum)
 
-        [:timthumbs, :config_backups, :medias].each do |key|
+        %i[timthumbs config_backups medias].each do |key|
           send("enum_#{key}".to_sym) if enum.key?(key)
         end
 

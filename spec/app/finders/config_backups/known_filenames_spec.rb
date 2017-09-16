@@ -12,7 +12,7 @@ describe WPScan::Finders::ConfigBackups::KnownFilenames do
       expect(target).to receive(:sub_dir).at_least(1).and_return(false)
       expect(target).to receive(:homepage_or_404?).at_least(1).and_return(false)
 
-      finder.potential_urls(opts).each do |url, _|
+      finder.potential_urls(opts).each_key do |url|
         stub_request(:get, url).to_return(status: 404)
       end
     end

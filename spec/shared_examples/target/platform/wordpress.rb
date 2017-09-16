@@ -12,7 +12,7 @@ shared_examples WPScan::Target::Platform::WordPress do
       stub_request(:get, target.url).to_return(body: File.read(File.join(fixtures, "#{body}.html")))
     end
 
-    %w(default wp_includes only_scripts meta_generator comments mu_plugins).each do |file|
+    %w[default wp_includes only_scripts meta_generator comments mu_plugins].each do |file|
       context "when a wordpress page (#{file}.html)" do
         let(:body) { file }
 
@@ -20,7 +20,7 @@ shared_examples WPScan::Target::Platform::WordPress do
       end
     end
 
-    %w(not_wp).each do |file|
+    %w[not_wp].each do |file|
       context "when not a wordpress page (#{file}.html)" do
         let(:body) { file }
 

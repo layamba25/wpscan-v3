@@ -22,7 +22,7 @@ describe WPScan::Controller::WpVersion do
     its(:cli_options) { should be_a Array }
 
     it 'contains to correct options' do
-      expect(controller.cli_options.map(&:to_sym)).to eq [:wp_version_all, :wp_version_detection]
+      expect(controller.cli_options.map(&:to_sym)).to eq %i[wp_version_all wp_version_detection]
     end
   end
 
@@ -39,7 +39,7 @@ describe WPScan::Controller::WpVersion do
 
     after { controller.run }
 
-    [:mixed, :passive, :aggressive].each do |mode|
+    %i[mixed passive aggressive].each do |mode|
       context "when --detection-mode #{mode}" do
         let(:parsed_options) { super().merge(detection_mode: mode) }
 

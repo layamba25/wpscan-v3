@@ -34,7 +34,7 @@ describe WPScan::Finders::PluginVersion::SitepressMultilingualCms::VersionParame
           '3.1.8.4',
           found_by: 'Version Parameter (Passive Detection)',
           confidence: 50,
-          interesting_entries: %w(http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js?v=3.1.8.4)
+          interesting_entries: %w[http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js?v=3.1.8.4]
         )
       end
     end
