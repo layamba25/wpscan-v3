@@ -17,7 +17,7 @@ module WPScan
     #
     # @return [ WPScan::Version, false ]
     def version(opts = {})
-      @version = Finders::PluginVersion::Base.find(self, detection_opts.merge(opts)) if @version.nil?
+      @version = Finders::PluginVersion::Base.find(self, version_detection_opts.merge(opts)) if @version.nil?
 
       @version
     end

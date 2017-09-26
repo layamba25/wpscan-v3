@@ -41,6 +41,7 @@ module WPScan
         opts = default_opts('plugins').merge(
           list: plugins_list_from_opts(parsed_options),
           version_all: parsed_options[:plugins_version_all],
+          version_detection: parsed_options[:plugins_version_detection] || default_opts('plugins')[:mode],
           sort: true
         )
 
@@ -116,7 +117,7 @@ module WPScan
       end
 
       def enum_config_backups
-        opts = default_opts('config_baclups').merge(list: parsed_options[:config_backups_list])
+        opts = default_opts('config_backups').merge(list: parsed_options[:config_backups_list])
 
         output('@info', msg: 'Enumerating Config Backups') if user_interaction?
         output('config_backups', config_backups: target.config_backups(opts))
