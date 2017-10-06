@@ -112,7 +112,6 @@ module WPScan
         local_file_checksum(filename)
       end
 
-      # rubocop:disable MethodLength
       # @return [ Array<String> ] The filenames updated
       def update
         updated = []
@@ -141,7 +140,6 @@ module WPScan
 
         updated
       end
-      # rubocop:enable MethodLength
     end
   end
   # :nocov:

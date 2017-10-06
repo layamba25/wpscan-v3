@@ -56,7 +56,6 @@ module WPScan
       # @param [ Array<String> ] passwords
       #
       # @yield [ User ] when a valid combination is found
-      # rubocop:disable all
       def brute_force(users, passwords)
         hydra = Browser.instance.hydra
 
@@ -86,7 +85,6 @@ module WPScan
           hydra.run
         end
       end
-      # rubocop:enable all
 
       def progress_bar(size, username)
         ProgressBar.create(
