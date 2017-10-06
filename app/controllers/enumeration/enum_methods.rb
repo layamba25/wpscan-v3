@@ -23,10 +23,16 @@ module WPScan
       #
       # @return [ Hash ]
       def default_opts(type)
+        mode = parsed_options[:"#{type}_detection"] || parsed_options[:detection_mode]
+
         {
-          mode: parsed_options[:"#{type}_detection"] || parsed_options[:detection_mode],
+          mode: mode,
           exclude_content: parsed_options[:exclude_content_based],
-          show_progression: user_interaction?
+          show_progression: user_interaction?,
+          version_detection: {
+            mode: parsed_options[:"#{type}_version_detection"] || mode,
+            confidence_threshold: parsed_options[:"#{type}_version_all"] ? 0 : 100
+          }
         }
       end
 
@@ -40,8 +46,6 @@ module WPScan
       def enum_plugins
         opts = default_opts('plugins').merge(
           list: plugins_list_from_opts(parsed_options),
-          version_all: parsed_options[:plugins_version_all],
-          version_detection: parsed_options[:plugins_version_detection] || default_opts('plugins')[:mode],
           sort: true
         )
 
@@ -80,7 +84,6 @@ module WPScan
       def enum_themes
         opts = default_opts('themes').merge(
           list: themes_list_from_opts(parsed_options),
-          version_all: parsed_options[:themes_version_all],
           sort: true
         )
 

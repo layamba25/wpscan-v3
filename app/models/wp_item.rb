@@ -15,16 +15,15 @@ module WPScan
     # @param [ Target ] target The targeted blog
     # @param [ Hash ] opts
     # @option opts [ Symbol ] :mode The detection mode to use
-    # @option opts [ Boolean ] :version_all Wether or not to check all version locations
-    # @option opts [ Symbol ] :version_detection The version detection mode to use
+    # @option opts [ Hash ]   :version_detection The options to use when looking for the version
     # @option opts [ String ] :url The URL of the item
     def initialize(name, target, opts = {})
       @name           = URI.decode(name)
       @target         = target
       @uri            = Addressable::URI.parse(opts[:url]) if opts[:url]
 
-      # @detection_opts = opts
-      @version_detection_opts = { mode: opts[:version_detection], confidence_threshold: opts[:version_all] ? 0 : 100 }
+      @detection_opts = { mode: opts[:mode] }
+      @version_detection_opts = opts[:version_detection] || {}
 
       parse_finding_options(opts)
     end

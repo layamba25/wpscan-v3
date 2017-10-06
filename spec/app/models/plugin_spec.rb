@@ -15,17 +15,18 @@ describe WPScan::Plugin do
   describe '#version' do
     after do
       expect(WPScan::Finders::PluginVersion::Base).to receive(:find).with(plugin, @expected_opts)
+
       plugin.version(version_opts)
     end
 
-    let(:default_opts) { { confidence_threshold: 100 } }
+    let(:default_opts) { {} }
 
     context 'when no :detection_mode' do
       context 'when no :mode opt supplied' do
         let(:version_opts) { { something: 'k' } }
 
         it 'calls the finder with the correct parameters' do
-          @expected_opts = default_opts.merge(mode: nil, something: 'k')
+          @expected_opts = version_opts
         end
       end
 
@@ -38,23 +39,14 @@ describe WPScan::Plugin do
       end
     end
 
-    context 'when :version_all' do
-      let(:opts)         { super().merge(version_all: true) }
-      let(:version_opts) { {} }
-
-      it 'calls the finder with the correct parameters' do
-        @expected_opts = { mode: nil, confidence_threshold: 0 }
-      end
-    end
-
     context 'when :detection_mode' do
       let(:opts) { super().merge(mode: :passive) }
 
       context 'when no :mode' do
         let(:version_opts) { {} }
 
-        it 'calls the finder with the :passive mode' do
-          @expected_opts = default_opts.merge(mode: :passive)
+        it 'calls the finder without mode' do
+          @expected_opts = version_opts
         end
       end
 

@@ -12,13 +12,15 @@ describe WPScan::WpItem do
   describe '#new' do
     context 'when no opts' do
       its(:name) { should eql name }
-      its(:detection_opts) { should eql(mode: nil, confidence_threshold: 100) }
+      its(:detection_opts) { should eql(mode: nil) }
+      its(:version_detection_opts) { should eql({}) }
     end
 
     context 'when :mode' do
-      let(:opts) { super().merge(mode: :passive, version_all: true) }
+      let(:opts) { super().merge(mode: :passive, version_detection: { mode: :aggressive }) }
 
-      its(:detection_opts) { should eql(mode: :passive, confidence_threshold: 0) }
+      its(:detection_opts) { should eql(mode: :passive) }
+      its(:version_detection_opts) { should eql(mode: :aggressive) }
     end
 
     context 'when the name contains encoded chars' do
