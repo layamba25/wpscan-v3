@@ -33,12 +33,11 @@ module WPScan
       return unless template
       return unless style_body =~ /^@import\surl\(["']?([^"'\)]+)["']?\);\s*$/i
 
-      # !! Change the below due to version_detection_opts
       opts = detection_opts.merge(
         style_url: url(Regexp.last_match[1]),
         found_by: 'Parent Themes (Passive Detection)',
         confidence: 100
-      )
+      ).merge(version_detection: version_detection_opts)
 
       self.class.new(template, target, opts)
     end

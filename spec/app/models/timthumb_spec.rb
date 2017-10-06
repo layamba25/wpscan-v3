@@ -15,6 +15,7 @@ describe WPScan::Timthumb do
   describe '#version' do
     after do
       expect(WPScan::Finders::TimthumbVersion::Base).to receive(:find).with(timthumb, @expected_opts)
+
       timthumb.version(version_opts)
     end
 
@@ -23,7 +24,7 @@ describe WPScan::Timthumb do
         let(:version_opts) { { something: 'k' } }
 
         it 'calls the finder with the correct parameters' do
-          @expected_opts = { mode: nil, something: 'k' }
+          @expected_opts = version_opts
         end
       end
 
@@ -43,7 +44,7 @@ describe WPScan::Timthumb do
         let(:version_opts) { {} }
 
         it 'calls the finder with the :passive mode' do
-          @expected_opts = { mode: :passive }
+          @expected_opts = version_opts
         end
       end
 

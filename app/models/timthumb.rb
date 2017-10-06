@@ -11,7 +11,7 @@ module WPScan
     def initialize(url, opts = {})
       super(url, opts)
 
-      @version_detection_opts = { mode: opts[:mode] }
+      @version_detection_opts = opts[:version_detection] || {}
     end
 
     # @param [ Hash ] opts
