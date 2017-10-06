@@ -52,7 +52,7 @@ Gem::Specification.new do |s|
   s.executables           = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
   s.require_path          = 'lib'
 
-  s.add_dependency 'cms_scanner', '~> 0.0.37.10'
+  s.add_dependency 'cms_scanner', '~> 0.0.37.11'
   # Already required by CMSScanner, so version restrictions loosen
   s.add_dependency 'yajl-ruby', '~> 1.3'
   s.add_dependency 'activesupport', '~> 5.1'
