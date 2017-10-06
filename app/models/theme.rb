@@ -23,7 +23,7 @@ module WPScan
     #
     # @return [ WPScan::Version, false ]
     def version(opts = {})
-      @version = Finders::ThemeVersion::Base.find(self, detection_opts.merge(opts)) if @version.nil?
+      @version = Finders::ThemeVersion::Base.find(self, version_detection_opts.merge(opts)) if @version.nil?
 
       @version
     end
@@ -33,6 +33,7 @@ module WPScan
       return unless template
       return unless style_body =~ /^@import\surl\(["']?([^"'\)]+)["']?\);\s*$/i
 
+      # !! Change the below due to version_detection_opts
       opts = detection_opts.merge(
         style_url: url(Regexp.last_match[1]),
         found_by: 'Parent Themes (Passive Detection)',

@@ -48,7 +48,17 @@ module WPScan
              'Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.'],
             choices: %w[mixed passive aggressive], normalize: :to_sym
           ),
-          OptBoolean.new(['--plugins-version-all', 'Check all the plugins version locations'])
+          OptBoolean.new(
+            ['--plugins-version-all',
+             'Check all the plugins version locations according to the choosen mode (--detection-mode, ' \
+             '--plugins-detection and --plugins-version-detection)']
+          ),
+          OptChoice.new(
+            ['--plugins-version-detection MODE',
+             'Use the supplied mode to check plugins versions instead of the --detection-mode ' \
+             'or --plugins-detection modes.'],
+            choices: %w[mixed passive aggressive], normalize: :to_sym
+          )
         ]
       end
 
@@ -61,7 +71,17 @@ module WPScan
              'Use the supplied mode to enumerate Themes, instead of the global (--detection-mode) mode.'],
             choices: %w[mixed passive aggressive], normalize: :to_sym
           ),
-          OptBoolean.new(['--themes-version-all', 'Check all the themes version locations'])
+          OptBoolean.new(
+            ['--themes-version-all',
+             'Check all the themes version locations according to the choosen mode (--detection-mode, ' \
+             '--themes-detection and --themes-version-detection)']
+          ),
+          OptChoice.new(
+            ['--themes-version-detection MODE',
+             'Use the supplied mode to check themes versions instead of the --detection-mode ' \
+             'or --themes-detection modes.'],
+            choices: %w[mixed passive aggressive], normalize: :to_sym
+          )
         ]
       end
 

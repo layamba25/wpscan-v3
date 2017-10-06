@@ -3,16 +3,15 @@ module WPScan
   class Timthumb < InterestingFinding
     include Vulnerable
 
-    # Opts used to detect the version
-    attr_reader :detection_opts
+    attr_reader :version_detection_opts
 
     # @param [ String ] url
     # @param [ Hash ] opts
-    # @option opts [ String ] :detection_mode
+    # @option opts [ Symbol ] :mode The mode to use to detect the version
     def initialize(url, opts = {})
       super(url, opts)
 
-      @detection_opts = { mode: opts[:mode] }
+      @version_detection_opts = { mode: opts[:mode] }
     end
 
     # @param [ Hash ] opts
@@ -20,7 +19,7 @@ module WPScan
     # @return [ WPScan::Version, false ]
     def version(opts = {})
       if @version.nil?
-        @version = Finders::TimthumbVersion::Base.find(self, detection_opts.merge(opts))
+        @version = Finders::TimthumbVersion::Base.find(self, version_detection_opts.merge(opts))
       end
 
       @version

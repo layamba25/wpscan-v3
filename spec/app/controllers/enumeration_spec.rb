@@ -91,15 +91,15 @@ describe WPScan::Controller::Enumeration do
 
   describe '#cli_options' do
     it 'contains the correct options' do
-      expect(controller.cli_options.map(&:to_sym)).to eql(%i[
-                                                            enumerate exclude_content_based
-                                                            plugins_list plugins_detection plugins_version_all
-                                                            themes_list themes_detection themes_version_all
-                                                            timthumbs_list timthumbs_detection
-                                                            config_backups_list config_backups_detection
-                                                            medias_detection
-                                                            users_list users_detection
-                                                          ])
+      expect(controller.cli_options.map(&:to_sym)).to eql(
+        %i[enumerate exclude_content_based
+           plugins_list plugins_detection plugins_version_all plugins_version_detection
+           themes_list themes_detection themes_version_all themes_version_detection
+           timthumbs_list timthumbs_detection
+           config_backups_list config_backups_detection
+           medias_detection
+           users_list users_detection]
+      )
     end
   end
 

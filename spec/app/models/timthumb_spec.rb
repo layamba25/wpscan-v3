@@ -18,7 +18,7 @@ describe WPScan::Timthumb do
       timthumb.version(version_opts)
     end
 
-    context 'when no :detection_mode' do
+    context 'when no :version_detection' do
       context 'when no :mode opt supplied' do
         let(:version_opts) { { something: 'k' } }
 
@@ -36,7 +36,7 @@ describe WPScan::Timthumb do
       end
     end
 
-    context 'when :detection_mode' do
+    context 'when :version_detection' do
       let(:opts) { super().merge(mode: :passive) }
 
       context 'when no :mode' do
