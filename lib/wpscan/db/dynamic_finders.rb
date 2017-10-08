@@ -35,15 +35,9 @@ module WPScan
 
       # @return [ Hash ]
       def self.comments
-        unless @comments
-          @comments = finder_configs('Comments')
-
-          @comments.each do |slug, config|
-            @comments[slug]['pattern'] = Regexp.new(config['pattern'], Regexp::IGNORECASE)
-          end
+        @comments ||= finder_configs('Comments').each_value do |config|
+          config['pattern'] = Regexp.new(config['pattern'], Regexp::IGNORECASE)
         end
-
-        @comments
       end
 
       # @return [ Hash ]

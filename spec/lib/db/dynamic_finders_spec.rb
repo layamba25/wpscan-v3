@@ -12,6 +12,7 @@ describe WPScan::DB::DynamicPluginFinders do
       expect(comment_configs.keys).to include('rspec-failure')
 
       expect(comment_configs['rspec-failure']['pattern']).to be_a Regexp
+      expect(comment_configs['rspec-failure']['version']).to eql true
     end
   end
 
