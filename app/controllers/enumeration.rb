@@ -31,7 +31,7 @@ module WPScan
       def create_plugins_comments_finders(mod, config)
         mod.const_set(
           :Comments, Class.new(Finders::Finder::PluginVersion::Comments) do
-            const_set(:PATTERN, Regexp.new(config['pattern'], Regexp::IGNORECASE))
+            const_set(:PATTERN, config['pattern'])
           end
         )
       end

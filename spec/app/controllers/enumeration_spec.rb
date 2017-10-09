@@ -82,7 +82,7 @@ describe WPScan::Controller::Enumeration do
             # Will have to change the below if new classes are added
             defined_klass = WPScan::Finders::PluginVersion.const_get("#{constant_name}::Comments")
 
-            expect(defined_klass::PATTERN).to eql Regexp.new(config[klass]['pattern'], Regexp::IGNORECASE)
+            expect(defined_klass::PATTERN).to eql config[klass]['pattern']
           end
         end
       end
