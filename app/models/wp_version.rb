@@ -22,9 +22,15 @@ module WPScan
 
       @all_numbers = []
 
-      DB::Version.all.each { |v| @all_numbers << v.number }
+      DB::Fingerprints.wp_fingerprints.each_value do |fp|
+        fp.each_value do |versions|
+          versions.each do |version|
+            @all_numbers << version unless @all_numbers.include?(version)
+          end
+        end
+      end
 
-      @all_numbers
+      @all_numbers.sort! { |a, b| Gem::Version.new(b) <=> Gem::Version.new(a) }
     end
 
     # @return [ JSON ]

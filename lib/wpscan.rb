@@ -11,6 +11,7 @@ require 'uri'
 require 'time'
 require 'readline'
 require 'securerandom'
+
 # Custom Libs
 require 'wpscan/helper'
 require 'wpscan/db'

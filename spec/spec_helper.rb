@@ -73,5 +73,3 @@ FIXTURES         = File.join(SPECS, 'fixtures')
 FINDERS_FIXTURES = File.join(FIXTURES, 'finders')
 
 redefine_constant(:DB_DIR, File.join(FIXTURES, 'db'))
-
-WPScan::DB.init_db

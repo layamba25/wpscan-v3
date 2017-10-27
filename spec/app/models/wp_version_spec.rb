@@ -18,6 +18,12 @@ describe WPScan::WpVersion do
     end
   end
 
+  describe '.all' do
+    it 'returns the correct values' do
+      expect(described_class.all).to eql %w[4.1 4.0 3.9.1 3.8.2 3.8.1 3.8]
+    end
+  end
+
   describe '.valid?' do
     after { expect(described_class.valid?(@number)).to eq @expected }
 

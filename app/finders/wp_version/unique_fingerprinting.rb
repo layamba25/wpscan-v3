@@ -5,19 +5,9 @@ module WPScan
       class UniqueFingerprinting < CMSScanner::Finders::Finder
         include CMSScanner::Finders::Finder::Fingerprinter
 
-        QUERY = 'SELECT md5_hash, path_id, version_id, ' \
-                'versions.number AS version,' \
-                'paths.value AS path ' \
-                'FROM fingerprints ' \
-                'LEFT JOIN versions ON version_id = versions.id ' \
-                'LEFT JOIN paths on path_id = paths.id ' \
-                'WHERE md5_hash IN ' \
-                '(SELECT md5_hash FROM fingerprints GROUP BY md5_hash HAVING COUNT(*) = 1) ' \
-                'ORDER BY version DESC'.freeze
-
         # @return [ WpVersion ]
         def aggressive(opts = {})
-          fingerprint(unique_fingerprints, opts) do |version_number, url, md5sum|
+          fingerprint(DB::Fingerprints.wp_unique_fingerprints, opts) do |version_number, url, md5sum|
             hydra.abort
             progress_bar.finish
 
@@ -29,30 +19,6 @@ module WPScan
             )
           end
           nil
-        end
-
-        # @return [ Hash ] The unique fingerprints across all versions in the DB
-        #
-        # Format returned:
-        # {
-        #   file_path_1: {
-        #     md5_hash_1: version_1,
-        #     md5_hash_2: version_2
-        #   },
-        #   file_path_2: {
-        #     md5_hash_3: version_1,
-        #     md5_hash_4: version_3
-        #   }
-        # }
-        def unique_fingerprints
-          fingerprints = {}
-
-          repository(:default).adapter.select(QUERY).each do |f|
-            fingerprints[f.path] ||= {}
-            fingerprints[f.path][f.md5_hash] = f.version
-          end
-
-          fingerprints
         end
 
         def create_progress_bar(opts = {})

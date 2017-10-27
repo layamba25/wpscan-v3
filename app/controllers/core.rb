@@ -52,8 +52,6 @@ module WPScan
 
         super(false) # disable banner output
 
-        DB.init_db
-
         load_server_module
 
         check_wordpress_state

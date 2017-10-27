@@ -2,9 +2,20 @@ module WPScan
   module DB
     # Fingerprints class
     class Fingerprints
-      WP_FINGERPRINTS_PATH = File.join(DB_DIR, 'wp_fingerprints.json').freeze
-
-      # @return the unique fingerprints in the data argument given
+      # @param [ Hash ] data
+      #
+      # @return [ Hash ] the unique fingerprints in the data argument given
+      # Format returned:
+      # {
+      #   file_path_1: {
+      #     md5_hash_1: version_1,
+      #     md5_hash_2: version_2
+      #   },
+      #   file_path_2: {
+      #     md5_hash_3: version_1,
+      #     md5_hash_4: version_3
+      #   }
+      # }
       def self.unique_fingerprints(data)
         unique_fingerprints = {}
 
@@ -13,17 +24,24 @@ module WPScan
             next unless versions.size == 1
 
             unique_fingerprints[file_path] ||= {}
-            unique_fingerprints[file_path][md5sum] = versions
+            unique_fingerprints[file_path][md5sum] = versions.first
           end
         end
 
         unique_fingerprints
       end
 
-      def self.wp_fingerprints
-        @wp_fingerprints ||= read_json_file(WP_FINGERPRINTS_PATH)
+      # @return [ String ]
+      def self.wp_fingerprints_path
+        @wp_unique_fingerprints_path ||= File.join(DB_DIR, 'wp_fingerprints.json')
       end
 
+      # @return [ Hash ]
+      def self.wp_fingerprints
+        @wp_fingerprints ||= read_json_file(wp_fingerprints_path)
+      end
+
+      # @return [ Hash ]
       def self.wp_unique_fingerprints
         @wp_unique_fingerprints ||= unique_fingerprints(wp_fingerprints)
       end
