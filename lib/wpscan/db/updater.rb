@@ -7,7 +7,7 @@ module WPScan
       FILES = %w[
         plugins.json themes.json wordpresses.json
         timthumbs-v3.txt user-agents.txt config_backups.txt
-        dynamic_finders.yml wordpress.db LICENSE
+        dynamic_finders_01.yml wordpress.db LICENSE
       ].freeze
 
       attr_reader :repo_directory
