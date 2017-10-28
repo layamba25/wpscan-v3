@@ -18,6 +18,12 @@ module WPScan
         FileUtils.mkdir_p(repo_directory) unless Dir.exist?(repo_directory)
 
         raise "#{repo_directory} is not writable" unless Pathname.new(repo_directory).writable?
+
+        # Removes DB files which are no longer used
+        # this doesn't raise errors if they don't exist
+        %w[wordpress.db dynamic_finders.yml].each do |old_db_file_path|
+          FileUtils.remove_file(local_file_path(old_db_file_path), true)
+        end
       end
 
       # @return [ Time, nil ]
