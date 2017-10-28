@@ -53,6 +53,7 @@ Gem::Specification.new do |s|
   s.require_path          = 'lib'
 
   s.add_dependency 'cms_scanner', '~> 0.0.37.11'
+  s.add_dependency 'opt_parse_validator', '~> 0.0.13.9' # Remove this one when cms_scanner 0.0.37.12 released
   # Already required by CMSScanner, so version restrictions loosen
   s.add_dependency 'yajl-ruby', '~> 1.3'
   s.add_dependency 'activesupport', '~> 5.1'

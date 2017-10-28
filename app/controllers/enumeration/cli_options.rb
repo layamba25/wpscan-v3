@@ -42,7 +42,7 @@ module WPScan
       # @return [ Array<OptParseValidator::OptBase> ]
       def cli_plugins_opts
         [
-          OptFilePath.new(['--plugins-list FILE-PATH', 'List of plugins\' location to use'], exists: true),
+          OptSmartList.new(['--plugins-list LIST', 'List of plugins to enumerate']),
           OptChoice.new(
             ['--plugins-detection MODE',
              'Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.'],
@@ -65,7 +65,7 @@ module WPScan
       # @return [ Array<OptParseValidator::OptBase> ]
       def cli_themes_opts
         [
-          OptFilePath.new(['--themes-list FILE-PATH', 'List of themes\' location to use'], exists: true),
+          OptSmartList.new(['--themes-list LIST', 'List of themes to enumerate']),
           OptChoice.new(
             ['--themes-detection MODE',
              'Use the supplied mode to enumerate Themes, instead of the global (--detection-mode) mode.'],
@@ -129,10 +129,9 @@ module WPScan
       # @return [ Array<OptParseValidator::OptBase> ]
       def cli_users_opts
         [
-          OptFilePath.new(
-            ['--users-list FILE-PATH',
-             'List of users to check during the users enumeration from the Login Error Messages'],
-            exists: true
+          OptSmartList.new(
+            ['--users-list LIST',
+             'List of users to check during the users enumeration from the Login Error Messages']
           ),
           OptChoice.new(
             ['--users-detection MODE',

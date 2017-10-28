@@ -63,7 +63,7 @@ module WPScan
       # @return [ Array<String> ] The plugins list associated to the cli options
       def plugins_list_from_opts(opts)
         # List file provided by the user via the cli
-        return File.open(opts[:plugins_list]).map(&:chomp) if opts[:plugins_list]
+        return opts[:plugins_list] if opts[:plugins_list]
 
         if opts[:enumerate][:all_plugins]
           DB::Plugins.all_slugs
@@ -101,7 +101,7 @@ module WPScan
       # @return [ Array<String> ] The themes list associated to the cli options
       def themes_list_from_opts(opts)
         # List file provided by the user via the cli
-        return File.open(opts[:themes_list]).map(&:chomp) if opts[:themes_list]
+        return opts[:themes_list] if opts[:themes_list]
 
         if opts[:enumerate][:all_themes]
           DB::Themes.all_slugs

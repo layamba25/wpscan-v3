@@ -10,11 +10,7 @@ module WPScan
              'If no --username/s option supplied, user enumeration will be run'],
             exists: true
           ),
-          OptString.new(['--username USERNAME', '-u', 'The username to brute force']),
-          OptFilePath.new(
-            ['--usernames FILE-PATH', '-U', 'List of usernames to use during the brute forcing'],
-            exists: true
-          )
+          OptSmartList.new(['--usernames LIST', '-U', 'List of usernames to use during the brute forcing'])
         ]
       end
 
@@ -36,14 +32,10 @@ module WPScan
 
       # @return [ Array<Users> ] The users to brute force
       def users
-        return target.users unless parsed_options[:usernames] || parsed_options[:username]
+        return target.users unless parsed_options[:usernames]
 
-        if parsed_options[:username]
-          [User.new(parsed_options[:username])]
-        else
-          File.open(parsed_options[:usernames]).reduce([]) do |acc, elem|
-            acc << User.new(elem.chomp)
-          end
+        parsed_options[:usernames].reduce([]) do |acc, elem|
+          acc << User.new(elem.chomp)
         end
       end
 

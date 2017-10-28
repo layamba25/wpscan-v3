@@ -15,28 +15,20 @@ describe WPScan::Controller::BruteForce do
     its(:cli_options) { should be_a Array }
 
     it 'contains to correct options' do
-      expect(controller.cli_options.map(&:to_sym)).to eq %i[passwords username usernames]
+      expect(controller.cli_options.map(&:to_sym)).to eq %i[passwords usernames]
     end
   end
 
   describe '#users' do
-    context 'when no --usernames or --username' do
+    context 'when no --usernames' do
       it 'calles target.users' do
         expect(controller.target).to receive(:users)
         controller.users
       end
     end
 
-    context 'when --username' do
-      let(:parsed_options) { super().merge(username: 'admin') }
-
-      it 'returns an array with the user' do
-        expect(controller.users).to eql [WPScan::User.new('admin')]
-      end
-    end
-
     context 'when --usernames' do
-      let(:parsed_options) { super().merge(usernames: File.join(FIXTURES, 'users.txt')) }
+      let(:parsed_options) { super().merge(usernames: %w[admin editor]) }
 
       it 'returns an array with the users' do
         expected = %w[admin editor].reduce([]) do |a, e|
