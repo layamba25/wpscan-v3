@@ -10,6 +10,8 @@ module WPScan
         dynamic_finders_01.yml wp_fingerprints.json LICENSE
       ].freeze
 
+      OLD_FILES = %w[wordpress.db dynamic_finders.yml].freeze
+
       attr_reader :repo_directory
 
       def initialize(repo_directory)
@@ -19,10 +21,14 @@ module WPScan
 
         raise "#{repo_directory} is not writable" unless Pathname.new(repo_directory).writable?
 
-        # Removes DB files which are no longer used
-        # this doesn't raise errors if they don't exist
-        %w[wordpress.db dynamic_finders.yml].each do |old_db_file_path|
-          FileUtils.remove_file(local_file_path(old_db_file_path), true)
+        delete_old_files
+      end
+
+      # Removes DB files which are no longer used
+      # this doesn't raise errors if they don't exist
+      def delete_old_files
+        OLD_FILES.each do |old_file|
+          FileUtils.remove_file(local_file_path(old_file), true)
         end
       end
 
