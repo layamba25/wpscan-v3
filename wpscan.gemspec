@@ -56,11 +56,6 @@ Gem::Specification.new do |s|
   # Already required by CMSScanner, so version restrictions loosen
   s.add_dependency 'yajl-ruby', '~> 1.3'
   s.add_dependency 'activesupport', '~> 5.1'
-  # DB dependencies
-  s.add_dependency 'dm-core', '~> 1.2.0'
-  s.add_dependency 'dm-migrations', '~> 1.2.0'
-  s.add_dependency 'dm-constraints', '~> 1.2.0'
-  s.add_dependency 'dm-sqlite-adapter', '~> 1.2.0'
 
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rspec', '~> 3.6.0'
