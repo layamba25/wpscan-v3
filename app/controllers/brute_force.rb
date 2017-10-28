@@ -81,7 +81,7 @@ module WPScan
       def progress_bar(size, username)
         ProgressBar.create(
           format: '%t %a <%B> (%c / %C) %P%% %e',
-          title: "Brute Forcing #{username}",
+          title: "Brute Forcing #{username} -",
           total: size
         )
       end
