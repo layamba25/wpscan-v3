@@ -9,7 +9,7 @@ module WPScan
 
       # @return [ Hash ]
       def self.db_data
-        @db_data ||= YAML.load_file(db_file)
+        @db_data ||= YAML.safe_load(File.read(db_file), [Regexp])
       end
 
       # @return [ Hash ]
