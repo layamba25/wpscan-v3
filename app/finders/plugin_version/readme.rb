@@ -66,7 +66,7 @@ module WPScan
           sorted = extracted_versions.sort do |x, y|
             begin
               Gem::Version.new(x) <=> Gem::Version.new(y)
-            rescue
+            rescue StandardError
               0
             end
           end

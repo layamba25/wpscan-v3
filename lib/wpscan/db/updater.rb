@@ -139,8 +139,9 @@ module WPScan
             dl_checksum = download(filename)
 
             raise "#{filename}: checksums do not match" unless dl_checksum == db_checksum
+
             updated << filename
-          rescue => e
+          rescue StandardError => e
             restore_backup(filename)
             raise e
           ensure
