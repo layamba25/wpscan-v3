@@ -3,21 +3,22 @@ AllCops:
   Exclude:
     - '*.gemspec'
     - 'vendor/**/*'
-LineLength:
-  Max: 120
 ClassVars:
   Enabled: false
+LineLength:
+  Max: 120
 MethodLength:
   Max: 20
+Lint/UriEscapeUnescape:
+  Enabled: false
 Metrics/AbcSize:
   Max: 25
-Metrics/CyclomaticComplexity:
-  Max: 8
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
 Metrics/ClassLength:
   Max: 150
-Metrics/BlockLength:
-  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 8
 Style/FrozenStringLiteralComment:
-  Enabled: false
-Lint/UriEscapeUnescape:
   Enabled: false
