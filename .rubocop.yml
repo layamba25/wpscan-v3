@@ -19,7 +19,5 @@ Metrics/BlockLength:
   Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
-Performance/RegexpMatch:
-  Enabled: false
 Lint/UriEscapeUnescape:
   Enabled: false
