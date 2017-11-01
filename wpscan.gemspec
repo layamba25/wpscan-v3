@@ -1,5 +1,3 @@
-# coding: utf-8
-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
@@ -9,7 +7,7 @@ Gem::Specification.new do |s|
   s.name                  = 'wpscan'
   s.version               = WPScan::VERSION
   s.platform              = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 2.2.2'
+  s.required_ruby_version = '>= 2.3'
   s.authors               = ['WPScanTeam']
   s.date                  = Time.now.utc.strftime('%Y-%m-%d')
   s.email                 = ['team@wpscan.org']
@@ -54,15 +52,15 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'cms_scanner', '~> 0.0.37.12'
   # Already required by CMSScanner, so version restrictions loosen
-  s.add_dependency 'yajl-ruby', '~> 1.3'
   s.add_dependency 'activesupport', '~> 5.1'
+  s.add_dependency 'yajl-ruby', '~> 1.3'
 
+  s.add_development_dependency 'bundler', '~> 1.6'
+  s.add_development_dependency 'coveralls', '~> 0.8.0'
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rspec', '~> 3.7.0'
   s.add_development_dependency 'rspec-its', '~> 1.2.0'
-  s.add_development_dependency 'bundler', '~> 1.6'
-  s.add_development_dependency 'rubocop', '~> 0.50.0'
-  s.add_development_dependency 'webmock', '~> 1.22.0'
+  s.add_development_dependency 'rubocop', '~> 0.51.0'
   s.add_development_dependency 'simplecov', '~> 0.14.0' # Can't update to 0.15 as it breaks coveralls dep
-  s.add_development_dependency 'coveralls', '~> 0.8.0'
+  s.add_development_dependency 'webmock', '~> 1.22.0'
 end

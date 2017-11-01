@@ -9,7 +9,7 @@ module WPScan
 
           node = Browser.get(readme_url).html.css('h1#logo').last
 
-          return unless node && node.text.to_s.strip =~ /\AVersion (.*)\z/i
+          return unless node&.text.to_s.strip =~ /\AVersion (.*)\z/i
 
           number = Regexp.last_match(1)
 

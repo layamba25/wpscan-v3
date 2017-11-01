@@ -8,7 +8,7 @@ module WPScan
     # @return [ Boolean ]
     def vulnerable?
       [@wp_version, @main_theme, @plugins, @themes, @timthumbs].each do |e|
-        [*e].each { |ae| return true if ae && ae.vulnerable? }
+        [*e].each { |ae| return true if ae && ae.vulnerable? } # rubocop:disable Style/SafeNavigation
       end
 
       return true unless [*@config_backups].empty?

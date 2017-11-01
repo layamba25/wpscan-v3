@@ -43,7 +43,7 @@ module WPScan
 
           target.in_scope_urls(Browser.get(url), '//link|//script') do |stylesheet_url, _tag|
             uri = Addressable::URI.parse(stylesheet_url)
-            next unless uri.query && uri.query.match(pattern)
+            next unless uri.query&.match(pattern)
 
             version = Regexp.last_match[1].to_s
 

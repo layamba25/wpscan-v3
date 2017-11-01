@@ -89,7 +89,7 @@ module WPScan
     def parse_style_tag(body, tag)
       value = body[/^\s*#{Regexp.escape(tag)}:[\t ]*([^\r\n]+)/i, 1]
 
-      value && !value.strip.empty? ? value.strip : nil
+      value && !value.strip.empty? ? value.strip : nil # rubocop:disable Style/SafeNavigation
     end
 
     def ==(other)

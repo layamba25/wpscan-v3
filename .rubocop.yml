@@ -1,4 +1,5 @@
 AllCops:
+  TargetRubyVersion: 2.3
   Exclude:
     - '*.gemspec'
     - 'vendor/**/*'
@@ -20,7 +21,5 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Performance/RegexpMatch:
   Enabled: false
-Style/SafeNavigation:
-  Enabled: false # Temporarily disabled due to bug: https://github.com/bbatsov/rubocop/issues/4741
 Lint/UriEscapeUnescape:
   Enabled: false
