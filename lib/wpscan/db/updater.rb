@@ -10,7 +10,7 @@ module WPScan
         dynamic_finders.yml wp_fingerprints.json LICENSE
       ].freeze
 
-      OLD_FILES = %w[wordpress.db dynamic_finders.yml].freeze
+      OLD_FILES = %w[wordpress.db dynamic_finders_01.yml].freeze
 
       attr_reader :repo_directory
 

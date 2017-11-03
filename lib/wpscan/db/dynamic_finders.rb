@@ -75,8 +75,9 @@ module WPScan
 
       def self.create_versions_finders
         versions_finders_configs.each do |slug, finders|
-          # Issue here, module is created even if there is no valid classes
-          # Could put the #maybe_ directly in the #send() BUT it would be checked everytime, which is kind of a waste
+          # Kind of an issue here, module is created even if there is no valid classes
+          # Could put the #maybe_ directly in the #send() BUT it would be checked everytime,
+          # which is kind of a waste
           mod = maybe_create_modudle(slug)
 
           finders.each do |finder_class, config|

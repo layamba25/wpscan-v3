@@ -33,8 +33,8 @@ describe WPScan::Finders::Plugins::Comments do
       let(:unique_expected) do
         expected = []
 
-        WPScan::DB::DynamicPluginFinders.comments.each_key do |slug|
-          expected << plugin(slug) if slug != 'rspec-failure'
+        WPScan::DB::DynamicPluginFinders.passive_comment_finder_configs.each_key do |slug|
+          expected << plugin(slug)
         end
 
         expected

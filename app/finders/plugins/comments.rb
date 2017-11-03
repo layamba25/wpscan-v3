@@ -14,8 +14,10 @@ module WPScan
           target.homepage_res.html.xpath('//comment()').each do |node|
             comment = node.text.to_s.strip
 
-            DB::DynamicPluginFinders.comments.each do |slug, config|
-              next unless comment =~ config['pattern']
+            DB::DynamicPluginFinders.passive_comment_finder_configs.each do |slug, config|
+              # TODO: Consider case of multiple configs for the same slug, ie with the class
+              # parameter in the YML
+              next unless comment =~ config['Comment']['pattern']
 
               plugin = WPScan::Plugin.new(slug, target, opts.merge(found_by: found_by, confidence: 70))
 
