@@ -2,7 +2,7 @@ module WPScan
   module DB
     # Dynamic Finders
     class DynamicFinders
-      ALLOWED_CLASSES = %i[Comment Xpath].freeze
+      ALLOWED_CLASSES = %i[Comment Xpath HeaderPattern].freeze
 
       # @return [ String ]
       def self.db_file
@@ -82,24 +82,26 @@ module WPScan
           finders.each do |finder_class, config|
             klass = config['class'] ? config['class'] : finder_class
 
-            next unless ALLOWED_CLASSES.include?(klass.to_sym) # or raise something ?
-
-            dynamic_version_finder_class(klass).create_child_class(mod, finder_class.to_sym, config)
+            version_finder_super_class(mod, klass).create_child_class(mod, finder_class.to_sym, config)
           end
         end
       end
 
       # The idea here would be to check if the class exist in
-      # the Finders::DynamicFinders::Plugins/Themes::klass or WPItemVersion::klass
+      # the Finders::DynamicFinders::Plugins/Themes::klass or WpItemVersion::klass
       # and return the related constant when one has been found.
       #
       # So far, the Finders::DynamicFinders::WPItemVersion is enought
       # as nothing else is used
       #
+      # @param [ Constant ] mod
       # @param [ String, Symbol ] klass
       # @return [ Constant ]
-      def dynamic_version_finder_class(klass)
-        "Finders::DynamicFinders::WPItemVersion::#{klass}".constantize
+      def self.version_finder_super_class(mod, klass)
+        raise "#{klass} is not allowed as a Dynamic Finder" unless ALLOWED_CLASSES.include?(klass.to_sym)
+        raise "#{mod} has already a #{klass} class" if mod.constants.include?(klass.to_sym)
+
+        "WPScan::Finders::DynamicFinder::WpItemVersion::#{klass}".constantize
       end
 
       # @param [ Symbol ] sym

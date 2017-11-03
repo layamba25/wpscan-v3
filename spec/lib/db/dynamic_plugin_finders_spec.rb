@@ -39,7 +39,7 @@ describe WPScan::DB::DynamicPluginFinders do
     # TODO: add some from other Finder class when there are
     # May do a full check (like an expected .yml with the correct configs instead of just
     # checking for keys)
-    its('versions_finders_configs.keys') { should include('shareaholic', 'rspec-failure') }
+    its('versions_finders_configs.keys') { should include('shareaholic') }
     its('versions_finders_configs.keys') { should_not include('wordpress-mobile-pack', 'addthis') }
   end
 
@@ -47,14 +47,57 @@ describe WPScan::DB::DynamicPluginFinders do
     xit
   end
 
-  describe '.create_version_finders' do
-    xit
+  describe '.create_versions_finders' do
+    before(:all) { described_class.create_versions_finders }
+
+    {
+      'Revslider' => %i[ReleaseLog],
+      'SitepressMultilingualCms' => %i[MetaGenerator],
+      'Shareaholic' => %i[MetaTag],
+      'AllInOneSeoPack' => %i[Comment],
+      'Gotmls' => %i[HeaderPattern]
+    }.each do |mod, klasses|
+      it "the module #{mod} has the dynamic classes" do
+        mod_constant = "WPScan::Finders::PluginVersion::#{mod}".constantize
+
+        expect(mod_constant.constants).to include(*klasses)
+      end
+    end
+  end
+
+  describe '.version_finder_super_class' do
+    let(:mod) { WPScan::Finders::PluginVersion::RspecFailure }
+
+    context 'when a class already exist' do
+      module WPScan
+        module Finders
+          module PluginVersion
+            module RspecFailure
+              class Comment
+              end
+            end
+          end
+        end
+      end
+
+      it 'raises an error' do
+        expect { subject.version_finder_super_class(mod, :Comment) }
+          .to raise_error('WPScan::Finders::PluginVersion::RspecFailure has already a Comment class')
+      end
+    end
+
+    context 'when a class is not allowed' do
+      it 'raises an error' do
+        expect { subject.version_finder_super_class(mod, :NotAllowed) }
+          .to raise_error('NotAllowed is not allowed as a Dynamic Finder')
+      end
+    end
   end
 
   describe '.method_missing' do
     context 'when the method matches a valid call' do
-      # TODO: Same as above, full check ?
-      its('passive_comment_finder_configs.keys') { should include('addthis', 'rspec-failure') }
+      # TODO: Full check ?
+      its('passive_comment_finder_configs.keys') { should include('addthis') }
       its('passive_comment_finder_configs.keys') { should_not include('shareaholic') }
 
       its('passive_xpath_finder_configs.keys') { should include('shareaholic') }

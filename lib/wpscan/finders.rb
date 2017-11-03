@@ -5,6 +5,7 @@ require 'wpscan/finders/dynamic_finder/finder'
 require 'wpscan/finders/dynamic_finder/wp_item_version/finder'
 require 'wpscan/finders/dynamic_finder/wp_item_version/comment'
 require 'wpscan/finders/dynamic_finder/wp_item_version/xpath'
+require 'wpscan/finders/dynamic_finder/wp_item_version/header_pattern'
 
 module WPScan
   # Custom Finders
