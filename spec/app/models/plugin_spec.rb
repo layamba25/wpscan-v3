@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe WPScan::Plugin do
-  subject(:plugin) { described_class.new(name, target, opts) }
-  let(:name)       { 'spec' }
+  subject(:plugin) { described_class.new(slug, target, opts) }
+  let(:slug)       { 'spec' }
   let(:target)     { WPScan::Target.new('http://wp.lab/') }
   let(:opts)       { {} }
 
@@ -62,14 +62,14 @@ describe WPScan::Plugin do
 
   describe '#latest_version, #last_updated' do
     context 'when none' do
-      let(:name) { 'vulnerable-not-popular' }
+      let(:slug) { 'vulnerable-not-popular' }
 
       its(:latest_version) { should be_nil }
       its(:last_updated) { should be_nil }
     end
 
     context 'when values' do
-      let(:name) { 'no-vulns-popular' }
+      let(:slug) { 'no-vulns-popular' }
 
       its(:latest_version) { should eql WPScan::Version.new('2.0') }
       its(:last_updated) { should eql '2015-05-16T00:00:00.000Z' }
@@ -78,7 +78,7 @@ describe WPScan::Plugin do
 
   describe '#outdated?' do
     context 'when last_version' do
-      let(:name) { 'no-vulns-popular' }
+      let(:slug) { 'no-vulns-popular' }
 
       context 'when no version' do
         before { expect(plugin).to receive(:version).at_least(1).and_return(nil) }
@@ -104,7 +104,7 @@ describe WPScan::Plugin do
     end
 
     context 'when no last_version' do
-      let(:name) { 'vulnerable-not-popular' }
+      let(:slug) { 'vulnerable-not-popular' }
 
       context 'when no version' do
         before { expect(plugin).to receive(:version).at_least(1).and_return(nil) }
@@ -127,7 +127,7 @@ describe WPScan::Plugin do
     end
 
     context 'when plugin not in the DB' do
-      let(:name) { 'not-in-db' }
+      let(:slug) { 'not-in-db' }
 
       it 'returns an empty array' do
         @expected = []
@@ -136,7 +136,7 @@ describe WPScan::Plugin do
 
     context 'when in the DB' do
       context 'when no vulnerabilities' do
-        let(:name) { 'no-vulns-popular' }
+        let(:slug) { 'no-vulns-popular' }
 
         it 'returns an empty array' do
           @expected = []
@@ -144,7 +144,7 @@ describe WPScan::Plugin do
       end
 
       context 'when vulnerabilities' do
-        let(:name) { 'vulnerable-not-popular' }
+        let(:slug) { 'vulnerable-not-popular' }
         let(:all_vulns) do
           [
             WPScan::Vulnerability.new(

@@ -2,7 +2,7 @@
 <% unless @plugins.empty? -%>
 <% last_index = @plugins.size - 1 -%>
 <% @plugins.each_with_index do |plugin, index| -%>
-  <%= plugin.name.to_json %>: {
+  <%= plugin.slug.to_json %>: {
     <%= render('@wp_item', wp_item: plugin) %>,
     <%= render('@finding', item: plugin) -%>,
     <% if plugin.version -%>

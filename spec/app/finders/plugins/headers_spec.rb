@@ -5,8 +5,8 @@ describe WPScan::Finders::Plugins::Headers do
   let(:target)     { WPScan::Target.new(url) }
   let(:url)        { 'http://wp.lab/' }
 
-  def plugin(name)
-    WPScan::Plugin.new(name, target, found_by: 'Headers (Passive Detection)', confidence: 60)
+  def plugin(slug)
+    WPScan::Plugin.new(slug, target, found_by: 'Headers (Passive Detection)', confidence: 60)
   end
 
   describe '#passive' do

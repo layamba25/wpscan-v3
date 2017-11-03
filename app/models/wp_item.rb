@@ -9,16 +9,16 @@ module WPScan
     READMES    = %w[readme.txt README.txt README.md readme.md Readme.txt].freeze
     CHANGELOGS = %w[changelog.txt CHANGELOG.md changelog.md].freeze
 
-    attr_reader :uri, :name, :detection_opts, :version_detection_opts, :target, :db_data
+    attr_reader :uri, :slug, :detection_opts, :version_detection_opts, :target, :db_data
 
-    # @param [ String ] name The plugin/theme name
+    # @param [ String ] slug The plugin/theme slug
     # @param [ Target ] target The targeted blog
     # @param [ Hash ] opts
     # @option opts [ Symbol ] :mode The detection mode to use
     # @option opts [ Hash ]   :version_detection The options to use when looking for the version
     # @option opts [ String ] :url The URL of the item
-    def initialize(name, target, opts = {})
-      @name           = URI.decode(name)
+    def initialize(slug, target, opts = {})
+      @slug           = URI.decode(slug)
       @target         = target
       @uri            = Addressable::URI.parse(opts[:url]) if opts[:url]
 
@@ -97,16 +97,16 @@ module WPScan
     def ==(other)
       return false unless self.class == other.class
 
-      name == other.name
+      slug == other.slug
     end
 
     def to_s
-      name
+      slug
     end
 
-    # @return [ Symbol ] The Class name associated to the item name
-    def classify_name
-      name.to_s.tr('-', '_').camelize.to_s.to_sym
+    # @return [ Symbol ] The Class symbol associated to the item
+    def classify
+      slug.to_s.tr('-', '_').camelize.to_s.to_sym
     end
 
     # @return [ String ] The readme url if found

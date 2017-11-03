@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe WPScan::WpItem do
-  subject(:wp_item)  { described_class.new(name, target, opts) }
-  let(:name)         { 'test_item' }
+  subject(:wp_item)  { described_class.new(slug, target, opts) }
+  let(:slug)         { 'test_item' }
   let(:target)       { WPScan::Target.new(url) }
   let(:url)          { 'http://wp.lab/' }
   let(:opts)         { {} }
@@ -11,7 +11,7 @@ describe WPScan::WpItem do
 
   describe '#new' do
     context 'when no opts' do
-      its(:name) { should eql name }
+      its(:slug) { should eql slug }
       its(:detection_opts) { should eql(mode: nil) }
       its(:version_detection_opts) { should eql({}) }
     end
@@ -23,10 +23,10 @@ describe WPScan::WpItem do
       its(:version_detection_opts) { should eql(mode: :aggressive) }
     end
 
-    context 'when the name contains encoded chars' do
-      let(:name) { 'theme%212%23a' }
+    context 'when the slug contains encoded chars' do
+      let(:slug) { 'theme%212%23a' }
 
-      its(:name) { should eql 'theme!2#a' }
+      its(:slug) { should eql 'theme!2#a' }
     end
   end
 
@@ -53,9 +53,9 @@ describe WPScan::WpItem do
   end
 
   describe '#==' do
-    context 'when the same name' do
+    context 'when the same slug' do
       it 'returns true' do
-        other = described_class.new(name, target)
+        other = described_class.new(slug, target)
 
         expect(wp_item == other).to be true
       end
@@ -67,7 +67,7 @@ describe WPScan::WpItem do
       end
     end
 
-    context 'when different names' do
+    context 'when different slugs' do
       it 'returns false' do
         other = described_class.new('another', target)
 
@@ -93,11 +93,11 @@ describe WPScan::WpItem do
   end
 
   describe '#to_s' do
-    its(:to_s) { should eql name }
+    its(:to_s) { should eql slug }
   end
 
-  describe '#classify_name' do
-    its(:classify_name) { should eql :TestItem }
+  describe '#classify' do
+    its(:classify) { should eql :TestItem }
   end
 
   describe '#readme_url' do

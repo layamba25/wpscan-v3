@@ -7,7 +7,7 @@ module WPScan
         #
         # @return [ Array<Plugin> ]
         def passive(opts = {})
-          plugin_names_from_headers(opts).reduce([]) do |a, e|
+          plugin_slugs_from_headers(opts).reduce([]) do |a, e|
             a << WPScan::Plugin.new(e, target, opts.merge(found_by: found_by, confidence: 60))
           end
         end
@@ -16,7 +16,7 @@ module WPScan
         # WP-Super-Cache: Served supercache file from PHP
         #
         # @return [ Array<String> ]
-        def plugin_names_from_headers(_opts = {})
+        def plugin_slugs_from_headers(_opts = {})
           found   = []
           headers = target.homepage_res.headers
 

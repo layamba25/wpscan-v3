@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe WPScan::Finders::ThemeVersion::WooFrameworkMetaGenerator do
   subject(:finder) { described_class.new(theme) }
-  let(:theme)      { WPScan::Theme.new(name, target) }
+  let(:theme)      { WPScan::Theme.new(slug, target) }
   let(:target)     { WPScan::Target.new('http://wp.lab/') }
   let(:fixtures)   { File.join(FINDERS_FIXTURES, 'theme_version', 'woo_framework_meta_generator') }
 
@@ -18,16 +18,16 @@ describe WPScan::Finders::ThemeVersion::WooFrameworkMetaGenerator do
       expect(finder.passive).to eql @expected
     end
 
-    context 'when the theme name does not match' do
-      let(:name) { 'spec' }
+    context 'when the theme slug does not match' do
+      let(:slug) { 'spec' }
 
       it 'returns nil' do
         @expected = nil
       end
     end
 
-    context 'when the theme name matches' do
-      let(:name) { 'Editorial' }
+    context 'when the theme slug matches' do
+      let(:slug) { 'Editorial' }
 
       it 'return the expected version' do
         @expected = WPScan::Version.new(

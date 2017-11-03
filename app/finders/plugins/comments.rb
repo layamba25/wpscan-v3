@@ -14,10 +14,10 @@ module WPScan
           target.homepage_res.html.xpath('//comment()').each do |node|
             comment = node.text.to_s.strip
 
-            DB::DynamicPluginFinders.comments.each do |name, config|
+            DB::DynamicPluginFinders.comments.each do |slug, config|
               next unless comment =~ config['pattern']
 
-              plugin = WPScan::Plugin.new(name, target, opts.merge(found_by: found_by, confidence: 70))
+              plugin = WPScan::Plugin.new(slug, target, opts.merge(found_by: found_by, confidence: 70))
 
               found << plugin unless opts[:unique] && found.include?(plugin)
             end

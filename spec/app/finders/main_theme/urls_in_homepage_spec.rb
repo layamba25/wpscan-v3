@@ -23,9 +23,9 @@ describe WPScan::Finders::MainTheme::UrlsInHomepage do
     it 'returns the expected Themes' do
       @expected = []
 
-      { 'twentyfifteen' => 6, 'yolo' => 4, 'test' => 2 }.each do |name, confidence|
+      { 'twentyfifteen' => 6, 'yolo' => 4, 'test' => 2 }.each do |slug, confidence|
         @expected << WPScan::Theme.new(
-          name, target, found_by: 'Urls In Homepage (Passive Detection)', confidence: confidence
+          slug, target, found_by: 'Urls In Homepage (Passive Detection)', confidence: confidence
         )
       end
 

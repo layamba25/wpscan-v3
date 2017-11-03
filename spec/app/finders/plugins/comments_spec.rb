@@ -6,8 +6,8 @@ describe WPScan::Finders::Plugins::Comments do
   let(:url)        { 'http://wp.lab/' }
   let(:fixtures)   { File.join(FINDERS_FIXTURES, 'plugins', 'comments') }
 
-  def plugin(name)
-    WPScan::Plugin.new(name, target, found_by: 'Comments (Passive Detection)', confidence: 70)
+  def plugin(slug)
+    WPScan::Plugin.new(slug, target, found_by: 'Comments (Passive Detection)', confidence: 70)
   end
 
   describe '#passive' do
@@ -33,8 +33,8 @@ describe WPScan::Finders::Plugins::Comments do
       let(:unique_expected) do
         expected = []
 
-        WPScan::DB::DynamicPluginFinders.comments.each_key do |name|
-          expected << plugin(name) if name != 'rspec-failure'
+        WPScan::DB::DynamicPluginFinders.comments.each_key do |slug|
+          expected << plugin(slug) if slug != 'rspec-failure'
         end
 
         expected

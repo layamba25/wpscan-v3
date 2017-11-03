@@ -25,7 +25,7 @@ module WPScan
         #
         # @param [ WPScan::Plugin ] plugin
         def load_specific_finders(plugin)
-          module_name = plugin.classify_name.to_sym
+          module_name = plugin.classify
 
           return unless Finders::PluginVersion.constants.include?(module_name)
 

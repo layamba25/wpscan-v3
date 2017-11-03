@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe WPScan::Finders::PluginVersion::Base do
   subject(:plugin_version) { described_class.new(plugin) }
-  let(:plugin)             { WPScan::Plugin.new(name, target) }
+  let(:plugin)             { WPScan::Plugin.new(slug, target) }
   let(:target)             { WPScan::Target.new('http://wp.lab/') }
-  let(:name)               { 'spec' }
+  let(:slug)               { 'spec' }
   let(:default_finders)    { %w[Readme] }
 
   describe '#finders' do
@@ -35,9 +35,9 @@ describe WPScan::Finders::PluginVersion::Base do
         'w3-total-cache' => %w[Headers Comments],
         'LayerSlider' => %w[TranslationFile],
         'revslider' => %w[ReleaseLog Comments]
-      }.each do |plugin_name, specific_finders|
-        context "when #{plugin_name} plugin" do
-          let(:name) { plugin_name }
+      }.each do |plugin_slug, specific_finders|
+        context "when #{plugin_slug} plugin" do
+          let(:slug) { plugin_slug }
 
           it 'contains the expected finders' do
             @expected = default_finders + specific_finders

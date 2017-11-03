@@ -7,13 +7,13 @@ module WPScan
     class Enumeration < CMSScanner::Controller::Base
       def before_scan
         # Create the Dynamic PluginVersion Finders
-        DB::DynamicPluginFinders.db_data.each do |name, config|
+        DB::DynamicPluginFinders.db_data.each do |slug, config|
           %w[Comments].each do |klass|
             next unless config[klass] && config[klass]['version']
 
-            constant_name = name.tr('-', '_').camelize
+            constant_name = slug.tr('-', '_').camelize.to_sym
 
-            unless Finders::PluginVersion.constants.include?(constant_name.to_sym)
+            unless Finders::PluginVersion.constants.include?(constant_name)
               Finders::PluginVersion.const_set(constant_name, Module.new)
             end
 

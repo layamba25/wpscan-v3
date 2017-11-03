@@ -1,6 +1,6 @@
 {
   "main_theme": {
-    "name": "test",
+    "slug": "test",
     "location": "http://ex.lo/wp-content/themes/test/",
     "latest_version": null,
     "last_updated": null,

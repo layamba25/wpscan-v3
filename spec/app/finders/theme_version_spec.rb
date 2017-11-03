@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe WPScan::Finders::ThemeVersion::Base do
   subject(:theme_version) { described_class.new(theme) }
-  let(:theme)             { WPScan::Plugin.new(name, target) }
+  let(:theme)             { WPScan::Plugin.new(slug, target) }
   let(:target)            { WPScan::Target.new('http://wp.lab/') }
-  let(:name)              { 'spec' }
+  let(:slug)              { 'spec' }
   let(:default_finders)   { %w[Style WooFrameworkMetaGenerator] }
 
   describe '#finders' do
@@ -21,9 +21,9 @@ describe WPScan::Finders::ThemeVersion::Base do
 
     context 'when specific finders' do
       {
-      }.each do |theme_name, specific_finders|
-        context "when #{theme_name} theme" do
-          let(:name) { theme_name }
+      }.each do |theme_slug, specific_finders|
+        context "when #{theme_slug} theme" do
+          let(:slug) { theme_slug }
 
           it 'contains the expected finders' do
             @expected = default_finders + specific_finders

@@ -30,7 +30,7 @@ module WPScan
             code = tag.text.to_s
             next if code.empty?
 
-            code.scan(item_code_pattern(type)).flatten.uniq.each { |name| found << name }
+            code.scan(item_code_pattern(type)).flatten.uniq.each { |slug| found << slug }
           end
 
           uniq ? found.uniq.sort : found.sort

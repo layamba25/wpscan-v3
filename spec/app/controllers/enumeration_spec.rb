@@ -73,11 +73,11 @@ describe WPScan::Controller::Enumeration do
 
     context 'when everything is fine' do
       it 'creates the expected classes' do
-        WPScan::DB::DynamicPluginFinders.db_data.each do |name, config|
+        WPScan::DB::DynamicPluginFinders.db_data.each do |slug, config|
           %w[Comments].each do |klass|
-            next unless config[klass] && config[klass]['version'] && name != 'rspec-failure'
+            next unless config[klass] && config[klass]['version'] && slug != 'rspec-failure'
 
-            constant_name = name.tr('-', '_').camelize
+            constant_name = slug.tr('-', '_').camelize.to_sym
 
             # Will have to change the below if new classes are added
             defined_klass = WPScan::Finders::PluginVersion.const_get("#{constant_name}::Comments")
