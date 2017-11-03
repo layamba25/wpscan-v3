@@ -8,25 +8,25 @@ describe WPScan::DB::DynamicPluginFinders do
       it 'returns an empty hash' do
         expect(subject.finder_configs('aaaa')).to eql({})
       end
+    end
 
-      context 'when the given class is allowed' do
-        context 'when aggressive argument is false' do
-          it 'returns only the configs w/o a path parameter' do
-            configs = subject.finder_configs('Comment')
+    context 'when the given class is allowed' do
+      context 'when aggressive argument is false' do
+        it 'returns only the configs w/o a path parameter' do
+          configs = subject.finder_configs(:Comment)
 
-            expect(configs.keys).to include('wp-super-cache', 'rspec-failure')
-            # TODO: when there is one with a path
-            expect(configs.keys).to_not include('shareaholic')
+          expect(configs.keys).to include('wp-super-cache', 'rspec-failure')
+          # TODO: when there is one with a path
+          expect(configs.keys).to_not include('shareaholic')
 
-            expect(configs['rspec-failure']['Comment']['pattern']).to be_a Regexp
-            expect(configs['rspec-failure']['Comment']['version']).to eql true
-          end
+          expect(configs['rspec-failure']['Comment']['pattern']).to be_a Regexp
+          expect(configs['rspec-failure']['Comment']['version']).to eql true
         end
+      end
 
-        context 'when aggressive argument is true' do
-          it 'returns only the configs with a path parameter' do
-            # TODO
-          end
+      context 'when aggressive argument is true' do
+        it 'returns only the configs with a path parameter' do
+          # TODO
         end
       end
     end

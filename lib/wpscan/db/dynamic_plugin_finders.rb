@@ -10,16 +10,6 @@ module WPScan
       def self.version_finder_module
         Finders::PluginVersion
       end
-
-      # @return [ Hash ]
-      def self.comments
-        @comments ||= finder_configs('Comment')
-      end
-
-      # @return [ Hash ]
-      def self.urls_in_page
-        @urls_in_page ||= finder_configs('UrlsInPage')
-      end
     end
   end
 end

@@ -167,4 +167,4 @@ plugins:
   rspec-failure: # Keep it at the bottom, otherwise kittens will die
     Comment:
       version: true
-      pattern: !ruby/regexp /this one should raise an excception/i
+      pattern: !ruby/regexp /this one should raise an exception/i

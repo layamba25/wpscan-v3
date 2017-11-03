@@ -2,7 +2,7 @@ module WPScan
   module DB
     # Dynamic Finders
     class DynamicFinders
-      ALLOWED_CLASSES = %w[Comment Xpath UrlsInPage].freeze
+      ALLOWED_CLASSES = %i[Comment Xpath].freeze
 
       # @return [ String ]
       def self.db_file
@@ -14,8 +14,7 @@ module WPScan
         @db_data ||= YAML.safe_load(File.read(db_file), [Regexp])
       end
 
-      # @param [ String ] finder_class
-      #
+      # @param [ Symbol ] finder_class
       # @return [ Hash ]
       def self.finder_configs(finder_class, aggressive = false)
         configs = {}
@@ -33,7 +32,7 @@ module WPScan
           fs.each do |finder_name, config|
             klass = config['class'] ? config['class'] : finder_name
 
-            next unless klass == finder_class
+            next unless klass.to_sym == finder_class
 
             configs[slug] ||= {}
             configs[slug][finder_name] = config # .dup ?
@@ -80,22 +79,37 @@ module WPScan
           # Could put the #maybe_ directly in the #send() BUT it would be checked everytime, which is kind of a waste
           mod = maybe_create_modudle(slug)
 
-          finders.each do |finder_name, config|
-            klass = config['class'] ? config['class'] : finder_name
+          finders.each do |finder_class, config|
+            klass = config['class'] ? config['class'] : finder_class
 
-            next unless ALLOWED_CLASSES.include?(klass) # or raise something ?
+            next unless ALLOWED_CLASSES.include?(klass.to_sym) # or raise something ?
 
-            send("create_#{klass.underscore}_finder".to_sym, mod, finder_name, config)
+            send("create_#{klass.underscore}_version_finder".to_sym, mod, finder_class.to_sym, config)
           end
         end
       end
 
+      # The idea here would be to check if the class exist in
+      # the Finders::DynamicFinders::Plugins/Themes::klass or WPItemVersion::klass
+      # and return the related constant when one has been found. Then, delegate the creation
+      # of the finder to this class instead of having the create_xx_version_finder methods here
+      #
+      # So far, the Finders::DynamicFinders::WPItemVersion is enought
+      # as nothing else is used
+      #
+      # @param [ Symbol ]
+      # @return [ Constant ]
+      def dynamic_version_finder_class(klass)
+        "Finders::DynamicFinders::WPItemVersion::#{klass}".constantize
+      end
+
+      # TODO: move those methods in each related finder class ?
       # @param [ Constant ] mod
-      # @param [ String ] finder_name
+      # @param [ Symbol ] finder_class
       # @param [ Hash ] config
-      def self.create_xpath_finder(mod, finder_name, config)
+      def self.create_xpath_version_finder(mod, finder_class, config)
         mod.const_set(
-          finder_name.to_sym, Class.new(Finders::FinderChild) do
+          finder_class, Class.new(Finders::DynamicFinders::WPItemVersion::Xpath) do
             const_set(:PATH, config['path'])
             const_set(:XPATH, config['xpath'])
             const_set(:PATTERN, config['pattern'] || /\A(?<version>[\d\.]+)/i)
@@ -105,11 +119,11 @@ module WPScan
       end
 
       # @param [ Constant ] mod
-      # @param [ String ] finder_name
+      # @param [ Symbol ] finder_class
       # @param [ Hash ] config
-      def self.create_comment_finder(mod, finder_name, config)
+      def self.create_comment_version_finder(mod, finder_class, config)
         mod.const_set(
-          finder_name.to_sym, Class.new(Finders::FinderChild) do
+          finder_class, Class.new(Finders::DynamicFinders::WPItemVersion::Comment) do
             const_set(:PATH, config['path'])
             const_set(:PATTERN, config['pattern'])
             const_set(:CONFIDENCE, config['confidence'] || 30)
@@ -121,7 +135,7 @@ module WPScan
       def self.method_missing(sym)
         super unless sym =~ /\A(passive|aggressive)_(.*)_finder_configs\z/i
 
-        finder_class = Regexp.last_match[2].camelize
+        finder_class = Regexp.last_match[2].camelize.to_sym
 
         # TODO: better error
         raise StandardError, "#{finder_class} not allowed" unless ALLOWED_CLASSES.include?(finder_class)
