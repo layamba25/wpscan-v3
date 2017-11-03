@@ -6,7 +6,7 @@ module WPScan
 
       # @return [ String ]
       def self.db_file
-        @db_file ||= File.join(DB_DIR, 'dynamic_finders_01.yml')
+        @db_file ||= File.join(DB_DIR, 'dynamic_finders.yml')
       end
 
       # @return [ Hash ]
@@ -84,51 +84,22 @@ module WPScan
 
             next unless ALLOWED_CLASSES.include?(klass.to_sym) # or raise something ?
 
-            send("create_#{klass.underscore}_version_finder".to_sym, mod, finder_class.to_sym, config)
+            dynamic_version_finder_class(klass).create_child_class(mod, finder_class.to_sym, config)
           end
         end
       end
 
       # The idea here would be to check if the class exist in
       # the Finders::DynamicFinders::Plugins/Themes::klass or WPItemVersion::klass
-      # and return the related constant when one has been found. Then, delegate the creation
-      # of the finder to this class instead of having the create_xx_version_finder methods here
+      # and return the related constant when one has been found.
       #
       # So far, the Finders::DynamicFinders::WPItemVersion is enought
       # as nothing else is used
       #
-      # @param [ Symbol ]
+      # @param [ String, Symbol ] klass
       # @return [ Constant ]
       def dynamic_version_finder_class(klass)
         "Finders::DynamicFinders::WPItemVersion::#{klass}".constantize
-      end
-
-      # TODO: move those methods in each related finder class ?
-      # @param [ Constant ] mod
-      # @param [ Symbol ] finder_class
-      # @param [ Hash ] config
-      def self.create_xpath_version_finder(mod, finder_class, config)
-        mod.const_set(
-          finder_class, Class.new(Finders::DynamicFinders::WPItemVersion::Xpath) do
-            const_set(:PATH, config['path'])
-            const_set(:XPATH, config['xpath'])
-            const_set(:PATTERN, config['pattern'] || /\A(?<version>[\d\.]+)/i)
-            const_set(:CONFIDENCE, config['confidence'] || 50)
-          end
-        )
-      end
-
-      # @param [ Constant ] mod
-      # @param [ Symbol ] finder_class
-      # @param [ Hash ] config
-      def self.create_comment_version_finder(mod, finder_class, config)
-        mod.const_set(
-          finder_class, Class.new(Finders::DynamicFinders::WPItemVersion::Comment) do
-            const_set(:PATH, config['path'])
-            const_set(:PATTERN, config['pattern'])
-            const_set(:CONFIDENCE, config['confidence'] || 30)
-          end
-        )
       end
 
       # @param [ Symbol ] sym

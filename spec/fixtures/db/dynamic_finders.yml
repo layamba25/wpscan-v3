@@ -1,0 +1,43 @@
+plugins:
+  addthis:
+    Comment:
+      pattern: !ruby/regexp /AddThis Settings Begin/i
+  all-in-one-seo-pack:
+    Comment:
+      pattern: !ruby/regexp '/\A\/?all in one seo pack(?: ([^\s]+) by)?/i'
+      version: true
+  shareaholic:
+    MetaGenerator:
+      class: Xpath
+      xpath: '//meta[@name="shareaholic:wp_version"]/@content'
+      # pattern not needed as will macth the default
+      version: true
+  revslider:
+    ReleaseLog:
+      class: Xpath
+      path: release_log.html
+      xpath: "//div/h3[@class='version-number']" # TODO: get the first element in the xpath
+      pattern: !ruby/regexp /\AVersion (?<version>[\d\.]+).*\z/i
+      version: true
+      confidence: 70
+  sitepress-multilingual-cms:
+    MetaGenerator:
+      class: Xpath
+      xpath: '//meta[name="generator"]/@content'
+      pattern: !ruby/regexp /\AWPML\sver:(?<version>[\d\.]+)\sstt/i
+      version: true
+  wordpress-mobile-pack:
+    UrlInHomePage:
+      class: Xpath
+      xpath: '//a[starts-with(@href,"?wpmp_switcher=")]'
+  gotmls:
+    HeaderPattern:
+      path: index.php
+      header: Location
+      pattern: !ruby/regexp /report\.php\?ver=(?<version>[\d\.^&]+)\&/i
+      version: true
+      confidence: 80
+  rspec-failure: # Keep it at the bottom, otherwise kittens will die
+    Comment:
+      version: true
+      pattern: !ruby/regexp /this one should raise an exception/i

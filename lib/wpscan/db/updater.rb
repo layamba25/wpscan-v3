@@ -7,7 +7,7 @@ module WPScan
       FILES = %w[
         plugins.json themes.json wordpresses.json
         timthumbs-v3.txt user-agents.txt config_backups.txt
-        dynamic_finders_01.yml wp_fingerprints.json LICENSE
+        dynamic_finders.yml wp_fingerprints.json LICENSE
       ].freeze
 
       OLD_FILES = %w[wordpress.db dynamic_finders.yml].freeze

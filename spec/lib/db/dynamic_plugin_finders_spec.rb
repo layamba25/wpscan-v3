@@ -13,20 +13,23 @@ describe WPScan::DB::DynamicPluginFinders do
     context 'when the given class is allowed' do
       context 'when aggressive argument is false' do
         it 'returns only the configs w/o a path parameter' do
-          configs = subject.finder_configs(:Comment)
+          configs = subject.finder_configs(:Xpath)
 
-          expect(configs.keys).to include('wp-super-cache', 'rspec-failure')
+          expect(configs.keys).to include('wordpress-mobile-pack', 'shareaholic')
           # TODO: when there is one with a path
-          expect(configs.keys).to_not include('shareaholic')
+          expect(configs.keys).to_not include('revslider')
 
-          expect(configs['rspec-failure']['Comment']['pattern']).to be_a Regexp
-          expect(configs['rspec-failure']['Comment']['version']).to eql true
+          expect(configs['sitepress-multilingual-cms']['MetaGenerator']['pattern']).to be_a Regexp
+          expect(configs['sitepress-multilingual-cms']['MetaGenerator']['version']).to eql true
         end
       end
 
       context 'when aggressive argument is true' do
         it 'returns only the configs with a path parameter' do
-          # TODO
+          configs = subject.finder_configs(:Xpath, true)
+
+          expect(configs.keys).to include('revslider')
+          expect(configs.keys).to_not include('shareaholic')
         end
       end
     end
@@ -34,8 +37,10 @@ describe WPScan::DB::DynamicPluginFinders do
 
   describe '.versions_finders_configs' do
     # TODO: add some from other Finder class when there are
-    its('versions_finders_configs.keys') { should include('rspec-failure') }
-    its('versions_finders_configs.keys') { should_not include('wp-super-cache') }
+    # May do a full check (like an expected .yml with the correct configs instead of just
+    # checking for keys)
+    its('versions_finders_configs.keys') { should include('shareaholic', 'rspec-failure') }
+    its('versions_finders_configs.keys') { should_not include('wordpress-mobile-pack', 'addthis') }
   end
 
   describe '.maybe_create_module' do
@@ -48,11 +53,14 @@ describe WPScan::DB::DynamicPluginFinders do
 
   describe '.method_missing' do
     context 'when the method matches a valid call' do
-      its('passive_comment_finder_configs.keys') { should include('wp-super-cache') }
+      # TODO: Same as above, full check ?
+      its('passive_comment_finder_configs.keys') { should include('addthis', 'rspec-failure') }
       its('passive_comment_finder_configs.keys') { should_not include('shareaholic') }
 
-      its('aggressive_comment_finder_configs.keys') { should_not include('wp-super-cache') }
-      # its('aggressive_comment_finder_configs.keys') { should include('??') }
+      its('passive_xpath_finder_configs.keys') { should include('shareaholic') }
+      its('passive_xpath_finder_configs.keys') { should_not include('revslider') }
+      its('aggressive_xpath_finder_configs.keys') { should_not include('wordpress-mobile-pack') }
+      its('aggressive_xpath_finder_configs.keys') { should include('revslider') }
     end
 
     context 'when the method does not match a valid call' do

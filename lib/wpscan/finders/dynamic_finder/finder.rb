@@ -3,11 +3,21 @@ module WPScan
     module DynamicFinder
       # To be used as a base when creating a dynamic finder
       class Finder
+        # Has to be overriden in child classes
+        #
+        # @param [ Constant ] mod
+        # @param [ Constant ] klass
+        # @param [ Hash ] config
+        def self.create_child_class(_mod, _klass, _config)
+          raise NoMethodError
+        end
+
         # This method has to be overriden in child classes
-        # @param [ Mixed ? ] url
+        #
+        # @param [ Typhoeus::Response ] response
         # @param [ Hash ] opts
-        # @return [ Array<> ]
-        def find(_url, _opts = {})
+        # @return [ Mixed ]
+        def find(_response, _opts = {})
           raise NoMethodError
         end
 
@@ -22,8 +32,7 @@ module WPScan
         def aggressive(opts = {})
           return unless self.class::PATH
 
-          # Maybe use Browser.get(target.url(self.class::PATH)) ?
-          find(target.url(self.class::PATH), opts)
+          find(browser.get(target.url(self.class::PATH)), opts)
         end
       end
     end
