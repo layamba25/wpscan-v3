@@ -35,7 +35,7 @@ module WPScan
             next unless klass.to_sym == finder_class
 
             configs[slug] ||= {}
-            configs[slug][finder_name] = config # .dup ?
+            configs[slug][finder_name] = config # .dup
           end
         end
 
@@ -53,7 +53,7 @@ module WPScan
             next unless config.key?('version')
 
             @versions_finders[slug] ||= {}
-            @versions_finders[slug][finder_name] = config # .dup ?
+            @versions_finders[slug][finder_name] = config # .dup
           end
         end
 
@@ -119,9 +119,9 @@ module WPScan
         )
       end
 
-      def self.respond_to_missing?(sym)
-        # TODO
-      end
+      #def self.respond_to_missing?(sym)
+      # TODO
+      #end
     end
   end
 end
