@@ -12,15 +12,25 @@ module WPScan
               klass, Class.new(self) do
                 const_set(:PATH, config['path'])
                 const_set(:HEADER, config['header'])
-                const_set(:PATTERN, config['pattern'] || /\A(?<version>[\d\.]+)/i)
-                const_set(:CONFIDENCE, config['confidence'] || 50)
+                const_set(:PATTERN, config['pattern'])
+                const_set(:CONFIDENCE, config['confidence'] || 30)
               end
             )
           end
 
+          # @param [ Typhoeus::Response ] response
+          # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            # TODO
+            return unless response.headers&.key?(self.class::HEADER)
+            return unless response.headers[self.class::HEADER].to_s =~ self.class::PATTERN
+
+            WPScan::Version.new(
+              Regexp.last_match[:v],
+              found_by: found_by,
+              confidence: self.class::CONFIDENCE,
+              interesting_entries: ["#{response.effective_url}, Match: '#{Regexp.last_match}'"]
+            )
           end
         end
       end
