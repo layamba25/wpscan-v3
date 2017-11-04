@@ -109,7 +109,7 @@ plugins:
     ReleaseLog:
       class: Xpath
       path: release_log.html
-      xpath: "//div/h3[@class='version-number']" # TODO: get the first element in the xpath
+      xpath: "(//div/h3[@class='version-number'])[1]"
       pattern: !ruby/regexp /\AVersion (?<v>[\d\.]+).*\z/i
       version: true
       confidence: 70
@@ -117,7 +117,6 @@ plugins:
     MetaTag:
       class: Xpath
       xpath: '//meta[@name="shareaholic:wp_version"]/@content'
-      # pattern not needed as will macth the default
       version: true
   simple-share-button-adder:
     Comment:
@@ -126,7 +125,7 @@ plugins:
   sitepress-multilingual-cms:
     MetaGenerator:
       class: Xpath
-      xpath: '//meta[name="generator"]/@content'
+      xpath: '//meta[@name="generator"]/@content'
       pattern: !ruby/regexp /\AWPML\sver:(?<v>[\d\.]+)\sstt/i
       version: true
   ultimate-google-analytics:
