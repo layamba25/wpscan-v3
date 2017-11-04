@@ -1,5 +1,4 @@
 require 'wpscan/finders/finder/wp_version/smart_url_checker'
-require 'wpscan/finders/finder/plugin_version/comments'
 
 require 'wpscan/finders/dynamic_finder/finder'
 require 'wpscan/finders/dynamic_finder/wp_item_version/finder'

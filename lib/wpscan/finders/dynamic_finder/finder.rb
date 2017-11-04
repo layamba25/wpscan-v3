@@ -2,7 +2,7 @@ module WPScan
   module Finders
     module DynamicFinder
       # To be used as a base when creating a dynamic finder
-      class Finder
+      class Finder < CMSScanner::Finders::Finder
         # Has to be overriden in child classes
         #
         # @param [ Constant ] mod
@@ -32,7 +32,7 @@ module WPScan
         def aggressive(opts = {})
           return unless self.class::PATH
 
-          find(browser.get(target.url(self.class::PATH)), opts)
+          find(Browser.get(target.url(self.class::PATH)), opts)
         end
       end
     end

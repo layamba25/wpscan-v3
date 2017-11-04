@@ -3,7 +3,7 @@ module WPScan
     module DynamicFinder
       module WpItemVersion
         # Version finder in Comment
-        class Comment < Finder
+        class Comment < WPScan::Finders::DynamicFinder::WpItemVersion::Finder
           # @param [ Constant ] mod
           # @param [ Constant ] klass
           # @param [ Hash ] config
@@ -26,10 +26,10 @@ module WPScan
               # Avoid nil version, i.e a pattern allowing both versionable and non
               # versionable string to be detected
 
-              next unless match[1]
+              next unless match[:v]
 
               return WPScan::Version.new(
-                match[1],
+                match[:v],
                 found_by: found_by,
                 confidence: self.class::CONFIDENCE,
                 interesting_entries: ["#{response.effective_url}, Match: '#{match}'"]

@@ -68,8 +68,9 @@ module WebMock
 end
 # rubocop:enabled all
 
-SPECS            = Pathname.new(__FILE__).dirname.to_s
-FIXTURES         = File.join(SPECS, 'fixtures')
-FINDERS_FIXTURES = File.join(FIXTURES, 'finders')
+SPECS                    = Pathname.new(__FILE__).dirname.to_s
+FIXTURES                 = File.join(SPECS, 'fixtures')
+FINDERS_FIXTURES         = File.join(FIXTURES, 'finders')
+DYNAMIC_FINDERS_FIXTURES = File.join(FIXTURES, 'dynamic_finders')
 
 redefine_constant(:DB_DIR, File.join(FIXTURES, 'db'))
