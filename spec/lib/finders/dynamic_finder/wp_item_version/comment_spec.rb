@@ -1,63 +1,97 @@
 require 'spec_helper'
 
-# Not sure it's a good idea to have this here
-module WPScan
-  module Finders
-    module DynamicFinder
-      module WpItemVersion
+describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
+  module WPScan
+    module Finders
+      module PluginVersion
+        # Needed to be able to test the below
         module Rspec
-          # Spec class to have a custom PATTERN
-          class Comment < WPScan::Finders::DynamicFinder::WpItemVersion::Comment
-            PATH = nil
-            PATTERN = /some version: (?<v>[\d\.]+)/i
-            CONFIDENCE = 50
-          end
         end
       end
     end
   end
-end
 
-describe WPScan::Finders::DynamicFinder::WpItemVersion::Rspec::Comment do
-  subject(:finder)    { described_class.new(plugin) }
+  subject(:finder)    { finder_class.new(plugin) }
   let(:plugin)        { WPScan::Plugin.new('spec', target) }
   let(:target)        { WPScan::Target.new('http://wp.lab/') }
   let(:fixtures)      { File.join(DYNAMIC_FINDERS_FIXTURES, 'wp_item_version', 'comment') }
   let(:response_body) { File.read(File.join(fixtures, 'index.html')) }
 
-  describe '#passive, #find' do
+  let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
+  let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::Comment }
+  let(:finder_config) { { 'pattern' => /some version: (?<v>[\d\.]+)/i } }
+
+  before { described_class.create_child_class(finder_module, :Comment, finder_config) }
+  after  { finder_module.send(:remove_const, :Comment) }
+
+  describe '.create_child_class' do
+    context 'when no PATH and CONFIDENCE' do
+      it 'contains the expected constants to their default values' do
+        # Doesn't work, dunno why
+        # expect(finder_module.const_get(:Comment)).to be_a described_class
+        # expect(finder_class.is_a?(described_class)).to eql true
+        # expect(finder_class).to be_a described_class
+
+        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::CONFIDENCE).to eql 50
+        expect(finder_class::PATH).to eql nil
+      end
+    end
+
+    context 'when CONFIDENCE' do
+      let(:finder_config) { super().merge('confidence' => 30) }
+
+      it 'contains the expected constants' do
+        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::CONFIDENCE).to eql finder_config['confidence']
+        expect(finder_class::PATH).to eql nil
+      end
+    end
+
+    context 'when PATH' do
+      let(:finder_config) { super().merge('path' => 'file.txt') }
+
+      it 'contains the expected constants' do
+        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::CONFIDENCE).to eql 50
+        expect(finder_class::PATH).to eql finder_config['path']
+      end
+    end
+  end
+
+  describe '#passive' do
     before { stub_request(:get, target.url).to_return(body: response_body) }
 
     it 'returns the expected version' do
       version = finder.passive
 
-      expect(version).to eql WPScan::Version.new(
+      expect(version).to eq WPScan::Version.new(
         '1.5',
         confidence: 50,
-        found_by: 'Comment (Passive Detection)',
-        interesting_entries: ["#{target.url}, Match: 'Some version: 1.5'"]
+        found_by: 'Comment (Passive Detection)'
       )
+      expect(version.interesting_entries).to eql ["#{target.url}, Match: 'Some version: 1.5'"]
     end
   end
 
-  describe '#aggressive, #find' do
-    before do
-      described_class.send(:remove_const, :PATH)
-      described_class.const_set(:PATH, 'index.php')
+  describe '#aggressive' do
+    let(:wp_content) { 'wp-content' }
+    let(:finder_config) { super().merge('path' => 'index.php') }
 
-      stub_request(:get, target.url).to_return(body: response_body)
+    before do
+      expect(target).to receive(:content_dir).at_least(1).and_return(wp_content)
       stub_request(:get, plugin.url('index.php')).to_return(body: response_body)
     end
 
     it 'returns the expected version' do
       version = finder.aggressive
 
-      expect(version).to eql WPScan::Version.new(
+      expect(version).to eq WPScan::Version.new(
         '1.5',
         confidence: 50,
-        found_by: 'Comment (Aggressive Detection)',
-        interesting_entries: ["#{plugin.url('index.php')}, Match: 'Some version: 1.5'"]
+        found_by: 'Comment (Aggressive Detection)'
       )
+      expect(version.interesting_entries).to eql ["#{plugin.url('index.php')}, Match: 'Some version: 1.5'"]
     end
   end
 end

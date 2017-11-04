@@ -1,13 +1,14 @@
 require 'spec_helper'
 
-describe WPScan::Finders::Plugins::Comments do
+describe WPScan::Finders::Plugins::Comment do
   subject(:finder) { described_class.new(target) }
   let(:target)     { WPScan::Target.new(url) }
   let(:url)        { 'http://wp.lab/' }
-  let(:fixtures)   { File.join(FINDERS_FIXTURES, 'plugins', 'comments') }
+  let(:fixtures)   { File.join(FINDERS_FIXTURES, 'plugins', 'comment') }
 
   def plugin(slug)
-    WPScan::Plugin.new(slug, target, found_by: 'Comments (Passive Detection)', confidence: 70)
+    # found_by and confidence not considered even though they should be
+    WPScan::Plugin.new(slug, target) # , found_by: 'Comment (Passive Detection)', confidence: 50)
   end
 
   describe '#passive' do

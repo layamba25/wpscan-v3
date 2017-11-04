@@ -35,7 +35,7 @@ module WPScan
             next unless klass.to_sym == finder_class
 
             configs[slug] ||= {}
-            configs[slug][finder_name] = config # .dup
+            configs[slug][finder_name] = config
           end
         end
 
@@ -53,7 +53,7 @@ module WPScan
             next unless config.key?('version')
 
             @versions_finders[slug] ||= {}
-            @versions_finders[slug][finder_name] = config # .dup
+            @versions_finders[slug][finder_name] = config
           end
         end
 
@@ -95,7 +95,7 @@ module WPScan
       # So far, the Finders::DynamicFinders::WPItemVersion is enought
       # as nothing else is used
       #
-      # @param [ Constant ] mod
+      # @param [ Constant ] mod The module the klass will be created in
       # @param [ String, Symbol ] klass
       # @return [ Constant ]
       def self.version_finder_super_class(mod, klass)

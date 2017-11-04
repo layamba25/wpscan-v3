@@ -1,6 +1,6 @@
 require_relative 'plugins/urls_in_homepage'
 require_relative 'plugins/headers'
-require_relative 'plugins/comments'
+require_relative 'plugins/comment'
 require_relative 'plugins/known_locations'
 
 module WPScan
@@ -15,7 +15,7 @@ module WPScan
           finders <<
             Plugins::UrlsInHomepage.new(target) <<
             Plugins::Headers.new(target) <<
-            Plugins::Comments.new(target) <<
+            Plugins::Comment.new(target) <<
             Plugins::KnownLocations.new(target)
         end
       end

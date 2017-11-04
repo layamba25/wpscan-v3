@@ -8,7 +8,7 @@ describe WPScan::Finders::Plugins::Base do
   describe '#finders' do
     it 'contains the expected finders' do
       expect(plugins.finders.map { |f| f.class.to_s.demodulize })
-        .to eq %w[UrlsInHomepage Headers Comments KnownLocations]
+        .to eq %w[UrlsInHomepage Headers Comment KnownLocations]
     end
   end
 end
