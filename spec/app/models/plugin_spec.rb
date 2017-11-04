@@ -60,12 +60,13 @@ describe WPScan::Plugin do
     end
   end
 
-  describe '#latest_version, #last_updated' do
+  describe '#latest_version, #last_updated, #popular' do
     context 'when none' do
       let(:slug) { 'vulnerable-not-popular' }
 
       its(:latest_version) { should be_nil }
       its(:last_updated) { should be_nil }
+      its(:popular?) { should be false }
     end
 
     context 'when values' do
@@ -73,6 +74,7 @@ describe WPScan::Plugin do
 
       its(:latest_version) { should eql WPScan::Version.new('2.0') }
       its(:last_updated) { should eql '2015-05-16T00:00:00.000Z' }
+      its(:popular?) { should be true }
     end
   end
 
