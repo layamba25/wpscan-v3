@@ -29,6 +29,8 @@ module WPScan
         # @return [ Array<Plugin> ]
         def aggressive(_opts = {})
           # TODO
+          # DB::DynamicPluginFinders.aggressive_xpath_finder_configs.each do |slug, configs|
+          # end
         end
       end
     end
