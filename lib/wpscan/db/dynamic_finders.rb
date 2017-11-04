@@ -111,8 +111,7 @@ module WPScan
 
         finder_class = Regexp.last_match[2].camelize.to_sym
 
-        # TODO: better error
-        raise StandardError, "#{finder_class} not allowed" unless ALLOWED_CLASSES.include?(finder_class)
+        raise "#{finder_class} is not allowed as a Dynamic Finder" unless ALLOWED_CLASSES.include?(finder_class)
 
         finder_configs(
           finder_class,
@@ -120,9 +119,9 @@ module WPScan
         )
       end
 
-      #def self.respond_to_missing?(sym)
-      # TODO
-      #end
+      def self.respond_to_missing?(sym)
+        sym =~ /\A(passive|aggressive)_(.*)_finder_configs\z/i
+      end
     end
   end
 end

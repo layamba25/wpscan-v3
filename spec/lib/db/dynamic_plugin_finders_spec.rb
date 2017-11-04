@@ -16,7 +16,6 @@ describe WPScan::DB::DynamicPluginFinders do
           configs = subject.finder_configs(:Xpath)
 
           expect(configs.keys).to include('wordpress-mobile-pack', 'shareaholic')
-          # TODO: when there is one with a path
           expect(configs.keys).to_not include('revslider')
 
           expect(configs['sitepress-multilingual-cms']['MetaGenerator']['pattern']).to be_a Regexp
@@ -37,7 +36,7 @@ describe WPScan::DB::DynamicPluginFinders do
 
   describe '.versions_finders_configs' do
     # TODO: add some from other Finder class when there are
-    # May do a full check (like an expected .yml with the correct configs instead of just
+    # Maybe do a full check (like an expected .yml with the correct configs instead of just
     # checking for keys)
     its('versions_finders_configs.keys') { should include('shareaholic') }
     its('versions_finders_configs.keys') { should_not include('wordpress-mobile-pack', 'addthis') }

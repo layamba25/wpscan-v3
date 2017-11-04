@@ -1,6 +1,7 @@
 require 'wpscan/finders/finder/wp_version/smart_url_checker'
 
 require 'wpscan/finders/dynamic_finder/finder'
+require 'wpscan/finders/dynamic_finder/wp_items/finder'
 require 'wpscan/finders/dynamic_finder/wp_item_version/finder'
 require 'wpscan/finders/dynamic_finder/wp_item_version/comment'
 require 'wpscan/finders/dynamic_finder/wp_item_version/xpath'

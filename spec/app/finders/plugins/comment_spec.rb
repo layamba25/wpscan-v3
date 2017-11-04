@@ -14,7 +14,11 @@ describe WPScan::Finders::Plugins::Comment do
   describe '#passive' do
     after do
       stub_request(:get, target.url).to_return(body: File.read(File.join(fixtures, file)))
-      expect(finder.passive(opts)).to match_array @expected
+
+      found = finder.passive(opts)
+
+      expect(found).to match_array @expected
+      expect(found.first.found_by).to eql 'Comment (Passive Detection)' unless found.empty?
     end
 
     let(:opts) { {} }

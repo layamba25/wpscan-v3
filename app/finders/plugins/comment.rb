@@ -1,8 +1,8 @@
 module WPScan
   module Finders
     module Plugins
-      # Plugins detected from the Dynamic Finder 'Comment'
-      class Comment < CMSScanner::Finders::Finder
+      # Plugins finder from the Dynamic Finder 'Comment'
+      class Comment < WPScan::Finders::DynamicFinder::WpItems::Finder
         # @param [ Hash ] opts
         # @option opts [ Boolean ] :unique Default: true
         #
@@ -17,13 +17,12 @@ module WPScan
             comment = node.text.to_s.strip
 
             finder_configs.each do |slug, configs|
-              configs.each do |found_by_class, config|
+              configs.each do |klass, config|
                 next unless comment =~ config['pattern']
 
-                found_by = "#{found_by_class.titleize} (Passive Detection)"
-                plugin   = WPScan::Plugin.new(slug,
-                                              target,
-                                              opts.merge(found_by: found_by, confidence: config['confidence'] || 50))
+                plugin = Plugin.new(slug,
+                                    target,
+                                    opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 50))
 
                 found << plugin unless opts[:unique] && found.include?(plugin)
               end

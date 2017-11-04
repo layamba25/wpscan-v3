@@ -3,7 +3,7 @@ module WPScan
     module DynamicFinder
       module WpItemVersion
         # Version finder using Xpath method
-        class Xpath < Finder
+        class Xpath < WPScan::Finders::DynamicFinder::WpItemVersion::Finder
           # @param [ Constant ] mod
           # @param [ Constant ] klass
           # @param [ Hash ] config
@@ -18,9 +18,21 @@ module WPScan
             )
           end
 
+          # @param [ Typhoeus::Response ] response
+          # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            # TODO
+            response.html.xpath(self.class::XPATH).each do |node|
+              next unless node.text =~ self.class::PATTERN && Regexp.last_match[:v]
+
+              return WPScan::Version.new(
+                Regexp.last_match[:v],
+                found_by: found_by,
+                confidence: self.class::CONFIDENCE,
+                interesting_entries: ["#{response.effective_url}, Match: '#{Regexp.last_match}'"]
+              )
+            end
+            nil
           end
         end
       end
