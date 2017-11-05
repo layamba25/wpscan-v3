@@ -173,6 +173,18 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>[\d\.]+) \|/i
       version: true
+  woocommerce-follow-up-emails:
+    Changelog:
+      class: BodyPattern
+      path: changelog.txt
+      pattern: !ruby/regexp /[\d\-]{8,} \- version (?<v>[\d\.]+)/i
+      version: true
+  woocommerce-shipment-tracking:
+    Changelog:
+      class: BodyPattern
+      path: changelog.txt
+      pattern: !ruby/regexp /[\d\-]{8,} \- version (?<v>[\d\.]+)/i
+      version: true
   wordpress-mobile-pack:
     UrlInHomePage:
       class: Xpath
