@@ -1,9 +1,10 @@
 require_relative 'plugins/urls_in_homepage'
 require_relative 'plugins/known_locations'
-# From the DynamicFinder
+# From the DynamicFinders
 require_relative 'plugins/comment'
 require_relative 'plugins/xpath'
 require_relative 'plugins/header_pattern'
+require_relative 'plugins/body_pattern'
 
 module WPScan
   module Finders
@@ -19,6 +20,7 @@ module WPScan
             Plugins::HeaderPattern.new(target) <<
             Plugins::Comment.new(target) <<
             Plugins::Xpath.new(target) <<
+            Plugins::BodyPattern.new(target) <<
             Plugins::KnownLocations.new(target)
         end
       end
