@@ -65,7 +65,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
             it 'returns the expected version from the homepage' do
               version = finder.passive
 
-              expect(version.number).to eql expected['number']
+              expect(version.number).to eql expected['number'].to_s
               expect(version.found_by).to eql expected['found_by']
               expect(version.interesting_entries).to match_array expected['interesting_entries']
             end
@@ -91,7 +91,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
             it 'returns the expected version' do
               version = finder.aggressive
 
-              expect(version.number).to eql expected['number']
+              expect(version.number).to eql expected['number'].to_s
               expect(version.found_by).to eql expected['found_by']
               expect(version.interesting_entries).to match_array expected['interesting_entries']
             end
