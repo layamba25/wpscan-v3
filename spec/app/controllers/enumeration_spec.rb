@@ -87,6 +87,15 @@ describe WPScan::Controller::Enumeration do
     end
   end
 
+  describe '#before_scan' do
+    it 'creates the Dynamic Finders' do
+      expect(WPScan::DB::DynamicPluginFinders).to receive(:create_versions_finders)
+      expect(WPScan::DB::DynamicThemeFinders).to receive(:create_versions_finders)
+
+      controller.before_scan
+    end
+  end
+
   describe '#run' do
     context 'when no :enumerate' do
       it 'returns nil' do

@@ -11,12 +11,6 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
     end
   end
 
-  subject(:finder)       { finder_class.new(plugin) }
-  let(:plugin)           { WPScan::Plugin.new('spec', target) }
-  let(:target)           { WPScan::Target.new('http://wp.lab/') }
-  let(:fixtures)         { File.join(DYNAMIC_FINDERS_FIXTURES, 'wp_item_version', 'header_pattern') }
-  let(:response_headers) { JSON.parse(File.read(File.join(fixtures, 'headers.json'))) }
-
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::HeaderPattern }
   let(:finder_config) { { 'header' => 'Location' } }
@@ -77,44 +71,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
     end
   end
 
-  describe '#passive' do
-    before { stub_request(:get, target.url).to_return(headers: response_headers) }
-
-    let(:finder_config) { super().merge('pattern' => /report\.php\?ver=(?<v>[\d\.^&]+)\&/i) }
-
-    it 'returns the expected version' do
-      version = finder.passive
-
-      expect(version).to eq WPScan::Version.new(
-        '4.16.53',
-        confidence: 30,
-        found_by: 'Header Pattern (Passive Detection)'
-      )
-      expect(version.interesting_entries).to eql ["#{target.url}, Match: 'report.php?ver=4.16.53&'"]
-    end
-  end
-
-  describe '#aggressive' do
-    let(:wp_content) { 'wp-content' }
-    let(:finder_config) do
-      super().merge('path' => 'index.php',
-                    'pattern' => /report\.php\?ver=(?<v>[\d\.^&]+)\&/i)
-    end
-
-    before do
-      expect(target).to receive(:content_dir).at_least(1).and_return(wp_content)
-      stub_request(:get, plugin.url('index.php')).to_return(headers: response_headers)
-    end
-
-    it 'returns the expected version' do
-      version = finder.aggressive
-
-      expect(version).to eq WPScan::Version.new(
-        '4.16.53',
-        confidence: 30,
-        found_by: 'Header Pattern (Aggressive Detection)'
-      )
-      expect(version.interesting_entries).to eql ["#{plugin.url('index.php')}, Match: 'report.php?ver=4.16.53&'"]
-    end
+  describe '#passive, #aggressive' do
+    # Handled in spec/lib/finders/dynamic_finder/plugin_version_spec
   end
 end

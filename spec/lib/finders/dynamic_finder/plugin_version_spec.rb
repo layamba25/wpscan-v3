@@ -1,5 +1,15 @@
 require 'spec_helper'
 
+# All Plugin Dynamic Finders returning a Version are tested here.
+# When adding one to the spec/fixtures/db/dynamic_finder.yml, a few files have
+# to be edited/created
+#
+# - spec/fixtures/dynamic_finder/plugin_version/expected.yml with the expected result/s
+# - Then, depending on the finder class used: spec/fixtures/dynamic_finder/plugin_version/
+#
+# Furthermore, the fixtures files _passive_all.html are also used by plugins/themes
+# finders in spec/app/finders/plugins|themes to check the items existence from the homepage
+
 def tested_class_constant(slug, finder_class)
   slug_class = slug.tr('-', '_').camelize
 
@@ -21,8 +31,6 @@ WPScan::DB::DynamicPluginFinders.create_versions_finders
 WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs|
   configs.each do |finder_class, config|
     finder_super_class = config['class'] ? config['class'] : finder_class
-
-    # next unless %w[Xpath Comment].include?(finder_super_class)
 
     describe tested_class_constant(slug, finder_class) do
       subject(:finder) { described_class.new(plugin) }
@@ -59,6 +67,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
 
               expect(version.number).to eql expected['number']
               expect(version.found_by).to eql expected['found_by']
+              expect(version.interesting_entries).to match_array expected['interesting_entries']
             end
           end
         end
@@ -69,7 +78,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
 
         before do
           expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
-          # stub_request(:get, /.*/)
+
           stub_request(:get, plugin.url(config['path'])).to_return(stubbed_response)
         end
 
@@ -84,6 +93,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
 
               expect(version.number).to eql expected['number']
               expect(version.found_by).to eql expected['found_by']
+              expect(version.interesting_entries).to match_array expected['interesting_entries']
             end
           end
 

@@ -4,6 +4,7 @@ describe WPScan::Finders::Plugins::HeaderPattern do
   subject(:finder) { described_class.new(target) }
   let(:target)     { WPScan::Target.new(url) }
   let(:url)        { 'http://wp.lab/' }
+  let(:fixtures)   { File.join(DYNAMIC_FINDERS_FIXTURES, 'plugin_version') }
 
   def plugin(slug)
     WPScan::Plugin.new(slug, target)
@@ -30,26 +31,13 @@ describe WPScan::Finders::Plugins::HeaderPattern do
     context 'when headers' do
       before { expect(target).to receive(:content_dir).and_return('wp-content') }
 
-      let(:headers) { {} }
-      let(:w3_total_cache) { plugin('w3-total-cache') }
-      let(:wp_super_cache) { plugin('wp-super-cache') }
+      let(:headers) { JSON.parse(File.read(File.join(fixtures, 'header_pattern_passive_all.html'))) }
 
-      context 'when w3-total-cache and wp_super_cache detected' do
-        it 'returns the array with the w3_total_cache' do
-          headers['X-Powered-BY'] = 'W3 Total Cache/0.9'
-          headers['wp-super-cache'] = 'Served supercache file from PHP'
+      it 'returns the expected plugins' do
+        @expected = []
 
-          @expected = [w3_total_cache, wp_super_cache]
-        end
-      end
-
-      context 'when a header key with multiple values' do
-        let(:headers) { { 'X-Powered-BY' => ['PHP/5.4.9', 'ASP.NET'] } }
-
-        it 'returns the array with the w3_total_cache' do
-          headers['X-Powered-BY'] << 'W3 Total Cache/0.9.2.5'
-
-          @expected = [w3_total_cache]
+        WPScan::DB::DynamicPluginFinders.passive_header_pattern_finder_configs.each_key do |slug|
+          @expected << plugin(slug)
         end
       end
     end

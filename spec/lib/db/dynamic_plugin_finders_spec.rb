@@ -35,9 +35,7 @@ describe WPScan::DB::DynamicPluginFinders do
   end
 
   describe '.versions_finders_configs' do
-    # TODO: add some from other Finder class when there are
-    # Maybe do a full check (like an expected .yml with the correct configs instead of just
-    # checking for keys)
+    # Just test a sample here
     its('versions_finders_configs.keys') { should include('shareaholic') }
     its('versions_finders_configs.keys') { should_not include('wordpress-mobile-pack', 'addthis') }
   end
@@ -47,21 +45,7 @@ describe WPScan::DB::DynamicPluginFinders do
   end
 
   describe '.create_versions_finders' do
-    before(:all) { described_class.create_versions_finders }
-
-    {
-      'Revslider' => %i[ReleaseLog],
-      'SitepressMultilingualCms' => %i[MetaGenerator],
-      'Shareaholic' => %i[MetaTag],
-      'AllInOneSeoPack' => %i[Comment],
-      'Gotmls' => %i[HeaderPattern]
-    }.each do |mod, klasses|
-      it "the module #{mod} has the dynamic classes" do
-        mod_constant = "WPScan::Finders::PluginVersion::#{mod}".constantize
-
-        expect(mod_constant.constants).to include(*klasses)
-      end
-    end
+    # handled and tested in spec/lib/finders/dynamic_finders/plugin_version_spec
   end
 
   describe '.version_finder_super_class' do
@@ -95,7 +79,6 @@ describe WPScan::DB::DynamicPluginFinders do
 
   describe '.method_missing' do
     context 'when the method matches a valid call' do
-      # TODO: Full check ?
       its('passive_comment_finder_configs.keys') { should include('addthis') }
       its('passive_comment_finder_configs.keys') { should_not include('shareaholic') }
 

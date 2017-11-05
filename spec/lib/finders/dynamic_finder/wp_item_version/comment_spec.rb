@@ -11,12 +11,6 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
     end
   end
 
-  subject(:finder)    { finder_class.new(plugin) }
-  let(:plugin)        { WPScan::Plugin.new('spec', target) }
-  let(:target)        { WPScan::Target.new('http://wp.lab/') }
-  let(:fixtures)      { File.join(DYNAMIC_FINDERS_FIXTURES, 'wp_item_version', 'comment') }
-  let(:response_body) { File.read(File.join(fixtures, 'index.html')) }
-
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::Comment }
   let(:finder_config) { { 'pattern' => /some version: (?<v>[\d\.]+)/i } }
@@ -59,39 +53,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
     end
   end
 
-  describe '#passive' do
-    before { stub_request(:get, target.url).to_return(body: response_body) }
-
-    it 'returns the expected version' do
-      version = finder.passive
-
-      expect(version).to eq WPScan::Version.new(
-        '1.5',
-        confidence: 50,
-        found_by: 'Comment (Passive Detection)'
-      )
-      expect(version.interesting_entries).to eql ["#{target.url}, Match: 'Some version: 1.5'"]
-    end
-  end
-
-  describe '#aggressive' do
-    let(:wp_content) { 'wp-content' }
-    let(:finder_config) { super().merge('path' => 'index.php') }
-
-    before do
-      expect(target).to receive(:content_dir).at_least(1).and_return(wp_content)
-      stub_request(:get, plugin.url('index.php')).to_return(body: response_body)
-    end
-
-    it 'returns the expected version' do
-      version = finder.aggressive
-
-      expect(version).to eq WPScan::Version.new(
-        '1.5',
-        confidence: 50,
-        found_by: 'Comment (Aggressive Detection)'
-      )
-      expect(version.interesting_entries).to eql ["#{plugin.url('index.php')}, Match: 'Some version: 1.5'"]
-    end
+  describe '#passive, #aggressive' do
+    # Handled in spec/lib/finders/dynamic_finder/plugin_version_spec
   end
 end
