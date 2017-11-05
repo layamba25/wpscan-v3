@@ -72,6 +72,12 @@ imp-download:
     found_by: 'Comment (Passive Detection)'
     interesting_entries:
       - "http://wp.lab/, Match: 'Powered by iMP Download v1.4'"
+js_composer:
+  BodyTag:
+    number: '4.12'
+    found_by: 'Body Tag (Passive Detection)'
+    interesting_entries:
+      - "http://wp.lab/, Match: 'js-comp-ver-4.12'"
 news-ticker:
   Comment:
     number: '2.1.2'

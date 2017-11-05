@@ -74,6 +74,17 @@ plugins:
   juiz-last-tweet-widget:
     Comment:
       pattern: !ruby/regexp /Juiz Last Tweet Widget/i
+  js_composer:
+    MetaGenerator:
+      class: Xpath
+      # Quite sure the xpath could be better done like with a contains()
+      xpath: //meta[@name="generator"]/@content
+      pattern: /Powered by Visual Composer \-/i
+    BodyTag:
+      class: Xpath
+      xpath: //body[contains(@class, 'js-comp-ver')]/@class
+      pattern: !ruby/regexp /js\-comp\-ver\-(?<v>[\d\.]+)/i
+      version: true
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i

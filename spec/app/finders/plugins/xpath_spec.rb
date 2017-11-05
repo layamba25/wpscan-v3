@@ -13,6 +13,9 @@ describe WPScan::Finders::Plugins::Xpath do
     end
 
     it 'contains the plugins found from the #xpath_matches' do
+      # How to ensure that all stuff is correctly detected ?
+      # For example, the js_composer has two Xpath ones but unless both failed to be detected
+      # the test below succeed
       expect(finder.passive.map(&:slug)).to include(*WPScan::DB::DynamicPluginFinders.passive_xpath_finder_configs.keys)
     end
   end
