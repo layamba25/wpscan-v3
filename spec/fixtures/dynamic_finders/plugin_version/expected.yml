@@ -136,6 +136,11 @@ sitepress-multilingual-cms:
     found_by: Meta Generator (Passive Detection)
     interesting_entries:
       - "http://wp.lab/, Match: 'WPML ver:3.8.4 stt'"
+  Changelog:
+    number: 3.6.3
+    found_by: Changelog (Aggressive Detection)
+    interesting_entries:
+      - "http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/changelog.md, Match: '# 3.6.3'"
 ultimate-google-analytics:
   Comment:
     number: 1.6.0

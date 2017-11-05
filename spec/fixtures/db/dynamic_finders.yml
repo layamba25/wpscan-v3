@@ -151,6 +151,11 @@ plugins:
       xpath: '//meta[@name="generator"]/@content'
       pattern: !ruby/regexp /\AWPML\sver:(?<v>[\d\.]+)\sstt/i
       version: true
+    Changelog:
+      class: BodyPattern
+      path: changelog.md
+      pattern: !ruby/regexp /(?:#|\*)\s?(?<v>[\d\.]+)/
+      version: true
   ultimate-google-analytics:
     Comment:
       pattern: !ruby/regexp /Ultimate Google Analytics plugin v(?<v>[\d\.]+):/i
