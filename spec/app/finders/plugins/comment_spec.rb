@@ -4,7 +4,7 @@ describe WPScan::Finders::Plugins::Comment do
   subject(:finder) { described_class.new(target) }
   let(:target)     { WPScan::Target.new(url) }
   let(:url)        { 'http://wp.lab/' }
-  let(:fixtures)   { File.join(FINDERS_FIXTURES, 'plugins', 'comment') }
+  let(:fixtures)   { File.join(DYNAMIC_FINDERS_FIXTURES, 'plugin_version') }
 
   def plugin(slug)
     # found_by and confidence not considered even though they should be
@@ -34,7 +34,7 @@ describe WPScan::Finders::Plugins::Comment do
     context 'when found' do
       before { expect(target).to receive(:content_dir).and_return('wp-content') }
 
-      let(:file) { 'found.html' }
+      let(:file) { 'comment_passive_all.html' }
       let(:unique_expected) do
         expected = []
 

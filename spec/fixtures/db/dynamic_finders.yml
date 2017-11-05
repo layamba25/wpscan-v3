@@ -20,7 +20,7 @@ plugins:
       pattern: !ruby/regexp /Custom Facebook Feed/i
   dynamic-content-gallery-plugin:
     Comment:
-      pattern: !ruby/regexp /Dynamic Content Gallery plugin version (?<v>[\d\.^\s]+)/i
+      pattern: !ruby/regexp /Dynamic Content Gallery plugin version (?<v>[\d\.^\s]+)\s/i
       version: true
   easy-fancybox:
     Comment:
@@ -137,7 +137,8 @@ plugins:
       pattern: !ruby/regexp /Vipers Video Quicktags v(?<v>[\d\.]+)/i
       version: true
   w3-total-cache:
-    Comment:
+    CommentDebugInfo:
+      class: Comment
       pattern: !ruby/regexp /(?:optimized by W3 Total Cache|W3 Total Cache\/(?<v>[\d\.]+))/i
       version: true
     HeaderPattern:
@@ -188,7 +189,7 @@ plugins:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
   wp-spamfree:
     Comment:
-      pattern: !ruby/regexp /WP-SpamFree v(?<v>[\d\.^\s]+)/i
+      pattern: !ruby/regexp /WP-SpamFree v(?<v>[\d\.^\s]+)\s/i
       version: true
   wp-super-cache:
     Comment:

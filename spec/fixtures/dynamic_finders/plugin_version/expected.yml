@@ -1,0 +1,122 @@
+all-in-one-seo-pack:
+  Comment:
+    number: '2.2.5.1'
+    found_by: 'Comment (Passive Detection)'
+astickypostorderer:
+  Comment:
+    number: '0.3.1'
+    found_by: 'Comment (Passive Detection)'
+dynamic-content-gallery-plugin:
+  Comment:
+    number: '3.3.6'
+    found_by: 'Comment (Passive Detection)'
+easy-fancybox:
+  Comment:
+    number: '1.5.7'
+    found_by: 'Comment (Passive Detection)'
+events-calendar:
+  Comment:
+    number: '6.7.6'
+    found_by: 'Comment (Passive Detection)'
+facebook-like-thumbnail:
+  Comment:
+    number: '0.3.2'
+    found_by: 'Comment (Passive Detection)'
+gigpress:
+  Comment:
+    number: '2.3.8'
+    found_by: 'Comment (Passive Detection)'
+google-analyticator:
+  Comment:
+    number: '6.4.8'
+    found_by: 'Comment (Passive Detection)'
+google-analytics-dashboard-for-wp:
+  Comment:
+    number: '4.4.4'
+    found_by: 'Comment (Passive Detection)'
+google-analytics-for-wordpress:
+  # This one actually has two patterns (see the HTML)
+  # TODO: Find a way to test that
+  Comment:
+    number: '5.3.3'
+    found_by: 'Comment (Passive Detection)'
+gotmls:
+  HeaderPattern:
+    number: '4.16.53'
+    found_by: 'Header Pattern (Aggressive Detection)'
+imp-download:
+  Comment:
+    number: '1.4'
+    found_by: 'Comment (Passive Detection)'
+news-ticker:
+  Comment:
+    number: '2.1.2'
+    found_by: 'Comment (Passive Detection)'
+nextgen-gallery:
+  Comment:
+    number: '2.0.66.37'
+    found_by: 'Comment (Passive Detection)'
+optin-monster:
+  Comment:
+    number: '2.0.2.2'
+    found_by: 'Comment (Passive Detection)'
+revslider:
+  Comment:
+    number: '4.6.5'
+    found_by: 'Comment (Passive Detection)'
+  ReleaseLog:
+    number: '4.6.5'
+    found_by: 'Release Log (Aggressive Detection)'
+shareaholic:
+  MetaTag:
+    number: '7.8.0.4'
+    found_by: 'Meta Tag (Passive Detection)'
+simple-share-button-adder:
+  Comment:
+    number: '5.6'
+    found_by: 'Comment (Passive Detection)'
+sitepress-multilingual-cms:
+  MetaGenerator:
+    number: '3.8.4'
+    found_by: 'Meta Generator (Passive Detection)'
+ultimate-google-analytics:
+  Comment:
+    number: '1.6.0'
+    found_by: 'Comment (Passive Detection)'
+vipers-video-quicktags:
+  Comment:
+    number: '6.4.2'
+    found_by: 'Comment (Passive Detection)'
+w3-total-cache:
+  CommentDebugInfo:
+    number: '0.9.4.1'
+    found_by: 'Comment Debug Info (Passive Detection)'
+  HeaderPattern:
+    number: '0.9.1'
+    found_by: 'Header Pattern (Passive Detection)'
+WeatherIcon:
+  Comment:
+    number: '2.99.102'
+    found_by: 'Comment (Passive Detection)'
+wordpress-seo:
+  # Two patterns,TODO: find a way to test it
+  Comment:
+    number: '1.7.3.3'
+    found_by: 'Comment (Passive Detection)'
+wordpress-social-login:
+  Comment:
+    number: '2.2.3'
+    found_by: 'Comment (Passive Detection)'
+wow-analytics:
+  Comment:
+    number: '2.1.0'
+    found_by: 'Comment (Passive Detection)'
+wptouch:
+  Comment:
+    number: '3.7.3'
+    found_by: 'Comment (Passive Detection)'
+wp-spamfree:
+  # TODO: find a way to test the two patterns
+  Comment:
+    number: '1.3.1'
+    found_by: 'Comment (Passive Detection)'
