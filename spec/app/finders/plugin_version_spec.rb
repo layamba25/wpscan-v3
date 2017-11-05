@@ -19,7 +19,7 @@ describe WPScan::Finders::PluginVersion::Base do
       end
     end
 
-    # TODO: Remove the finders from the Dynamic Method ? (They don't seem to be loaded here anymore)
+    # TODO: Remove the finders from the Dynamic Method ?
     #
     # Dynamic Version Finders are not tested here, they are in
     # - spec/app/finders/plugins/comments_specs (nothing needs to be changed)
@@ -35,7 +35,7 @@ describe WPScan::Finders::PluginVersion::Base do
       {
         'sitepress-multilingual-cms' => %w[VersionParameter], # MetaGenerator],
         # 'w3-total-cache' => %w[Headers], # Comment],
-        'LayerSlider' => %w[TranslationFile],
+        # 'LayerSlider' => %w[TranslationFile],
         # 'revslider' => %w[ReleaseLog Comment]
       }.each do |plugin_slug, specific_finders|
         context "when #{plugin_slug} plugin" do

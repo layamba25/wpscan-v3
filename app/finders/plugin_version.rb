@@ -1,6 +1,5 @@
 require_relative 'plugin_version/readme'
 # Plugins Specific
-require_relative 'plugin_version/layer_slider/translation_file'
 require_relative 'plugin_version/sitepress_multilingual_cms/version_parameter'
 
 module WPScan

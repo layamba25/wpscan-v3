@@ -88,6 +88,18 @@ plugins:
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i
+  layer-slider:
+    # TODO: Would it be possible to mix the two and have like an array as path parameter ?
+    LocaleTranslationFile:
+      class: BodyPattern
+      path: locales/LayerSlider-en_US.po
+      pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
+      version: true
+    LanguageTranslationFile:
+      class: BodyPattern
+      path: languages/LayerSlider-en_US.po
+      pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
+      version: true
   login-logo:
     Comment:
       pattern: !ruby/regexp /Login Logo plugin for WordPress/i

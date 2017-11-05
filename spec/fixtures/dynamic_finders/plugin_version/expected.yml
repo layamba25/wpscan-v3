@@ -78,6 +78,17 @@ js_composer:
     found_by: Body Tag (Passive Detection)
     interesting_entries:
       - "http://wp.lab/, Match: 'js-comp-ver-4.12'"
+layer-slider:
+  LocaleTranslationFile:
+    number: 5.2.0
+    found_by: Locale Translation File (Aggressive Detection)
+    interesting_entries:
+      - "http://wp.lab/wp-content/plugins/layer-slider/locales/LayerSlider-en_US.po, Match: 'Project-Id-Version: LayerSlider WP 5.2.0'"
+  LanguageTranslationFile:
+    number: 4.5.5
+    found_by: Language Translation File (Aggressive Detection)
+    interesting_entries:
+      - "http://wp.lab/wp-content/plugins/layer-slider/languages/LayerSlider-en_US.po, Match: 'Project-Id-Version: LayerSlider WP v4.5.5'"
 news-ticker:
   Comment:
     number: 2.1.2
