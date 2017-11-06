@@ -94,11 +94,13 @@ plugins:
       path: locales/LayerSlider-en_US.po
       pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
       version: true
+      confidence: 50
     LanguageTranslationFile:
       class: BodyPattern
       path: languages/LayerSlider-en_US.po
       pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
       version: true
+      confidence: 50
   login-logo:
     Comment:
       pattern: !ruby/regexp /Login Logo plugin for WordPress/i
