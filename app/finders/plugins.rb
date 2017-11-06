@@ -5,6 +5,7 @@ require_relative 'plugins/comment'
 require_relative 'plugins/xpath'
 require_relative 'plugins/header_pattern'
 require_relative 'plugins/body_pattern'
+require_relative 'plugins/javascript_var'
 
 module WPScan
   module Finders
@@ -21,6 +22,7 @@ module WPScan
             Plugins::Comment.new(target) <<
             Plugins::Xpath.new(target) <<
             Plugins::BodyPattern.new(target) <<
+            Plugins::JavascriptVar.new(target) <<
             Plugins::KnownLocations.new(target)
         end
       end

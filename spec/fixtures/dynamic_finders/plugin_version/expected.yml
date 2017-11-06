@@ -1,3 +1,9 @@
+addthis:
+  JavascriptVar:
+    number: 5.3.5
+    found_by: Javascript Var (Passive Detection)
+    interesting_entries:
+      - "http://wp.lab/, Match: 'addthis_plugin_info ='"
 all-in-one-seo-pack:
   Comment:
     number: 2.2.5.1
@@ -101,6 +107,12 @@ nextgen-gallery:
     found_by: Comment (Passive Detection)
     interesting_entries:
       - "http://wp.lab/, Match: '<meta name=\"NextGEN\" version=\"2.0.66.37\"'"
+OptimizePress:
+  JavascriptVar:
+    number: 2.5.7
+    found_by: Javascript Var (Passive Detection)
+    interesting_entries:
+      - "http://wp.lab/, Match: 'var OptimizePress = {'"
 optin-monster:
   Comment:
     number: 2.0.2.2

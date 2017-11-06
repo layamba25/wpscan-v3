@@ -1,9 +1,16 @@
 # For patterns with a version, the ?<v> must be used
+# Unless the finder is a JavascriptVar and the match has to be
+# processed via the JSON trick (hence will contain the ?<json> group)
 ---
 plugins:
   addthis:
     Comment:
       pattern: !ruby/regexp /AddThis Settings Begin/i
+    JavascriptVar:
+      xpath: //script[@data-cfasync="false"]
+      pattern: !ruby/regexp /addthis_plugin_info\s*=\s*{(?<json>.+?(?=};))};/i
+      version: true
+      version_key: 'plugin_version'
   all-in-one-seo-pack:
     Comment:
       pattern: !ruby/regexp '/\A\/?all in one seo pack(?: (?<v>[^\s]+) by)?/i'
@@ -74,6 +81,10 @@ plugins:
   juiz-last-tweet-widget:
     Comment:
       pattern: !ruby/regexp /Juiz Last Tweet Widget/i
+  jquery-pin-it-button-for-images:
+    JavascriptVar:
+      xpath: //script[contains(., "var jpibfi_options")]
+      pattern: !ruby/regexp /var jpibfi_options = {/i # pattern is not even needed there
   js_composer:
     MetaGenerator:
       class: Xpath
@@ -116,6 +127,11 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Cached using Nginx-Helper|Visit https?:\/\/wordpress.org\/extend\/plugins\/nginx-helper\/faq\/
         for more details/i
+  OptimizePress:
+    JavascriptVar:
+      pattern: !ruby/regexp /var OptimizePress\s*=\s*{(?<json>.+?(?=};))};/i
+      version: true
+      version_key: version
   optin-monster:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'

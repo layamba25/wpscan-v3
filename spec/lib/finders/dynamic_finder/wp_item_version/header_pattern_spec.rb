@@ -22,7 +22,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
     context 'when no PATH and CONFIDENCE' do
       it 'contains the expected constants to their default values' do
         # Doesn't work, dunno why
-        # expect(finder_module.const_get(:Comment)).to be_a described_class
+        # expect(finder_module.const_get(:HeaderPattern)).to be_a described_class
         # expect(finder_class.is_a?(described_class)).to eql true
         # expect(finder_class).to be_a described_class
 

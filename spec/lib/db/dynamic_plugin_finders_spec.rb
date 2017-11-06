@@ -37,7 +37,7 @@ describe WPScan::DB::DynamicPluginFinders do
   describe '.versions_finders_configs' do
     # Just test a sample here
     its('versions_finders_configs.keys') { should include('shareaholic') }
-    its('versions_finders_configs.keys') { should_not include('wordpress-mobile-pack', 'addthis') }
+    its('versions_finders_configs.keys') { should_not include('wordpress-mobile-pack') }
   end
 
   describe '.maybe_create_module' do
