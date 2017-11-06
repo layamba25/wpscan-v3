@@ -77,8 +77,7 @@ plugins:
   js_composer:
     MetaGenerator:
       class: Xpath
-      # Quite sure the xpath could be better done like with a contains()
-      xpath: //meta[@name="generator"]/@content
+      xpath: //meta[@name="generator" and contains(@content, "Visual Composer")]/@content
       pattern: /Powered by Visual Composer \-/i
     BodyTag:
       class: Xpath
@@ -148,7 +147,7 @@ plugins:
   sitepress-multilingual-cms:
     MetaGenerator:
       class: Xpath
-      xpath: '//meta[@name="generator"]/@content'
+      xpath: '//meta[@name="generator" and contains(@content, "WPML")]/@content'
       pattern: !ruby/regexp /\AWPML\sver:(?<v>[\d\.]+)\sstt/i
       version: true
     Changelog:
