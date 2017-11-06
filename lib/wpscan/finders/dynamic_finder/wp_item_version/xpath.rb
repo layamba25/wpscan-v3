@@ -22,14 +22,18 @@ module WPScan
           # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            response.html.xpath(self.class::XPATH).each do |node|
-              next unless node.text =~ self.class::PATTERN && Regexp.last_match[:v]
+            # target is the item (plugin/theme)
+            # target.target is the WP blog
+            target.target.xpath_pattern_from_page(
+              self.class::XPATH, self.class::PATTERN, response
+            ) do |match_data, _node|
+              next unless match_data[:v]
 
               return WPScan::Version.new(
-                Regexp.last_match[:v],
+                match_data[:v],
                 found_by: found_by,
                 confidence: self.class::CONFIDENCE,
-                interesting_entries: ["#{response.effective_url}, Match: '#{Regexp.last_match}'"]
+                interesting_entries: ["#{response.effective_url}, Match: '#{match_data}'"]
               )
             end
             nil

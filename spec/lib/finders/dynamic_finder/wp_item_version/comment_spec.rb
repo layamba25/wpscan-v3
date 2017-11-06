@@ -14,6 +14,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::Comment }
   let(:finder_config) { { 'pattern' => /some version: (?<v>[\d\.]+)/i } }
+  let(:default)       { { 'xpath' => '//comment()', 'confidence' => 50 } }
 
   before { described_class.create_child_class(finder_module, :Comment, finder_config) }
   after  { finder_module.send(:remove_const, :Comment) }
@@ -27,7 +28,9 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
         # expect(finder_class).to be_a described_class
 
         expect(finder_class::PATTERN).to eql finder_config['pattern']
-        expect(finder_class::CONFIDENCE).to eql 50
+
+        expect(finder_class::XPATH).to eql default['xpath']
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
         expect(finder_class::PATH).to eql nil
       end
     end
@@ -38,6 +41,8 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
       it 'contains the expected constants' do
         expect(finder_class::PATTERN).to eql finder_config['pattern']
         expect(finder_class::CONFIDENCE).to eql finder_config['confidence']
+
+        expect(finder_class::XPATH).to eql default['xpath']
         expect(finder_class::PATH).to eql nil
       end
     end
@@ -47,8 +52,22 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
 
       it 'contains the expected constants' do
         expect(finder_class::PATTERN).to eql finder_config['pattern']
-        expect(finder_class::CONFIDENCE).to eql 50
         expect(finder_class::PATH).to eql finder_config['path']
+
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
+        expect(finder_class::XPATH).to eql default['xpath']
+      end
+    end
+
+    context 'when XPATH' do
+      let(:finder_config) { super().merge('xpath' => '//comment()[contains(. "aa")]') }
+
+      it 'contains the expected constants' do
+        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::XPATH).to eql finder_config['xpath']
+
+        expect(finder_class::PATH).to eql nil
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
       end
     end
   end
