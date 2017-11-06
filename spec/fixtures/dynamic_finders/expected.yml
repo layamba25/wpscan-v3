@@ -82,6 +82,8 @@ plugins:
       interesting_entries:
         - "http://wp.lab/, Match: 'Powered by iMP Download v1.4'"
   js_composer:
+    MetaGenerator:
+      found_by: Meta Generator (Passive Detection)
     BodyTag:
       number: 4.12
       found_by: Body Tag (Passive Detection)
@@ -131,7 +133,7 @@ plugins:
     ReleaseLog:
       number: 4.6.5
       found_by: Release Log (Aggressive Detection)
-      confidence: 70
+      confidence: 80
       interesting_entries:
         - "http://wp.lab/wp-content/plugins/revslider/release_log.html, Match: 'Version 4.6.5 SkyWood (02nd December 2014)'"
   shareaholic:
@@ -198,6 +200,9 @@ plugins:
       found_by: Changelog (Aggressive Detection)
       interesting_entries:
         - "http://wp.lab/wp-content/plugins/woocommerce-shipment-tracking/changelog.txt, Match: '2017-06-07 - version 1.6.8'"
+  wordpress-mobile-pack:
+    UrlInHomePage:
+      found_by: Url In Home Page (Passive Detection)
   wordpress-seo:
     # Two patterns,TODO: find a way to test it
     Comment:

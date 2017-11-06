@@ -1,10 +1,13 @@
 require 'spec_helper'
 
 describe WPScan::Finders::Plugins::Xpath do
-  subject(:finder) { described_class.new(target) }
-  let(:target)     { WPScan::Target.new(url) }
-  let(:url)        { 'http://wp.lab/' }
-  let(:fixtures)   { File.join(DYNAMIC_FINDERS_FIXTURES, 'plugin_version') }
+  subject(:finder)   { described_class.new(target) }
+  let(:target)       { WPScan::Target.new(url) }
+  let(:url)          { 'http://wp.lab/' }
+  let(:fixtures)     { File.join(DYNAMIC_FINDERS_FIXTURES, 'plugin_version') }
+
+  let(:expected_all) { df_expected_all['plugins'] }
+  let(:default_confidence) { 70 }
 
   describe '#passive' do
     before do
@@ -15,18 +18,28 @@ describe WPScan::Finders::Plugins::Xpath do
     end
 
     it 'contains the expected plugins' do
-      # How to ensure that all stuff is correctly detected ?
-      # For example, the js_composer has two Xpath ones but unless both fail to be detected
-      # the test below succeed
-      expect(finder.passive.map(&:slug))
-        .to match_array(WPScan::DB::DynamicPluginFinders.passive_xpath_finder_configs.keys)
+      expected = []
+
+      WPScan::DB::DynamicPluginFinders.passive_xpath_finder_configs.each do |slug, configs|
+        configs.each_key do |finder_class|
+          expected_finding_opts = expected_all[slug][finder_class]
+
+          expected << WPScan::Plugin.new(
+            slug,
+            target,
+            confidence: expected_finding_opts['confidence'] || default_confidence,
+            found_by: expected_finding_opts['found_by']
+          )
+        end
+      end
+
+      expect(finder.passive).to eql expected
     end
   end
 
   describe '#aggressive' do
     before do
-      @expected    = []
-      expected_all = df_expected_all['plugins']
+      @expected = []
 
       expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
 
@@ -43,16 +56,18 @@ describe WPScan::Finders::Plugins::Xpath do
 
           stub_request(:get, target.url(path)).to_return(stubbed_response)
 
-          @expected << WPScan::Plugin.new(slug,
-                                          target,
-                                          confidence: expected_finding_opts['confidence'],
-                                          found_by: expected_finding_opts['found_by'])
+          @expected << WPScan::Plugin.new(
+            slug,
+            target,
+            confidence: expected_finding_opts['confidence'] || default_confidence,
+            found_by: expected_finding_opts['found_by']
+          )
         end
       end
     end
 
     it 'retuns the expected plugins' do
-      expect(finder.aggressive).to eql(@expected)
+      expect(finder.aggressive).to eql @expected
     end
   end
 end

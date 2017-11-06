@@ -89,7 +89,7 @@ plugins:
     MetaGenerator:
       class: Xpath
       xpath: //meta[@name="generator" and contains(@content, "Visual Composer")]/@content
-      pattern: /Powered by Visual Composer \-/i
+      pattern: !ruby/regexp /Powered by Visual Composer \-/i
     BodyTag:
       class: Xpath
       xpath: //body[contains(@class, 'js-comp-ver')]/@class
@@ -152,7 +152,7 @@ plugins:
       xpath: "(//div/h3[@class='version-number'])[1]"
       pattern: !ruby/regexp /\AVersion (?<v>[\d\.]+).*\z/i
       version: true
-      confidence: 70
+      confidence: 80
   shareaholic:
     MetaTag:
       class: Xpath
