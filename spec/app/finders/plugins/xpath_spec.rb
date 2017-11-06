@@ -14,12 +14,45 @@ describe WPScan::Finders::Plugins::Xpath do
       expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
     end
 
-    it 'contains the plugins found from the #xpath_matches' do
+    it 'contains the expected plugins' do
       # How to ensure that all stuff is correctly detected ?
-      # For example, the js_composer has two Xpath ones but unless both failed to be detected
+      # For example, the js_composer has two Xpath ones but unless both fail to be detected
       # the test below succeed
       expect(finder.passive.map(&:slug))
         .to match_array(WPScan::DB::DynamicPluginFinders.passive_xpath_finder_configs.keys)
+    end
+  end
+
+  describe '#aggressive' do
+    before do
+      @expected    = []
+      expected_all = df_expected_all['plugins']
+
+      expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
+
+      # Stubbing all requests to the different paths
+
+      WPScan::DB::DynamicPluginFinders.aggressive_xpath_finder_configs.each do |slug, configs|
+        configs.each do |finder_class, config|
+          finder_super_class = config['class'] ? config['class'] : finder_class
+
+          fixture               = File.join(fixtures, slug, finder_class.underscore, config['path'])
+          stubbed_response      = df_stubbed_response(fixture, finder_super_class)
+          path                  = "wp-content/plugins/#{slug}/#{config['path']}"
+          expected_finding_opts = expected_all[slug][finder_class]
+
+          stub_request(:get, target.url(path)).to_return(stubbed_response)
+
+          @expected << WPScan::Plugin.new(slug,
+                                          target,
+                                          confidence: expected_finding_opts['confidence'],
+                                          found_by: expected_finding_opts['found_by'])
+        end
+      end
+    end
+
+    it 'retuns the expected plugins' do
+      expect(finder.aggressive).to eql(@expected)
     end
   end
 end

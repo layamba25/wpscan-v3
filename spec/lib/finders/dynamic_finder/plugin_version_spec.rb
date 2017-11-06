@@ -10,21 +10,7 @@ require 'spec_helper'
 # Furthermore, the fixtures files _passive_all.html are also used by plugins/themes
 # finders in spec/app/finders/plugins|themes to check the items existence from the homepage
 
-def tested_class_constant(slug, finder_class)
-  slug_class = slug.tr('-', '_').camelize
-
-  "WPScan::Finders::PluginVersion::#{slug_class}::#{finder_class}".constantize
-end
-
-def stubbed_response_opts(fixture, finder_super_class)
-  if finder_super_class == 'HeaderPattern'
-    { headers: JSON.parse(File.read(fixture)) }
-  else
-    { body: File.read(fixture) }
-  end
-end
-
-expected_all = YAML.safe_load(File.read(File.join(DYNAMIC_FINDERS_FIXTURES, 'plugin_version', 'expected.yml')))
+expected_all = df_expected_all['plugins']
 
 WPScan::DB::DynamicPluginFinders.create_versions_finders
 
@@ -32,7 +18,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
   configs.each do |finder_class, config|
     finder_super_class = config['class'] ? config['class'] : finder_class
 
-    describe tested_class_constant(slug, finder_class) do
+    describe df_tested_class_constant('PluginVersion', slug, finder_class) do
       subject(:finder) { described_class.new(plugin) }
       let(:plugin)     { WPScan::Plugin.new(slug, target) }
       let(:target)     { WPScan::Target.new('http://wp.lab/') }
@@ -58,8 +44,10 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
         else
           context 'when no PATH' do
             let(:stubbed_response) do
-              stubbed_response_opts(File.join(fixtures, "#{finder_super_class.underscore}_passive_all.html"),
-                                    finder_super_class)
+              df_stubbed_response(
+                File.join(fixtures, "#{finder_super_class.underscore}_passive_all.html"),
+                finder_super_class
+              )
             end
 
             it 'returns the expected version from the homepage' do
@@ -86,7 +74,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
         if config['path']
           context 'when the version is detected' do
             let(:stubbed_response) do
-              stubbed_response_opts(File.join(fixtures, config['path']), finder_super_class)
+              df_stubbed_response(File.join(fixtures, config['path']), finder_super_class)
             end
 
             it 'returns the expected version' do

@@ -11,13 +11,7 @@ module WPScan
 
           DB::DynamicPluginFinders.passive_xpath_finder_configs.each do |slug, configs|
             configs.each do |klass, config|
-              target.homepage_res.html.xpath(config['xpath']).each do |node|
-                next if config['pattern'] && !node.text.match(config['pattern'])
-
-                found << Plugin.new(slug,
-                                    target,
-                                    opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 70))
-              end
+              process_response(opts, target.homepage_res, slug, klass, config) { |plugin| found << plugin }
             end
           end
 
@@ -27,10 +21,33 @@ module WPScan
         # @param [ Hash ] opts
         #
         # @return [ Array<Plugin> ]
-        def aggressive(_opts = {})
-          # TODO
-          # DB::DynamicPluginFinders.aggressive_xpath_finder_configs.each do |slug, configs|
-          # end
+        def aggressive(opts = {})
+          found = []
+
+          DB::DynamicPluginFinders.aggressive_xpath_finder_configs.each do |slug, configs|
+            configs.each do |klass, config|
+              path     = "wp-content/plugins/#{slug}/#{config['path']}"
+              response = Browser.get(target.url(path))
+
+              process_response(opts, response, slug, klass, config) { |plugin| found << plugin }
+            end
+          end
+
+          found
+        end
+
+        # @param [ Typhoeus::Response ] response
+        # @yield [ Plugin ] The detected plugin
+        def process_response(opts, response, slug, klass, config)
+          response.html.xpath(config['xpath']).each do |node|
+            next if config['pattern'] && !node.text.match(config['pattern'])
+
+            yield Plugin.new(
+              slug,
+              target,
+              opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 70)
+            )
+          end
         end
       end
     end
