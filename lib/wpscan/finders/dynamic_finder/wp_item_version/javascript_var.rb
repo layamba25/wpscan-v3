@@ -30,12 +30,15 @@ module WPScan
             ) do |match_data, _node|
               next unless (version_number = version_number_from_match_data(match_data))
 
-              # TODO: Better match output when VERSION_KEY
+              # Let's get 10 chars before and after (when possible) the detected version as
+              # a match for the interesting_entries
+              match = match_data.to_s[/.*?(.{,10}#{Regexp.escape(version_number)}.{,10}).*/, 1]
+
               return WPScan::Version.new(
                 version_number,
                 found_by: found_by,
                 confidence: self.class::CONFIDENCE,
-                interesting_entries: ["#{response.effective_url}, Match: '#{match_data[0][0..20]}'"]
+                interesting_entries: ["#{response.effective_url}, Match: '#{match}'"]
               )
             end
             nil
