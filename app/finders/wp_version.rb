@@ -12,6 +12,18 @@ require_relative 'wp_version/unique_fingerprinting'
 
 module WPScan
   module Finders
+    # Specific Finders container to filter the version detected
+    # and remove the one with low confidence to avoid false
+    # positive when there is not enought information to accurately
+    # determine it.
+    class WpVersionFinders < UniqueFinders
+      def filter_findings
+        best_finding = super
+
+        best_finding.confidence >= 40 ? best_finding : false
+      end
+    end
+
     module WpVersion
       # Wp Version Finder
       class Base
@@ -19,18 +31,16 @@ module WPScan
 
         # @param [ WPScan::Target ] target
         def initialize(target)
-          finders <<
-            WpVersion::MetaGenerator.new(target) <<
-            WpVersion::RSSGenerator.new(target) <<
-            WpVersion::AtomGenerator.new(target) <<
-            WpVersion::HomepageStylesheetNumbers.new(target) <<
-            WpVersion::InstallStylesheetNumbers.new(target) <<
-            WpVersion::UpgradeStylesheetNumbers.new(target) <<
-            WpVersion::RDFGenerator.new(target) <<
-            WpVersion::Readme.new(target) <<
-            WpVersion::SitemapGenerator.new(target) <<
-            WpVersion::OpmlGenerator.new(target) <<
-            WpVersion::UniqueFingerprinting.new(target)
+          %i[
+            MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers InstallStylesheetNumbers
+            UpgradeStylesheetNumbers RDFGenerator Readme SitemapGenerator OpmlGenerator UniqueFingerprinting
+          ].each do |sym|
+            finders << WpVersion.const_get(sym).new(target)
+          end
+        end
+
+        def finders
+          @finders ||= Finders::WpVersionFinders.new
         end
       end
     end
