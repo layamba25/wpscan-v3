@@ -4,9 +4,78 @@ module WPScan
       module WpItems
         # Not really a dynamic finder in itself, but will use the dynamic finder DB
         # configs to find collections of WpItems (such as Plugins and Themes)
+        #
+        # Also used to factorise some code used between such finders.
+        # The #process_response should be implemented in each child class, or the
+        # #passive and #aggressive overriden
         class Finder < CMSScanner::Finders::Finder
-          # Will probably need this in a near future
-          # to factorise code
+          # @return [ Hash ] The related dynamic finder passive configurations
+          #                  for the current class (all its usefullness comes from clid classes)
+          def passive_configs
+            # So far only the Plugins have dynamic finders so using DB:: DynamicPluginFinders
+            # is ok. However, when Themes have some, will need to create other child classes for them
+
+            method = "passive_#{self.class.to_s.demodulize.underscore}_finder_configs".to_sym
+
+            DB::DynamicPluginFinders.public_send(method)
+          end
+
+          # @param [ Hash ] opts
+          #
+          # @return [ Array<Plugin>, Array<Theme> ]
+          def passive(opts = {})
+            found = []
+
+            passive_configs.each do |slug, configs|
+              configs.each do |klass, config|
+                process_response(opts, target.homepage_res, slug, klass, config) { |plugin| found << plugin }
+              end
+            end
+
+            found
+          end
+
+          # @return [ Hash ] The related dynamic finder passive configurations
+          #                  for the current class (all its usefullness comes from clid classes)
+          def aggressive_configs
+            # So far only the Plugins have dynamic finders so using DB:: DynamicPluginFinders
+            # is ok. However, when Thmes have some, will need to create other child classes for them
+
+            method = "aggressive_#{self.class.to_s.demodulize.underscore}_finder_configs".to_sym
+
+            DB::DynamicPluginFinders.public_send(method)
+          end
+
+          # @param [ Hash ] opts
+          #
+          # @return [ Array<Plugin>, Array<Theme> ]
+          def aggressive(opts = {})
+            found = []
+
+            aggressive_configs.each do |slug, configs|
+              configs.each do |klass, config|
+                path     = aggressive_path(slug, config)
+                response = Browser.get(target.url(path))
+
+                process_response(opts, response, slug, klass, config) { |plugin| found << plugin }
+              end
+            end
+
+            found
+          end
+
+          # @param [ String ] slug
+          # @param [ Hash ] config from the YAML file with he 'path' key
+          #
+          # @return [ String ] The path related to the aggresive configuration
+          #                    ie config['path'] if it's an absolute path (like /file.txt)
+          #                    or the path from inside the related plugin directory
+          def aggressive_path(slug, config)
+            return config['path'] if config['path'][0] == '/'
+
+            # No need to set the correct plugins dir, it will be handled by target.url()
+            "wp-content/plugins/#{slug}/#{config['path']}"
+          end
         end
       end
     end

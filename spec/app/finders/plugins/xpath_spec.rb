@@ -20,7 +20,7 @@ describe WPScan::Finders::Plugins::Xpath do
     it 'contains the expected plugins' do
       expected = []
 
-      WPScan::DB::DynamicPluginFinders.passive_xpath_finder_configs.each do |slug, configs|
+      finder.passive_configs.each do |slug, configs|
         configs.each_key do |finder_class|
           expected_finding_opts = expected_all[slug][finder_class]
 
@@ -45,13 +45,18 @@ describe WPScan::Finders::Plugins::Xpath do
 
       # Stubbing all requests to the different paths
 
-      WPScan::DB::DynamicPluginFinders.aggressive_xpath_finder_configs.each do |slug, configs|
+      finder.aggressive_configs.each do |slug, configs|
         configs.each do |finder_class, config|
           finder_super_class = config['class'] ? config['class'] : finder_class
 
           fixture               = File.join(fixtures, slug, finder_class.underscore, config['path'])
           stubbed_response      = df_stubbed_response(fixture, finder_super_class)
-          path                  = "wp-content/plugins/#{slug}/#{config['path']}"
+          path                  = if config['path'][0] == '/'
+                                    config['path']
+                                  else
+                                    "wp-content/plugins/#{slug}/#{config['path']}"
+                                  end
+
           expected_finding_opts = expected_all[slug][finder_class]
 
           stub_request(:get, target.url(path)).to_return(stubbed_response)
