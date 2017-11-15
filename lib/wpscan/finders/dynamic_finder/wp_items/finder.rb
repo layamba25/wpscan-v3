@@ -10,7 +10,7 @@ module WPScan
         # #passive and #aggressive overriden
         class Finder < CMSScanner::Finders::Finder
           # @return [ Hash ] The related dynamic finder passive configurations
-          #                  for the current class (all its usefullness comes from clid classes)
+          #                  for the current class (all its usefullness comes from child classes)
           def passive_configs
             # So far only the Plugins have dynamic finders so using DB:: DynamicPluginFinders
             # is ok. However, when Themes have some, will need to create other child classes for them
@@ -36,10 +36,10 @@ module WPScan
           end
 
           # @return [ Hash ] The related dynamic finder passive configurations
-          #                  for the current class (all its usefullness comes from clid classes)
+          #                  for the current class (all its usefullness comes from child classes)
           def aggressive_configs
             # So far only the Plugins have dynamic finders so using DB:: DynamicPluginFinders
-            # is ok. However, when Thmes have some, will need to create other child classes for them
+            # is ok. However, when Themes have some, will need to create other child classes for them
 
             method = "aggressive_#{self.class.to_s.demodulize.underscore}_finder_configs".to_sym
 
