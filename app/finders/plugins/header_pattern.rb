@@ -27,9 +27,9 @@ module WPScan
 
         # @param [ Hash ] opts
         #
-        # @return [ Array<Plugin> ]
+        # @return [ nil ]
         def aggressive(_opts = {})
-          # TODO
+          # None
         end
       end
     end

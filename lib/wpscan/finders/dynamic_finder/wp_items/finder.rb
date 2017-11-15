@@ -28,7 +28,9 @@ module WPScan
 
             passive_configs.each do |slug, configs|
               configs.each do |klass, config|
-                process_response(opts, target.homepage_res, slug, klass, config) { |plugin| found << plugin }
+                item = process_response(opts, target.homepage_res, slug, klass, config)
+
+                found << item if item.is_a?(WpItem)
               end
             end
 
@@ -57,7 +59,9 @@ module WPScan
                 path     = aggressive_path(slug, config)
                 response = Browser.get(target.url(path))
 
-                process_response(opts, response, slug, klass, config) { |plugin| found << plugin }
+                item = process_response(opts, response, slug, klass, config)
+
+                found << item if item.is_a?(WpItem)
               end
             end
 

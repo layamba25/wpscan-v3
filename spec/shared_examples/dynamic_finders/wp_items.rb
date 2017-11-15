@@ -15,36 +15,53 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
 
   describe '#passive' do
     before do
-      stub_request(:get, target.url).to_return(body: File.read(passive_fixture))
+      stub_request(:get, target.url).to_return(body: body)
 
-      expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
+      allow(target).to receive(:content_dir).and_return('wp-content')
     end
 
-    it 'contains the expected plugins' do
-      expected = []
+    context 'when no matches' do
+      let(:body) { '' }
 
-      finder.passive_configs.each do |slug, configs|
-        configs.each_key do |finder_class|
-          expected_finding_opts = expected_all[slug][finder_class]
-
-          expected << item_class.new(
-            slug,
-            target,
-            confidence: expected_finding_opts['confidence'] || default_confidence,
-            found_by: expected_finding_opts['found_by']
-          )
-        end
+      it 'returns an empty array' do
+        expect(finder.passive).to eql([])
       end
+    end
 
-      expect(finder.passive).to eql expected
+    context 'when matches' do
+      let(:body) { File.read(passive_fixture) }
+
+      it 'contains the expected plugins' do
+        expected = []
+
+        finder.passive_configs.each do |slug, configs|
+          configs.each_key do |finder_class|
+            expected_finding_opts = expected_all[slug][finder_class]
+
+            expected << item_class.new(
+              slug,
+              target,
+              confidence: expected_finding_opts['confidence'] || default_confidence,
+              found_by: expected_finding_opts['found_by']
+            )
+          end
+        end
+
+        # The below is ok but when it fails, it's freaking hard to determine
+        # in which finder config the error is and match_array seems to use == instead
+        # of eql? so it can't be used
+        expect(finder.passive).to eql expected
+      end
     end
   end
 
   describe '#aggressive' do
+    # TODO: Maybe also stub all paths to an empty body and expect an empty array ?
+
     before do
       @expected = []
 
-      expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
+      allow(target).to receive(:content_dir).and_return('wp-content')
 
       # Stubbing all requests to the different paths
 

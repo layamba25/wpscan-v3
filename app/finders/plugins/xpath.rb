@@ -9,12 +9,12 @@ module WPScan
         # @param [ String ] klass
         # @param [ Hash ] config The related dynamic finder config hash
         #
-        # @yield [ Plugin ] The detected plugin
+        # @return [ Plugin ] The detected plugin
         def process_response(opts, response, slug, klass, config)
           response.html.xpath(config['xpath']).each do |node|
             next if config['pattern'] && !node.text.match(config['pattern'])
 
-            yield Plugin.new(
+            return Plugin.new(
               slug,
               target,
               opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 70)
