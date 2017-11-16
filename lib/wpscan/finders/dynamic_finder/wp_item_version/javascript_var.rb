@@ -30,9 +30,13 @@ module WPScan
             ) do |match_data, _node|
               next unless (version_number = version_number_from_match_data(match_data))
 
-              # Let's get 10 chars before and after (when possible) the detected version as
-              # a match for the interesting_entries
-              match = match_data.to_s[/.*?(.{,10}#{Regexp.escape(version_number)}.{,10}).*/, 1]
+              # If the text to be output in the interesting_entries is > 50 chars,
+              # get 20 chars before and after (when possible) the detected version instead
+              match = match_data.to_s
+
+              if match.size > 50
+                match = match[/.*?(.{,20}#{Regexp.escape(version_number)}.{,20}).*/, 1]
+              end
 
               return WPScan::Version.new(
                 version_number,

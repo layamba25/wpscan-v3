@@ -7,7 +7,7 @@ plugins:
       number: 5.3.5
       found_by: Javascript Var (Passive Detection)
       interesting_entries:
-        - "http://wp.lab/, Match: 'version\":\"5.3.5\",\"anonymo'"
+        - "http://wp.lab/, Match: 'wp_product_version = \"wpp-5.3.5\";'"
   all-in-one-seo-pack:
     Comment:
       number: 2.2.5.1
@@ -148,7 +148,7 @@ plugins:
       number: 2.5.7
       found_by: Javascript Var (Passive Detection)
       interesting_entries:
-        - "http://wp.lab/, Match: 'version\":\"2.5.7\",\"script_'"
+        - "http://wp.lab/, Match: 'zepress\",\"version\":\"2.5.7\",\"script_debug\":\".m'"
   optin-monster:
     Comment:
       number: 2.0.2.2

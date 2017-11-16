@@ -1,7 +1,7 @@
 # For patterns with a version, the ?<v> must be used
 # Unless the finder is a JavascriptVar and the match has to be
 # processed via the JSON trick (hence will contain the ?<json> group, see
-# the config of the OptmizePress plugin)
+# the config of the OptmizePress plugins)
 ---
 plugins:
   addthis:
@@ -9,9 +9,8 @@ plugins:
       pattern: !ruby/regexp /AddThis Settings Begin/i
     JavascriptVar:
       xpath: //script[@data-cfasync="false"]
-      pattern: !ruby/regexp /addthis_plugin_info\s*=\s*{(?<json>.+?(?=};))};/i
+      pattern: !ruby/regexp /wp_product_version = "wpp\-(?<v>([\d\.]+))";/i
       version: true
-      version_key: 'plugin_version'
   all-in-one-seo-pack:
     Comment:
       pattern: !ruby/regexp '/\A\/?all in one seo pack(?: (?<v>[^\s]+) by)?/i'
