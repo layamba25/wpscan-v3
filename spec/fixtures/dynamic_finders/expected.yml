@@ -278,7 +278,7 @@ plugins:
       found_by: Comment (Passive Detection)
   wp-rocket:
     Comment:
-      found_by: Comment (Passive Detectio)
+      found_by: Comment (Passive Detection)
   wp-spamfree:
     Comment:
       number: 1.3.1

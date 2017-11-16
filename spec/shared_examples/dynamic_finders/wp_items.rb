@@ -47,10 +47,7 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
           end
         end
 
-        # The below is ok but when it fails, it's freaking hard to determine
-        # in which finder config the error is and match_array seems to use == instead
-        # of eql? so it can't be used
-        expect(finder.passive).to eql expected
+        expect(finder.passive).to match_array(expected.map { |item| eql(item) })
       end
     end
   end
@@ -88,7 +85,7 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
     end
 
     it 'retuns the expected plugins' do
-      expect(finder.aggressive).to eql @expected
+      expect(finder.aggressive).to match_array(@expected.map { |item| eql(item) })
     end
   end
 end

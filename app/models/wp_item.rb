@@ -95,9 +95,7 @@ module WPScan
 
     # @return [ Boolean ]
     def ==(other)
-      return false unless self.class == other.class
-
-      slug == other.slug
+      self.class == other.class && slug == other.slug
     end
 
     def to_s

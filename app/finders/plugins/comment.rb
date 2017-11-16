@@ -9,7 +9,7 @@ module WPScan
         # @param [ String ] klass
         # @param [ Hash ] config The related dynamic finder config hash
         #
-        # @return [ Plugin ] The detected plugin
+        # @return [ Plugin ] The detected plugin in the response, related to the config
         def process_response(opts, response, slug, klass, config)
           response.html.xpath(config['xpath'] || '//comment()').each do |node|
             comment = node.text.to_s.strip
