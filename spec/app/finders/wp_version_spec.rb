@@ -10,7 +10,7 @@ describe WPScan::Finders::WpVersion::Base do
       %w[
         MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers
         InstallStylesheetNumbers UpgradeStylesheetNumbers RDFGenerator Readme
-        SitemapGenerator OpmlGenerator UniqueFingerprinting
+        SitemapGenerator OpmlGenerator AddthisJavascriptVar UniqueFingerprinting
       ]
     end
 

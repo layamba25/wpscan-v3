@@ -9,6 +9,7 @@ require_relative 'wp_version/homepage_stylesheet_numbers'
 require_relative 'wp_version/install_stylesheet_numbers'
 require_relative 'wp_version/upgrade_stylesheet_numbers'
 require_relative 'wp_version/unique_fingerprinting'
+require_relative 'wp_version/addthis_javascript_var'
 
 module WPScan
   module Finders
@@ -33,7 +34,8 @@ module WPScan
         def initialize(target)
           %i[
             MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers InstallStylesheetNumbers
-            UpgradeStylesheetNumbers RDFGenerator Readme SitemapGenerator OpmlGenerator UniqueFingerprinting
+            UpgradeStylesheetNumbers RDFGenerator Readme SitemapGenerator OpmlGenerator
+            AddthisJavascriptVar UniqueFingerprinting
           ].each do |sym|
             finders << WpVersion.const_get(sym).new(target)
           end

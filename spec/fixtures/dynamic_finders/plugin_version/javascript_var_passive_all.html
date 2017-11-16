@@ -20,6 +20,25 @@
     }
 </script>
 
+<!-- newer versions of addthis have the below -->
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.1"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.7.2"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":true,"ignore_server_config":true,"ui_atversion":300}; } if (window.addthis_layers === undefined) { window.addthis_layers = {}; } if (window.addthis_layers_tools === undefined) { window.addthis_layers_tools = []; } else {  } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.1","plugin_mode":"WordPress","anonymous_profile_id":"wp-7b3083b30b021a2b07908c9f8fd01f57","php_version":"5.3.3-7+squeeze19","cms_version":"4.7.2","page_info":{"template":"home","post_type":""},"sharing_enabled_on_post_via_metabox":false}; }
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script>
+
 
 <!-- jquery-pin-it-button-for-images (No version) -->
 <script type='text/javascript'>
@@ -32,7 +51,7 @@ var jpibfi_options = {"hover":{"siteTitle":"The Joules Journal","image_selector"
 <!-- OptmizePress -->
 <script type='text/javascript'>
 /* <![CDATA[ */
-var OptimizePress = {"ajaxurl":"https:\/\/www.rawtillwhenever.com\/wp-admin\/admin-ajax.php","SN":"optimizepress","version":"2.5.7","script_debug":".min","localStorageEnabled":"","wp_admin_page":"","op_live_editor":"","op_page_builder":"","op_create_new_page":"","imgurl":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/images\/","OP_URL":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/","OP_JS":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/js\/","OP_PAGE_BUILDER_URL":"","include_url":"https:\/\/www.rawtillwhenever.com\/wp-includes\/","op_autosave_interval":"300","op_autosave_enabled":"N","paths":{"url":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/","img":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/images\/","js":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/js\/","css":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/css\/"},"social":{"twitter":"optimizepress","facebook":"optimizepress","googleplus":"111273444733787349971"},"flowplayerHTML5":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/modules\/blog\/video\/flowplayer\/flowplayer.swf","flowplayerKey":"","flowplayerLogo":"","mediaelementplayer":"https:\/\/www.rawtillwhenever.com\/wp-content\/plugins\/optimizePressPlugin\/lib\/modules\/blog\/video\/mediaelement\/","pb_unload_alert":"This page is asking you to confirm that you want to leave - data you have entered may not be saved.","pb_save_alert":"Please make sure you are happy with all of your options as some options will not be able to be changed for this page later.","search_default":"Search...","optimizemember":{"enabled":false,"version":"0"},"OP_LEADS_URL":"https:\/\/www.optimizeleads.com\/","OP_LEADS_THEMES_URL":"https:\/\/www.optimizeleads.com\/build\/themes\/"};
+var OptimizePress = {"ajaxurl":"https:\/\/www.wp.lab\/wp-admin\/admin-ajax.php","SN":"optimizepress","version":"2.5.7","script_debug":".min","localStorageEnabled":"","wp_admin_page":"","op_live_editor":"","op_page_builder":"","op_create_new_page":"","imgurl":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/images\/","OP_URL":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/","OP_JS":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/js\/","OP_PAGE_BUILDER_URL":"","include_url":"https:\/\/www.wp.lab\/wp-includes\/","op_autosave_interval":"300","op_autosave_enabled":"N","paths":{"url":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/","img":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/images\/","js":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/js\/","css":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/css\/"},"social":{"twitter":"optimizepress","facebook":"optimizepress","googleplus":"111273444733787349971"},"flowplayerHTML5":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/modules\/blog\/video\/flowplayer\/flowplayer.swf","flowplayerKey":"","flowplayerLogo":"","mediaelementplayer":"https:\/\/www.wp.lab\/wp-content\/plugins\/optimizePressPlugin\/lib\/modules\/blog\/video\/mediaelement\/","pb_unload_alert":"This page is asking you to confirm that you want to leave - data you have entered may not be saved.","pb_save_alert":"Please make sure you are happy with all of your options as some options will not be able to be changed for this page later.","search_default":"Search...","optimizemember":{"enabled":false,"version":"0"},"OP_LEADS_URL":"https:\/\/www.optimizeleads.com\/","OP_LEADS_THEMES_URL":"https:\/\/www.optimizeleads.com\/build\/themes\/"};
 /* ]]> */
 </script>
 
