@@ -41,7 +41,7 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
             expected << item_class.new(
               slug,
               target,
-              confidence: expected_finding_opts['confidence'] || default_confidence,
+              confidence: expected_finding_opts['confidence'] || described_class::DEFAULT_CONFIDENCE,
               found_by: expected_finding_opts['found_by']
             )
           end
@@ -77,7 +77,7 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
           @expected << item_class.new(
             slug,
             target,
-            confidence: expected_finding_opts['confidence'] || default_confidence,
+            confidence: expected_finding_opts['confidence'] || described_class::DEFAULT_CONFIDENCE,
             found_by: expected_finding_opts['found_by']
           )
         end

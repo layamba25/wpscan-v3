@@ -14,6 +14,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::BodyPattern do
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::BodyPattern }
   let(:finder_config) { { 'pattern' => /aaa/i } }
+  let(:default)       { { 'confidence' => 30 } }
 
   before { described_class.create_child_class(finder_module, :BodyPattern, finder_config) }
   after  { finder_module.send(:remove_const, :BodyPattern) }
@@ -27,7 +28,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::BodyPattern do
         # expect(finder_class).to be_a described_class
 
         expect(finder_class::PATTERN).to eql finder_config['pattern']
-        expect(finder_class::CONFIDENCE).to eql 30
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
         expect(finder_class::PATH).to eql nil
       end
     end
@@ -50,7 +51,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::BodyPattern do
         expect(finder_class::PATTERN).to eql finder_config['pattern']
         expect(finder_class::PATH).to eql finder_config['path']
 
-        expect(finder_class::CONFIDENCE).to eql 30
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
       end
     end
   end

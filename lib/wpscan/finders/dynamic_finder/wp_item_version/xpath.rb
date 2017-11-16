@@ -13,7 +13,7 @@ module WPScan
                 const_set(:PATH, config['path'])
                 const_set(:XPATH, config['xpath'])
                 const_set(:PATTERN, config['pattern'] || /\A(?<v>[\d\.]+)/i)
-                const_set(:CONFIDENCE, config['confidence'] || 50)
+                const_set(:CONFIDENCE, config['confidence'] || 40)
               end
             )
           end

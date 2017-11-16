@@ -3,6 +3,8 @@ module WPScan
     module Plugins
       # Plugins finder from Dynamic Finder 'HeaderPattern'
       class HeaderPattern < WPScan::Finders::DynamicFinder::WpItems::Finder
+        DEFAULT_CONFIDENCE = 30
+
         # @param [ Hash ] opts
         #
         # @return [ Array<Plugin> ]
@@ -16,9 +18,11 @@ module WPScan
             configs.each do |klass, config|
               next unless headers[config['header']] && headers[config['header']].to_s =~ config['pattern']
 
-              found << Plugin.new(slug,
-                                  target,
-                                  opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 70))
+              found << Plugin.new(
+                slug,
+                target,
+                opts.merge(found_by: found_by(klass), confidence: config['confidence'] || DEFAULT_CONFIDENCE)
+              )
             end
           end
 

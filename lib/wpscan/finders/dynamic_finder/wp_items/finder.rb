@@ -2,8 +2,9 @@ module WPScan
   module Finders
     module DynamicFinder
       module WpItems
-        # Not really a dynamic finder in itself, but will use the dynamic finder DB
-        # configs to find collections of WpItems (such as Plugins and Themes)
+        # Not really a dynamic finder in itself (hence not a child class of DynamicFinder::Finder)
+        # but will use the dynamic finder DB configs to find collections of
+        # WpItems (such as Plugins and Themes)
         #
         # Also used to factorise some code used between such finders.
         # The #process_response should be implemented in each child class, or the

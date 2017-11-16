@@ -14,13 +14,12 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Xpath do
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::Xpath }
   let(:finder_config) { { 'xpath' => "//div/h3[@class='version-number']" } }
+  let(:default)       { { 'pattern' => /\A(?<v>[\d\.]+)/i, 'confidence' => 40 } }
 
   before { described_class.create_child_class(finder_module, :Xpath, finder_config) }
   after  { finder_module.send(:remove_const, :Xpath) }
 
   describe '.create_child_class' do
-    let(:default_pattern) { /\A(?<v>[\d\.]+)/i }
-
     context 'when no PATH and CONFIDENCE' do
       it 'contains the expected constants to their default values' do
         # Doesn't work, dunno why
@@ -30,8 +29,8 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Xpath do
 
         expect(finder_class::XPATH).to eql finder_config['xpath']
 
-        expect(finder_class::PATTERN).to eql default_pattern
-        expect(finder_class::CONFIDENCE).to eql 50
+        expect(finder_class::PATTERN).to eql default['pattern']
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
         expect(finder_class::PATH).to eql nil
       end
     end
@@ -43,7 +42,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Xpath do
         expect(finder_class::XPATH).to eql finder_config['xpath']
         expect(finder_class::CONFIDENCE).to eql finder_config['confidence']
 
-        expect(finder_class::PATTERN).to eql default_pattern
+        expect(finder_class::PATTERN).to eql default['pattern']
         expect(finder_class::PATH).to eql nil
       end
     end
@@ -55,8 +54,8 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Xpath do
         expect(finder_class::XPATH).to eql finder_config['xpath']
         expect(finder_class::PATH).to eql finder_config['path']
 
-        expect(finder_class::PATTERN).to eql default_pattern
-        expect(finder_class::CONFIDENCE).to eql 50
+        expect(finder_class::PATTERN).to eql default['pattern']
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
       end
     end
 
@@ -68,7 +67,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Xpath do
         expect(finder_class::PATTERN).to eql finder_config['pattern']
 
         expect(finder_class::PATH).to eql nil
-        expect(finder_class::CONFIDENCE).to eql 50
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
       end
     end
   end

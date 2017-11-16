@@ -14,7 +14,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::Comment do
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::Comment }
   let(:finder_config) { { 'pattern' => /some version: (?<v>[\d\.]+)/i } }
-  let(:default)       { { 'xpath' => '//comment()', 'confidence' => 50 } }
+  let(:default)       { { 'xpath' => '//comment()', 'confidence' => 30 } }
 
   before { described_class.create_child_class(finder_module, :Comment, finder_config) }
   after  { finder_module.send(:remove_const, :Comment) }

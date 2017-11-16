@@ -14,6 +14,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
   let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
   let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::HeaderPattern }
   let(:finder_config) { { 'header' => 'Location' } }
+  let(:default)       { { 'confidence' => 30 } }
 
   before { described_class.create_child_class(finder_module, :HeaderPattern, finder_config) }
   after  { finder_module.send(:remove_const, :HeaderPattern) }
@@ -29,7 +30,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
         expect(finder_class::HEADER).to eql finder_config['header']
 
         expect(finder_class::PATTERN).to eql nil
-        expect(finder_class::CONFIDENCE).to eql 30
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
         expect(finder_class::PATH).to eql nil
       end
     end
@@ -54,7 +55,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
         expect(finder_class::PATH).to eql finder_config['path']
 
         expect(finder_class::PATTERN).to eql nil
-        expect(finder_class::CONFIDENCE).to eql 30
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
       end
     end
 
@@ -66,7 +67,7 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::HeaderPattern do
         expect(finder_class::PATTERN).to eql finder_config['pattern']
 
         expect(finder_class::PATH).to eql nil
-        expect(finder_class::CONFIDENCE).to eql 30
+        expect(finder_class::CONFIDENCE).to eql default['confidence']
       end
     end
   end

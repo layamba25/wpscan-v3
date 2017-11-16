@@ -3,6 +3,8 @@ module WPScan
     module Plugins
       # Plugins finder from the Dynamic Finder 'Comment'
       class Comment < WPScan::Finders::DynamicFinder::WpItems::Finder
+        DEFAULT_CONFIDENCE = 30
+
         # @param [ Hash ] opts The options from the #passive, #aggressive methods
         # @param [ Typhoeus::Response ] response
         # @param [ String ] slug
@@ -19,7 +21,7 @@ module WPScan
             return Plugin.new(
               slug,
               target,
-              opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 50)
+              opts.merge(found_by: found_by(klass), confidence: config['confidence'] || DEFAULT_CONFIDENCE)
             )
           end
         end

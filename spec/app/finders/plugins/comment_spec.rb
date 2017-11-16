@@ -9,6 +9,5 @@ describe WPScan::Finders::Plugins::Comment do
 
     let(:expected_all) { df_expected_all['plugins'] }
     let(:item_class)   { WPScan::Plugin }
-    let(:default_confidence) { 50 }
   end
 end

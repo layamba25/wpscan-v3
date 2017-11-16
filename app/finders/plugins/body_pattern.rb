@@ -3,6 +3,8 @@ module WPScan
     module Plugins
       # Plugins finder from Dynamic Finder 'BodyPattern'
       class BodyPattern < WPScan::Finders::DynamicFinder::WpItems::Finder
+        DEFAULT_CONFIDENCE = 30
+
         # @param [ Hash ] opts The options from the #passive, #aggressive methods
         # @param [ Typhoeus::Response ] response
         # @param [ String ] slug
@@ -16,7 +18,7 @@ module WPScan
           Plugin.new(
             slug,
             target,
-            opts.merge(found_by: found_by(klass), confidence: config['confidence'] || 70)
+            opts.merge(found_by: found_by(klass), confidence: config['confidence'] || DEFAULT_CONFIDENCE)
           )
         end
       end
