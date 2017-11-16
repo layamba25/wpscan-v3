@@ -1,7 +1,7 @@
 # For patterns with a version, the ?<v> must be used
 # Unless the finder is a JavascriptVar and the match has to be
 # processed via the JSON trick (hence will contain the ?<json> group, see
-# the config of the OptmizePress plugins)
+# the config of the OptmizePress plugin)
 ---
 plugins:
   addthis:
