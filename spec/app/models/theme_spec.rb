@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe WPScan::Theme do
-  subject(:theme)  { described_class.new(name, target, opts) }
-  let(:name)       { 'spec' }
+  subject(:theme)  { described_class.new(slug, target, opts) }
+  let(:slug)       { 'spec' }
   let(:target)     { WPScan::Target.new('http://wp.lab/') }
   let(:opts)       { {} }
   let(:fixtures)   { File.join(FIXTURES, 'models', 'theme') }
@@ -142,11 +142,11 @@ describe WPScan::Theme do
 
     context 'when default style' do
       it 'returns true when equal' do
-        expect(theme == described_class.new(name, target, opts)).to be true
+        expect(theme == described_class.new(slug, target, opts)).to be true
       end
 
       it 'returns false when not equal' do
-        expect(theme == described_class.new(name, target, opts.merge(style_url: 'spec.css'))).to be false
+        expect(theme == described_class.new(slug, target, opts.merge(style_url: 'spec.css'))).to be false
       end
     end
 
@@ -154,11 +154,11 @@ describe WPScan::Theme do
       let(:opts) { super().merge(style_url: 'spec.css') }
 
       it 'returns true when equal' do
-        expect(theme == described_class.new(name, target, opts.merge(style_url: 'spec.css'))).to be true
+        expect(theme == described_class.new(slug, target, opts.merge(style_url: 'spec.css'))).to be true
       end
 
       it 'returns false when not equal' do
-        expect(theme == described_class.new(name, target, opts.merge(style_url: 'spec2.css'))).to be false
+        expect(theme == described_class.new(slug, target, opts.merge(style_url: 'spec2.css'))).to be false
       end
     end
   end

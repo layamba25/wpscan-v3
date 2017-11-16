@@ -26,6 +26,25 @@ def redefine_constant(constant, value)
   WPScan.const_set(constant, value)
 end
 
+# Dynamic Finders Helpers
+def df_expected_all
+  YAML.safe_load(File.read(File.join(DYNAMIC_FINDERS_FIXTURES, 'expected.yml')))
+end
+
+def df_tested_class_constant(type, slug, finder_class)
+  slug_class = slug.tr('-', '_').camelize
+
+  "WPScan::Finders::#{type}::#{slug_class}::#{finder_class}".constantize
+end
+
+def df_stubbed_response(fixture, finder_super_class)
+  if finder_super_class == 'HeaderPattern'
+    { headers: JSON.parse(File.read(fixture)) }
+  else
+    { body: File.read(fixture) }
+  end
+end
+
 require 'wpscan'
 require 'shared_examples'
 
@@ -68,8 +87,9 @@ module WebMock
 end
 # rubocop:enabled all
 
-SPECS            = Pathname.new(__FILE__).dirname.to_s
-FIXTURES         = File.join(SPECS, 'fixtures')
-FINDERS_FIXTURES = File.join(FIXTURES, 'finders')
+SPECS                    = Pathname.new(__FILE__).dirname.to_s
+FIXTURES                 = File.join(SPECS, 'fixtures')
+FINDERS_FIXTURES         = File.join(FIXTURES, 'finders')
+DYNAMIC_FINDERS_FIXTURES = File.join(FIXTURES, 'dynamic_finders')
 
 redefine_constant(:DB_DIR, File.join(FIXTURES, 'db'))

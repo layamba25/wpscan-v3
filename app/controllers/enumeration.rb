@@ -6,34 +6,8 @@ module WPScan
     # Enumeration Controller
     class Enumeration < CMSScanner::Controller::Base
       def before_scan
-        # Create the Dynamic PluginVersion Finders
-        DB::DynamicPluginFinders.db_data.each do |name, config|
-          %w[Comments].each do |klass|
-            next unless config[klass] && config[klass]['version']
-
-            constant_name = name.tr('-', '_').camelize
-
-            unless Finders::PluginVersion.constants.include?(constant_name.to_sym)
-              Finders::PluginVersion.const_set(constant_name, Module.new)
-            end
-
-            mod = WPScan::Finders::PluginVersion.const_get(constant_name)
-
-            raise "#{mod} has already a #{klass} class" if mod.constants.include?(klass.to_sym)
-
-            case klass
-            when 'Comments' then create_plugins_comments_finders(mod, config[klass])
-            end
-          end
-        end
-      end
-
-      def create_plugins_comments_finders(mod, config)
-        mod.const_set(
-          :Comments, Class.new(Finders::Finder::PluginVersion::Comments) do
-            const_set(:PATTERN, config['pattern'])
-          end
-        )
+        DB::DynamicPluginFinders.create_versions_finders
+        DB::DynamicThemeFinders.create_versions_finders
       end
 
       def run

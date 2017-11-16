@@ -12,12 +12,12 @@ module WPScan
         def aggressive(opts = {})
           found = []
 
-          enumerate(target_urls(opts), opts) do |res, name|
+          enumerate(target_urls(opts), opts) do |res, slug|
             # TODO: follow the location (from enumerate()) and remove the 301 here ?
             # As a result, it might remove false positive due to redirection to the homepage
             next unless [200, 401, 403, 301].include?(res.code)
 
-            found << WPScan::Plugin.new(name, target, opts.merge(found_by: found_by, confidence: 80))
+            found << WPScan::Plugin.new(slug, target, opts.merge(found_by: found_by, confidence: 80))
           end
 
           found
@@ -28,12 +28,12 @@ module WPScan
         #
         # @return [ Hash ]
         def target_urls(opts = {})
-          names       = opts[:list] || DB::Plugins.vulnerable_slugs
+          slugs       = opts[:list] || DB::Plugins.vulnerable_slugs
           urls        = {}
           plugins_url = target.plugins_url
 
-          names.each do |name|
-            urls["#{plugins_url}#{URI.encode(name)}/"] = name
+          slugs.each do |slug|
+            urls["#{plugins_url}#{URI.encode(slug)}/"] = slug
           end
 
           urls

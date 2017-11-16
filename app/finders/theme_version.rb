@@ -21,7 +21,7 @@ module WPScan
         #
         # @param [ WPScan::Theme ] theme
         def load_specific_finders(theme)
-          module_name = theme.classify_name.to_sym
+          module_name = theme.classify
 
           return unless Finders::ThemeVersion.constants.include?(module_name)
 

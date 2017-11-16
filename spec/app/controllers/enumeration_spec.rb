@@ -52,43 +52,6 @@ describe WPScan::Controller::Enumeration do
     end
   end
 
-  describe '#before_scan' do
-    context 'when a Class already exist' do
-      module WPScan
-        module Finders
-          module PluginVersion
-            module RspecFailure
-              class Comments
-              end
-            end
-          end
-        end
-      end
-
-      it 'raises an error' do
-        expect { controller.before_scan }
-          .to raise_error('WPScan::Finders::PluginVersion::RspecFailure has already a Comments class')
-      end
-    end
-
-    context 'when everything is fine' do
-      it 'creates the expected classes' do
-        WPScan::DB::DynamicPluginFinders.db_data.each do |name, config|
-          %w[Comments].each do |klass|
-            next unless config[klass] && config[klass]['version'] && name != 'rspec-failure'
-
-            constant_name = name.tr('-', '_').camelize
-
-            # Will have to change the below if new classes are added
-            defined_klass = WPScan::Finders::PluginVersion.const_get("#{constant_name}::Comments")
-
-            expect(defined_klass::PATTERN).to eql config[klass]['pattern']
-          end
-        end
-      end
-    end
-  end
-
   describe '#cli_options' do
     it 'contains the correct options' do
       expect(controller.cli_options.map(&:to_sym)).to eql(
@@ -121,6 +84,15 @@ describe WPScan::Controller::Enumeration do
       it 'calls the target.users with the default range' do
         expect(controller.target).to receive(:users).with(hash_including(range: (1..10)))
       end
+    end
+  end
+
+  describe '#before_scan' do
+    it 'creates the Dynamic Finders' do
+      expect(WPScan::DB::DynamicPluginFinders).to receive(:create_versions_finders)
+      expect(WPScan::DB::DynamicThemeFinders).to receive(:create_versions_finders)
+
+      controller.before_scan
     end
   end
 

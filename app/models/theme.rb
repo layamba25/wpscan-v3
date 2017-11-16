@@ -5,10 +5,10 @@ module WPScan
                 :license, :license_uri, :tags, :text_domain
 
     # See WpItem
-    def initialize(name, target, opts = {})
-      super(name, target, opts)
+    def initialize(slug, target, opts = {})
+      super(slug, target, opts)
 
-      @uri       = Addressable::URI.parse(target.url("wp-content/themes/#{name}/"))
+      @uri       = Addressable::URI.parse(target.url("wp-content/themes/#{slug}/"))
       @style_url = opts[:style_url] || url('style.css')
 
       parse_style
@@ -16,7 +16,7 @@ module WPScan
 
     # @return [ JSON ]
     def db_data
-      DB::Theme.db_data(name)
+      DB::Theme.db_data(slug)
     end
 
     # @param [ Hash ] opts

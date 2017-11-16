@@ -1,7 +1,11 @@
 require_relative 'plugins/urls_in_homepage'
-require_relative 'plugins/headers'
-require_relative 'plugins/comments'
 require_relative 'plugins/known_locations'
+# From the DynamicFinders
+require_relative 'plugins/comment'
+require_relative 'plugins/xpath'
+require_relative 'plugins/header_pattern'
+require_relative 'plugins/body_pattern'
+require_relative 'plugins/javascript_var'
 
 module WPScan
   module Finders
@@ -14,8 +18,11 @@ module WPScan
         def initialize(target)
           finders <<
             Plugins::UrlsInHomepage.new(target) <<
-            Plugins::Headers.new(target) <<
-            Plugins::Comments.new(target) <<
+            Plugins::HeaderPattern.new(target) <<
+            Plugins::Comment.new(target) <<
+            Plugins::Xpath.new(target) <<
+            Plugins::BodyPattern.new(target) <<
+            Plugins::JavascriptVar.new(target) <<
             Plugins::KnownLocations.new(target)
         end
       end

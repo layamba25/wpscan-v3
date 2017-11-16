@@ -2,9 +2,12 @@ module WPScan
   module DB
     # Dynamic Finders
     class DynamicFinders
+      # TODO: Put that as class var to allow it to be overriden
+      ALLOWED_CLASSES = %i[Comment Xpath HeaderPattern BodyPattern JavascriptVar].freeze
+
       # @return [ String ]
       def self.db_file
-        @db_file ||= File.join(DB_DIR, 'dynamic_finders_01.yml')
+        @db_file ||= File.join(DB_DIR, 'dynamic_finders.yml')
       end
 
       # @return [ Hash ]
@@ -12,43 +15,113 @@ module WPScan
         @db_data ||= YAML.safe_load(File.read(db_file), [Regexp])
       end
 
+      # @param [ Symbol ] finder_class
       # @return [ Hash ]
-      def self.finder_configs(finder_klass)
+      def self.finder_configs(finder_class, aggressive = false)
         configs = {}
 
-        db_data.each do |slug, config|
-          next unless config[finder_klass]
+        return configs unless ALLOWED_CLASSES.include?(finder_class)
 
-          configs[slug] = config[finder_klass].dup
+        db_data.each do |slug, finders|
+          # Quite sure better can be done with some kind of logic statement in the select
+          fs = if aggressive
+                 finders.reject { |_f, c| c['path'].nil? }
+               else
+                 finders.select { |_f, c| c['path'].nil? }
+               end
+
+          fs.each do |finder_name, config|
+            klass = config['class'] ? config['class'] : finder_name
+
+            next unless klass.to_sym == finder_class
+
+            configs[slug] ||= {}
+            configs[slug][finder_name] = config
+          end
         end
 
         configs
       end
-    end
 
-    # Dynamic Plugin Finders
-    class DynamicPluginFinders < DynamicFinders
       # @return [ Hash ]
-      def self.db_data
-        @db_data ||= super['plugins'] || {}
+      def self.versions_finders_configs
+        return @versions_finders if @versions_finders
+
+        @versions_finders = {}
+
+        db_data.each do |slug, finders|
+          finders.each do |finder_name, config|
+            next unless config.key?('version')
+
+            @versions_finders[slug] ||= {}
+            @versions_finders[slug][finder_name] = config
+          end
+        end
+
+        @versions_finders
       end
 
-      # @return [ Hash ]
-      def self.comments
-        @comments ||= finder_configs('Comments')
+      # @param [ String ] slug
+      # @return [ Constant ]
+      def self.maybe_create_modudle(slug)
+        # What about slugs such as js_composer which will be done as JsComposer, just like js-composer
+        constant_name = slug.tr('-', '_').camelize.to_sym
+
+        unless version_finder_module.constants.include?(constant_name)
+          version_finder_module.const_set(constant_name, Module.new)
+        end
+
+        version_finder_module.const_get(constant_name)
       end
 
-      # @return [ Hash ]
-      def self.urls_in_page
-        @urls_in_page ||= finder_configs('UrlsInPage')
-      end
-    end
+      def self.create_versions_finders
+        versions_finders_configs.each do |slug, finders|
+          # Kind of an issue here, module is created even if there is no valid classes
+          # Could put the #maybe_ directly in the #send() BUT it would be checked everytime,
+          # which is kind of a waste
+          mod = maybe_create_modudle(slug)
 
-    # Dynamic Theme Finders (none ATM)
-    class DynamicThemeFinders < DynamicFinders
-      # @return [ Hash ]
-      def self.db_data
-        @db_data ||= super['themes'] || {}
+          finders.each do |finder_class, config|
+            klass = config['class'] ? config['class'] : finder_class
+
+            version_finder_super_class(mod, klass).create_child_class(mod, finder_class.to_sym, config)
+          end
+        end
+      end
+
+      # The idea here would be to check if the class exist in
+      # the Finders::DynamicFinders::Plugins/Themes::klass or WpItemVersion::klass
+      # and return the related constant when one has been found.
+      #
+      # So far, the Finders::DynamicFinders::WPItemVersion is enought
+      # as nothing else is used
+      #
+      # @param [ Constant ] mod The module the klass will be created in
+      # @param [ String, Symbol ] klass
+      # @return [ Constant ]
+      def self.version_finder_super_class(mod, klass)
+        raise "#{klass} is not allowed as a Dynamic Finder" unless ALLOWED_CLASSES.include?(klass.to_sym)
+        raise "#{mod} has already a #{klass} class" if mod.constants.include?(klass.to_sym)
+
+        "WPScan::Finders::DynamicFinder::WpItemVersion::#{klass}".constantize
+      end
+
+      # @param [ Symbol ] sym
+      def self.method_missing(sym)
+        super unless sym =~ /\A(passive|aggressive)_(.*)_finder_configs\z/i
+
+        finder_class = Regexp.last_match[2].camelize.to_sym
+
+        raise "#{finder_class} is not allowed as a Dynamic Finder" unless ALLOWED_CLASSES.include?(finder_class)
+
+        finder_configs(
+          finder_class,
+          Regexp.last_match[1] == 'aggressive'
+        )
+      end
+
+      def self.respond_to_missing?(sym)
+        sym =~ /\A(passive|aggressive)_(.*)_finder_configs\z/i
       end
     end
   end

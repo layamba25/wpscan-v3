@@ -1,11 +1,6 @@
 require_relative 'plugin_version/readme'
 # Plugins Specific
-require_relative 'plugin_version/layer_slider/translation_file'
-require_relative 'plugin_version/revslider/release_log'
 require_relative 'plugin_version/sitepress_multilingual_cms/version_parameter'
-require_relative 'plugin_version/sitepress_multilingual_cms/meta_generator'
-require_relative 'plugin_version/w3_total_cache/headers'
-require_relative 'plugin_version/shareaholic/meta_tag'
 
 module WPScan
   module Finders
@@ -25,7 +20,7 @@ module WPScan
         #
         # @param [ WPScan::Plugin ] plugin
         def load_specific_finders(plugin)
-          module_name = plugin.classify_name.to_sym
+          module_name = plugin.classify
 
           return unless Finders::PluginVersion.constants.include?(module_name)
 
