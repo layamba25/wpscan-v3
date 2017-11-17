@@ -48,7 +48,7 @@ describe WPScan::Finders::WpVersion::AddthisJavascriptVar do
           @expected = expected
         end
 
-        context 'when mobile pack format' do
+        context 'when old JS code' do
           let(:body) { File.read(File.join(fixtures, 'old_js.html')) }
 
           it 'returns the expecetd version' do
