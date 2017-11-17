@@ -71,6 +71,12 @@ plugins:
       pattern: !ruby/regexp /report\.php\?ver=(?<v>[\d\.^&]+)\&/i
       version: true
       confidence: 80
+  gravityforms:
+    Changelog:
+      path: change_log.txt
+      class: BodyPattern
+      pattern: !ruby/regexp /Version (?<v>([\d\.]+))/i
+      version: true
   hotjar-connecticator:
     Comment:
       pattern: !ruby/regexp /Hotjar Tracking Code for/i

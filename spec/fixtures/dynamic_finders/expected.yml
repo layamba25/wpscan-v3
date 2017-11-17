@@ -86,6 +86,12 @@ plugins:
       found_by: Header Pattern (Aggressive Detection)
       interesting_entries:
         - "http://wp.lab/wp-content/plugins/gotmls/index.php, Match: 'report.php?ver=4.16.53&'"
+  gravityforms:
+    Changelog:
+      number: 2.2.5.5
+      found_by: Changelog (Aggressive Detection)
+      interesting_entries:
+        - "http://wp.lab/wp-content/plugins/gravityforms/change_log.txt, Match: 'Version 2.2.5.5'"
   hotjar-connecticator:
     Comment:
       found_by: Comment (Passive Detection)
