@@ -12,7 +12,7 @@ module WPScan
         def aggressive(_opts = {})
           found = []
 
-          JSON.parse(Browser.get(api_url).body).each do |user|
+          JSON.parse(Browser.get(api_url).body)&.each do |user|
             found << WPScan::User.new(user['slug'],
                                       id: user['id'],
                                       found_by: found_by,
@@ -21,7 +21,7 @@ module WPScan
           end
 
           found
-        rescue JSON::ParserError
+        rescue JSON::ParserError, TypeError
           found
         end
 
