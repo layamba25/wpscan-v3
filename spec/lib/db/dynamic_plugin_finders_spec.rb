@@ -16,7 +16,7 @@ describe WPScan::DB::DynamicPluginFinders do
           configs = subject.finder_configs(:Xpath)
 
           expect(configs.keys).to include('wordpress-mobile-pack', 'shareaholic')
-          expect(configs.keys).to_not include('revslider')
+          expect(configs.keys).to_not include('simple-share-button-adder')
 
           expect(configs['sitepress-multilingual-cms']['MetaGenerator']['pattern']).to be_a Regexp
           expect(configs['sitepress-multilingual-cms']['MetaGenerator']['version']).to eql true
@@ -83,7 +83,7 @@ describe WPScan::DB::DynamicPluginFinders do
       its('passive_comment_finder_configs.keys') { should_not include('shareaholic') }
 
       its('passive_xpath_finder_configs.keys') { should include('shareaholic') }
-      its('passive_xpath_finder_configs.keys') { should_not include('revslider') }
+      its('passive_xpath_finder_configs.keys') { should_not include('simple-share-button-adder') }
       its('aggressive_xpath_finder_configs.keys') { should_not include('wordpress-mobile-pack') }
       its('aggressive_xpath_finder_configs.keys') { should include('revslider') }
     end

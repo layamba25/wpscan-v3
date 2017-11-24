@@ -22,6 +22,12 @@ plugins:
   collapsing-archives:
     Comment:
       pattern: !ruby/regexp /Collapsible Archive Widget/i
+  contact-form-7:
+    QueryParameter:
+      files:
+        - includes/css/styles.css
+        - includes/js/scripts.js
+      version: true
   custom-facebook-feed:
     Comment:
       pattern: !ruby/regexp /Custom Facebook Feed/i
@@ -84,6 +90,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Powered by iMP Download v(?<v>[\d\.]+)/i
       version: true
+  instagram-feed:
+    QueryParameter:
+      files:
+        - css/sb-instagram.min.css
+        - js/sb-instagram.min.js
+      version: true
   juiz-last-tweet-widget:
     Comment:
       pattern: !ruby/regexp /Juiz Last Tweet Widget/i
@@ -91,6 +103,11 @@ plugins:
     JavascriptVar:
       xpath: //script[contains(., "var jpibfi_options")]
       pattern: !ruby/regexp /var jpibfi_options = {/i # pattern is not even needed there
+    QueryParameter:
+      files:
+        - css/client.css
+        - js/jpibfi.client.js
+      version: true
   js_composer:
     MetaGenerator:
       class: Xpath
@@ -111,7 +128,7 @@ plugins:
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i
-  layer-slider:
+  LayerSlider:
     # TODO: Would it be possible to mix the two and have like an array as path parameter ?
     LocaleTranslationFile:
       class: BodyPattern
@@ -158,6 +175,21 @@ plugins:
   revslider:
     Comment:
       pattern: !ruby/regexp /START REVOLUTION SLIDER (?<v>[\d\.]+)/i
+      version: true
+    DivDataVersion:
+      class: Xpath
+      xpath: //div[contains(@id, "rev_slider_")]/@data-version
+      version: true
+    MetaGenerator:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      pattern: !ruby/regexp /Powered by Slider Revolution (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+        - public/assets/css/settings.css
+        - public/assets/js/jquery.themepunch.tools.min.js
+        - public/assets/js/jquery.themepunch.revolution.min.js
       version: true
     ReleaseLog:
       class: Xpath
