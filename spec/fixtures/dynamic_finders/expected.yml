@@ -115,6 +115,15 @@ plugins:
       found_by: Body Tag (Passive Detection)
       interesting_entries:
         - "http://wp.lab/, Match: 'js-comp-ver-4.12'"
+    QueryParameter:
+      number: 4.12
+      found_by: Query Parameter (Passive Detection)
+      confidence: 40
+      interesting_entries:
+        - http://wp.lab/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=4.12
+        - http://wp.lab/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12
+        - http://wp.lab/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12
+        - http://wp.lab/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=4.12
   kontera-official:
     Comment:
       found_by: Comment (Passive Detection)
@@ -202,6 +211,13 @@ plugins:
       found_by: Changelog (Aggressive Detection)
       interesting_entries:
         - "http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/changelog.md, Match: '# 3.6.3'"
+    QueryParameter:
+      number: 3.1.8.4
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+        - http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css.gzip?v=3.1.8.4
+        - http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js?v=3.1.8.4
   ultimate-google-analytics:
     Comment:
       number: 1.6.0

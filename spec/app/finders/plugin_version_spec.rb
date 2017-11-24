@@ -25,7 +25,7 @@ describe WPScan::Finders::PluginVersion::Base do
     context 'when specific finders' do
       let(:specific) do
         {
-          'sitepress-multilingual-cms' => %w[VersionParameter]
+          # None so far
         }
       end
 

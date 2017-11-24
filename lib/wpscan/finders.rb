@@ -8,6 +8,7 @@ require 'wpscan/finders/dynamic_finder/wp_item_version/comment'
 require 'wpscan/finders/dynamic_finder/wp_item_version/header_pattern'
 require 'wpscan/finders/dynamic_finder/wp_item_version/body_pattern'
 require 'wpscan/finders/dynamic_finder/wp_item_version/javascript_var'
+require 'wpscan/finders/dynamic_finder/wp_item_version/query_parameter'
 
 module WPScan
   # Custom Finders

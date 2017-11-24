@@ -57,6 +57,8 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
               expect(version.number).to eql expected['number'].to_s
               expect(version.found_by).to eql expected['found_by']
               expect(version.interesting_entries).to match_array expected['interesting_entries']
+
+              expect(version.confidence).to eql expected['confidence'] if expected['confidence']
             end
           end
         end
@@ -84,6 +86,8 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
               expect(version.number).to eql expected['number'].to_s
               expect(version.found_by).to eql expected['found_by']
               expect(version.interesting_entries).to match_array expected['interesting_entries']
+
+              expect(version.confidence).to eql expected['confidence'] if expected['confidence']
             end
           end
 

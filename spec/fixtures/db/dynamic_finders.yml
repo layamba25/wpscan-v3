@@ -101,6 +101,13 @@ plugins:
       xpath: //body[contains(@class, 'js-comp-ver')]/@class
       pattern: !ruby/regexp /js\-comp\-ver\-(?<v>[\d\.]+)/i
       version: true
+    QueryParameter:
+      files:
+        - assets/css/js_composer.min.css
+        - assets/lib/bower/isotope/dist/isotope.pkgd.min.js
+        - assets/js/dist/js_composer_front.min.js
+        - assets/lib/bower/skrollr/dist/skrollr.min.js
+      version: true
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i
@@ -178,6 +185,11 @@ plugins:
       class: BodyPattern
       path: changelog.md
       pattern: !ruby/regexp /(?:#|\*)\s?(?<v>[\d\.]+)/
+      version: true
+    QueryParameter:
+      files:
+        - res/css/language-selector.css.gzip
+        - res/js/jquery.cookie.js
       version: true
   ultimate-google-analytics:
     Comment:

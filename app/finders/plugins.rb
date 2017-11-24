@@ -6,6 +6,7 @@ require_relative 'plugins/xpath'
 require_relative 'plugins/header_pattern'
 require_relative 'plugins/body_pattern'
 require_relative 'plugins/javascript_var'
+require_relative 'plugins/query_parameter'
 
 module WPScan
   module Finders
