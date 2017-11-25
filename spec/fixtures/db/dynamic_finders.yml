@@ -1,9 +1,27 @@
-# For patterns with a version, the ?<v> must be used
-# Unless the finder is a JavascriptVar and the match has to be
-# processed via the JSON trick (hence will contain the ?<json> group, see
-# the config of the OptmizePress plugin)
 ---
 plugins:
+  LayerSlider:
+    LocaleTranslationFile:
+      class: BodyPattern
+      path: locales/LayerSlider-en_US.po
+      pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
+      version: true
+      confidence: 50
+    LanguageTranslationFile:
+      class: BodyPattern
+      path: languages/LayerSlider-en_US.po
+      pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
+      version: true
+      confidence: 50
+  OptimizePress:
+    JavascriptVar:
+      pattern: !ruby/regexp /var OptimizePress\s*=\s*{(?<json>.+?(?=};))};/i
+      version: true
+      version_key: version
+  WeatherIcon:
+    Comment:
+      pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>[\d\.]+) \|/i
+      version: true
   addthis:
     Comment:
       pattern: !ruby/regexp /AddThis Settings Begin/i
@@ -25,8 +43,8 @@ plugins:
   contact-form-7:
     QueryParameter:
       files:
-        - includes/css/styles.css
-        - includes/js/scripts.js
+      - includes/css/styles.css
+      - includes/js/scripts.js
       version: true
   custom-facebook-feed:
     Comment:
@@ -93,20 +111,17 @@ plugins:
   instagram-feed:
     QueryParameter:
       files:
-        - css/sb-instagram.min.css
-        - js/sb-instagram.min.js
+      - css/sb-instagram.min.css
+      - js/sb-instagram.min.js
       version: true
-  juiz-last-tweet-widget:
-    Comment:
-      pattern: !ruby/regexp /Juiz Last Tweet Widget/i
   jquery-pin-it-button-for-images:
     JavascriptVar:
       xpath: //script[contains(., "var jpibfi_options")]
-      pattern: !ruby/regexp /var jpibfi_options = {/i # pattern is not even needed there
+      pattern: !ruby/regexp /var jpibfi_options = {/i
     QueryParameter:
       files:
-        - css/client.css
-        - js/jpibfi.client.js
+      - css/client.css
+      - js/jpibfi.client.js
       version: true
   js_composer:
     MetaGenerator:
@@ -115,33 +130,22 @@ plugins:
       pattern: !ruby/regexp /Powered by Visual Composer \-/i
     BodyTag:
       class: Xpath
-      xpath: //body[contains(@class, 'js-comp-ver')]/@class
+      xpath: "//body[contains(@class, 'js-comp-ver')]/@class"
       pattern: !ruby/regexp /js\-comp\-ver\-(?<v>[\d\.]+)/i
       version: true
     QueryParameter:
       files:
-        - assets/css/js_composer.min.css
-        - assets/lib/bower/isotope/dist/isotope.pkgd.min.js
-        - assets/js/dist/js_composer_front.min.js
-        - assets/lib/bower/skrollr/dist/skrollr.min.js
+      - assets/css/js_composer.min.css
+      - assets/lib/bower/isotope/dist/isotope.pkgd.min.js
+      - assets/js/dist/js_composer_front.min.js
+      - assets/lib/bower/skrollr/dist/skrollr.min.js
       version: true
+  juiz-last-tweet-widget:
+    Comment:
+      pattern: !ruby/regexp /Juiz Last Tweet Widget/i
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i
-  LayerSlider:
-    # TODO: Would it be possible to mix the two and have like an array as path parameter ?
-    LocaleTranslationFile:
-      class: BodyPattern
-      path: locales/LayerSlider-en_US.po
-      pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
-      version: true
-      confidence: 50
-    LanguageTranslationFile:
-      class: BodyPattern
-      path: languages/LayerSlider-en_US.po
-      pattern: !ruby/regexp '/Project\-Id\-Version\: LayerSlider WP v?(?<v>[\d\.]+)/i'
-      version: true
-      confidence: 50
   login-logo:
     Comment:
       pattern: !ruby/regexp /Login Logo plugin for WordPress/i
@@ -157,11 +161,6 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Cached using Nginx-Helper|Visit https?:\/\/wordpress.org\/extend\/plugins\/nginx-helper\/faq\/
         for more details/i
-  OptimizePress:
-    JavascriptVar:
-      pattern: !ruby/regexp /var OptimizePress\s*=\s*{(?<json>.+?(?=};))};/i
-      version: true
-      version_key: version
   optin-monster:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'
@@ -187,9 +186,9 @@ plugins:
       version: true
     QueryParameter:
       files:
-        - public/assets/css/settings.css
-        - public/assets/js/jquery.themepunch.tools.min.js
-        - public/assets/js/jquery.themepunch.revolution.min.js
+      - public/assets/css/settings.css
+      - public/assets/js/jquery.themepunch.tools.min.js
+      - public/assets/js/jquery.themepunch.revolution.min.js
       version: true
     ReleaseLog:
       class: Xpath
@@ -201,7 +200,7 @@ plugins:
   shareaholic:
     MetaTag:
       class: Xpath
-      xpath: '//meta[@name="shareaholic:wp_version"]/@content'
+      xpath: //meta[@name="shareaholic:wp_version"]/@content
       version: true
   simple-share-button-adder:
     Comment:
@@ -210,7 +209,7 @@ plugins:
   sitepress-multilingual-cms:
     MetaGenerator:
       class: Xpath
-      xpath: '//meta[@name="generator" and contains(@content, "WPML")]/@content'
+      xpath: //meta[@name="generator" and contains(@content, "WPML")]/@content
       pattern: !ruby/regexp /\AWPML\sver:(?<v>[\d\.]+)\sstt/i
       version: true
     Changelog:
@@ -220,8 +219,8 @@ plugins:
       version: true
     QueryParameter:
       files:
-        - res/css/language-selector.css.gzip
-        - res/js/jquery.cookie.js
+      - res/css/language-selector.css.gzip
+      - res/js/jquery.cookie.js
       version: true
   ultimate-google-analytics:
     Comment:
@@ -241,10 +240,6 @@ plugins:
       pattern: !ruby/regexp /W3 Total Cache\/(?<v>[\d\.]+)/i
       version: true
       confidence: 80
-  WeatherIcon:
-    Comment:
-      pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>[\d\.]+) \|/i
-      version: true
   woocommerce-follow-up-emails:
     Changelog:
       class: BodyPattern
@@ -260,7 +255,7 @@ plugins:
   wordpress-mobile-pack:
     UrlInHomePage:
       class: Xpath
-      xpath: '//a[starts-with(@href,"?wpmp_switcher=")]'
+      xpath: //a[starts-with(@href,"?wpmp_switcher=")]
   wordpress-seo:
     Comment:
       pattern: !ruby/regexp '/optimized with the Yoast(?: WordPress)? SEO plugin v(?<v>[^\s]+)
@@ -275,22 +270,18 @@ plugins:
       pattern: !ruby/regexp '/\AWOW Async(?: for Wordpress)? Tracking Code|WOW Plugin
         Version (?<v>[\d\.^\s]+)/i'
       version: true
-  wptouch:
-    Comment:
-      pattern: !ruby/regexp '/Powered by WPtouch: (?<v>[\d\.]+)/i'
-      version: true
   wp-easy-gallery:
     Comment:
       pattern: !ruby/regexp /WP Easy Gallery:/i
   wp-google-fonts:
     Comment:
       pattern: !ruby/regexp /by Wordpress Google Fonts/i
-  wp-postviews:
-    Comment:
-      pattern: !ruby/regexp /Script Generated By WP-PostViews/i
   wp-piwik:
     Comment:
       pattern: !ruby/regexp /\A(?:End )?Piwik/i
+  wp-postviews:
+    Comment:
+      pattern: !ruby/regexp /Script Generated By WP-PostViews/i
   wp-rocket:
     Comment:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
@@ -304,3 +295,7 @@ plugins:
     HeaderPattern:
       header: WP-Super-Cache
       pattern: !ruby/regexp /supercache/i
+  wptouch:
+    Comment:
+      pattern: !ruby/regexp '/Powered by WPtouch: (?<v>[\d\.]+)/i'
+      version: true
