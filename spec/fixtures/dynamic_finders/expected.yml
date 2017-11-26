@@ -1,32 +1,5 @@
 ---
 plugins:
-  LayerSlider:
-    LocaleTranslationFile:
-      number: 5.2.0
-      found_by: Locale Translation File (Aggressive Detection)
-      confidence: 50
-      interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/LayerSlider/locales/LayerSlider-en_US.po,
-        Match: ''Project-Id-Version: LayerSlider WP 5.2.0'''
-    LanguageTranslationFile:
-      number: 4.5.5
-      found_by: Language Translation File (Aggressive Detection)
-      confidence: 50
-      interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/LayerSlider/languages/LayerSlider-en_US.po,
-        Match: ''Project-Id-Version: LayerSlider WP v4.5.5'''
-  OptimizePress:
-    JavascriptVar:
-      number: 2.5.7
-      found_by: Javascript Var (Passive Detection)
-      interesting_entries:
-      - 'http://wp.lab/, Match: ''zepress","version":"2.5.7","script_debug":".m'''
-  WeatherIcon:
-    Comment:
-      number: 2.99.102
-      found_by: Comment (Passive Detection)
-      interesting_entries:
-      - 'http://wp.lab/, Match: ''Powered by WeatherIcon v2.99.102 |'''
   addthis:
     Comment:
       found_by: Comment (Passive Detection)
@@ -199,6 +172,21 @@ plugins:
   kontera-official:
     Comment:
       found_by: Comment (Passive Detection)
+  LayerSlider:
+    LocaleTranslationFile:
+      number: 5.2.0
+      found_by: Locale Translation File (Aggressive Detection)
+      confidence: 50
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/LayerSlider/locales/LayerSlider-en_US.po,
+        Match: ''Project-Id-Version: LayerSlider WP 5.2.0'''
+    LanguageTranslationFile:
+      number: 4.5.5
+      found_by: Language Translation File (Aggressive Detection)
+      confidence: 50
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/LayerSlider/languages/LayerSlider-en_US.po,
+        Match: ''Project-Id-Version: LayerSlider WP v4.5.5'''
   login-logo:
     Comment:
       found_by: Comment (Passive Detection)
@@ -217,6 +205,12 @@ plugins:
   nginx-helper:
     Comment:
       found_by: Comment (Passive Detection)
+  OptimizePress:
+    JavascriptVar:
+      number: 2.5.7
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''zepress","version":"2.5.7","script_debug":".m'''
   optin-monster:
     Comment:
       number: 2.0.2.2
@@ -314,6 +308,12 @@ plugins:
       found_by: Header Pattern (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''W3 Total Cache/0.9.1'''
+  WeatherIcon:
+    Comment:
+      number: 2.99.102
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Powered by WeatherIcon v2.99.102 |'''
   woocommerce-follow-up-emails:
     Changelog:
       number: 4.5.2
