@@ -47,6 +47,14 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''AStickyPostOrderER (Version: 0.3.1)'''
+  captcha:
+    QueryParameter:
+      number: 4.3.6
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/captcha/css/front_end_style.css?ver=4.3.6
+      - http://wp.lab/wp-content/plugins/captcha/css/desktop_style.css?ver=4.3.6
   collapsing-archives:
     Comment:
       found_by: Comment (Passive Detection)
@@ -111,11 +119,23 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/, Match: ''GADWP v4.4.4 Universal Tracking'''
   google-analytics-for-wordpress:
-    Comment:
+    YoastComment:
       number: 5.3.3
-      found_by: Comment (Passive Detection)
+      found_by: Yoast Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Google Analytics by Yoast plugin v5.3.3 -'''
+    MonsterInsightsComment:
+      number: 6.2.6
+      found_by: Monster Insights Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Google Analytics by MonsterInsights plugin v 6.2.6
+        -'''
+    QueryParameter:
+      number: 6.2.6
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=6.2.6
   gotmls:
     HeaderPattern:
       number: 4.16.53
@@ -308,6 +328,9 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/woocommerce-shipment-tracking/changelog.txt,
         Match: ''2017-06-07 - version 1.6.8'''
+  wordfence:
+    JavascriptVar:
+      found_by: Javascript Var (Passive Detection)
   wordpress-mobile-pack:
     UrlInHomePage:
       found_by: Url In Home Page (Passive Detection)

@@ -37,6 +37,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp '/AStickyPostOrderER \(Version: (?<v>[\d\.]+)\)/i'
       version: true
+  captcha:
+    QueryParameter:
+      files:
+      - css/front_end_style.css
+      - css/desktop_style.css
+      version: true
   collapsing-archives:
     Comment:
       pattern: !ruby/regexp /Collapsible Archive Widget/i
@@ -84,9 +90,19 @@ plugins:
       pattern: !ruby/regexp /GADWP v(?<v>[\d\.]+) Universal Tracking/i
       version: true
   google-analytics-for-wordpress:
-    Comment:
+    YoastComment:
+      class: Comment
       pattern: !ruby/regexp /(?:Google Analytics by Yoast plugin|Yoast Google Analytics
         plugin) v(?<v>[\d\.]+) -|\A\/ Google Analytics by Yoast/i
+      version: true
+    MonsterInsightsComment:
+      class: Comment
+      pattern: !ruby/regexp /(?:Google Analytics by MonsterInsights plugin) v ?(?<v>[\d\.]+)
+        -|\A\/ Google Analytics by MonsterInsights/i
+      version: true
+    QueryParameter:
+      files:
+      - assets/js/frontend.min.js
       version: true
   gotmls:
     HeaderPattern:
@@ -252,6 +268,9 @@ plugins:
       path: changelog.txt
       pattern: !ruby/regexp /[\d\-]{8,} \- version (?<v>[\d\.]+)/i
       version: true
+  wordfence:
+    JavascriptVar:
+      pattern: !ruby/regexp /\|WordfenceTestMonBot\)\/\.test/i
   wordpress-mobile-pack:
     UrlInHomePage:
       class: Xpath
