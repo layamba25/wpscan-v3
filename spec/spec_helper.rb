@@ -32,9 +32,7 @@ def df_expected_all
 end
 
 def df_tested_class_constant(type, slug, finder_class)
-  slug_class = slug.tr('-', '_').camelize
-
-  "WPScan::Finders::#{type}::#{slug_class}::#{finder_class}".constantize
+  "WPScan::Finders::#{type}::#{classify_slug(slug)}::#{classify_slug(finder_class)}".constantize
 end
 
 def df_stubbed_response(fixture, finder_super_class)

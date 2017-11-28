@@ -65,7 +65,7 @@ module WPScan
       # @return [ Constant ]
       def self.maybe_create_modudle(slug)
         # What about slugs such as js_composer which will be done as JsComposer, just like js-composer
-        constant_name = slug.tr('-', '_').camelize.to_sym
+        constant_name = classify_slug(slug)
 
         unless version_finder_module.constants.include?(constant_name)
           version_finder_module.const_set(constant_name, Module.new)

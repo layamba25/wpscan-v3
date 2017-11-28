@@ -1,5 +1,126 @@
 ---
 plugins:
+  10centmail-subscription-management-and-analytics:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="tencentmail-plugin-version"]/@content
+      version: true
+  12-step-meeting-list:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="12_step_meeting_list"]/@content
+      version: true
+  2-click-socialmedia-buttons:
+    QueryParameter:
+      files:
+      - css/socialshareprivacy-min.css
+      - js/social_bookmarks-min.js
+      version: true
+  2kb-amazon-affiliates-store:
+    VersionLog:
+      path: template/admin/version.phtml
+      class: Xpath
+      xpath: "(//div/div/h4)[1]"
+      version: true
+      confidence: 60
+  3-word-address-validation-field:
+    QueryParameter:
+      files:
+      - public/css/jquery.w3w-autosuggest-plugin.min.css
+      - public/js/jquery.w3w-autosuggest-plugin.bundle.min.js
+      version: true
+  360-product-view:
+    QueryParameter:
+      files:
+      - public/css/yup-360-product-public.css
+      - public/js/threesixty.min.js
+      version: true
+  3d-flipbook-dflip-lite:
+    QueryParameter:
+      files:
+      - assets/css/themify-icons.min.css
+      - assets/css/dflip.min.css
+      - assets/js/dflip.min.js
+      version: true
+  3dpc-quote-calculator-basic:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      - assets/js/jsc3d.js
+      - assets/js/jsc3d.console.js
+      - assets/js/uri.min.js
+      - assets/js/public.js
+      version: true
+  3dprint-lite:
+    QueryParameter:
+      files:
+      - includes/css/3dprint-lite-frontend.css
+      - includes/ext/ProgressButtonStyles/css/component.css
+      - includes/ext/noUiSlider/nouislider.min.css
+      - includes/ext/easyaspie/assets/css/main.css
+      - includes/ext/ProgressButtonStyles/js/modernizr.custom.js
+      - includes/ext/threejs/three.min.js
+      - includes/ext/threejs/js/Detector.js
+      - includes/ext/threejs/js/Mirror.js
+      - includes/ext/threejs/js/controls/OrbitControls.js
+      - includes/ext/threejs/js/renderers/CanvasRenderer.js
+      - includes/ext/threejs/js/renderers/Projector.js
+      - includes/ext/threejs/js/loaders/STLLoader.js
+      - includes/ext/threejs/js/loaders/OBJLoader.js
+      - includes/ext/threejs/js/loaders/MTLLoader.js
+      - includes/ext/threex/threex.dilategeometry.js
+      - includes/ext/threex/threex.atmospherematerial.js
+      - includes/ext/threex/threex.geometricglowmesh.js
+      - includes/ext/plupload/plupload.full.min.js
+      - includes/ext/ProgressButtonStyles/js/classie.js
+      - includes/ext/ProgressButtonStyles/js/progressButton.js
+      - includes/ext/event-manager/event-manager.js
+      - includes/ext/accounting/accounting.min.js
+      - includes/ext/noUiSlider/nouislider.min.js
+      - includes/ext/easyaspie/assets/js/superfish.js
+      - includes/ext/easyaspie/assets/js/easyaspie.js
+      - includes/js/3dprint-lite-frontend.js
+      - includes/ext/jquery-cookie/jquery.cookie.min.js
+      version: true
+  8-degree-availability-calendar:
+    QueryParameter:
+      files:
+      - css/font-awesome/font-awesome.min.css
+      - js/frontend/frontend.js
+      version: true
+  8-degree-notification-bar:
+    QueryParameter:
+      files:
+      - js/frontend/frontend.js
+      version: true
+  8degree-fly-menu-lite:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - css/font-awesome.min.css
+      - css/jquery.mCustomScrollbar.min.css
+      - js/jquery.mCustomScrollbar.min.js
+      - js/frontend.js
+      version: true
+  a-simple-backend:
+    QueryParameter:
+      files:
+      - css/admin.css
+      - js/interact.js
+      - js/admin-bar.js
+      version: true
+  abc-notation:
+    VersionInFilename:
+      class: Xpath
+      xpath: //script[contains(@src, "abc-notation/abcjs_basic_midi_")]/@src
+      pattern: !ruby/regexp /abcjs_basic_midi_(?<v>[\d\.]+)\-min\.js/i
+      version: true
+  above-the-fold-optimization:
+    StyleComment:
+      class: Xpath
+      xpath: //style[@id="AbtfCSS"]
+      pattern: !ruby/regexp /\* Above The Fold Optimization (?<v>[\d\.]+)/i
+      version: true
   addthis:
     Comment:
       pattern: !ruby/regexp /AddThis Settings Begin/i
@@ -30,6 +151,11 @@ plugins:
       - includes/css/styles.css
       - includes/js/scripts.js
       version: true
+  cookie-notice:
+    QueryParameter:
+      files:
+      - js/front.min.js
+      version: true
   custom-facebook-feed:
     Comment:
       pattern: !ruby/regexp /Custom Facebook Feed/i
@@ -40,6 +166,11 @@ plugins:
   easy-fancybox:
     Comment:
       pattern: !ruby/regexp /Easy FancyBox (?<v>[\d\.]+) using/i
+      version: true
+  eg-attachments:
+    QueryParameter:
+      files:
+      - css/eg-attachments.css
       version: true
   enhanced-links:
     Comment:
@@ -75,7 +206,7 @@ plugins:
       version: true
     MonsterInsightsComment:
       class: Comment
-      pattern: !ruby/regexp /(?:Google Analytics by MonsterInsights plugin) v ?(?<v>[\d\.]+)
+      pattern: !ruby/regexp /Google Analytics by MonsterInsights plugin v ?(?<v>[\d\.]+)
         -|\A\/ Google Analytics by MonsterInsights/i
       version: true
     QueryParameter:
@@ -168,6 +299,11 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Cached using Nginx-Helper|Visit https?:\/\/wordpress.org\/extend\/plugins\/nginx-helper\/faq\/
         for more details/i
+  olevmedia-shortcodes:
+    QueryParameter:
+      files:
+      - assets/js/shortcodes.js
+      version: true
   OptimizePress:
     JavascriptVar:
       pattern: !ruby/regexp /var OptimizePress\s*=\s*{(?<json>.+?(?=};))};/i
@@ -176,6 +312,20 @@ plugins:
   optin-monster:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'
+      version: true
+  page-list:
+    QueryParameter:
+      files:
+      - css/page-list.css
+      version: true
+  panopress:
+    Comment:
+      pattern: !ruby/regexp /PanoPress \[(?<v>[\d\.]+)\]/i
+      version: true
+    QueryParameter:
+      files:
+      - js/panopress.js
+      - css/panopress.css
       version: true
   q-and-a:
     Comment:
@@ -217,6 +367,11 @@ plugins:
   simple-share-button-adder:
     Comment:
       pattern: !ruby/regexp /Simple Share Buttons Adder \((?<v>[\d\.]+)\)/i
+      version: true
+  simple-social-icons:
+    QueryParameter:
+      files:
+      - css/style.css
       version: true
   sitepress-multilingual-cms:
     MetaGenerator:
@@ -317,4 +472,15 @@ plugins:
   wptouch:
     Comment:
       pattern: !ruby/regexp '/Powered by WPtouch: (?<v>[\d\.]+)/i'
+      version: true
+  youtube-channel-gallery:
+    StyleComment:
+      class: BodyPattern
+      path: style.css
+      pattern: !ruby/regexp '/Version: (?<v>[\d\.]+)/i'
+      version: true
+    ScriptComment:
+      class: BodyPattern
+      path: script.js
+      pattern: !ruby/regexp '/Version: (?<v>[\d\.]+)/i'
       version: true

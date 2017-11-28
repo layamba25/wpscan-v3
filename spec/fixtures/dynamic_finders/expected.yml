@@ -1,5 +1,149 @@
 ---
 plugins:
+  10centmail-subscription-management-and-analytics:
+    MetaTag:
+      number: 2.1.50
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''2.1.50'''
+  12-step-meeting-list:
+    MetaTag:
+      number: 2.15.5
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''2.15.5'''
+  2-click-socialmedia-buttons:
+    QueryParameter:
+      number: 1.6.4
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/2-click-socialmedia-buttons/css/socialshareprivacy-min.css?ver=1.6.4
+      - http://wp.lab/wp-content/plugins/2-click-socialmedia-buttons/js/social_bookmarks-min.js?ver=1.6.4
+  2kb-amazon-affiliates-store:
+    VersionLog:
+      number: 2.1.1
+      found_by: Version Log (Aggressive Detection)
+      confidence: 60
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/2kb-amazon-affiliates-store/template/admin/version.phtml,
+        Match: ''2.1.1'''
+  3-word-address-validation-field:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/3-word-address-validation-field/public/css/jquery.w3w-autosuggest-plugin.min.css?ver=1.1.0
+      - http://wp.lab/wp-content/plugins/3-word-address-validation-field/public/js/jquery.w3w-autosuggest-plugin.bundle.min.js?ver=1.1.0
+  360-product-view:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/360-product-view/public/css/yup-360-product-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/360-product-view/public/js/threesixty.min.js?ver=1.0.0
+  3d-flipbook-dflip-lite:
+    QueryParameter:
+      number: 1.3.11
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/3d-flipbook-dflip-lite/assets/css/themify-icons.min.css?ver=1.3.11
+      - http://wp.lab/wp-content/plugins/3d-flipbook-dflip-lite/assets/css/dflip.min.css?ver=1.3.11
+      - http://wp.lab/wp-content/plugins/3d-flipbook-dflip-lite/assets/js/dflip.min.js?ver=1.3.11
+  3dpc-quote-calculator-basic:
+    QueryParameter:
+      number: 1.2.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 50
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/3dpc-quote-calculator-basic/assets/css/public.css?ver=1.2.5
+      - http://wp.lab/wp-content/plugins/3dpc-quote-calculator-basic/assets/js/jsc3d.js?ver=1.2.5
+      - http://wp.lab/wp-content/plugins/3dpc-quote-calculator-basic/assets/js/jsc3d.console.js?ver=1.2.5
+      - http://wp.lab/wp-content/plugins/3dpc-quote-calculator-basic/assets/js/uri.min.js?ver=1.2.5
+      - http://wp.lab/wp-content/plugins/3dpc-quote-calculator-basic/assets/js/public.js?ver=1.2.5
+  3dprint-lite:
+    QueryParameter:
+      number: 1.7.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 100
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/css/3dprint-lite-frontend.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/ProgressButtonStyles/css/component.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/noUiSlider/nouislider.min.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/easyaspie/assets/css/main.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/ProgressButtonStyles/js/modernizr.custom.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/three.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/Detector.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/Mirror.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/controls/OrbitControls.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/renderers/CanvasRenderer.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/renderers/Projector.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/loaders/STLLoader.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/loaders/OBJLoader.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threejs/js/loaders/MTLLoader.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threex/threex.dilategeometry.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threex/threex.atmospherematerial.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/threex/threex.geometricglowmesh.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/plupload/plupload.full.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/ProgressButtonStyles/js/classie.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/ProgressButtonStyles/js/progressButton.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/event-manager/event-manager.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/accounting/accounting.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/noUiSlider/nouislider.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/easyaspie/assets/js/superfish.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/easyaspie/assets/js/easyaspie.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/js/3dprint-lite-frontend.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/3dprint-lite/includes/ext/jquery-cookie/jquery.cookie.min.js?ver=1.7.1
+  8-degree-availability-calendar:
+    QueryParameter:
+      number: 1.0.7
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/8-degree-availability-calendar/css/font-awesome/font-awesome.min.css?ver=1.0.7
+      - http://wp.lab/wp-content/plugins/8-degree-availability-calendar/js/frontend/frontend.js?ver=1.0.7
+  8-degree-notification-bar:
+    QueryParameter:
+      number: 1.1.6
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/8-degree-notification-bar/js/frontend/frontend.js?ver=1.1.6
+  8degree-fly-menu-lite:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 50
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/8degree-fly-menu-lite/css/frontend.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/8degree-fly-menu-lite/css/font-awesome.min.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/8degree-fly-menu-lite/css/jquery.mCustomScrollbar.min.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/8degree-fly-menu-lite/js/jquery.mCustomScrollbar.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/8degree-fly-menu-lite/js/frontend.js?ver=1.0.0
+  a-simple-backend:
+    QueryParameter:
+      number: 1.0.4.7
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/a-simple-backend/css/admin.css?ver=1.0.4.7
+      - http://wp.lab/wp-content/plugins/a-simple-backend/js/interact.js?ver=1.0.4.7
+      - http://wp.lab/wp-content/plugins/a-simple-backend/js/admin-bar.js?ver=1.0.4.7
+  abc-notation:
+    VersionInFilename:
+      number: 3.2.0
+      found_by: Version In Filename (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''abcjs_basic_midi_3.2.0-min.js'''
+  above-the-fold-optimization:
+    StyleComment:
+      number: 2.9.2
+      found_by: Style Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''* Above The Fold Optimization 2.9.2'''
   addthis:
     Comment:
       found_by: Comment (Passive Detection)
@@ -39,6 +183,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.1
       - http://wp.lab/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.1
+  cookie-notice:
+    QueryParameter:
+      number: 1.2.40
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/cookie-notice/js/front.min.js?ver=1.2.40
   custom-facebook-feed:
     Comment:
       found_by: Comment (Passive Detection)
@@ -54,6 +205,13 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Easy FancyBox 1.5.7 using'''
+  eg-attachments:
+    QueryParameter:
+      number: 2.1.3
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/eg-attachments/css/eg-attachments.css?ver=2.1.3
   enhanced-links:
     Comment:
       found_by: Comment (Passive Detection)
@@ -205,6 +363,13 @@ plugins:
   nginx-helper:
     Comment:
       found_by: Comment (Passive Detection)
+  olevmedia-shortcodes:
+    QueryParameter:
+      number: 1.1.9
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/olevmedia-shortcodes/assets/js/shortcodes.js?ver=1.1.9
   OptimizePress:
     JavascriptVar:
       number: 2.5.7
@@ -217,6 +382,26 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''OptinMonster WordPress plugin v2.0.2.2 -'''
+  page-list:
+    QueryParameter:
+      number: '5.1'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/page-list/css/page-list.css?ver=5.1
+  panopress:
+    Comment:
+      number: '1.3'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''PanoPress [1.3]'''
+    QueryParameter:
+      number: '1.3'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/panopress/js/panopress.js?v=1.3
+      - http://wp.lab/wp-content/plugins/panopress/css/panopress.css?v=1.3
   q-and-a:
     Comment:
       found_by: Comment (Passive Detection)
@@ -266,6 +451,13 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Simple Share Buttons Adder (5.6)'''
+  simple-social-icons:
+    QueryParameter:
+      number: 2.0.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/simple-social-icons/css/style.css?ver=2.0.1
   sitepress-multilingual-cms:
     MetaGenerator:
       number: 3.8.4
@@ -383,3 +575,16 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Powered by WPtouch: 3.7.3'''
+  youtube-channel-gallery:
+    StyleComment:
+      number: 2.4
+      found_by: Style Comment (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/youtube-channel-gallery/style.css, Match:
+        ''Version: 2.4'''
+    ScriptComment:
+      number: 2.4
+      found_by: Script Comment (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/youtube-channel-gallery/script.js, Match:
+        ''Version: 2.4'''

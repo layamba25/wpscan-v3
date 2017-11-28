@@ -104,7 +104,7 @@ module WPScan
 
     # @return [ Symbol ] The Class symbol associated to the item
     def classify
-      slug.to_s.tr('-', '_').camelize.to_s.to_sym
+      @classify ||= classify_slug(slug)
     end
 
     # @return [ String ] The readme url if found

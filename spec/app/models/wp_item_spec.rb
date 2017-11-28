@@ -98,6 +98,18 @@ describe WPScan::WpItem do
 
   describe '#classify' do
     its(:classify) { should eql :TestItem }
+
+    context 'when it starts with a digit' do
+      let(:slug) { '2test' }
+
+      its(:classify) { should eql :D_2test }
+
+      context 'when a digit and -' do
+        let(:slug) { '23-test' }
+
+        its(:classify) { should eql :D_23Test }
+      end
+    end
   end
 
   describe '#readme_url' do
