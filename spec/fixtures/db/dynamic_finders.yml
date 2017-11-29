@@ -243,6 +243,59 @@ plugins:
       - css/add-cookie-notice.css
       - js/add-cookie-notice.js
       version: true
+  add-meta-tag-for-wordpress:
+    QueryParameter:
+      files:
+      - public/css/add-meta-tag-for-wordpress-public.css
+      - public/js/add-meta-tag-for-wordpress-public.js
+      version: true
+  addons-for-beaver-builder:
+    QueryParameter:
+      files:
+      - assets/css/labb-frontend.css
+      - assets/css/icomoon.css
+      - assets/js/labb-frontend.min.js
+      version: true
+  addons-for-visual-composer:
+    QueryParameter:
+      files:
+      - includes/addons/accordion/css/style.css
+      - assets/css/slick.css
+      - includes/addons/carousel/css/style.css
+      - includes/addons/clients/css/style.css
+      - includes/addons/heading/css/style.css
+      - includes/addons/odometers/css/style.css
+      - includes/addons/piecharts/css/style.css
+      - includes/addons/portfolio/css/style.css
+      - includes/addons/posts-carousel/css/style.css
+      - includes/addons/pricing-table/css/style.css
+      - includes/addons/services/css/style.css
+      - includes/addons/stats-bar/css/style.css
+      - includes/addons/tabs/css/style.css
+      - includes/addons/team/css/style.css
+      - includes/addons/testimonials/css/style.css
+      - assets/css/flexslider.css
+      - includes/addons/testimonials-slider/css/style.css
+      - assets/css/lvca-frontend.css
+      - assets/css/icomoon.css
+      - includes/addons/accordion/js/accordion.min.js
+      - assets/js/slick.min.js
+      - assets/js/jquery.waypoints.min.js
+      - assets/js/jquery.stats.min.js
+      - includes/addons/odometers/js/odometer.min.js
+      - includes/addons/piecharts/js/piechart.min.js
+      - assets/js/isotope.pkgd.min.js
+      - assets/js/imagesloaded.pkgd.min.js
+      - includes/addons/portfolio/js/portfolio.min.js
+      - includes/addons/posts-carousel/js/posts-carousel.min.js
+      - includes/addons/spacer/js/spacer.min.js
+      - includes/addons/stats-bar/js/stats-bar.min.js
+      - includes/addons/tabs/js/tabs.min.js
+      - assets/js/jquery.flexslider.min.js
+      - includes/addons/testimonials-slider/js/testimonials.min.js
+      - assets/js/modernizr-custom.min.js
+      - assets/js/lvca-frontend.min.js
+      version: true
   addthis:
     Comment:
       pattern: !ruby/regexp /AddThis Settings Begin/i

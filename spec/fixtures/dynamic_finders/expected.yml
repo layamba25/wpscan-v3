@@ -304,6 +304,65 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/add-cookie-notice/css/add-cookie-notice.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/add-cookie-notice/js/add-cookie-notice.js?ver=1.0.0
+  add-meta-tag-for-wordpress:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/add-meta-tag-for-wordpress/public/css/add-meta-tag-for-wordpress-public.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/add-meta-tag-for-wordpress/public/js/add-meta-tag-for-wordpress-public.js?ver=1.0.1
+  addons-for-beaver-builder:
+    QueryParameter:
+      number: 1.4.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/addons-for-beaver-builder/assets/css/labb-frontend.css?ver=1.4.1
+      - http://wp.lab/wp-content/plugins/addons-for-beaver-builder/assets/css/icomoon.css?ver=1.4.1
+      - http://wp.lab/wp-content/plugins/addons-for-beaver-builder/assets/js/labb-frontend.min.js?ver=1.4.1
+  addons-for-visual-composer:
+    QueryParameter:
+      number: 1.7.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 100
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/accordion/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/css/slick.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/carousel/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/clients/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/heading/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/odometers/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/piecharts/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/portfolio/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/posts-carousel/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/pricing-table/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/services/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/stats-bar/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/tabs/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/team/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/testimonials/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/css/flexslider.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/testimonials-slider/css/style.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/css/lvca-frontend.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/css/icomoon.css?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/accordion/js/accordion.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/slick.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/jquery.waypoints.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/jquery.stats.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/odometers/js/odometer.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/piecharts/js/piechart.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/isotope.pkgd.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/imagesloaded.pkgd.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/portfolio/js/portfolio.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/posts-carousel/js/posts-carousel.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/spacer/js/spacer.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/stats-bar/js/stats-bar.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/tabs/js/tabs.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/jquery.flexslider.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/includes/addons/testimonials-slider/js/testimonials.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/modernizr-custom.min.js?ver=1.7.1
+      - http://wp.lab/wp-content/plugins/addons-for-visual-composer/assets/js/lvca-frontend.min.js?ver=1.7.1
   addthis:
     Comment:
       found_by: Comment (Passive Detection)
