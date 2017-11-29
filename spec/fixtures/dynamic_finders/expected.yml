@@ -251,6 +251,59 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/acf-multistep/public/css/acf-multi-step-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/acf-multistep/public/js/acf-multi-step-public.js?ver=1.0.0
+  achievements:
+    QueryParameter:
+      number: 3.5.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/achievements/templates/achievements/css/achievements.css?ver=3.5.1
+  acme-amazing-search:
+    QueryParameter:
+      number: 2.0.13
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/acme-amazing-search/public/css/acme-amazing-search-public.css?ver=2.0.13
+      - http://wp.lab/wp-content/plugins/acme-amazing-search/public/js/acme-amazing-search-public.js?ver=2.0.13
+  acme-divi-modules:
+    QueryParameter:
+      number: 1.3.4
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/acme-divi-modules/public/css/acme-divi-modules-public.css?ver=1.3.4
+      - http://wp.lab/wp-content/plugins/acme-divi-modules/public/js/masonry.pkgd.min.js?ver=1.3.4
+  acquaint-owl-carousel:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/acquaint-owl-carousel/public/css/acquaint-owl-carousel-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/acquaint-owl-carousel/public/js/acquaint-owl-carousel-public.js?ver=1.0.0
+  acurax-social-media-widget:
+    QueryParameter:
+      number: 3.2.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/acurax-social-media-widget/css/style.css?v=3.2.5&ver=4.8.3
+  ad-short:
+    QueryParameter:
+      number: 2.0.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ad-short/ad_short.css?ver=2.0.1
+  add-cookie-notice:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/add-cookie-notice/css/add-cookie-notice.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/add-cookie-notice/js/add-cookie-notice.js?ver=1.0.0
   addthis:
     Comment:
       found_by: Comment (Passive Detection)

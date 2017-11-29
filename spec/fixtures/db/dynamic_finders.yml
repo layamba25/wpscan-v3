@@ -204,6 +204,45 @@ plugins:
       - public/css/acf-multi-step-public.css
       - public/js/acf-multi-step-public.js
       version: true
+  achievements:
+    QueryParameter:
+      files:
+      - templates/achievements/css/achievements.css
+      version: true
+  acme-amazing-search:
+    QueryParameter:
+      files:
+      - public/css/acme-amazing-search-public.css
+      - public/js/acme-amazing-search-public.js
+      version: true
+  acme-divi-modules:
+    QueryParameter:
+      files:
+      - public/css/acme-divi-modules-public.css
+      - public/js/masonry.pkgd.min.js
+      version: true
+  acquaint-owl-carousel:
+    QueryParameter:
+      files:
+      - public/css/acquaint-owl-carousel-public.css
+      - public/js/acquaint-owl-carousel-public.js
+      version: true
+  acurax-social-media-widget:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  ad-short:
+    QueryParameter:
+      files:
+      - ad_short.css
+      version: true
+  add-cookie-notice:
+    QueryParameter:
+      files:
+      - css/add-cookie-notice.css
+      - js/add-cookie-notice.js
+      version: true
   addthis:
     Comment:
       pattern: !ruby/regexp /AddThis Settings Begin/i
