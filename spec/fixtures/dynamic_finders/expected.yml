@@ -144,6 +144,113 @@ plugins:
       found_by: Style Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''* Above The Fold Optimization 2.9.2'''
+  academic-bloggers-toolkit:
+    QueryParameter:
+      number: 4.11.3
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/academic-bloggers-toolkit/css/frontend.css?ver=4.11.3
+  accesspress-anonymous-post:
+    QueryParameter:
+      number: 2.7.3
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-anonymous-post/css/frontend-style.css?ver=2.7.3
+      - http://wp.lab/wp-content/plugins/accesspress-anonymous-post/js/frontend.js?ver=2.7.3
+  accesspress-instagram-feed:
+    QueryParameter:
+      number: 2.2.9
+      found_by: Query Parameter (Passive Detection)
+      confidence: 90
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/css/lightbox.css?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/css/owl.theme.css?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/css/owl.carousel.css?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/css/frontend.css?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/css/font-awesome.min.css?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/css/gridrotator.css?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/js/modernizr.custom.26633.js?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/js/jquery.gridrotator.js?ver=2.2.9
+      - http://wp.lab/wp-content/plugins/accesspress-instagram-feed/js/frontend.js?ver=2.2.9
+  accesspress-pinterest:
+    QueryParameter:
+      number: 3.2.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-pinterest/css/frontend.css?ver=3.2.0
+      - http://wp.lab/wp-content/plugins/accesspress-pinterest/js/jquery-masionary.js?ver=3.2.0
+      - http://wp.lab/wp-content/plugins/accesspress-pinterest/js/frontend.js?ver=3.2.0
+  accesspress-social-counter:
+    QueryParameter:
+      number: 1.7.3
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-social-counter/css/font-awesome.min.css?ver=1.7.3
+      - http://wp.lab/wp-content/plugins/accesspress-social-counter/css/frontend.css?ver=1.7.3
+  accesspress-social-icons:
+    QueryParameter:
+      number: 1.6.9
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-social-icons/css/animate.css?ver=1.6.9
+      - http://wp.lab/wp-content/plugins/accesspress-social-icons/css/frontend.css?ver=1.6.9
+      - http://wp.lab/wp-content/plugins/accesspress-social-icons/js/frontend.js?ver=1.6.9
+  accesspress-social-login-lite:
+    QueryParameter:
+      number: 3.3.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-social-login-lite/css/font-awesome/font-awesome.min.css?ver=3.3.0
+      - http://wp.lab/wp-content/plugins/accesspress-social-login-lite/css/frontend.css?ver=3.3.0
+      - http://wp.lab/wp-content/plugins/accesspress-social-login-lite/js/frontend.js?ver=3.3.0
+  accesspress-social-share:
+    QueryParameter:
+      number: 4.3.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-social-share/css/font-awesome/font-awesome.min.css?ver=4.3.5
+      - http://wp.lab/wp-content/plugins/accesspress-social-share/css/frontend.css?ver=4.3.5
+      - http://wp.lab/wp-content/plugins/accesspress-social-share/js/frontend.js?ver=4.3.5
+  accesspress-twitter-feed:
+    QueryParameter:
+      number: 1.5.6
+      found_by: Query Parameter (Passive Detection)
+      confidence: 50
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accesspress-twitter-feed/css/jquery.bxslider.css?ver=1.5.6
+      - http://wp.lab/wp-content/plugins/accesspress-twitter-feed/css/frontend.css?ver=1.5.6
+      - http://wp.lab/wp-content/plugins/accesspress-twitter-feed/css/fonts.css?ver=1.5.6
+      - http://wp.lab/wp-content/plugins/accesspress-twitter-feed/js/jquery.bxslider.min.js?ver=1.5.6
+      - http://wp.lab/wp-content/plugins/accesspress-twitter-feed/js/frontend.js?ver=1.5.6
+  accordion-and-accordion-slider:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/accordion-and-accordion-slider/assets/css/wp-aas-public.css?ver=1.0
+  acf-fast-flexy:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/acf-fast-flexy/public/css/acf_ffc-public.css?ver=1.0.0
+  acf-multistep:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/acf-multistep/public/css/acf-multi-step-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/acf-multistep/public/js/acf-multi-step-public.js?ver=1.0.0
   addthis:
     Comment:
       found_by: Comment (Passive Detection)

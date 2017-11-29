@@ -121,6 +121,89 @@ plugins:
       xpath: //style[@id="AbtfCSS"]
       pattern: !ruby/regexp /\* Above The Fold Optimization (?<v>[\d\.]+)/i
       version: true
+  academic-bloggers-toolkit:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      version: true
+  accesspress-anonymous-post:
+    QueryParameter:
+      files:
+      - css/frontend-style.css
+      - js/frontend.js
+      version: true
+  accesspress-instagram-feed:
+    QueryParameter:
+      files:
+      - css/lightbox.css
+      - css/owl.theme.css
+      - css/owl.carousel.css
+      - css/frontend.css
+      - css/font-awesome.min.css
+      - css/gridrotator.css
+      - js/modernizr.custom.26633.js
+      - js/jquery.gridrotator.js
+      - js/frontend.js
+      version: true
+  accesspress-pinterest:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/jquery-masionary.js
+      - js/frontend.js
+      version: true
+  accesspress-social-counter:
+    QueryParameter:
+      files:
+      - css/font-awesome.min.css
+      - css/frontend.css
+      version: true
+  accesspress-social-icons:
+    QueryParameter:
+      files:
+      - css/animate.css
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  accesspress-social-login-lite:
+    QueryParameter:
+      files:
+      - css/font-awesome/font-awesome.min.css
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  accesspress-social-share:
+    QueryParameter:
+      files:
+      - css/font-awesome/font-awesome.min.css
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  accesspress-twitter-feed:
+    QueryParameter:
+      files:
+      - css/jquery.bxslider.css
+      - css/frontend.css
+      - css/fonts.css
+      - js/jquery.bxslider.min.js
+      - js/frontend.js
+      version: true
+  accordion-and-accordion-slider:
+    QueryParameter:
+      files:
+      - assets/css/wp-aas-public.css
+      version: true
+  acf-fast-flexy:
+    QueryParameter:
+      files:
+      - public/css/acf_ffc-public.css
+      version: true
+  acf-multistep:
+    QueryParameter:
+      files:
+      - public/css/acf-multi-step-public.css
+      - public/js/acf-multi-step-public.js
+      version: true
   addthis:
     Comment:
       pattern: !ruby/regexp /AddThis Settings Begin/i
