@@ -303,6 +303,209 @@ plugins:
       xpath: //script[@data-cfasync="false"]
       pattern: !ruby/regexp /wp_product_version = "wpp\-(?<v>([\d\.]+))";/i
       version: true
+  adjusted-bounce-rate:
+    QueryParameter:
+      files:
+      - js/adjusted-bounce-rate.min.js
+      version: true
+  admin-keys:
+    QueryParameter:
+      files:
+      - assets/js/mousetrap.min.js
+      - assets/js/mousetrap-global-bind.min.js
+      version: true
+  adsense-plugin:
+    QueryParameter:
+      files:
+      - css/adsns.css
+      version: true
+  advance-pricing-table:
+    QueryParameter:
+      files:
+      - assets/css/main.css
+      version: true
+  advanced-backgrounds:
+    QueryParameter:
+      files:
+      - assets/awb/awb.css
+      version: true
+  advanced-cf7-db:
+    QueryParameter:
+      files:
+      - public/css/advanced-cf7-db-public.css
+      - public/js/advanced-cf7-db-public.js
+      version: true
+  advanced-coupon-conditions-for-woocommerce:
+    QueryParameter:
+      files:
+      - public/css/dc-accfw-public.css
+      - public/js/dc-accfw-public.js
+      version: true
+  advanced-plugin-search:
+    QueryParameter:
+      files:
+      - css/klick-aps-ui.min.css
+      - js/klick-aps-ui.min.js
+      version: true
+  advanced-plugin-view:
+    QueryParameter:
+      files:
+      - css/klick-apv-ui.min.css
+      - js/klick-apv-ui.min.js
+      version: true
+  advanced-spoiler:
+    QueryParameter:
+      files:
+      - css/advanced-spoiler.css
+      - js/jquery-spoiler.js
+      version: true
+  advanced-theme-search:
+    QueryParameter:
+      files:
+      - css/klick-ats-ui.min.css
+      - js/klick-ats-ui.min.js
+      version: true
+  advanced-wordpress-theme-editor:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="advthemeeditor"]/@content
+      pattern: !ruby/regexp /advthemeeditor\/(?<v>[\d\.]+)/i
+      version: true
+  adventure-bucket-list:
+    QueryParameter:
+      files:
+      - public/css/wp-abl-plugin-public.css
+      - public/js/wp-abl-plugin-public.js
+      version: true
+  advert:
+    QueryParameter:
+      files:
+      - js/advertfe.min.js
+      version: true
+  advice-box:
+    QueryParameter:
+      files:
+      - public/css/advice-box-public.css
+      - public/js/advice-box-public.js
+      version: true
+  aesop-story-engine:
+    QueryParameter:
+      files:
+      - public/assets/js/ai-core.min.js
+      version: true
+  affiliate-coupons:
+    QueryParameter:
+      files:
+      - public/css/styles.min.css
+      - public/js/scripts.min.js
+      version: true
+  affiliates-manager:
+    Comment:
+      pattern: !ruby/regexp /Affiliates Manager plugin v(?<v>[\d\.]+)/i
+      version: true
+  affilicious:
+    QueryParameter:
+      files:
+      - assets/public/dist/css/universal-box.min.css
+      - assets/public/dist/js/universal-box.min.js
+      version: true
+  age-gate:
+    QueryParameter:
+      files:
+      - public/css/age-gate-public.css
+      version: true
+  agile-store-locator:
+    QueryParameter:
+      files:
+      - public/css/all-css.min.css
+      - public/css/asl_responsive.css
+      - public/css/asl.css
+      - public/js/libs_new.min.js
+      version: true
+  ahalogy-wp:
+    Comment:
+      pattern: !ruby/regexp /Ahalogy wordpress plugin \[version (?<v>[\d\.]+)\]/i
+      version: true
+  ainow:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      - assets/scripts/front.js
+      version: true
+  ajar-productions-in5-embed:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      - assets/js/screenfull.js
+      - assets/js/public.js
+      version: true
+  ajax-dropdowns:
+    QueryParameter:
+      files:
+      - "/assets/css/ajaxd.css"
+      version: true
+  ajax-load-more-by-bkker-theme:
+    QueryParameter:
+      files:
+      - css/ajax-load-more-by-bkker-theme.css
+      - js/ajax-load-more-by-bkker-theme.js
+      version: true
+  ajax-manufactory:
+    QueryParameter:
+      files:
+      - js/jx.js
+      version: true
+  ajax-read-more:
+    QueryParameter:
+      files:
+      - ajax-read-more.js
+      version: true
+  ajax-search-lite:
+    QueryParameter:
+      files:
+      - css/style.basic.css
+      - css/style-simple-red.css
+      - js/min/jquery.ajaxsearchlite.min.js
+      version: true
+  ajax-theme:
+    Comment:
+      pattern: !ruby/regexp /Ajax theme (?<v>[\d\.]+) by/i
+      version: true
+  ajaxify-faqtastic:
+    QueryParameter:
+      files:
+      - css/ajaxify-faqtastic.css
+      - js/ajaxify-faqtastic.js
+      version: true
+  aklamator-popup:
+    QueryParameter:
+      files:
+      - assets/js/popup.js
+      version: true
+  album-and-image-gallery-plus-lightbox:
+    QueryParameter:
+      files:
+      - assets/css/magnific-popup.css
+      - assets/css/slick.css
+      - assets/css/aigpl-public.css
+      version: true
+  alchemyst-forms:
+    QueryParameter:
+      files:
+      - vendor/bootstrap/css/bootstrap.css
+      - css/datepicker.css
+      - js/frontend.js
+      version: true
+  ald-image-gallery:
+    QueryParameter:
+      files:
+      - js/ald-script.js
+      version: true
+  align-text-edge:
+    QueryParameter:
+      files:
+      - js/align-text-edge.min.js
+      version: true
   all-in-one-seo-pack:
     Comment:
       pattern: !ruby/regexp '/\A\/?all in one seo pack(?: (?<v>[^\s]+) by)?/i'
