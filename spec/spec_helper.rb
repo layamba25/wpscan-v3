@@ -39,7 +39,7 @@ def df_stubbed_response(fixture, finder_super_class)
   if finder_super_class == 'HeaderPattern'
     { headers: JSON.parse(File.read(fixture)) }
   else
-    { body: File.read(fixture) }
+    { body: File.read(fixture, mode: 'rb') }
   end
 end
 

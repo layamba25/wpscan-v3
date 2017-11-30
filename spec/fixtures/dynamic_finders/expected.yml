@@ -243,6 +243,25 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/acf-fast-flexy/public/css/acf_ffc-public.css?ver=1.0.0
+  acf-field-selector-field:
+    TranslationFile:
+      number: 4.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acf-field-selector-field/lang/acf-field-selector-field-hu_HU.mo,
+        Match: ''Project-Id-Version: ACF Field Selector 4.0.0'''
+    TranslationFile2:
+      number: 4.0.0
+      found_by: Translation File2 (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acf-field-selector-field/lang/translation.po,
+        Match: ''Project-Id-Version: ACF Field Selector 4.0.0'''
+    TranslationFile3:
+      number: 4.0.0
+      found_by: Translation File3 (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acf-field-selector-field/lang/acf-field-selector-field-hu_HU.po,
+        Match: ''Project-Id-Version: ACF Field Selector 4.0.0'''
   acf-multistep:
     QueryParameter:
       number: 1.0.0
@@ -251,6 +270,25 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/acf-multistep/public/css/acf-multi-step-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/acf-multistep/public/js/acf-multi-step-public.js?ver=1.0.0
+  acf-sidebar-selector-field:
+    TranslationFile:
+      number: 3.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acf-sidebar-selector-field/lang/acf-sidebar-selector-field-hu_HU.mo,
+        Match: ''Project-Id-Version: ACF Sidebar Selector 3.0.0'''
+    TranslationFile2:
+      number: 3.0.0
+      found_by: Translation File2 (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acf-sidebar-selector-field/lang/translation.pot,
+        Match: ''Project-Id-Version: ACF Sidebar Selector 3.0.0'''
+    TranslationFile3:
+      number: 3.0.0
+      found_by: Translation File3 (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acf-sidebar-selector-field/lang/acf-sidebar-selector-field-hu_HU.po,
+        Match: ''Project-Id-Version: ACF Sidebar Selector 3.0.0'''
   achievements:
     QueryParameter:
       number: 3.5.1
@@ -282,6 +320,25 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/acquaint-owl-carousel/public/css/acquaint-owl-carousel-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/acquaint-owl-carousel/public/js/acquaint-owl-carousel-public.js?ver=1.0.0
+  active-directory-authentication-integration:
+    TranslationFile:
+      number: 0.6
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/active-directory-authentication-integration/active-directory-authentication-integration.pot,
+        Match: ''Project-Id-Version: Active Directory Authentication Integration 0.6'''
+    TranslationFile2:
+      number: 0.6
+      found_by: Translation File2 (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/active-directory-authentication-integration/languages/default.mo,
+        Match: ''Project-Id-Version: Active Directory Authentication Integration 0.6'''
+    TranslationFile3:
+      number: 0.6
+      found_by: Translation File3 (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/active-directory-authentication-integration/languages/default.po,
+        Match: ''Project-Id-Version: Active Directory Authentication Integration 0.6'''
   acurax-social-media-widget:
     QueryParameter:
       number: 3.2.5
@@ -289,6 +346,13 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/acurax-social-media-widget/css/style.css?v=3.2.5&ver=4.8.3
+  ad-music-player-lite:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/ad-music-player-lite/languages/plugin-name.pot,
+        Match: ''Project-Id-Version: TODO 1.0.0'''
   ad-short:
     QueryParameter:
       number: 2.0.1
@@ -588,9 +652,9 @@ plugins:
       found_by: Query Parameter (Passive Detection)
       confidence: 30
       interesting_entries:
-      - "http://wp.lab/wp-content/plugins/ajax-search-lite/css/style.basic.css?ver=4.7.10"
-      - "http://wp.lab/wp-content/plugins/ajax-search-lite/css/style-simple-red.css?ver=4.7.10"
-      - "http://wp.lab/wp-content/plugins/ajax-search-lite/js/min/jquery.ajaxsearchlite.min.js?ver=4.7.10"
+      - http://wp.lab/wp-content/plugins/ajax-search-lite/css/style.basic.css?ver=4.7.10
+      - http://wp.lab/wp-content/plugins/ajax-search-lite/css/style-simple-red.css?ver=4.7.10
+      - http://wp.lab/wp-content/plugins/ajax-search-lite/js/min/jquery.ajaxsearchlite.min.js?ver=4.7.10
   ajax-theme:
     Comment:
       number: 0.1.3

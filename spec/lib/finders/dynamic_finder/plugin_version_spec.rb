@@ -70,7 +70,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
         before do
           expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
 
-          stub_request(:get, plugin.url(config['path'])).to_return(stubbed_response)
+          stub_request(:get, plugin.url(config['path'])).to_return(stubbed_response) if config['path']
         end
 
         if config['path']

@@ -198,11 +198,43 @@ plugins:
       files:
       - public/css/acf_ffc-public.css
       version: true
+  acf-field-selector-field:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/acf-field-selector-field-hu_HU.mo
+      pattern: !ruby/regexp '/Project\-Id\-Version: ACF Field Selector (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile2:
+      class: BodyPattern
+      path: lang/translation.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: ACF Field Selector (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile3:
+      class: BodyPattern
+      path: lang/acf-field-selector-field-hu_HU.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: ACF Field Selector (?<v>[\d\.]+)/i'
+      version: true
   acf-multistep:
     QueryParameter:
       files:
       - public/css/acf-multi-step-public.css
       - public/js/acf-multi-step-public.js
+      version: true
+  acf-sidebar-selector-field:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/acf-sidebar-selector-field-hu_HU.mo
+      pattern: !ruby/regexp '/Project-Id-Version: ACF Sidebar Selector (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile2:
+      class: BodyPattern
+      path: lang/translation.pot
+      pattern: !ruby/regexp '/Project-Id-Version: ACF Sidebar Selector (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile3:
+      class: BodyPattern
+      path: lang/acf-sidebar-selector-field-hu_HU.po
+      pattern: !ruby/regexp '/Project-Id-Version: ACF Sidebar Selector (?<v>[\d\.]+)/i'
       version: true
   achievements:
     QueryParameter:
@@ -227,10 +259,35 @@ plugins:
       - public/css/acquaint-owl-carousel-public.css
       - public/js/acquaint-owl-carousel-public.js
       version: true
+  active-directory-authentication-integration:
+    TranslationFile:
+      class: BodyPattern
+      path: active-directory-authentication-integration.pot
+      pattern: !ruby/regexp '/Project-Id-Version: Active Directory Authentication
+        Integration (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile2:
+      class: BodyPattern
+      path: languages/default.mo
+      pattern: !ruby/regexp '/Project-Id-Version: Active Directory Authentication
+        Integration (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile3:
+      class: BodyPattern
+      path: languages/default.po
+      pattern: !ruby/regexp '/Project-Id-Version: Active Directory Authentication
+        Integration (?<v>[\d\.]+)/i'
+      version: true
   acurax-social-media-widget:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  ad-music-player-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp '/Project-Id-Version: TODO (?<v>[\d\.]+)/i'
       version: true
   ad-short:
     QueryParameter:
