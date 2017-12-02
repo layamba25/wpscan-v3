@@ -2846,7 +2846,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: i18n/languages/charitable.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Charitable\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Charitable\ (?<v>[\d\.]+)/i
       version: true
   charty:
     QueryParameter:
@@ -2857,7 +2857,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/ase-chat.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ ase\-chat\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ ase\-chat\ (?<v>[\d\.]+)/i
       version: true
   chat-robot:
     TranslationFile:
@@ -2951,8 +2951,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/cielo-woocommerce.pot
-      pattern: !ruby/regexp /ielo\ WooCommerce\ \-\ Solu[^o]+o\ Webservice\
-        (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /ielo\ WooCommerce\ \-\ Solu[^o]+o\ Webservice\ (?<v>[\d\.]+)/i
       version: true
   civicrm-admin-utilities:
     TranslationFile:
@@ -2970,7 +2969,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/civil-comments.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Civil\ Comments\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Civil\ Comments\ (?<v>[\d\.]+)/i
       version: true
   classic-facebook-feed:
     QueryParameter:
@@ -2986,13 +2985,13 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: i18n/languages/classified.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Classified\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ WP\ Classified\ (?<v>[\d\.]+)/i
       version: true
   classifieds-wp:
     TranslationFile:
       class: BodyPattern
       path: languages/classifieds-wp.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Classifieds\ WP\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Classifieds\ WP\ (?<v>[\d\.]+)/i
       version: true
   classy:
     QueryParameter:
@@ -3008,7 +3007,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/cleaner-gallery.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Cleaner\ Gallery\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Cleaner\ Gallery\ (?<v>[\d\.]+)/i
       version: true
   cleantalk-spam-protect:
     QueryParameter:
@@ -3095,16 +3094,286 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/clou2png.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Cloud2PNG\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Cloud2PNG\ (?<v>[\d\.]+)/i
+      version: true
+  cm-idin:
+    QueryParameter:
+      files:
+      - css/style.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cm-idin.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ CM\ iDIN\ for\ WooCommerce\ (?<v>[\d\.]+)/i
+      version: true
+  cmb2:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cmb2.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CMB2\ (?<v>[\d\.]+)/i
+      version: true
+  cnhk-slideshow:
+    QueryParameter:
+      files:
+      - public/assets/css/cnhk-slider.css
+      - lib/jssor/jssor.slider.mini.js
+      - public/assets/js/cnhk-slider.js
+      version: true
+  co2counter:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  cocorico-social:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  code-editor:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="codeeditor"]/@content
+      pattern: !ruby/regexp /codeeditor\/(?<v>[\d\.]+)/i
+      version: true
+  code-prettify:
+    QueryParameter:
+      files:
+      - prettify/run_prettify.js
+      version: true
+  code-prettify-syntax-highlighter:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cpsh-ru_RU.po
+      pattern: !ruby/regexp /rsion:\ Code\ Prettify\ Syntax\ Highlighter\ (?<v>[\d\.]+)/i
+      version: true
+  code-snippet-library:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/code_snippet-en_GB.po
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Code\ Snippet\ Library\ v(?<v>[\d\.]+)/i
+      version: true
+  code-snippets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/code-snippets.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ code\-snippets\ (?<v>[\d\.]+)/i
+      version: true
+  code-snippets-cpt:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dsgnwrks-code-snippets-cpt.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Code\ Snippets\ CPT\ (?<v>[\d\.]+)/i
+      version: true
+  codeboxrflexiblecountdown:
+    QueryParameter:
+      files:
+      - public/assets/css/cbfc-light-countdown.css
+      - public/assets/css/cbfc-circular-countdown.css
+      version: true
+  codecolorer:
+    QueryParameter:
+      files:
+      - codecolorer.css
+      version: true
+  codeprey-mi-video-popup:
+    QueryParameter:
+      files:
+      - inc/placeholder.js
+      version: true
+  codja-wc-ajax-search:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cj-wc-ajax-search.pot
+      pattern: !ruby/regexp /\-Version:\ CODJA\ WooCommerce\ Ajax\ Search\ (?<v>[\d\.]+)/i
       version: true
   collapsing-archives:
     Comment:
       pattern: !ruby/regexp /Collapsible Archive Widget/i
+  colored-vote-polls:
+    QueryParameter:
+      files:
+      - css/style.css
+      - js/formtips.js
+      - js/wpcvp.js
+      version: true
+  column-shortcodes:
+    QueryParameter:
+      files:
+      - "/assets/css/shortcodes.css"
+      version: true
+  combunity-forums:
+    QueryParameter:
+      files:
+      - public/js/tinymce/tinymce.min.js
+      version: true
+  comet-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/comet.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Comet\ (?<v>[\d\.]+)/i
+      version: true
+  comic-easel:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="Comic-Easel"]/@content
+      version: true
+  coming-soon-by-supsystic:
+    QueryParameter:
+      files:
+      - css/supsystic-for-all-admin.css
+      version: true
+  comma-diacritics:
+    QueryParameter:
+      files:
+      - js/commadias.plugin.js
+      - js/comma_dias_check.js
+      version: true
+  comment-form-message:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/comment-form-message.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Comment\ Form\ Message\ (?<v>[\d\.]+)/i
+      version: true
+  comment-popularity:
+    QueryParameter:
+      files:
+      - js/modules/growl/stylesheets/jquery.growl.min.css
+      - js/modules/growl/javascripts/jquery.growl.min.js
+      - js/voting.min.js
+      version: true
+  comment-rating-field-plugin:
+    QueryParameter:
+      files:
+      - assets/css/rating.css
+      - assets/js/jquery.rating.pack.js
+      - assets/js/frontend.js
+      version: true
+  comment-redirector:
+    QueryParameter:
+      files:
+      - css/public.css
+      version: true
+  commentpress-core:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/commentpress-core.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CommentPress\ Core\ (?<v>[\d\.]+)/i
+      version: true
+  comments-ratings:
+    QueryParameter:
+      files:
+      - css/jquery.raty.css
+      - js/jquery.raty.js
+      - js/reviews.js
+      version: true
+  comments-widget-plus:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/comments-widget-plus.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Comments\ Widget\ Plus\ (?<v>[\d\.]+)/i
+      version: true
+  comments-with-social-login:
+    QueryParameter:
+      files:
+      - "/css/font-awesome.min.css"
+      - "/css/ixwp-comments-social-login.css"
+      - "/js/ixwp-comments-social-login.js"
+      version: true
+  community-watch:
+    QueryParameter:
+      files:
+      - js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/community-watch.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Community\ Watch\ (?<v>[\d\.]+)/i
+      version: true
+  community-yard-sale:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/community-yard-sale.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Community\ Yard\ Sale\ (?<v>[\d\.]+)/i
+      version: true
+  compact-wp-audio-player:
+    Comment:
+      pattern: !ruby/regexp /WP\ Audio\ player\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  complete-open-graph:
+    Comment:
+      pattern: !ruby/regexp /Complete\ Open\ Graph\ plugin\.\ \(v(?<v>[\d\.]+)\)/i
+      version: true
+  computer-repair-shop:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  conditional-lightbox:
+    QueryParameter:
+      files:
+      - slimbox-2.04/js/slimbox2.js
+      version: true
+  connect-daily-web-calendar:
+    QueryParameter:
+      files:
+      - cdaily.css
+      - cdaily-plugin.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: captions/connect-daily-web-calendar-fr_FR.po
+      pattern: !ruby/regexp /t\-Id\-Version:\ connectDaily\ Web\ Calendar\ (?<v>[\d\.]+)/i
+      version: true
+  connections:
+    QueryParameter:
+      files:
+      - assets/css/cn-user.min.css
+      version: true
+  constant-contact-api:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/constant-contact-api.pot
+      pattern: !ruby/regexp /Constant\ Contact\ Plugin\ for\ WordPress\ (?<v>[\d\.]+)/i
+      version: true
+  constant-contact-forms:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  contact-coldform:
+    QueryParameter:
+      files:
+      - coldskins/coldskin-default.css
+      version: true
   contact-form-7:
     QueryParameter:
       files:
       - includes/css/styles.css
       - includes/js/scripts.js
+      version: true
+  contact-form-7-extras:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cf7-extras.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Contact\ Form\ 7\ Controls\ (?<v>[\d\.]+)/i
+      version: true
+  contact-form-7-getresponse-extension:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/contact-form-7-getresponse-extension.pot
+      pattern: !ruby/regexp /n:\ Contact\ Form\ 7\ GetResponse\ Extension\ (?<v>[\d\.]+)/i
+      version: true
+  contact-form-7-multi-step-module:
+    QueryParameter:
+      files:
+      - resources/cf7msm.css
+      - resources/cf7msm.js
       version: true
   cookie-notice:
     QueryParameter:
