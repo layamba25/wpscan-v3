@@ -2758,6 +2758,345 @@ plugins:
       - assets/css/bootstrap.css
       - assets/js/bootstrap.min.js
       version: true
+  cdn-tools:
+    Comment:
+      pattern: !ruby/regexp /CDN\ Tools\ v(?<v>[\d\.]+)/i
+      version: true
+  cf-geoplugin:
+    QueryParameter:
+      files:
+      - public/css/flag-icon.min.css
+      - public/css/cf-geoplugin.css
+      - public/js/cf-geoplugin.js
+      version: true
+  cf7-color-picker:
+    QueryParameter:
+      files:
+      - public/css/style.css
+      - public/js/jscolor.min.js
+      version: true
+  cf7-editor-button:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/contact-form-7-editor-button.pot
+      pattern: !ruby/regexp /"Button\ v\ (?<v>[\d\.]+)/i
+      version: true
+  cf7-google-sheets-connector:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cf7-google-sheets-connector-en_US.po
+      pattern: !ruby/regexp /\-Id\-Version:\ CF7\ Google\ Sheet\ Connector\ (?<v>[\d\.]+)/i
+      version: true
+  cf7-notie:
+    QueryParameter:
+      files:
+      - public/css/cf7_notie-public.css
+      - public/js/notie.js
+      version: true
+  cf7-utm-tracking:
+    QueryParameter:
+      files:
+      - assets/traffic_source2.min.js
+      version: true
+  cforms2:
+    QueryParameter:
+      files:
+      - styling/cforms2012.css
+      - js/cforms.js
+      version: true
+  challonge:
+    QueryParameter:
+      files:
+      - challonge.css
+      - moment-with-locales.min.js
+      - challonge.min.js
+      - jquery.challonge.min.js
+      version: true
+  chamame-live-chat:
+    QueryParameter:
+      files:
+      - css/client.css
+      - js/deps/knockout-3.1.0.js
+      - js/deps/knockout.validation.min.js
+      - js/deps/jquery.autosize.min.js
+      - js/client.min.js
+      version: true
+  change-wc-price-title:
+    QueryParameter:
+      files:
+      - assets/js/cwpt-price-title.js
+      version: true
+  changetip-contribute:
+    QueryParameter:
+      files:
+      - public/scripts/paywall.js
+      version: true
+  chapters-for-authors:
+    QueryParameter:
+      files:
+      - public/css/chapters-for-authors-public.css
+      - public/js/chapters-for-authors-public.js
+      version: true
+  charitable:
+    QueryParameter:
+      files:
+      - assets/css/charitable.min.css
+      - assets/js/charitable-session.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/charitable.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Charitable\ (?<v>[\d\.]+)/i
+      version: true
+  charty:
+    QueryParameter:
+      files:
+      - js/charty_load_chart.js
+      version: true
+  chat-for-aesop-story-engine:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ase-chat.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ ase\-chat\ (?<v>[\d\.]+)/i
+      version: true
+  chat-robot:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-chat-robot.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Chat\ Robot\ Installer\ WP\ v(?<v>[\d\.]+)/i
+      version: true
+  chatbot-for-facebook:
+    QueryParameter:
+      files:
+      - public/css/facebook-chatbot-public.css
+      - public/js/facebook-chatbot-public.js
+      version: true
+  chatmeim-mini:
+    QueryParameter:
+      files:
+      - includes/mini/stylesheets/mini.css
+      - includes/mini/javascripts/mini.js
+      version: true
+  checkbox-for-taxonomies:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/checkbox-for-taxonomies.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Checkbox\ for\ Taxonomies\ (?<v>[\d\.]+)/i
+      version: true
+  checkin:
+    QueryParameter:
+      files:
+      - assets/front.css
+      - assets/front.js
+      version: true
+  cherry-popups:
+    QueryParameter:
+      files:
+      - assets/css/cherry-popups-styles.css
+      - assets/js/cherry-popups-plugin.js
+      - assets/js/cherry-popups-scripts.js
+      version: true
+  cherry-projects:
+    QueryParameter:
+      files:
+      - public/assets/css/styles.css
+      - public/assets/js/cherry-projects-single-scripts.js
+      version: true
+  cherry-real-estate:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      version: true
+  cherry-services-list:
+    QueryParameter:
+      files:
+      - public/assets/css/cherry-services.css
+      - public/assets/css/cherry-services-theme.css
+      - public/assets/css/cherry-services-grid.css
+      version: true
+  cherry-testi:
+    QueryParameter:
+      files:
+      - public/assets/css/style.css
+      version: true
+  cherry-trending-posts:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  chessgame-shizzle:
+    QueryParameter:
+      files:
+      - frontend/css/chessgame-shizzle-frontend.css
+      - frontend/js/chessgame-shizzle-frontend.js
+      version: true
+  chiliforms:
+    QueryParameter:
+      files:
+      - assets/css/bundle/chiliforms.css
+      - js/build/clientside/chiliforms.js
+      version: true
+  chimpmate:
+    QueryParameter:
+      files:
+      - public/assets/js/public.js
+      version: true
+  chroma-lightbox:
+    QueryParameter:
+      files:
+      - public/css/chroma_lightbox-public.css
+      - public/js/chroma_lightbox-public.min.js
+      version: true
+  cielo-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cielo-woocommerce.pot
+      pattern: !ruby/regexp /ielo\ WooCommerce\ \-\ Solu[^o]+o\ Webservice\
+        (?<v>[\d\.]+)/i
+      version: true
+  civicrm-admin-utilities:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/civicrm-admin-utilities.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ CiviCRM\ Admin\ Utilities\ (?<v>[\d\.]+)/i
+      version: true
+  civicrm-wp-member-sync:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/civicrm-wp-member-sync.pot
+      pattern: !ruby/regexp /\-Version:\ CiviCRM\ WordPress\ Member\ Sync\ (?<v>[\d\.]+)/i
+      version: true
+  civil-comments:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/civil-comments.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Civil\ Comments\ (?<v>[\d\.]+)/i
+      version: true
+  classic-facebook-feed:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  classified:
+    QueryParameter:
+      files:
+      - assets/css/classified.min.css
+      - assets/css/font-awesome.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/classified.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Classified\ (?<v>[\d\.]+)/i
+      version: true
+  classifieds-wp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/classifieds-wp.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Classifieds\ WP\ (?<v>[\d\.]+)/i
+      version: true
+  classy:
+    QueryParameter:
+      files:
+      - public/css/classy-public.css
+      - public/js/classy-public.js
+      version: true
+  clean-archives-reloaded:
+    Comment:
+      pattern: !ruby/regexp /Clean\ Archives\ Reloaded\ v(?<v>[\d\.]+)/i
+      version: true
+  cleaner-gallery:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cleaner-gallery.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Cleaner\ Gallery\ (?<v>[\d\.]+)/i
+      version: true
+  cleantalk-spam-protect:
+    QueryParameter:
+      files:
+      - inc/cleantalk_nocache.js
+      version: true
+  cleverness-to-do-list:
+    QueryParameter:
+      files:
+      - css/cleverness-to-do-list-frontend.css
+      - css/jquery-ui-fresh.css
+      version: true
+  cleverreach-extension:
+    QueryParameter:
+      files:
+      - public/js/cleverreach-extension-public.js
+      version: true
+  cleverreach-newsletter-dashboard-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: translations/haet_cleverreach_dashboard-de_DE.po
+      pattern: !ruby/regexp /n:\ CleverReach\ Report\ Dashboard\ Widget\ v(?<v>[\d\.]+)/i
+      version: true
+  click-to-chat-for-whatsapp:
+    QueryParameter:
+      files:
+      - assets/css/main.css
+      - assets/js/app.js
+      version: true
+  clickbank-storefront:
+    QueryParameter:
+      files:
+      - quick_search.js
+      version: true
+  clicky-analytics:
+    Comment:
+      pattern: !ruby/regexp /Clicky\ Analytics\ v(?<v>[\d\.]+)/i
+      version: true
+  client-carousel:
+    QueryParameter:
+      files:
+      - classes/assets/css/client_css.css
+      - classes/assets/css/owl.carousel.css
+      - classes/assets/css/font-awesome.min.css
+      version: true
+  client-portal-officewp-private-secure-client-or-customer-login-area:
+    QueryParameter:
+      files:
+      - assets/css/common.css
+      - assets/js/plugins/wpo_pulllayer_user/jquery.wpo_pulllayer.css
+      - assets/js/plugins/wpo_confirm/wpo_confirm.css
+      - assets/js/plugins/wpo_notice/wpo_notice.css
+      - assets/css/classes/class-assign.css
+      - assets/css/classes/user-class-office-list-table.css
+      - assets/css/admin-buttons.css
+      - assets/css/user-general.css
+      - assets/css/user-forms.css
+      - assets/css/user-default-box.css
+      - assets/js/plugins/wpo_pulllayer_user/jquery.wpo_pulllayer.js
+      - assets/js/plugins/wpo_confirm/wpo_confirm.js
+      - assets/js/plugins/wpo_notice/wpo_notice.js
+      - assets/js/jquery.b_64.min.js
+      - assets/js/classes/class-assign.js
+      - assets/js/plugins/jquery.wpo_validation.js
+      version: true
+  clients:
+    QueryParameter:
+      files:
+      - public/css/ct.css
+      version: true
+  closify-maestro-image-uploader-gallery-builder:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/css/arfaly.css
+      - assets/css/lightbox.css
+      - assets/css/transitions.css
+      - assets/js/closify-multi-min.js
+      - assets/js/closify-min.js
+      - assets/js/lightbox-min.js
+      - assets/js/jquery.collagePlus.min.js
+      version: true
+  cloud2png:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/clou2png.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Cloud2PNG\ (?<v>[\d\.]+)/i
+      version: true
   collapsing-archives:
     Comment:
       pattern: !ruby/regexp /Collapsible Archive Widget/i
