@@ -473,6 +473,12 @@ plugins:
       - css/advanced-spoiler.css
       - js/jquery-spoiler.js
       version: true
+  advanced-testimonial-for-wp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/itt_testimonial_textdomain-en_US.po
+      pattern: !ruby/regexp /Version:\ iThemeland\ Testimonial\ For\ WP\ v(?<v>[\d\.]+)/i
+      version: true
   advanced-theme-search:
     QueryParameter:
       files:
@@ -527,6 +533,12 @@ plugins:
     QueryParameter:
       files:
       - public/css/age-gate-public.css
+      version: true
+  age-verify:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/age-verify.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Age\ Verify\ (?<v>[\d\.]+)/i
       version: true
   agile-store-locator:
     QueryParameter:
@@ -739,7 +751,8 @@ plugins:
       version: true
     DisabledComment:
       class: Comment
-      pattern: !ruby/regexp '/Google Analytics is disabled, Reason: GA ID is not set \(v(?<v>[\d\.]+)\)/i'
+      pattern: !ruby/regexp '/Google Analytics is disabled, Reason: GA ID is not set
+        \(v(?<v>[\d\.]+)\)/i'
       version: true
   annonces:
     QueryParameter:

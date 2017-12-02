@@ -447,18 +447,21 @@ plugins:
       number: 1.0.0
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/adl-team/languages/at.pot, Match: ''Project-Id-Version: WordPress Blank Pot v1.0.0'''
+      - 'http://wp.lab/wp-content/plugins/adl-team/languages/at.pot, Match: ''Project-Id-Version:
+        WordPress Blank Pot v1.0.0'''
   admin-bar:
     TranslationFile:
       number: '1.0'
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/admin-bar/lang/ru_RU.po, Match: ''Project-Id-Version: Admin Bar 1.0'''
+      - 'http://wp.lab/wp-content/plugins/admin-bar/lang/ru_RU.po, Match: ''Project-Id-Version:
+        Admin Bar 1.0'''
     TranslationFile2:
       number: '1.0'
       found_by: Translation File2 (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/admin-bar/lang/ru_RU.mo, Match: ''Project-Id-Version: Admin Bar 1.0'''
+      - 'http://wp.lab/wp-content/plugins/admin-bar/lang/ru_RU.mo, Match: ''Project-Id-Version:
+        Admin Bar 1.0'''
   admin-bar-backend-search:
     TranslationFile:
       number: 0.1.1
@@ -575,6 +578,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/advanced-spoiler/css/advanced-spoiler.css?ver=2.02
       - http://wp.lab/wp-content/plugins/advanced-spoiler/js/jquery-spoiler.js?ver=2.02
+  advanced-testimonial-for-wp:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/advanced-testimonial-for-wp/languages/itt_testimonial_textdomain-en_US.po,
+        Match: ''Version: iThemeland Testimonial For WP v1.0'''
   advanced-theme-search:
     QueryParameter:
       number: 0.0.1
@@ -654,7 +664,7 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/age-verify/languages/age-verify.pot, Match:
-        '''''
+        ''Project-Id-Version: Age Verify 0.3.0'''
   agile-store-locator:
     QueryParameter:
       number: 1.1.1
@@ -807,7 +817,7 @@ plugins:
       found_by: Query Parameter (Passive Detection)
       confidence: 10
       interesting_entries:
-      - "http://wp.lab/wp-content/plugins/all-in-one-event-calendar/public/themes-ai1ec/vortex/css/ai1ec_parsed_css.css?ver=2.5.28"
+      - http://wp.lab/wp-content/plugins/all-in-one-event-calendar/public/themes-ai1ec/vortex/css/ai1ec_parsed_css.css?ver=2.5.28
   all-in-one-seo-pack:
     Comment:
       number: 2.2.5.1
@@ -957,7 +967,8 @@ plugins:
       number: 1.4.2
       found_by: Disabled Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''Google Analytics is disabled, Reason: GA ID is not set (v1.4.2)'''
+      - 'http://wp.lab/, Match: ''Google Analytics is disabled, Reason: GA ID is not
+        set (v1.4.2)'''
   annonces:
     QueryParameter:
       number: 1.2.0.7
@@ -1368,7 +1379,8 @@ plugins:
       number: 1.0.2
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''Awesome Google Analytics by CodeBrothers, version 1.0.2'''
+      - 'http://wp.lab/, Match: ''Awesome Google Analytics by CodeBrothers, version
+        1.0.2'''
     QueryParameter:
       number: 1.0.2
       found_by: Query Parameter (Passive Detection)
