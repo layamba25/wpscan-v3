@@ -49,29 +49,9 @@ describe WPScan::DB::DynamicPluginFinders do
   end
 
   describe '.version_finder_super_class' do
-    let(:mod) { WPScan::Finders::PluginVersion::RspecFailure }
-
-    context 'when a class already exist' do
-      module WPScan
-        module Finders
-          module PluginVersion
-            module RspecFailure
-              class Comment
-              end
-            end
-          end
-        end
-      end
-
-      it 'raises an error' do
-        expect { subject.version_finder_super_class(mod, :Comment) }
-          .to raise_error('WPScan::Finders::PluginVersion::RspecFailure has already a Comment class')
-      end
-    end
-
     context 'when a class is not allowed' do
       it 'raises an error' do
-        expect { subject.version_finder_super_class(mod, :NotAllowed) }
+        expect { subject.version_finder_super_class(:NotAllowed) }
           .to raise_error('NotAllowed is not allowed as a Dynamic Finder')
       end
     end

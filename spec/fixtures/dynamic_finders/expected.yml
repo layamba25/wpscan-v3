@@ -1296,9 +1296,9 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/animated-headline/css/style.css?ver=3.5
   ank-simplified-ga:
-    EndComment:
+    Comment:
       number: 1.4.2
-      found_by: End Comment (Passive Detection)
+      found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''GA Tracking ends (v1.4.2)'''
     DisabledComment:

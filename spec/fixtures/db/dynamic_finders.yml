@@ -734,8 +734,7 @@ plugins:
       - css/style.css
       version: true
   ank-simplified-ga:
-    EndComment:
-      class: Comment
+    Comment:
       pattern: !ruby/regexp /GA Tracking ends \(v(?<v>[\d\.]+)\)/i
       version: true
     DisabledComment:

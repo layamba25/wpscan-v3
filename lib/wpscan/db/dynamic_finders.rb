@@ -84,9 +84,9 @@ module WPScan
           finders.each do |finder_class, config|
             klass = config['class'] ? config['class'] : finder_class
 
-            # TODO: Fix the issue here, the klass and finder_class have been inverted it seems, should be
-            # version_finder_super_class(mod, finder_class).create_child_class(mod, klass.to_sym, config)
-            version_finder_super_class(mod, klass).create_child_class(mod, finder_class.to_sym, config)
+            raise "#{mod} has already a #{finder_class} class" if mod.constants.include?(finder_class.to_sym)
+
+            version_finder_super_class(klass).create_child_class(mod, finder_class.to_sym, config)
           end
         end
       end
@@ -98,15 +98,10 @@ module WPScan
       # So far, the Finders::DynamicFinders::WPItemVersion is enought
       # as nothing else is used
       #
-      # @param [ Constant ] mod The module the klass will be created in
       # @param [ String, Symbol ] klass
       # @return [ Constant ]
-      def self.version_finder_super_class(mod, klass)
+      def self.version_finder_super_class(klass)
         raise "#{klass} is not allowed as a Dynamic Finder" unless ALLOWED_CLASSES.include?(klass.to_sym)
-        # p mod
-        # p klass
-        # p mod.constants
-        raise "#{mod} has already a #{klass} class" if mod.constants.include?(klass.to_sym)
 
         "WPScan::Finders::DynamicFinder::WpItemVersion::#{klass}".constantize
       end
