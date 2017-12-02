@@ -3375,6 +3375,35 @@ plugins:
       - resources/cf7msm.css
       - resources/cf7msm.js
       version: true
+  contact-form-7-signature-addon:
+    QueryParameter:
+      files:
+      - public/css/style.css
+      - public/js/signature_pad.min.js
+      - public/js/scripts.js
+      version: true
+  contact-form-7-style:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - css/responsive.css
+      - js/frontend-min.js
+      version: true
+  contact-form-maker:
+    QueryParameter:
+      files:
+      - css/jquery-ui-1.10.3.custom.css
+      - css/jquery-ui-spinner.css
+      - css/calendar-jos.css
+      - css/intlTelInput.css
+      - css/form_maker_frontend.css
+      - css/frontend/fm-animate.css
+      - js/if_gmap_front_end.js
+      - js/intlTelInput.js
+      - js/calendar/calendar.js
+      - js/calendar/calendar_function.js
+      - js/main_div_front_end.js
+      version: true
   cookie-notice:
     QueryParameter:
       files:
