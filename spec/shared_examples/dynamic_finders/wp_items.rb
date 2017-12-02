@@ -84,7 +84,7 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
       end
     end
 
-    it 'retuns the expected plugins' do
+    it 'returns the expected plugins' do
       expect(finder.aggressive).to match_array(@expected.map { |item| eql(item) })
     end
   end

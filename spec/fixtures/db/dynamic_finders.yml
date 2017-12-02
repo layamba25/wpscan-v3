@@ -485,6 +485,12 @@ plugins:
       - css/klick-ats-ui.min.css
       - js/klick-ats-ui.min.js
       version: true
+  advanced-twitter-profile-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/atpw-pl_PL.po
+      pattern: !ruby/regexp /ersion:\ Advanced\ Twitter\ Profile\ Widget\ (?<v>[\d\.]+)/i
+      version: true
   advanced-wordpress-theme-editor:
     MetaTag:
       class: Xpath
@@ -558,6 +564,12 @@ plugins:
       - assets/css/front.css
       - assets/scripts/front.js
       version: true
+  airstory:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/airstory.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Airstory\ (?<v>[\d\.]+)/i
+      version: true
   ajar-productions-in5-embed:
     QueryParameter:
       files:
@@ -575,6 +587,11 @@ plugins:
       files:
       - css/ajax-load-more-by-bkker-theme.css
       - js/ajax-load-more-by-bkker-theme.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/en_US.po
+      pattern: !ruby/regexp /msgid\ "Version\ (?<v>[\d\.]+)/i
       version: true
   ajax-manufactory:
     QueryParameter:
@@ -598,6 +615,12 @@ plugins:
       files:
       - css/ajaxify-faqtastic.css
       - js/ajaxify-faqtastic.js
+      version: true
+  ajaxify-filters:
+    TranslationFile:
+      class: BodyPattern
+      path: language/ajaxify-filters-en_US.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Ajaxify\ filters\ (?<v>[\d\.]+)/i
       version: true
   aklamator-popup:
     QueryParameter:
@@ -628,6 +651,11 @@ plugins:
       files:
       - js/align-text-edge.min.js
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/align-text-edge.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Align\ Text\ Edge\ (?<v>[\d\.]+)/i
+      version: true
   alive5:
     QueryParameter:
       files:
@@ -643,6 +671,11 @@ plugins:
     QueryParameter:
       files:
       - public/themes-ai1ec/vortex/css/ai1ec_parsed_css.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: language/all-in-one-event-calendar.po
+      pattern: !ruby/regexp /n:\ All\-in\-One\ Event\ Calendar\ by\ Time\.ly\ (?<v>[\d\.]+)/i
       version: true
   all-in-one-seo-pack:
     Comment:
@@ -680,6 +713,12 @@ plugins:
       files:
       - css/aalb_basics.css
       version: true
+  amazon-fps:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ppdg.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
   amazon-link:
     QueryParameter:
       files:
@@ -700,6 +739,12 @@ plugins:
     QueryParameter:
       files:
       - amen.js
+      version: true
+  amnav-menu-control:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/amnav-menu-control.pot
+      pattern: !ruby/regexp /d\-Version:\ Nav\ Menu\ Control\ for\ aMember\ (?<v>[\d\.]+)/i
       version: true
   amo-team-showcase:
     QueryParameter:
@@ -761,6 +806,12 @@ plugins:
       - includes/css/fileuploader.css
       - includes/js/swfobject.js
       version: true
+  announce-on-publish:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/announce-on-publish-es_ES.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Announce\ on\ Publish\ (?<v>[\d\.]+)/i
+      version: true
   another-wordpress-classifieds-plugin:
     QueryParameter:
       files:
@@ -772,6 +823,11 @@ plugins:
       - templates/css/fonts.css
       - templates/css/main.css
       - templates/css/overrides.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/anspress-question-answer.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ AnsPress\ (?<v>[\d\.]+)/i
       version: true
   ap-contact-form:
     QueryParameter:
@@ -824,6 +880,12 @@ plugins:
       - public/css/applyonline-public.css
       - public/js/applyonline-public.js
       version: true
+  appmaps:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/appmaps.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ AppMaps\ (?<v>[\d\.]+)/i
+      version: true
   appnotch-easy-web-to-app:
     QueryParameter:
       files:
@@ -850,6 +912,18 @@ plugins:
       files:
       - public/css/archive-akkordion-public.css
       - public/js/archive-akkordion-public.js
+      version: true
+  archiver:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/archiver.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Archiver\ (?<v>[\d\.]+)/i
+      version: true
+  archives-by-category-and-date:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/archives-by-category-and-date.pot
+      pattern: !ruby/regexp /\-Version:\ Archives\ by\ Category\ and\ Date\ (?<v>[\d\.]+)/i
       version: true
   archives-calendar-widget:
     QueryParameter:
@@ -912,6 +986,12 @@ plugins:
       files:
       - skin/widgets.css
       version: true
+  ask-me-anything-anonymously:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ask-me-anything-anonymously.pot
+      pattern: !ruby/regexp /\-Version:\ Ask\ Me\ Anything\ \(Anonymously\)\ (?<v>[\d\.]+)/i
+      version: true
   aspen-shortcodes-and-widgets:
     QueryParameter:
       files:
@@ -927,6 +1007,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp '/AStickyPostOrderER \(Version: (?<v>[\d\.]+)\)/i'
       version: true
+  astra-sites:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/astra-sites.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Astra\ Starter\ Sites\ (?<v>[\d\.]+)/i
+      version: true
   astro-woocommerce-free-gift:
     QueryParameter:
       files:
@@ -938,6 +1024,12 @@ plugins:
       files:
       - public/css/atlas-specialist.min.css
       - public/js/atlas-specialist.min.js
+      version: true
+  attachment-file-icons:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/attachment-file-icons-en_US.po
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Attachment\ File\ Icons\ (?<v>[\d\.]+)/i
       version: true
   attachments-list:
     QueryParameter:
@@ -975,6 +1067,12 @@ plugins:
       files:
       - assets/css/apwpultimate-public-style.css
       version: true
+  audio-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/audio-widget.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Audio\ Widget\ (?<v>[\d\.]+)/i
+      version: true
   audioigniter:
     QueryParameter:
       files:
@@ -998,6 +1096,12 @@ plugins:
       - css/widget.css
       - css/shortcode.css
       version: true
+  author-bio-box:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/author-bio-box.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Author\ Bio\ Box\ (?<v>[\d\.]+)/i
+      version: true
   author-geolocation:
     Comment:
       pattern: !ruby/regexp /Author geoLocation \- (?<v>[\d\.]+):/i
@@ -1007,10 +1111,21 @@ plugins:
       files:
       - css/public.css
       version: true
+  authors-autocomplete-meta-box:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/authors-autocomplete-meta-box-es_ES.po
+      pattern: !ruby/regexp /\-Version:\ Authors\ Autocomplete\ Meta\ Box\ (?<v>[\d\.]+)/i
+      version: true
   auto-animateimage:
     QueryParameter:
       files:
       - animate-image.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/animateimage-ja.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Auto\ AnimateImage\ (?<v>[\d\.]+)/i
       version: true
   auto-fill-form-fields:
     QueryParameter:
@@ -1021,6 +1136,12 @@ plugins:
     QueryParameter:
       files:
       - js/auto_image_alt.js
+      version: true
+  auto-menu-from-pages:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/auto-menu-from-pages.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Auto\ Menu\ From\ Pages\ (?<v>[\d\.]+)/i
       version: true
   auto-seo-links:
     QueryParameter:
@@ -1039,9 +1160,21 @@ plugins:
       files:
       - script.js
       version: true
+  automatic-post-categories:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/automatic-post-categories.pot
+      pattern: !ruby/regexp /t\-Id\-Version:\ Automatic\ Post\ Categories\ (?<v>[\d\.]+)/i
+      version: true
   autoresponder1:
     Comment:
       pattern: !ruby/regexp /Autoresponder1 plugin v(?<v>[\d\.]+)/i
+      version: true
+  avatars-meta-box:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/avatars-meta-box.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Avatars\ Meta\ Box\ (?<v>[\d\.]+)/i
       version: true
   awasete-yomitai-for-wordpress:
     QueryParameter:
@@ -1061,6 +1194,12 @@ plugins:
       files:
       - assets/js/autotrack.js
       version: true
+  awesome-instant-search:
+    TranslationFile:
+      class: BodyPattern
+      path: translation/ais-es_ES.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Awesome\ Instant\ Search\ (?<v>[\d\.]+)/i
+      version: true
   awesome-mobile-responsive-navigation:
     QueryParameter:
       files:
@@ -1079,6 +1218,18 @@ plugins:
     QueryParameter:
       files:
       - js/jquery.awesomeslider.min.js
+      version: true
+  awesome-support:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/awesome-support.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Awesome\ Support\ (?<v>[\d\.]+)/i
+      version: true
+  awesome-surveys:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/awesome-surveys-hu_HU.po
+      pattern: !ruby/regexp /\#\ \ awesome\-surveys\.pot\ \(Awesome\ Surveys\ (?<v>[\d\.]+)/i
       version: true
   awesome-twitter-feeds:
     QueryParameter:
@@ -1107,6 +1258,12 @@ plugins:
       files:
       - css/team.min.css
       - js/team.min.js
+      version: true
+  awstats-script:
+    TranslationFile:
+      class: BodyPattern
+      path: awstats-script.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ AWStats\ Script\ (?<v>[\d\.]+)/i
       version: true
   ax-scrollto-top:
     QueryParameter:
@@ -1145,6 +1302,12 @@ plugins:
       files:
       - style.css
       version: true
+  ba-event:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ba-event.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BA\ Event\ (?<v>[\d\.]+)/i
+      version: true
   baap-mobile-version:
     MetaTag:
       class: Xpath
@@ -1156,6 +1319,12 @@ plugins:
       files:
       - assets/style.css
       - assets/script.js
+      version: true
+  background-music-player-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
       version: true
   badge-creator-free:
     QueryParameter:
@@ -1175,6 +1344,18 @@ plugins:
     QueryParameter:
       files:
       - "/js/badger.js"
+      version: true
+  banana-faq:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/banana-faq.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Banana\ FAQ\ (?<v>[\d\.]+)/i
+      version: true
+  bangla-sidebar-login:
+    TranslationFile:
+      class: BodyPattern
+      path: I18n/bn-sidebar-login.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Bangla\ Sidebar\ Login\ (?<v>[\d\.]+)/i
       version: true
   banner-system:
     QueryParameter:
@@ -1197,6 +1378,12 @@ plugins:
       files:
       - public/assets/css/public.css
       - public/assets/js/public.js
+      version: true
+  bb-header-footer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bb-header-footer.pot
+      pattern: !ruby/regexp /d\-Version:\ Beaver\ Builder\ Header\ Footer\ (?<v>[\d\.]+)/i
       version: true
   bbpress:
     QueryParameter:
@@ -1247,6 +1434,12 @@ plugins:
       - public/js/select2/select2.full.min.js
       - public/js/beautiful-taxonomy-filters-public.js
       version: true
+  beaverlodge-pushmenu:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/default.po
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Beaverlodge\ PushMeny\ (?<v>[\d\.]+)/i
+      version: true
   bebetter-social-icons:
     QueryParameter:
       files:
@@ -1288,6 +1481,17 @@ plugins:
       - assets/css/skins/blue-material.css
       - assets/js/bellows.min.js
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bellows.pot
+      pattern: !ruby/regexp /d\-Version:\ Bellows\ Pro\ \-\ Accordion\ Menu\ (?<v>[\d\.]+)/i
+      version: true
+  beonepage-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/beonepage-lite.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ BeOnePage\ Lite\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
   bern-badge-for-bernie-sanders:
     QueryParameter:
       files:
@@ -1301,6 +1505,42 @@ plugins:
   better-backgrounds:
     Comment:
       pattern: !ruby/regexp /Better Backgrounds (?<v>[\d\.]+)/i
+      version: true
+  better-comments-reply-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/better-comments-reply-manager.pot
+      pattern: !ruby/regexp /\-Version:\ Better\ Comments\ Reply\ Manager\ (?<v>[\d\.]+)/i
+      version: true
+  better-font-awesome:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/better-font-awesome.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Better\ Font\ Awesome\ (?<v>[\d\.]+)/i
+      version: true
+  better-formats:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/betterformats.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Better\ Formats\ (?<v>[\d\.]+)/i
+      version: true
+  better-plugin-recommendations:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/better-plugin-recommendations.pot
+      pattern: !ruby/regexp /\-Version:\ Better\ Plugin\ Recommendations\ (?<v>[\d\.]+)/i
+      version: true
+  better-rest-api-featured-images:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/better-rest-api-featured-images.pot
+      pattern: !ruby/regexp /ersion:\ Better\ REST\ API\ Featured\ Images\ (?<v>[\d\.]+)/i
+      version: true
+  better-yourls:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/better-yourls.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Better\ YOURLS\ (?<v>[\d\.]+)/i
       version: true
   bg-biblie-references:
     QueryParameter:
@@ -1373,10 +1613,22 @@ plugins:
       - public/css/photopile.css
       - public/js/photopile.js
       version: true
+  bim-ba:
+    TranslationFile:
+      class: BodyPattern
+      path: lib/cmb2/languages/cmb2.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CMB2\ (?<v>[\d\.]+)/i
+      version: true
   binbucks:
     QueryParameter:
       files:
       - js/shrinker.js
+      version: true
+  bing-translator:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bing-translator-bg_BG.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Bing\ Translator\ (?<v>[\d\.]+)/i
       version: true
   bitcoin-address:
     QueryParameter:
@@ -1408,6 +1660,12 @@ plugins:
       - Bizyhood/Public/js/bootstrap.min.js
       - Bizyhood/Public/js/bizyhood-custom.js
       version: true
+  black-studio-tinymce-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/black-studio-tinymce-widget.pot
+      pattern: !ruby/regexp /Id\-Version:\ Black\ Studio\ TinyMCE\ Widget\ (?<v>[\d\.]+)/i
+      version: true
   black-studio-touch-dropdown-menu:
     QueryParameter:
       files:
@@ -1425,16 +1683,34 @@ plugins:
       - style.css
       - js/bex.upload.js
       version: true
+  blimply:
+    TranslationFile:
+      class: BodyPattern
+      path: lib/languages/blimply.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Blimply\ (?<v>[\d\.]+)/i
+      version: true
   blip-slideshow:
     QueryParameter:
       files:
       - blip.js
       - blip-mootools.js
       version: true
+  block-spammers:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wbs.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Block\ Spammers\ (?<v>[\d\.]+)/i
+      version: true
   blockalyzer-adblock-counter:
     QueryParameter:
       files:
       - js/banner.js
+      version: true
+  blockq:
+    TranslationFile:
+      class: BodyPattern
+      path: locale/blockq.pot
+      pattern: !ruby/regexp /nslation\ of\ the\ WordPress\ plugin\ BlockQ\ (?<v>[\d\.]+)/i
       version: true
   blog-clock:
     QueryParameter:
@@ -1450,6 +1726,12 @@ plugins:
       files:
       - assets/css/slick.css
       - assets/css/bdpw-public.css
+      version: true
+  bloglovin-follow:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bloglovin_follow_trans_domain.pot
+      pattern: !ruby/regexp /ion:\ Bloglovin\ Follow\ WordPress\ plugin\ v(?<v>[\d\.]+)/i
       version: true
   bloks-stripe-donation:
     QueryParameter:
@@ -1467,6 +1749,12 @@ plugins:
       - public/css/owl.theme.default.min.css
       - public/js/blossomthemes-toolkit-public.js
       - public/js/owl.carousel.min.js
+      version: true
+  blue-hat-cdn:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/blue-hat-cdn-pt_BR.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Blue\ Hat\ Turbo\ (?<v>[\d\.]+)/i
       version: true
   blueposts:
     QueryParameter:
@@ -1588,6 +1876,11 @@ plugins:
       files:
       - public/css/book-review-public.min.css
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/book-review.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Book\ Review\ (?<v>[\d\.]+)/i
+      version: true
   booking:
     QueryParameter:
       files:
@@ -1602,6 +1895,12 @@ plugins:
       - css/client.css
       - css/popover.css
       - css/calendar.css
+      version: true
+  bookingcom-official-searchbox:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bookingcom-official-searchbox-ru_RU.po
+      pattern: !ruby/regexp /on:\ Booking\.com\ Official\ Search\ box\ ver\ (?<v>[\d\.]+)/i
       version: true
   bookly-responsive-appointment-booking-tool:
     QueryParameter:
@@ -1621,6 +1920,12 @@ plugins:
       - frontend/resources/js/intlTelInput.min.js
       - frontend/resources/js/bookly.js
       - frontend/modules/customer_profile/resources/js/customer_profile.js
+      version: true
+  bookmark-export:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/bookmark-export-de_DE.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Bookmark Export (?<v>[\d\.]+)/i'
       version: true
   bookwize-booking-form:
     QueryParameter:
@@ -1699,11 +2004,47 @@ plugins:
       files:
       - bma.js
       version: true
+  bowe-codes:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bowe-codes.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Bowe\ Codes\ (?<v>[\d\.]+)/i
+      version: true
   bp-activity-share:
     QueryParameter:
       files:
       - public/css/bp-activity-share-public.min.css
       - public/js/bp-activity-share-public.min.js
+      version: true
+  bp-activity-social-share:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/buddypress-share.pot
+      pattern: !ruby/regexp /rsion:\ BuddyPress\ Activity\ Social\ Share\ (?<v>[\d\.]+)/i
+      version: true
+  bp-avatar-suggestions:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-avatar-suggestions.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ BP\ Avatar\ Suggestions\ (?<v>[\d\.]+)/i
+      version: true
+  bp-bookmarklet:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-bookmarklet.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BP\ BookMarklet\ (?<v>[\d\.]+)/i
+      version: true
+  bp-create-group-type:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-add-group-types.pot
+      pattern: !ruby/regexp /\-Version:\ BuddyPress\ Create\ Group\ Types\ (?<v>[\d\.]+)/i
+      version: true
+  bp-forum-notifier:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-forum-notifier-sv_SE.po
+      pattern: !ruby/regexp /\-Id\-Version:\ BuddyPress\ Forum\ Notifier\ v(?<v>[\d\.]+)/i
       version: true
   bp-greeting-message:
     QueryParameter:
@@ -1711,16 +2052,69 @@ plugins:
       - assets/css/frontend.css
       - assets/js/frontend.js
       version: true
+  bp-group-sites:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-group-sites.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BP\ Group\ Sites\ (?<v>[\d\.]+)/i
+      version: true
+  bp-groups-civicrm-sync:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-groups-civicrm-sync.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ BP\ Groups\ CiviCRM\ Sync\ (?<v>[\d\.]+)/i
+      version: true
   bp-memories:
     QueryParameter:
       files:
       - public/css/bp-memories-public.min.css
+      version: true
+  bp-my-home:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-my-home.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BP\ My\ Home\ (?<v>[\d\.]+)/i
       version: true
   bp-post-from-anywhere:
     QueryParameter:
       files:
       - public/css/bp-post-from-anywhere-public.css
       - public/js/bp-post-from-anywhere-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-post-from-anywhere.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ BP\ Post\ Fom\ Anywhere\ (?<v>[\d\.]+)/i
+      version: true
+  bp-premiums:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-premiums.pot
+      pattern: !ruby/regexp /\-Id\-Version:\ SuitePlugins\ \-\ BP\ Premiums\ (?<v>[\d\.]+)/i
+      version: true
+  bp-reactions:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-reactions.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BP\ Reactions\ (?<v>[\d\.]+)/i
+      version: true
+  bp-show-friends:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-show-friends.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BP\ Show\ Friends\ (?<v>[\d\.]+)/i
+      version: true
+  bp-sticky-groups:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-sticky-groups.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BP\ Sticky\ Groups\ (?<v>[\d\.]+)/i
+      version: true
+  bp-xprofile-rich-text-field:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-xprofile-rich-text-field.pot
+      pattern: !ruby/regexp /on:\ Buddypress\ xProfile\ Rich\ Text\ Field\ (?<v>[\d\.]+)/i
       version: true
   bpmcontext-client-suite:
     QueryParameter:
@@ -1730,10 +2124,22 @@ plugins:
       - js/bpmcontext-form-widgets.js
       - includes/bpm-sdk/js/bpmcontext_missing_menu.js
       version: true
+  bpost-shipping:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bpost_shipping.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ bpost\ shipping\ (?<v>[\d\.]+)/i
+      version: true
   branding:
     QueryParameter:
       files:
       - LolitaFramework/CssLoader/assets/css/lolita_css_loader.css
+      version: true
+  breadcrumb-trail:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/breadcrumb-trail.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Breadcrumb\ Trail\ (?<v>[\d\.]+)/i
       version: true
   brid-video-easy-publish:
     MetaTag:
@@ -1741,11 +2147,47 @@ plugins:
       xpath: //meta[@name="BridPlugin"]/@content
       pattern: !ruby/regexp /(?<v>[\d\.]+) auth:/i
       version: true
+  bridge-tournament:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bridge-tournament-fr_FR.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Tournament\ (?<v>[\d\.]+)/i
+      version: true
+  brightcove-video-connect:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/brightcove.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Brightcove\ Video\ Connect\ (?<v>[\d\.]+)/i
+      version: true
   browser-theme-colors:
     QueryParameter:
       files:
       - public/css/browser-theme-colors-public.css
       - public/js/browser-theme-colors-public.js
+      version: true
+  browser-window-stats:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/browser-window-stats.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Browser\ Window\ Stats\ (?<v>[\d\.]+)/i
+      version: true
+  brozzme-blurb-lightbox-module-in-divi:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/brozzme-lightbox-blurb-fr_FR.po
+      pattern: !ruby/regexp /:\ Brozzme\ Blurb\ Lightbox\ Module\ in\ Divi\ (?<v>[\d\.]+)/i
+      version: true
+  brozzme-colorize:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/brozzme-colorize.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Brozzme\ Colorize\ Bar\ (?<v>[\d\.]+)/i
+      version: true
+  brozzme-fullwidth-divi:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/brozzme-fullwidth-divi.pot
+      pattern: !ruby/regexp /Fullwidth\ and\ Automatic\ Layout\ in\ Divi\ (?<v>[\d\.]+)/i
       version: true
   bsf-docs:
     QueryParameter:
@@ -1780,6 +2222,18 @@ plugins:
       - css/bsbpanimated.css
       - js/front.js
       version: true
+  bu-navigation:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bu-navigation.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ bu\-navigation\ (?<v>[\d\.]+)/i
+      version: true
+  bu-section-editing:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bu-section-editing.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BU\ Section\ Editing\ (?<v>[\d\.]+)/i
+      version: true
   bu-slideshow:
     QueryParameter:
       files:
@@ -1808,6 +2262,29 @@ plugins:
       - bp-core/js/vendor/jquery-scroll-to.min.js
       - bp-templates/bp-legacy/js/buddypress.min.js
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: buddypress.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BuddyPress\ (?<v>[\d\.]+)/i
+      version: true
+  buddypress-activity-tags:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-activity-tags-sr_RS.po
+      pattern: !ruby/regexp /ct\-Id\-Version:\ BuddyPress\ Activity\ Tags\ (?<v>[\d\.]+)/i
+      version: true
+  buddypress-compliments:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-compliments-en_US.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ BuddyPress\ Compliments\ (?<v>[\d\.]+)/i
+      version: true
+  buddypress-docs:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/buddypress-docs.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BuddyPress\ Docs\ (?<v>[\d\.]+)/i
+      version: true
   buddypress-global-search:
     QueryParameter:
       files:
@@ -1822,17 +2299,51 @@ plugins:
       - app/assets/js/rtMedia.backbone.js
       - lib/touchswipe/jquery.touchSwipe.min.js
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/buddypress-media.po
+      pattern: !ruby/regexp /a\ for\ WordPress,\ BuddyPress\ and\ bbPress\ (?<v>[\d\.]+)/i
+      version: true
+  buddypress-message-attachment:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-msgat.pot
+      pattern: !ruby/regexp /\-Version:\ BuddyPress\ Message\ Attachment\ (?<v>[\d\.]+)/i
+      version: true
+  buddypress-profile-progression:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bppp-de_DE.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ v(?<v>[\d\.]+)/i
+      version: true
   buddyslack:
     QueryParameter:
       files:
       - public/css/buddyslack-public.css
       - public/js/buddyslack-public.js
       version: true
+  buffer-my-post:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/buffer-my-post.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ HYPE\ Social\ \-\ Buffer\ (?<v>[\d\.]+)/i
+      version: true
   bugherd-dashboard:
     QueryParameter:
       files:
       - public/assets/css/public.css
       - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  bulk-delete:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bulk-delete.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Bulk\ Delete\ (?<v>[\d\.]+)/i
       version: true
   bulk-edit-post-titles:
     QueryParameter:
@@ -1846,6 +2357,24 @@ plugins:
       - assets/js-min/public.min.js
       - assets/js-min/ajax.min.js
       version: true
+  bulk-term-editor:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bulk-term-editor.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Bulk\ Term\ Editor\ (?<v>[\d\.]+)/i
+      version: true
+  buscape-wp-related-products:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/BWPRP-pt_BR.po
+      pattern: !ruby/regexp /d\-Version:\ BuscaP[^ ]+ WP\ Related\ Products\ (?<v>[\d\.]+)/i
+      version: true
+  business-directory-plugin:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/WPBDM.pot
+      pattern: !ruby/regexp /t\-Id\-Version:\ Business\ Directory\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
   business-era-extension:
     QueryParameter:
       files:
@@ -1856,6 +2385,18 @@ plugins:
       files:
       - public/css/business-open-hours-master-public.css
       - public/js/business-open-hours-master-public.js
+      version: true
+  business-profile:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/business-profile.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Business\ Profile\ (?<v>[\d\.]+)/i
+      version: true
+  button-with-fontawesome-icons-by-like-agency:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/lbfa-pl_PL.po
+      pattern: !ruby/regexp /n\ Widget\ for\ FontAwesome\ by\ LIKE\.agency\ (?<v>[\d\.]+)/i
       version: true
   buttons-with-style:
     QueryParameter:
@@ -1877,10 +2418,22 @@ plugins:
       files:
       - css/bwp-external-links.css
       version: true
+  bwp-recaptcha:
+    TranslationFile:
+      class: BodyPattern
+      path: bwp-recaptcha.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ BWP\ Recaptcha\ (?<v>[\d\.]+)/i
+      version: true
   bwp-recent-comments:
     QueryParameter:
       files:
       - css/bwp-recent-comments.css
+      version: true
+  bxslider-integration:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bxsg.pot
+      pattern: !ruby/regexp /ion:\ bxSlider\ integration\ for\ WordPress\ (?<v>[\d\.]+)/i
       version: true
   bxslider-wp:
     QueryParameter:
@@ -1912,6 +2465,18 @@ plugins:
     QueryParameter:
       files:
       - assets/css/pushlabs-callbutton.css
+      version: true
+  callme-form:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/callme-plugin-ru_RU.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Call\.me\ form\ v(?<v>[\d\.]+)/i
+      version: true
+  campaign-monitor-dashboard:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/campaign-monitor-dashboard.pot
+      pattern: !ruby/regexp /\-Id\-Version:\ Campaign\ Monitor\ Dashboard\ (?<v>[\d\.]+)/i
       version: true
   campaign-monitor-wp:
     QueryParameter:
@@ -2070,6 +2635,24 @@ plugins:
       - public/css/cbcurrencyconverter-public.css
       - public/js/cbcurrencyconverter-public.js
       version: true
+  cbtwittercard:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cbtwittercard-en_US.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CBX\ Twitter\ Card\ v(?<v>[\d\.]+)/i
+      version: true
+  cbxdropboxfilechooser:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cbxdropboxfilechooser-en_GB.po
+      pattern: !ruby/regexp /t\-Id\-Version:\ CBX\ Dropbox\ File\ Chooser\ v(?<v>[\d\.]+)/i
+      version: true
+  cbxform:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cbxform-en_GB.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CBX\ Forms\ v(?<v>[\d\.]+)/i
+      version: true
   cbxgooglemap:
     QueryParameter:
       files:
@@ -2081,6 +2664,24 @@ plugins:
     QueryParameter:
       files:
       - public/css/cbxinstaphotos-public.css
+      version: true
+  cbxpoll:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cbxpoll-en_US.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CBX\ Poll\ v(?<v>[\d\.]+)/i
+      version: true
+  cbxwooextendedorders:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cbxwooextendedorders-en_GB.po
+      pattern: !ruby/regexp /ersion:\ CBX\ Woo\ Extended\ Order\ Display\ v(?<v>[\d\.]+)/i
+      version: true
+  cbxwpslack:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cbxwpslack-en_GB.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CBX\ WPSlack\ v(?<v>[\d\.]+)/i
       version: true
   cc-bmi-calculator:
     QueryParameter:
@@ -2123,6 +2724,11 @@ plugins:
     QueryParameter:
       files:
       - assets/css/cc-manga.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lib/codestar-framework/languages/bn_BD.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Codestar\ Framework\ (?<v>[\d\.]+)/i
       version: true
   cc-ontario-tax-calculator:
     QueryParameter:
@@ -2436,6 +3042,12 @@ plugins:
   wordfence:
     JavascriptVar:
       pattern: !ruby/regexp /\|WordfenceTestMonBot\)\/\.test/i
+  wordpress-importer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wordpress-importer.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ WordPress\ Importer\ (?<v>[\d\.]+)/i
+      version: true
   wordpress-mobile-pack:
     UrlInHomePage:
       class: Xpath
