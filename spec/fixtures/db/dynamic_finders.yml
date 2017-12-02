@@ -263,19 +263,19 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: active-directory-authentication-integration.pot
-      pattern: !ruby/regexp '/Project-Id-Version: Active Directory Authentication
+      pattern: !ruby/regexp '/Project\-Id\-Version: Active Directory Authentication
         Integration (?<v>[\d\.]+)/i'
       version: true
     TranslationFile2:
       class: BodyPattern
       path: languages/default.mo
-      pattern: !ruby/regexp '/Project-Id-Version: Active Directory Authentication
+      pattern: !ruby/regexp '/Project\-Id\-Version: Active Directory Authentication
         Integration (?<v>[\d\.]+)/i'
       version: true
     TranslationFile3:
       class: BodyPattern
       path: languages/default.po
-      pattern: !ruby/regexp '/Project-Id-Version: Active Directory Authentication
+      pattern: !ruby/regexp '/Project\-Id\-Version: Active Directory Authentication
         Integration (?<v>[\d\.]+)/i'
       version: true
   acurax-social-media-widget:
@@ -287,7 +287,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/plugin-name.pot
-      pattern: !ruby/regexp '/Project-Id-Version: TODO (?<v>[\d\.]+)/i'
+      pattern: !ruby/regexp '/Project\-Id\-Version: TODO (?<v>[\d\.]+)/i'
       version: true
   ad-short:
     QueryParameter:
@@ -365,11 +365,62 @@ plugins:
       files:
       - js/adjusted-bounce-rate.min.js
       version: true
+  adl-team:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/at.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: WordPress Blank Pot v(?<v>[\d\.]+)/i'
+      version: true
+  admin-bar:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/ru_RU.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Admin Bar (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile2:
+      class: BodyPattern
+      path: lang/ru_RU.mo
+      pattern: !ruby/regexp '/Project\-Id\-Version: Admin Bar (?<v>[\d\.]+)/i'
+      version: true
+  admin-bar-backend-search:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/ab-backend-search-de_DE.po
+      pattern: !ruby/regexp /msgid "(?<v>[\d\.]+)"/i
+      version: true
+  admin-category-filter:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/post-category-filter.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Post Category Filter (?<v>[\d\.]+)/i'
+      version: true
   admin-keys:
     QueryParameter:
       files:
       - assets/js/mousetrap.min.js
       - assets/js/mousetrap-global-bind.min.js
+      version: true
+  admin-menu-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/admin-menu-manager.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Admin Menu Manager (?<v>[\d\.]+)/i'
+      version: true
+  admitad-tracking:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/admitadtracking.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Admitad Tracking (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile2:
+      class: BodyPattern
+      path: languages/admitadtracking-ru_RU.mo
+      pattern: !ruby/regexp '/Project\-Id\-Version: Admitad Tracking (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile3:
+      class: BodyPattern
+      path: languages/admitadtracking-ru_RU.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Admitad Tracking (?<v>[\d\.]+)/i'
       version: true
   adsense-plugin:
     QueryParameter:
@@ -397,6 +448,12 @@ plugins:
       files:
       - public/css/dc-accfw-public.css
       - public/js/dc-accfw-public.js
+      version: true
+  advanced-database-cleaner:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/advanced-db-cleaner.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Advanced Database Cleaner (?<v>[\d\.]+)/i'
       version: true
   advanced-plugin-search:
     QueryParameter:
@@ -524,10 +581,6 @@ plugins:
       - css/style-simple-red.css
       - js/min/jquery.ajaxsearchlite.min.js
       version: true
-  ajax-theme:
-    Comment:
-      pattern: !ruby/regexp /Ajax theme (?<v>[\d\.]+) by/i
-      version: true
   ajaxify-faqtastic:
     QueryParameter:
       files:
@@ -563,19 +616,1529 @@ plugins:
       files:
       - js/align-text-edge.min.js
       version: true
+  alive5:
+    QueryParameter:
+      files:
+      - public/css/alive5-public.css
+      - public/js/alive5-public.js
+      version: true
+  alkivia:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  all-in-one-event-calendar:
+    QueryParameter:
+      files:
+      - public/themes-ai1ec/vortex/css/ai1ec_parsed_css.css
+      version: true
   all-in-one-seo-pack:
     Comment:
       pattern: !ruby/regexp '/\A\/?all in one seo pack(?: (?<v>[^\s]+) by)?/i'
       version: true
+  all-in-one-wp-solution:
+    Comment:
+      pattern: !ruby/regexp /by All In One WP Solution Plugin v(?<v>[\d\.]+)/i
+      version: true
+  alligator-popup:
+    QueryParameter:
+      files:
+      - js/popup.js
+      version: true
+  allpost-contactform:
+    QueryParameter:
+      files:
+      - allpost-contactform.css
+      - allpost-contactform.js
+      version: true
+  alpha-testimonials:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets//js/testimonials.min.js
+      version: true
+  alt-tags-for-images:
+    QueryParameter:
+      files:
+      - public/css/cnc-image-alt-tags-public.css
+      - public/js/cnc-image-alt-tags-public.js
+      version: true
+  amazon-associates-link-builder:
+    QueryParameter:
+      files:
+      - css/aalb_basics.css
+      version: true
+  amazon-link:
+    QueryParameter:
+      files:
+      - Amazon.css
+      version: true
+  amazonjs:
+    QueryParameter:
+      files:
+      - css/amazonjs.css
+      version: true
+  ambassador:
+    QueryParameter:
+      files:
+      - public/css/ambassador-public.css
+      - public/js/ambassador-public.js
+      version: true
+  amen:
+    QueryParameter:
+      files:
+      - amen.js
+      version: true
+  amo-team-showcase:
+    QueryParameter:
+      files:
+      - public/css/amo-team-showcase-public.css
+      version: true
+  ams-page-scroll-back-to-top:
+    QueryParameter:
+      files:
+      - assets/js/script.js
+      version: true
+  anchor-highlighter:
+    QueryParameter:
+      files:
+      - public/css/anchor-highlighter-public.css
+      - public/js/anchor-highlighter-public.js
+      version: true
+  andora-lightbox:
+    QueryParameter:
+      files:
+      - templates/andora-lightbox-01.css
+      version: true
+  andreadb-coin-slider:
+    QueryParameter:
+      files:
+      - public/css/coin-slider-styles.css
+      - public/js/coin-slider.min.js
+      version: true
+  angelleye-paypal-for-divi:
+    QueryParameter:
+      files:
+      - public/css/angelleye-paypal-for-divi-public.css
+      - public/js/angelleye-paypal-for-divi-public.js
+      version: true
+  animate:
+    QueryParameter:
+      files:
+      - stylesheets/app.css
+      - js/app.js
+      version: true
+  animated-headline:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  ank-simplified-ga:
+    EndComment:
+      class: Comment
+      pattern: !ruby/regexp /GA Tracking ends \(v(?<v>[\d\.]+)\)/i
+      version: true
+    DisabledComment:
+      class: Comment
+      pattern: !ruby/regexp '/Google Analytics is disabled, Reason: GA ID is not set \(v(?<v>[\d\.]+)\)/i'
+      version: true
+  annonces:
+    QueryParameter:
+      files:
+      - includes/css/annonce.css
+      - includes/css/fileuploader.css
+      - includes/js/swfobject.js
+      version: true
+  another-wordpress-classifieds-plugin:
+    QueryParameter:
+      files:
+      - resources/css/awpcpstyle.css
+      version: true
+  anspress-question-answer:
+    QueryParameter:
+      files:
+      - templates/css/fonts.css
+      - templates/css/main.css
+      - templates/css/overrides.css
+      version: true
+  ap-contact-form:
+    QueryParameter:
+      files:
+      - "/css/frontend.css"
+      - "/js/frontend.js"
+      version: true
+  ap-custom-testimonial:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - css/jquery.bxslider.css
+      - js/frontend.js
+      version: true
+  ap-pricing-tables-lite:
+    QueryParameter:
+      files:
+      - css/frontend/animate.css
+      - css/frontend/frontend.css
+      - assets/font-awesome-4.7.0/css/font-awesome.min.css
+      - js/frontend.js
+      version: true
+  apercite:
+    QueryParameter:
+      files:
+      - js/apercite.js
+      version: true
+  apex-notification-bar-lite:
+    QueryParameter:
+      files:
+      - css/frontend/prettyPhoto.css
+      - js/frontend/jquery.prettyPhoto.js
+      - js/frontend/jquery.actual.js
+      - js/frontend/frontend.js
+      version: true
+  app-mockups-carousel:
+    QueryParameter:
+      files:
+      - assets/css/swiper.min.css
+      - assets/css/wp-amc-public.css
+      version: true
+  appdp-list:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  apply-online:
+    QueryParameter:
+      files:
+      - public/css/applyonline-public.css
+      - public/js/applyonline-public.js
+      version: true
+  appnotch-easy-web-to-app:
+    QueryParameter:
+      files:
+      - public/css/easy-web-to-app-public.css
+      - public/js/easy-web-to-app-public.js
+      version: true
+  appointment-form-manager:
+    QueryParameter:
+      files:
+      - public/css/style.css
+      - public/css/popup.css
+      version: true
+  appointments:
+    QueryParameter:
+      files:
+      - css/front.css
+      version: true
+  arabic-webfonts:
+    Comment:
+      pattern: !ruby/regexp /arabic-webfonts v(?<v>[\d\.]+) styles/i
+      version: true
+  archive-akkordion:
+    QueryParameter:
+      files:
+      - public/css/archive-akkordion-public.css
+      - public/js/archive-akkordion-public.js
+      version: true
+  archives-calendar-widget:
+    QueryParameter:
+      files:
+      - themes/calendrier.css
+      - admin/js/jquery.arcw-init.js
+      version: true
+  arconix-flexslider:
+    QueryParameter:
+      files:
+      - includes/css/arconix-flexslider.css
+      version: true
+  arconix-portfolio:
+    QueryParameter:
+      files:
+      - includes/css/arconix-portfolio.css
+      version: true
+  arconix-shortcodes:
+    QueryParameter:
+      files:
+      - includes/css/arconix-shortcodes.min.css
+      version: true
+  ari-fancy-lightbox:
+    QueryParameter:
+      files:
+      - assets/fancybox/jquery.fancybox.min.css
+      - assets/fancybox/jquery.fancybox.min.js
+      version: true
+  arlo-training-and-event-management-system:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/css/libs/darktooltip.min.css
+      - admin/assets/fonts/icons8/Arlo-WP.css
+      - public/assets/js/public.js
+      - public/assets/js/libs/jquery.darktooltip.min.js
+      - public/assets/js/libs/js.cookie.js
+      version: true
+  arrange-multisite-order:
+    QueryParameter:
+      files:
+      - css/style.css
+      - css/font-awesome/css/font-awesome.min.css
+      - js/amo.js
+      version: true
+  as-store-locator:
+    QueryParameter:
+      files:
+      - assets/frontend/css/assl-style.css
+      - assets/frontend/js/assl-script.min.js
+      version: true
+  ascend-marketing-tools:
+    QueryParameter:
+      files:
+      - public/css/ascend-marketing-public.css
+      - public/js/ascend-marketing-public.js
+      version: true
+  asgaros-forum:
+    QueryParameter:
+      files:
+      - skin/widgets.css
+      version: true
+  aspen-shortcodes-and-widgets:
+    QueryParameter:
+      files:
+      - aspen-sw-style.min.css
+      - js/aspenswjslib.min.js
+      version: true
+  aspen-to-weaver-xtreme:
+    QueryParameter:
+      files:
+      - js/aspen2wx_jslib.js
+      version: true
   astickypostorderer:
     Comment:
       pattern: !ruby/regexp '/AStickyPostOrderER \(Version: (?<v>[\d\.]+)\)/i'
+      version: true
+  astro-woocommerce-free-gift:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.js
+      version: true
+  atlas-specialist:
+    QueryParameter:
+      files:
+      - public/css/atlas-specialist.min.css
+      - public/js/atlas-specialist.min.js
+      version: true
+  attachments-list:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  attendance-manager:
+    QueryParameter:
+      files:
+      - front.css
+      - front.js
+      version: true
+  atticthemes-likes:
+    QueryParameter:
+      files:
+      - resources/css/style.min.css
+      - resources/javascript/script.min.js
+      version: true
+  atticthemes-social-feed:
+    QueryParameter:
+      files:
+      - resources/css/style.min.css
+      version: true
+  atticthemes-social-icons:
+    QueryParameter:
+      files:
+      - css/atticthemes-social-icons-style.min.css
+      version: true
+  auction-nudge:
+    Comment:
+      pattern: !ruby/regexp /AN v(?<v>[\d\.]+)/i
+      version: true
+  audio-player-with-playlist-ultimate:
+    QueryParameter:
+      files:
+      - assets/css/apwpultimate-public-style.css
+      version: true
+  audioigniter:
+    QueryParameter:
+      files:
+      - player/build/style.css
+      - player/build/app.js
+      version: true
+  ausmed-document-button:
+    QueryParameter:
+      files:
+      - public/css/ausmed-document-button-public.css
+      - public/js/ausmed-document-button-public.js
+      version: true
+  authentiq:
+    QueryParameter:
+      files:
+      - public/css/authentiq-login.min.css
+      version: true
+  author-avatars:
+    QueryParameter:
+      files:
+      - css/widget.css
+      - css/shortcode.css
+      version: true
+  author-geolocation:
+    Comment:
+      pattern: !ruby/regexp /Author geoLocation \- (?<v>[\d\.]+):/i
+      version: true
+  author-recommended-posts:
+    QueryParameter:
+      files:
+      - css/public.css
+      version: true
+  auto-animateimage:
+    QueryParameter:
+      files:
+      - animate-image.min.js
+      version: true
+  auto-fill-form-fields:
+    QueryParameter:
+      files:
+      - js/form-auto-fill-js.js
+      version: true
+  auto-image-alt:
+    QueryParameter:
+      files:
+      - js/auto_image_alt.js
+      version: true
+  auto-seo-links:
+    QueryParameter:
+      files:
+      - public/css/auto-seo-links-public.min.css
+      - public/js/auto-seo-links-public.min.js
+      version: true
+  auto-thumbnail-title:
+    QueryParameter:
+      files:
+      - public/css/auto-thumbnail-title-public.css
+      - public/js/auto-thumbnail-title-public.js
+      version: true
+  automatic-copyright-year:
+    QueryParameter:
+      files:
+      - script.js
+      version: true
+  autoresponder1:
+    Comment:
+      pattern: !ruby/regexp /Autoresponder1 plugin v(?<v>[\d\.]+)/i
+      version: true
+  awasete-yomitai-for-wordpress:
+    QueryParameter:
+      files:
+      - awasete-yomitai.css
+      version: true
+  aweber-wp:
+    QueryParameter:
+      files:
+      - assets/pagecount.min.js
+      version: true
+  awesome-google-analytics:
+    Comment:
+      pattern: !ruby/regexp /Awesome Google Analytics by CodeBrothers, version (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - assets/js/autotrack.js
+      version: true
+  awesome-mobile-responsive-navigation:
+    QueryParameter:
+      files:
+      - css/amrn-style.css
+      version: true
+  awesome-photo-gallery:
+    Comment:
+      pattern: !ruby/regexp /Awesome Photo Gallery by CodeBrothers version (?<v>[\d\.]+)/i
+      version: true
+  awesome-scrollbar:
+    QueryParameter:
+      files:
+      - css/hf-main.css
+      version: true
+  awesome-slider-lite:
+    QueryParameter:
+      files:
+      - js/jquery.awesomeslider.min.js
+      version: true
+  awesome-twitter-feeds:
+    QueryParameter:
+      files:
+      - assets/js/functions.js
+      version: true
+  awesomepress:
+    Comment:
+      pattern: !ruby/regexp /\/awesomepress\/assets\/css\/font\-awesome\-ie7\.min\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+  aws-cookies-popup:
+    QueryParameter:
+      files:
+      - css/popup.css
+      - css/font-awesome.min.css
+      - js/popup.min.js
+      version: true
+  aws-sns:
+    QueryParameter:
+      files:
+      - public/css/aws-sns-plugin-public.css
+      - public/js/aws-sns-plugin-public.js
+      version: true
+  awsm-team:
+    QueryParameter:
+      files:
+      - css/team.min.css
+      - js/team.min.js
+      version: true
+  ax-scrollto-top:
+    QueryParameter:
+      files:
+      - ax-scrollto-top.css
+      - js/ax-scrollto-top.js
+      version: true
+  ayar-web-kit:
+    QueryParameter:
+      files:
+      - js/awk_footer_script.js
+      version: true
+  ayatequrani-embed-ayaat-in-your-website:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  ayo-shortcodes:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/ayoshortcodes.js
+      version: true
+  azurecurve-display-after-post-content:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  azurecurve-filtered-categories:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  azurecurve-taxonomy-index:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  baap-mobile-version:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      pattern: !ruby/regexp /with the BAAP Mobile Version (?<v>[\d\.]+)/i
+      version: true
+  back-to-top-advanced:
+    QueryParameter:
+      files:
+      - assets/style.css
+      - assets/script.js
+      version: true
+  badge-creator-free:
+    QueryParameter:
+      files:
+      - public/css/badgeCreator-public.css
+      - public/js/badgeCreator-public.js
+      - public/js/jquery.lazyload.min.js
+      - public/js/fabric.all.min.js
+      version: true
+  badgearoo:
+    QueryParameter:
+      files:
+      - assets/js/js.cookie.js
+      - assets/js/frontend.js
+      version: true
+  badger:
+    QueryParameter:
+      files:
+      - "/js/badger.js"
+      version: true
+  banner-system:
+    QueryParameter:
+      files:
+      - assets/css/banner-system.css
+      - assets/js/frontend-banner-system.js
+      version: true
+  barebones-twitter:
+    QueryParameter:
+      files:
+      - public/js/barebones-twitter-public.js
+      version: true
+  bazz-callback-widget:
+    QueryParameter:
+      files:
+      - css/bazz-widget.css
+      version: true
+  bb-edition-control:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+  bbpress:
+    QueryParameter:
+      files:
+      - templates/default/css/bbpress.css
+      - templates/default/js/editor.js
+      version: true
+  bbpress-latest-discussion:
+    Comment:
+      pattern: !ruby/regexp /BBpress Latest Discussions v(?<v>[\d\.]+)/i
+      version: true
+  bbpress-topic-location:
+    QueryParameter:
+      files:
+      - _inc/js/bbptl.js
+      version: true
+  bdwebteam-recent-post-tabs-widget:
+    QueryParameter:
+      files:
+      - css/bdwebteam-recent-tabs-widget.css
+      version: true
+  beacon-for-helpscout:
+    QueryParameter:
+      files:
+      - assets/js/beacon.js
+      version: true
+  beam-me-up-scotty:
+    QueryParameter:
+      files:
+      - library/css/style.css
+      - library/js/scripts.min.js
+      version: true
+  beautiful-paypal-buttons:
+    QueryParameter:
+      files:
+      - css/button-styles.css
+      version: true
+  beautiful-pull-quotes:
+    QueryParameter:
+      files:
+      - css/beautiful-pull-quotes.css
+      version: true
+  beautiful-taxonomy-filters:
+    QueryParameter:
+      files:
+      - public/css/select2.min.css
+      - public/css/beautiful-taxonomy-filters-base.min.css
+      - public/js/select2/select2.full.min.js
+      - public/js/beautiful-taxonomy-filters-public.js
+      version: true
+  bebetter-social-icons:
+    QueryParameter:
+      files:
+      - assets/icons/style.css
+      - style.css
+      version: true
+  bee-pricing-table:
+    QueryParameter:
+      files:
+      - public/css/bee-pricing-table-public.css
+      - public/font-awesome/css/font-awesome.min.css
+      - public/js/bee-pricing-table-public.js
+      version: true
+  bee-quick-gallery:
+    QueryParameter:
+      files:
+      - public/css/bee-quick-gallery-public.css
+      version: true
+  before-after-image-slider-lite:
+    QueryParameter:
+      files:
+      - ImageComparisonSlider.css
+      - ImageComparisonSlider.js
+      version: true
+  before-and-after-gallery:
+    QueryParameter:
+      files:
+      - public/css/twentytwenty.css
+      - public/css/main.css
+      - public/js/jquery.event.move.js
+      - public/js/jquery.twentytwenty.js
+      - public/js/main.js
+      version: true
+  bellows-accordion-menu:
+    QueryParameter:
+      files:
+      - assets/css/bellows.min.css
+      - assets/css/fontawesome/css/font-awesome.min.css
+      - assets/css/skins/blue-material.css
+      - assets/js/bellows.min.js
+      version: true
+  bern-badge-for-bernie-sanders:
+    QueryParameter:
+      files:
+      - bern-badge.css
+      version: true
+  better-archives-widget:
+    QueryParameter:
+      files:
+      - baw-script.min.js
+      version: true
+  better-backgrounds:
+    Comment:
+      pattern: !ruby/regexp /Better Backgrounds (?<v>[\d\.]+)/i
+      version: true
+  bg-biblie-references:
+    QueryParameter:
+      files:
+      - css/styles.css
+      - js/bg_bibrefs.js
+      version: true
+  bg-book-publisher:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  bg-btime:
+    QueryParameter:
+      files:
+      - btime/btime.css
+      - btime/btime.js
+      - bg_btime.js
+      version: true
+  bg-forreaders:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  bg-orthodox-calendar:
+    QueryParameter:
+      files:
+      - css/colors.php
+      - js/bg_ortcal_days.js
+      - js/bg_ortcal_names.js
+      - js/bg_ortcal_year.js
+      - js/bg_ortcal_init.js
+      version: true
+  bg-patriarchia-bu:
+    QueryParameter:
+      files:
+      - css/pbu.css
+      version: true
+  bibblio-related-posts:
+    QueryParameter:
+      files:
+      - public/css/bibblio_related_posts-public.css
+      - public/css/bib-related-content.css
+      - public/js/bibblio_related_posts-public.js
+      - public/js/bib-related-content.js
+      version: true
+  bible-references:
+    QueryParameter:
+      files:
+      - js/bible.js
+      version: true
+  biblefox-for-wordpress:
+    QueryParameter:
+      files:
+      - includes/css/scripture.css
+      - includes/css/biblefox-blog.css
+      - includes/js/biblefox-blog.js
+      - includes/js/jquery-qtip/jquery.qtip-1.0.0-rc3-custom.min.js
+      - includes/js/tooltips.js
+      version: true
+  billbee-auftragsabwicklung-warenwirtschaft-automatisierung:
+    QueryParameter:
+      files:
+      - public/css/billbee-public.css
+      - public/js/billbee-public.js
+      version: true
+  bilych-gallery:
+    QueryParameter:
+      files:
+      - public/css/photopile.css
+      - public/js/photopile.js
+      version: true
+  binbucks:
+    QueryParameter:
+      files:
+      - js/shrinker.js
+      version: true
+  bitcoin-address:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  bitvolution-image-galleria:
+    QueryParameter:
+      files:
+      - bitvolution-image-galleria.css
+      version: true
+  biz-calendar:
+    QueryParameter:
+      files:
+      - biz-cal.css
+      - calendar.js
+      version: true
+  bizyhood:
+    QueryParameter:
+      files:
+      - Bizyhood/Public/css/plugin-global.css
+      - Bizyhood/Public/vendor/photoswipe/css/photoswipe.css
+      - Bizyhood/Public/vendor/photoswipe/css/default-skin/default-skin.css
+      - Bizyhood/Public/js/bizyhood-segment-load.js
+      - Bizyhood/Public/vendor/photoswipe/js/photoswipe.min.js
+      - Bizyhood/Public/vendor/photoswipe/js/photoswipe-ui-default.js
+      - Bizyhood/Public/js/bizyhood-plugin-gallery.js
+      - Bizyhood/Public/js/jquery.matchHeight-min.js
+      - Bizyhood/Public/js/bootstrap.min.js
+      - Bizyhood/Public/js/bizyhood-custom.js
+      version: true
+  black-studio-touch-dropdown-menu:
+    QueryParameter:
+      files:
+      - js/black-studio-touch-dropdown-menu.min.js
+      version: true
+  blend-photos:
+    QueryParameter:
+      files:
+      - js/cropsetup.js
+      - js/jquery.Jcrop.js
+      version: true
+  blighty-explorer:
+    QueryParameter:
+      files:
+      - style.css
+      - js/bex.upload.js
+      version: true
+  blip-slideshow:
+    QueryParameter:
+      files:
+      - blip.js
+      - blip-mootools.js
+      version: true
+  blockalyzer-adblock-counter:
+    QueryParameter:
+      files:
+      - js/banner.js
+      version: true
+  blog-clock:
+    QueryParameter:
+      files:
+      - assets/css/custom-backend.css
+      - assets/js/custom-backend.js
+      - assets/js/prefixfree.min.js
+      - assets/js/tinycolor.min.js
+      - assets/js/index.js
+      version: true
+  blog-designer-for-post-and-widget:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/bdpw-public.css
+      version: true
+  bloks-stripe-donation:
+    QueryParameter:
+      files:
+      - assets/css/reset.min.css
+      - assets/css/animate.min.css
+      - assets/css/styles.css
+      version: true
+  blossomthemes-toolkit:
+    QueryParameter:
+      files:
+      - public/css/blossomthemes-toolkit-public.css
+      - public/css/font-awesome.min.css
+      - public/css/owl.carousel.min.css
+      - public/css/owl.theme.default.min.css
+      - public/js/blossomthemes-toolkit-public.js
+      - public/js/owl.carousel.min.js
+      version: true
+  blueposts:
+    QueryParameter:
+      files:
+      - public/css/blueposts-public.css
+      - public/js/blueposts-public.js
+      version: true
+  bluet-keywords-tooltip-generator:
+    QueryParameter:
+      files:
+      - pro-addon/assets/ajax/load-keywords.js
+      - assets/kttg-tooltip-functions.js
+      - pro-addon/assets/kttg-pro-functions.js
+      version: true
+  blur-text:
+    QueryParameter:
+      files:
+      - blur-text.js
+      version: true
+  bmo-expo:
+    Comment:
+      pattern: !ruby/regexp /BMo The Gallery \- Version (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/style.css
+      - css/themes/default.css
+      - css/themes/scrollGallery/default_sG.css
+      - css/themes/scrollLightboxGallery/default_slG.css
+      version: true
+  bne-testimonials:
+    QueryParameter:
+      files:
+      - assets/css/bne-testimonials.min.css
+      version: true
+  bns-add-widget:
+    QueryParameter:
+      files:
+      - bnsaw-style.css
+      version: true
+  bns-bio:
+    QueryParameter:
+      files:
+      - bns-bio-style.css
+      version: true
+  bns-chesscom-badge:
+    QueryParameter:
+      files:
+      - "/bns-chesscom-badge-style.css"
+      version: true
+  bns-corner-logo:
+    QueryParameter:
+      files:
+      - bns-corner-logo-style.css
+      - bns-corner-logo-scripts.js
+      version: true
+  bns-early-adopter:
+    QueryParameter:
+      files:
+      - bnsea-style.css
+      version: true
+  bns-featured-category:
+    QueryParameter:
+      files:
+      - bnsfc-style.css
+      version: true
+  bns-featured-tag:
+    QueryParameter:
+      files:
+      - bnsft-style.css
+      version: true
+  bns-helpers:
+    QueryParameter:
+      files:
+      - css/bns-helpers-style.css
+      - js/bns-helpers-script.js
+      version: true
+  bns-inline-asides:
+    QueryParameter:
+      files:
+      - css/bnsia-style.css
+      - js/bnsia-script.js
+      version: true
+  bns-login:
+    QueryParameter:
+      files:
+      - bns-login-style.css
+      - bns-login-form-style.css
+      version: true
+  bns-site-data:
+    QueryParameter:
+      files:
+      - bns-site-data-style.css
+      - bns-site-data-scripts.js
+      version: true
+  bns-support:
+    QueryParameter:
+      files:
+      - bns-support-style.css
+      version: true
+  bns-theme-details:
+    QueryParameter:
+      files:
+      - css/bnstd-style.css
+      version: true
+  boast-display:
+    QueryParameter:
+      files:
+      - public/css/boast-display-public.css
+      - public/js/build/boast-display-public.min.js
+      version: true
+  bogo:
+    QueryParameter:
+      files:
+      - includes/css/style.css
+      version: true
+  book-review:
+    QueryParameter:
+      files:
+      - public/css/book-review-public.min.css
+      version: true
+  booking:
+    QueryParameter:
+      files:
+      - css/client.css
+      - css/timeline.css
+      - css/calendar.css
+      - css/skins/traditional.css
+      version: true
+  booking-manager:
+    QueryParameter:
+      files:
+      - css/client.css
+      - css/popover.css
+      - css/calendar.css
+      version: true
+  bookly-responsive-appointment-booking-tool:
+    QueryParameter:
+      files:
+      - frontend/resources/css/intlTelInput.css
+      - frontend/resources/css/ladda.min.css
+      - frontend/resources/css/picker.classic.css
+      - frontend/resources/css/picker.classic.date.css
+      - frontend/resources/css/bookly-main.css
+      - frontend/modules/customer_profile/resources/css/customer_profile.css
+      - frontend/resources/js/spin.min.js
+      - frontend/resources/js/ladda.min.js
+      - frontend/resources/js/hammer.min.js
+      - frontend/resources/js/jquery.hammer.min.js
+      - frontend/resources/js/picker.js
+      - frontend/resources/js/picker.date.js
+      - frontend/resources/js/intlTelInput.min.js
+      - frontend/resources/js/bookly.js
+      - frontend/modules/customer_profile/resources/js/customer_profile.js
+      version: true
+  bookwize-booking-form:
+    QueryParameter:
+      files:
+      - public/css/bookwize-theme-default.css
+      - public/js/bookwize-form-public.js
+      version: true
+  bookwize-integrated-booking-engine:
+    QueryParameter:
+      files:
+      - public/vendor/bootstrap-3.3.6/css/bootstrap.min.css
+      - public/vendor/font-awesome-4.6.3/css/font-awesome.min.css
+      - public/vendor/jquery-datepick/jquery.datepick.css
+      - public/css/bookwize-print.css
+      - public/css/bookwize-public.css
+      version: true
+  bookwize-integrated-cinnamon:
+    QueryParameter:
+      files:
+      - public/css/bookwize-public.css
+      version: true
+  boot-slider:
+    QueryParameter:
+      files:
+      - css/bt-slider.css
+      version: true
+  bootstrap-carousel-2x-post-widget:
+    QueryParameter:
+      files:
+      - bdwebteam-carousel-2x-post-widget.css
+      version: true
+  bootstrap-multi-language-responsive-gallery:
+    QueryParameter:
+      files:
+      - css/bootstrap.css
+      - css/font-awesome.min.css
+      - css/gallery.css
+      - css/colorbox.css
+      - js/bootstrap.min.js
+      - js/gallery-colorbox.js
+      - js/jquery.colorbox.js
+      version: true
+  bootstrap-multi-language-responsive-portfolio:
+    QueryParameter:
+      files:
+      - css/bootstrap.css
+      - css/font-awesome.min.css
+      - css/portfolio.css
+      - js/bootstrap.min.js
+      version: true
+  bootstrap-multi-language-responsive-testimonials:
+    QueryParameter:
+      files:
+      - css/bootstrap.css
+      - css/font-awesome.min.css
+      - css/jquery.bxslider.css
+      - css/testimonial.css
+      - js/bootstrap.min.js
+      - js/jquery.bxslider.min.js
+      - js/testimonial-init.js
+      version: true
+  boozang:
+    QueryParameter:
+      files:
+      - public/css/boozang-public.css
+      - public/js/boozang-public.js
+      version: true
+  botamp:
+    QueryParameter:
+      files:
+      - public/css/botamp-public.css
+      - public/js/botamp-public.js
+      version: true
+  botmonitoring:
+    QueryParameter:
+      files:
+      - bma.js
+      version: true
+  bp-activity-share:
+    QueryParameter:
+      files:
+      - public/css/bp-activity-share-public.min.css
+      - public/js/bp-activity-share-public.min.js
+      version: true
+  bp-greeting-message:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.js
+      version: true
+  bp-memories:
+    QueryParameter:
+      files:
+      - public/css/bp-memories-public.min.css
+      version: true
+  bp-post-from-anywhere:
+    QueryParameter:
+      files:
+      - public/css/bp-post-from-anywhere-public.css
+      - public/js/bp-post-from-anywhere-public.js
+      version: true
+  bpmcontext-client-suite:
+    QueryParameter:
+      files:
+      - includes/bpm-sdk/css/bpmcontext_missing_menu.css
+      - js/datamaps.world.min.js
+      - js/bpmcontext-form-widgets.js
+      - includes/bpm-sdk/js/bpmcontext_missing_menu.js
+      version: true
+  branding:
+    QueryParameter:
+      files:
+      - LolitaFramework/CssLoader/assets/css/lolita_css_loader.css
+      version: true
+  brid-video-easy-publish:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="BridPlugin"]/@content
+      pattern: !ruby/regexp /(?<v>[\d\.]+) auth:/i
+      version: true
+  browser-theme-colors:
+    QueryParameter:
+      files:
+      - public/css/browser-theme-colors-public.css
+      - public/js/browser-theme-colors-public.js
+      version: true
+  bsf-docs:
+    QueryParameter:
+      files:
+      - assets/js/jquery.livesearch.js
+      - assets/js/searchbox-script.js
+      version: true
+  bsk-column-posts:
+    QueryParameter:
+      files:
+      - css/bsk-colposts.css
+      version: true
+  bsk-gravityforms-blacklist:
+    QueryParameter:
+      files:
+      - css/bsk-gfbl.css
+      - js/bsk-gfbl.js
+      version: true
+  bsk-pdf-manager:
+    QueryParameter:
+      files:
+      - js/bsk_pdf_manager.js
+      version: true
+  bsk-posts-google-map:
+    QueryParameter:
+      files:
+      - css/bsk-posts-gmap.css
+      version: true
+  bspb-progressbar:
+    QueryParameter:
+      files:
+      - css/bsbpanimated.css
+      - js/front.js
+      version: true
+  bu-slideshow:
+    QueryParameter:
+      files:
+      - interface/css/bu-slideshow.css
+      version: true
+  bubble-seo:
+    Comment:
+      pattern: !ruby/regexp /WordPress Bubble SEO  plugin v(?<v>[\d\.]+)/i
+      version: true
+  buddy-views:
+    QueryParameter:
+      files:
+      - public/css/buddy-views.min.css
+      - public/js/buddy-views.min.js
+      version: true
+  buddypress:
+    QueryParameter:
+      files:
+      - bp-core/css/admin-bar.min.css
+      - bp-templates/bp-legacy/css/buddypress.min.css
+      - bp-templates/bp-legacy/css/twentyfifteen.min.css
+      - bp-core/js/confirm.min.js
+      - bp-core/js/widget-members.min.js
+      - bp-core/js/jquery-query.min.js
+      - bp-core/js/vendor/jquery-cookie.min.js
+      - bp-core/js/vendor/jquery-scroll-to.min.js
+      - bp-templates/bp-legacy/js/buddypress.min.js
+      version: true
+  buddypress-global-search:
+    QueryParameter:
+      files:
+      - assets/css/buddypress-global-search.min.css
+      - assets/js/buddypress-global-search.min.js
+      version: true
+  buddypress-media:
+    QueryParameter:
+      files:
+      - app/assets/css/rtmedia.min.css
+      - app/assets/js/rtmedia.min.js
+      - app/assets/js/rtMedia.backbone.js
+      - lib/touchswipe/jquery.touchSwipe.min.js
+      version: true
+  buddyslack:
+    QueryParameter:
+      files:
+      - public/css/buddyslack-public.css
+      - public/js/buddyslack-public.js
+      version: true
+  bugherd-dashboard:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+  bulk-edit-post-titles:
+    QueryParameter:
+      files:
+      - js/bulk-action.js
+      version: true
+  bulk-me-now:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      - assets/js-min/public.min.js
+      - assets/js-min/ajax.min.js
+      version: true
+  business-era-extension:
+    QueryParameter:
+      files:
+      - assets/filter.js
+      version: true
+  business-open-hours-master:
+    QueryParameter:
+      files:
+      - public/css/business-open-hours-master-public.css
+      - public/js/business-open-hours-master-public.js
+      version: true
+  buttons-with-style:
+    QueryParameter:
+      files:
+      - css/button-css.css
+      - css/foundation-icons.css
+      version: true
+  buzz-instagram-feed:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - css/font-awesome.min.css
+      - js/modernizr.custom.26633.js
+      - js/jquery.gridrotator.js
+      - js/frontend.js
+      version: true
+  bwp-external-links:
+    QueryParameter:
+      files:
+      - css/bwp-external-links.css
+      version: true
+  bwp-recent-comments:
+    QueryParameter:
+      files:
+      - css/bwp-recent-comments.css
+      version: true
+  bxslider-wp:
+    QueryParameter:
+      files:
+      - bxslider/jquery.bxslider.css
+      - bxslider/jquery.bxslider.min.js
+      - js/initialize.js
+      version: true
+  caascade:
+    QueryParameter:
+      files:
+      - caascade.css
+      - caascade.js
+      version: true
+  cactus-masonry-plus:
+    QueryParameter:
+      files:
+      - cactusBrick.min.js
+      - cactusGallery.min.js
+      - cactusMasonryPlus.min.js
+      version: true
+  calculation-shipping:
+    QueryParameter:
+      files:
+      - css/front_calship.css
+      - js/front_calship.js
+      version: true
+  call-button:
+    QueryParameter:
+      files:
+      - assets/css/pushlabs-callbutton.css
+      version: true
+  campaign-monitor-wp:
+    QueryParameter:
+      files:
+      - assets/pagecount.min.js
+      version: true
+  campaign-roi-return-on-investment-calculator-v10:
+    QueryParameter:
+      files:
+      - css/style.css
+      - js/organictabs.jquery.js
+      - js/vtip.js
+      version: true
+  campus-directory:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      pattern: !ruby/regexp /Campus Directory v(?<v>[\d\.]+)/i
+      version: true
+  canadian-gst-calculator:
+    QueryParameter:
+      files:
+      - cc-canada-gst-calculator.js
+      version: true
+  canalplan-ac:
+    Comment:
+      pattern: !ruby/regexp '/Canalplan AC code revision : (?<v>[\d\.]+)/i'
+      version: true
+  canvaspop-photo-printing-api:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
+  captain-slider:
+    QueryParameter:
+      files:
+      - includes/css/flexslider.css
+      - includes/js/jquery.flexslider-min.js
+      - includes/js/jquery.fitvids.js
+      version: true
+  captain-social:
+    QueryParameter:
+      files:
+      - includes/css/ctsocial-styles.css
       version: true
   captcha:
     QueryParameter:
       files:
       - css/front_end_style.css
       - css/desktop_style.css
+      version: true
+  car-demon:
+    QueryParameter:
+      files:
+      - filters/theme-files/content-replacement/cr-style.css
+      - filters/theme-files/content-replacement/cr-single-car.css
+      - theme-files/css/car-demon.css.php
+      - theme-files/css/car-demon-style.css
+      - search/css/car-demon-search.css
+      - filters/theme-files/content-replacement/cr.js
+      - theme-files/js/jquery.lightbox_me.js
+      - theme-files/js/car-demon-compare.js
+      - search/js/car-demon-search.js
+      - theme-files/js/jquery-ui.js
+      version: true
+  car-rental:
+    QueryParameter:
+      files:
+      - css/slider.css
+      - css/animate.css
+      - css/owl.carousel.css
+      - css/owl.theme.default.css
+      - css/style.css
+      - css/jquery-ui.css
+      - css/jquery.slider.css
+      - js/script.js
+      - js/owl.carousel.js
+      version: true
+  cardojo-lite:
+    QueryParameter:
+      files:
+      - assets/css/plugins.css
+      - assets/css/cardojo-public.css
+      - assets/css/responsive.css
+      - assets/js/plugins.js
+      - assets/js/jquery.form.js
+      - assets/js/cardojo-public.js
+      version: true
+  carousel-for-awesome-filterable-portfolio:
+    QueryParameter:
+      files:
+      - resources/css/custom.css
+      - resources/css/elastislide.css
+      - resources/js/modernizr.custom.17475.js
+      - resources/js/jquerypp.custom.js
+      - resources/js/jquery.elastislide.js
+      version: true
+  case-study:
+    QueryParameter:
+      files:
+      - include/js/bootstrap.min.js
+      - include/js/wow.js
+      - include/js/custom-list.js
+      - include/js/custom-owlCarousel-detail.js
+      version: true
+  catch-instagram-feed-gallery-widget:
+    QueryParameter:
+      files:
+      - public/css/catch-instagram-feed-gallery-widget-public.css
+      - public/js/catch-instagram-feed-gallery-widget-public.js
+      version: true
+  catch-web-tools:
+    Comment:
+      pattern: !ruby/regexp /Catch Web Tools v(?<v>[\d\.]+)/i
+      version: true
+  category-post-slider:
+    QueryParameter:
+      files:
+      - css/cps-style.css
+      - js/jquery.cpsslider.js
+      version: true
+  cb-contact-form:
+    QueryParameter:
+      files:
+      - cb-contact-form.css
+      - cb-contact-form.js
+      version: true
+  cb-faq-responsive-accordion:
+    QueryParameter:
+      files:
+      - "/js/script.js"
+      version: true
+  cb-full-responsive-slider:
+    QueryParameter:
+      files:
+      - "/pgwslider.css"
+      - "/pgwslider.min.js"
+      - "/cb-main.js"
+      version: true
+  cb-parallax:
+    QueryParameter:
+      files:
+      - public/css/public.css
+      - public/js/public.js
+      version: true
+  cb-responsive-jquery-accordion:
+    QueryParameter:
+      files:
+      - "/css/style.css"
+      - "/js/cb_js.js"
+      version: true
+  cbcurrencyconverter:
+    QueryParameter:
+      files:
+      - public/css/cbcurrencyconverter-public.css
+      - public/js/cbcurrencyconverter-public.js
+      version: true
+  cbxgooglemap:
+    QueryParameter:
+      files:
+      - public/css/cbxgooglemap-public.css
+      - public/js/jqcbxgooglemap.js
+      - public/js/cbxgooglemap-public.js
+      version: true
+  cbxinstaphotos:
+    QueryParameter:
+      files:
+      - public/css/cbxinstaphotos-public.css
+      version: true
+  cc-bmi-calculator:
+    QueryParameter:
+      files:
+      - cc-bmi-calculator.css
+      - cc-bmi-calculator.js
+      version: true
+  cc-canadian-mortgage-calculator:
+    QueryParameter:
+      files:
+      - cc-mortgage-canada.css
+      - cc-mortgage-canada.js
+      version: true
+  cc-child-pages:
+    Comment:
+      pattern: !ruby/regexp /\/cc-child-pages\/includes\/css\/styles\.ie\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - includes/css/styles.css
+      - includes/css/skins.css
+      version: true
+  cc-cookie-consent:
+    QueryParameter:
+      files:
+      - assets/plugin-css/dark-bottom.css
+      - assets/plugin-js/cookieconsent.latest.min.js
+      version: true
+  cc-essentials:
+    QueryParameter:
+      files:
+      - assets/css/cce-shortcodes.css
+      version: true
+  cc-lexicon-lite:
+    QueryParameter:
+      files:
+      - includes/css/styles.css
+      version: true
+  cc-manga-comic-reader:
+    QueryParameter:
+      files:
+      - assets/css/cc-manga.css
+      version: true
+  cc-ontario-tax-calculator:
+    QueryParameter:
+      files:
+      - cc-income-tax-on.css
+      - cc-income-tax-on.js
+      version: true
+  cc-quebec-tax-calculator:
+    QueryParameter:
+      files:
+      - cc-income-tax-qc.css
+      - cc-income-tax-qc.js
+      version: true
+  cc-scripts:
+    Comment:
+      pattern: !ruby/regexp /CC-Scripts (?<v>[\d\.]+)/i
+      version: true
+  ccr-client-testimonials:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/bootstrap.js
+      version: true
+  ccr-colorful-faq:
+    QueryParameter:
+      files:
+      - assets/css/bootstrap.css
+      - assets/js/bootstrap.min.js
       version: true
   collapsing-archives:
     Comment:
