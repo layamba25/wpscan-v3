@@ -4379,7 +4379,7 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/content-switcher/languages/content-switcher-fr_FR.po,
-        Match: ''"Project-Id-Version: Content Switcher 3.9'''
+        Match: ''Project-Id-Version: Content Switcher 3.9'''
   content-views-query-and-display-post-page:
     QueryParameter:
       number: 1.9.9.5
@@ -4409,7 +4409,7 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/contributor-role-for-approved-comments/languages/contributor-role-for-approved-comments.pot,
-        Match: ''"Project-Id-Version: 0.0.1'''
+        Match: ''Project-Id-Version: 0.0.1'''
   conversejs:
     QueryParameter:
       number: 3.2.1
@@ -4439,7 +4439,7 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/convocations/languages/convocations-fr_FR.po,
-        Match: ''"Project-Id-Version: Convocations v0.6'''
+        Match: ''Project-Id-Version: Convocations v0.6'''
   cookbook-hook-guide:
     TranslationFile:
       number: 1.0.0
@@ -4539,7 +4539,7 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/crea-listings/lang/plugin-name.pot, Match:
-        ''"Project-Id-Version: TODO 1.0.0'''
+        ''Project-Id-Version: TODO 1.0.0'''
   creative-commons-configurator-1:
     TranslationFile:
       number: 1.8.27
@@ -4553,20 +4553,20 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/crosswordsearch/languages/crosswordsearch.pot,
-        Match: ''"Project-Id-Version: crosswordsearch 1.0.2'''
+        Match: ''Project-Id-Version: crosswordsearch 1.0.2'''
   cryptex:
     TranslationFile:
       number: '6.0'
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/cryptex/lang/Cryptex.pot, Match: ''"Project-Id-Version:
+      - 'http://wp.lab/wp-content/plugins/cryptex/lang/Cryptex.pot, Match: ''Project-Id-Version:
         Cryptex  6.0'''
   css3-buttons:
     TranslationFile:
       number: '0.1'
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/css3-buttons/lang/default.pot, Match: ''"Project-Id-Version:
+      - 'http://wp.lab/wp-content/plugins/css3-buttons/lang/default.pot, Match: ''Project-Id-Version:
         CSS3 Buttons 0.1'''
   currencyr:
     TranslationFile:
@@ -4668,13 +4668,13 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/customizer-search/languages/customizer-search.pot,
-        Match: ''"Project-Id-Version: Customizer Search 1.0.0'''
+        Match: ''Project-Id-Version: Customizer Search 1.0.0'''
   customizr-addons:
     TranslationFile:
       number: 1.0.1
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/customizr-addons/lang/en_US.po, Match: ''"Project-Id-Version:
+      - 'http://wp.lab/wp-content/plugins/customizr-addons/lang/en_US.po, Match: ''Project-Id-Version:
         Customizr Addons v1.0.1'''
   cvi-widgets:
     TranslationFile:
@@ -4703,14 +4703,14 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/dashboard-notes/languages/dashboard-notes.pot,
-        Match: ''"Project-Id-Version: Dashboard Notes 1.0.3'''
+        Match: ''Project-Id-Version: Dashboard Notes 1.0.3'''
   dashview:
     TranslationFile:
       number: '0.2'
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/dashview/i18n/dashview-de_DE.po, Match:
-        ''"Project-Id-Version: DashView v0.2'''
+        ''Project-Id-Version: DashView v0.2'''
   date-and-time-widget:
     TranslationFile:
       number: 1.1.0
@@ -4724,14 +4724,14 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/defender-security/languages/wpdef-default.pot,
-        Match: ''"Project-Id-Version: WP Defender Pro 1.7.3'''
+        Match: ''Project-Id-Version: WP Defender Pro 1.7.3'''
   demo-bar:
     TranslationFile:
       number: 1.0.1
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/demo-bar/languages/demo-bar.pot, Match:
-        ''"Project-Id-Version: Demo Bar 1.0.1'''
+        ''Project-Id-Version: Demo Bar 1.0.1'''
   dexonline-searchbox:
     TranslationFile:
       number: '1.0'
@@ -4745,14 +4745,91 @@ plugins:
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/dezo-tools/languages/dezo-tools.pot, Match:
-        ''"Project-Id-Version: dezo-tools 0.0.2'''
+        ''Project-Id-Version: dezo-tools 0.0.2'''
   df-pagination:
     TranslationFile:
       number: '1.0'
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/df-pagination/I18n/df-pagination.pot, Match:
-        ''"Project-Id-Version: DF-Pagination 1.0'''
+        ''Project-Id-Version: DF-Pagination 1.0'''
+  dialogue-layout:
+    TranslationFile:
+      number: '0.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/dialogue-layout/language/dialogue-layout.pot,
+        Match: ''Project-Id-Version: Dialogue Layout 0.1'''
+  digest:
+    TranslationFile:
+      number: 1.2.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/digest/languages/digest.pot, Match: ''roject-Id-Version:
+        Digest Notifications 1.2.1'''
+  digital-certainty:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/digital-certainty/languages/plugin-name.pot,
+        Match: ''Project-Id-Version: TODO 1.0.0'''
+  dirt-directory-client:
+    TranslationFile:
+      number: 1.2.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/dirt-directory-client/languages/dirt-directory-client.pot,
+        Match: ''oject-Id-Version: DiRT Directory Client 1.2.0'''
+  disable-right-click-powered-by-pixterme:
+    TranslationFile:
+      number: '1.2'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/disable-right-click-powered-by-pixterme/languages/pixterme.pot,
+        Match: ''Project-Id-Version: Pixter Me 1.2'''
+  display-featured-image-genesis:
+    TranslationFile:
+      number: 2.6.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/display-featured-image-genesis/languages/display-featured-image-genesis.pot,
+        Match: ''ion: Display Featured Image for Genesis 2.6.3'''
+  display-taxes-on-product-page-woocommerce:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/display-taxes-on-product-page-woocommerce/mlfactory_tax_plugin-de_DE.po,
+        Match: ''oject-Id-Version: MLFactory Tax Plugin v1.0.0'''
+  dokan-invoice:
+    TranslationFile:
+      number: 1.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/dokan-invoice/languages/dokan-invoice.pot,
+        Match: ''Project-Id-Version: Dokan - PDF Invoice 1.1.0'''
+  download-plugins-dashboard:
+    TranslationFile:
+      number: 1.2.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/download-plugins-dashboard/langs/download-plugins-dashboard.pot,
+        Match: ''nload Plugins and Themes from Dashboard 1.2.0'''
+  drastic-table-manager:
+    TranslationFile:
+      number: '0.4'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/drastic-table-manager/drastic-table-manager.pot,
+        Match: ''oject-Id-Version: Drastic Table Manager 0.4'''
+  dropdown-content:
+    TranslationFile:
+      number: 1.0.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/dropdown-content/languages/dropdowncontent.pot,
+        Match: ''Dropdown Content v1.0.2'''
   dynamic-content-gallery-plugin:
     Comment:
       number: 3.3.6

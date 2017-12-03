@@ -3423,7 +3423,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/content-switcher-fr_FR.po
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Content\ Switcher\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Content\ Switcher\ (?<v>[\d\.]+)/i
       version: true
   content-views-query-and-display-post-page:
     QueryParameter:
@@ -3447,7 +3447,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/contributor-role-for-approved-comments.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ (?<v>[\d\.]+)/i
       version: true
   conversejs:
     QueryParameter:
@@ -3471,7 +3471,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/convocations-fr_FR.po
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Convocations\ v(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Convocations\ v(?<v>[\d\.]+)/i
       version: true
   cookbook-hook-guide:
     TranslationFile:
@@ -3547,7 +3547,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: lang/plugin-name.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
       version: true
   creative-commons-configurator-1:
     TranslationFile:
@@ -3559,19 +3559,19 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/crosswordsearch.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ crosswordsearch\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ crosswordsearch\ (?<v>[\d\.]+)/i
       version: true
   cryptex:
     TranslationFile:
       class: BodyPattern
       path: lang/Cryptex.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Cryptex\ \ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Cryptex\ \ (?<v>[\d\.]+)/i
       version: true
   css3-buttons:
     TranslationFile:
       class: BodyPattern
       path: lang/default.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ CSS3\ Buttons\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ CSS3\ Buttons\ (?<v>[\d\.]+)/i
       version: true
   currencyr:
     TranslationFile:
@@ -3658,13 +3658,13 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/customizer-search.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Customizer\ Search\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Customizer\ Search\ (?<v>[\d\.]+)/i
       version: true
   customizr-addons:
     TranslationFile:
       class: BodyPattern
       path: lang/en_US.po
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Customizr\ Addons\ v(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Customizr\ Addons\ v(?<v>[\d\.]+)/i
       version: true
   cvi-widgets:
     TranslationFile:
@@ -3688,13 +3688,13 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/dashboard-notes.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Dashboard\ Notes\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Dashboard\ Notes\ (?<v>[\d\.]+)/i
       version: true
   dashview:
     TranslationFile:
       class: BodyPattern
       path: i18n/dashview-de_DE.po
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ DashView\ v(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ DashView\ v(?<v>[\d\.]+)/i
       version: true
   date-and-time-widget:
     TranslationFile:
@@ -3706,13 +3706,13 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/wpdef-default.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Defender\ Pro\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ WP\ Defender\ Pro\ (?<v>[\d\.]+)/i
       version: true
   demo-bar:
     TranslationFile:
       class: BodyPattern
       path: languages/demo-bar.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Demo\ Bar\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Demo\ Bar\ (?<v>[\d\.]+)/i
       version: true
   dexonline-searchbox:
     TranslationFile:
@@ -3724,13 +3724,79 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/dezo-tools.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ dezo\-tools\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ dezo\-tools\ (?<v>[\d\.]+)/i
       version: true
   df-pagination:
     TranslationFile:
       class: BodyPattern
       path: I18n/df-pagination.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ DF\-Pagination\ (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ DF\-Pagination\ (?<v>[\d\.]+)/i
+      version: true
+  dialogue-layout:
+    TranslationFile:
+      class: BodyPattern
+      path: language/dialogue-layout.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Dialogue\ Layout\ (?<v>[\d\.]+)/i
+      version: true
+  digest:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/digest.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Digest\ Notifications\ (?<v>[\d\.]+)/i
+      version: true
+  digital-certainty:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  dirt-directory-client:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dirt-directory-client.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ DiRT\ Directory\ Client\ (?<v>[\d\.]+)/i
+      version: true
+  disable-right-click-powered-by-pixterme:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pixterme.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Pixter\ Me\ (?<v>[\d\.]+)/i
+      version: true
+  display-featured-image-genesis:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/display-featured-image-genesis.pot
+      pattern: !ruby/regexp /ion:\ Display\ Featured\ Image\ for\ Genesis\ (?<v>[\d\.]+)/i
+      version: true
+  display-taxes-on-product-page-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: mlfactory_tax_plugin-de_DE.po
+      pattern: !ruby/regexp /oject\-Id\-Version:\ MLFactory\ Tax\ Plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  dokan-invoice:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dokan-invoice.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Dokan\ \-\ PDF\ Invoice\ (?<v>[\d\.]+)/i
+      version: true
+  download-plugins-dashboard:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/download-plugins-dashboard.pot
+      pattern: !ruby/regexp /nload\ Plugins\ and\ Themes\ from\ Dashboard\ (?<v>[\d\.]+)/i
+      version: true
+  drastic-table-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: drastic-table-manager.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Drastic\ Table\ Manager\ (?<v>[\d\.]+)/i
+      version: true
+  dropdown-content:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dropdowncontent.pot
+      pattern: !ruby/regexp /Dropdown\ Content\ v(?<v>[\d\.]+)/i
       version: true
   dynamic-content-gallery-plugin:
     Comment:
