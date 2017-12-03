@@ -3404,14 +3404,334 @@ plugins:
       - js/calendar/calendar_function.js
       - js/main_div_front_end.js
       version: true
+  content-party:
+    QueryParameter:
+      files:
+      - public/css/content-party-public.css
+      - public/js/content-party-public.js
+      version: true
+  content-planner:
+    QueryParameter:
+      files:
+      - js/badger.js
+      version: true
+  content-protector:
+    Comment:
+      pattern: !ruby/regexp /Content\ Protector\ plugin\ v\.\ (?<v>[\d\.]+)/i
+      version: true
+  content-switcher:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/content-switcher-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Content\ Switcher\ (?<v>[\d\.]+)/i
+      version: true
+  content-views-query-and-display-post-page:
+    QueryParameter:
+      files:
+      - public/assets/css/cv.css
+      - public/assets/js/cv.js
+      version: true
+  contestfriend:
+    TranslationFile:
+      class: BodyPattern
+      path: contestfriend.pot
+      pattern: !ruby/regexp /Id\-Version:\ contestfriend\ for\ WordPress\ (?<v>[\d\.]+)/i
+      version: true
+  contributer:
+    QueryParameter:
+      files:
+      - "/assets/css/main.css"
+      - "/assets/js/login.js"
+      version: true
+  contributor-role-for-approved-comments:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/contributor-role-for-approved-comments.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ (?<v>[\d\.]+)/i
+      version: true
+  conversejs:
+    QueryParameter:
+      files:
+      - core/css/converse.css
+      - css/wordpress-fix.css
+      - core/converse-no-jquery.min.js
+      version: true
+  convertiser-widgets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/convertiser-widgets.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Convertiser\ Widgets\ (?<v>[\d\.]+)/i
+      version: true
+  convertkit:
+    QueryParameter:
+      files:
+      - resources/frontend/wp-convertkit.js
+      version: true
+  convocations:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/convocations-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Convocations\ v(?<v>[\d\.]+)/i
+      version: true
+  cookbook-hook-guide:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cookbook-hook-guide.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Cookbook\ Hook\ Guide\ (?<v>[\d\.]+)/i
+      version: true
+  cooked:
+    QueryParameter:
+      files:
+      - assets/admin/css/essentials.min.css
+      - assets/css/icons.min.css
+      - assets/css/style.min.css
+      - assets/css/colors.php
+      - assets/css/responsive.php
+      - assets/js/cooked-functions.min.js
+      version: true
+  cookie-law-info:
+    QueryParameter:
+      files:
+      - css/cli-style.css
+      - js/cookielawinfo.js
+      version: true
   cookie-notice:
     QueryParameter:
       files:
       - js/front.min.js
       version: true
+  cookie-notice-bar:
+    QueryParameter:
+      files:
+      - public/css/dc-cookie-notice-bar-public.css
+      - public/js/dc-cookie-notice-bar-public.js
+      version: true
+  cookie-ok:
+    QueryParameter:
+      files:
+      - js/cookieok.min.js
+      version: true
+  cookiebar:
+    QueryParameter:
+      files:
+      - cookiebar-latest.min.js
+      version: true
+  cool-eform:
+    QueryParameter:
+      files:
+      - css/cool-eform.css
+      version: true
+  cool-quick-sidebar:
+    QueryParameter:
+      files:
+      - quick-cool-sidebar.js
+      version: true
+  copyfight:
+    QueryParameter:
+      files:
+      - _inc/css/copyfight.min.css
+      - _inc/css/genericons.min.css
+      version: true
+  corgi-forms:
+    QueryParameter:
+      files:
+      - assets/css/style-front-corgi-forms.css
+      - assets/js/script-front-corgi-forms.js
+      version: true
+  cornerstone:
+    QueryParameter:
+      files:
+      - js/lib.core.js
+      version: true
+  crea-listings:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/plugin-name.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  creative-commons-configurator-1:
+    TranslationFile:
+      class: BodyPattern
+      path: creative-commons-configurator-1.pot
+      pattern: !ruby/regexp /ersion:\ creative\-commons\-configurator\-1\ (?<v>[\d\.]+)/i
+      version: true
+  crosswordsearch:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/crosswordsearch.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ crosswordsearch\ (?<v>[\d\.]+)/i
+      version: true
+  cryptex:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/Cryptex.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Cryptex\ \ (?<v>[\d\.]+)/i
+      version: true
+  css3-buttons:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/default.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ CSS3\ Buttons\ (?<v>[\d\.]+)/i
+      version: true
+  currencyr:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/default.po
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Currencyr\ for\ WordPress\ (?<v>[\d\.]+)/i
+      version: true
+  custom-advert-blocks-free:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/custom-blocks-free-ru_RU.po
+      pattern: !ruby/regexp /\-Id\-Version:\ Custom\ Advert\ Blocks\ Free\ v(?<v>[\d\.]+)/i
+      version: true
+  custom-authentication:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custauth.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Custom\ Authentication\ (?<v>[\d\.]+)/i
+      version: true
+  custom-bulkquick-edit:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custom-bulkquick-edit.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Custom\ Bulk\/Quick\ Edit\ (?<v>[\d\.]+)/i
+      version: true
+  custom-content-types-by-pixelpillow:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/pixelpillow-custom-content-types-nl_NL.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Custom\ Content\ Types\ \/\ (?<v>[\d\.]+)/i
+      version: true
+  custom-database-tables:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/custom-database-tables-ja.po
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Custom\ DataBase\ Tables\ v(?<v>[\d\.]+)/i
+      version: true
   custom-facebook-feed:
     Comment:
       pattern: !ruby/regexp /Custom Facebook Feed/i
+  custom-javascript-editor:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custom-javascript-editor.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Custom\ JavaScript\ Editor\ (?<v>[\d\.]+)/i
+      version: true
+  custom-page-extensions:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/custom-page-extensions.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Custom\ Page\ Extensions\ (?<v>[\d\.]+)/i
+      version: true
+  custom-post-type-cleanup:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custom-post-type-cleanup.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Custom\ Post\ Type\ Cleanup\ (?<v>[\d\.]+)/i
+      version: true
+  custom-post-type-order:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cpto-fr_FR.po
+      pattern: !ruby/regexp /WordPress\ plugin\ Custom\ Post\ Type\ Order\ (?<v>[\d\.]+)/i
+      version: true
+  custom-post-type-parents:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custom-post-type-parents.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Custom\ Post\ Type\ Parents\ (?<v>[\d\.]+)/i
+      version: true
+  custom-typekit-fonts:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custom-typekit-fonts.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Custom\ Typekit\ Fonts\ (?<v>[\d\.]+)/i
+      version: true
+  custom-wishlist:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/cwl-es_ES.po
+      pattern: !ruby/regexp /t\-Id\-Version:\ Free\ WooCommerce\ Wishlist\ (?<v>[\d\.]+)/i
+      version: true
+  customizer-search:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/customizer-search.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Customizer\ Search\ (?<v>[\d\.]+)/i
+      version: true
+  customizr-addons:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/en_US.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Customizr\ Addons\ v(?<v>[\d\.]+)/i
+      version: true
+  cvi-widgets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cvi.pot
+      pattern: !ruby/regexp /ion\ of\ the\ WordPress\ plugin\ CVI\ Widgets\ (?<v>[\d\.]+)/i
+      version: true
+  danixland-countdown:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/danixland-countdown.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ danixland\ CountDown\ (?<v>[\d\.]+)/i
+      version: true
+  dashboard-linker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dashboard-linker.pot
+      pattern: !ruby/regexp /f\ the\ WordPress\ plugin\ Dashboard\ linker\ (?<v>[\d\.]+)/i
+      version: true
+  dashboard-notes:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dashboard-notes.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Dashboard\ Notes\ (?<v>[\d\.]+)/i
+      version: true
+  dashview:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/dashview-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ DashView\ v(?<v>[\d\.]+)/i
+      version: true
+  date-and-time-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/date-time.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Date\ and\ Time\ Widget\ (?<v>[\d\.]+)/i
+      version: true
+  defender-security:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpdef-default.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Defender\ Pro\ (?<v>[\d\.]+)/i
+      version: true
+  demo-bar:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/demo-bar.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Demo\ Bar\ (?<v>[\d\.]+)/i
+      version: true
+  dexonline-searchbox:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dexonline-searchbox-de_DE.po
+      pattern: !ruby/regexp /Translation\ of\ the\ Dexonline\ Searchbox\ (?<v>[\d\.]+)/i
+      version: true
+  dezo-tools:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/dezo-tools.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ dezo\-tools\ (?<v>[\d\.]+)/i
+      version: true
+  df-pagination:
+    TranslationFile:
+      class: BodyPattern
+      path: I18n/df-pagination.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ DF\-Pagination\ (?<v>[\d\.]+)/i
+      version: true
   dynamic-content-gallery-plugin:
     Comment:
       pattern: !ruby/regexp /Dynamic Content Gallery plugin version (?<v>[\d\.]+)/i
