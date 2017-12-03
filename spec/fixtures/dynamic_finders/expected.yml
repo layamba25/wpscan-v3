@@ -4836,6 +4836,55 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Dynamic Content Gallery plugin version 3.3.6'''
+  dynamic-seo-child-pages:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/dynamic-seo-child-pages/lang/dynamic-seo-child-pages.pot,
+        Match: ''ect-Id-Version: Dynamic SEO Child Pages 1.1'''
+  easing-slider:
+    TranslationFile:
+      number: 3.0.8
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easing-slider/languages/easingslider.pot,
+        Match: ''Project-Id-Version: Easing Slider 3.0.8'''
+  easy-blog-ideas:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-blog-ideas/languages/__pig_.pot, Match:
+        ''Project-Id-Version: Easy Blog Ideas 1.0'''
+  easy-code-manager:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-code-manager/locals/languages/css-javascript-toolbox.pot,
+        Match: ''Project-Id-Version: Easy Code Manager 1.0.0'''
+  easy-digital-downloads:
+    TranslationFile:
+      number: 2.8.14
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-digital-downloads/languages/easy-digital-downloads.pot,
+        Match: ''ject-Id-Version: Easy Digital Downloads 2.8.14'''
+  easy-digital-downloads-payment-gateway-by-novalnet:
+    TranslationFile:
+      number: 1.1.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-digital-downloads-payment-gateway-by-novalnet/languages/edd-novalnet.pot,
+        Match: ''"Version 1.1.2'''
+  easy-excerpt:
+    TranslationFile:
+      number: 0.3.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-excerpt/languages/easy-excerpt.po,
+        Match: ''Project-Id-Version: Easy Excerpt 0.3.0'''
   easy-fancybox:
     Comment:
       number: 1.5.7

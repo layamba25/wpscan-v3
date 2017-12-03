@@ -3802,6 +3802,48 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Dynamic Content Gallery plugin version (?<v>[\d\.]+)/i
       version: true
+  dynamic-seo-child-pages:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/dynamic-seo-child-pages.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Dynamic\ SEO\ Child\ Pages\ (?<v>[\d\.]+)/i
+      version: true
+  easing-slider:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easingslider.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Easing\ Slider\ (?<v>[\d\.]+)/i
+      version: true
+  easy-blog-ideas:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/__pig_.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Easy\ Blog\ Ideas\ (?<v>[\d\.]+)/i
+      version: true
+  easy-code-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: locals/languages/css-javascript-toolbox.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Easy\ Code\ Manager\ (?<v>[\d\.]+)/i
+      version: true
+  easy-digital-downloads:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-digital-downloads.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Easy\ Digital\ Downloads\ (?<v>[\d\.]+)/i
+      version: true
+  easy-digital-downloads-payment-gateway-by-novalnet:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/edd-novalnet.pot
+      pattern: !ruby/regexp /"Version\ (?<v>[\d\.]+)/i
+      version: true
+  easy-excerpt:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-excerpt.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Easy\ Excerpt\ (?<v>[\d\.]+)/i
+      version: true
   easy-fancybox:
     Comment:
       pattern: !ruby/regexp /Easy FancyBox (?<v>[\d\.]+) using/i
