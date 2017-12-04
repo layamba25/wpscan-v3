@@ -306,6 +306,12 @@ plugins:
       - public/css/add-meta-tag-for-wordpress-public.css
       - public/js/add-meta-tag-for-wordpress-public.js
       version: true
+  add-meta-tags:
+    TranslationFile:
+      class: BodyPattern
+      path: add-meta-tags.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ add\-meta\-tags\ (?<v>[\d\.]+)/i
+      version: true
   addons-for-beaver-builder:
     QueryParameter:
       files:
@@ -1325,6 +1331,10 @@ plugins:
       class: BodyPattern
       path: languages/plugin-name.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  bad-behavior:
+    Comment:
+      pattern: !ruby/regexp /Bad\ Behavior\ (?<v>[\d\.]+)/i
       version: true
   badge-creator-free:
     QueryParameter:
@@ -3013,6 +3023,7 @@ plugins:
     QueryParameter:
       files:
       - inc/cleantalk_nocache.js
+      - js/apbct-public.js
       version: true
   cleverness-to-do-list:
     QueryParameter:
@@ -3259,6 +3270,11 @@ plugins:
       files:
       - css/public.css
       version: true
+  commentluv:
+    QueryParameter:
+      files:
+      - js/commentluv.js
+      version: true
   commentpress-core:
     TranslationFile:
       class: BodyPattern
@@ -3403,6 +3419,11 @@ plugins:
       - js/calendar/calendar.js
       - js/calendar/calendar_function.js
       - js/main_div_front_end.js
+      version: true
+  contact-form-plugin:
+    QueryParameter:
+      files:
+      - css/form_style.css
       version: true
   content-party:
     QueryParameter:
@@ -3597,6 +3618,12 @@ plugins:
       path: languages/custom-bulkquick-edit.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ Custom\ Bulk\/Quick\ Edit\ (?<v>[\d\.]+)/i
       version: true
+  custom-contact-forms:
+    QueryParameter:
+      files:
+      - assets/build/css/form.min.css
+      - assets/build/js/form.min.js
+      version: true
   custom-content-types-by-pixelpillow:
     TranslationFile:
       class: BodyPattern
@@ -3612,12 +3639,23 @@ plugins:
   custom-facebook-feed:
     Comment:
       pattern: !ruby/regexp /Custom Facebook Feed/i
+    QueryParameter:
+      files:
+      - css/cff-style.css
+      - js/cff-scripts.js
+      version: true
   custom-javascript-editor:
     TranslationFile:
       class: BodyPattern
       path: languages/custom-javascript-editor.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ Custom\ JavaScript\ Editor\ (?<v>[\d\.]+)/i
       version: true
+  custom-login:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Custom\ Login\ v(?<v>[\d\.]+)/i
   custom-page-extensions:
     TranslationFile:
       class: BodyPattern
@@ -3671,6 +3709,23 @@ plugins:
       class: BodyPattern
       path: languages/cvi.pot
       pattern: !ruby/regexp /ion\ of\ the\ WordPress\ plugin\ CVI\ Widgets\ (?<v>[\d\.]+)/i
+      version: true
+  cyclone-slider-2:
+    QueryParameter:
+      files:
+      - templates/dark/style.css
+      - templates/default/style.css
+      - templates/standard/style.css
+      - templates/thumbnails/style.css
+      - libs/cycle2/jquery.cycle2.min.js
+      - libs/cycle2/jquery.cycle2.carousel.min.js
+      - libs/cycle2/jquery.cycle2.swipe.min.js
+      - libs/cycle2/jquery.cycle2.tile.min.js
+      - libs/cycle2/jquery.cycle2.video.min.js
+      - templates/dark/script.js
+      - templates/thumbnails/script.js
+      - libs/vimeo-player-js/player.js
+      - js/client.js
       version: true
   danixland-countdown:
     TranslationFile:
@@ -3774,11 +3829,29 @@ plugins:
       path: mlfactory_tax_plugin-de_DE.po
       pattern: !ruby/regexp /oject\-Id\-Version:\ MLFactory\ Tax\ Plugin\ v(?<v>[\d\.]+)/i
       version: true
+  ditty-news-ticker:
+    QueryParameter:
+      files:
+      - assets/fontastic/styles.css
+      - assets/css/style.css
+      version: true
+  document-gallery:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      - assets/js/gallery.min.js
+      version: true
   dokan-invoice:
     TranslationFile:
       class: BodyPattern
       path: languages/dokan-invoice.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Dokan\ \-\ PDF\ Invoice\ (?<v>[\d\.]+)/i
+      version: true
+  download-manager:
+    MetaGenerator:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      pattern: !ruby/regexp /WordPress Download Manager (?<v>[\d\.]+)/i
       version: true
   download-plugins-dashboard:
     TranslationFile:
@@ -3798,6 +3871,15 @@ plugins:
       path: languages/dropdowncontent.pot
       pattern: !ruby/regexp /Dropdown\ Content\ v(?<v>[\d\.]+)/i
       version: true
+  dropdown-menu-widget:
+    Comment:
+      pattern: !ruby/regexp /es\ by\ shailan\ \(http:\/\/metinsaylan\.com\)\ v(?<v>[\d\.]+)/i
+      version: true
+  duracelltomi-google-tag-manager:
+    QueryParameter:
+      files:
+      - js/gtm4wp-form-move-tracker.js
+      version: true
   dynamic-content-gallery-plugin:
     Comment:
       pattern: !ruby/regexp /Dynamic Content Gallery plugin version (?<v>[\d\.]+)/i
@@ -3813,6 +3895,10 @@ plugins:
       class: BodyPattern
       path: languages/easingslider.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Easing\ Slider\ (?<v>[\d\.]+)/i
+      version: true
+  easy-adsense-lite:
+    Comment:
+      pattern: !ruby/regexp /Easy\ Plugin\ for\ AdSense\ V(?<v>[\d\.]+)/i
       version: true
   easy-blog-ideas:
     TranslationFile:
@@ -3867,6 +3953,23 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Facebook Like Thumbnail \(v(?<v>[\d\.]+)\)/i
       version: true
+  flash-album-gallery:
+    Comment:
+      pattern: !ruby/regexp /<meta\ name='Grand\ Flagallery'\ content='(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - assets/flagallery.css
+      - assets/script.js
+      version: true
+  form-maker:
+    QueryParameter:
+      files:
+      - css/jquery-ui.custom.css
+      - css/form_maker_frontend.css
+      - css/fm-animate.css
+      - js/main_div_front_end.js
+      version: true
   gigpress:
     Comment:
       pattern: !ruby/regexp /Generated by GigPress (?<v>[\d\.]+)/i
@@ -3901,6 +4004,10 @@ plugins:
       pattern: !ruby/regexp /report\.php\?ver=(?<v>[\d\.^&]+)\&/i
       version: true
       confidence: 80
+  grand-media:
+    Comment:
+      pattern: !ruby/regexp /<meta\ name='GmediaGallery'\ version='(?<v>[\d\.]+)/i
+      version: true
   gravityforms:
     Changelog:
       path: change_log.txt
@@ -3968,9 +4075,30 @@ plugins:
   login-logo:
     Comment:
       pattern: !ruby/regexp /Login Logo plugin for WordPress/i
+  login-with-ajax:
+    QueryParameter:
+      files:
+      - widget/widget.css
+      - widget/login-with-ajax.js
+      version: true
+  mp3-jplayer:
+    QueryParameter:
+      files:
+      - css/dark.css
+      version: true
   news-ticker:
     Comment:
       pattern: !ruby/regexp /START TICKER VER (?<v>[\d\.]+)/i
+      version: true
+  newsletter:
+    QueryParameter:
+      files:
+      - subscription/style.css
+      - subscription/validate.js
+      version: true
+  nextcellent-gallery-nextgen-legacy:
+    Comment:
+      pattern: !ruby/regexp /<meta name="NextGEN" version="(?<v>[\d\.]+)"/i
       version: true
   nextgen-gallery:
     Comment:
@@ -4007,6 +4135,36 @@ plugins:
       files:
       - js/panopress.js
       - css/panopress.css
+      version: true
+  photo-gallery:
+    QueryParameter:
+      files:
+      - css/bwg_frontend.css
+      - css/jquery.mCustomScrollbar.css
+      - js/bwg_frontend.js
+      - js/jquery.mobile.js
+      - js/jquery.mCustomScrollbar.concat.min.js
+      - js/bwg_gallery_box.js
+      version: true
+  pinterest-pin-it-button:
+    QueryParameter:
+      files:
+      - css/public.css
+      version: true
+  platinum-seo-pack:
+    Comment:
+      pattern: !ruby/regexp /platinum\ seo\ pack\ (?<v>[\d\.]+)/i
+      version: true
+  pretty-link:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/pretty-link.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pretty\ Links\ (?<v>[\d\.]+)/i
+      version: true
+  profile-builder:
+    QueryParameter:
+      files:
+      - assets/css/style-front-end.css
       version: true
   q-and-a:
     Comment:
@@ -4070,9 +4228,35 @@ plugins:
       - res/css/language-selector.css.gzip
       - res/js/jquery.cookie.js
       version: true
+  spider-event-calendar:
+    QueryParameter:
+      files:
+      - elements/calendar.js
+      - elements/calendar-setup.js
+      - elements/calendar_function.js
+      - elements/calendar-jos.css
+      version: true
+  the-events-calendar:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/the-events-calendar.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ The\ Events\ Calendar\ (?<v>[\d\.]+)/i
+      version: true
+  theme-my-login:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/theme-my-login.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Theme\ My\ Login\ (?<v>[\d\.]+)/i
+      version: true
   ultimate-google-analytics:
     Comment:
       pattern: !ruby/regexp /Ultimate Google Analytics plugin v(?<v>[\d\.]+):/i
+      version: true
+  video-embed-thumbnail-generator:
+    QueryParameter:
+      files:
+      - video-js/kg-video-js-skin.css
+      - css/kgvid_styles.css
       version: true
   vipers-video-quicktags:
     Comment:
@@ -4088,9 +4272,37 @@ plugins:
       pattern: !ruby/regexp /W3 Total Cache\/(?<v>[\d\.]+)/i
       version: true
       confidence: 80
+  wassup:
+    Comment:
+      pattern: !ruby/regexp /<p\ class="small">\ WassUp\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/wassup-widget.css
+      version: true
   WeatherIcon:
     Comment:
       pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>[\d\.]+) \|/i
+      version: true
+  woocommerce:
+    QueryParameter:
+      files:
+      - assets/css/woocommerce-layout.css
+      - assets/css/woocommerce-smallscreen.css
+      - assets/css/woocommerce.css
+      - assets/js/frontend/add-to-cart.min.js
+      - assets/js/frontend/woocommerce.min.js
+      - assets/js/frontend/cart-fragments.min.js
+      version: true
+    MetaGenerator:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      pattern: !ruby/regexp /WooCommerce (?<v>[\d\.]+)/i
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/woocommerce.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WooCommerce\ (?<v>[\d\.]+)/i
       version: true
   woocommerce-follow-up-emails:
     Changelog:
@@ -4122,6 +4334,14 @@ plugins:
       pattern: !ruby/regexp '/optimized with the Yoast(?: WordPress)? SEO plugin v(?<v>[^\s]+)
         -|\/ Yoast WordPress SEO plugin\./i'
       version: true
+  wordpress-simple-paypal-shopping-cart:
+    Comment:
+      pattern: !ruby/regexp /WP\ Simple\ Shopping\ Cart\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - wp_shopping_cart_style.css
+      version: true
   wordpress-social-login:
     Comment:
       pattern: !ruby/regexp /WordPress Social Login (?<v>[\d\.]+)./i
@@ -4137,6 +4357,17 @@ plugins:
   wp-google-fonts:
     Comment:
       pattern: !ruby/regexp /by Wordpress Google Fonts/i
+  wp-maintenance-mode:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-maintenance-mode-sv_SE.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ WP\ Maintenance\ Mode\ (?<v>[\d\.]+)/i
+      version: true
+  wp-members:
+    QueryParameter:
+      files:
+      - css/generic-no-float.css
+      version: true
   wp-piwik:
     Comment:
       pattern: !ruby/regexp /\A(?:End )?Piwik/i
@@ -4146,6 +4377,15 @@ plugins:
   wp-rocket:
     Comment:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
+  wp-socializer:
+    Comment:
+      pattern: !ruby/regexp /WP\ Socializer\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - public/css/wp-socializer.min.css
+      - public/js/wp-socializer.min.js
+      version: true
   wp-spamfree:
     Comment:
       pattern: !ruby/regexp /WP-SpamFree v(?<v>[\d\.]+)/i
@@ -4156,9 +4396,31 @@ plugins:
     HeaderPattern:
       header: WP-Super-Cache
       pattern: !ruby/regexp /supercache/i
+  wp-table-reloaded:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-table-reloaded-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\-Table\ Reloaded\ v(?<v>[\d\.]+)/i
+      version: true
   wptouch:
     Comment:
       pattern: !ruby/regexp '/Powered by WPtouch: (?<v>[\d\.]+)/i'
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wptouch.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ WPtouch\ Mobile\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
+  wysija-newsletters:
+    QueryParameter:
+      files:
+      - css/validationEngine.jquery.css
+      version: true
+  yikes-inc-easy-mailchimp-extender:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/yikes-inc-easy-mailchimp-extender.pot
+      pattern: !ruby/regexp /sion:\ yikes\-inc\-easy\-mailchimp\-extender\ (?<v>[\d\.]+)/i
       version: true
   youtube-channel-gallery:
     StyleComment:
