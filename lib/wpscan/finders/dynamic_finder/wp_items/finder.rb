@@ -52,7 +52,15 @@ module WPScan
           # @param [ Hash ] opts
           #
           # @return [ Array<Plugin>, Array<Theme> ]
-          def aggressive(opts = {})
+          def aggressive(_opts = {})
+            # Disable this as it would make quite a lot of extra requests just to find plugins/themes
+            # Kept the original method below for future implementation
+          end
+
+          # @param [ Hash ] opts
+          #
+          # @return [ Array<Plugin>, Array<Theme> ]
+          def aggressive_(opts = {})
             found = []
 
             aggressive_configs.each do |slug, configs|
