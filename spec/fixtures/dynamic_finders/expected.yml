@@ -5148,7 +5148,7 @@ plugins:
       number: 3.2.1
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''assets/css/font-awesome-ie7.min.css?ver=3.2.1'''
+      - 'http://wp.lab/, Match: ''/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1'''
     QueryParameter:
       number: 3.2.1
       found_by: Query Parameter (Passive Detection)
@@ -5888,7 +5888,7 @@ plugins:
       found_by: Query Parameter (Passive Detection)
       confidence: 20
       interesting_entries:
-      - "//wp.lab/wp-content/plugins/sportspress/assets/css/sportspress.css?ver=2.5.4"
+      - http://wp.lab/wp-content/plugins/sportspress/assets/css/sportspress.css?ver=2.5.4
       - http://wp.lab/wp-content/plugins/sportspress/assets/js/sportspress.js?ver=2.5.4
     MetaTag:
       number: 2.5.4

@@ -4046,7 +4046,7 @@ plugins:
       version: true
   font-awesome:
     Comment:
-      pattern: !ruby/regexp /assets\/css\/font\-awesome\-ie7\.min\.css\?ver=(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /\/font\-awesome\/assets\/css\/font\-awesome\-ie7\.min\.css\?ver=(?<v>[\d\.]+)/i
       version: true
     QueryParameter:
       files:
