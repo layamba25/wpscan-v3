@@ -4000,9 +4000,294 @@ plugins:
       - fancybox/jquery.fancybox-1.3.8.min.css
       - fancybox/jquery.fancybox-1.3.8.min.js
       version: true
+  easy-featured-images:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/easy-featured-images-hu_HU.po
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Easy\ Featured\ Images\ v(?<v>[\d\.]+)/i
+      version: true
+  easy-heads-up-bar:
+    QueryParameter:
+      files:
+      - css/ehu.css
+      - js/ehu.js
+      version: true
+  easy-iban:
+    QueryParameter:
+      files:
+      - public/css/easy-iban-public.css
+      - public/js/easy-iban-public.js
+      - public/js/jquery.getParams.js
+      version: true
+  easy-image-collage:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
+  easy-lazy-loader:
+    QueryParameter:
+      files:
+      - js/easy-lazy-loader.min.js
+      version: true
+  easy-menu-manager-wpzest:
+    QueryParameter:
+      files:
+      - css/extra.min.css
+      version: true
+  easy-newsletter-signups:
+    QueryParameter:
+      files:
+      - "/css/wpens-style.css"
+      - "/js/wpens-public.js"
+      version: true
+  easy-nivo-slider:
+    QueryParameter:
+      files:
+      - css/easy-nivo-slider.css
+      version: true
+  easy-panorama:
+    QueryParameter:
+      files:
+      - public/css/paver.min.css
+      - public/js/jquery.paver.min.js
+      - public/js/jquery.ba-throttle-debounce.min.js
+      - public/js/jquery.init.js
+      version: true
+  easy-photo-album:
+    QueryParameter:
+      files:
+      - css/easy-photo-album-template.css
+      version: true
+  easy-plugin-stats:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-plugin-stats.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ Plugin\ Stats\ (?<v>[\d\.]+)/i
+      version: true
+  easy-post-series:
+    QueryParameter:
+      files:
+      - assets/css/styles.css
+      - assets/js/scripts.js
+      version: true
+  easy-pricing-table-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: easy-pricing-table-manager.po
+      pattern: !ruby/regexp /ion:\ Easy\ Pricing\ Table\ Manager\ Version\ (?<v>[\d\.]+)/i
+      version: true
+  easy-primary-category:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-primary-category.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Easy\ Primary\ Category\ (?<v>[\d\.]+)/i
+      version: true
+  easy-property-listings:
+    QueryParameter:
+      files:
+      - lib/assets/css/style-structure.css
+      - lib/assets/css/style.css
+      - lib/assets/js/epl.js
+      - lib/assets/js/jquery-front-scripts.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-property-listings.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Easy\ Property\ Listings\ (?<v>[\d\.]+)/i
+      version: true
+  easy-reader:
+    QueryParameter:
+      files:
+      - css/reader.css
+      - js/reader.js
+      version: true
+  easy-recent-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/easy-recent-posts-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ Recent\ Posts\ v(?<v>[\d\.]+)/i
+      version: true
+  easy-related-posts:
+    QueryParameter:
+      files:
+      - front/assets/css/public.min.css
+      - front/assets/js/public.min.js
+      - front/assets/js/jquery.caption.min.js
+      version: true
+  easy-responsive-tabs:
+    QueryParameter:
+      files:
+      - assets/js/bootstrap-dropdown.js
+      - assets/js/bootstrap-tab.js
+      - assets/js/bootstrap-tabdrop.js
+      - assets/js/ert_js.php
+      version: true
+  easy-retweet:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-retweet.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ Retweet\ (?<v>[\d\.]+)/i
+      version: true
+  easy-scheduled-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/easy-recent-posts-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ Recent\ Posts\ v(?<v>[\d\.]+)/i
+      version: true
+  easy-scroll:
+    QueryParameter:
+      files:
+      - css/easyscroll-main.css
+      - js/easyscroll-main.js
+      version: true
+  easy-similar-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/easy-similar-posts-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ Random\ Posts\ v(?<v>[\d\.]+)/i
+      version: true
+  easy-social-sharing:
+    QueryParameter:
+      files:
+      - assets/css/easy-social-sharing.css
+      - assets/js/frontend/easy-social-sharing.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-social-sharing.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Easy\ Social\ Sharing\ (?<v>[\d\.]+)/i
+      version: true
+  easy-swipebox:
+    QueryParameter:
+      files:
+      - public/css/swipebox.min.css
+      - public/js/jquery.swipebox.min.js
+      - public/js/jquery.init.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-swipebox.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ SwipeBox\ (?<v>[\d\.]+)/i
+      version: true
+  easy-table-of-contents:
+    QueryParameter:
+      files:
+      - vendor/icomoon/style.min.css
+      - assets/css/screen.min.css
+      version: true
+  easy-taxonomy-support:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/ez-taxonomy-support.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Easy\ Taxonomy\ Support\ (?<v>[\d\.]+)/i
+      version: true
+  easy-testimonial-rotator:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-testimonial-rotator.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Easy\ Testimonial\ Rotator\ (?<v>[\d\.]+)/i
+      version: true
+  easy-timer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-timer-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Easy\ Timer\ (?<v>[\d\.]+)/i
+      version: true
+  easy-toolbox:
+    Comment:
+      pattern: !ruby/regexp /rsionFinder\ use\ easytoolbox\.net\ version\ (?<v>[\d\.]+)/i
+      version: true
   easy-video-player:
     Comment:
       pattern: !ruby/regexp /ated\ with\ the\ Easy\ Video\ Player\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  easy-widget-columns:
+    QueryParameter:
+      files:
+      - public/css/easy-widget-columns-public.css
+      version: true
+  easy-youtube-gallery:
+    QueryParameter:
+      files:
+      - assets/lib/magnific-popup/magnific-popup.min.css
+      - assets/css/eytg.css
+      - assets/lib/magnific-popup/jquery.magnific-popup.min.js
+      version: true
+  easyevent:
+    QueryParameter:
+      files:
+      - public/css/easyevent-public.css
+      - public/js/easyevent-public.js
+      version: true
+  easyreservations:
+    QueryParameter:
+      files:
+      - js/both.js
+      version: true
+  ecwid-widgets-avalanche:
+    QueryParameter:
+      files:
+      - inc/css/styles.css
+      - inc/js/scripts.js
+      version: true
+  edd-ajax-filters:
+    QueryParameter:
+      files:
+      - assets/css/animate.min.css
+      - assets/css/edd-ajax-filters.min.css
+      - assets/js/edd-ajax-filters.min.js
+      version: true
+  edd-ajax-search:
+    QueryParameter:
+      files:
+      - assets/css/edd-ajax-search.min.css
+      - assets/js/edd-ajax-search.min.js
+      version: true
+  edd-changelog:
+    QueryParameter:
+      files:
+      - edd-changelog.min.css
+      version: true
+  edd-download-info:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/edd-download-info.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ EDD\ Download\ Info\ (?<v>[\d\.]+)/i
+      version: true
+  edd-download-pages:
+    QueryParameter:
+      files:
+      - assets/css/edd-download-pages.min.css
+      version: true
+  edd-infinite-scrolling:
+    QueryParameter:
+      files:
+      - assets/css/animate.min.css
+      - assets/css/edd-infinite-scrolling.min.css
+      - assets/js/edd-infinite-scrolling.min.js
+      version: true
+  edd-paypal-payment:
+    QueryParameter:
+      files:
+      - public/css/paypal-edd-public.css
+      - public/js/paypal-edd-public.js
+      version: true
+  edd-quick-view:
+    QueryParameter:
+      files:
+      - assets/css/edd-quick-view.min.css
+      - assets/js/edd-quick-view.min.js
+      version: true
+  edd-related-downloads-carousel:
+    QueryParameter:
+      files:
+      - css/relcarouself.css
+      version: true
+  edd-related-downloads-carousel-free:
+    QueryParameter:
+      files:
+      - css/relcarouself.css
       version: true
   edit-author-slug:
     TranslationFile:
@@ -4010,10 +4295,65 @@ plugins:
       path: languages/edit-author-slug.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Edit\ Author\ Slug\ (?<v>[\d\.]+)/i
       version: true
+  edit-recent-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/edit-recent-posts.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Edit\ Recent\ Posts\ (?<v>[\d\.]+)/i
+      version: true
+  editorial-access-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/editorial-access-manager.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Editorial\ Access\ Manager\ (?<v>[\d\.]+)/i
+      version: true
+  educator:
+    QueryParameter:
+      files:
+      - assets/public/css/base.css
+      version: true
+  effective-bio-boxes:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  eflyermaker-sign-up-form-builder:
+    QueryParameter:
+      files:
+      - assets/css/animate.css
+      - public/assets/css/efmfb_public.css
+      - assets/js/efmfb_globals.js
+      - assets/js/efmfb_popup_options.js
+      - public/assets/js/efmfb_public.js
+      version: true
   eg-attachments:
     QueryParameter:
       files:
       - css/eg-attachments.css
+      version: true
+  egypt-dollarprice:
+    QueryParameter:
+      files:
+      - assets/css/plugin.css
+      - assets/js/plugin.js
+      version: true
+  eight-day-week-print-workflow:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/eight-day-week.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Eight\ Day\ Week\ (?<v>[\d\.]+)/i
+      version: true
+  eight-degree-easy-tags:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  eight-degree-posts-list:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/frontend.js
       version: true
   email-address-encoder:
     TranslationFile:

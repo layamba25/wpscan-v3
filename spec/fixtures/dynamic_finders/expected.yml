@@ -5084,12 +5084,378 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.css?ver=1.6.2
       - http://wp.lab/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.8.min.js?ver=1.6.2
+  easy-featured-images:
+    TranslationFile:
+      number: 1.2.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-featured-images/lang/easy-featured-images-hu_HU.po,
+        Match: ''oject-Id-Version: Easy Featured Images v1.2.0'''
+  easy-heads-up-bar:
+    QueryParameter:
+      number: 2.1.7
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-heads-up-bar/css/ehu.css?ver=2.1.7
+      - http://wp.lab/wp-content/plugins/easy-heads-up-bar/js/ehu.js?ver=2.1.7
+  easy-iban:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-iban/public/css/easy-iban-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/easy-iban/public/js/easy-iban-public.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/easy-iban/public/js/jquery.getParams.js?ver=1.0.0
+  easy-image-collage:
+    QueryParameter:
+      number: 1.9.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-image-collage/css/public.css?ver=1.9.0
+      - http://wp.lab/wp-content/plugins/easy-image-collage/js/public.js?ver=1.9.0
+  easy-lazy-loader:
+    QueryParameter:
+      number: 1.1.2
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-lazy-loader/js/easy-lazy-loader.min.js?ver=1.1.2
+  easy-menu-manager-wpzest:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-menu-manager-wpzest/css/extra.min.css?ver=1.0.1
+  easy-newsletter-signups:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-newsletter-signups//css/wpens-style.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/easy-newsletter-signups//js/wpens-public.js?ver=1.0.1
+  easy-nivo-slider:
+    QueryParameter:
+      number: 1.6.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-nivo-slider/css/easy-nivo-slider.css?ver=1.6.1
+  easy-panorama:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      confidence: 40
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-panorama/public/css/paver.min.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/easy-panorama/public/js/jquery.paver.min.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/easy-panorama/public/js/jquery.ba-throttle-debounce.min.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/easy-panorama/public/js/jquery.init.js?ver=1.0.2
+  easy-photo-album:
+    QueryParameter:
+      number: 1.3.7
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-photo-album/css/easy-photo-album-template.css?ver=1.3.7
+  easy-plugin-stats:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-plugin-stats/languages/easy-plugin-stats.pot,
+        Match: ''"Project-Id-Version: Easy Plugin Stats 1.0.0'''
+  easy-post-series:
+    QueryParameter:
+      number: 1.1.2
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-post-series/assets/css/styles.css?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/easy-post-series/assets/js/scripts.js?ver=1.1.2
+  easy-pricing-table-manager:
+    TranslationFile:
+      number: 1.2.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-pricing-table-manager/easy-pricing-table-manager.po,
+        Match: ''ion: Easy Pricing Table Manager Version 1.2.1'''
+  easy-primary-category:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-primary-category/languages/easy-primary-category.pot,
+        Match: ''oject-Id-Version: Easy Primary Category 1.1'''
+  easy-property-listings:
+    QueryParameter:
+      number: 3.1.19
+      found_by: Query Parameter (Passive Detection)
+      confidence: 40
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-property-listings/lib/assets/css/style-structure.css?ver=3.1.19
+      - http://wp.lab/wp-content/plugins/easy-property-listings/lib/assets/css/style.css?ver=3.1.19
+      - http://wp.lab/wp-content/plugins/easy-property-listings/lib/assets/js/epl.js?ver=3.1.19
+      - http://wp.lab/wp-content/plugins/easy-property-listings/lib/assets/js/jquery-front-scripts.js?ver=3.1.19
+    TranslationFile:
+      number: 3.1.19
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-property-listings/languages/easy-property-listings.pot,
+        Match: ''ject-Id-Version: Easy Property Listings 3.1.19'''
+  easy-reader:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-reader/css/reader.css?ver=0.1
+      - http://wp.lab/wp-content/plugins/easy-reader/js/reader.js?ver=0.1
+  easy-recent-posts:
+    TranslationFile:
+      number: '15.01'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-recent-posts/langs/easy-recent-posts-de_DE.po,
+        Match: ''"Project-Id-Version: Easy Recent Posts v15.01'''
+  easy-related-posts:
+    QueryParameter:
+      number: 2.0.2
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-related-posts/front/assets/css/public.min.css?ver=2.0.2
+      - http://wp.lab/wp-content/plugins/easy-related-posts/front/assets/js/public.min.js?ver=2.0.2
+      - http://wp.lab/wp-content/plugins/easy-related-posts/front/assets/js/jquery.caption.min.js?ver=2.0.2
+  easy-responsive-tabs:
+    QueryParameter:
+      number: '3.1'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 40
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-responsive-tabs/assets/js/bootstrap-dropdown.js?ver=3.1
+      - http://wp.lab/wp-content/plugins/easy-responsive-tabs/assets/js/bootstrap-tab.js?ver=3.1
+      - http://wp.lab/wp-content/plugins/easy-responsive-tabs/assets/js/bootstrap-tabdrop.js?ver=3.1
+      - http://wp.lab/wp-content/plugins/easy-responsive-tabs/assets/js/ert_js.php?ver=3.1
+  easy-retweet:
+    TranslationFile:
+      number: 3.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-retweet/languages/easy-retweet.pot,
+        Match: ''"Project-Id-Version: Easy Retweet 3.1.1'''
+  easy-scheduled-posts:
+    TranslationFile:
+      number: '15.01'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-scheduled-posts/langs/easy-recent-posts-de_DE.po,
+        Match: ''"Project-Id-Version: Easy Recent Posts v15.01'''
+  easy-scroll:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-scroll/css/easyscroll-main.css?ver=0.1
+      - http://wp.lab/wp-content/plugins/easy-scroll/js/easyscroll-main.js?ver=0.1
+  easy-similar-posts:
+    TranslationFile:
+      number: '15.01'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-similar-posts/langs/easy-similar-posts-de_DE.po,
+        Match: ''"Project-Id-Version: Easy Random Posts v15.01'''
+  easy-social-sharing:
+    QueryParameter:
+      number: 1.3.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-social-sharing/assets/css/easy-social-sharing.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/easy-social-sharing/assets/js/frontend/easy-social-sharing.min.js?ver=1.3.0
+    TranslationFile:
+      number: 1.3.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-social-sharing/languages/easy-social-sharing.pot,
+        Match: ''Project-Id-Version: Easy Social Sharing 1.3.0'''
+  easy-swipebox:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-swipebox/public/css/swipebox.min.css?ver=1.1.0
+      - http://wp.lab/wp-content/plugins/easy-swipebox/public/js/jquery.swipebox.min.js?ver=1.1.0
+      - http://wp.lab/wp-content/plugins/easy-swipebox/public/js/jquery.init.js?ver=1.1.0
+    TranslationFile:
+      number: 1.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-swipebox/languages/easy-swipebox.pot,
+        Match: ''"Project-Id-Version: Easy SwipeBox 1.1.0'''
+  easy-table-of-contents:
+    QueryParameter:
+      number: '1.2'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=1.2
+      - http://wp.lab/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=1.2
+  easy-taxonomy-support:
+    TranslationFile:
+      number: 1.0.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-taxonomy-support/lang/ez-taxonomy-support.pot,
+        Match: ''oject-Id-Version: Easy Taxonomy Support 1.0.2'''
+  easy-testimonial-rotator:
+    TranslationFile:
+      number: 1.0.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-testimonial-rotator/languages/easy-testimonial-rotator.pot,
+        Match: ''ct-Id-Version: Easy Testimonial Rotator 1.0.2'''
+  easy-timer:
+    TranslationFile:
+      number: '3.9'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/easy-timer/languages/easy-timer-fr_FR.po,
+        Match: ''"Project-Id-Version: Easy Timer 3.9'''
+  easy-toolbox:
+    Comment:
+      number: '1.32'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''rsionFinder use easytoolbox.net version 1.32'''
   easy-video-player:
     Comment:
       number: 1.1.7
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''ated with the Easy Video Player plugin v1.1.7'''
+  easy-widget-columns:
+    QueryParameter:
+      number: 1.2.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-widget-columns/public/css/easy-widget-columns-public.css?ver=1.2.1
+  easy-youtube-gallery:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-youtube-gallery/assets/lib/magnific-popup/magnific-popup.min.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/easy-youtube-gallery/assets/css/eytg.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/easy-youtube-gallery/assets/lib/magnific-popup/jquery.magnific-popup.min.js?ver=1.0.4
+  easyevent:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easyevent/public/css/easyevent-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/easyevent/public/js/easyevent-public.js?ver=1.0.0
+  easyreservations:
+    QueryParameter:
+      number: '4.0'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easyreservations/js/both.js?ver=4.0
+  ecwid-widgets-avalanche:
+    QueryParameter:
+      number: 1.6.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ecwid-widgets-avalanche/inc/css/styles.css?ver=1.6.1
+      - http://wp.lab/wp-content/plugins/ecwid-widgets-avalanche/inc/js/scripts.js?ver=1.6.1
+  edd-ajax-filters:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-ajax-filters/assets/css/animate.min.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/edd-ajax-filters/assets/css/edd-ajax-filters.min.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/edd-ajax-filters/assets/js/edd-ajax-filters.min.js?ver=1.0.5
+  edd-ajax-search:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-ajax-search/assets/css/edd-ajax-search.min.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/edd-ajax-search/assets/js/edd-ajax-search.min.js?ver=1.0.5
+  edd-changelog:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-changelog/edd-changelog.min.css?ver=1.1
+  edd-download-info:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/edd-download-info/languages/edd-download-info.pot,
+        Match: ''"Project-Id-Version: EDD Download Info 1.1'''
+  edd-download-pages:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-download-pages/assets/css/edd-download-pages.min.css?ver=1.0.4
+  edd-infinite-scrolling:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-infinite-scrolling/assets/css/animate.min.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/edd-infinite-scrolling/assets/css/edd-infinite-scrolling.min.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/edd-infinite-scrolling/assets/js/edd-infinite-scrolling.min.js?ver=1.0.4
+  edd-paypal-payment:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-paypal-payment/public/css/paypal-edd-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/edd-paypal-payment/public/js/paypal-edd-public.js?ver=1.0.0
+  edd-quick-view:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-quick-view/assets/css/edd-quick-view.min.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/edd-quick-view/assets/js/edd-quick-view.min.js?ver=1.0.5
+  edd-related-downloads-carousel:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-related-downloads-carousel/css/relcarouself.css?ver=1.0
+  edd-related-downloads-carousel-free:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/edd-related-downloads-carousel-free/css/relcarouself.css?ver=1.0
   edit-author-slug:
     TranslationFile:
       number: 1.5.2
@@ -5097,6 +5463,45 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/edit-author-slug/languages/edit-author-slug.pot,
         Match: ''"Project-Id-Version: Edit Author Slug 1.5.2'''
+  edit-recent-posts:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/edit-recent-posts/lang/edit-recent-posts.pot,
+        Match: ''"Project-Id-Version: Edit Recent Posts 1.0'''
+  editorial-access-manager:
+    TranslationFile:
+      number: 0.3.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/editorial-access-manager/languages/editorial-access-manager.pot,
+        Match: ''ct-Id-Version: Editorial Access Manager 0.3.2'''
+  educator:
+    QueryParameter:
+      number: 2.0.3
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/educator/assets/public/css/base.css?ver=2.0.3
+  effective-bio-boxes:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      confidence: 10
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/effective-bio-boxes/css/style.css?ver=1.0
+  eflyermaker-sign-up-form-builder:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      confidence: 50
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/eflyermaker-sign-up-form-builder/assets/css/animate.css?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/eflyermaker-sign-up-form-builder/public/assets/css/efmfb_public.css?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/eflyermaker-sign-up-form-builder/assets/js/efmfb_globals.js?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/eflyermaker-sign-up-form-builder/assets/js/efmfb_popup_options.js?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/eflyermaker-sign-up-form-builder/public/assets/js/efmfb_public.js?ver=1.0.6
   eg-attachments:
     QueryParameter:
       number: 2.1.3
@@ -5104,6 +5509,37 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/eg-attachments/css/eg-attachments.css?ver=2.1.3
+  egypt-dollarprice:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/egypt-dollarprice/assets/css/plugin.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/egypt-dollarprice/assets/js/plugin.js?ver=1.0.1
+  eight-day-week-print-workflow:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/eight-day-week-print-workflow/languages/eight-day-week.pot,
+        Match: ''"Project-Id-Version: Eight Day Week 1.0.0'''
+  eight-degree-easy-tags:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/eight-degree-easy-tags/css/frontend.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/eight-degree-easy-tags/js/frontend.js?ver=1.0.0
+  eight-degree-posts-list:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/eight-degree-posts-list/css/frontend.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/eight-degree-posts-list/js/frontend.js?ver=1.0.0
   email-address-encoder:
     TranslationFile:
       number: 1.0.5
