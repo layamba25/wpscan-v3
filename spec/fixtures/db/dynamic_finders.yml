@@ -958,6 +958,18 @@ plugins:
       files:
       - includes/css/arconix-shortcodes.min.css
       version: true
+  aretk-crea:
+    QueryParameter:
+      files:
+      - public/css/jquery-public-ui.css
+      - public/css/aretk-crea-public.css
+      - public/css/jquery.bxslider.css
+      - public/css/nouislider.min.css
+      - public/js/accordion-public.js
+      - public/js/jquery.bxslider.js
+      - public/js/nouislider.min.js
+      - public/js/modernizr.js
+      version: true
   ari-fancy-lightbox:
     QueryParameter:
       files:
@@ -3692,6 +3704,12 @@ plugins:
       path: languages/custom-post-type-parents.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ Custom\ Post\ Type\ Parents\ (?<v>[\d\.]+)/i
       version: true
+  custom-registration-form-builder-with-submission-manager:
+    QueryParameter:
+      files:
+      - public/css/theme_rm_matchmytheme.css
+      - public/css/style_rm_front_end.css
+      version: true
   custom-twitter-feeds:
     QueryParameter:
       files:
@@ -4630,11 +4648,11 @@ plugins:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
-      pattern: !ruby/regexp /Event\ Espresso\ Version\ (?<v>[\d\.]+)\.decaf/i
+      pattern: !ruby/regexp /Event\ Espresso\ Version\ (?<v>[\d\.]+\.decaf)/i
     QueryParameter:
       files:
       - core/templates/global_assets/css/espresso_default.css
-      pattern: !ruby/regexp /(?:v|ver)\=(?<v>[\d\.]+)\.decaf/i
+      pattern: !ruby/regexp /(?:v|ver)\=(?<v>[\d\.]+\.decaf)/i
       version: true
   event-espresso-free:
     QueryParameter:
@@ -4642,13 +4660,13 @@ plugins:
       - templates/event_espresso_style.css
       - scripts/jquery.pajinate.min.js
       - scripts/pagination.js
-      pattern: !ruby/regexp /(?:v|ver)\=(?<v>[\d\.]+)\.L/i
+      pattern: !ruby/regexp /(?:v|ver)\=(?<v>[\d\.]+\.L)/i
       version: true
     MetaTag:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
-      pattern: !ruby/regexp /Event\ Espresso\ Version\ (?<v>[\d\.a-z]+)\.L/i
+      pattern: !ruby/regexp /Event\ Espresso\ Version\ (?<v>[\d\.a-z]+\.L)/i
   event-importer-for-meetup-and-the-events-calendar:
     TranslationFile:
       class: BodyPattern
@@ -4994,6 +5012,11 @@ plugins:
       files:
       - css/feedzy-rss-feeds.css
       version: true
+  filterable-portfolio:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
   final-tiles-grid-gallery-lite:
     QueryParameter:
       files:
@@ -5013,6 +5036,11 @@ plugins:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  flow-flow-social-streams:
+    QueryParameter:
+      files:
+      - js/require-utils.js
       version: true
   font:
     QueryParameter:
@@ -5057,6 +5085,17 @@ plugins:
       - css/form_maker_frontend.css
       - css/fm-animate.css
       - js/main_div_front_end.js
+      version: true
+  frontend-dashboard:
+    QueryParameter:
+      files:
+      - common/assets/css/bootstrap.css
+      - common/assets/css/font-awesome.css
+      - common/assets/css/sweetalert2.css
+      - common/assets/css/animate.css
+      - common/assets/css/flatpickr.css
+      - common/assets/css/common-style.css
+      - admin/assets/fed_global_admin_style.css
       version: true
   gigpress:
     Comment:
@@ -5168,6 +5207,12 @@ plugins:
   hotjar-connecticator:
     Comment:
       pattern: !ruby/regexp /Hotjar Tracking Code for/i
+  hubwoo-integration:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/hubwoo-en_US.po
+      pattern: !ruby/regexp /ersion:\ Hubspot\ WooCommerce\ Integration\ (?<v>[\d\.]+)/i
+      version: true
   hueman-addons:
     TranslationFile:
       class: BodyPattern
@@ -5194,6 +5239,22 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Powered by iMP Download v(?<v>[\d\.]+)/i
       version: true
+  import-facebook-events:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/import-facebook-events.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Import\ Facebook\ Events\ (?<v>[\d\.]+)/i
+      version: true
+  indieweb-post-kinds:
+    QueryParameter:
+      files:
+      - css/kind.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/post_kinds.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ Kinds\ (?<v>[\d\.]+)/i
+      version: true
   instagram-feed:
     QueryParameter:
       files:
@@ -5204,6 +5265,11 @@ plugins:
     QueryParameter:
       files:
       - assets/css/instag-slider.css
+      version: true
+  intelliwidget-per-page-featured-posts-and-menus:
+    QueryParameter:
+      files:
+      - templates/intelliwidget.css
       version: true
   ip-geo-block:
     TranslationFile:
@@ -5274,6 +5340,12 @@ plugins:
       path: languages/kiwi-social-share.pot
       pattern: !ruby/regexp /"(?<v>[\d\.]+)/i
       version: true
+  komito-analytics:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/komito-analytics-ru_RU.po
+      pattern: !ruby/regexp /to\-analytics\-code\.pot\ \(Komito\ Analytics\ (?<v>[\d\.]+)/i
+      version: true
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i
@@ -5329,6 +5401,12 @@ plugins:
       path: languages/login-customizer.pot
       pattern: !ruby/regexp /d\-Version:\ Custom\ Login\ Page\ Customizer\ (?<v>[\d\.]+)/i
       version: true
+  login-designer:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Login\ Designer\ (?<v>[\d\.]+)/i
   login-logo:
     Comment:
       pattern: !ruby/regexp /Login Logo plugin for WordPress/i
@@ -5442,6 +5520,21 @@ plugins:
   nextcellent-gallery-nextgen-legacy:
     Comment:
       pattern: !ruby/regexp /<meta name="NextGEN" version="(?<v>[\d\.]+)"/i
+      version: true
+  nextgen-facebook:
+    QueryParameter:
+      files:
+      - cache/sharing-styles-id-1.min.css
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /NGFB\ (?<v>[\d\.]+)\/G/i
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nextgen-facebook-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ NextGEN\ Facebook\ (?<v>[\d\.]+)/i
       version: true
   nextgen-gallery:
     Comment:
@@ -5661,6 +5754,19 @@ plugins:
     Comment:
       pattern: !ruby/regexp /te\ is\ optimized\ with\ the\ Schema\ plugin\ v(?<v>[\d\.]+)/i
       version: true
+  seriously-simple-podcasting:
+    QueryParameter:
+      files:
+      - assets/css/icon_fonts.css
+      - assets/fonts/Gizmo/gizmo.css
+      - assets/css/frontend.css
+      - assets/css/player.css
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Seriously\ Simple\ Podcasting\ (?<v>[\d\.]+)/i
   shareaholic:
     MetaTag:
       class: Xpath
@@ -5729,6 +5835,12 @@ plugins:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  site-reviews:
+    QueryParameter:
+      files:
+      - assets/css/twenty-fifteen.css
+      - assets/js/site-reviews.js
       version: true
   sitemap:
     QueryParameter:
@@ -5826,6 +5938,12 @@ plugins:
       files:
       - assets/css/style.css
       version: true
+  storemapper:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-storemapper.pot
+      pattern: !ruby/regexp /t\-Id\-Version:\ Storemapper\ for\ WordPress\ (?<v>[\d\.]+)/i
+      version: true
   stream:
     Comment:
       pattern: !ruby/regexp /Stream\ WordPress\ user\ activity\ plugin\ v(?<v>[\d\.]+)/i
@@ -5843,6 +5961,16 @@ plugins:
       - js/front/facebook/sdk.js
       - js/front/facebook/commenting.js
       - js/front/sharing/sharing.js
+      version: true
+  syndication-links:
+    QueryParameter:
+      files:
+      - css/syn.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/syndication-links.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Syndication\ Links\ (?<v>[\d\.]+)/i
       version: true
   table-maker:
     QueryParameter:
@@ -5982,6 +6110,12 @@ plugins:
       files:
       - css/wassup-widget.css
       version: true
+  wc-age-verification:
+    TranslationFile:
+      class: BodyPattern
+      path: language/cav-en_US.po
+      pattern: !ruby/regexp /d\-Version:\ Wc\ Checkout\ Age\ Verification\ (?<v>[\d\.]+)/i
+      version: true
   wc-gallery:
     QueryParameter:
       files:
@@ -6021,6 +6155,22 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Facebook\ Open\ Graph,\ Google\+\ and\ Twitter\ Card\
         Tags\ (?<v>[\d\.]+)/i
+      version: true
+  woo-better-usability:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/woo-better-usability.pot
+      pattern: !ruby/regexp /d\-Version:\ WooCommerce\ Better\ Usability\ (?<v>[\d\.]+)/i
+      version: true
+  woo-paypal-gateway:
+    QueryParameter:
+      files:
+      - public/css/woo-paypal-gateway-public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woo-paypal-gateway.pot
+      pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce\ PayPal\ Gateway\ (?<v>[\d\.]+)/i
       version: true
   woocommerce:
     QueryParameter:
@@ -6205,6 +6355,12 @@ plugins:
   wp-google-fonts:
     Comment:
       pattern: !ruby/regexp /by Wordpress Google Fonts/i
+  wp-healthcheck:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-healthcheck.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Healthcheck\ (?<v>[\d\.]+)/i
+      version: true
   wp-hide-post:
     QueryParameter:
       files:
@@ -6255,6 +6411,17 @@ plugins:
       files:
       - css/generic-no-float.css
       version: true
+  wp-messenger-customer-chat:
+    QueryParameter:
+      files:
+      - public/css/wpmccp-public.css
+      - public/js/wpmccp-public.js
+      version: true
+  wp-multilang:
+    QueryParameter:
+      files:
+      - assets/styles/main.min.css
+      version: true
   wp-paginate:
     QueryParameter:
       files:
@@ -6296,6 +6463,10 @@ plugins:
   wp-rocket:
     Comment:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
+  wp-seo-pro:
+    Comment:
+      pattern: !ruby/regexp /start\ seo\ pro\ for\ wordpress\ (?<v>[\d\.]+)/i
+      version: true
   wp-seo-structured-data-schema:
     Comment:
       pattern: !ruby/regexp /gleton's\ WP\ SEO\ Structured\ Data\ Plugin\ v(?<v>[\d\.]+)/i
@@ -6349,6 +6520,23 @@ plugins:
       class: BodyPattern
       path: languages/wpglobus.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WPGlobus\ (?<v>[\d\.]+)/i
+      version: true
+  wpmbytplayer:
+    QueryParameter:
+      files:
+      - css/mb.YTPlayer.css
+      - js/jquery.mb.YTPlayer.js
+      version: true
+  wpsso:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /WPSSO\ Core\ (?<v>[\d\.]+)\/G/i
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WPSSO\ Core\ (?<v>[\d\.]+)/i
       version: true
   wptouch:
     Comment:
