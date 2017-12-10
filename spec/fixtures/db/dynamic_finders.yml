@@ -5001,21 +5001,70 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /FB2WP\ \-\ (?<v>[\d\.]+)\ Powered\ by\ Mxp\.TW/i
+  featured-post-creative:
+    QueryParameter:
+      files:
+      - assets/css/wpfp-public.css
+      version: true
+  featured-posts-widget:
+    QueryParameter:
+      files:
+      - css/featured-posts-widget.css
+      version: true
   featured-video-plus:
     QueryParameter:
       files:
       - styles/frontend.css
       - js/frontend.min.js
       version: true
+  featuring-countcomments:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="Featuring CountComments"]/@content
+      version: true
+  feed-reading-blogroll:
+    QueryParameter:
+      files:
+      - css/feedreading_blogroll.css
+      version: true
+  feedback-pivotal:
+    QueryParameter:
+      files:
+      - public/css/pivotal-feedback-form-public.css
+      - public/js/pivotal-feedback-form-public.js
+      version: true
+  feedweber:
+    QueryParameter:
+      files:
+      - feedweber.js
+      version: true
   feedzy-rss-feeds:
     QueryParameter:
       files:
       - css/feedzy-rss-feeds.css
       version: true
+  file-away:
+    QueryParameter:
+      files:
+      - lib/js/management.js
+      - lib/js/stats.js
+      version: true
   filterable-portfolio:
     QueryParameter:
       files:
       - assets/css/style.css
+      version: true
+  filterize-gallery:
+    QueryParameter:
+      files:
+      - css/index.css
+      - css/visuallightbox.css
+      - css/vlightbox3.css
+      - css/bootstrap.css
+      - js/controls.js
+      - js/jquery.filterizr.js
+      - js/visuallightbox.min.js
+      - js/vlbdata3.js
       version: true
   final-tiles-grid-gallery-lite:
     QueryParameter:
@@ -5023,24 +5072,176 @@ plugins:
       - scripts/ftg.css
       - scripts/jquery.finalTilesGallery.js
       version: true
+  firedrum-email-marketing:
+    QueryParameter:
+      files:
+      - public/js/scrollTo.js
+      - public/js/firedrum.js
+      version: true
+  fireems-stats:
+    QueryParameter:
+      files:
+      - public/css/fireems-stats-public.css
+      version: true
+  firstform:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/firstform-ja.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ FirstForm\ (?<v>[\d\.]+)/i
+      version: true
+  fixed-circular-navigation-menu:
+    QueryParameter:
+      files:
+      - public/assets/css/circular-nav.css
+      - public/assets/css/cn-options.css
+      - public/assets/js/circular-nav.js
+      version: true
+  fixpress:
+    Comment:
+      pattern: !ruby/regexp /Using\ FixPress\ v(?<v>[\d\.]+)/i
+      version: true
+  flamingtext-logo:
+    Comment:
+      pattern: !ruby/regexp /FlamingText\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  flare:
+    QueryParameter:
+      files:
+      - css/flare.css
+      - js/flare.dev.js
+      version: true
   flash-album-gallery:
     Comment:
-      pattern: !ruby/regexp /<meta\ name='Grand\ Flagallery'\ content='(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /<meta\ name='Grand\ Flagallery'\ content='(?<v>[\d\.]+)'/i
       version: true
     QueryParameter:
       files:
       - assets/flagallery.css
       - assets/script.js
       version: true
+  flat-twitter:
+    QueryParameter:
+      files:
+      - css/lmb-flat-twitter.css
+      - js/lmb-flat-twitter.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/flat-twitter-en_EN.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Flat\ Twitter\ (?<v>[\d\.]+)/i
+      version: true
+  flexi-instagram-feed-lite-instagram-gallery:
+    QueryParameter:
+      files:
+      - client/flexi-social/skins/assets/css/base.css
+      - client/flexi-social/flexy.social.min.js
+      version: true
+  flexmls-idx:
+    QueryParameter:
+      files:
+      - assets/minified/connect.min.js
+      - assets/minified/portal.min.js
+      version: true
+  flexy-breadcrumb:
+    QueryParameter:
+      files:
+      - public/css/flexy-breadcrumb-public.css
+      - public/js/flexy-breadcrumb-public.js
+      version: true
+  flickr-shortcode-importer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/flickr-shortcode-importer.pot
+      pattern: !ruby/regexp /t\-Id\-Version:\ Flickr\ Shortcode\ Importer\ (?<v>[\d\.]+)/i
+      version: true
+  flickr-stream:
+    QueryParameter:
+      files:
+      - css/frontend.min.css
+      - js/frontend.min.js
+      version: true
+  flickr-viewer:
+    QueryParameter:
+      files:
+      - public/css/cws-flickr-gallery-pro-public.css
+      - public/css/lightbox/lightbox.css
+      - public/css/default.css
+      - public/css/component.css
+      - public/js/cws-flickr-gallery-pro-public.js
+      version: true
+  flies:
+    QueryParameter:
+      files:
+      - scripts.js
+      version: true
+  float-to-top-button:
+    Comment:
+      pattern: !ruby/regexp /Float\ to\ Top\ Button\ v(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/float-to-top-button.min.css
+      - js/jquery.scrollUp.min.js
+      - js/float-to-top-button.min.js
+      version: true
+  floatbox-plus:
+    Comment:
+      pattern: !ruby/regexp /Floatbox\ Plus\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - floatbox/floatbox.css
+      - floatbox-play.css
+      - floatbox/floatbox.js
+      - floatbox/options.js
+      version: true
+  floating-nextprev:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/floating-nextprev.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Floating\ NextPrev\ (?<v>[\d\.]+)/i
+      version: true
   floating-social-media-icon:
     QueryParameter:
       files:
       - css/style.css
       version: true
+  floating-top-link:
+    QueryParameter:
+      files:
+      - css/floating-top-link.css
+      - js/floating-top-link.js
+      version: true
+  floating-window-music-player:
+    QueryParameter:
+      files:
+      - inc/player.css
+      - js/load.js
+      version: true
   flow-flow-social-streams:
     QueryParameter:
       files:
       - js/require-utils.js
+      version: true
+  fluid-responsive-slideshow:
+    QueryParameter:
+      files:
+      - css/frs.css
+      - css/frs-position.css
+      - js/frs.js
+      - js/imagesloaded.min.js
+      version: true
+  flush-opcache:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/flush-opcache.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ OPcache\ (?<v>[\d\.]+)/i
+      version: true
+  folding-stats-plus:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/de_DE.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Folding\-Stats\-Plus\ v(?<v>[\d\.]+)/i
       version: true
   font:
     QueryParameter:
@@ -5062,16 +5263,77 @@ plugins:
       files:
       - css/font-awesome.min.css
       version: true
+  fontawesome-anywhere:
+    QueryParameter:
+      files:
+      - css/font-awesome.min.css
+      version: true
+  foobar-notifications-lite:
+    QueryParameter:
+      files:
+      - css/jquery.foobar.lite.css
+      - js/jquery.foobar.lite.min.js
+      version: true
   foobox-image-lightbox:
     QueryParameter:
       files:
       - free/css/foobox.free.min.css
       - free/js/foobox.free.min.js
       version: true
+  food-and-drink-menu:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/food-and-drink-menu.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Food\ and\ Drink\ Menu\ (?<v>[\d\.]+)/i
+      version: true
+  food-truck:
+    QueryParameter:
+      files:
+      - assets/dist/css/main.css
+      - assets/dist/js/main.js
+      version: true
+  footable:
+    QueryParameter:
+      files:
+      - css/footable.core.min.css
+      - js/footable.min.js
+      - js/footable.sort.min.js
+      - js/footable.filter.min.js
+      - js/footable.paginate.min.js
+      version: true
+  football-match-tracker:
+    QueryParameter:
+      files:
+      - assets/css/jquery.custom-scrollbar.css
+      - assets/css/addweb-style.css
+      - assets/font-awesome/css/font-awesome.min.css
+      - assets/js/jquery.custom-scrollbar.js
+      - assets/js/addweb-js.js
+      - assets/js/ref-js.js
+      version: true
+  football-pool:
+    QueryParameter:
+      files:
+      - assets/pool.css
+      - assets/colorbox/colorbox.css
+      - assets/pool.min.js
+      - assets/colorbox/jquery.colorbox-min.js
+      version: true
+  footer-mega-grid-columns:
+    QueryParameter:
+      files:
+      - css/fmgc-css.css
+      version: true
   footer-putter:
     QueryParameter:
       files:
       - styles/footer-credits.css
+      version: true
+  footnotes-for-wordpress:
+    QueryParameter:
+      files:
+      - footnote-voodoo.css
+      - footnote-voodoo.js
       version: true
   forget-about-shortcode-buttons:
     QueryParameter:
@@ -5085,6 +5347,20 @@ plugins:
       - css/form_maker_frontend.css
       - css/fm-animate.css
       - js/main_div_front_end.js
+      version: true
+  form-print-pay:
+    QueryParameter:
+      files:
+      - assets/css/frontend-form-print-pay.css
+      - assets/js/form-pay.js
+      version: true
+  formcraft-form-builder:
+    QueryParameter:
+      files:
+      - assets/css/form.main.css
+      - assets/css/common-elements.css
+      - assets/fontello/css/fcb.css
+      - assets/fontello/css/animation.css
       version: true
   frontend-dashboard:
     QueryParameter:
