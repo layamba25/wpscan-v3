@@ -3686,6 +3686,16 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/charty/js/charty_load_chart.js?ver=1.2
+  chat-bee:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 40
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/chat-bee/assets/css/style.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/chat-bee/assets/js/jquery-cookie.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/chat-bee/assets/js/jquery.nicescroll.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/chat-bee/assets/js/base.js?ver=1.0.0
   chat-for-aesop-story-engine:
     TranslationFile:
       number: 1.0.0
@@ -7267,6 +7277,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/mappress-google-maps-for-wordpress/languages/mappress-google-maps-for-wordpress.pot,
         Match: ''t-Id-Version: MapPress Easy Google Maps 2.47.5'''
+  masburti-flickr-gallery:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/masburti-flickr-gallery/languages/masburti-flickr-gallery-pl_PL.po,
+        Match: ''ct-Id-Version: Masburti Flickr Gallery v1.1'''
   mashsharer:
     QueryParameter:
       number: 3.4.7
@@ -8209,6 +8226,15 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/woo-paypal-gateway/languages/woo-paypal-gateway.pot,
         Match: ''-Id-Version: WooCommerce PayPal Gateway 1.0.1'''
+  woo-smart-quick-view:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 30
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/woo-smart-quick-view/assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/jquery.magnific-popup.min.js?ver=1.0.0
   woocommerce:
     QueryParameter:
       number: 3.2.5
@@ -8628,6 +8654,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wp-table-reloaded/languages/wp-table-reloaded-de_DE.po,
         Match: ''"Project-Id-Version: WP-Table Reloaded v1.9.4'''
+  wp-to-steemit:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/css/posttosteemit-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/js/posttosteemit-public.js?ver=1.0.0
   wpglobus:
     QueryParameter:
       number: 1.9.3
