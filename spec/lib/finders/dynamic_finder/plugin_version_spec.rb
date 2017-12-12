@@ -32,7 +32,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
   configs.each do |finder_class, config|
     finder_super_class = config['class'] ? config['class'] : finder_class
 
-    describe df_tested_class_constant('PluginVersion', slug, finder_class), slow: true do
+    describe df_tested_class_constant('PluginVersion', slug, finder_class) do
       subject(:finder) { described_class.new(plugin) }
       let(:plugin)     { WPScan::Plugin.new(slug, target) }
       let(:target)     { WPScan::Target.new('http://wp.lab/') }
@@ -42,7 +42,9 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
 
       let(:stubbed_response) { { body: '' } }
 
-      describe '#passive' do
+      # TODO: Find out why those are slow.
+      #  - it's due to the QueryParameter finder, as the whole file is rechecked every time
+      describe '#passive', slow: true do
         before do
           stub_request(:get, target.url).to_return(stubbed_response)
 
