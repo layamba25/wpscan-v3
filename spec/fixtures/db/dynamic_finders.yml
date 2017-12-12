@@ -5394,13 +5394,12 @@ plugins:
       version: true
   gallery-lightbox-slider:
     QueryParameter:
-      version: true
       files:
       - css/photobox/photobox.css
       - js/jquery/photobox/jquery.photobox.js
+      version: true
   gallery-made-easy:
     QueryParameter:
-      version: true
       files:
       - js/light-gallery/css/lightgallery.min.css
       - template/style.css
@@ -5412,23 +5411,24 @@ plugins:
       - js/isotope.pkgd.min.js
       - template/masonry.js
       - template/main.js
+      version: true
   game-showcase:
     QueryParameter:
-      version: true
       files:
       - public/css/game-showcase-public.css
       - public/js/game-showcase-public.js
+      version: true
   gaming-delivery-network:
     QueryParameter:
-      version: true
       files:
       - gdninit.js
+      version: true
   gamipress:
     QueryParameter:
-      version: true
       files:
       - assets/css/gamipress.min.css
       - assets/js/gamipress.min.js
+      version: true
   gc-testimonials-to-testimonials:
     TranslationFile:
       class: BodyPattern
