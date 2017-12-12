@@ -34,20 +34,25 @@ module WPScan
             end
           end
 
-          # @param [ Typhoeus::Response ] response
-          # @return [ Hash ]
-          def scan_response(response)
-            found   = {}
-            pattern = %r{
+          # @return [ Regexp ]
+          def path_pattern
+            @path_pattern ||= %r{
               #{Regexp.escape(target.target.plugins_dir)}/
               #{Regexp.escape(target.slug)}/
               (?:#{self.class::FILES.join('|')})\z
             }ix
+          end
 
-            target.target.in_scope_urls(response, '//link|//script') do |url, _tag|
+          # @param [ Typhoeus::Response ] response
+          # @return [ Hash ]
+          def scan_response(response)
+            found = {}
+            xpath = "//link[contains(@href,'#{target.slug}')]|//script[contains(@src,'#{target.slug}')]"
+
+            target.target.in_scope_urls(response, xpath) do |url, _tag|
               uri = Addressable::URI.parse(url)
 
-              next unless uri.path =~ pattern && uri.query&.match(self.class::PATTERN)
+              next unless uri.path =~ path_pattern && uri.query&.match(self.class::PATTERN)
               version = Regexp.last_match[:v].to_s
 
               found[version] ||= []

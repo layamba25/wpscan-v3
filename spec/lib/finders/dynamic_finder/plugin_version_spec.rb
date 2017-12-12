@@ -10,7 +10,6 @@ require 'spec_helper'
 # Furthermore, the fixtures files _passive_all.html are also used by plugins/themes
 # finders in spec/app/finders/plugins|themes to check the items existence from the homepage
 #
-# These specs are slow to run (hence tagged with :slow)
 # In case of a failure, it's recommended to use rspec -e "<Full Description>" while fixing.
 # e.g: rspec -e "WPScan::Finders::PluginVersion::Cardealerpress::HeaderPattern#passive"
 # The -e option can also be used to test all HeaderPattern for example: rspec -e "::HeaderPattern"
@@ -42,9 +41,7 @@ WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |slug, configs
 
       let(:stubbed_response) { { body: '' } }
 
-      # TODO: Find out why those are slow.
-      #  - it's due to the QueryParameter finder, as the whole file is rechecked every time
-      describe '#passive', slow: true do
+      describe '#passive' do
         before do
           stub_request(:get, target.url).to_return(stubbed_response)
 
