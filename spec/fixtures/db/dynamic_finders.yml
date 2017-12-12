@@ -791,6 +791,12 @@ plugins:
       - stylesheets/app.css
       - js/app.js
       version: true
+  animated-category:
+    QueryParameter:
+      files:
+      - public/css/anim-cat-public.css
+      - public/js/anim-cat-public.js
+      version: true
   animated-headline:
     QueryParameter:
       files:
@@ -5468,6 +5474,14 @@ plugins:
       pattern: !ruby/regexp /report\.php\?ver=(?<v>[\d\.^&]+)\&/i
       version: true
       confidence: 80
+  gps-signin:
+    QueryParameter:
+      files:
+      - public/css/gps-signin-public.css
+      - public/js/gps-api-client.js
+      - public/js/gps-platform.js
+      - public/js/gps-signin-public.js
+      version: true
   grand-media:
     Comment:
       pattern: !ruby/regexp /<meta\ name='GmediaGallery'\ version='(?<v>[\d\.]+)/i
@@ -5507,6 +5521,11 @@ plugins:
     QueryParameter:
       files:
       - assets/js/main.min.js
+      version: true
+  idonate:
+    QueryParameter:
+      files:
+      - "/css/idonate.css"
       version: true
   igniteup:
     QueryParameter:
@@ -5776,6 +5795,11 @@ plugins:
       files:
       - css/style.css
       version: true
+  memberwunder:
+    QueryParameter:
+      files:
+      - assets/css/custom/memberwunder.css
+      version: true
   menu-icons:
     QueryParameter:
       files:
@@ -5834,6 +5858,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Cached using Nginx-Helper|Visit https?:\/\/wordpress.org\/extend\/plugins\/nginx-helper\/faq\/
         for more details/i
+  okv-oauth:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/okv-oauth-default.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ okv\-oauth\ (?<v>[\d\.]+)/i
+      version: true
   olevmedia-shortcodes:
     QueryParameter:
       files:
@@ -5903,6 +5933,12 @@ plugins:
   platinum-seo-pack:
     Comment:
       pattern: !ruby/regexp /platinum\ seo\ pack\ (?<v>[\d\.]+)/i
+      version: true
+  podlove-podcasting-plugin-for-wordpress:
+    QueryParameter:
+      files:
+      - css/admin-font.css
+      - js/frontend.js
       version: true
   pojo-sidebars:
     TranslationFile:
@@ -6010,6 +6046,12 @@ plugins:
       pattern: !ruby/regexp /\AVersion (?<v>[\d\.]+).*\z/i
       version: true
       confidence: 80
+  rp-ads-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/rp-ads-manager-ru.po
+      pattern: !ruby/regexp /ect\-Id\-Version:\ RedPic\ ADS\ Manager\ Lite\ (?<v>[\d\.]+)/i
+      version: true
   rss-importer:
     TranslationFile:
       class: BodyPattern
@@ -6069,6 +6111,11 @@ plugins:
       - assets/css/fontawesome/css/font-awesome.min.css
       - assets/css/skins/standard-dark.css
       - assets/js/shiftnav.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/shiftnav.pot
+      pattern: !ruby/regexp /:\ ShiftNav\ Pro\ \-\ Responsive\ Mobile\ Menu\ (?<v>[\d\.]+)/i
       version: true
   shortcode-ui:
     TranslationFile:
@@ -6152,6 +6199,11 @@ plugins:
       files:
       - res/css/language-selector.css.gzip
       - res/js/jquery.cookie.js
+      version: true
+  snow-storm:
+    QueryParameter:
+      files:
+      - snow-storm.js
       version: true
   social-count-plus:
     TranslationFile:
@@ -6312,6 +6364,12 @@ plugins:
       files:
       - js/app/ta.js
       version: true
+  timeline-and-history-slider:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/slick-slider-style.css
+      version: true
   to-top:
     QueryParameter:
       files:
@@ -6392,6 +6450,12 @@ plugins:
       pattern: !ruby/regexp /W3 Total Cache\/(?<v>[\d\.]+)/i
       version: true
       confidence: 80
+  wallets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wallets-front.pot
+      pattern: !ruby/regexp /Id\-Version:\ Bitcoin\ and\ Altcoin\ Wallets\ (?<v>[\d\.]+)/i
+      version: true
   wassup:
     Comment:
       pattern: !ruby/regexp /<p\ class="small">\ WassUp\ (?<v>[\d\.]+)/i
@@ -6435,6 +6499,17 @@ plugins:
     QueryParameter:
       files:
       - whats-new.css
+      version: true
+  wholesale-market:
+    TranslationFile:
+      class: BodyPattern
+      path: language/wholesale-market-en_US.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Wholesale\ Market\ (?<v>[\d\.]+)/i
+      version: true
+  widget-for-eventbrite-api:
+    QueryParameter:
+      files:
+      - frontend/css/frontend.css
       version: true
   widgets-for-siteorigin:
     QueryParameter:
@@ -6625,9 +6700,21 @@ plugins:
       - css/wp-customer-reviews-generated.css.php
       - js/wp-customer-reviews.js
       version: true
+  wp-dispensary:
+    QueryParameter:
+      files:
+      - public/css/wp-dispensary-public.css
+      - public/js/wp-dispensary-public.js
+      version: true
   wp-easy-gallery:
     Comment:
       pattern: !ruby/regexp /WP Easy Gallery:/i
+  wp-ehesive:
+    QueryParameter:
+      files:
+      - public/css/wp-ehesive-public.css
+      - public/js/wp-ehesive-public.js
+      version: true
   wp-featherlight:
     QueryParameter:
       files:
@@ -6702,6 +6789,12 @@ plugins:
       class: BodyPattern
       path: languages/wp-maintenance-mode-sv_SE.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ WP\ Maintenance\ Mode\ (?<v>[\d\.]+)/i
+      version: true
+  wp-mappost:
+    QueryParameter:
+      files:
+      - public/css/wp-mappost-public.css
+      - public/js/wp-mappost-public.js
       version: true
   wp-members:
     QueryParameter:
@@ -6829,6 +6922,10 @@ plugins:
       files:
       - css/mb.YTPlayer.css
       - js/jquery.mb.YTPlayer.js
+      version: true
+  wpshopgermany-free:
+    Comment:
+      pattern: !ruby/regexp /wpShopGermany\ Version\ (?<v>[\d\.]+)/i
       version: true
   wpsso:
     MetaTag:
