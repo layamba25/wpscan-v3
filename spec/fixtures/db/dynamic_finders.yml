@@ -2590,6 +2590,11 @@ plugins:
       - js/script.js
       - js/owl.carousel.js
       version: true
+  cardealerpress:
+    HeaderPattern:
+      header: X-CDP-Version
+      pattern: !ruby/regexp /(?<v>[\d\.]+)/i
+      version: true
   cardojo-lite:
     QueryParameter:
       files:

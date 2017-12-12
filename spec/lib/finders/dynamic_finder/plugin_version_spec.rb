@@ -9,6 +9,11 @@ require 'spec_helper'
 #
 # Furthermore, the fixtures files _passive_all.html are also used by plugins/themes
 # finders in spec/app/finders/plugins|themes to check the items existence from the homepage
+#
+# These specs are slow to run (hence tagged with :slow)
+# In case of a failure, it's recommended to use rspec -e "<Full Description>" while fixing.
+# e.g: rspec -e "WPScan::Finders::PluginVersion::Cardealerpress::HeaderPattern#passive"
+# The -e option can also be used to test all HeaderPattern for example: rspec -e "::HeaderPattern"
 
 expected_all = df_expected_all['plugins']
 

@@ -3307,6 +3307,12 @@ plugins:
       - http://wp.lab/wp-content/plugins/car-rental/css/jquery.slider.css?ver=1.0.6
       - http://wp.lab/wp-content/plugins/car-rental/js/script.js?ver=1.0.6
       - http://wp.lab/wp-content/plugins/car-rental/js/owl.carousel.js?ver=1.0.6
+  cardealerpress:
+    HeaderPattern:
+      number: 4.9.1712.01
+      found_by: Header Pattern (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''4.9.1712.01'''
   cardojo-lite:
     QueryParameter:
       number: 1.0.2

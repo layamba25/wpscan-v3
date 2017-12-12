@@ -22,7 +22,7 @@ module WPScan
           # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            return unless response.headers&.key?(self.class::HEADER)
+            return unless response.headers && response.headers[self.class::HEADER]
             return unless response.headers[self.class::HEADER].to_s =~ self.class::PATTERN
 
             WPScan::Version.new(
