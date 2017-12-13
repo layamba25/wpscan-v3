@@ -6917,12 +6917,205 @@ plugins:
       interesting_entries:
       - !binary |-
         aHR0cDovL3dwLmxhYi93cC1jb250ZW50L3BsdWdpbnMvZ2MtdGVzdGltb25pYWxzLXRvLXRlc3RpbW9uaWFscy9sYW5ndWFnZXMvZ2MtdGVzdGltb25pYWxzLXRvLXRlc3RpbW9uaWFscy5wb3QsIE1hdGNoOiAnYWxzIFdpZGdldCDigJMgR0MgVGVzdGltb25pYWxzIE1pZ3JhdG9yIDEuMy4xJw==
+  geneanet-embedded-individual:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/geneanet-embedded-individual/public/css/geneanet-embedded-individual-public.css?ver=1.1.1
+      - http://wp.lab/wp-content/plugins/geneanet-embedded-individual/public/js/geneanet-embedded-individual-public.js?ver=1.1.1
+      confidence: 20
+  generalstats:
+    MetaTag:
+      number: '3.34'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''3.34'''
+  generate-legacy-mobile-menu:
+    QueryParameter:
+      number: '0.2'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/generate-legacy-mobile-menu/js/navigation-legacy.js?ver=0.2
+      confidence: 10
+  genesis-post-info-meta:
+    TranslationFile:
+      number: 1.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/genesis-post-info-meta/languages/genesis-post-info-meta.pot,
+        Match: ''ct-Id-Version: Genesis Post Info & Meta 1.1.0'''
+  genesis-simple-faq:
+    TranslationFile:
+      number: 0.9.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/genesis-simple-faq/languages/genesis-simple-faq.pot,
+        Match: ''"Project-Id-Version: Genesis Simple FAQ 0.9.0'''
+  genie-wp-matrimony:
+    TranslationFile:
+      number: '0.9'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/genie-wp-matrimony/languages/genie-wp-matrimony.pot,
+        Match: ''"Project-Id-Version: Genie WP Matrimony 0.9'''
+  geo-hcard-map:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/geo-hcard-map/leaflet/leaflet.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/geo-hcard-map/css/style.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/geo-hcard-map/leaflet/leaflet.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/geo-hcard-map/js/map.js?ver=1.0
+      confidence: 40
+  geo-mashup:
+    TranslationFile:
+      number: 1.10.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/geo-mashup/lang/GeoMashup.pot, Match: ''"Project-Id-Version:
+        Geo Mashup 1.10.1'''
+  geo-my-wp:
+    QueryParameter:
+      number: 2.7.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/geo-my-wp/assets/css/style.css?ver=2.7.1
+      - http://wp.lab/wp-content/plugins/geo-my-wp/assets/css/gmw-cl-style-dep.css?ver=2.7.1
+      - http://wp.lab/wp-content/plugins/geo-my-wp/assets/js/gmw.min.js?ver=2.7.1
+      confidence: 30
+  geodeals-for-geodirectory:
+    QueryParameter:
+      number: '2.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/css/font-awesome.min.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/css/jquery.qtip.min.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/css/jquery.qtip.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/css/geodeals.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/js/tsl_geodir_manager_scripts.js?ver=2.0
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/js/moment.js?ver=2.0
+      - http://wp.lab/wp-content/plugins/geodeals-for-geodirectory/js/jquery.qtip.min.js?ver=2.0
+      confidence: 70
+  geodirectory:
+    QueryParameter:
+      number: 1.6.25
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/css/gd_core_frontend.css?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/geodirectory.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/jawj/oms.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/chosen.jquery.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/ajax-chosen.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/jquery.lightbox-0.5.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/goMap.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/jRating.jquery.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/on_document_load.min.js?ver=1.6.25
+      - http://wp.lab/wp-content/plugins/geodirectory/geodirectory-assets/js/geometa.min.js?ver=1.6.25
+      confidence: 100
+    TranslationFile:
+      number: 1.6.25
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/geodirectory/geodirectory-languages/geodirectory-en_US.po,
+        Match: ''"Project-Id-Version: GeoDirectory 1.6.25'''
+  geolocaladmin:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/geolocaladmin/geolocaladmin.css?ver=0.1
+      confidence: 10
+  geopress:
+    Comment:
+      number: 2.4.3
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Location provided by GeoPress v2.4.3'''
+  get-my-tweets-uk:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/get-my-tweets-uk/script.js?ver=0.1
+      confidence: 10
+  get-price-comparison:
+    QueryParameter:
+      number: 1.5.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/get-price-comparison/css/frontend.css?ver=1.5.5
+      - http://wp.lab/wp-content/plugins/get-price-comparison/js/price-display-helpers.js?ver=1.5.5
+      - http://wp.lab/wp-content/plugins/get-price-comparison/js/main.gpc.js?ver=1.5.5
+      confidence: 30
+  getmecooking-recipe-template:
+    QueryParameter:
+      number: '1.32'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/getmecooking-recipe-template/css/recipe-template.css?ver=1.32
+      - http://wp.lab/wp-content/plugins/getmecooking-recipe-template/js/recipe-template.js?ver=1.32
+      confidence: 20
+  getresponse:
+    QueryParameter:
+      number: 2.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/getresponse/assets/pagecount.min.js?ver=2.1.0
+      confidence: 10
+  gf-form-multicolumn:
+    QueryParameter:
+      number: 2.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gf-form-multicolumn/css/gf-form-multicolumn.css?ver=2.1.1
+      confidence: 10
+  gif2html5:
+    QueryParameter:
+      number: 0.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gif2html5/css/gif2html5.css?ver=0.1.0
+      - http://wp.lab/wp-content/plugins/gif2html5/js/src/video-handler.js?ver=0.1.0
+      - http://wp.lab/wp-content/plugins/gif2html5/js/src/gif2html5.js?ver=0.1.0
+      confidence: 30
+  gifload:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gifload/public/js/gifload-public.js?ver=1.0.0
+      confidence: 10
   gigpress:
     Comment:
       number: 2.3.8
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Generated by GigPress 2.3.8'''
+  gis-maps:
+    TranslationFile:
+      number: 0.3.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gis-maps/languages/gis-maps.pot, Match:
+        ''"Project-Id-Version: Gis maps 0.3.0'''
+  github-ribbon:
+    TranslationFile:
+      number: 1.2.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/github-ribbon/languages/github-ribbon.pot,
+        Match: ''"Project-Id-Version: Github Ribbon 1.2.1'''
+  gitstatuspress:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gitstatuspress/public/css/gitstatuspress-public.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/gitstatuspress/admin/css/gitstatuspress-admin.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/gitstatuspress/public/js/gitstatuspress-public.js?ver=1.0.1
+      confidence: 30
   give:
     QueryParameter:
       number: 1.8.16
@@ -6936,6 +7129,89 @@ plugins:
       found_by: Meta Tag (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Give v1.8.16'''
+  gl-facebook-likebox:
+    QueryParameter:
+      number: 1.0.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gl-facebook-likebox/css/style.css?ver=1.0.8
+      confidence: 10
+  glass:
+    QueryParameter:
+      number: 1.3.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/glass/glass.js?ver=1.3.2
+      confidence: 10
+  glastfm:
+    TranslationFile:
+      number: 1.0.5
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/glastfm/lang/default.pot, Match: ''"Project-Id-Version:
+        glastfm 1.0.5'''
+  gmo-font-agent:
+    QueryParameter:
+      number: '1.6'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gmo-font-agent/fonts/genericons/genericons.css?ver=1.6
+      - http://wp.lab/wp-content/plugins/gmo-font-agent/fonts/icomoon/style.css?ver=1.6
+      confidence: 20
+  gmo-share-connection:
+    QueryParameter:
+      number: '1.3'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gmo-share-connection/iconmoon-tidy/style.css?ver=1.3
+      - http://wp.lab/wp-content/plugins/gmo-share-connection/css/gmo-share-connection.css?ver=1.3
+      confidence: 20
+  gmo-showtime:
+    QueryParameter:
+      number: '1.6'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gmo-showtime/css/gmo-showtime.min.css?ver=1.6
+      - http://wp.lab/wp-content/plugins/gmo-showtime/js/gmo-showtime.min.js?ver=1.6
+      confidence: 20
+  gn-ip-tracking:
+    TranslationFile:
+      number: '1.4'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gn-ip-tracking/i18n/languages/gn-ip-tracking.pot,
+        Match: ''-Id-Version: IP Tracking by Gambit Nash 1.4'''
+  gna-currency-converter:
+    Comment:
+      number: 0.9.8
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''GNA Currency Converter v0.9.8'''
+  gnucommerce:
+    QueryParameter:
+      number: 1.4.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gnucommerce/css/shortcode.css?ver=1.4.8
+      confidence: 10
+  go-gallery:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/go-gallery/assets/css/gallery.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/go-gallery/assets/plugins/tos/css/jquery.tosrus.custom.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/go-gallery/assets/plugins/isotope/isotope.pkgd.min.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/go-gallery/assets/js/gallery.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/go-gallery/assets/plugins/tos/js/jquery.tosrus.min.custom.js?ver=1.0
+      confidence: 50
+  go-redirects:
+    TranslationFile:
+      number: 1.2.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/go-redirects/languages/go-redirects.pot,
+        Match: ''-Id-Version: Go Redirects URL Forwarder 1.2.0'''
   godaddy-email-marketing-sign-up-forms:
     QueryParameter:
       number: 1.2.0
@@ -6950,6 +7226,28 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/godaddy-email-marketing-sign-up-forms/languages/godaddy-email-marketing.pot,
         Match: ''ect-Id-Version: GoDaddy Email Marketing 1.2.0'''
+  goo-pie-chart:
+    QueryParameter:
+      number: 1.1.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/goo-pie-chart/style/goo_pie_chart.css?ver=1.1.5
+      - http://wp.lab/wp-content/plugins/goo-pie-chart/js/goo-pie-chart.js?ver=1.1.5
+      confidence: 20
+  goodreviews:
+    TranslationFile:
+      number: 2.2.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/goodreviews/lang/goodreviews.pot, Match:
+        ''"Project-Id-Version: GoodReviews 2.2.3'''
+  google-affiliate-network:
+    QueryParameter:
+      number: 6.1.5.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/google-affiliate-network//css/GAN.css?ver=6.1.5.1
+      confidence: 10
   google-analyticator:
     Comment:
       number: 6.4.8
@@ -6981,6 +7279,12 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=6.2.6
+  google-analytics-visits:
+    Comment:
+      number: 1.1.6.6
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''s website uses Google Analytics Visits v1.1.6.6'''
   google-calendar-events:
     QueryParameter:
       number: 3.1.10
