@@ -5433,8 +5433,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/gc-testimonials-to-testimonials.pot
-      pattern: !ruby/regexp /als\ Widget\ [^\s]+ GC\ Testimonials\ Migrator\
-        (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /als\ Widget\ [^\s]+ GC\ Testimonials\ Migrator\ (?<v>[\d\.]+)/i
       version: true
   gigpress:
     Comment:
@@ -5692,6 +5691,12 @@ plugins:
       path: languages/kiwi-social-share.pot
       pattern: !ruby/regexp /"(?<v>[\d\.]+)/i
       version: true
+  knowledge-center:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Knowledge\ Center\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   komito-analytics:
     TranslationFile:
       class: BodyPattern
@@ -5854,6 +5859,12 @@ plugins:
       files:
       - css/extra.min.css
       version: true
+  more-lang:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/more-lang.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ More\-Lang\ (?<v>[\d\.]+)/i
+      version: true
   motopress-content-editor-lite:
     QueryParameter:
       files:
@@ -5939,6 +5950,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'
       version: true
+  oss-upload:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/oss-upload.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ OSS\ Upload\ (?<v>[\d\.]+)/i
+      version: true
   page-list:
     QueryParameter:
       files:
@@ -5957,6 +5974,34 @@ plugins:
       files:
       - js/panopress.js
       - css/panopress.css
+      version: true
+  peepso-core:
+    QueryParameter:
+      files:
+      - templates/css/template.css
+      - assets/js/peepso-core.min.js
+      - assets/js/peepso.js
+      - assets/js/time.min.js
+      - assets/js/member.min.js
+      - assets/js/autosize.min.js
+      - assets/js/jquery.mousewheel.min.js
+      - assets/js/notifications.js
+      - assets/js/pswindow.min.js
+      - assets/js/activitystream.js
+      - assets/js/comment.js
+      - assets/js/datepicker.js
+      - assets/js/form.js
+      - assets/js/activity.js
+      - assets/js/image-scale.min.js
+      - assets/js/lightbox.min.js
+      - assets/js/modal-comments.min.js
+      - assets/js/bundle.min.js
+      - assets/js/dropdown.min.js
+      - assets/js/jquery.autosize.min.js
+      - assets/js/postbox-legacy.min.js
+      - assets/js/postbox.min.js
+      - assets/js/share.min.js
+      - assets/js/posttabs.min.js
       version: true
   persian-woocommerce:
     TranslationFile:
@@ -6036,11 +6081,22 @@ plugins:
       files:
       - js/q2w3-fixed-widget.min.js
       version: true
+  qlik-sense:
+    QueryParameter:
+      files:
+      - index.js
+      version: true
   quotes-collection:
     QueryParameter:
       files:
       - css/quotes-collection.css
       - js/quotes-collection.js
+      version: true
+  recencio-book-reviews:
+    QueryParameter:
+      files:
+      - public/css/rcno-reviews-public.css
+      - public/js/rcno-reviews-public.js
       version: true
   recent-facebook-posts:
     QueryParameter:
@@ -6318,6 +6374,12 @@ plugins:
       - assets/js/jq-sticky-anything.min.js
       - assets/js/stickThis.js
       version: true
+  stock-ticker:
+    QueryParameter:
+      files:
+      - assets/css/stock-ticker.css
+      - assets/js/jquery.stockticker.min.js
+      version: true
   storefront-product-sharing:
     TranslationFile:
       class: BodyPattern
@@ -6413,6 +6475,11 @@ plugins:
       files:
       - js/app/ta.js
       version: true
+  ticketmaster:
+    QueryParameter:
+      files:
+      - public/js/ticketmaster-nomodal.js
+      version: true
   timeline-and-history-slider:
     QueryParameter:
       files:
@@ -6449,6 +6516,12 @@ plugins:
       - assets/css/um.min.css
       - assets/js/um.min.js
       version: true
+  ultimate-page-builder:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Ultimate\ Page\ Builder\ \-\ (?<v>[\d\.]+)/i
   user-access-manager:
     QueryParameter:
       files:
@@ -6544,6 +6617,11 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>[\d\.]+) \|/i
       version: true
+  webappick-product-feed-for-woocommerce:
+    QueryParameter:
+      files:
+      - public/css/woo-feed-public.css
+      version: true
   whats-new-genarator:
     QueryParameter:
       files:
@@ -6576,6 +6654,12 @@ plugins:
       path: i18n/languages/woo-better-usability.pot
       pattern: !ruby/regexp /d\-Version:\ WooCommerce\ Better\ Usability\ (?<v>[\d\.]+)/i
       version: true
+  woo-moip-official:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woo-moip-official.pot
+      pattern: !ruby/regexp /t\-Id\-Version:\ WooCommerce\ Moip\ Official\ (?<v>[\d\.]+)/i
+      version: true
   woo-paypal-gateway:
     QueryParameter:
       files:
@@ -6592,6 +6676,12 @@ plugins:
       - assets/libs/slick/slick.min.js
       - assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
       - assets/libs/magnific-popup/jquery.magnific-popup.min.js
+      version: true
+  woo-wallet:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woo-wallet.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ (?<v>[\d\.]+)/i
       version: true
   woocommerce:
     QueryParameter:
@@ -6743,6 +6833,11 @@ plugins:
       pattern: !ruby/regexp '/\AWOW Async(?: for Wordpress)? Tracking Code|WOW Plugin
         Version (?<v>[\d\.^\s]+)/i'
       version: true
+  wp-bunvc:
+    QueryParameter:
+      files:
+      - public/js/bunvc-autorun-allpack.js
+      version: true
   wp-customer-reviews:
     QueryParameter:
       files:
@@ -6755,6 +6850,12 @@ plugins:
       - public/css/wp-dispensary-public.css
       - public/js/wp-dispensary-public.js
       version: true
+  wp-easy-contact:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /WP\ Easy\ Contact\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   wp-easy-gallery:
     Comment:
       pattern: !ruby/regexp /WP Easy Gallery:/i
@@ -6899,6 +7000,12 @@ plugins:
       path: languages/wp-product-review.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ WP\ Product\ Review\ Lite\ (?<v>[\d\.]+)/i
       version: true
+  wp-property:
+    QueryParameter:
+      files:
+      - static/styles/wp_properties.css
+      - static/scripts/wpp.global.js
+      version: true
   wp-rocket:
     Comment:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
@@ -6909,6 +7016,12 @@ plugins:
   wp-seo-structured-data-schema:
     Comment:
       pattern: !ruby/regexp /gleton's\ WP\ SEO\ Structured\ Data\ Plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  wp-simple-seo:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-simple-seo.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Simple\ SEO\ (?<v>[\d\.]+)/i
       version: true
   wp-socializer:
     Comment:
@@ -6955,6 +7068,18 @@ plugins:
       - public/css/posttosteemit-public.css
       - public/js/posttosteemit-public.js
       version: true
+  wp-user-frontend:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpuf.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ User\ Frontend\ (?<v>[\d\.]+)/i
+      version: true
+  wp247-extension-notification-client:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp247-extension-notification-client-default.po
+      pattern: !ruby/regexp /on:\ WP247\ Extension\ Notification\ Client\ (?<v>[\d\.]+)/i
+      version: true
   wpglobus:
     QueryParameter:
       files:
@@ -6986,6 +7111,12 @@ plugins:
       class: BodyPattern
       path: languages/wpsso-fr_FR.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WPSSO\ Core\ (?<v>[\d\.]+)/i
+      version: true
+  wptables:
+    QueryParameter:
+      files:
+      - build/css/wptables.min.css
+      - build/js/wptables.min.js
       version: true
   wptouch:
     Comment:
@@ -7031,6 +7162,12 @@ plugins:
       path: script.js
       pattern: !ruby/regexp '/Version: (?<v>[\d\.]+)/i'
       version: true
+  youtube-showcase:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Youtube\ Showcase\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   yuzo-related-post:
     QueryParameter:
       files:
