@@ -3625,6 +3625,13 @@ plugins:
       path: languages/crosswordsearch.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ crosswordsearch\ (?<v>[\d\.]+)/i
       version: true
+  cryout-serious-slider:
+    QueryParameter:
+      files:
+      - resources/style.css
+      - resources/jquery.mobile.custom.min.js
+      - resources/slider.js
+      version: true
   cryptex:
     TranslationFile:
       class: BodyPattern
@@ -5855,6 +5862,12 @@ plugins:
       files:
       - assets/css/instag-slider.css
       version: true
+  integrate-polarsteps:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/integrate-polarsteps.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Polarsteps\ Integration\ (?<v>[\d\.]+)/i
+      version: true
   intelliwidget-per-page-featured-posts-and-menus:
     QueryParameter:
       files:
@@ -6119,6 +6132,20 @@ plugins:
       files:
       - js/mystickymenu.min.js
       version: true
+  mz-newsticker:
+    QueryParameter:
+      files:
+      - public/css/mz-newsticker-public.css
+      - public/css/liMarquee.css
+      - public/js/jquery.liMarquee.js
+      - public/js/mz-newsticker-public.js
+      version: true
+  nelio-content:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nelio-content.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Nelio\ Content\ (?<v>[\d\.]+)/i
+      version: true
   news-ticker:
     Comment:
       pattern: !ruby/regexp /START TICKER VER (?<v>[\d\.]+)/i
@@ -6204,6 +6231,11 @@ plugins:
       files:
       - js/page-scroll-to-id.min.js
       version: true
+  page-views-count:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      version: true
   panopress:
     Comment:
       pattern: !ruby/regexp /PanoPress \[(?<v>[\d\.]+)\]/i
@@ -6212,6 +6244,12 @@ plugins:
       files:
       - js/panopress.js
       - css/panopress.css
+      version: true
+  paypal-wp-button-manager:
+    QueryParameter:
+      files:
+      - public/css/paypal-wp-button-manager-public.css
+      - public/js/paypal-wp-button-manager-public.js
       version: true
   peepso-core:
     QueryParameter:
@@ -6289,6 +6327,13 @@ plugins:
       - public/assets/css/public.css
       - public/assets/js/min/public-min.js
       version: true
+  portfolio-gallery-by-ims:
+    QueryParameter:
+      files:
+      - public/css/ims-portfolio-public.css
+      - public/css/elastic_grid.min.css
+      - public/js/ims-portfolio-public.js
+      version: true
   post-views-counter:
     QueryParameter:
       files:
@@ -6310,6 +6355,12 @@ plugins:
       files:
       - assets/css/woo-projects.css
       - assets/css/woo-projects-handheld.css
+      version: true
+  pronamic-ideal:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pronamic_ideal.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pronamic\ Pay\ (?<v>[\d\.]+)/i
       version: true
   q-and-a:
     Comment:
@@ -6730,6 +6781,14 @@ plugins:
       - public/css/to-top-public.css
       - public/js/to-top-public.js
       version: true
+  translatepress-multilingual:
+    QueryParameter:
+      files:
+      - assets/css/trp-floater-language-switcher.css
+      - assets/css/trp-language-switcher.css
+      - assets/css/trp-jquery-ui.css
+      - assets/js/trp-language-switcher.js
+      version: true
   typekit-fonts-for-wordpress:
     TranslationFile:
       class: BodyPattern
@@ -6747,6 +6806,12 @@ plugins:
   ultimate-google-analytics:
     Comment:
       pattern: !ruby/regexp /Ultimate Google Analytics plugin v(?<v>[\d\.]+):/i
+      version: true
+  ultimate-image-hover-effects:
+    TranslationFile:
+      class: BodyPattern
+      path: admin/framework/languages/bn_BD.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Codestar\ Framework\ (?<v>[\d\.]+)/i
       version: true
   ultimate-member:
     QueryParameter:
@@ -6907,6 +6972,16 @@ plugins:
       class: BodyPattern
       path: languages/woo-paypal-gateway.pot
       pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce\ PayPal\ Gateway\ (?<v>[\d\.]+)/i
+      version: true
+  woo-price-per-word:
+    QueryParameter:
+      files:
+      - public/css/woocommerce-price-per-word-public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-price-per-word.pot
+      pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce\ Price\ Per\ Word\ (?<v>[\d\.]+)/i
       version: true
   woo-smart-quick-view:
     QueryParameter:
@@ -7070,6 +7145,11 @@ plugins:
     Comment:
       pattern: !ruby/regexp '/\AWOW Async(?: for Wordpress)? Tracking Code|WOW Plugin
         Version (?<v>[\d\.^\s]+)/i'
+      version: true
+  wp-applink:
+    QueryParameter:
+      files:
+      - assets/css/wp-applink.css
       version: true
   wp-bunvc:
     QueryParameter:
@@ -7273,6 +7353,12 @@ plugins:
   wp-spamfree:
     Comment:
       pattern: !ruby/regexp /WP-SpamFree v(?<v>[\d\.]+)/i
+      version: true
+  wp-spid-italia:
+    TranslationFile:
+      class: BodyPattern
+      path: lib/locales/it/LC_MESSAGES/messages.po
+      pattern: !ruby/regexp /msgstr\ "Metadati\ Shib\ (?<v>[\d\.]+)/i
       version: true
   wp-store-locator:
     QueryParameter:
