@@ -33,10 +33,7 @@ module WPScan
               # If the text to be output in the interesting_entries is > 50 chars,
               # get 20 chars before and after (when possible) the detected version instead
               match = match_data.to_s
-
-              if match.size > 50
-                match = match[/.*?(.{,20}#{Regexp.escape(version_number)}.{,20}).*/, 1]
-              end
+              match = match[/.*?(.{,20}#{Regexp.escape(version_number)}.{,20}).*/, 1] if match.size > 50
 
               return WPScan::Version.new(
                 version_number,

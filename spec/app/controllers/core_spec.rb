@@ -139,9 +139,7 @@ describe WPScan::Controller::Core do
 
       expect(core.formatter).to receive(:output).with('banner', hash_including(verbose: nil), 'core')
 
-      unless parsed_options[:update]
-        expect(core).to receive(:update_db_required?).and_return(false)
-      end
+      expect(core).to receive(:update_db_required?).and_return(false) unless parsed_options[:update]
     end
 
     context 'when --update' do
