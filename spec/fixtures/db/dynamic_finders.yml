@@ -5757,6 +5757,19 @@ plugins:
       files:
       - css/gglcptch.css
       version: true
+  google-docs-oembed:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/google-docs-oembed.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Google\ Docs\ oEmbed\ (?<v>[\d\.]+)/i
+      version: true
+  google-drive-wp-media:
+    QueryParameter:
+      files:
+      - js/lightbox.js
+      - js/justifiedGallery.js
+      - js/script.js
+      version: true
   google-maps-builder:
     QueryParameter:
       files:
@@ -5771,6 +5784,35 @@ plugins:
       path: languages/google-maps-builder.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Maps\ Builder\ (?<v>[\d\.]+)/i
       version: true
+  google-maps-photo-gallery:
+    QueryParameter:
+      files:
+      - googlemaps-photo-gallery.css
+      - googlemaps-photo-gallery.js
+      version: true
+  google-one:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  google-picasa-albums-viewer:
+    QueryParameter:
+      files:
+      - public/css/cws-google-picasa-pro-public.css
+      - public/css/lightbox/lightbox.css
+      - public/js/cws-google-picasa-pro-public.js
+      version: true
+  googleanalyticscounter:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="googleanalyticscounter"]/@content
+      version: true
+      pattern: !ruby/regexp /googleanalyticscounter\/(?<v>[\d\.]+)/i
+  googlyzer:
+    QueryParameter:
+      files:
+      - js/jquery.sparkline.js
+      version: true
   gotmls:
     HeaderPattern:
       path: index.php
@@ -5778,6 +5820,22 @@ plugins:
       pattern: !ruby/regexp /report\.php\?ver=(?<v>[\d\.^&]+)\&/i
       version: true
       confidence: 80
+  gourl-bitcoin-payment-gateway-paid-downloads-membership:
+    QueryParameter:
+      files:
+      - js/cryptobox.min.js
+      - css/style.front.css
+      version: true
+  gp-post-like:
+    QueryParameter:
+      files:
+      - css/gppl-style.css
+      version: true
+  gplus-comments:
+    QueryParameter:
+      files:
+      - assets/styles/plugin.css
+      version: true
   gps-signin:
     QueryParameter:
       files:
@@ -5786,9 +5844,52 @@ plugins:
       - public/js/gps-platform.js
       - public/js/gps-signin-public.js
       version: true
+  graceful-pull-quotes:
+    Comment:
+      pattern: !ruby/regexp /Graceful\ Pull\-Quotes\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
   grand-media:
     Comment:
       pattern: !ruby/regexp /<meta\ name='GmediaGallery'\ version='(?<v>[\d\.]+)/i
+      version: true
+  grand-popo-core:
+    QueryParameter:
+      files:
+      - public/css/grand_popo-public.css
+      - public/js/grand_popo-public.js
+      version: true
+  gravatargrid:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="gravatargrid"]/@content
+      version: true
+      pattern: !ruby/regexp /gravatargrid\/(?<v>[\d\.]+)/i
+  gravitate-event-tracking:
+    QueryParameter:
+      files:
+      - gravitate_event_tracking.js
+      version: true
+  gravitation-portfolios:
+    QueryParameter:
+      files:
+      - css/portfolio-styles.css
+      version: true
+  gravity-forms-auto-placeholders:
+    QueryParameter:
+      files:
+      - modernizr.placeholder.min.js
+      - scripts.js
+      version: true
+  gravity-forms-fancy-select:
+    QueryParameter:
+      files:
+      - fancySelect.js
+      - fancy-select.js
+      version: true
+  gravity-forms-reset-button:
+    QueryParameter:
+      files:
+      - gravity-forms-reset-button.js
       version: true
   gravityforms:
     Changelog:
@@ -5796,15 +5897,315 @@ plugins:
       class: BodyPattern
       pattern: !ruby/regexp /Version (?<v>([\d\.]+))/i
       version: true
+  greedycoupon:
+    QueryParameter:
+      files:
+      - style.css
+      - assets/app/owl-carousel/owl.carousel.min.css
+      - assets/app/owl-carousel/owl.theme.default.min.css
+      - assets/app/owl-carousel/owl.carousel.js
+      version: true
+  greenturtlelab-tool:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/themeegg-toolkit.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ GreenTurtleLab\ Tool\ (?<v>[\d\.]+)/i
+      version: true
+  grid-archives:
+    QueryParameter:
+      files:
+      - grid-archives.css
+      - grid-archives-effect-css.php
+      version: true
+  grid-gallery-with-custom-links:
+    QueryParameter:
+      files:
+      - css/grid-gallery-with-custom-links.css
+      version: true
+  gridable:
+    QueryParameter:
+      files:
+      - public/css/gridable-style.css
+      - public/js/gridable-scripts.js
+      version: true
+  gs-behance-portfolio:
+    QueryParameter:
+      files:
+      - gs-behance-assets/assets/fa-icons/css/font-awesome.min.css
+      - gs-behance-assets/assets/css/gs-beh-custom-bootstrap.css
+      - gs-behance-assets/assets/css/gs-beh-custom.css
+      version: true
+  gs-books-showcase:
+    QueryParameter:
+      files:
+      - gs-bookshowcase-files/assets/css/gs-bookshowcase-custom-bootstrap.css
+      - gs-bookshowcase-files/assets/css/gs-bookshowcase-custom.css
+      - gs-bookshowcase-files/assets/js/gs-bookshowcase.custom.js
+      version: true
+  gs-coach:
+    QueryParameter:
+      files:
+      - gs-coaches-files/assets/css/gscoaches_custom_bootstrap.css
+      - gs-coaches-files/assets/fa-icons/css/font-awesome.min.css
+      - gs-coaches-files/assets/css/gscoaches_custom.css
+      - gs-coaches-files/assets/js/gscoaches_custom.js
+      version: true
+  gs-dribbble-portfolio:
+    QueryParameter:
+      files:
+      - gs-dribbble-assets/assets/fa-icons/css/font-awesome.min.css
+      - gs-dribbble-assets/assets/css/gs-dibb-custom-bootstrap.css
+      - gs-dribbble-assets/assets/css/gs-drib-custom.css
+      version: true
+  gs-instagram-portfolio:
+    QueryParameter:
+      files:
+      - gs-instagram-assets/assets/css/gs-insta-custom-bootstrap.css
+      - gs-instagram-assets/assets/css/gs-insta-custom.css
+      version: true
+  gs-pinterest-portfolio:
+    QueryParameter:
+      files:
+      - gs-pinterest-assets/assets/fa-icons/css/font-awesome.min.css
+      - gs-pinterest-assets/assets/css/gs-pin-custom.css
+      - gs-pinterest-assets/assets/js/masonry.pkgd.min.js
+      - gs-pinterest-assets/assets/js/imagesloaded.pkgd.min.js
+      version: true
+  gs-portfolio:
+    QueryParameter:
+      files:
+      - gsportfolio-files/assets/css/gs-vendor.css
+      - gsportfolio-files/assets/fa-icons/css/font-awesome.min.css
+      - gsportfolio-files/assets/css/gsp-style.css
+      - gsportfolio-files/assets/js/gs-vendor.js
+      - gsportfolio-files/assets/js/gs-custom.js
+      version: true
+  gs-projects:
+    QueryParameter:
+      files:
+      - gsprojects-files/assets/fa-icons/css/font-awesome.min.css
+      - gsprojects-files/assets/css/gs-projects-custom-bootstrap.css
+      - gsprojects-files/assets/css/gs-projects-custom.css
+      version: true
+  gs-woocommerce-products-slider:
+    QueryParameter:
+      files:
+      - gswps-files/assets/css/owl.carousel.css
+      - gswps-files/assets/css/owl.theme.default.css
+      - gswps-files/assets/css/gswps.custom.css
+      - gswps-files/assets/css/gswps.component.css
+      - gswps-files/assets/js/owl.carousel.min.js
+      - gswps-files/assets/js/gswps.custom.js
+      - gswps-files/assets/js/modernizr.custom.js
+      version: true
+  gspeech:
+    QueryParameter:
+      files:
+      - includes/js/gspeech_pro.js
+      - includes/js/gspeech.js
+      version: true
+  guardian-news-headlines:
+    QueryParameter:
+      files:
+      - guardian_headlines.css
+      version: true
+  h5p:
+    QueryParameter:
+      files:
+      - h5p-php-library/styles/h5p.css
+      version: true
+  h7-tabs:
+    QueryParameter:
+      files:
+      - assets/css/jquery.pwstabs.css
+      - assets/css/font-awesome.css
+      - assets/css/animate.min.css
+      version: true
+  hammy:
+    QueryParameter:
+      files:
+      - js/jquery-picture.js
+      - js/hammy.js
+      version: true
+  hana-board:
+    QueryParameter:
+      files:
+      - "/widget_skins/post/beauty-posts/css/widget.css"
+      - "/widget_skins/post/default/css/widget.css"
+      - "/widget_skins/post/gallery/css/widget.css"
+      - "/widget_skins/post/left-thumbnail/css/widget.css"
+      - "/widget_skins/comment/beauty-comments/css/widget.css"
+      - "/widget_skins/comment/default/css/widget.css"
+      version: true
+  hana-post-like-and-social-share:
+    QueryParameter:
+      files:
+      - skins/like/default/css/hana-like.css
+      - skins/social_share/default/css/hana-social-share.css
+      - includes/js/hana-like.js
+      version: true
+  hana-widget:
+    QueryParameter:
+      files:
+      - assets/css/bootstrap-grid12.css
+      - layouts/post/default/css/widget.css
+      - layouts/post/gallery/css/widget.css
+      - layouts/post/left-thumbnail/css/widget.css
+      - layouts/comment/beauty-comments/css/widget.css
+      - layouts/comment/default/css/widget.css
+      version: true
+  hana-widgets:
+    QueryParameter:
+      files:
+      - js/hana-widgets.js
+      version: true
+  hand-talk:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpht-pt_BR.po
+      pattern: !ruby/regexp /msgid\ "Available\ versions:\ (?<v>[\d\.]+)/i
+      version: true
+  harmonia:
+    QueryParameter:
+      files:
+      - css/harmonia.css
+      - js/harmonia.js
+      version: true
+  hash-link-scroll-offset:
+    QueryParameter:
+      files:
+      - assets/js/hash-link-scroll-offset.min.js
+      version: true
+  haste-impress:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/hasteimpress-pt_BR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WordImpress\ (?<v>[\d\.]+)/i
+      version: true
+  hayyabuild:
+    QueryParameter:
+      files:
+      - public/assets/libs/font-awesome/css/font-awesome.min.css
+      - public/assets/libs/bootstrap/css/bootstrap.min.css
+      - public/assets/css/hayyabuild.min.css
+      - public/assets/libs/bootstrap/js/bootstrap.min.js
+      - public/assets/js/hayyabuild.min.js
+      version: true
   headspace2:
     Comment:
       pattern: !ruby/regexp /HeadSpace\ SEO\ (?<v>[\d\.]+)/i
+      version: true
+  healthcare-review-master:
+    QueryParameter:
+      files:
+      - public/css/healthcare-review-master-public.css
+      - public/js/healthcare-review-master-public.js
+      - public/js/jquery.easy-ticker.min.js
+      version: true
+  heateor-open-graph-meta-tags:
+    Comment:
+      pattern: !ruby/regexp /START\ \-\ Heateor\ Open\ Graph\ Meta\ Tags\ (?<v>[\d\.]+)/i
+      version: true
+  heateor-social-comments:
+    QueryParameter:
+      files:
+      - css/front.css
+      version: true
+  helppress:
+    QueryParameter:
+      files:
+      - assets/css/helppress.css
+      - assets/vendor/jquery.autocomplete.js
+      - assets/js/helppress.js
+      version: true
+  hero-banner-ultimate:
+    QueryParameter:
+      files:
+      - assets/css/hbu-public-style.css
+      version: true
+  hero-social-widget:
+    QueryParameter:
+      files:
+      - assets/css/hero-social-style.css
+      version: true
+  hidden-login:
+    QueryParameter:
+      files:
+      - hidden-login.min.js
       version: true
   hide-plugin-updates-notifications:
     TranslationFile:
       class: BodyPattern
       path: languages/wphpuw-en_US.po
       pattern: !ruby/regexp /on:\ WP\ Hide\ Admin\ Warnings\ and\ Updates\ v(?<v>[\d\.]+)/i
+      version: true
+  hide-wp-toolbar:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  hijri-calendar-widget:
+    QueryParameter:
+      files:
+      - js/script.js
+      version: true
+  hindsight:
+    QueryParameter:
+      files:
+      - public/css/hindsight-public.css
+      - public/js/rockerbox-hindsight-pixel.js
+      version: true
+  hints:
+    QueryParameter:
+      files:
+      - _inc/hints.css
+      - _inc/hints.js
+      pattern: !ruby/regexp /(?<v>[\d\.]+[a-z])/i
+      version: true
+  hjyl-comment-spam:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/hjyl-comment-spam-zh_CN.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ (?<v>[\d\.]+)/i
+      version: true
+  hobbynote-twitter-cards:
+    Comment:
+      pattern: !ruby/regexp /Hobbynote\ Twitter\ Cards\ (?<v>[\d\.]+)/i
+      version: true
+  hold-your-color:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/hold-your-color.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Hold\ your\ color\ (?<v>[\d\.]+)/i
+      version: true
+  holler-box:
+    QueryParameter:
+      files:
+      - assets/css/holler-frontend.min.css
+      - assets/js/holler-frontend.min.js
+      version: true
+  home-categories:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/home-categories.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Home\ Categories\ (?<v>[\d\.]+)/i
+      version: true
+  home-value:
+    QueryParameter:
+      files:
+      - static/css/css.css
+      - static/js.js
+      version: true
+  horizontal-post-slider:
+    QueryParameter:
+      files:
+      - public/css/horizontal-post-slider-public.css
+      - public/js/horizontal-post-slider-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: cs-framework/languages/bn_BD.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Codestar\ Framework\ (?<v>[\d\.]+)/i
       version: true
   hotjar-connecticator:
     Comment:
