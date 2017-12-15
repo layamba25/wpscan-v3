@@ -12,18 +12,15 @@ require 'spec_helper'
 #
 # In case of a failure, it's recommended to use rspec -e "<Full Description>" while fixing.
 # e.g: rspec -e "WPScan::Finders::PluginVersion::Cardealerpress::HeaderPattern#passive"
-# The -e option can also be used to test all HeaderPattern for example: rspec -e "::HeaderPattern"
+# The -e option can also be used to test all HeaderPattern, for example: rspec -e "::HeaderPattern"
 
 expected_all = df_expected_all['plugins']
 
 WPScan::DB::DynamicPluginFinders.create_versions_finders
 
 describe 'Try to create the finders twice' do
-  it 'raises an error when the classe already exists' do
-    expect { WPScan::DB::DynamicPluginFinders.create_versions_finders }.to raise_error(
-      'WPScan::Finders::PluginVersion::D_10centmailSubscriptionManagementAndAnalytics' \
-      ' has already a MetaTag class'
-    )
+  it 'does not raise an error when the class already exists' do
+    expect { WPScan::DB::DynamicPluginFinders.create_versions_finders }.to_not raise_error
   end
 end
 

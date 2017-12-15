@@ -49,12 +49,7 @@ describe WPScan::DB::DynamicPluginFinders do
   end
 
   describe '.version_finder_super_class' do
-    context 'when a class is not allowed' do
-      it 'raises an error' do
-        expect { subject.version_finder_super_class(:NotAllowed) }
-          .to raise_error('NotAllowed is not allowed as a Dynamic Finder')
-      end
-    end
+    # handled and tested in spec/lib/finders/dynamic_finders/plugin_version_spec
   end
 
   describe '.method_missing' do

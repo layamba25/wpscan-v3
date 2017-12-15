@@ -84,7 +84,12 @@ module WPScan
           finders.each do |finder_class, config|
             klass = config['class'] ? config['class'] : finder_class
 
-            raise "#{mod} has already a #{finder_class} class" if mod.constants.include?(finder_class.to_sym)
+            # Instead of raising exceptions, skip unallowed/already defined finders
+            # So that, when new DF configs are put in the .yml
+            # users with old version of WPScan will still be able to scan blogs
+            # when updating the DB but not the tool
+            next if mod.constants.include?(finder_class.to_sym) ||
+                    !ALLOWED_CLASSES.include?(klass.to_sym)
 
             version_finder_super_class(klass).create_child_class(mod, finder_class.to_sym, config)
           end
@@ -101,8 +106,6 @@ module WPScan
       # @param [ String, Symbol ] klass
       # @return [ Constant ]
       def self.version_finder_super_class(klass)
-        raise "#{klass} is not allowed as a Dynamic Finder" unless ALLOWED_CLASSES.include?(klass.to_sym)
-
         "WPScan::Finders::DynamicFinder::WpItemVersion::#{klass}".constantize
       end
 
