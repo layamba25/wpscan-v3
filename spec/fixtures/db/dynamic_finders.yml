@@ -3507,6 +3507,11 @@ plugins:
       path: languages/contributor-role-for-approved-comments.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ (?<v>[\d\.]+)/i
       version: true
+  controllercons:
+    QueryParameter:
+      files:
+      - css/controllercons.css
+      version: true
   conversejs:
     QueryParameter:
       files:
@@ -3830,6 +3835,12 @@ plugins:
       class: BodyPattern
       path: languages/demo-bar.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Demo\ Bar\ (?<v>[\d\.]+)/i
+      version: true
+  depublish-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-depublish-posts.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Depublish\ Posts\ (?<v>[\d\.]+)/i
       version: true
   dexonline-searchbox:
     TranslationFile:
@@ -6036,6 +6047,7 @@ plugins:
       files:
       - assets/js/vendor.16d46c95.js
       - assets/js/public.3d1d91ad.js
+      - assets/js/vendor.3c206dd6.js
       version: true
   mappress-google-maps-for-wordpress:
     Comment:
@@ -6236,6 +6248,12 @@ plugins:
       files:
       - assets/css/style.min.css
       version: true
+  paid-member-subscriptions:
+    QueryParameter:
+      files:
+      - assets/css/style-front-end.css
+      - assets/js/front-end.js
+      version: true
   panopress:
     Comment:
       pattern: !ruby/regexp /PanoPress \[(?<v>[\d\.]+)\]/i
@@ -6300,6 +6318,12 @@ plugins:
       files:
       - css/public.css
       version: true
+  pixel-caffeine:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pixel-caffeine.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pixel\ Caffeine\ (?<v>[\d\.]+)/i
+      version: true
   platinum-seo-pack:
     Comment:
       pattern: !ruby/regexp /platinum\ seo\ pack\ (?<v>[\d\.]+)/i
@@ -6338,6 +6362,11 @@ plugins:
     QueryParameter:
       files:
       - css/frontend.css
+      version: true
+  powerpack-lite:
+    QueryParameter:
+      files:
+      - assets/css/pwpc-public.css
       version: true
   pretty-link:
     TranslationFile:
@@ -6479,6 +6508,12 @@ plugins:
   schema:
     Comment:
       pattern: !ruby/regexp /te\ is\ optimized\ with\ the\ Schema\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  scrybs-translation:
+    QueryParameter:
+      files:
+      - public/css/scrybs-public.css
+      - public/js/scrybs-public.js
       version: true
   seriously-simple-podcasting:
     QueryParameter:
@@ -6704,6 +6739,17 @@ plugins:
       - js/front/facebook/commenting.js
       - js/front/sharing/sharing.js
       version: true
+  sympose:
+    QueryParameter:
+      files:
+      - public/css/sympose-public.css
+      - public/js/sympose-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sympose.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Sympose\ (?<v>[\d\.]+)/i
+      version: true
   syndication-links:
     QueryParameter:
       files:
@@ -6788,6 +6834,13 @@ plugins:
       - assets/css/trp-language-switcher.css
       - assets/css/trp-jquery-ui.css
       - assets/js/trp-language-switcher.js
+      version: true
+  travelpayouts:
+    QueryParameter:
+      files:
+      - app/public/themes/flight/css/table-4.css
+      - app/public/themes/hotel/css/table-2.css
+      - app/public/themes/railway/css/main.css
       version: true
   typekit-fonts-for-wordpress:
     TranslationFile:
@@ -6905,6 +6958,12 @@ plugins:
       files:
       - public/assets/css/style.css
       - public/assets/js/rsvp.js
+      version: true
+  wc-trinicargo-shipping:
+    QueryParameter:
+      files:
+      - public/css/wc-trinicargo-shipping-public.css
+      - public/js/wc-trinicargo-shipping-public.js
       version: true
   wd-facebook-feed:
     QueryParameter:
@@ -7156,6 +7215,13 @@ plugins:
       files:
       - public/js/bunvc-autorun-allpack.js
       version: true
+  wp-coupons-and-deals:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/clipboard.min.js
+      - assets/js/main.js
+      version: true
   wp-customer-reviews:
     QueryParameter:
       files:
@@ -7182,6 +7248,16 @@ plugins:
       files:
       - public/css/wp-ehesive-public.css
       - public/js/wp-ehesive-public.js
+      version: true
+  wp-facebook-reviews:
+    QueryParameter:
+      files:
+      - public/css/wprev-public_template1.css
+      - public/css/wprev_w3.css
+      - public/css/wprs_unslider.css
+      - public/css/wprs_unslider-dots.css
+      - public/js/wprev-public.js
+      - public/js/wprs-unslider-min.js
       version: true
   wp-featherlight:
     QueryParameter:
@@ -7263,6 +7339,12 @@ plugins:
       files:
       - public/css/wp-mappost-public.css
       - public/js/wp-mappost-public.js
+      version: true
+  wp-megamenu:
+    QueryParameter:
+      files:
+      - assets/css/wpmm.css
+      - assets/js/wpmm.js
       version: true
   wp-members:
     QueryParameter:
