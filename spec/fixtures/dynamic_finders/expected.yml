@@ -7906,9 +7906,61 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/horizontal-post-slider/cs-framework/languages/bn_BD.po,
         Match: ''"Project-Id-Version: Codestar Framework 1.0.0'''
+  horizontal-widget-most-recent-viewed-posts:
+    QueryParameter:
+      number: 0.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/horizontal-widget-most-recent-viewed-posts/hwmrvp-style.css?ver=0.1.0
+      confidence: 10
+  hospitality:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/hospitality/public/css/hospitality-public.min.css?ver=1.0.6
+      confidence: 10
   hotjar-connecticator:
     Comment:
       found_by: Comment (Passive Detection)
+  hotmart-wp:
+    TranslationFile:
+      number: 0.3.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/hotmart-wp/languages/hotmart-wp-pt_BR.po,
+        Match: ''"Project-Id-Version: Hotmart WP 0.3.3'''
+  hover-effects:
+    QueryParameter:
+      number: '2.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/hover-effects/asset/css/hover.css?ver=2.1
+      confidence: 10
+  hover-effects-builder-free:
+    QueryParameter:
+      number: 1.0.9
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/hover-effects-builder-free/assets/css/pretty-photo/css/prettyPhoto.css?ver=1.0.9
+      - http://wp.lab/wp-content/plugins/hover-effects-builder-free/assets/css/font-frontend/style.css?ver=1.0.9
+      - http://wp.lab/wp-content/plugins/hover-effects-builder-free/assets/css/hi-frontend.css?ver=1.0.9
+      - http://wp.lab/wp-content/plugins/hover-effects-builder-free/assets/js/hi-frontend.min.js?ver=1.0.9
+      confidence: 40
+  hover-image-button:
+    TranslationFile:
+      number: 1.1.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/hover-image-button/languages/hover-image-button.pot,
+        Match: ''"Project-Id-Version: Hover Image Button 1.1.2'''
+  html-forms:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/html-forms/assets/js/public.min.js?ver=1.0.6
+      confidence: 10
   hubwoo-integration:
     TranslationFile:
       number: 1.0.0

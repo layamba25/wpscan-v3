@@ -6207,9 +6207,49 @@ plugins:
       path: cs-framework/languages/bn_BD.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Codestar\ Framework\ (?<v>[\d\.]+)/i
       version: true
+  horizontal-widget-most-recent-viewed-posts:
+    QueryParameter:
+      files:
+      - hwmrvp-style.css
+      version: true
+  hospitality:
+    QueryParameter:
+      files:
+      - public/css/hospitality-public.min.css
+      version: true
   hotjar-connecticator:
     Comment:
       pattern: !ruby/regexp /Hotjar Tracking Code for/i
+  hotmart-wp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/hotmart-wp-pt_BR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Hotmart\ WP\ (?<v>[\d\.]+)/i
+      version: true
+  hover-effects:
+    QueryParameter:
+      files:
+      - asset/css/hover.css
+      version: true
+  hover-effects-builder-free:
+    QueryParameter:
+      files:
+      - assets/css/pretty-photo/css/prettyPhoto.css
+      - assets/css/font-frontend/style.css
+      - assets/css/hi-frontend.css
+      - assets/js/hi-frontend.min.js
+      version: true
+  hover-image-button:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/hover-image-button.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Hover\ Image\ Button\ (?<v>[\d\.]+)/i
+      version: true
+  html-forms:
+    QueryParameter:
+      files:
+      - assets/js/public.min.js
+      version: true
   hubwoo-integration:
     TranslationFile:
       class: BodyPattern
