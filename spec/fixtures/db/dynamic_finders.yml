@@ -193,6 +193,12 @@ plugins:
       files:
       - assets/css/wp-aas-public.css
       version: true
+  acf-content-analysis-for-yoast-seo:
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
+      version: true
   acf-fast-flexy:
     QueryParameter:
       files:
@@ -6489,10 +6495,43 @@ plugins:
       path: languages/i-order-terms.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ I\ Order\ Terms\ (?<v>[\d\.]+)/i
       version: true
+  ic-besocial:
+    QueryParameter:
+      files:
+      - besocial.css
+      - besocial.js
+      version: true
+  icalendar-events-widget:
+    QueryParameter:
+      files:
+      - js/custom-theme/jquery-ui-1.8.16.custom.css
+      - css/ui.datepicker.css
+      - css/icalendar.css
+      - js/icalendar.js
+      - js/date.js
+      version: true
+  icanwp-reservation-form-connector-for-choice-hotels:
+    QueryParameter:
+      files:
+      - public/css/ch-reservation-public.css
+      - public/js/ch-reservation-public.js
+      version: true
   icegram:
     QueryParameter:
       files:
       - assets/js/main.min.js
+      version: true
+  icegram-rainmaker:
+    QueryParameter:
+      files:
+      - assets/css/form.css
+      - assets/js/main.js
+      version: true
+  ichigen-san:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ichigen-san-ja.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Ichigen\ San\ (?<v>[\d\.]+)/i
       version: true
   ico-list-widget:
     QueryParameter:
@@ -6505,15 +6544,118 @@ plugins:
       path: languages/ico-lw.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ ICO\ List\ Widget\ (?<v>[\d\.]+)/i
       version: true
+  idataffiliates:
+    QueryParameter:
+      files:
+      - js/app/ta.js
+      version: true
+  idea-board:
+    QueryParameter:
+      files:
+      - assets/js/lib/jquery.nicefileinput.min.js
+      - assets/js/idea-board.js
+      version: true
+  ideas:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ideas.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Ideas\ (?<v>[\d\.]+)/i
+      version: true
   idonate:
     QueryParameter:
       files:
       - "/css/idonate.css"
       version: true
+  idx-broker-platinum:
+    Comment:
+      pattern: !ruby/regexp /IDX\ Broker\ WordPress\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
+  ie-compatibility-mode-checker:
+    QueryParameter:
+      files:
+      - public/css/wp-ie-check-public.css
+      - public/js/wp-ie-check-public.js
+      version: true
+  ie9-pinned-site:
+    Comment:
+      pattern: !ruby/regexp /IE9\ Pinned\ Site\ (?<v>[\d\.]+)/i
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="IE9 Pinned Site"]/@content
+      version: true
+  ifttt-instagram-gallery:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      version: true
+  ignation-iot:
+    QueryParameter:
+      files:
+      - public/css/ignation-iot-public.css
+      - public/js/ignation-iot-public.js
+      version: true
   igniteup:
     QueryParameter:
       files:
       - includes/css/front-compulsory.css
+      version: true
+  ilannotations:
+    QueryParameter:
+      files:
+      - _inc/Annotations.css
+      - _inc/detectmobilebrowser.js
+      - _inc/jQuery.highlighter.js
+      - _inc/jquery.query-object.js
+      - _inc/Anotations.js
+      version: true
+  ilen-video-locker:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      - assets/js/front.js
+      version: true
+  ilmenite-cookie-consent:
+    QueryParameter:
+      files:
+      - assets/css/cookie-banner.min.css
+      - assets/js/cookie-banner.min.js
+      version: true
+  iluvwalkingcom-widget:
+    QueryParameter:
+      files:
+      - resources/iluvwalking-widget.css
+      version: true
+  image-caption-hover-visual-composer-addon:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ich-vc-de_DE.po
+      pattern: !ruby/regexp /\#:\ (?<v>[\d\.]+)/i
+      version: true
+  image-projector:
+    QueryParameter:
+      files:
+      - public/css/ip-style.css
+      version: true
+  image-shortcake:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/image-shortcake.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Image\-shortcake\ (?<v>[\d\.]+)/i
+      version: true
+  image-source-control-isc:
+    QueryParameter:
+      files:
+      - public/assets/js/front-js.js
+      version: true
+  image-store:
+    QueryParameter:
+      files:
+      - _js/sonar.js
+      - _js/touch.jquery.js
+      - _js/xmslider.jquery.js
+      - _js/imstore.js
+      - _js/galleriffic.js
       version: true
   image-widget:
     TranslationFile:
@@ -6521,15 +6663,90 @@ plugins:
       path: lang/image-widget.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Image\ Widget\ (?<v>[\d\.]+)/i
       version: true
+  imagelightbox:
+    QueryParameter:
+      files:
+      - css/styles.css
+      - js/combined.min.js
+      version: true
+  imagelinks-interactive-image-builder-lite:
+    QueryParameter:
+      files:
+      - lib/imagelinks.css
+      - lib/imagelinks.wp.css
+      version: true
+  images-lazyload-and-slideshow:
+    Comment:
+      pattern: !ruby/regexp /Images\ Lazyload\ and\ Slideshow\ (?<v>[\d\.]+)/i
+      version: true
+  imageshack-offloader:
+    QueryParameter:
+      files:
+      - inc/errors.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/imageshack-offloader.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ ImageShack\ Offloader\ (?<v>[\d\.]+)/i
+      version: true
+  imajize:
+    QueryParameter:
+      files:
+      - public/css/imajize-public.css
+      - public/js/imajize-public.js
+      version: true
+  imdb-connector:
+    QueryParameter:
+      files:
+      - styles/widgets.css
+      version: true
+  imdb-easy-movie-embed-ieme:
+    Comment:
+      pattern: !ruby/regexp /imdb\-easy\-movie\-embed\-ieme:\ v(?<v>[\d\.]+)/i
+      version: true
+  imincom-affiliate-plugin-for-wordpress:
+    QueryParameter:
+      files:
+      - css/imin-widget.css
+      version: true
   imp-download:
     Comment:
       pattern: !ruby/regexp /Powered by iMP Download v(?<v>[\d\.]+)/i
+      version: true
+  implied-cookie-consent:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/implied-cookie-consent.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Implied\ Cookie\ Consent\ (?<v>[\d\.]+)/i
       version: true
   import-facebook-events:
     TranslationFile:
       class: BodyPattern
       path: languages/import-facebook-events.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ Import\ Facebook\ Events\ (?<v>[\d\.]+)/i
+      version: true
+  import-html-pages:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/import-html-pages.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ HTML\ Import\ 2\ (?<v>[\d\.]+)/i
+      version: true
+  improved-let-it-snow:
+    QueryParameter:
+      files:
+      - script/snowstorm-min.js
+      version: true
+  imu-calculator:
+    QueryParameter:
+      files:
+      - includes/stylesheet/imu_calculator.css
+      - includes/js/imu_calculator.js
+      version: true
+  index-press:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/index-press.pot
+      pattern: !ruby/regexp /ion\ of\ the\ WordPress\ plugin\ Index\ Press\ (?<v>[\d\.]+)/i
       version: true
   indieweb-post-kinds:
     QueryParameter:
@@ -6540,6 +6757,32 @@ plugins:
       class: BodyPattern
       path: languages/post_kinds.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ Kinds\ (?<v>[\d\.]+)/i
+      version: true
+  infogalore-file-folders:
+    QueryParameter:
+      files:
+      - css/frontend.min.css
+      - js/frontend.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/infogalore-folders.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ InfoGalore\ File\ Folders\ (?<v>[\d\.]+)/i
+      version: true
+  inline-comments:
+    QueryParameter:
+      files:
+      - js/min/inline-comments.min.js
+      version: true
+  inline-pagelist:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/pagelist-by_BY.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Inline\ PageList\ (?<v>[\d\.]+)/i
       version: true
   insta-gallery:
     QueryParameter:
@@ -7478,8 +7721,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/algolia.pot
-      pattern: !ruby/regexp /Algolia\ [^\s]+ Instant\ &\ Relevant\ results\
-        (?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Algolia\ [^\s]+ Instant\ &\ Relevant\ results\ (?<v>[\d\.]+)/i
       version: true
   sendpulse-email-marketing-newsletter:
     ComposerFile:
