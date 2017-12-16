@@ -2832,6 +2832,12 @@ plugins:
       - public/css/cf7_notie-public.css
       - public/js/notie.js
       version: true
+  cf7-proxy-ip:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   cf7-utm-tracking:
     QueryParameter:
       files:
@@ -3061,6 +3067,12 @@ plugins:
       files:
       - inc/cleantalk_nocache.js
       - js/apbct-public.js
+      version: true
+  clear-cache-for-timber:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   cleverness-to-do-list:
     QueryParameter:

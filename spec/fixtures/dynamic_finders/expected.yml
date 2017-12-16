@@ -3621,6 +3621,12 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/cf7-notie/public/css/cf7_notie-public.css?ver=1.0
       - http://wp.lab/wp-content/plugins/cf7-notie/public/js/notie.js?ver=1.0
+  cf7-proxy-ip:
+    ComposerFile:
+      number: 0.1.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/cf7-proxy-ip/package.json, Match: ''0.1.0'''
   cf7-utm-tracking:
     QueryParameter:
       number: '1.1'
@@ -3918,6 +3924,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk_nocache.js?ver=5.82
       - http://wp.lab/wp-content/plugins/cleantalk-spam-protect/js/apbct-public.js?ver=5.82
+  clear-cache-for-timber:
+    ComposerFile:
+      number: 0.1.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/clear-cache-for-timber/composer.json, Match:
+        ''0.1.0'''
   cleverness-to-do-list:
     QueryParameter:
       number: 3.4.2

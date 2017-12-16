@@ -3,7 +3,7 @@ module WPScan
     # Dynamic Finders
     class DynamicFinders
       # TODO: Put that as class var to allow it to be overriden
-      ALLOWED_CLASSES = %i[Comment Xpath HeaderPattern BodyPattern JavascriptVar QueryParameter].freeze
+      ALLOWED_CLASSES = %i[Comment Xpath HeaderPattern BodyPattern JavascriptVar QueryParameter ConfigParser].freeze
 
       # @return [ String ]
       def self.db_file
