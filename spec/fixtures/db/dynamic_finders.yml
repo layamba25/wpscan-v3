@@ -4493,6 +4493,12 @@ plugins:
       path: languages/email-subscribe.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ email\ subscription\ popup\ (?<v>[\d\.]+)/i
       version: true
+  email-subscribers:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/email-subscribers-pt_BR.po
+      pattern: !ruby/regexp /ersion:\ Email\ Subscribers\ &\ Newsletters\ (?<v>[\d\.]+)/i
+      version: true
   email-subscribers-advanced-form:
     TranslationFile:
       class: BodyPattern
@@ -6250,6 +6256,24 @@ plugins:
       files:
       - assets/js/public.min.js
       version: true
+  html5-search-box-for-wordpress:
+    QueryParameter:
+      files:
+      - css/html5-search-for-wordpress.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: langs/html5-search-for-wordpress-de_DE.po
+      pattern: !ruby/regexp /on:\ WordPress\.com\ Stats\ Smiley\ Remover\ v(?<v>[\d\.]+)/i
+      version: true
+  html5-videogallery-plus-player:
+    QueryParameter:
+      files:
+      - assets/css/video-js.css
+      - assets/css/video-style.css
+      - assets/css/magnific-popup.css
+      - assets/js/video.js
+      version: true
   hubwoo-integration:
     TranslationFile:
       class: BodyPattern
@@ -6261,6 +6285,38 @@ plugins:
       class: BodyPattern
       path: lang/en_US.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Hueman\ Addons\ v(?<v>[\d\.]+)/i
+      version: true
+  humanstxt:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/humanstxt.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Humans\ TXT\ (?<v>[\d\.]+)/i
+      version: true
+  hummingbird-performance:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wphb-default.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Hummingbird\ Pro\ (?<v>[\d\.]+)/i
+      version: true
+  hybrid-gallery:
+    QueryParameter:
+      files:
+      - libs/assets/css/libs.global.pack.min.css
+      - libs/assets/css/libs.engine.pack.min.css
+      - engine/assets/css/hybrid.gallery.engine.min.css
+      - libs/assets/js/libs.pack.min.js
+      - engine/assets/js/hybrid.gallery.engine.min.js
+      version: true
+  i-chat:
+    QueryParameter:
+      files:
+      - js/jquery.cookie.js
+      version: true
+  i-order-terms:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/i-order-terms.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ I\ Order\ Terms\ (?<v>[\d\.]+)/i
       version: true
   icegram:
     QueryParameter:
@@ -6302,6 +6358,11 @@ plugins:
       class: BodyPattern
       path: languages/post_kinds.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ Kinds\ (?<v>[\d\.]+)/i
+      version: true
+  insta-gallery:
+    QueryParameter:
+      files:
+      - assets/insta-gallery.css
       version: true
   instagram-feed:
     QueryParameter:
@@ -6376,6 +6437,12 @@ plugins:
   juiz-last-tweet-widget:
     Comment:
       pattern: !ruby/regexp /Juiz Last Tweet Widget/i
+  kiip:
+    QueryParameter:
+      files:
+      - public/css/kiip-for-wordpress-public.css
+      - public/js/kiip-for-wordpress-public-contained.js
+      version: true
   kingcomposer:
     QueryParameter:
       files:
@@ -6433,6 +6500,12 @@ plugins:
       files:
       - css/unsemantic-grid-responsive-tablet.css
       version: true
+  litespeed-cache:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/litespeed-cache.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ LiteSpeed\ Cache\ (?<v>[\d\.]+)/i
+      version: true
   live-composer-page-builder:
     Comment:
       pattern: !ruby/regexp /ve\-composer\-page\-builder\/css\/ie\.css\?ver=(?<v>[\d\.]+)/i
@@ -6483,12 +6556,26 @@ plugins:
       - assets/js/magee-shortcodes.js
       - assets/js/magee-modal.js
       version: true
+  mailoptin:
+    QueryParameter:
+      files:
+      - vendor/mailoptin/core/src/assets/css/mailoptin.min.css
+      - vendor/mailoptin/core/src/assets/js/mailoptin.min.js
+      version: true
   mailpoet:
     QueryParameter:
       files:
       - assets/js/vendor.16d46c95.js
       - assets/js/public.3d1d91ad.js
       - assets/js/vendor.3c206dd6.js
+      version: true
+  mango-popup:
+    QueryParameter:
+      files:
+      - vendor/animate.css/animate.min.css
+      - vendor/font-awesome/css/font-awesome.min.css
+      - assets/frontend/css/main.css
+      - assets/frontend/js/main.js
       version: true
   mappress-google-maps-for-wordpress:
     Comment:
@@ -6514,6 +6601,12 @@ plugins:
       files:
       - assets/css/mashsb.min.css
       - assets/js/mashsb.min.js
+      version: true
+  maxbuttons:
+    QueryParameter:
+      files:
+      - assets/libraries/font-awesome/css/font-awesome.min.css
+      - js/min/front.js
       version: true
   megamenu:
     QueryParameter:
@@ -7070,6 +7163,12 @@ plugins:
       - res/css/language-selector.css.gzip
       - res/js/jquery.cookie.js
       version: true
+  smart-manager-for-wp-e-commerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/smart-manager-for-wp-e-commerce.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Smart\ Manager\ (?<v>[\d\.]+)/i
+      version: true
   snow-storm:
     QueryParameter:
       files:
@@ -7132,6 +7231,11 @@ plugins:
   squirrly-seo:
     Comment:
       pattern: !ruby/regexp /Squirrly\ SEO\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
+  staff-list:
+    QueryParameter:
+      files:
+      - css/staff-list.css
       version: true
   sticky-menu-or-anything-on-scroll:
     QueryParameter:
@@ -7424,6 +7528,12 @@ plugins:
     QueryParameter:
       files:
       - public/css/woo-feed-public.css
+      version: true
+  weforms:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/weforms.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ weForms\ (?<v>[\d\.]+)/i
       version: true
   whats-new-genarator:
     QueryParameter:
@@ -7914,6 +8024,15 @@ plugins:
       files:
       - public/css/posttosteemit-public.css
       - public/js/posttosteemit-public.js
+      version: true
+  wp-tripadvisor-review-slider:
+    QueryParameter:
+      files:
+      - public/css/wptripadvisor_w3.css
+      - public/css/wprs_unslider.css
+      - public/css/wprs_unslider-dots.css
+      - public/js/wprev-public.js
+      - public/js/wprs-unslider-min.js
       version: true
   wp-user-frontend:
     TranslationFile:
