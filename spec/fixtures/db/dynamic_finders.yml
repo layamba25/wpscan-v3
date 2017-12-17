@@ -290,6 +290,12 @@ plugins:
       pattern: !ruby/regexp '/Project\-Id\-Version: Active Directory Authentication
         Integration (?<v>[\d\.]+)/i'
       version: true
+  acumulus:
+    ComposerFile:
+      class: ConfigParser
+      path: libraries/Siel/composer.json
+      key: version
+      version: true
   acurax-social-media-widget:
     QueryParameter:
       files:
@@ -383,6 +389,26 @@ plugins:
     JavascriptVar:
       xpath: //script[@data-cfasync="false"]
       pattern: !ruby/regexp /wp_product_version = "wpp\-(?<v>([\d\.]+))";/i
+      version: true
+  addthis-all:
+    JavascriptVar:
+      xpath: //script[@data-cfasync="false"]
+      pattern: !ruby/regexp /wp_product_version = "wpwt\-(?<v>([\d\.]+))";/i
+      version: true
+  addthis-follow:
+    JavascriptVar:
+      xpath: //script[@data-cfasync="false"]
+      pattern: !ruby/regexp /wp_product_version = "wpf\-(?<v>([\d\.]+))";/i
+      version: true
+  addthis-related-posts:
+    JavascriptVar:
+      xpath: //script[@data-cfasync="false"]
+      pattern: !ruby/regexp /wp_product_version = "wprp\-(?<v>([\d\.]+))";/i
+      version: true
+  addthis-smart-layers:
+    JavascriptVar:
+      xpath: //script[@data-cfasync="false"]
+      pattern: !ruby/regexp /wp_product_version = "wpsl\-(?<v>([\d\.]+))";/i
       version: true
   adjusted-bounce-rate:
     QueryParameter:
@@ -3411,6 +3437,10 @@ plugins:
       path: languages/commentpress-core.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ CommentPress\ Core\ (?<v>[\d\.]+)/i
       version: true
+  comprehensive-google-map-plugin:
+    JavascriptVar:
+      pattern: !ruby/regexp /Comprehensive Google Map plugin v(?<v>[\d\.]+)/i
+      version: true
   comments-ratings:
     QueryParameter:
       files:
@@ -5188,6 +5218,10 @@ plugins:
       - js/lib/require.js
       - js/sr.min.js
       version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /window\._sr\s*=\s*{(?<json>.+?(?=};))};/im
+      version_key: site:plugin_version
+      version: true
   fb2wp-integration-tools:
     MetaTag:
       class: Xpath
@@ -5421,6 +5455,10 @@ plugins:
     QueryParameter:
       files:
       - js/require-utils.js
+      version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var FlowFlowOpts\s*=\s*{(?<json>.+?(?=};))};/i
+      version_key: plugin_ver
       version: true
   fluid-responsive-slideshow:
     QueryParameter:
@@ -7377,6 +7415,10 @@ plugins:
       - assets/js/share.min.js
       - assets/js/posttabs.min.js
       version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var peepsodata\s*=\s*{(?<json>.+?(?=,"login_)),"login_/i
+      version_key: version
+      version: true
   persian-woocommerce:
     TranslationFile:
       class: BodyPattern
@@ -8808,6 +8850,10 @@ plugins:
       - includes/js/wp-coin-hive-util.js
       - includes/js/wp-coin-hive.js
       version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var wp_js_options\s*=\s*{(?<json>.+?(?=};))};/i
+      version_key: version
+      version: true
   wp-multilang:
     QueryParameter:
       files:
@@ -9019,6 +9065,10 @@ plugins:
       class: BodyPattern
       path: languages/wpglobus.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WPGlobus\ (?<v>[\d\.]+)/i
+      version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var WPGlobus\s*=\s*{(?<json>.+?(?=};))};/i
+      version_key: version
       version: true
   wpglobus-featured-images:
     TranslationFile:

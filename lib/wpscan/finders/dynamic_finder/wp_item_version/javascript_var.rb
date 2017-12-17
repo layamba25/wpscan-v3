@@ -50,7 +50,7 @@ module WPScan
           def version_number_from_match_data(match_data)
             if self.class::VERSION_KEY
               begin
-                json = JSON.parse("{#{match_data[:json]}}")
+                json = JSON.parse("{#{match_data[:json].strip.tr("'", '"')}}")
               rescue JSON::ParserError
                 return
               end

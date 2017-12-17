@@ -352,6 +352,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/active-directory-authentication-integration/languages/default.po,
         Match: ''Project-Id-Version: Active Directory Authentication Integration 0.6'''
+  acumulus:
+    ComposerFile:
+      number: 4.9.2
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/acumulus/libraries/Siel/composer.json, Match:
+        ''4.9.2'''
   acurax-social-media-widget:
     QueryParameter:
       number: 3.2.5
@@ -462,6 +469,30 @@ plugins:
       found_by: Javascript Var (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''wp_product_version = "wpp-5.3.5";'''
+  addthis-all:
+    JavascriptVar:
+      number: 3.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''wp_product_version = "wpwt-3.1.2";'''
+  addthis-follow:
+    JavascriptVar:
+      number: 4.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''wp_product_version = "wpf-4.1.2";'''
+  addthis-related-posts:
+    JavascriptVar:
+      number: 2.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''wp_product_version = "wprp-2.1.2";'''
+  addthis-smart-layers:
+    JavascriptVar:
+      number: 3.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''wp_product_version = "wpsl-3.1.2";'''
   adjusted-bounce-rate:
     QueryParameter:
       number: 1.2.1
@@ -4367,6 +4398,12 @@ plugins:
       - http://wp.lab/wp-content/plugins/comments-with-social-login//css/font-awesome.min.css?ver=1.0
       - http://wp.lab/wp-content/plugins/comments-with-social-login//css/ixwp-comments-social-login.css?ver=1.0
       - http://wp.lab/wp-content/plugins/comments-with-social-login//js/ixwp-comments-social-login.js?ver=1.0
+  comprehensive-google-map-plugin:
+    JavascriptVar:
+      number: 9.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Comprehensive Google Map plugin v9.1.2'''
   community-watch:
     QueryParameter:
       number: 1.0.0
@@ -6570,6 +6607,11 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/fb-social-reader/js/lib/require.js?ver=1.6.0.6
       - http://wp.lab/wp-content/plugins/fb-social-reader/js/sr.min.js?ver=1.6.0.6
+    JavascriptVar:
+      number: 1.6.0.6
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: '' ''plugin_version'': "1.6.0.6",'''
   fb2wp-integration-tools:
     MetaTag:
       number: 1.5.7.1
@@ -6878,6 +6920,11 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/flow-flow-social-streams/js/require-utils.js?ver=3.0.10
+    JavascriptVar:
+      number: 3.0.10
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''eams","plugin_ver":"3.0.10"};'''
   fluid-responsive-slideshow:
     QueryParameter:
       number: 2.3.1
@@ -9366,6 +9413,11 @@ plugins:
       - http://wp.lab/wp-content/plugins/peepso-core/assets/js/share.min.js?ver=1.9.1
       - http://wp.lab/wp-content/plugins/peepso-core/assets/js/posttabs.min.js?ver=1.9.1
       confidence: 100
+    JavascriptVar:
+      number: 1.9.1
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''oajax\/","version":"1.9.1","postsize":"4000",'''
   persian-woocommerce:
     TranslationFile:
       number: 3.2.0
@@ -11150,6 +11202,11 @@ plugins:
       - http://wp.lab/wp-content/plugins/wp-monero-miner-using-coin-hive/includes/js/wp-coin-hive-util.js?ver=3.1.1
       - http://wp.lab/wp-content/plugins/wp-monero-miner-using-coin-hive/includes/js/wp-coin-hive.js?ver=3.1.1
       confidence: 30
+    JavascriptVar:
+      number: 3.1.1
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''iant":"","version":"3.1.1","userLoggedIn":"",'''
   wp-multilang:
     QueryParameter:
       number: 2.1.7
@@ -11408,6 +11465,11 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wpglobus/languages/wpglobus.pot, Match:
         ''"Project-Id-Version: WPGlobus 1.9.3'''
+    JavascriptVar:
+      number: 1.9.4
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''lobus = {"version":"1.9.4","language":"en","e'''
   wpglobus-featured-images:
     TranslationFile:
       number: 1.6.0
