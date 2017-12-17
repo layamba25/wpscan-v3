@@ -3863,6 +3863,12 @@ plugins:
       path: composer.json
       key: version
       version: true
+  customer-chat-for-facebook:
+    QueryParameter:
+      files:
+      - public/css/customer-chat-for-facebook-public.css
+      - public/js/customer-chat-for-facebook-public.js
+      version: true
   customizer-search:
     TranslationFile:
       class: BodyPattern
@@ -4059,6 +4065,11 @@ plugins:
       class: BodyPattern
       path: drastic-table-manager.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ Drastic\ Table\ Manager\ (?<v>[\d\.]+)/i
+      version: true
+  drim-share:
+    QueryParameter:
+      files:
+      - public/css/drim-share.min.css
       version: true
   dropdown-content:
     TranslationFile:
@@ -7189,6 +7200,10 @@ plugins:
       path: languages/nelio-content.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Nelio\ Content\ (?<v>[\d\.]+)/i
       version: true
+  neptune-style-element:
+    Comment:
+      pattern: !ruby/regexp /uses\ the\ Neptune\ Style\ Element\ plugin\ v(?<v>[\d\.]+)/i
+      version: true
   news-ticker:
     Comment:
       pattern: !ruby/regexp /START TICKER VER (?<v>[\d\.]+)/i
@@ -7275,6 +7290,10 @@ plugins:
   optin-monster:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'
+      version: true
+  osm:
+    Comment:
+      pattern: !ruby/regexp /OSM\ plugin\ V(?<v>[\d\.]+)/i
       version: true
   oss-upload:
     TranslationFile:
@@ -8775,6 +8794,13 @@ plugins:
       - public/css/wpmccp-public.css
       - public/js/wpmccp-public.js
       version: true
+  wp-miniaudioplayer:
+    QueryParameter:
+      files:
+      - css/miniplayer.css
+      - js/jquery.mb.miniAudioPlayer.min.js
+      - js/map_overwrite_default_me.js
+      version: true
   wp-monero-miner-using-coin-hive:
     QueryParameter:
       files:
@@ -9028,6 +9054,11 @@ plugins:
       files:
       - public/css/wpmerchant-public.css
       - public/js/wpmerchant-public.js
+      version: true
+  wppizza:
+    QueryParameter:
+      files:
+      - js/scripts.min.js
       version: true
   wpshopgermany-free:
     Comment:

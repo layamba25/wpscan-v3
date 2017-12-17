@@ -4910,6 +4910,14 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/customer-area/composer.json, Match: ''7.4.3'''
+  customer-chat-for-facebook:
+    QueryParameter:
+      number: 1.0.3.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/customer-chat-for-facebook/public/css/customer-chat-for-facebook-public.css?ver=1.0.3.1
+      - http://wp.lab/wp-content/plugins/customer-chat-for-facebook/public/js/customer-chat-for-facebook-public.js?ver=1.0.3.1
+      confidence: 20
   customizer-search:
     TranslationFile:
       number: 1.0.0
@@ -5140,6 +5148,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/drastic-table-manager/drastic-table-manager.pot,
         Match: ''oject-Id-Version: Drastic Table Manager 0.4'''
+  drim-share:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/drim-share/public/css/drim-share.min.css?ver=1.1.0
+      confidence: 10
   dropdown-content:
     TranslationFile:
       number: 1.0.2
@@ -9128,6 +9143,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/nelio-content/languages/nelio-content.pot,
         Match: ''"Project-Id-Version: Nelio Content 1.4.4'''
+  neptune-style-element:
+    Comment:
+      number: '1.0'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''uses the Neptune Style Element plugin v1.0'''
   news-ticker:
     Comment:
       number: 2.1.2
@@ -9237,6 +9258,12 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''OptinMonster WordPress plugin v2.0.2.2 -'''
+  osm:
+    Comment:
+      number: 4.0.2
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''OSM plugin V4.0.2'''
   oss-upload:
     TranslationFile:
       number: '3.5'
@@ -11105,6 +11132,15 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/wp-messenger-customer-chat/public/css/wpmccp-public.css?ver=1.2.0
       - http://wp.lab/wp-content/plugins/wp-messenger-customer-chat/public/js/wpmccp-public.js?ver=1.2.0
+  wp-miniaudioplayer:
+    QueryParameter:
+      number: 1.8.7
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-miniaudioplayer/css/miniplayer.css?ver=1.8.7
+      - http://wp.lab/wp-content/plugins/wp-miniaudioplayer/js/jquery.mb.miniAudioPlayer.min.js?ver=1.8.7
+      - http://wp.lab/wp-content/plugins/wp-miniaudioplayer/js/map_overwrite_default_me.js?ver=1.8.7
+      confidence: 30
   wp-monero-miner-using-coin-hive:
     QueryParameter:
       number: 3.1.1
@@ -11415,6 +11451,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/wpmerchant/public/css/wpmerchant-public.css?ver=2.0.5
       - http://wp.lab/wp-content/plugins/wpmerchant/public/js/wpmerchant-public.js?ver=2.0.5
       confidence: 20
+  wppizza:
+    QueryParameter:
+      number: '3.2'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wppizza/js/scripts.min.js?ver=3.2
+      confidence: 10
   wpshopgermany-free:
     Comment:
       number: 4.0.4
