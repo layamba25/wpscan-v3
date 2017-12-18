@@ -3437,9 +3437,12 @@ plugins:
       path: languages/commentpress-core.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ CommentPress\ Core\ (?<v>[\d\.]+)/i
       version: true
-  comprehensive-google-map-plugin:
-    JavascriptVar:
-      pattern: !ruby/regexp /Comprehensive Google Map plugin v(?<v>[\d\.]+)/i
+  comments-like-dislike:
+    QueryParameter:
+      files:
+      - css/font-awesome.min.css
+      - css/cld-frontend.css
+      - js/cld-frontend.js
       version: true
   comments-ratings:
     QueryParameter:
@@ -3490,6 +3493,10 @@ plugins:
       path: package.json
       key: version
       version: true
+  comprehensive-google-map-plugin:
+    JavascriptVar:
+      pattern: !ruby/regexp /Comprehensive Google Map plugin v(?<v>[\d\.]+)/i
+      version: true
   computer-repair-shop:
     QueryParameter:
       files:
@@ -3537,6 +3544,10 @@ plugins:
       files:
       - includes/css/styles.css
       - includes/js/scripts.js
+      version: true
+    HiddenInput:
+      class: Xpath
+      xpath: //input[@name="_wpcf7_version"]/@value
       version: true
   contact-form-7-extras:
     TranslationFile:
@@ -4023,6 +4034,12 @@ plugins:
       class: BodyPattern
       path: languages/plugin-name.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  dima-take-action:
+    QueryParameter:
+      files:
+      - public/css/dima-take-action-public.css
+      - public/js/dima-take-action-public.js
       version: true
   dirt-directory-client:
     TranslationFile:
@@ -4611,6 +4628,14 @@ plugins:
       files:
       - assets/stylesheet/elementary-frontend.css
       version: true
+  elementor:
+    QueryParameter:
+      files:
+      - assets/lib/eicons/css/elementor-icons.min.css
+      - assets/css/animations.min.css
+      - assets/css/frontend.min.css
+      - assets/js/frontend.min.js
+      version: true
   els-ajax-login:
     QueryParameter:
       files:
@@ -4757,6 +4782,12 @@ plugins:
       class: BodyPattern
       path: languages/entry-views.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Entry\ Views\ (?<v>[\d\.]+)/i
+      version: true
+  entrywizard:
+    QueryParameter:
+      files:
+      - styles/entrywizard.css
+      - styles/jquery-ui.css
       version: true
   envator:
     QueryParameter:
@@ -5219,7 +5250,7 @@ plugins:
       - js/sr.min.js
       version: true
     JavascriptVar:
-      pattern: !ruby/regexp /window\._sr\s*=\s*{(?<json>.+?(?=};))};/im
+      pattern: !ruby/regexp /window\._sr\s*=\s*{(?<json>.+?(?=};))};/mi
       version_key: site:plugin_version
       version: true
   fb2wp-integration-tools:
@@ -7142,6 +7173,17 @@ plugins:
       - assets/css/mashsb.min.css
       - assets/js/mashsb.min.js
       version: true
+  master-slider:
+    QueryParameter:
+      files:
+      - public/assets/css/masterslider.main.css
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /MasterSlider\ (?<v>[\d\.]+)\ \-\ Responsive\ Touch\ Image\
+        Slider\ \|\ avt\.li\/msf/i
   maxbuttons:
     QueryParameter:
       files:
@@ -7212,6 +7254,11 @@ plugins:
     QueryParameter:
       files:
       - css/dark.css
+      version: true
+  multi-rating:
+    QueryParameter:
+      files:
+      - assets/js/frontend-min.js
       version: true
   my-eyes-are-up-here:
     ComposerFile:
@@ -8027,6 +8074,19 @@ plugins:
       files:
       - css/staff-list.css
       version: true
+  stageshow:
+    QueryParameter:
+      files:
+      - css/stageshow.css
+      - js/stageshowlib_js.js
+      - js/stageshow.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="StageShow"]/@content
+      version: true
+      pattern: !ruby/regexp /StageShow\ for\ WordPress\ by\ Malcolm\ Shergold\ \-\
+        Ver:(?<v>[\d\.]+)\ \-\ BoxOfficeURL:/i
   sticky-menu-or-anything-on-scroll:
     QueryParameter:
       files:
@@ -8282,6 +8342,13 @@ plugins:
       files:
       - video-js/kg-video-js-skin.css
       - css/kgvid_styles.css
+      version: true
+  video-sync-for-vimeo:
+    QueryParameter:
+      files:
+      - css/rvs-styles.css
+      - css/responsive-video.css
+      - js/rvs-loading.js
       version: true
   vipers-video-quicktags:
     Comment:

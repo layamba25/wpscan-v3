@@ -4373,6 +4373,15 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/commentpress-core/languages/commentpress-core.pot,
         Match: ''Project-Id-Version: CommentPress Core 3.9.7'''
+  comments-like-dislike:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/comments-like-dislike/css/font-awesome.min.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/comments-like-dislike/css/cld-frontend.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/comments-like-dislike/js/cld-frontend.js?ver=1.0.5
+      confidence: 30
   comments-ratings:
     QueryParameter:
       number: 1.1.5
@@ -4398,12 +4407,6 @@ plugins:
       - http://wp.lab/wp-content/plugins/comments-with-social-login//css/font-awesome.min.css?ver=1.0
       - http://wp.lab/wp-content/plugins/comments-with-social-login//css/ixwp-comments-social-login.css?ver=1.0
       - http://wp.lab/wp-content/plugins/comments-with-social-login//js/ixwp-comments-social-login.js?ver=1.0
-  comprehensive-google-map-plugin:
-    JavascriptVar:
-      number: 9.1.2
-      found_by: Javascript Var (Passive Detection)
-      interesting_entries:
-      - 'http://wp.lab/, Match: ''Comprehensive Google Map plugin v9.1.2'''
   community-watch:
     QueryParameter:
       number: 1.0.0
@@ -4442,6 +4445,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/complete-open-graph/package.json, Match:
         ''3.1.2'''
+  comprehensive-google-map-plugin:
+    JavascriptVar:
+      number: 9.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Comprehensive Google Map plugin v9.1.2'''
   computer-repair-shop:
     QueryParameter:
       number: '1.0'
@@ -4506,6 +4515,11 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.1
       - http://wp.lab/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.1
+    HiddenInput:
+      number: 4.9.2
+      found_by: Hidden Input (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''4.9.2'''
   contact-form-7-extras:
     TranslationFile:
       number: 0.4.0
@@ -5101,6 +5115,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/digital-certainty/languages/plugin-name.pot,
         Match: ''Project-Id-Version: TODO 1.0.0'''
+  dima-take-action:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/dima-take-action/public/css/dima-take-action-public.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/dima-take-action/public/js/dima-take-action-public.js?ver=1.0.2
+      confidence: 20
   dirt-directory-client:
     TranslationFile:
       number: 1.2.0
@@ -5844,6 +5866,16 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/elementary/assets/stylesheet/elementary-frontend.css?ver=1.2
+  elementor:
+    QueryParameter:
+      number: 1.7.11
+      found_by: Query Parameter (Passive Detection)
+      confidence: 40
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1.7.11
+      - http://wp.lab/wp-content/plugins/elementor/assets/css/animations.min.css?ver=1.7.11
+      - http://wp.lab/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=1.7.11
+      - http://wp.lab/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=1.7.11
   els-ajax-login:
     QueryParameter:
       number: 1.0.1
@@ -6024,6 +6056,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/entry-views/languages/entry-views.pot, Match:
         ''"Project-Id-Version: Entry Views 1.0.0'''
+  entrywizard:
+    QueryParameter:
+      number: 1.3.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/entrywizard/styles/entrywizard.css?ver=1.3.2
+      - http://wp.lab/wp-content/plugins/entrywizard/styles/jquery-ui.css?ver=1.3.2
+      confidence: 20
   envator:
     QueryParameter:
       number: '1.0'
@@ -9063,6 +9103,19 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/mashsharer/assets/css/mashsb.min.css?ver=3.4.7
       - http://wp.lab/wp-content/plugins/mashsharer/assets/js/mashsb.min.js?ver=3.4.7
+  master-slider:
+    QueryParameter:
+      number: 3.4.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/master-slider/public/assets/css/masterslider.main.css?ver=3.4.1
+      confidence: 10
+    MetaTag:
+      number: 3.4.1
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''MasterSlider 3.4.1 - Responsive Touch Image Slider
+        | avt.li/msf'''
   maxbuttons:
     QueryParameter:
       number: '6.25'
@@ -9159,6 +9212,13 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/mp3-jplayer/css/dark.css?ver=2.7.2
+  multi-rating:
+    QueryParameter:
+      number: 4.2.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/multi-rating/assets/js/frontend-min.js?ver=4.2.8
+      confidence: 10
   my-eyes-are-up-here:
     ComposerFile:
       number: 1.1.9
@@ -10174,6 +10234,21 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/staff-list/css/staff-list.css?ver=0.5.1
       confidence: 10
+  stageshow:
+    QueryParameter:
+      number: 6.6.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/stageshow/css/stageshow.css?ver=6.6.3
+      - http://wp.lab/wp-content/plugins/stageshow/js/stageshowlib_js.js?ver=6.6.3
+      - http://wp.lab/wp-content/plugins/stageshow/js/stageshow.js?ver=6.6.3
+      confidence: 30
+    MetaTag:
+      number: 6.6.3
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''StageShow for WordPress by Malcolm Shergold - Ver:6.6.3
+        - BoxOfficeURL:'''
   sticky-menu-or-anything-on-scroll:
     QueryParameter:
       number: 2.1.1
@@ -10495,6 +10570,15 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/video-embed-thumbnail-generator/video-js/kg-video-js-skin.css?ver=4.6.20
       - http://wp.lab/wp-content/plugins/video-embed-thumbnail-generator/css/kgvid_styles.css?ver=4.6.20
+  video-sync-for-vimeo:
+    QueryParameter:
+      number: 2.4.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/video-sync-for-vimeo/css/rvs-styles.css?ver=2.4.2
+      - http://wp.lab/wp-content/plugins/video-sync-for-vimeo/css/responsive-video.css?ver=2.4.2
+      - http://wp.lab/wp-content/plugins/video-sync-for-vimeo/js/rvs-loading.js?ver=2.4.2
+      confidence: 30
   vipers-video-quicktags:
     Comment:
       number: 6.4.2
