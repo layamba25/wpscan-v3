@@ -26,7 +26,7 @@ module WPScan
             found << WPScan::WpVersion.new(
               version_number,
               found_by: found_by,
-              confidence: 5 * occurences.count,
+              confidence: 5 * occurences.count, # TODO: version from wp-includes urls should have a better confidence
               interesting_entries: occurences
             )
           end

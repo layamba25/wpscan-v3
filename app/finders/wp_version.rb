@@ -10,6 +10,7 @@ require_relative 'wp_version/install_stylesheet_numbers'
 require_relative 'wp_version/upgrade_stylesheet_numbers'
 require_relative 'wp_version/unique_fingerprinting'
 require_relative 'wp_version/addthis_javascript_var'
+require_relative 'wp_version/emoji_settings'
 
 module WPScan
   module Finders
@@ -35,7 +36,7 @@ module WPScan
           %i[
             MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers InstallStylesheetNumbers
             UpgradeStylesheetNumbers RDFGenerator Readme SitemapGenerator OpmlGenerator
-            AddthisJavascriptVar UniqueFingerprinting
+            AddthisJavascriptVar EmojiSettings UniqueFingerprinting
           ].each do |sym|
             finders << WpVersion.const_get(sym).new(target)
           end
