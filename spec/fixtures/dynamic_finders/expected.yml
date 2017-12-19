@@ -5233,6 +5233,13 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''es by shailan (http://metinsaylan.com) v1.9.6'''
+  dsidxpress:
+    QueryParameter:
+      number: 3.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/dsidxpress/js/autocomplete.js?ver=3.0.0
+      confidence: 10
   duplicate-page-and-post:
     QueryParameter:
       number: 2.1.1
@@ -5578,12 +5585,13 @@ plugins:
         Match: ''"Project-Id-Version: Easy SwipeBox 1.1.0'''
   easy-table-of-contents:
     QueryParameter:
-      number: '1.2'
+      number: '1.3'
       found_by: Query Parameter (Passive Detection)
-      confidence: 20
+      confidence: 30
       interesting_entries:
-      - http://wp.lab/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=1.2
-      - http://wp.lab/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=1.2
+      - http://wp.lab/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=1.3
+      - http://wp.lab/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=1.3
+      - http://wp.lab/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=1.3
   easy-taxonomy-support:
     TranslationFile:
       number: 1.0.2
@@ -5648,6 +5656,21 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/easyreservations/js/both.js?ver=4.0
+  easytimetable-responsive-schedule-management-system:
+    QueryParameter:
+      number: 1.4.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/css/easy-timetable-public.css?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/tooltipster/css/tooltipster.bundle.min.css?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/js/easy-timetable-public.js?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/js/jquery.injectCSS.js?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/tooltipster/js/tooltipster.bundle.min.js?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/js/dist/html2canvas.min.js?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/easytimetable-responsive-schedule-management-system/public/js/dist/html2canvas.svg.min.js?ver=1.4.3
+      confidence: 90
   ecwid-widgets-avalanche:
     QueryParameter:
       number: 1.6.1
@@ -8778,6 +8801,13 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/instagram-slider-widget/assets/css/instag-slider.css?ver=1.4.0
+  instantsearch-for-woocommerce:
+    QueryParameter:
+      number: 1.9.18
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/instantsearch-for-woocommerce/public/assets/css/wcis_plugin.css?ver=1.9.18
+      confidence: 10
   integrate-polarsteps:
     TranslationFile:
       number: 0.3.0
@@ -9065,6 +9095,15 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/login-with-ajax/widget/widget.css?ver=3.1.7
       - http://wp.lab/wp-content/plugins/login-with-ajax/widget/login-with-ajax.js?ver=3.1.7
+  logo-carousel-free:
+    QueryParameter:
+      number: 3.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/logo-carousel-free/public/assets/css/slick.css?ver=3.1.1
+      - http://wp.lab/wp-content/plugins/logo-carousel-free/public/assets/css/font-awesome.min.css?ver=3.1.1
+      - http://wp.lab/wp-content/plugins/logo-carousel-free/public/assets/css/style.css?ver=3.1.1
+      confidence: 30
   magee-shortcodes:
     QueryParameter:
       number: 1.6.0
@@ -9349,6 +9388,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/oembed-travis/languages/oembed-travis.pot,
         Match: ''"Project-Id-Version: oEmbed Travis 0.3.8'''
+  offers-for-woocommerce:
+    QueryParameter:
+      number: 1.4.8.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/offers-for-woocommerce/public/assets/css/public.css?ver=1.4.8.2
+      - http://wp.lab/wp-content/plugins/offers-for-woocommerce/public/assets/js/public.js?ver=1.4.8.2
+      confidence: 20
   offline-shell:
     TranslationFile:
       number: 0.4.0
@@ -9356,6 +9403,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/offline-shell/lang/offline-shell.pot, Match:
         ''"Project-Id-Version: Offline Shell 0.4.0'''
+  oik:
+    TranslationFile:
+      number: 3.2.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/oik/languages/oik.pot, Match: ''"Project-Id-Version:
+        oik 3.2.3'''
   okv-oauth:
     TranslationFile:
       number: '1.0'
@@ -10294,6 +10348,18 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/, Match: ''StageShow for WordPress by Malcolm Shergold - Ver:6.6.3
         - BoxOfficeURL:'''
+  stagtools:
+    QueryParameter:
+      number: 2.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/stagtools/assets/css/stag-shortcodes.css?ver=2.2.1
+      confidence: 10
+    ComposerFile:
+      number: 2.2.1
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/stagtools/package.json, Match: ''2.2.1'''
   sticky-menu-or-anything-on-scroll:
     QueryParameter:
       number: 2.1.1

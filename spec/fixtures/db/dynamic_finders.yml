@@ -4134,6 +4134,11 @@ plugins:
     Comment:
       pattern: !ruby/regexp /es\ by\ shailan\ \(http:\/\/metinsaylan\.com\)\ v(?<v>[\d\.]+)/i
       version: true
+  dsidxpress:
+    QueryParameter:
+      files:
+      - js/autocomplete.js
+      version: true
   duplicate-page-and-post:
     QueryParameter:
       files:
@@ -4410,6 +4415,7 @@ plugins:
       files:
       - vendor/icomoon/style.min.css
       - assets/css/screen.min.css
+      - assets/js/front.min.js
       version: true
   easy-taxonomy-support:
     TranslationFile:
@@ -4459,6 +4465,19 @@ plugins:
     QueryParameter:
       files:
       - js/both.js
+      version: true
+  easytimetable-responsive-schedule-management-system:
+    QueryParameter:
+      files:
+      - public/css/easy-timetable-public.css
+      - public/tooltipster/css/tooltipster.bundle.min.css
+      - public/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css
+      - public/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css
+      - public/js/easy-timetable-public.js
+      - public/js/jquery.injectCSS.js
+      - public/tooltipster/js/tooltipster.bundle.min.js
+      - public/js/dist/html2canvas.min.js
+      - public/js/dist/html2canvas.svg.min.js
       version: true
   ecwid-widgets-avalanche:
     QueryParameter:
@@ -6907,6 +6926,11 @@ plugins:
       files:
       - assets/css/instag-slider.css
       version: true
+  instantsearch-for-woocommerce:
+    QueryParameter:
+      files:
+      - public/assets/css/wcis_plugin.css
+      version: true
   integrate-polarsteps:
     TranslationFile:
       class: BodyPattern
@@ -7147,6 +7171,13 @@ plugins:
       - widget/widget.css
       - widget/login-with-ajax.js
       version: true
+  logo-carousel-free:
+    QueryParameter:
+      files:
+      - public/assets/css/slick.css
+      - public/assets/css/font-awesome.min.css
+      - public/assets/css/style.css
+      version: true
   magee-shortcodes:
     QueryParameter:
       files:
@@ -7365,11 +7396,23 @@ plugins:
       path: languages/oembed-travis.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ oEmbed\ Travis\ (?<v>[\d\.]+)/i
       version: true
+  offers-for-woocommerce:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
   offline-shell:
     TranslationFile:
       class: BodyPattern
       path: lang/offline-shell.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Offline\ Shell\ (?<v>[\d\.]+)/i
+      version: true
+  oik:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/oik.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ oik\ (?<v>[\d\.]+)/i
       version: true
   okv-oauth:
     TranslationFile:
@@ -8124,6 +8167,16 @@ plugins:
       version: true
       pattern: !ruby/regexp /StageShow\ for\ WordPress\ by\ Malcolm\ Shergold\ \-\
         Ver:(?<v>[\d\.]+)\ \-\ BoxOfficeURL:/i
+  stagtools:
+    QueryParameter:
+      files:
+      - assets/css/stag-shortcodes.css
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   sticky-menu-or-anything-on-scroll:
     QueryParameter:
       files:
