@@ -150,6 +150,12 @@ plugins:
       found_by: Style Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''* Above The Fold Optimization 2.9.2'''
+    ComposerFile:
+      number: 2.9.2
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/above-the-fold-optimization/package.json,
+        Match: ''2.9.2'''
   academic-bloggers-toolkit:
     QueryParameter:
       number: 4.11.3
@@ -4372,6 +4378,11 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/commentluv/js/commentluv.js?ver=2.94.7
+    JavascriptVar:
+      number: 2.94.7
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: '':"on","cl_version":"2.94.7","images":"http:\/\'''
   commentpress-core:
     TranslationFile:
       number: 3.9.7
@@ -7035,6 +7046,11 @@ plugins:
       - http://wp.lab/wp-content/plugins/font/css/fontsforwebstyle.css?pver=7.5.1&ver=4.9.1
       - http://wp.lab/wp-content/plugins/font/js/jquery.fontPlugin.js?pver=7.5.1&ver=4.9.1
       - http://wp.lab/wp-content/plugins/font/js/pluginscripts.js?pver=7.5.1&ver=4.9.1
+    JavascriptVar:
+      number: 7.5.1
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''var fontPluginVersion = ''7.5.1'';'''
   font-awesome:
     Comment:
       number: 3.2.1
@@ -7077,6 +7093,11 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/foobox-image-lightbox/free/css/foobox.free.min.css?ver=1.2.27
       - http://wp.lab/wp-content/plugins/foobox-image-lightbox/free/js/foobox.free.min.js?ver=1.2.27
+    JavascriptVar:
+      number: 1.2.27
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Run FooBox FREE (v1.2.27)'''
   food-and-drink-menu:
     TranslationFile:
       number: 1.5.2
@@ -7495,6 +7516,11 @@ plugins:
       found_by: Meta Tag (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Give v1.8.16'''
+    JavascriptVar:
+      number: 1.8.16
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''"2","give_version":"1.8.16","magnific_options"'''
   gl-facebook-likebox:
     QueryParameter:
       number: 1.0.8
@@ -8864,6 +8890,11 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/jquery-colorbox/themes/theme1/colorbox.css?ver=4.6.2
       - http://wp.lab/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js?ver=4.6.2
+    JavascriptVar:
+      number: 4.6.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''ryColorboxVersion":"4.6.2","colorboxInline":"'''
   jquery-lightbox-for-native-galleries:
     Comment:
       number: 3.2.2
@@ -9886,6 +9917,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/restaurant-reservations/languages/restaurant-reservations.pot,
         Match: ''ect-Id-Version: Restaurant Reservations 1.7.6'''
+    ComposerFile:
+      number: 1.7.6
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/restaurant-reservations/package.json, Match:
+        ''1.7.6'''
   retainly:
     QueryParameter:
       number: '1.4'
@@ -10011,6 +10048,12 @@ plugins:
       interesting_entries:
       - !binary |-
         aHR0cDovL3dwLmxhYi93cC1jb250ZW50L3BsdWdpbnMvc2VhcmNoLWJ5LWFsZ29saWEtaW5zdGFudC1yZWxldmFudC1yZXN1bHRzL2xhbmd1YWdlcy9hbGdvbGlhLnBvdCwgTWF0Y2g6ICdBbGdvbGlhIOKAkyBJbnN0YW50ICYgUmVsZXZhbnQgcmVzdWx0cyAyLjguMSc=
+  search-everything:
+    JavascriptVar:
+      number: 8.1.9
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''window._se_plugin_version = ''8.1.9'';'''
   sendpulse-email-marketing-newsletter:
     ComposerFile:
       number: 2.1.0
@@ -10070,11 +10113,16 @@ plugins:
       - http://wp.lab/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/css/skins/standard-dark.css?ver=1.6.1.2
       - http://wp.lab/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/js/shiftnav.min.js?ver=1.6.1.2
     TranslationFile:
-      number: 1.6.2
+      number: 1.6.1.2
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/shiftnav-responsive-mobile-menu/languages/shiftnav.pot,
-        Match: '': ShiftNav Pro - Responsive Mobile Menu 1.6.2'''
+        Match: '': ShiftNav Pro - Responsive Mobile Menu 1.6.1.2'''
+    JavascriptVar:
+      number: 1.6.1.2
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''breakpoint":"","v":"1.6.1.2","touch_off_close":'''
   shortcode-ui:
     TranslationFile:
       number: 0.7.3
@@ -11100,6 +11148,18 @@ plugins:
   wordfence:
     JavascriptVar:
       found_by: Javascript Var (Passive Detection)
+  wordpress-23-related-posts-plugin:
+    QueryParameter:
+      number: 3.6.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wordpress-23-related-posts-plugin/static/themes/vertical-m.css?version=3.6.4
+      confidence: 10
+    JavascriptVar:
+      number: 3.6.4
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''window._wp_rp_plugin_version = ''3.6.4'';'''
   wordpress-importer:
     TranslationFile:
       number: 0.6.3
@@ -11674,6 +11734,12 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wp-vagrantize/composer.json, Match: ''1.2.0'''
+  wp-video-lightbox:
+    JavascriptVar:
+      number: 1.8.5
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''WP_VIDEO_LIGHTBOX_VERSION="1.8.5";'''
   wp-yomigana:
     ComposerFile:
       number: 1.3.0
@@ -11863,6 +11929,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/youtube-channel-gallery/script.js, Match:
         ''Version: 2.4'''
+  youtube-embed-plus:
+    JavascriptVar:
+      number: 11.8.3
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''vol":"1","version":"11.8.3","evselector":"ifra'''
   youtube-showcase:
     MetaTag:
       number: 2.9.0

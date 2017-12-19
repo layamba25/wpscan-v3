@@ -127,6 +127,11 @@ plugins:
       xpath: //style[@id="AbtfCSS"]
       pattern: !ruby/regexp /\* Above The Fold Optimization (?<v>[\d\.]+)/i
       version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   academic-bloggers-toolkit:
     QueryParameter:
       files:
@@ -3437,6 +3442,10 @@ plugins:
       files:
       - js/commentluv.js
       version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var cl_settings = {(?<json>.+?(?=};))}/i
+      version_key: cl_version
+      version: true
   commentpress-core:
     TranslationFile:
       class: BodyPattern
@@ -5544,10 +5553,14 @@ plugins:
       version: true
   font:
     QueryParameter:
+      pattern: !ruby/regexp /pver=(?<v>[\d\.]+)/i
       files:
       - css/fontsforwebstyle.css
       - js/jquery.fontPlugin.js
       - js/pluginscripts.js
+      version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var fontPluginVersion = '(?<v>[\d\.]+)';/i
       version: true
   font-awesome:
     Comment:
@@ -5578,6 +5591,10 @@ plugins:
       files:
       - free/css/foobox.free.min.css
       - free/js/foobox.free.min.js
+      version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /Run FooBox FREE \(v(?<v>[\d\.]+)\)/i
+      xpath: //script[@type="text/foobox"]
       version: true
   food-and-drink-menu:
     TranslationFile:
@@ -5911,6 +5928,10 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Give\ v(?<v>[\d\.]+)/i
+    JavascriptVar:
+      pattern: !ruby/regexp /var give_global_vars = {(?<json>.+?(?=};))}/i
+      version_key: give_version
+      version: true
   gl-facebook-likebox:
     QueryParameter:
       files:
@@ -6978,6 +6999,10 @@ plugins:
       - themes/theme1/colorbox.css
       - js/jquery-colorbox-wrapper-min.js
       version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var jQueryColorboxSettingsArray = {(?<json>.+?(?=};))}/i
+      version_key: jQueryColorboxVersion
+      version: true
   jquery-lightbox-for-native-galleries:
     Comment:
       pattern: !ruby/regexp /jQuery\ Lightbox\ For\ Native\ Galleries\ v(?<v>[\d\.]+)/i
@@ -7797,6 +7822,11 @@ plugins:
       path: languages/restaurant-reservations.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ Restaurant\ Reservations\ (?<v>[\d\.]+)/i
       version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   retainly:
     QueryParameter:
       files:
@@ -7901,6 +7931,10 @@ plugins:
       path: languages/algolia.pot
       pattern: !ruby/regexp /Algolia\ [^\s]+ Instant\ &\ Relevant\ results\ (?<v>[\d\.]+)/i
       version: true
+  search-everything:
+    JavascriptVar:
+      pattern: !ruby/regexp /window\._se_plugin_version = '(?<v>[\d\.]+)';/i
+      version: true
   sendpulse-email-marketing-newsletter:
     ComposerFile:
       class: ConfigParser
@@ -7951,6 +7985,10 @@ plugins:
       class: BodyPattern
       path: languages/shiftnav.pot
       pattern: !ruby/regexp /:\ ShiftNav\ Pro\ \-\ Responsive\ Mobile\ Menu\ (?<v>[\d\.]+)/i
+      version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /var shiftnav_data = {(?<json>.+?(?=};))}/i
+      version_key: v
       version: true
   shortcode-ui:
     TranslationFile:
@@ -8772,6 +8810,14 @@ plugins:
   wordfence:
     JavascriptVar:
       pattern: !ruby/regexp /\|WordfenceTestMonBot\)\/\.test/i
+  wordpress-23-related-posts-plugin:
+    QueryParameter:
+      files:
+      - static/themes/vertical-m.css
+      version: true
+    JavascriptVar:
+      pattern: !ruby/regexp /window\._wp_rp_plugin_version = '(?<v>[\d\.]+)';/i
+      version: true
   wordpress-importer:
     TranslationFile:
       class: BodyPattern
@@ -9233,6 +9279,10 @@ plugins:
       path: composer.json
       key: version
       version: true
+  wp-video-lightbox:
+    JavascriptVar:
+      pattern: !ruby/regexp /WP_VIDEO_LIGHTBOX_VERSION\s*=\s*"(?<v>[\d\.]+)";/i
+      version: true
   wp-yomigana:
     ComposerFile:
       class: ConfigParser
@@ -9386,6 +9436,11 @@ plugins:
       class: BodyPattern
       path: script.js
       pattern: !ruby/regexp '/Version: (?<v>[\d\.]+)/i'
+      version: true
+  youtube-embed-plus:
+    JavascriptVar:
+      pattern: !ruby/regexp /var _EPYT_ = {(?<json>.+?(?=};))}/i
+      version_key: version
       version: true
   youtube-showcase:
     MetaTag:

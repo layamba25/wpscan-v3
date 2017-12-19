@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the ShiftNav Pro - Responsive Mobile Menu package.
 msgid ""
 msgstr ""
-"Project-Id-Version: ShiftNav Pro - Responsive Mobile Menu 1.6.2\n"
+"Project-Id-Version: ShiftNav Pro - Responsive Mobile Menu 1.6.1.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/shiftnav\n"
 "POT-Creation-Date: 2017-12-11 18:28:13+00:00\n"
 "MIME-Version: 1.0\n"
