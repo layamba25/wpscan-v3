@@ -82,6 +82,12 @@ plugins:
       - includes/js/3dprint-lite-frontend.js
       - includes/ext/jquery-cookie/jquery.cookie.min.js
       version: true
+  404-solution:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   8-degree-availability-calendar:
     QueryParameter:
       files:
@@ -5400,6 +5406,12 @@ plugins:
       - client/flexi-social/skins/assets/css/base.css
       - client/flexi-social/flexy.social.min.js
       version: true
+  flexia-core:
+    QueryParameter:
+      files:
+      - public/css/flexia-core-public.css
+      - public/js/flexia-core-public.js
+      version: true
   flexmls-idx:
     QueryParameter:
       files:
@@ -5629,6 +5641,15 @@ plugins:
       - assets/css/common-elements.css
       - assets/fontello/css/fcb.css
       - assets/fontello/css/animation.css
+      version: true
+  formlift:
+    QueryParameter:
+      files:
+      - css/responsive-grid-framework.css
+      - css/style.css
+      - js/lib/jstz.js
+      - js/src/flp-submit.js
+      - js/src/flp-stats.js
       version: true
   frontend-dashboard:
     QueryParameter:
@@ -6574,6 +6595,12 @@ plugins:
       class: BodyPattern
       path: languages/i-order-terms.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ I\ Order\ Terms\ (?<v>[\d\.]+)/i
+      version: true
+  iamport-payment:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   ic-besocial:
     QueryParameter:
@@ -7858,6 +7885,12 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Seriously\ Simple\ Podcasting\ (?<v>[\d\.]+)/i
+  share-this-image:
+    QueryParameter:
+      files:
+      - assets/css/sti.css
+      - assets/js/sti.js
+      version: true
   shareaholic:
     MetaTag:
       class: Xpath
@@ -8065,6 +8098,10 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /SportsPress\ (?<v>[\d\.]+)/i
+  sprout-invoices:
+    Comment:
+      pattern: !ruby/regexp /Sprout\ Invoices\ v(?<v>[\d\.]+)/i
+      version: true
   squirrly-seo:
     Comment:
       pattern: !ruby/regexp /Squirrly\ SEO\ Plugin\ (?<v>[\d\.]+)/i
@@ -8139,6 +8176,11 @@ plugins:
       - js/front/facebook/sdk.js
       - js/front/facebook/commenting.js
       - js/front/sharing/sharing.js
+      version: true
+  surbma-smooth-scroll:
+    QueryParameter:
+      files:
+      - js/surbma-smooth-scroll.js
       version: true
   sympose:
     QueryParameter:
@@ -8415,6 +8457,12 @@ plugins:
       files:
       - css/wassup-widget.css
       version: true
+  watu:
+    TranslationFile:
+      class: BodyPattern
+      path: watu.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Watu\ Quiz\ (?<v>[\d\.]+)/i
+      version: true
   wc-age-verification:
     TranslationFile:
       class: BodyPattern
@@ -8565,6 +8613,12 @@ plugins:
       class: BodyPattern
       path: i18n/languages/woocommerce.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WooCommerce\ (?<v>[\d\.]+)/i
+      version: true
+  woocommerce-accommodation-bookings:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-accommodation-bookings.pot
+      pattern: !ruby/regexp /ion:\ WooCommerce\ Accommodation\ Bookings\ (?<v>[\d\.]+)/i
       version: true
   woocommerce-correios:
     TranslationFile:
@@ -8829,6 +8883,17 @@ plugins:
       files:
       - public/js/wp-hide-post-public.js
       version: true
+  wp-hotelier:
+    QueryParameter:
+      files:
+      - assets/css/hotelier.css
+      - assets/js/frontend/hotelier.min.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Easy\ WP\ Hotelier\ (?<v>[\d\.]+)/i
   wp-invoice:
     QueryParameter:
       files:
@@ -9007,6 +9072,17 @@ plugins:
       files:
       - public/css/wp-socializer.min.css
       - public/js/wp-socializer.min.js
+      version: true
+  wp-soundsystem:
+    QueryParameter:
+      files:
+      - _inc/css/wpsstm.css
+      - _inc/js/wpsstm-track-sources.js
+      - _inc/js/wpsstm-tracks.js
+      - _inc/js/wpsstm-tracklists.js
+      - _inc/js/wpsstm.js
+      - _inc/js/wpsstm-lastfm.js
+      - _inc/js/wpsstm-player.js
       version: true
   wp-spamfree:
     Comment:
