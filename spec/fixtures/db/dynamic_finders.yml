@@ -3610,6 +3610,8 @@ plugins:
       - js/calendar/calendar.js
       - js/calendar/calendar_function.js
       - js/main_div_front_end.js
+      - css/jquery-ui.custom.css
+      - css/fm-animate.css
       version: true
   contact-form-plugin:
     QueryParameter:
@@ -6895,6 +6897,23 @@ plugins:
       path: lang/index-press.pot
       pattern: !ruby/regexp /ion\ of\ the\ WordPress\ plugin\ Index\ Press\ (?<v>[\d\.]+)/i
       version: true
+  indiebooking:
+    QueryParameter:
+      files:
+      - assets/css/zabuto_kalender.css
+      - assets/css/bootstrap-glyphicons.css
+      - assets/css/style.css
+      - assets/js/zabuto_calendar/zabuto_calendar.css
+      - assets/js/jquery-ui-extensions/ext-jquery-ui.css
+      - assets/js/default/indiebooking_util.js
+      - assets/js/zabuto_calendar/indiebooking_calendar.js
+      - assets/js/zabuto_calendar/indiebooking_calendar_functions.js
+      - assets/js/frontend/rs_ib_translation.js
+      - assets/js/frontend/autocompletebox.js
+      - assets/js/frontend/appartment_buchung.js
+      - assets/bootstrap_multiselect/bootstrap-multiselect.js
+      - assets/js/frontend/google_autocomplete_adress.js
+      version: true
   indieweb-post-kinds:
     QueryParameter:
       files:
@@ -7216,6 +7235,11 @@ plugins:
       - vendor/mailoptin/core/src/assets/css/mailoptin.min.css
       - vendor/mailoptin/core/src/assets/js/mailoptin.min.js
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mailoptin.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ MailOptin\ \-\ Lite\ (?<v>[\d\.]+)/i
+      version: true
   mailpoet:
     QueryParameter:
       files:
@@ -7529,6 +7553,12 @@ plugins:
       - public/css/paypal-wp-button-manager-public.css
       - public/js/paypal-wp-button-manager-public.js
       version: true
+  pdf-forms-for-contact-form-7:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpcf7-pdf-forms.pot
+      pattern: !ruby/regexp /on:\ PDF\ Forms\ Filler\ for\ Contact\ Form\ 7\ (?<v>[\d\.]+)/i
+      version: true
   peepso-core:
     QueryParameter:
       files:
@@ -7635,6 +7665,13 @@ plugins:
       - public/css/ims-portfolio-public.css
       - public/css/elastic_grid.min.css
       - public/js/ims-portfolio-public.js
+      version: true
+  post-and-page-builder:
+    QueryParameter:
+      files:
+      - assets/css/editor-fe.min.css
+      - assets/js/jquery-stellar/jquery.stellar.js
+      - assets/js/editor/public.min.js
       version: true
   post-types-definitely:
     TranslationFile:
@@ -8103,6 +8140,12 @@ plugins:
       path: languages/smart-manager-for-wp-e-commerce.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Smart\ Manager\ (?<v>[\d\.]+)/i
       version: true
+  smart-reporter-for-wp-e-commerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/smart-reporter-for-wp-e-commerce.pot
+      pattern: !ruby/regexp /\-Version:\ Smart\ Reporter\ for\ e\-commerce\ (?<v>[\d\.]+)/i
+      version: true
   snow-storm:
     QueryParameter:
       files:
@@ -8491,6 +8534,13 @@ plugins:
     Comment:
       pattern: !ruby/regexp /<meta\ name="vfb"\ version="(?<v>[\d\.]+)/i
       version: true
+  visual-link-preview:
+    QueryParameter:
+      files:
+      - dist/public.css
+      - templates/link/default/default.min.css
+      - templates/link/default-squared/default-squared.min.css
+      version: true
   visualcaptcha:
     ComposerFile:
       class: ConfigParser
@@ -8587,6 +8637,14 @@ plugins:
       - js/jquery.mCustomScrollbar.concat.min.js
       - js/ffwd_gallery_box.js
       version: true
+  wd-mailchimp:
+    QueryParameter:
+      files:
+      - css/frontend/mwd-mailchimp-frontend.css
+      - css/frontend/font-awesome/font-awesome.css
+      - css/frontend/mwd-animate.css
+      - js/mwd_main_frontend.js
+      version: true
   WeatherIcon:
     Comment:
       pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>[\d\.]+) \|/i
@@ -8595,6 +8653,10 @@ plugins:
     QueryParameter:
       files:
       - public/css/woo-feed-public.css
+      version: true
+  webtexttool:
+    Comment:
+      pattern: !ruby/regexp /Webtexttool\ WordPress\ Plugin\ v(?<v>[\d\.]+)/i
       version: true
   weforms:
     TranslationFile:
@@ -8902,6 +8964,12 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /WP\ Easy\ Contact\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
+  wp-easy-events:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /WP\ Easy\ Events\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   wp-easy-gallery:
     Comment:
       pattern: !ruby/regexp /WP Easy Gallery:/i
@@ -9031,6 +9099,11 @@ plugins:
       - js/wplc_u.js
       - js/md5.js
       - js/themes/modern.js
+      version: true
+  wp-logo-showcase:
+    QueryParameter:
+      files:
+      - assets/css/wplogoshowcase.css
       version: true
   wp-logo-showcase-responsive-slider-slider:
     QueryParameter:
@@ -9231,11 +9304,23 @@ plugins:
       path: composer.json
       key: version
       version: true
+  wp-ticket:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Wp\ Ticket\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   wp-to-steemit:
     QueryParameter:
       files:
       - public/css/posttosteemit-public.css
       - public/js/posttosteemit-public.js
+      version: true
+  wp-travel:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/wp-travel.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Travel\ (?<v>[\d\.]+)/i
       version: true
   wp-tripadvisor-review-slider:
     QueryParameter:
@@ -9458,4 +9543,10 @@ plugins:
     QueryParameter:
       files:
       - js/zerospam.js
+      version: true
+  zodiacpress:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/zodiacpress.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ ZodiacPress\ (?<v>[\d\.]+)/i
       version: true
