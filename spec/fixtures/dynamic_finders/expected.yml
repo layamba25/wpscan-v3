@@ -8826,6 +8826,44 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/inline-pagelist/lang/pagelist-by_BY.po,
         Match: ''"Project-Id-Version: Inline PageList 2.0'''
+  inline-text-direction:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/inline-text-direction/lang/itd-ar.po, Match:
+        ''xt-direction.pot (Inline Text Direction 1.0'''
+  inline-tweet-sharer:
+    QueryParameter:
+      number: 2.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=2.0.2
+      - http://wp.lab/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=2.0.2
+      confidence: 20
+  inline-tweets:
+    QueryParameter:
+      number: '2.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/inline-tweets/css/shared.css?ver=2.0
+      confidence: 10
+  innvonix-testimonials:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/innvonix-testimonials/assets/js/owl.carousel.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/innvonix-testimonials/assets/js/innvonix-custom.js?ver=1.0
+      confidence: 20
+  insert-post-from-front-end-with-featured-image:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/insert-post-from-front-end-with-featured-image/public/css/insert_post_from_front_end-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/insert-post-from-front-end-with-featured-image/public/js/insert_post_from_front_end-public.js?ver=1.0.0
+      confidence: 20
   insta-gallery:
     QueryParameter:
       number: 1.5.1
@@ -8848,12 +8886,41 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/instagram-slider-widget/assets/css/instag-slider.css?ver=1.4.0
+  instalinker:
+    QueryParameter:
+      number: 1.5.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/instalinker/assets/instalink-lite/instalink-lite-1.4.0.min.css?ver=1.5.0
+      - http://wp.lab/wp-content/plugins/instalinker/assets/instalink-lite/instalink-lite-1.4.0.min.js?ver=1.5.0
+      confidence: 20
+  install-fitvids-embed-fluid-width-videos:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/install-fitvids-embed-fluid-width-videos/public/js/fitvids-fluid-video-public.js?ver=1.0.0
+      confidence: 10
+  instant-weekly-roundup:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/instant-weekly-roundup/css/instant_weekly_roundup.css?ver=1.0.0
+      confidence: 10
   instantsearch-for-woocommerce:
     QueryParameter:
       number: 1.9.18
       found_by: Query Parameter (Passive Detection)
       interesting_entries:
       - http://wp.lab/wp-content/plugins/instantsearch-for-woocommerce/public/assets/css/wcis_plugin.css?ver=1.9.18
+      confidence: 10
+  instashow-lite:
+    QueryParameter:
+      number: 1.4.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/instashow-lite/assets/instashow-lite/dist/jquery.instashow-lite.packaged.js?ver=1.4.0
       confidence: 10
   integrate-polarsteps:
     TranslationFile:
@@ -8869,6 +8936,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/integration-dynamics/languages/integration-dynamics.pot,
         Match: ''ct-Id-Version: Dynamics 365 Integration 1.2.7'''
+  intelligence:
+    QueryParameter:
+      number: 1.2.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/intelligence/public/css/intel-public.css?ver=1.2.3
+      - http://wp.lab/wp-content/plugins/intelligence/public/js/intel-public.js?ver=1.2.3
+      confidence: 20
   intelliwidget-per-page-featured-posts-and-menus:
     QueryParameter:
       number: 2.3.8.1
@@ -8876,6 +8951,72 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/intelliwidget-per-page-featured-posts-and-menus/templates/intelliwidget.css?ver=2.3.8.1
+  intelly-posts-footer-manager:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/intelly-posts-footer-manager/assets/js/library.js?v=1.0.5&ver=4.9.1
+      confidence: 10
+  intelly-welcome-bar:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/intelly-welcome-bar/assets/js/library.js?v=1.1.0&ver=4.9.1
+      confidence: 10
+  interactive-svg-map:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/interactive-svg-map/js/jquery.vmap.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/interactive-svg-map/js/maps/jquery.vmap..js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/interactive-svg-map/js/interactive-map.js?ver=1.0.0
+      confidence: 30
+  invitations-for-slack:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/invitations-for-slack/invitations-for-slack/scripts/script.js?ver=1.0.2
+      confidence: 10
+  invoicing:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/invoicing/assets/css/invoice-front.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/invoicing/assets/js/jsvat.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/invoicing/assets/js/euvat.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/invoicing/assets/js/invoice-front.js?ver=1.0.2
+      confidence: 40
+    TranslationFile:
+      number: 1.0.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/invoicing/languages/invoicing-en_US.po,
+        Match: ''"Project-Id-Version: Invoicing 1.0.2'''
+  invoicing-quotes:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/invoicing-quotes/public/css/wpinv-quotes-public.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/invoicing-quotes/public/js/wpinv-quotes-public.js?ver=1.0.1
+      confidence: 20
+    TranslationFile:
+      number: 1.0.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/invoicing-quotes/languages/wpinv-quotes-en_US.po,
+        Match: ''roject-Id-Version: Quotes for Invoicing 1.0.1'''
+  ip-blocker-wp:
+    MetaTag:
+      number: '1.0'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''1.0'''
   ip-geo-block:
     TranslationFile:
       number: 3.0.5
@@ -8883,6 +9024,66 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/ip-geo-block/languages/ip-geo-block.po,
         Match: ''"Project-Id-Version: IP Geo Block 3.0.5'''
+  ipanorama-360-virtual-tour-builder-lite:
+    QueryParameter:
+      number: 1.3.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ipanorama-360-virtual-tour-builder-lite/lib/ipanorama.css?ver=1.3.6
+      - http://wp.lab/wp-content/plugins/ipanorama-360-virtual-tour-builder-lite/lib/ipanorama.wp.css?ver=1.3.6
+      confidence: 20
+  is-circular-photo-gallery:
+    QueryParameter:
+      number: '1.9'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/is-circular-photo-gallery/js/iscirculargallery.js?ver=1.9
+      confidence: 10
+  iscribbled:
+    QueryParameter:
+      number: '1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/iscribbled/scripts/bootstrap.js?ver=1
+      confidence: 10
+  issuem:
+    QueryParameter:
+      number: 2.7.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/issuem/css/issuem.css?ver=2.7.1
+      - http://wp.lab/wp-content/plugins/issuem/css/flexslider.css?ver=2.7.1
+      - http://wp.lab/wp-content/plugins/issuem/js/jquery.flexslider-min.js?ver=2.7.1
+      confidence: 30
+  it-popups:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/it-popups/assets/css/itpopup-front.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/it-popups/assets/js/itpopup-front.js?ver=1.0
+      confidence: 20
+  itempropwp:
+    QueryParameter:
+      number: 3.5.201706131
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/itempropwp/assets/css/itempropwp.css?ver=3.5.201706131
+      confidence: 10
+  iteras:
+    Comment:
+      number: '1.0'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''/iteras/public/assets/css/ie.css?ver=1.0'''
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/iteras/public/assets/css/public.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/iteras/public/assets/js/truncate.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/iteras/public/assets/js/box.js?ver=1.0
+      confidence: 30
   ithemes-sync:
     TranslationFile:
       number: 2.0.3
@@ -8897,12 +9098,183 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/ithoughts-tooltip-glossary/package.json,
         Match: ''3.0.2'''
+  ivisa-travel:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ivisa-travel/public/css/ivisa-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/ivisa-travel/public/js/ivisa-public.js?ver=1.0.0
+      confidence: 20
+  ivycat-ajax-testimonials:
+    TranslationFile:
+      number: 1.5.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/ivycat-ajax-testimonials/languages/ivycat-ajax-testimonials.pot,
+        Match: ''ct-Id-Version: IvyCat AJAX Testimonials 1.5.1'''
+  jajadi-training:
+    TranslationFile:
+      number: 0.5.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jajadi-training/languages/jajadi-training-ko_KR.po,
+        Match: ''d-Version: JaJaDi Training and Courses v0.5.7'''
+  jarvis:
+    ComposerFile:
+      number: 0.51.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jarvis/package.json, Match: ''0.51.0'''
+  jb-common:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jb-common/loc/jb-common.pot, Match: ''"Project-Id-Version:
+        JB Common v1.0'''
+  jbx-category-columns:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jbx-category-columns/jbxCatColumns-style.css?ver=1.1
+      confidence: 10
+  jcwp-like-to-unlock-lite:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jcwp-like-to-unlock-lite/application.js?ver=1.1
+      confidence: 10
+  jd-faq:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jd-faq/css/jquery.accordion.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/jd-faq/js/jquery.accordion.js?ver=1.0
+      confidence: 20
+  jekuntmeer-nl:
+    TranslationFile:
+      number: 1.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jekuntmeer-nl/languages/nl_NL.po, Match:
+        ''roject-Id-Version: Jekuntmeer.nl Plugin 1.1.0'''
+  jet-set-go:
+    TranslationFile:
+      number: 1.0.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jet-set-go/languages/woocommerce-jet-integration-en_US.po,
+        Match: ''"Project-Id-Version: Jet Set GO 1.0.3'''
   jetstash-connect:
     ComposerFile:
       number: 1.3.4
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/jetstash-connect/package.json, Match: ''1.3.4'''
+  jf-simple-coming-soon:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jf-simple-coming-soon/lang/plugin-name.pot,
+        Match: ''"Project-Id-Version: TODO 1.0.0'''
+  jgc-contact-info-widget:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jgc-contact-info-widget/css/jgcciw-style.css?ver=1.0.0
+      confidence: 10
+  jgc-content-for-registered-users:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jgc-content-for-registered-users/css/jgc-cfr-style.css?ver=1.1.1
+      confidence: 10
+  jibber-voice-comments:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jibber-voice-comments/script.js?ver=1.0.0
+      confidence: 10
+  jigoshop-related-products-carousel-free:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jigoshop-related-products-carousel-free/css/relcarouself.css?ver=1.0
+      confidence: 10
+  jilt-for-edd:
+    TranslationFile:
+      number: 1.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jilt-for-edd/i18n/languages/jilt-for-edd.pot,
+        Match: ''ersion: Jilt for Easy Digital Downloads 1.1.1'''
+  jilt-for-woocommerce:
+    TranslationFile:
+      number: 1.3.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jilt-for-woocommerce/i18n/languages/jilt-for-woocommerce.pot,
+        Match: ''roject-Id-Version: Jilt for WooCommerce 1.3.3'''
+  jivochat:
+    TranslationFile:
+      number: '1.2'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jivochat/jivosite-ru_RU.po, Match: ''"Project-Id-Version:
+        JivoChat v1.2'''
+  jm-responsive-video-embeds:
+    QueryParameter:
+      number: '1.2'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jm-responsive-video-embeds/css/rwd-embed.min.css?ver=1.2
+      confidence: 10
+  jm-twitter-cards:
+    Comment:
+      number: '8.2'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''JM Twitter Cards by Julien Maury 8.2'''
+  job-manager:
+    QueryParameter:
+      number: 0.7.25
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/job-manager/css/display.css?ver=0.7.25
+      - http://wp.lab/wp-content/plugins/job-manager/js/display.js?ver=0.7.25
+      confidence: 20
+  job-postings:
+    QueryParameter:
+      number: 1.4.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/job-postings/css/style.css?v=1.4.1&ver=4.9.1
+      - http://wp.lab/wp-content/plugins/job-postings/js/script.js?v=1.4.1&ver=4.9.1
+      confidence: 20
+  jobsoid:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jobsoid/css/jobsoid.css?ver=1.0.0
+      confidence: 10
+  jp-scrollbar:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jp-scrollbar/js/jquery.mCustomScrollbar.concat.min.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/jp-scrollbar/js/jquery.mousewheel.js?ver=1.0
+      confidence: 20
   jquery-colorbox:
     QueryParameter:
       number: 4.6.2
@@ -8922,6 +9294,12 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''jQuery Lightbox For Native Galleries v3.2.2'''
+  jquery-page-peel:
+    Comment:
+      number: 1.3.1
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''jQuery Page Peel - 1.3.1'''
   jquery-pin-it-button-for-images:
     JavascriptVar:
       found_by: Javascript Var (Passive Detection)
@@ -8932,6 +9310,66 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/jquery-pin-it-button-for-images/css/client.css?ver=2.3.3
       - http://wp.lab/wp-content/plugins/jquery-pin-it-button-for-images/js/jpibfi.client.js?ver=2.3.3
+  jquery-remove-upcase-accents:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jquery-remove-upcase-accents/js/jquery.remove-upcase-accents.js?ver=1.1.1
+      confidence: 10
+  jquery-responsive-select-menu:
+    TranslationFile:
+      number: 1.5.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jquery-responsive-select-menu/languages/jquery-responsive-select-menu.pot,
+        Match: ''-Version: jQuery Responsive Select Menu 1.5.0'''
+  jquery-slider-with-text:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jquery-slider-with-text/inc/style.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/jquery-slider-with-text/inc/script.js?ver=1.0
+      confidence: 20
+  jquery-tinytips:
+    Comment:
+      number: '1.1'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''jQuery TinyTips 1.1'''
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jquery-tinytips/css/tinyTips.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/jquery-tinytips/js/jquery.tinyTips-min.js?ver=1.1
+      confidence: 20
+  jrwdev-daily-specials:
+    QueryParameter:
+      number: 1.5.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jrwdev-daily-specials/includes/css/jrwdev-daily-specials.css?ver=1.5.2
+      - http://wp.lab/wp-content/plugins/jrwdev-daily-specials/includes/js/jrwdev-daily-specials.js?ver=1.5.2
+      confidence: 20
+  js-banner-rotate:
+    QueryParameter:
+      number: 2.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/js-banner-rotate//includes/jsbrotate.css?ver=2.0.2
+      - http://wp.lab/wp-content/plugins/js-banner-rotate//includes/jsbrotate.js?ver=2.0.2
+      confidence: 20
+  js-currency-converter:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/js-currency-converter/assets/css/select2.min.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/js-currency-converter/assets/css/js_currency_converter.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/js-currency-converter/assets/js/js_currency_converter.js?ver=1.1
+      confidence: 30
   js_composer:
     MetaGenerator:
       found_by: Meta Generator (Passive Detection)
@@ -8949,9 +9387,77 @@ plugins:
       - http://wp.lab/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js?ver=4.12
       - http://wp.lab/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.12
       - http://wp.lab/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=4.12
+  jsj-code-highlight:
+    TranslationFile:
+      number: 1.0.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jsj-code-highlight/languages/jsj-code-highlight.pot,
+        Match: ''Project-Id-Version: jsj-code-hightlight 1.0.3'''
+  jsj-gallery-slideshow:
+    TranslationFile:
+      number: 2.0.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/jsj-gallery-slideshow/jsj-gallery-slideshow.pot,
+        Match: ''oject-Id-Version: JSJ Gallery Slideshow 2.0.2'''
+  jsocial-responsive-floating-social-sharing-media-bar:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jsocial-responsive-floating-social-sharing-media-bar/public/css/jsocial-main.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/jsocial-responsive-floating-social-sharing-media-bar/public/css/jsocial-vendor.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/jsocial-responsive-floating-social-sharing-media-bar/public/css/jsocial-custom.php?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/jsocial-responsive-floating-social-sharing-media-bar/public/js/jsocial-vendor.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/jsocial-responsive-floating-social-sharing-media-bar/public/js/jsocial-main.js?ver=1.0.0
+      confidence: 50
+  jss-scrolling:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jss-scrolling/public/css/jss-scrolling-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/jss-scrolling/public/js/jss-scrolling-public.js?ver=1.0.0
+      confidence: 20
+  jstat:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jstat/js/jstat.min.js?ver=1.1.1
+      confidence: 10
+  jt-old-browser-alert:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jt-old-browser-alert/css/jt-style.css?ver=1.0.2
+      confidence: 10
   juiz-last-tweet-widget:
     Comment:
       found_by: Comment (Passive Detection)
+    QueryParameter:
+      number: 1.3.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/juiz-last-tweet-widget/css/juiz_last_tweet.css?ver=1.3.6
+      confidence: 10
+  juiz-outdated-post-message:
+    QueryParameter:
+      number: 1.0.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/juiz-outdated-post-message/css/juiz-odpm-styles.css?ver=1.0.3
+      confidence: 10
+  jumbo-share:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/jumbo-share/public/css/jumbo-share-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/jumbo-share/public/js/jumbo-share-public.js?ver=1.0.0
+      confidence: 20
   jumplead:
     Comment:
       number: 3.2.8
@@ -8969,6 +9475,28 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/jumplead/j/jumplead.js?ver=3.2.8
       confidence: 10
+  justrateit:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/justrateit/justrateit.js?ver=1.0
+      confidence: 10
+  k5hh-ham-radio-calculators:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/k5hh-ham-radio-calculators/css/antenna-calculator.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/k5hh-ham-radio-calculators/js/antenna-calculation-min.js?ver=1.0.0
+      confidence: 20
+  kalendar-cz:
+    QueryParameter:
+      number: '2.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kalendar-cz/kalendar_cz_style.css?ver=2.0
+      confidence: 10
   kanzu-support-desk:
     QueryParameter:
       number: 2.4.5
@@ -8977,6 +9505,49 @@ plugins:
       - http://wp.lab/wp-content/plugins/kanzu-support-desk/assets/css/ksd-public.css?ver=2.4.5
       - http://wp.lab/wp-content/plugins/kanzu-support-desk/assets/js/ksd-public.js?ver=2.4.5
       confidence: 20
+  katalyst-video-plus:
+    QueryParameter:
+      number: 3.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/katalyst-video-plus/assets/css/kvp.css?ver=3.2.1
+      - http://wp.lab/wp-content/plugins/katalyst-video-plus/assets/js/kvp.js?ver=3.2.1
+      confidence: 20
+  kaya-qr-code-generator:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kaya-qr-code-generator/css/wpkqcg-pkg.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/kaya-qr-code-generator/assets/qrcode.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/kaya-qr-code-generator/js/wpkqcg-pkg.js?ver=1.0.2
+      confidence: 30
+  kb-support:
+    QueryParameter:
+      number: 1.1.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kb-support/templates/kbs.min.css?ver=1.1.5
+      - http://wp.lab/wp-content/plugins/kb-support/assets/js/kbs-ajax.min.js?ver=1.1.5
+      confidence: 20
+    MetaTag:
+      number: 1.1.5
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''KB Support v1.1.5'''
+    TranslationFile:
+      number: 1.1.5
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kb-support/languages/kb-support.pot, Match:
+        ''"Project-Id-Version: KB Support 1.1.5'''
+  kc-media-enhancements:
+    TranslationFile:
+      number: '0.6'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kc-media-enhancements/kc-media-enhancements-inc/languages/kc-media-enhancements.pot,
+        Match: ''oject-Id-Version: KC Media Enhancements 0.6'''
   keep-my-theme:
     ComposerFile:
       number: 1.0.0
@@ -8989,6 +9560,68 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/keep-my-theme/languages/de_DE.po, Match:
         ''"Project-Id-Version: Keep My Theme 1.0.0'''
+  kelkoo-group-shopping:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kelkoo-group-shopping/public/css/kelkoo-group-shopping-public.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/kelkoo-group-shopping/public/js/kelkoo-group-shopping-public.js?ver=1.1
+      confidence: 20
+  kento-scroll-jump-top:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kento-scroll-jump-top/js/jquery-scrollToTop.js?ver=1.0
+      confidence: 10
+  kento-simple-fancy-gallery:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kento-simple-fancy-gallery/js/jquery.lazy_content.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/kento-simple-fancy-gallery/js/jquery.fancybox-1.3.4.pack.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/kento-simple-fancy-gallery/js/smoothbox.js?ver=1.0
+      confidence: 30
+  ketno-lazy-page-loader:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ketno-lazy-page-loader/js/jquery.loading-indicator.js?ver=1.0
+      confidence: 10
+  keymaster-chord-notation-free:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/keymaster-chord-notation-free/css/buttons_fixed.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/keymaster-chord-notation-free/css/print.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/keymaster-chord-notation-free/js/keymaster-chord-notation.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/keymaster-chord-notation-free/js/print-area.jquery.js?ver=1.0.2
+      confidence: 40
+  keyword-statistics:
+    Comment:
+      number: 1.7.8
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''a inserted by keyword-statistics-plugin 1.7.8'''
+  kia-subtitle:
+    TranslationFile:
+      number: 1.6.6
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kia-subtitle/languages/kia-subtitle.pot,
+        Match: ''"Project-Id-Version: KIA Subtitle 1.6.6'''
+  kickass-slider:
+    QueryParameter:
+      number: '1.2'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kickass-slider/assets/css/kickass.css?ver=1.2
+      - http://wp.lab/wp-content/plugins/kickass-slider/assets/js/jquery.kickass.js?ver=1.2
+      confidence: 20
   kiip:
     QueryParameter:
       number: 3.1.8
@@ -9007,6 +9640,58 @@ plugins:
       - http://wp.lab/wp-content/plugins/kingcomposer/assets/css/animate.css?ver=2.6.15
       - http://wp.lab/wp-content/plugins/kingcomposer/assets/css/icons.css?ver=2.6.15
       - http://wp.lab/wp-content/plugins/kingcomposer/assets/frontend/js/kingcomposer.min.js?ver=2.6.15
+  kingofpop:
+    MetaTag:
+      number: '0.3'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''kingofpop/0.3'''
+  kirimin-subscribe-widget:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kirimin-subscribe-widget/css/front.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/kirimin-subscribe-widget/js/front.js?ver=1.0
+      confidence: 20
+  kitchenbug:
+    WikiIE8Comment:
+      number: 0.6.4
+      found_by: Wiki Ie8 Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''/kitchenbug/application/assets/css/wiki-bubble-ie8.css?ver=0.6.4'''
+    ExplorerIE8Comment:
+      number: 0.6.4
+      found_by: Explorer Ie8 Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''/kitchenbug/application/assets/css/recipe-explorer-ie8.css?ver=0.6.4'''
+    QueryParameter:
+      number: 0.6.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/recipe-reset.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/recipe-view.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/analyzed-by.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/wiki-bubble.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/action-menu.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/clearfix.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/nut-highlights.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/css/recipe-explorer.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/themes/starter/style.css?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/js/controls.js?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/js/RecipeConverter.js?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/js/RecipeExplorer.js?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/js/WikiBubble.js?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/js/kbug.js?ver=0.6.4
+      - http://wp.lab/wp-content/plugins/kitchenbug/application/assets/js/ScreenOverlay.js?ver=0.6.4
+      confidence: 100
+  kite-chat:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kite-chat/kitechat-vi.po, Match: ''"Project-Id-Version:
+        Kite Chat 1.0.0'''
   kiwi-social-share:
     QueryParameter:
       number: 2.0.5

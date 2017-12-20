@@ -6950,6 +6950,35 @@ plugins:
       path: lang/pagelist-by_BY.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Inline\ PageList\ (?<v>[\d\.]+)/i
       version: true
+  inline-text-direction:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/itd-ar.po
+      pattern: !ruby/regexp /xt\-direction\.pot\ \(Inline\ Text\ Direction\ (?<v>[\d\.]+)/i
+      version: true
+  inline-tweet-sharer:
+    QueryParameter:
+      files:
+      - inline-tweet-sharer.css
+      - inline-tweet-sharer.js
+      version: true
+  inline-tweets:
+    QueryParameter:
+      files:
+      - css/shared.css
+      version: true
+  innvonix-testimonials:
+    QueryParameter:
+      files:
+      - assets/js/owl.carousel.js
+      - assets/js/innvonix-custom.js
+      version: true
+  insert-post-from-front-end-with-featured-image:
+    QueryParameter:
+      files:
+      - public/css/insert_post_from_front_end-public.css
+      - public/js/insert_post_from_front_end-public.js
+      version: true
   insta-gallery:
     QueryParameter:
       files:
@@ -6966,10 +6995,31 @@ plugins:
       files:
       - assets/css/instag-slider.css
       version: true
+  instalinker:
+    QueryParameter:
+      files:
+      - assets/instalink-lite/instalink-lite-1.4.0.min.css
+      - assets/instalink-lite/instalink-lite-1.4.0.min.js
+      version: true
+  install-fitvids-embed-fluid-width-videos:
+    QueryParameter:
+      files:
+      - public/js/fitvids-fluid-video-public.js
+      version: true
+  instant-weekly-roundup:
+    QueryParameter:
+      files:
+      - css/instant_weekly_roundup.css
+      version: true
   instantsearch-for-woocommerce:
     QueryParameter:
       files:
       - public/assets/css/wcis_plugin.css
+      version: true
+  instashow-lite:
+    QueryParameter:
+      files:
+      - assets/instashow-lite/dist/jquery.instashow-lite.packaged.js
       version: true
   integrate-polarsteps:
     TranslationFile:
@@ -6983,16 +7033,119 @@ plugins:
       path: languages/integration-dynamics.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ Dynamics\ 365\ Integration\ (?<v>[\d\.]+)/i
       version: true
+  intelligence:
+    QueryParameter:
+      files:
+      - public/css/intel-public.css
+      - public/js/intel-public.js
+      version: true
   intelliwidget-per-page-featured-posts-and-menus:
     QueryParameter:
       files:
       - templates/intelliwidget.css
+      version: true
+  intelly-posts-footer-manager:
+    QueryParameter:
+      pattern: !ruby/regexp /v=(?<v>[\d\.]+)/i
+      files:
+      - assets/js/library.js
+      version: true
+  intelly-welcome-bar:
+    QueryParameter:
+      pattern: !ruby/regexp /v=(?<v>[\d\.]+)/i
+      files:
+      - assets/js/library.js
+      version: true
+  interactive-svg-map:
+    QueryParameter:
+      files:
+      - js/jquery.vmap.js
+      - js/maps/jquery.vmap..js
+      - js/interactive-map.js
+      version: true
+  invitations-for-slack:
+    QueryParameter:
+      files:
+      - invitations-for-slack/scripts/script.js
+      version: true
+  invoicing:
+    QueryParameter:
+      files:
+      - assets/css/invoice-front.css
+      - assets/js/jsvat.js
+      - assets/js/euvat.js
+      - assets/js/invoice-front.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/invoicing-en_US.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Invoicing\ (?<v>[\d\.]+)/i
+      version: true
+  invoicing-quotes:
+    QueryParameter:
+      files:
+      - public/css/wpinv-quotes-public.css
+      - public/js/wpinv-quotes-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpinv-quotes-en_US.po
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Quotes\ for\ Invoicing\ (?<v>[\d\.]+)/i
+      version: true
+  ip-blocker-wp:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[contains(@name, "IP Blocker WP")]/@content
       version: true
   ip-geo-block:
     TranslationFile:
       class: BodyPattern
       path: languages/ip-geo-block.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ IP\ Geo\ Block\ (?<v>[\d\.]+)/i
+      version: true
+  ipanorama-360-virtual-tour-builder-lite:
+    QueryParameter:
+      files:
+      - lib/ipanorama.css
+      - lib/ipanorama.wp.css
+      version: true
+  is-circular-photo-gallery:
+    QueryParameter:
+      files:
+      - js/iscirculargallery.js
+      version: true
+  iscribbled:
+    QueryParameter:
+      files:
+      - scripts/bootstrap.js
+      version: true
+  issuem:
+    QueryParameter:
+      files:
+      - css/issuem.css
+      - css/flexslider.css
+      - js/jquery.flexslider-min.js
+      version: true
+  it-popups:
+    QueryParameter:
+      files:
+      - assets/css/itpopup-front.css
+      - assets/js/itpopup-front.js
+      version: true
+  itempropwp:
+    QueryParameter:
+      files:
+      - assets/css/itempropwp.css
+      version: true
+  iteras:
+    Comment:
+      pattern: !ruby/regexp /\/iteras\/public\/assets\/css\/ie\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/truncate.js
+      - public/assets/js/box.js
       version: true
   ithemes-sync:
     TranslationFile:
@@ -7006,11 +7159,146 @@ plugins:
       path: package.json
       key: version
       version: true
+  ivisa-travel:
+    QueryParameter:
+      files:
+      - public/css/ivisa-public.css
+      - public/js/ivisa-public.js
+      version: true
+  ivycat-ajax-testimonials:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ivycat-ajax-testimonials.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ IvyCat\ AJAX\ Testimonials\ (?<v>[\d\.]+)/i
+      version: true
+  jajadi-training:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/jajadi-training-ko_KR.po
+      pattern: !ruby/regexp /d\-Version:\ JaJaDi\ Training\ and\ Courses\ v(?<v>[\d\.]+)/i
+      version: true
+  jarvis:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  jb-common:
+    TranslationFile:
+      class: BodyPattern
+      path: loc/jb-common.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ JB\ Common\ v(?<v>[\d\.]+)/i
+      version: true
+  jbx-category-columns:
+    QueryParameter:
+      files:
+      - jbxCatColumns-style.css
+      version: true
+  jcwp-like-to-unlock-lite:
+    QueryParameter:
+      files:
+      - application.js
+      version: true
+  jd-faq:
+    QueryParameter:
+      files:
+      - css/jquery.accordion.css
+      - js/jquery.accordion.js
+      version: true
+  jekuntmeer-nl:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nl_NL.po
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Jekuntmeer\.nl\ Plugin\ (?<v>[\d\.]+)/i
+      version: true
+  jet-set-go:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-jet-integration-en_US.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Jet\ Set\ GO\ (?<v>[\d\.]+)/i
+      version: true
   jetstash-connect:
     ComposerFile:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  jf-simple-coming-soon:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/plugin-name.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
+  jgc-contact-info-widget:
+    QueryParameter:
+      files:
+      - css/jgcciw-style.css
+      version: true
+  jgc-content-for-registered-users:
+    QueryParameter:
+      files:
+      - css/jgc-cfr-style.css
+      version: true
+  jibber-voice-comments:
+    QueryParameter:
+      files:
+      - script.js
+      version: true
+  jigoshop-related-products-carousel-free:
+    QueryParameter:
+      files:
+      - css/relcarouself.css
+      version: true
+  jilt-for-edd:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/jilt-for-edd.pot
+      pattern: !ruby/regexp /ersion:\ Jilt\ for\ Easy\ Digital\ Downloads\ (?<v>[\d\.]+)/i
+      version: true
+  jilt-for-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/jilt-for-woocommerce.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Jilt\ for\ WooCommerce\ (?<v>[\d\.]+)/i
+      version: true
+  jivochat:
+    TranslationFile:
+      class: BodyPattern
+      path: jivosite-ru_RU.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ JivoChat\ v(?<v>[\d\.]+)/i
+      version: true
+  jm-responsive-video-embeds:
+    QueryParameter:
+      files:
+      - css/rwd-embed.min.css
+      version: true
+  jm-twitter-cards:
+    Comment:
+      pattern: !ruby/regexp /JM\ Twitter\ Cards\ by\ Julien\ Maury\ (?<v>[\d\.]+)/i
+      version: true
+  job-manager:
+    QueryParameter:
+      files:
+      - css/display.css
+      - js/display.js
+      version: true
+  job-postings:
+    QueryParameter:
+      pattern: !ruby/regexp /v=(?<v>[\d\.]+)/i
+      files:
+      - css/style.css
+      - js/script.js
+      version: true
+  jobsoid:
+    QueryParameter:
+      files:
+      - css/jobsoid.css
+      version: true
+  jp-scrollbar:
+    QueryParameter:
+      files:
+      - js/jquery.mCustomScrollbar.concat.min.js
+      - js/jquery.mousewheel.js
       version: true
   jquery-colorbox:
     QueryParameter:
@@ -7026,6 +7314,10 @@ plugins:
     Comment:
       pattern: !ruby/regexp /jQuery\ Lightbox\ For\ Native\ Galleries\ v(?<v>[\d\.]+)/i
       version: true
+  jquery-page-peel:
+    Comment:
+      pattern: !ruby/regexp /jQuery\ Page\ Peel\ \-\ (?<v>[\d\.]+)/i
+      version: true
   jquery-pin-it-button-for-images:
     JavascriptVar:
       xpath: //script[contains(., "var jpibfi_options")]
@@ -7034,6 +7326,51 @@ plugins:
       files:
       - css/client.css
       - js/jpibfi.client.js
+      version: true
+  jquery-remove-upcase-accents:
+    QueryParameter:
+      files:
+      - js/jquery.remove-upcase-accents.js
+      version: true
+  jquery-responsive-select-menu:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/jquery-responsive-select-menu.pot
+      pattern: !ruby/regexp /\-Version:\ jQuery\ Responsive\ Select\ Menu\ (?<v>[\d\.]+)/i
+      version: true
+  jquery-slider-with-text:
+    QueryParameter:
+      files:
+      - inc/style.css
+      - inc/script.js
+      version: true
+  jquery-tinytips:
+    Comment:
+      pattern: !ruby/regexp /jQuery\ TinyTips\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/tinyTips.css
+      - js/jquery.tinyTips-min.js
+      version: true
+  jrwdev-daily-specials:
+    QueryParameter:
+      files:
+      - includes/css/jrwdev-daily-specials.css
+      - includes/js/jrwdev-daily-specials.js
+      version: true
+  js-banner-rotate:
+    QueryParameter:
+      files:
+      - "/includes/jsbrotate.css"
+      - "/includes/jsbrotate.js"
+      version: true
+  js-currency-converter:
+    QueryParameter:
+      files:
+      - assets/css/select2.min.css
+      - assets/css/js_currency_converter.css
+      - assets/js/js_currency_converter.js
       version: true
   js_composer:
     MetaGenerator:
@@ -7052,9 +7389,61 @@ plugins:
       - assets/js/dist/js_composer_front.min.js
       - assets/lib/bower/skrollr/dist/skrollr.min.js
       version: true
+  jsj-code-highlight:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/jsj-code-highlight.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ jsj\-code\-hightlight\ (?<v>[\d\.]+)/i
+      version: true
+  jsj-gallery-slideshow:
+    TranslationFile:
+      class: BodyPattern
+      path: jsj-gallery-slideshow.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ JSJ\ Gallery\ Slideshow\ (?<v>[\d\.]+)/i
+      version: true
+  jsocial-responsive-floating-social-sharing-media-bar:
+    QueryParameter:
+      files:
+      - public/css/jsocial-main.css
+      - public/css/jsocial-vendor.css
+      - public/css/jsocial-custom.php
+      - public/js/jsocial-vendor.js
+      - public/js/jsocial-main.js
+      version: true
+  jss-scrolling:
+    QueryParameter:
+      files:
+      - public/css/jss-scrolling-public.css
+      - public/js/jss-scrolling-public.js
+      version: true
+  jstat:
+    QueryParameter:
+      files:
+      - js/jstat.min.js
+      version: true
+  jt-old-browser-alert:
+    QueryParameter:
+      files:
+      - css/jt-style.css
+      version: true
   juiz-last-tweet-widget:
     Comment:
       pattern: !ruby/regexp /Juiz Last Tweet Widget/i
+    QueryParameter:
+      files:
+      - css/juiz_last_tweet.css
+      version: true
+  juiz-outdated-post-message:
+    QueryParameter:
+      files:
+      - css/juiz-odpm-styles.css
+      version: true
+  jumbo-share:
+    QueryParameter:
+      files:
+      - public/css/jumbo-share-public.css
+      - public/js/jumbo-share-public.js
+      version: true
   jumplead:
     Comment:
       pattern: !ruby/regexp /plead:\ Tracking\ Code;\ Wordpress\ Plugin\ v(?<v>[\d\.]+)/i
@@ -7067,11 +7456,62 @@ plugins:
       files:
       - j/jumplead.js
       version: true
+  justrateit:
+    QueryParameter:
+      files:
+      - justrateit.js
+      version: true
+  k5hh-ham-radio-calculators:
+    QueryParameter:
+      files:
+      - css/antenna-calculator.css
+      - js/antenna-calculation-min.js
+      version: true
+  kalendar-cz:
+    QueryParameter:
+      files:
+      - kalendar_cz_style.css
+      version: true
   kanzu-support-desk:
     QueryParameter:
       files:
       - assets/css/ksd-public.css
       - assets/js/ksd-public.js
+      version: true
+  katalyst-video-plus:
+    QueryParameter:
+      files:
+      - assets/css/kvp.css
+      - assets/js/kvp.js
+      version: true
+  kaya-qr-code-generator:
+    QueryParameter:
+      files:
+      - css/wpkqcg-pkg.css
+      - assets/qrcode.js
+      - js/wpkqcg-pkg.js
+      version: true
+  kb-support:
+    QueryParameter:
+      files:
+      - templates/kbs.min.css
+      - assets/js/kbs-ajax.min.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /KB\ Support\ v(?<v>[\d\.]+)/i
+    TranslationFile:
+      class: BodyPattern
+      path: languages/kb-support.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ KB\ Support\ (?<v>[\d\.]+)/i
+      version: true
+  kc-media-enhancements:
+    TranslationFile:
+      class: BodyPattern
+      path: kc-media-enhancements-inc/languages/kc-media-enhancements.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ KC\ Media\ Enhancements\ (?<v>[\d\.]+)/i
       version: true
   keep-my-theme:
     ComposerFile:
@@ -7083,6 +7523,53 @@ plugins:
       class: BodyPattern
       path: languages/de_DE.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Keep\ My\ Theme\ (?<v>[\d\.]+)/i
+      version: true
+  kelkoo-group-shopping:
+    QueryParameter:
+      files:
+      - public/css/kelkoo-group-shopping-public.css
+      - public/js/kelkoo-group-shopping-public.js
+      version: true
+  kento-scroll-jump-top:
+    QueryParameter:
+      files:
+      - js/jquery-scrollToTop.js
+      version: true
+  kento-simple-fancy-gallery:
+    QueryParameter:
+      files:
+      - js/jquery.lazy_content.js
+      - js/jquery.fancybox-1.3.4.pack.js
+      - js/smoothbox.js
+      version: true
+  ketno-lazy-page-loader:
+    QueryParameter:
+      files:
+      - js/jquery.loading-indicator.js
+      version: true
+  keymaster-chord-notation-free:
+    QueryParameter:
+      files:
+      - css/buttons_fixed.css
+      - css/print.css
+      - js/keymaster-chord-notation.js
+      - js/print-area.jquery.js
+      version: true
+  keyword-statistics:
+    Comment:
+      pattern: !ruby/regexp /a\ inserted\ by\ keyword\-statistics\-plugin\ (?<v>[\d\.]+)/i
+      version: true
+  kia-subtitle:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/kia-subtitle.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ KIA\ Subtitle\ (?<v>[\d\.]+)/i
+      version: true
+  kickass-slider:
+    QueryParameter:
+      files:
+      - assets/css/kickass.css
+      - assets/js/jquery.kickass.js
       version: true
   kiip:
     QueryParameter:
@@ -7097,6 +7584,51 @@ plugins:
       - assets/css/animate.css
       - assets/css/icons.css
       - assets/frontend/js/kingcomposer.min.js
+      version: true
+  kingofpop:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="kingofpop"]/@content
+      version: true
+      pattern: !ruby/regexp /kingofpop\/(?<v>[\d\.]+)/i
+  kirimin-subscribe-widget:
+    QueryParameter:
+      files:
+      - css/front.css
+      - js/front.js
+      version: true
+  kitchenbug:
+    WikiIE8Comment:
+      class: Comment
+      pattern: !ruby/regexp /\/kitchenbug\/application\/assets\/css\/wiki\-bubble\-ie8\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+    ExplorerIE8Comment:
+      class: Comment
+      pattern: !ruby/regexp /\/kitchenbug\/application\/assets\/css\/recipe\-explorer\-ie8\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - application/assets/css/recipe-reset.css
+      - application/assets/css/recipe-view.css
+      - application/assets/css/analyzed-by.css
+      - application/assets/css/wiki-bubble.css
+      - application/assets/css/action-menu.css
+      - application/assets/css/clearfix.css
+      - application/assets/css/nut-highlights.css
+      - application/assets/css/recipe-explorer.css
+      - themes/starter/style.css
+      - application/assets/js/controls.js
+      - application/assets/js/RecipeConverter.js
+      - application/assets/js/RecipeExplorer.js
+      - application/assets/js/WikiBubble.js
+      - application/assets/js/kbug.js
+      - application/assets/js/ScreenOverlay.js
+      version: true
+  kite-chat:
+    TranslationFile:
+      class: BodyPattern
+      path: kitechat-vi.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Kite\ Chat\ (?<v>[\d\.]+)/i
       version: true
   kiwi-social-share:
     QueryParameter:
