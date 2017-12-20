@@ -9705,12 +9705,62 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/kiwi-social-share/languages/kiwi-social-share.pot,
         Match: ''"2.0.5'''
+  kjm-admin-notices:
+    TranslationFile:
+      number: 1.0.5
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kjm-admin-notices/languages/kjm-admin-notices-fr_FR.po,
+        Match: ''"Project-Id-Version: KJM Admin Notices 1.0.5'''
+  kliken-all-in-one-marketing:
+    TranslationFile:
+      number: 1.4.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kliken-all-in-one-marketing/languages/kliken-all-in-one-marketing.pot,
+        Match: ''Id-Version: Kliken All-In-One Marketing 1.4.7'''
+  kn-social-slide:
+    Comment:
+      number: 1.1.5
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''KN Social Network 1.1.5'''
+  knb-lite-knowledge-base-faq:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/knb-lite-knowledge-base-faq/public/css/tooltip.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/knb-lite-knowledge-base-faq/public/css/wpknb.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/knb-lite-knowledge-base-faq/public/js/bootstrap-tooltip.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/knb-lite-knowledge-base-faq/public/js/wpknb.js?ver=1.0.0
+      confidence: 40
   knowledge-center:
     MetaTag:
       number: 2.3.0
       found_by: Meta Tag (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''Knowledge Center v2.3.0 - https://emdplugins.com'''
+  knowledge-google-par-jm-crea:
+    MetaTag:
+      number: '1.4'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''1.4'''
+  kodeo-admin-ui:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kodeo-admin-ui/assets/css/frontend.css?ver=1.0.4
+      confidence: 10
+  komentify:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/komentify/public/js/komentify-public.js?ver=1.0.0
+      confidence: 10
   komito-analytics:
     TranslationFile:
       number: 0.0.1
@@ -9718,9 +9768,69 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/komito-analytics/languages/komito-analytics-ru_RU.po,
         Match: ''to-analytics-code.pot (Komito Analytics 0.0.1'''
+  konnichiwa:
+    TranslationFile:
+      number: 0.7.8
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/konnichiwa/konnichiwa.pot, Match: ''"Project-Id-Version:
+        Konnichiwa! 0.7.8'''
+  konora-membership:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/konora-membership/public/css/konora-membership-public.css?ver=0.1
+      - http://wp.lab/wp-content/plugins/konora-membership/public/js/konora-membership-public.js?ver=0.1
+      confidence: 20
   kontera-official:
     Comment:
       found_by: Comment (Passive Detection)
+  kosmos-esync-dashboard-connector:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kosmos-esync-dashboard-connector/public/css/ked-connector-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/kosmos-esync-dashboard-connector/public/js/ked-connector-public.js?ver=1.0.0
+      confidence: 20
+  kouguu-fb-like:
+    Comment:
+      number: '2.1'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''kouguu_fb_like 2.1'''
+    TranslationFile:
+      number: '2.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kouguu-fb-like/language/kouguu_fb_like.po,
+        Match: ''"Project-Id-Version: Kouguu FB Like 2.1'''
+  kudos:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kudos/css/kudos.css?ver=1.1.1
+      - http://wp.lab/wp-content/plugins/kudos/js/jquery.cookie.js?ver=1.1.1
+      - http://wp.lab/wp-content/plugins/kudos/js/kudos.js?ver=1.1.1
+      confidence: 30
+  kune-in-wp:
+    ComposerFile:
+      number: 0.1.5
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/kune-in-wp/package.json, Match: ''0.1.5'''
+  kvl-localization:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/kvl-localization/css/kvl_styles.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/kvl-localization/js/select2.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/kvl-localization/js/select2.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/kvl-localization/js/options.js?ver=1.0.0
+      confidence: 40
   layer-maps:
     QueryParameter:
       number: '1.2'

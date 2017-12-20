@@ -7640,21 +7640,108 @@ plugins:
       path: languages/kiwi-social-share.pot
       pattern: !ruby/regexp /"(?<v>[\d\.]+)/i
       version: true
+  kjm-admin-notices:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/kjm-admin-notices-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ KJM\ Admin\ Notices\ (?<v>[\d\.]+)/i
+      version: true
+  kliken-all-in-one-marketing:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/kliken-all-in-one-marketing.pot
+      pattern: !ruby/regexp /Id\-Version:\ Kliken\ All\-In\-One\ Marketing\ (?<v>[\d\.]+)/i
+      version: true
+  kn-social-slide:
+    Comment:
+      pattern: !ruby/regexp /KN\ Social\ Network\ (?<v>[\d\.]+)/i
+      version: true
+  knb-lite-knowledge-base-faq:
+    QueryParameter:
+      files:
+      - public/css/tooltip.css
+      - public/css/wpknb.css
+      - public/js/bootstrap-tooltip.min.js
+      - public/js/wpknb.js
+      version: true
   knowledge-center:
     MetaTag:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Knowledge\ Center\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
+  knowledge-google-par-jm-crea:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[contains(@name, "Knowledge Google")]/@content
+      version: true
+  kodeo-admin-ui:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      version: true
+  komentify:
+    QueryParameter:
+      files:
+      - public/js/komentify-public.js
+      version: true
   komito-analytics:
     TranslationFile:
       class: BodyPattern
       path: languages/komito-analytics-ru_RU.po
       pattern: !ruby/regexp /to\-analytics\-code\.pot\ \(Komito\ Analytics\ (?<v>[\d\.]+)/i
       version: true
+  konnichiwa:
+    TranslationFile:
+      class: BodyPattern
+      path: konnichiwa.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Konnichiwa!\ (?<v>[\d\.]+)/i
+      version: true
+  konora-membership:
+    QueryParameter:
+      files:
+      - public/css/konora-membership-public.css
+      - public/js/konora-membership-public.js
+      version: true
   kontera-official:
     Comment:
       pattern: !ruby/regexp /Kontera (?:ContentLink|Ads Inserted by Wordpress Plugin)/i
+  kosmos-esync-dashboard-connector:
+    QueryParameter:
+      files:
+      - public/css/ked-connector-public.css
+      - public/js/ked-connector-public.js
+      version: true
+  kouguu-fb-like:
+    Comment:
+      pattern: !ruby/regexp /kouguu_fb_like\ (?<v>[\d\.]+)/i
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: language/kouguu_fb_like.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Kouguu\ FB\ Like\ (?<v>[\d\.]+)/i
+      version: true
+  kudos:
+    QueryParameter:
+      files:
+      - css/kudos.css
+      - js/jquery.cookie.js
+      - js/kudos.js
+      version: true
+  kune-in-wp:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  kvl-localization:
+    QueryParameter:
+      files:
+      - css/kvl_styles.css
+      - js/select2.css
+      - js/select2.js
+      - js/options.js
+      version: true
   layer-maps:
     QueryParameter:
       files:
