@@ -7742,12 +7742,75 @@ plugins:
       - js/select2.js
       - js/options.js
       version: true
+  lana-breadcrumb:
+    QueryParameter:
+      files:
+      - "/assets/css/lana-breadcrumb.css"
+      version: true
+  lana-contact-form:
+    QueryParameter:
+      files:
+      - "/assets/css/lana-contact-form.css"
+      version: true
+  lana-downloads-manager:
+    QueryParameter:
+      files:
+      - "/assets/css/lana-downloads-manager.css"
+      version: true
+  lana-widgets:
+    QueryParameter:
+      files:
+      - "/assets/css/lana-carousel.css"
+      - "/assets/css/jquery.magnific-popup.min.css"
+      - "/assets/js/jquery.magnific-popup.min.js"
+      version: true
+  language-bar-flags:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/language-bar-flags.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Language\ Bar\ Flags\ (?<v>[\d\.]+)/i
+      version: true
+  latest-custom-post-type-updates:
+    QueryParameter:
+      files:
+      - css/tm_lcptu_basic_styles.css
+      version: true
+  latest-post-shortcode:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/custom-pagination.js
+      version: true
+  latest-posts-with-share:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  latex2html:
+    QueryParameter:
+      files:
+      - inc/css/latex.min.css
+      - inc/css/print.min.css
+      version: true
+  lava-bp-post:
+    QueryParameter:
+      files:
+      - assets/css/lava-bp-post.css
+      version: true
   layer-maps:
     QueryParameter:
       files:
       - assets/css/lm-styles.css
       - assets/js/vendor/js-marker-clusterer/src/markerclusterer_compiled.js
       - assets/js/lm-scripts.js
+      version: true
+  layered-pop:
+    QueryParameter:
+      files:
+      - css/style.css
+      - css/perfect-scrollbar-0.4.6.min.css
+      - js/perfect-scrollbar-0.4.6.with-mousewheel.min.js
+      - js/script.js
       version: true
   LayerSlider:
     LocaleTranslationFile:
@@ -7768,10 +7831,162 @@ plugins:
       - js/jquery.sonar.min.js
       - js/lazy-load.js
       version: true
+  lazy-load-for-videos:
+    QueryParameter:
+      files:
+      - assets/js/lazyload-all.js
+      version: true
+  lazy-widget-loader:
+    QueryParameter:
+      files:
+      - css/lwl.css
+      - js/lazy-widget-loader.js
+      version: true
+  ldd-directory-lite:
+    QueryParameter:
+      files:
+      - public/css/bootstrap.css
+      - public/plugins/chosen/chosen.css
+      - public/plugins/chosen/chosen.jquery.min.js
+      version: true
+  lead-magnets-by-contentupgrademe:
+    QueryParameter:
+      files:
+      - public/js/contentupgrade-me.js
+      version: true
+  lead-to-clio:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/lead-to-clio.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ lead_to_clio\ (?<v>[\d\.]+)/i
+      version: true
+  leaky-paywall:
+    QueryParameter:
+      files:
+      - "/css/issuem-leaky-paywall.css"
+      version: true
+  leanpress:
+    QueryParameter:
+      files:
+      - public/css/leanpress-public.css
+      - public/js/leanpress-public.js
+      version: true
+  legacy-google-calendar-events:
+    QueryParameter:
+      files:
+      - css/jquery.qtip.min.css
+      - css/gce-style.css
+      - js/jquery.qtip.min.js
+      - js/gce-script.js
+      version: true
+  legal-news-headlines:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/legal-news-headlines.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Legal\ News\ Headlines\ (?<v>[\d\.]+)/i
+      version: true
+  letter-template:
+    QueryParameter:
+      files:
+      - css/wn-letter-template.css
+      version: true
+  lexicata:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
+      version: true
+  leyka-bank-order-gateway:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/leyka-bank-order-ru_RU.po
+      pattern: !ruby/regexp /t\-Id\-Version:\ Leyka\ Bank\ Order\ gateway\ v(?<v>[\d\.]+)/i
+      version: true
+  lh-framebreaker:
+    QueryParameter:
+      files:
+      - scripts/lh-framebreaker.js
+      version: true
+  lh-offline-indicator:
+    QueryParameter:
+      files:
+      - styles/offline-language-english.css
+      - styles/offline-theme-chrome.css
+      - scripts/offline-min.js
+      version: true
+  lh-utm-tracking:
+    QueryParameter:
+      files:
+      - scripts/purser.js
+      version: true
+  librafire-pinpoints:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  library-bookshelves:
+    QueryParameter:
+      files:
+      - css/bookshelves.css
+      - slick/slick.css
+      - slick/slick-theme.css
+      - slick/slick.min.js
+      version: true
+  librevideojs-html5-player:
+    QueryParameter:
+      files:
+      - librevideojs/js/cliplibrejs.dev.js
+      version: true
+  light-comment-form:
+    QueryParameter:
+      files:
+      - light-comment-form.css
+      - light-comment-form.js
+      version: true
+  lightbox-photoswipe:
+    QueryParameter:
+      files:
+      - lib/photoswipe.css
+      - lib/default-skin/default-skin.css
+      - lib/photoswipe.min.js
+      - lib/photoswipe-ui-default.min.js
+      - js/photoswipe.js
+      version: true
+  lightbox-responsive-images:
+    QueryParameter:
+      files:
+      - js/lri.js
+      - js/jquery.touchSwipe.min.js
+      version: true
+  lightview-plus:
+    QueryParameter:
+      files:
+      - css/lightview/lightview.css
+      - style.css
+      - js/spinners/spinners.min.js
+      - js/lightview/lightview.js
+      version: true
+  lightweight-and-responsive-youtube-embed:
+    QueryParameter:
+      files:
+      - public/css/wp-youtube-lightweight-embed-public.css
+      - public/js/wp-youtube-lightweight-embed-public.js
+      version: true
   lightweight-grid-columns:
     QueryParameter:
       files:
       - css/unsemantic-grid-responsive-tablet.css
+      version: true
+  lightweight-youtube-channel-widget:
+    QueryParameter:
+      files:
+      - assets/css/youtube-channel.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/lightweight-youtube-channel-widget-sv_SE.po
+      pattern: !ruby/regexp /ion:\ Lightweight\ YouTube\ Channel\ Widget\ (?<v>[\d\.]+)/i
       version: true
   linker:
     TranslationFile:
@@ -7790,6 +8005,16 @@ plugins:
       class: BodyPattern
       path: languages/litespeed-cache.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ LiteSpeed\ Cache\ (?<v>[\d\.]+)/i
+      version: true
+  live-chat-by-supsystic:
+    QueryParameter:
+      files:
+      - modules/chat/css/chat.core.css
+      - modules/chat/css/frontend.chat.css
+      - js/common.js
+      - js/core.js
+      - modules/chat/js/chat.core.js
+      - modules/chat/js/frontend.chat.js
       version: true
   live-composer-page-builder:
     Comment:
@@ -7963,6 +8188,12 @@ plugins:
     QueryParameter:
       files:
       - css/extra.min.css
+      version: true
+  moderation-tools-for-bbpress:
+    QueryParameter:
+      files:
+      - css/front.css
+      - js/report-post.js
       version: true
   more-lang:
     TranslationFile:
@@ -8389,6 +8620,18 @@ plugins:
       path: languages/pronamic_ideal.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Pronamic\ Pay\ (?<v>[\d\.]+)/i
       version: true
+  propertyhive:
+    QueryParameter:
+      files:
+      - assets/css/propertyhive.css
+      - assets/js/frontend/search.js
+      - assets/js/frontend/make-enquiry.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /PropertyHive\ (?<v>[\d\.]+)/i
   pwacommerce:
     ComposerFile:
       class: ConfigParser
@@ -8753,6 +8996,13 @@ plugins:
       - res/css/language-selector.css.gzip
       - res/js/jquery.cookie.js
       version: true
+  slidedeck:
+    QueryParameter:
+      files:
+      - css/slidedeck.css
+      - js/jail.js
+      - js/slidedeck-public.js
+      version: true
   smart-manager-for-wp-e-commerce:
     TranslationFile:
       class: BodyPattern
@@ -8853,6 +9103,15 @@ plugins:
     QueryParameter:
       files:
       - css/staff-list.css
+      version: true
+  staff-team:
+    QueryParameter:
+      files:
+      - css/themesCSS/sc_theme.css
+      - js/imagelightbox.min.js
+      - js/common.js
+      - js/SC_Script.js
+      - js/responsive.js
       version: true
   stageshow:
     QueryParameter:
@@ -9094,6 +9353,12 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Ultimate\ Page\ Builder\ \-\ (?<v>[\d\.]+)/i
+  unipress-api:
+    QueryParameter:
+      files:
+      - "/css/unipress.css"
+      - "/js/unipress.js"
+      version: true
   units:
     QueryParameter:
       files:
@@ -9354,6 +9619,17 @@ plugins:
       - assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
       - assets/libs/magnific-popup/jquery.magnific-popup.min.js
       version: true
+  woo-variation-swatches:
+    QueryParameter:
+      files:
+      - assets/css/frontend.min.css
+      - assets/js/frontend.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   woo-wallet:
     TranslationFile:
       class: BodyPattern
@@ -9458,6 +9734,12 @@ plugins:
       path: languages/woocommerce-product-archive-customiser.pot
       pattern: !ruby/regexp /WooCommerce\ Product\ Archive\ Customiser\ (?<v>[\d\.]+)/i
       version: true
+  woocommerce-product-fees:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-product-fees.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ WooCommerce\ Product\ Fees\ (?<v>[\d\.]+)/i
+      version: true
   woocommerce-quantity-increment:
     TranslationFile:
       class: BodyPattern
@@ -9487,6 +9769,11 @@ plugins:
       class: BodyPattern
       path: languages/woocommerce-simple-registration.pot
       pattern: !ruby/regexp /on:\ Simple\ Registration\ for\ WooCommerce\ (?<v>[\d\.]+)/i
+      version: true
+  word-switcher:
+    QueryParameter:
+      files:
+      - dist/word-switcher.js
       version: true
   wordfence:
     JavascriptVar:
