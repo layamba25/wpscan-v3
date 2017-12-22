@@ -8013,11 +8013,62 @@ plugins:
       path: languages/lightweight-youtube-channel-widget-sv_SE.po
       pattern: !ruby/regexp /ion:\ Lightweight\ YouTube\ Channel\ Widget\ (?<v>[\d\.]+)/i
       version: true
+  likely:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/likely-ru_RU.po
+      pattern: !ruby/regexp /ly\.php:55\ tags\/2\.2\/likely\.php:67\ tags\/(?<v>[\d\.]+)/i
+      version: true
+  likert-survey-master:
+    TranslationFile:
+      class: BodyPattern
+      path: likert-survey.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Likert\ Survey\ Master\ (?<v>[\d\.]+)/i
+      version: true
+  limb-gallery:
+    QueryParameter:
+      files:
+      - css/grsFrontend.css
+      - js/angular.min.js
+      - js/angular-touch.min.js
+      - js/grsFrontend.min.js
+      version: true
+  limelight-crm:
+    QueryParameter:
+      files:
+      - includes/assets/main.css
+      - includes/assets/limelight-traffic-attribution.min.js
+      - includes/assets/main.js
+      version: true
+  limelight-storefront:
+    QueryParameter:
+      files:
+      - includes/assets/main.css
+      - includes/assets/limelight-traffic-attribution.min.js
+      - includes/assets/main.js
+      version: true
+  link-exchange-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/link-exchange-it_IT.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Link\ Exchange\ v(?<v>[\d\.]+)/i
+      version: true
+  link-roundups:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/link-roundups.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ link\-roundups\ (?<v>[\d\.]+)/i
+      version: true
   linker:
     TranslationFile:
       class: BodyPattern
       path: language/linker.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Linker\ (?<v>[\d\.]+)/i
+      version: true
+  linkpaper:
+    QueryParameter:
+      files:
+      - css/lp-style.css
       version: true
   listig:
     ComposerFile:
@@ -8041,6 +8092,16 @@ plugins:
       - modules/chat/js/chat.core.js
       - modules/chat/js/frontend.chat.js
       version: true
+  live-composer-lite:
+    QueryParameter:
+      files:
+      - css/main.css
+      - css/front/plugins.css
+      - css/font-awesome.css
+      - css/modules.css
+      - js/front-plugins.js
+      - js/front.js
+      version: true
   live-composer-page-builder:
     Comment:
       pattern: !ruby/regexp /ve\-composer\-page\-builder\/css\/ie\.css\?ver=(?<v>[\d\.]+)/i
@@ -8054,6 +8115,21 @@ plugins:
       - js/frontend/plugins.js
       - js/frontend/main.js
       version: true
+  live-photos:
+    QueryParameter:
+      files:
+      - "/js/livephotos.js"
+      version: true
+  live-weather-station:
+    QueryParameter:
+      files:
+      - public/css/live-weather-station-public.min.css
+      version: true
+  liveeditor:
+    QueryParameter:
+      files:
+      - LolitaFramework/CssLoader/assets/css/lolita_css_loader.css
+      version: true
   livemesh-siteorigin-widgets:
     QueryParameter:
       files:
@@ -8062,6 +8138,81 @@ plugins:
       - assets/js/modernizr-custom.min.js
       - assets/js/jquery.waypoints.min.js
       - assets/js/lsow-frontend.min.js
+      version: true
+  livepress:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/livepress.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ livepress\ (?<v>[\d\.]+)/i
+      version: true
+  loanthru-calculator:
+    QueryParameter:
+      files:
+      - public/css/loanthru_calculator-public.css
+      - public/js/loanthru_calculator-public.js
+      version: true
+  lobbycal2press:
+    QueryParameter:
+      files:
+      - js/jquery.spring-friendly.js
+      - js/jquery.datatables.js
+      - js/moment.min.js
+      - js/lobbycal2press.js
+      version: true
+  local-like-and-share:
+    QueryParameter:
+      files:
+      - public/css/local-like-and-share-public.min.css
+      - public/js/local-like-and-share-public.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/local-like-and-share.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Local\ Like\ And\ Share\ (?<v>[\d\.]+)/i
+      version: true
+  local-market-explorer:
+    QueryParameter:
+      files:
+      - css/client.css
+      version: true
+  localtime:
+    QueryParameter:
+      files:
+      - localtime.js
+      version: true
+  location-module-for-contact-form-7:
+    QueryParameter:
+      files:
+      - js/gmaps.min.js
+      - js/cf7-location-module.min.js
+      version: true
+  locationews:
+    QueryParameter:
+      files:
+      - public/js/min.js
+      version: true
+  lock-my-bp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-lock-en_US.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ BuddyPress\ Lock\ (?<v>[\d\.]+)/i
+      version: true
+  locus:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/locus-pt_BR.po
+      pattern: !ruby/regexp /msgid\ "(?<v>[\d\.]+)/i
+      version: true
+  loftloader:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/loftloader.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ LoftLoader\ (?<v>[\d\.]+)/i
+      version: true
+  logic-hop:
+    QueryParameter:
+      files:
+      - public/js/ajax-methods.min.js
       version: true
   login-customizer:
     TranslationFile:
@@ -8075,6 +8226,12 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Login\ Designer\ (?<v>[\d\.]+)/i
+  login-ip-restriction:
+    QueryParameter:
+      files:
+      - public/css/login-ip-restriction-public.css
+      - public/js/login-ip-restriction-public.js
+      version: true
   login-logo:
     Comment:
       pattern: !ruby/regexp /Login Logo plugin for WordPress/i
@@ -8091,12 +8248,165 @@ plugins:
       - public/assets/css/font-awesome.min.css
       - public/assets/css/style.css
       version: true
+  logo-showcase-for-visual-composer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/it_vc_logo_showcase-en_US.po
+      pattern: !ruby/regexp /rsion:\ iThemeland\ Logo\ Showcase\ for\ VC\ v(?<v>[\d\.]+)/i
+      version: true
+  loks-monetization:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
+  loltracker:
+    QueryParameter:
+      files:
+      - public/css/lol-tracker-public.css
+      - public/js/lol-tracker-public.js
+      version: true
+  loomisoft-button-widget:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  lowermedia-sticky-js-menus:
+    QueryParameter:
+      files:
+      - lowermedia.sticky.min.js
+      version: true
+  ltd-tickets:
+    QueryParameter:
+      files:
+      - public/css/twentyfifteen.css
+      - public/css/core.min.css
+      - public/css/ltd-tickets-public.css
+      - public/js/core.min.js
+      - public/js/ltd.lib.js
+      version: true
+  ltw-content-shortcodes:
+    QueryParameter:
+      files:
+      - css/styles.css
+      - js/functions.js
+      version: true
+  lucidlms:
+    QueryParameter:
+      files:
+      - assets/css/frontend/main.css
+      version: true
+  lvl99-omny-embed:
+    QueryParameter:
+      files:
+      - js/lvl99-omny-embed.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  m7-go-top:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/m7-go-top-ru_RU.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ M7\ Go\ Top\ v(?<v>[\d\.]+)/i
+      version: true
+  mabel-shoppable-images-lite:
+    QueryParameter:
+      files:
+      - public/css/public.min.css
+      - public/js/public.min.js
+      version: true
+  mactrak:
+    QueryParameter:
+      files:
+      - "/js/wp_mactrak_public_script.js"
+      version: true
+  mad-mimi-wp:
+    QueryParameter:
+      files:
+      - assets/pagecount.min.js
+      version: true
+  mag-products-integration:
+    QueryParameter:
+      files:
+      - css/style.min.css
+      version: true
+  magadanski-similar-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/magadanski-similar-posts-es_ES.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ M\ Similar\ Posts\ (?<v>[\d\.]+)/i
+      version: true
+  magayo-lottery-results:
+    QueryParameter:
+      files:
+      - public/css/magayo-lottery-results-public.css
+      - public/js/magayo-lottery-results-public.js
+      version: true
+  magee-page-builder:
+    QueryParameter:
+      files:
+      - assets/js/main.js
+      version: true
+  magee-restaurant:
+    QueryParameter:
+      files:
+      - assets/css/magee-restaurant.css
+      - assets/css/prettyPhoto.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/magee-restaurant.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Magee\ Restaurant\ (?<v>[\d\.]+)/i
+      version: true
   magee-shortcodes:
     QueryParameter:
       files:
       - assets/css/shortcode.css
       - assets/js/magee-shortcodes.js
       - assets/js/magee-modal.js
+      version: true
+  mageewp-page-layout:
+    QueryParameter:
+      files:
+      - includes/frontend/vendors/bootstrap/css/bootstrap.min.css
+      - includes/frontend/vendors/font-awesome/css/font-awesome.min.css
+      - includes/frontend/vendors/owl-carousel/assets/owl.carousel.min.css
+      - includes/frontend/vendors/prettyPhoto/css/prettyPhoto.min.css
+      - includes/frontend/vendors/vimeo_player/css/jquery.mb.vimeo_player.min.css
+      - assets/frontend/css/sections.min.css
+      - assets/frontend/css/custom-posts.css
+      - assets/css/animate.css
+      - assets/css/icons.css
+      - assets/css/mpl.icons.css
+      - includes/frontend/vendors/bootstrap/js/bootstrap.min.js
+      - includes/frontend/vendors/owl-carousel/owl.carousel.min.js
+      - includes/frontend/vendors/prettyPhoto/js/jquery.prettyPhoto.min.js
+      - includes/frontend/vendors/jquery-easy-pie-chart/jquery.easypiechart.min.js
+      - includes/frontend/vendors/YTPlayer/jquery.mb.YTPlayer.min.js
+      - includes/frontend/vendors/vimeo_player/jquery.mb.vimeo_player.min.js
+      - includes/frontend/vendors/isotope/isotope.pkgd.min.js
+      - includes/frontend/vendors/waypoints/jquery.waypoints.min.js
+      - includes/frontend/vendors/jquery-parallax/jquery.parallax-1.1.3.js
+      - assets/frontend/js/main.js
+      version: true
+  magic-action-box:
+    Comment:
+      pattern: !ruby/regexp /mabv(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - assets/js/actionbox-helper.js
+      - assets/js/ajax-form.js
+      - assets/js/responsive-videos.js
+      version: true
+  magic-coupon-and-deal:
+    QueryParameter:
+      files:
+      - public/css/magic-coupon-and-deal-public.css
+      - public/js/magic-coupon-and-deal-public.js
       version: true
   mailoptin:
     QueryParameter:
