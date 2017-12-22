@@ -947,6 +947,12 @@ plugins:
       path: languages/gmaps-api-key.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ Google\ Maps\ API\ KEY\ (?<v>[\d\.]+)/i
       version: true
+  aplazame:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/aplazame.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Aplazame\ v(?<v>[\d\.]+)/i
+      version: true
   app-mockups-carousel:
     QueryParameter:
       files:
@@ -3992,6 +3998,11 @@ plugins:
       path: languages/date-time.pot
       pattern: !ruby/regexp /roject\-Id\-Version:\ Date\ and\ Time\ Widget\ (?<v>[\d\.]+)/i
       version: true
+  debtcom-business-in-a-box:
+    QueryParameter:
+      files:
+      - css/bib.min.css
+      version: true
   defender-security:
     TranslationFile:
       class: BodyPattern
@@ -5658,6 +5669,12 @@ plugins:
       files:
       - public/css/button-styles.css
       version: true
+  form-analytics:
+    QueryParameter:
+      files:
+      - public/css/form-analytics-public.css
+      - public/js/form-analytics-public.js
+      version: true
   form-maker:
     QueryParameter:
       files:
@@ -6463,6 +6480,14 @@ plugins:
     QueryParameter:
       files:
       - style.css
+      version: true
+  highlight-search-terms:
+    Comment:
+      pattern: !ruby/regexp /Highlight\ Search\ Terms\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - hlst-extend.min.js
       version: true
   hijri-calendar-widget:
     QueryParameter:
@@ -8189,6 +8214,11 @@ plugins:
       files:
       - css/extra.min.css
       version: true
+  modal-window:
+    QueryParameter:
+      files:
+      - public/css/style.css
+      version: true
   moderation-tools-for-bbpress:
     QueryParameter:
       files:
@@ -8216,6 +8246,13 @@ plugins:
     QueryParameter:
       files:
       - assets/js/frontend-min.js
+      version: true
+  mwp-side-menu:
+    QueryParameter:
+      files:
+      - public/css/style.css
+      - public/css/left.css
+      - public/js/side-menu.js
       version: true
   my-eyes-are-up-here:
     ComposerFile:
@@ -8313,6 +8350,12 @@ plugins:
       path: languages/oik.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ oik\ (?<v>[\d\.]+)/i
       version: true
+  oik-bwtrace:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/oik-bwtrace-en_GB.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ oik\ bwtrace\ (?<v>[\d\.]+)/i
+      version: true
   okv-oauth:
     TranslationFile:
       class: BodyPattern
@@ -8344,6 +8387,12 @@ plugins:
   optin-monster:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'
+      version: true
+  orcsnet-from-inditip:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
       version: true
   osm:
     Comment:
@@ -8396,6 +8445,12 @@ plugins:
       class: BodyPattern
       path: languages/papi-compatibility-for-wpml.pot
       pattern: !ruby/regexp /Id\-Version:\ Papi\ compatibility\ for\ WPML\ (?<v>[\d\.]+)/i
+      version: true
+  paypal-for-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/paypal-for-woocommerce-en_US.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ PayPal\ for\ WooCommerce\ (?<v>[\d\.]+)/i
       version: true
   paypal-wp-button-manager:
     QueryParameter:
@@ -8477,6 +8532,12 @@ plugins:
   platinum-seo-pack:
     Comment:
       pattern: !ruby/regexp /platinum\ seo\ pack\ (?<v>[\d\.]+)/i
+      version: true
+  plugin-reviews:
+    QueryParameter:
+      files:
+      - plugin-reviews.css
+      - plugin-reviews.js
       version: true
   podlove-podcasting-plugin-for-wordpress:
     QueryParameter:
@@ -8702,6 +8763,12 @@ plugins:
       path: languages/remove-projects-in-divi.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ Remove\ Projects\ in\ Divi\ (?<v>[\d\.]+)/i
       version: true
+  request-a-quote:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Request\ a\ quote\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   responsive-lightbox:
     QueryParameter:
       files:
@@ -8724,6 +8791,29 @@ plugins:
     ComposerFile:
       class: ConfigParser
       path: package.json
+      key: version
+      version: true
+  restaurantpress:
+    QueryParameter:
+      files:
+      - assets/css/restaurantpress-layout.css
+      - assets/css/restaurantpress-smallscreen.css
+      - assets/css/restaurantpress.css
+      - assets/js/frontend/restaurantpress.min.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /RestaurantPress\ (?<v>[\d\.]+)/i
+    TranslationFile:
+      class: BodyPattern
+      path: languages/restaurantpress.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ RestaurantPress\ (?<v>[\d\.]+)/i
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
       key: version
       version: true
   retainly:
@@ -8766,6 +8856,11 @@ plugins:
       pattern: !ruby/regexp /\AVersion (?<v>[\d\.]+).*\z/i
       version: true
       confidence: 80
+  ringotel-messenger-customer-chat:
+    QueryParameter:
+      files:
+      - messenger-customer-chat.js
+      version: true
   rp-ads-manager:
     TranslationFile:
       class: BodyPattern
@@ -8907,6 +9002,13 @@ plugins:
       path: languages/shortcodes-for-woocommerce.pot
       pattern: !ruby/regexp /\-Id\-Version:\ Shortcodes\ for\ WooCommerce\ (?<v>[\d\.]+)/i
       version: true
+  side-menu:
+    QueryParameter:
+      files:
+      - public/css/style.css
+      - public/css/left.css
+      - public/js/side-menu.js
+      version: true
   sidebar-login:
     QueryParameter:
       files:
@@ -9045,6 +9147,18 @@ plugins:
       - css/style.min.css
       - js/script.min.js
       version: true
+  socketlabs:
+    QueryParameter:
+      files:
+      - public/css/socketlabs-public.css
+      - public/js/socketlabs-public.js
+      version: true
+  software-issue-manager:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Software\ Issue\ Manager\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   sold-alerts:
     QueryParameter:
       files:
@@ -9296,6 +9410,12 @@ plugins:
       - public/css/to-top-public.css
       - public/js/to-top-public.js
       version: true
+  toot:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/toot.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Toot\ (?<v>[\d\.]+)/i
+      version: true
   translatepress-multilingual:
     QueryParameter:
       files:
@@ -9498,6 +9618,12 @@ plugins:
     QueryParameter:
       files:
       - includes/css/style.css
+      version: true
+  wc-order-search-admin:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wc-order-search-admin.pot
+      pattern: !ruby/regexp /e\ Order\ Search\ Admin\ powered\ by\ Algolia\ (?<v>[\d\.]+)/i
       version: true
   wc-shortcodes:
     QueryParameter:
@@ -9778,6 +9904,12 @@ plugins:
   wordfence:
     JavascriptVar:
       pattern: !ruby/regexp /\|WordfenceTestMonBot\)\/\.test/i
+  wordlift:
+    QueryParameter:
+      files:
+      - public/css/wordlift-public.css
+      - public/js/wordlift-public.js
+      version: true
   wordpress-23-related-posts-plugin:
     QueryParameter:
       files:
@@ -9827,6 +9959,12 @@ plugins:
     QueryParameter:
       files:
       - assets/css/wp-applink.css
+      version: true
+  wp-author-slug:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-author-slug-de_DE.po
+      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>[\d\.]+)/i
       version: true
   wp-bunvc:
     QueryParameter:
@@ -9945,6 +10083,12 @@ plugins:
   wp-google-fonts:
     Comment:
       pattern: !ruby/regexp /by Wordpress Google Fonts/i
+  wp-google-suggest:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-google-suggest-sr_RS.po
+      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>[\d\.]+)/i
+      version: true
   wp-healthcheck:
     TranslationFile:
       class: BodyPattern
@@ -10383,6 +10527,12 @@ plugins:
       files:
       - build/css/wptables.min.css
       - build/js/wptables.min.js
+      version: true
+  wptelegram:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wptelegram-fa_IR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WP\ Telegram\ (?<v>[\d\.]+)/i
       version: true
   wptouch:
     Comment:
