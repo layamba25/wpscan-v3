@@ -10303,7 +10303,7 @@ plugins:
       number: 1.3.9
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''ve-composer-page-builder/css/ie.css?ver=1.3.9'''
+      - 'http://wp.lab/, Match: ''/live-composer-page-builder/css/ie.css?ver=1.3.9'''
     QueryParameter:
       number: 1.3.9
       found_by: Query Parameter (Passive Detection)
@@ -10761,8 +10761,8 @@ plugins:
       number: 4.0.1
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/mailpoet-woocommerce-add-on/languages/mailpoet-woocommerce-add-on.pot,
-        Match: ''"4.0.1'''
+      - "http://wp.lab/wp-content/plugins/mailpoet-woocommerce-add-on/languages/mailpoet-woocommerce-add-on.pot,
+        Match: 'Legacy \"\n\"4.0.1'"
   maintenance-mode-z:
     QueryParameter:
       number: 1.1.0

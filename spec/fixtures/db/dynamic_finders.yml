@@ -8109,7 +8109,7 @@ plugins:
       version: true
   live-composer-page-builder:
     Comment:
-      pattern: !ruby/regexp /ve\-composer\-page\-builder\/css\/ie\.css\?ver=(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /\/live\-composer\-page\-builder\/css\/ie\.css\?ver=(?<v>[\d\.]+)/i
       version: true
     QueryParameter:
       files:
@@ -8468,7 +8468,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/mailpoet-woocommerce-add-on.pot
-      pattern: !ruby/regexp /"(?<v>[\d\.]+)/i
+      pattern: !ruby/regexp /Legacy "\s*"(?<v>[\d\.]+)/i
       version: true
   maintenance-mode-z:
     QueryParameter:
