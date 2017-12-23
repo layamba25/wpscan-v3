@@ -5717,6 +5717,11 @@ plugins:
       - common/assets/css/common-style.css
       - admin/assets/fed_global_admin_style.css
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/frontend-dashboard.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Frontend\ Dashboard\ (?<v>[\d\.]+)/i
+      version: true
   frontend-dialog:
     QueryParameter:
       files:
@@ -8408,6 +8413,39 @@ plugins:
       - public/css/magic-coupon-and-deal-public.css
       - public/js/magic-coupon-and-deal-public.js
       version: true
+  magic-post-voice:
+    QueryParameter:
+      files:
+      - assets/js/voicetrigger.js
+      version: true
+  magic-shortcodes-builder-lite:
+    QueryParameter:
+      files:
+      - public/css/magic-shortcodes-public.css
+      - public/js/magic-shortcodes-public.js
+      version: true
+  magic-slider:
+    QueryParameter:
+      files:
+      - css/magic-slider.css
+      - bxslider/jquery.bxslider.min.js
+      version: true
+  mailchimp-subscribe-widget:
+    QueryParameter:
+      files:
+      - js/mcsw.js
+      version: true
+  mailchimp-wp:
+    QueryParameter:
+      files:
+      - assets/pagecount.min.js
+      version: true
+  mailermailer:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
   mailoptin:
     QueryParameter:
       files:
@@ -8426,6 +8464,39 @@ plugins:
       - assets/js/public.3d1d91ad.js
       - assets/js/vendor.3c206dd6.js
       version: true
+  mailpoet-woocommerce-add-on:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mailpoet-woocommerce-add-on.pot
+      pattern: !ruby/regexp /"(?<v>[\d\.]+)/i
+      version: true
+  maintenance-mode-z:
+    QueryParameter:
+      files:
+      - basic-jquery-slider.css
+      version: true
+  make-money-calculator-v10:
+    QueryParameter:
+      files:
+      - css/jquery-ui-1.8.14.custom.css
+      version: true
+  maksukaista:
+    TranslationFile:
+      class: BodyPattern
+      path: maksukaista-fi.po
+      pattern: !ruby/regexp /d\-Version:\ Maksukaista\ Payment\ Gateway\ v(?<v>[\d\.]+)/i
+      version: true
+  mam-image-and-video-accordion:
+    QueryParameter:
+      files:
+      - js/mam-accourdion.js
+      version: true
+  manage-user-roles:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   mango-popup:
     QueryParameter:
       files:
@@ -8433,6 +8504,12 @@ plugins:
       - vendor/font-awesome/css/font-awesome.min.css
       - assets/frontend/css/main.css
       - assets/frontend/js/main.js
+      version: true
+  map-for-acf:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   mappress-google-maps-for-wordpress:
     Comment:
@@ -8447,6 +8524,50 @@ plugins:
       path: languages/mappress-google-maps-for-wordpress.pot
       pattern: !ruby/regexp /t\-Id\-Version:\ MapPress\ Easy\ Google\ Maps\ (?<v>[\d\.]+)/i
       version: true
+  marctv-ajax-trash-comments:
+    QueryParameter:
+      files:
+      - marctv-moderate.css
+      - marctv-moderate.js
+      version: true
+  marctv-flickr-bar:
+    QueryParameter:
+      files:
+      - marctv-flickr-bar.css
+      version: true
+  marctv-galleria:
+    QueryParameter:
+      files:
+      - galleria/themes/classic/galleria.classic.css
+      - marctv-galleria.css
+      - galleria/galleria-1.4.2.min.js
+      - galleria/themes/classic/galleria.classic.js
+      - marctv.galleria-init.js
+      version: true
+  marctv-jquery-colorbox:
+    QueryParameter:
+      files:
+      - jquery.colorbox.css
+      - jquery.colorbox.js
+      - jquery.colorbox_setup.js
+      version: true
+  marctv-mediaelement-tracking:
+    QueryParameter:
+      files:
+      - js/jquery.me-ga-events.js
+      version: true
+  marctv-twitch-status:
+    QueryParameter:
+      files:
+      - jquery.marctv-twitch-status.css
+      - jquery.marctv-twitch-status.js
+      version: true
+  margarita:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Margarita\ v(?<v>[\d\.]+)\ \-\ https:\/\/emdplugins\.com/i
   masburti-flickr-gallery:
     TranslationFile:
       class: BodyPattern
@@ -8459,6 +8580,11 @@ plugins:
       - assets/css/mashsb.min.css
       - assets/js/mashsb.min.js
       version: true
+  massive-visual-builder-page-layout-builder:
+    QueryParameter:
+      files:
+      - assets/rating/rating.js
+      version: true
   master-slider:
     QueryParameter:
       files:
@@ -8470,11 +8596,108 @@ plugins:
       version: true
       pattern: !ruby/regexp /MasterSlider\ (?<v>[\d\.]+)\ \-\ Responsive\ Touch\ Image\
         Slider\ \|\ avt\.li\/msf/i
+  material-design-icons:
+    QueryParameter:
+      files:
+      - bower_components/mdi/css/materialdesignicons.min.css
+      - css/admin-styles.css
+      - css/size-styles.css
+      version: true
+  material-faq-manager:
+    QueryParameter:
+      files:
+      - assets/css/mfm_style.css
+      - assets/js/mfm_script.js
+      version: true
+  materializer:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  maven-member:
+    QueryParameter:
+      files:
+      - css/validation/css/validationEngine.jquery.css
+      - css/validation/css/template.css
+      - js/validation/languages/jquery.validationEngine-en.js
+      - js/validation/jquery.validationEngine.js
+      - js/validation/maven-validation-general.js
+      version: true
+  maxbooking-booking-widget:
+    QueryParameter:
+      files:
+      - widgets/css/pickadate-normalize.css
+      - widgets/css/maxbooking-booking-widget-base-widget.css
+      - widgets/css/maxbooking-booking-widget-vertical-widget.css
+      - widgets/css/maxbooking-booking-widget-horizontal-widget.css
+      - widgets/js/maxbooking-booking-widget-pickadate-fix.js
+      - widgets/js/maxbooking-booking-widget-property-widget-public.js
+      version: true
   maxbuttons:
     QueryParameter:
       files:
       - assets/libraries/font-awesome/css/font-awesome.min.css
       - js/min/front.js
+      version: true
+  maxslider:
+    QueryParameter:
+      files:
+      - assets/css/maxslider.css
+      - assets/js/maxslider.js
+      version: true
+  maxtradelogin:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/maxtradelogin.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ MaxtradeLogin\ (?<v>[\d\.]+)/i
+      version: true
+  mcavoy:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mcavoy.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ McAvoy\ (?<v>[\d\.]+)/i
+      version: true
+  media-credit:
+    QueryParameter:
+      files:
+      - public/css/media-credit.css
+      version: true
+  media-folder:
+    QueryParameter:
+      files:
+      - public/css/media-folder-public.css
+      - public/js/media-folder-public.js
+      version: true
+  media-gallery:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  media-helpers:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/mediahelper-fr_FR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Media\ helper\ (?<v>[\d\.]+)/i
+      version: true
+  media-library-organizer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/media-library-organizer.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Media\ Library\ Organizer\ (?<v>[\d\.]+)/i
+      version: true
+  media-select-bulk-downloader:
+    QueryParameter:
+      files:
+      - public/css/wp-msbd-public.css
+      - public/js/wp-msbd-public.js
+      version: true
+  mediaview:
+    QueryParameter:
+      files:
+      - responsive-media-gallery/style.min.css
+      - responsive-media-gallery/media-slider.min.js
+      - js/frontend.min.js
       version: true
   megamenu:
     QueryParameter:
@@ -8683,6 +8906,28 @@ plugins:
       path: languages/pt-ocdi.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ One\ Click\ Demo\ Import\ (?<v>[\d\.]+)/i
       version: true
+  online-restaurant-reservation:
+    QueryParameter:
+      files:
+      - assets/css/online-restaurant-reservation-layout.css
+      - assets/css/online-restaurant-reservation-smallscreen.css
+      - assets/css/online-restaurant-reservation.css
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Online\ Restaurant\ Reservation\ (?<v>[\d\.]+)/i
+    TranslationFile:
+      class: BodyPattern
+      path: languages/online-restaurant-reservation.pot
+      pattern: !ruby/regexp /\-Version:\ Online\ Restaurant\ Reservation\ (?<v>[\d\.]+)/i
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
+      version: true
   opml-importer:
     TranslationFile:
       class: BodyPattern
@@ -8703,6 +8948,12 @@ plugins:
       files:
       - assets/css/frontend.css
       - assets/js/frontend.min.js
+      version: true
+  oscar-hotel-booking-engine:
+    QueryParameter:
+      files:
+      - assets/css/basic.css
+      - assets/js/ohbe-search-ui.js
       version: true
   osm:
     Comment:
@@ -9741,6 +9992,12 @@ plugins:
       - app/public/themes/hotel/css/table-2.css
       - app/public/themes/railway/css/main.css
       version: true
+  twenty-eleven-showcase-slider:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/obenland-wp-xx_XX.pot
+      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>[\d\.]+)/i
+      version: true
   typekit-fonts-for-wordpress:
     TranslationFile:
       class: BodyPattern
@@ -9794,6 +10051,26 @@ plugins:
       files:
       - assets/css/unit-switcher.css
       - assets/js/unit-switcher.min.js
+      version: true
+  universam-demo:
+    QueryParameter:
+      files:
+      - admin/css/form.css
+      - assets/js/bootstrap/bootstrap.css
+      - theme/usam-default.css
+      - admin/css/chat.css
+      - assets/js/admin_bar.js
+      - assets/js/universam_tab.js
+      - assets/js/jquery.livequery.js
+      - assets/js/ui.datepicker.js
+      - assets/js/ui.datepicker.ru.js
+      - assets/js/jquery.jcarousel.js
+      - assets/js/universam.theme.js
+      - assets/js/ajax.js
+      - assets/js/jquery.rating.js
+      - assets/js/product-filter.js
+      - assets/js/chat.js
+      - assets/js/bootstrap/bootstrap.js
       version: true
   user-access-manager:
     QueryParameter:
@@ -10010,6 +10287,12 @@ plugins:
       pattern: !ruby/regexp /Facebook\ Open\ Graph,\ Google\+\ and\ Twitter\ Card\
         Tags\ (?<v>[\d\.]+)/i
       version: true
+  wonka-slide:
+    QueryParameter:
+      files:
+      - public/css/wonka-slide-public.css
+      - public/js/wonka-slide-public.js
+      version: true
   woo-better-usability:
     TranslationFile:
       class: BodyPattern
@@ -10157,6 +10440,12 @@ plugins:
       files:
       - res/css/otgs-ico.css
       - res/css/management.css
+      version: true
+  woocommerce-novalnet-gateway:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/wc-novalnet.pot
+      pattern: !ruby/regexp /Novalnet\ payment\ plugin\ \-\ WooCommerce\ \-\ (?<v>[\d\.]+)/i
       version: true
   woocommerce-pagseguro:
     TranslationFile:
@@ -10442,6 +10731,12 @@ plugins:
       path: languages/wp-job-manager-contact-listing.pot
       pattern: !ruby/regexp /ion:\ Contact\ Listing\ for\ WP\ Job\ Manager\ (?<v>[\d\.]+)/i
       version: true
+  wp-last-login:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-last-login-pt_PT.po
+      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>[\d\.]+)/i
+      version: true
   wp-lemme-know:
     QueryParameter:
       files:
@@ -10582,6 +10877,17 @@ plugins:
   wp-rocket:
     Comment:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
+  wp-search-suggest:
+    QueryParameter:
+      files:
+      - css/wpss-search-suggest.css
+      - js/wpss-search-suggest.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-search-suggest-cs_CZ.po
+      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>[\d\.]+)/i
+      version: true
   wp-seo-pro:
     Comment:
       pattern: !ruby/regexp /start\ seo\ pro\ for\ wordpress\ (?<v>[\d\.]+)/i
@@ -10869,6 +11175,11 @@ plugins:
       class: BodyPattern
       path: languages/yikes-inc-easy-mailchimp-extender.pot
       pattern: !ruby/regexp /sion:\ yikes\-inc\-easy\-mailchimp\-extender\ (?<v>[\d\.]+)/i
+      version: true
+  yottie-lite:
+    QueryParameter:
+      files:
+      - assets/yottie-lite/dist/jquery.yottie-lite.bundled.js
       version: true
   youtube-channel:
     QueryParameter:
