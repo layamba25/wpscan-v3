@@ -8973,11 +8973,91 @@ plugins:
       - public/assets/css/modulobox.min.css
       - public/assets/js/modulobox.min.js
       version: true
+  moexrate:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  mojo-gallery:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mojo-gallery.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ The\ Mojo\ Gallery\ (?<v>[\d\.]+)/i
+      version: true
+  mojoplug-slide-panel:
+    QueryParameter:
+      files:
+      - public/css/mojo-sp-public.css
+      - style.css
+      - public/js/mojo-sp-public.js
+      version: true
+  molongui-authorship:
+    Comment:
+      pattern: !ruby/regexp /Molongui\ Authorship\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - public/css/molongui-authorship.407a.min.css
+      - public/js/vendor/element-queries/ResizeSensor.js
+      - public/js/vendor/element-queries/ElementQueries.js
+      - public/js/molongui-authorship.4995.min.js
+      version: true
+  monkeyman-rewrite-analyzer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/monkeyman-rewrite-analyzer-nl_NL.po
+      pattern: !ruby/regexp /Id\-Version:\ Monkeyman\ Rewrite\ Analyzer\ v(?<v>[\d\.]+)/i
+      version: true
+  month-calendar:
+    QueryParameter:
+      files:
+      - month-calendar.css
+      - month-calendar.js
+      version: true
+  mootools-collapsing-archives:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/moo-collapsing-arc-sr_RS.po
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Moo\ Collapsing\ Archives\ (?<v>[\d\.]+)/i
+      version: true
+  mootools-framework:
+    QueryParameter:
+      files:
+      - mootools.js
+      version: true
+  moptin-email-subscription-optin-form:
+    QueryParameter:
+      files:
+      - style.css
+      - moptin.js
+      version: true
+  more-featured-images:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
   more-lang:
     TranslationFile:
       class: BodyPattern
       path: languages/more-lang.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ More\-Lang\ (?<v>[\d\.]+)/i
+      version: true
+  mortgage-calculator:
+    QueryParameter:
+      files:
+      - js/jquery.validate.min.js
+      - js/mortgage-calculator.js
+      version: true
+  mosque-prayer-timings:
+    QueryParameter:
+      files:
+      - mpt-styles.css
+      version: true
+  motion:
+    QueryParameter:
+      files:
+      - stylesheets/app.css
+      - js/app.js
       version: true
   motopress-content-editor-lite:
     QueryParameter:
@@ -8985,15 +9065,153 @@ plugins:
       - includes/css/theme.min.css
       - bootstrap/bootstrap-grid.min.css
       version: true
+  movable-anything:
+    Comment:
+      pattern: !ruby/regexp /ded\ by\ K2\ Movable\ Comment\ Form\.\ Version\ (?<v>[\d\.]+)/i
+      version: true
+  move-bbpress-multisite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bbpress-ms-move-en_US.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ bbPress\ Multisite\ Move\ (?<v>[\d\.]+)/i
+      version: true
+  movie-discovery:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+  movingboxes-wp:
+    Comment:
+      pattern: !ruby/regexp /\/movingboxes-wp\/templates\/default\/css\/movingboxes\-ie\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - templates/default/css/movingboxes.css
+      version: true
+  mp-restaurant-menu:
+    QueryParameter:
+      files:
+      - media/css/lib/mp-restaurant-menu-font.min.css
+      - media/css/style.css
+      version: true
+  mp-timetable:
+    QueryParameter:
+      files:
+      - media/css/style.css
+      version: true
   mp3-jplayer:
     QueryParameter:
       files:
       - css/dark.css
       version: true
+  mpcx-accordion:
+    QueryParameter:
+      files:
+      - public/css/accordion.min.css
+      - public/js/accordion.min.js
+      version: true
+  mpcx-lightbox:
+    QueryParameter:
+      files:
+      - public/css/lightbox.min.css
+      - public/js/lightbox.min.js
+      - public/js/images.min.js
+      version: true
+  mpcx-slider:
+    QueryParameter:
+      files:
+      - public/css/slider.min.css
+      - public/js/slider.min.js
+      version: true
+  mq-woocommerce-products-price-bulk-edit:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wppbe-fa_IR.po
+      pattern: !ruby/regexp /Id\-Version:\ Woocommerce\ Price\ Bulk\ Edit\ (?<v>[\d\.]+)/i
+      version: true
+  mslsselect:
+    QueryParameter:
+      files:
+      - js/mslsselect.js
+      version: true
+  msync:
+    QueryParameter:
+      files:
+      - public/css/msync-public.css
+      - public/js/msync-public.js
+      version: true
+  mt-tabs:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/mt-tabs-es_ES.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ MT\ Tabs\ (?<v>[\d\.]+)/i
+      version: true
+  mta-lead-generation-gated:
+    QueryParameter:
+      files:
+      - public/css/styles.min.css
+      - public/js/scripts.min.js
+      version: true
+  mtg-tutorde-cardlinker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mtutor_cardlinker-de_DE.po
+      pattern: !ruby/regexp /ct\-Id\-Version:\ MtG\-Tutor\.de\ Cardlinker\ v(?<v>[\d\.]+)/i
+      version: true
+  mtouch-quiz:
+    QueryParameter:
+      files:
+      - mtq_core_style.css
+      - mtq_theme_style.css
+      - script.js
+      version: true
+  mtphr-members:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/respond.min.js
+      version: true
+  mudslideshow:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/mudslide-sr_RS.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ MudSlideShow\ v(?<v>[\d\.]+)/i
+      version: true
+  multi-image-slider-widget:
+    QueryParameter:
+      files:
+      - assets/js/jquery.sliderPro.min.js
+      - assets/js/lightbox.min.js
+      version: true
+  multi-language-framework:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mlf.pot
+      pattern: !ruby/regexp /rdPress\ plugin\ Multi\ Language\ Framework\ (?<v>[\d\.]+)/i
+      version: true
   multi-rating:
     QueryParameter:
       files:
       - assets/js/frontend-min.js
+      version: true
+  multi-scheduler:
+    QueryParameter:
+      files:
+      - public/css/msbdt-bootstrap.css
+      - public/css/msbdt-ui.css
+      - public/font-awesome/css/font-awesome.min.css
+      - public/css/msbdt-custom-style.css
+      - public/css/msbdt-public.css
+      - public/ajax/multi-appointment-select-disable-date-agnist-doctor-ajax.js
+      - public/js/msbdt-bootstrap.min.js
+      - public/js/msbdt-jquery-ui.js
+      - public/js/msbdt-jquery.slimscroll.min.js
+      - public/js/msbdt-public.js
       version: true
   mwp-side-menu:
     QueryParameter:
