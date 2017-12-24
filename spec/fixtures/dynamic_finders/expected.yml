@@ -11298,6 +11298,92 @@ plugins:
       - http://wp.lab/wp-content/plugins/minerva-knowledge-base-lite/assets/css/dist/minerva-kb.css?ver=1.0
       - http://wp.lab/wp-content/plugins/minerva-knowledge-base-lite/assets/js/minerva-kb.js?ver=1.0
       confidence: 20
+  mins-to-read:
+    QueryParameter:
+      number: 1.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mins-to-read/public/css/mtr-user.css?ver=1.2.1
+      confidence: 10
+  mio-custom-resent-posts-widget:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mio-custom-resent-posts-widget/mio-custom-recent-posts.css?ver=1.0.0
+      confidence: 10
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mio-custom-resent-posts-widget/languages/mio-custom-recent-posts.pot,
+        Match: ''ect-Id-Version: Mio Custom Recent Posts 1.0.0'''
+  missing-content:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/missing-content/assets/css/mcn-plugin.min.css?ver=1.1.0
+      confidence: 10
+  ml-adverts:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ml-adverts/js/public.js?ver=1.0.1
+      confidence: 10
+  mlr-timeline:
+    QueryParameter:
+      number: '1.4'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mlr-timeline/css/ml_timeline_css.css?ver=1.4
+      - http://wp.lab/wp-content/plugins/mlr-timeline/js/jquery-ml-timeline1.js?ver=1.4
+      confidence: 20
+  mobile-action-bar:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mobile-action-bar/public/css/mobi-actionbar-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/mobile-action-bar/public/js/mobi-actionbar-public.js?ver=1.0.0
+      confidence: 20
+  mobile-dj-manager:
+    QueryParameter:
+      number: 1.4.7.7
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mobile-dj-manager/templates/mdjm.min.css?ver=1.4.7.7
+      - http://wp.lab/wp-content/plugins/mobile-dj-manager/assets/css/mdjm-styles.css?ver=1.4.7.7
+      - http://wp.lab/wp-content/plugins/mobile-dj-manager/assets/js/mdjm-ajax.min.js?ver=1.4.7.7
+      confidence: 30
+    TranslationFile:
+      number: 1.4.7.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mobile-dj-manager/languages/mobile-dj-manager.pot,
+        Match: ''oject-Id-Version: MDJM Event Management 1.4.7.7'''
+  mobile-switcher:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mobile-switcher/public/css/mobile-switcher-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/mobile-switcher/public/js/mobile-switcher-public.js?ver=1.0.0
+      confidence: 20
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mobile-switcher/languages/mobile-switcher.pot,
+        Match: ''"Project-Id-Version: Mobile Switcher 1.0.0'''
+  modal-contact-form:
+    QueryParameter:
+      number: 1.8.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/modal-contact-form/js/lb-modal-contact-form.js?ver=1.8.1
+      confidence: 10
   modal-window:
     QueryParameter:
       number: 3.2.1
@@ -11320,6 +11406,14 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/modula-best-grid-gallery/scripts/effects.css?ver=1.2.1
       confidence: 10
+  modulobox-lite:
+    QueryParameter:
+      number: 1.3.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/modulobox-lite/public/assets/css/modulobox.min.css?ver=1.3.1
+      - http://wp.lab/wp-content/plugins/modulobox-lite/public/assets/js/modulobox.min.js?ver=1.3.1
+      confidence: 20
   more-lang:
     TranslationFile:
       number: 1.2.0

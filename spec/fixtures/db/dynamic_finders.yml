@@ -8886,6 +8886,71 @@ plugins:
       - assets/css/dist/minerva-kb.css
       - assets/js/minerva-kb.js
       version: true
+  mins-to-read:
+    QueryParameter:
+      files:
+      - public/css/mtr-user.css
+      version: true
+  mio-custom-resent-posts-widget:
+    QueryParameter:
+      files:
+      - mio-custom-recent-posts.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mio-custom-recent-posts.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Mio\ Custom\ Recent\ Posts\ (?<v>[\d\.]+)/i
+      version: true
+  missing-content:
+    QueryParameter:
+      files:
+      - assets/css/mcn-plugin.min.css
+      version: true
+  ml-adverts:
+    QueryParameter:
+      files:
+      - js/public.js
+      version: true
+  mlr-timeline:
+    QueryParameter:
+      files:
+      - css/ml_timeline_css.css
+      - js/jquery-ml-timeline1.js
+      version: true
+  mobile-action-bar:
+    QueryParameter:
+      files:
+      - public/css/mobi-actionbar-public.css
+      - public/js/mobi-actionbar-public.js
+      version: true
+  mobile-dj-manager:
+    QueryParameter:
+      files:
+      - templates/mdjm.min.css
+      - assets/css/mdjm-styles.css
+      - assets/js/mdjm-ajax.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mobile-dj-manager.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ MDJM\ Event\ Management\ (?<v>[\d\.]+)/i
+      version: true
+  mobile-switcher:
+    QueryParameter:
+      files:
+      - public/css/mobile-switcher-public.css
+      - public/js/mobile-switcher-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mobile-switcher.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Mobile\ Switcher\ (?<v>[\d\.]+)/i
+      version: true
+  modal-contact-form:
+    QueryParameter:
+      files:
+      - js/lb-modal-contact-form.js
+      version: true
   modal-window:
     QueryParameter:
       files:
@@ -8901,6 +8966,12 @@ plugins:
     QueryParameter:
       files:
       - scripts/effects.css
+      version: true
+  modulobox-lite:
+    QueryParameter:
+      files:
+      - public/assets/css/modulobox.min.css
+      - public/assets/js/modulobox.min.js
       version: true
   more-lang:
     TranslationFile:
