@@ -11726,6 +11726,98 @@ plugins:
       - http://wp.lab/wp-content/plugins/multi-scheduler/public/js/msbdt-jquery.slimscroll.min.js?ver=1.0.0
       - http://wp.lab/wp-content/plugins/multi-scheduler/public/js/msbdt-public.js?ver=1.0.0
       confidence: 100
+  multilanguage:
+    QueryParameter:
+      number: 1.2.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/multilanguage/css/style.css?ver=1.2.8
+      confidence: 10
+  multilingual-comments:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/multilingual-comments/public/css/multilingual-comments-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/multilingual-comments/public/js/multilingual-comments-public.js?ver=1.0.0
+      confidence: 20
+  multiple-cropped-images:
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/multiple-cropped-images/package.json, Match:
+        ''1.0.0'''
+  multipress-lite:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/multipress-lite/public/css/multi_step_reg-public.css?ver=1.0.0
+      confidence: 10
+  multisite-admin-notices:
+    TranslationFile:
+      number: 0.1.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/multisite-admin-notices/languages/multisite-admin-notices.pot,
+        Match: ''ect-Id-Version: multisite-admin-notices 0.1.2'''
+  multisite-directory:
+    TranslationFile:
+      number: 0.2.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/multisite-directory/languages/multisite-directory.pot,
+        Match: ''Project-Id-Version: Multisite Directory 0.2.3'''
+  multiupload-field-for-contact-form-7:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/multiupload-field-for-contact-form-7/js/dropzone.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/multiupload-field-for-contact-form-7/js/cf7mu-multiupload-front.js?ver=1.0
+      confidence: 20
+  muslim-prayer-time-bd:
+    QueryParameter:
+      number: '2.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/muslim-prayer-time-bd/css/prayer-time.css?ver=2.0
+      confidence: 10
+    TranslationFile:
+      number: '2.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/muslim-prayer-time-bd/languages/mptb-bn_BD.po,
+        Match: ''msgid "Version: 2.0'''
+  mute-screamer:
+    TranslationFile:
+      number: 1.0.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mute-screamer/languages/mute-screamer.pot,
+        Match: ''"Project-Id-Version: Mute Screamer 1.0.7'''
+  mutual-buddies:
+    TranslationFile:
+      number: 2.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mutual-buddies/i18n/languages/mutual-buddies.pot,
+        Match: ''"Project-Id-Version: Mutual Buddies 2.1.1'''
+  mw-theme-uri-shortcode:
+    TranslationFile:
+      number: '0.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mw-theme-uri-shortcode/languages/mw-theme-uri-shortcode.pot,
+        Match: ''ject-Id-Version: MW Theme URI Shortcode 0.1'''
+  mw-wp-hacks:
+    TranslationFile:
+      number: 1.4.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mw-wp-hacks/languages/mw-wp-hacks.pot, Match:
+        ''"Project-Id-Version: MW WP Hacks 1.4.0'''
   mwp-side-menu:
     QueryParameter:
       number: 3.1.1
@@ -11735,6 +11827,24 @@ plugins:
       - http://wp.lab/wp-content/plugins/mwp-side-menu/public/css/left.css?ver=3.1.1
       - http://wp.lab/wp-content/plugins/mwp-side-menu/public/js/side-menu.js?ver=3.1.1
       confidence: 30
+  mxyoutuber-responsive:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mxyoutuber-responsive/mxassets/css/frontend.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/mxyoutuber-responsive/mxassets/lightcase/css/lightcase.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/mxyoutuber-responsive/mxassets/js/frontend.js?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/mxyoutuber-responsive/mxassets/lightcase/lightcase.js?ver=1.0.5
+      confidence: 40
+  my-chatbot:
+    QueryParameter:
+      number: '0.5'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/my-chatbot/assets/css/frontend.css?ver=0.5
+      - http://wp.lab/wp-content/plugins/my-chatbot/assets/js/frontend.js?ver=0.5
+      confidence: 20
   my-eyes-are-up-here:
     ComposerFile:
       number: 1.1.9
@@ -11742,6 +11852,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/my-eyes-are-up-here/package.json, Match:
         ''1.1.9'''
+  my-restaurant-menu:
+    TranslationFile:
+      number: 0.2.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/my-restaurant-menu/languages/my-restaurant-menu.pot,
+        Match: ''"Project-Id-Version: My Restaurant Menu 0.2.0'''
   mystickymenu:
     QueryParameter:
       number: 2.0.1

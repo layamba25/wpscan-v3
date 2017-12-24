@@ -9213,6 +9213,80 @@ plugins:
       - public/js/msbdt-jquery.slimscroll.min.js
       - public/js/msbdt-public.js
       version: true
+  multilanguage:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  multilingual-comments:
+    QueryParameter:
+      files:
+      - public/css/multilingual-comments-public.css
+      - public/js/multilingual-comments-public.js
+      version: true
+  multiple-cropped-images:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  multipress-lite:
+    QueryParameter:
+      files:
+      - public/css/multi_step_reg-public.css
+      version: true
+  multisite-admin-notices:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/multisite-admin-notices.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ multisite\-admin\-notices\ (?<v>[\d\.]+)/i
+      version: true
+  multisite-directory:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/multisite-directory.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Multisite\ Directory\ (?<v>[\d\.]+)/i
+      version: true
+  multiupload-field-for-contact-form-7:
+    QueryParameter:
+      files:
+      - js/dropzone.js
+      - js/cf7mu-multiupload-front.js
+      version: true
+  muslim-prayer-time-bd:
+    QueryParameter:
+      files:
+      - css/prayer-time.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mptb-bn_BD.po
+      pattern: !ruby/regexp /msgid\ "Version:\ (?<v>[\d\.]+)/i
+      version: true
+  mute-screamer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mute-screamer.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Mute\ Screamer\ (?<v>[\d\.]+)/i
+      version: true
+  mutual-buddies:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/mutual-buddies.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Mutual\ Buddies\ (?<v>[\d\.]+)/i
+      version: true
+  mw-theme-uri-shortcode:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mw-theme-uri-shortcode.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ MW\ Theme\ URI\ Shortcode\ (?<v>[\d\.]+)/i
+      version: true
+  mw-wp-hacks:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mw-wp-hacks.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ MW\ WP\ Hacks\ (?<v>[\d\.]+)/i
+      version: true
   mwp-side-menu:
     QueryParameter:
       files:
@@ -9220,11 +9294,31 @@ plugins:
       - public/css/left.css
       - public/js/side-menu.js
       version: true
+  mxyoutuber-responsive:
+    QueryParameter:
+      files:
+      - mxassets/css/frontend.css
+      - mxassets/lightcase/css/lightcase.css
+      - mxassets/js/frontend.js
+      - mxassets/lightcase/lightcase.js
+      version: true
+  my-chatbot:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.js
+      version: true
   my-eyes-are-up-here:
     ComposerFile:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  my-restaurant-menu:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/my-restaurant-menu.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ My\ Restaurant\ Menu\ (?<v>[\d\.]+)/i
       version: true
   mystickymenu:
     QueryParameter:
