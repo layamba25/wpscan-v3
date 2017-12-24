@@ -22,9 +22,7 @@ module WPScan
           # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            # target is the item (plugin/theme)
-            # target.target is the WP blog
-            target.target.xpath_pattern_from_page(
+            target.blog.xpath_pattern_from_page(
               self.class::XPATH, self.class::PATTERN, response
             ) do |match_data, _node|
               next unless match_data[:v]

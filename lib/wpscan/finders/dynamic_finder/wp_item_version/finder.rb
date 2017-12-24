@@ -9,9 +9,7 @@ module WPScan
           def passive(opts = {})
             return if self.class::PATH
 
-            # target is the WP item (theme/plugin)
-            # target.target is the WP blog
-            find(target.target.homepage_res, opts)
+            find(target.blog.homepage_res, opts)
           end
         end
       end

@@ -7,7 +7,7 @@ module WPScan
         #
         # @return [ Version ]
         def passive(_opts = {})
-          return unless target.target.homepage_res.body =~ Finders::MainTheme::WooFrameworkMetaGenerator::PATTERN
+          return unless target.blog.homepage_res.body =~ Finders::MainTheme::WooFrameworkMetaGenerator::PATTERN
 
           return unless Regexp.last_match[1] == target.slug
 

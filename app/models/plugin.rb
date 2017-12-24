@@ -2,10 +2,10 @@ module WPScan
   # WordPress Plugin
   class Plugin < WpItem
     # See WpItem
-    def initialize(slug, target, opts = {})
-      super(slug, target, opts)
+    def initialize(slug, blog, opts = {})
+      super(slug, blog, opts)
 
-      @uri = Addressable::URI.parse(target.url("wp-content/plugins/#{slug}/"))
+      @uri = Addressable::URI.parse(blog.url("wp-content/plugins/#{slug}/"))
     end
 
     # @return [ JSON ]

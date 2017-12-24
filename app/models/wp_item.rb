@@ -9,20 +9,20 @@ module WPScan
     READMES    = %w[readme.txt README.txt README.md readme.md Readme.txt].freeze
     CHANGELOGS = %w[changelog.txt CHANGELOG.md changelog.md].freeze
 
-    attr_reader :uri, :slug, :detection_opts, :version_detection_opts, :target, :db_data
+    attr_reader :uri, :slug, :detection_opts, :version_detection_opts, :blog, :db_data
 
     # @param [ String ] slug The plugin/theme slug
-    # @param [ Target ] target The targeted blog
+    # @param [ Target ] blog The targeted blog
     # @param [ Hash ] opts
     # @option opts [ Symbol ] :mode The detection mode to use
     # @option opts [ Hash ]   :version_detection The options to use when looking for the version
     # @option opts [ String ] :url The URL of the item
-    def initialize(slug, target, opts = {})
-      @slug           = URI.decode(slug)
-      @target         = target
-      @uri            = Addressable::URI.parse(opts[:url]) if opts[:url]
+    def initialize(slug, blog, opts = {})
+      @slug  = URI.decode(slug)
+      @blog  = blog
+      @uri   = Addressable::URI.parse(opts[:url]) if opts[:url]
 
-      @detection_opts = { mode: opts[:mode] }
+      @detection_opts         = { mode: opts[:mode] }
       @version_detection_opts = opts[:version_detection] || {}
 
       parse_finding_options(opts)

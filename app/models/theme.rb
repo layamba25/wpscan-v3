@@ -5,10 +5,10 @@ module WPScan
                 :license, :license_uri, :tags, :text_domain
 
     # See WpItem
-    def initialize(slug, target, opts = {})
-      super(slug, target, opts)
+    def initialize(slug, blog, opts = {})
+      super(slug, blog, opts)
 
-      @uri       = Addressable::URI.parse(target.url("wp-content/themes/#{slug}/"))
+      @uri       = Addressable::URI.parse(blog.url("wp-content/themes/#{slug}/"))
       @style_url = opts[:style_url] || url('style.css')
 
       parse_style
@@ -39,7 +39,7 @@ module WPScan
         confidence: 100
       ).merge(version_detection: version_detection_opts)
 
-      self.class.new(template, target, opts)
+      self.class.new(template, blog, opts)
     end
 
     # @param [ Integer ] depth

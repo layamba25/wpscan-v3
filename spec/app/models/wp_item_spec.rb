@@ -1,13 +1,13 @@
 require 'spec_helper'
 
 describe WPScan::WpItem do
-  subject(:wp_item)  { described_class.new(slug, target, opts) }
+  subject(:wp_item)  { described_class.new(slug, blog, opts) }
   let(:slug)         { 'test_item' }
-  let(:target)       { WPScan::Target.new(url) }
+  let(:blog)         { WPScan::Target.new(url) }
   let(:url)          { 'http://wp.lab/' }
   let(:opts)         { {} }
 
-  its(:target) { should eql target }
+  its(:blog) { should eql blog }
 
   describe '#new' do
     context 'when no opts' do
@@ -55,7 +55,7 @@ describe WPScan::WpItem do
   describe '#==' do
     context 'when the same slug' do
       it 'returns true' do
-        other = described_class.new(slug, target)
+        other = described_class.new(slug, blog)
 
         expect(wp_item == other).to be true
       end
@@ -69,7 +69,7 @@ describe WPScan::WpItem do
 
     context 'when different slugs' do
       it 'returns false' do
-        other = described_class.new('another', target)
+        other = described_class.new('another', blog)
 
         expect(wp_item == other).to be false
       end
