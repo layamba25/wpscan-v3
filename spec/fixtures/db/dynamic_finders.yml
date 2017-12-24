@@ -5722,6 +5722,12 @@ plugins:
       path: languages/frontend-dashboard.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Frontend\ Dashboard\ (?<v>[\d\.]+)/i
       version: true
+  frontend-dashboard-captcha:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/frontend-dashboard-captcha.pot
+      pattern: !ruby/regexp /\-Id\-Version:\ Frontend\ Dashboard\ Captcha\ (?<v>[\d\.]+)/i
+      version: true
   frontend-dialog:
     QueryParameter:
       files:
@@ -8699,6 +8705,12 @@ plugins:
       - responsive-media-gallery/media-slider.min.js
       - js/frontend.min.js
       version: true
+  medium:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/medium.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Medium\ (?<v>[\d\.]+)/i
+      version: true
   megamenu:
     QueryParameter:
       files:
@@ -8742,10 +8754,137 @@ plugins:
       files:
       - assets/css/custom/memberwunder.css
       version: true
+  mention-comments-authors:
+    QueryParameter:
+      files:
+      - css/mca-styles.min.css
+      - js/jquery-mention.min.js
+      - js/mca-comment-script.min.js
+      version: true
+  menu-card:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      - assets/js/lib/jquery.touchSwipe.min.js
+      - assets/js/public.js
+      version: true
   menu-icons:
     QueryParameter:
       files:
       - css/extra.min.css
+      version: true
+  menu-manager:
+    QueryParameter:
+      files:
+      - display/styles/superfish.css
+      - display/styles/menu-manager.css
+      - display/js/superfish.js
+      - display/js/menu-manager.js
+      version: true
+  menubar:
+    Comment:
+      pattern: !ruby/regexp /WP\ Menubar\ (?<v>[\d\.]+):/i
+      version: true
+  menubar-widgets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/menubar-widgets-fa_IR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Menubar\ Widgets\ (?<v>[\d\.]+)/i
+      version: true
+  meridian-one-features:
+    QueryParameter:
+      files:
+      - "/css/front.css"
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/meridian-one-features.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Meridian\ One\ Features\ (?<v>[\d\.]+)/i
+      version: true
+  mesh:
+    QueryParameter:
+      files:
+      - assets/css/mesh-grid-foundation.css
+      - assets/js/mesh.js
+      version: true
+  meta-ographr:
+    Comment:
+      pattern: !ruby/regexp /OGraphr\ v(?<v>[\d\.]+)/i
+      version: true
+  meta-slider-and-carousel-with-lightbox:
+    QueryParameter:
+      files:
+      - assets/css/magnific-popup.css
+      - assets/css/slick.css
+      - assets/css/wp-igsp-public.css
+      version: true
+  metro-share-social-fonts:
+    QueryParameter:
+      files:
+      - css/social.min.css
+      version: true
+  metwit-weather-widget:
+    QueryParameter:
+      files:
+      - css/metwit-weather-widget.css
+      - js/samplescript.js
+      version: true
+  mg-wc-stripe:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/mg-wc-stripe.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ mg\ wc\ Stripe\ (?<v>[\d\.]+)/i
+      version: true
+  micro-archive-widget:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  militant-moderates-css-parent-selector-mmps:
+    Comment:
+      pattern: !ruby/regexp /ilitant\ Moderates\ Parent\ Selector\ MMPS\ v(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - js/mmParentSelector.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/militant-moderates-css-parent-selector-mmps.pot
+      pattern: !ruby/regexp /tant\ Moderates\ CSS\ Parent\ Selector\ MMPS\ (?<v>[\d\.]+)/i
+      version: true
+  mime-types-extended:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mime_types_extended-en_US.po
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Mime\ Types\ Extended\ v(?<v>[\d\.]+)/i
+      version: true
+  min-calendar:
+    QueryParameter:
+      files:
+      - includes/css/mincalendar.css
+      - includes/css/mincalendar-base.css
+      version: true
+  mind-body-api-integration:
+    QueryParameter:
+      files:
+      - css/public.css
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/mind-body.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ (?<v>[\d\.]+)/i
+      version: true
+  minerva-knowledge-base-lite:
+    QueryParameter:
+      files:
+      - assets/css/dist/minerva-kb.css
+      - assets/js/minerva-kb.js
       version: true
   modal-window:
     QueryParameter:
@@ -8757,6 +8896,11 @@ plugins:
       files:
       - css/front.css
       - js/report-post.js
+      version: true
+  modula-best-grid-gallery:
+    QueryParameter:
+      files:
+      - scripts/effects.css
       version: true
   more-lang:
     TranslationFile:

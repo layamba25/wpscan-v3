@@ -7257,6 +7257,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/frontend-dashboard/languages/frontend-dashboard.pot,
         Match: ''"Project-Id-Version: Frontend Dashboard 1.2.4'''
+  frontend-dashboard-captcha:
+    TranslationFile:
+      number: 1.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/frontend-dashboard-captcha/languages/frontend-dashboard-captcha.pot,
+        Match: ''-Id-Version: Frontend Dashboard Captcha 1.1.1'''
   frontend-dialog:
     QueryParameter:
       number: 1.0.0
@@ -10761,8 +10768,9 @@ plugins:
       number: 4.0.1
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
-      - "http://wp.lab/wp-content/plugins/mailpoet-woocommerce-add-on/languages/mailpoet-woocommerce-add-on.pot,
-        Match: 'Legacy \"\n\"4.0.1'"
+      - |-
+        http://wp.lab/wp-content/plugins/mailpoet-woocommerce-add-on/languages/mailpoet-woocommerce-add-on.pot, Match: 'Legacy "
+        "4.0.1'
   maintenance-mode-z:
     QueryParameter:
       number: 1.1.0
@@ -11051,6 +11059,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/mediaview/responsive-media-gallery/media-slider.min.js?ver=1.1.2
       - http://wp.lab/wp-content/plugins/mediaview/js/frontend.min.js?ver=1.1.2
       confidence: 30
+  medium:
+    TranslationFile:
+      number: 1.4.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/medium/languages/medium.pot, Match: ''"Project-Id-Version:
+        Medium 1.4.0'''
   megamenu:
     QueryParameter:
       number: '2.4'
@@ -11110,6 +11125,24 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/memberwunder/assets/css/custom/memberwunder.css?ver=1.0.1
+  mention-comments-authors:
+    QueryParameter:
+      number: 0.9.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mention-comments-authors/css/mca-styles.min.css?ver=0.9.8
+      - http://wp.lab/wp-content/plugins/mention-comments-authors/js/jquery-mention.min.js?ver=0.9.8
+      - http://wp.lab/wp-content/plugins/mention-comments-authors/js/mca-comment-script.min.js?ver=0.9.8
+      confidence: 30
+  menu-card:
+    QueryParameter:
+      number: 0.8.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/menu-card/assets/css/public.css?ver=0.8.0
+      - http://wp.lab/wp-content/plugins/menu-card/assets/js/lib/jquery.touchSwipe.min.js?ver=0.8.0
+      - http://wp.lab/wp-content/plugins/menu-card/assets/js/public.js?ver=0.8.0
+      confidence: 30
   menu-icons:
     QueryParameter:
       number: 0.10.2
@@ -11117,6 +11150,154 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/menu-icons/css/extra.min.css?ver=0.10.2
+  menu-manager:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/menu-manager/display/styles/superfish.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/menu-manager/display/styles/menu-manager.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/menu-manager/display/js/superfish.js?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/menu-manager/display/js/menu-manager.js?ver=1.0.4
+      confidence: 40
+  menubar:
+    Comment:
+      number: 5.6.3
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''WP Menubar 5.6.3:'''
+  menubar-widgets:
+    TranslationFile:
+      number: 0.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/menubar-widgets/languages/menubar-widgets-fa_IR.po,
+        Match: ''"Project-Id-Version: Menubar Widgets 0.1.0'''
+  meridian-one-features:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/meridian-one-features//css/front.css?ver=1.0
+      confidence: 10
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/meridian-one-features/languages/meridian-one-features.pot,
+        Match: ''oject-Id-Version: Meridian One Features 1.0'''
+  mesh:
+    QueryParameter:
+      number: 1.2.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mesh/assets/css/mesh-grid-foundation.css?ver=1.2.3
+      - http://wp.lab/wp-content/plugins/mesh/assets/js/mesh.js?ver=1.2.3
+      confidence: 20
+  meta-ographr:
+    Comment:
+      number: 0.8.39
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''OGraphr v0.8.39'''
+  meta-slider-and-carousel-with-lightbox:
+    QueryParameter:
+      number: 1.1.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/meta-slider-and-carousel-with-lightbox/assets/css/magnific-popup.css?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/meta-slider-and-carousel-with-lightbox/assets/css/slick.css?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/meta-slider-and-carousel-with-lightbox/assets/css/wp-igsp-public.css?ver=1.1.2
+      confidence: 30
+  metro-share-social-fonts:
+    QueryParameter:
+      number: 0.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/metro-share-social-fonts/css/social.min.css?ver=0.2.1
+      confidence: 10
+  metwit-weather-widget:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/metwit-weather-widget/css/metwit-weather-widget.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/metwit-weather-widget/js/samplescript.js?ver=1.0
+      confidence: 20
+  mg-wc-stripe:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mg-wc-stripe/i18n/languages/mg-wc-stripe.pot,
+        Match: ''"Project-Id-Version: mg wc Stripe 1.1'''
+  micro-archive-widget:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/micro-archive-widget/style.css?ver=1.0
+      confidence: 10
+  militant-moderates-css-parent-selector-mmps:
+    Comment:
+      number: 1.2.2
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''ilitant Moderates Parent Selector MMPS v1.2.2'''
+    QueryParameter:
+      number: 1.2.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/militant-moderates-css-parent-selector-mmps/js/mmParentSelector.min.js?ver=1.2.2
+      confidence: 10
+    TranslationFile:
+      number: 1.2.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/militant-moderates-css-parent-selector-mmps/languages/militant-moderates-css-parent-selector-mmps.pot,
+        Match: ''tant Moderates CSS Parent Selector MMPS 1.2.2'''
+  mime-types-extended:
+    TranslationFile:
+      number: '0.11'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mime-types-extended/languages/mime_types_extended-en_US.po,
+        Match: ''roject-Id-Version: Mime Types Extended v0.11'''
+  min-calendar:
+    QueryParameter:
+      number: 1.6.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/min-calendar/includes/css/mincalendar.css?ver=1.6.1
+      - http://wp.lab/wp-content/plugins/min-calendar/includes/css/mincalendar-base.css?ver=1.6.1
+      confidence: 20
+  mind-body-api-integration:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mind-body-api-integration/css/public.css?ver=1.0.0
+      confidence: 10
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mind-body-api-integration/package.json,
+        Match: ''1.0.0'''
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/mind-body-api-integration/lang/mind-body.pot,
+        Match: ''"Project-Id-Version: 1.0.0'''
+  minerva-knowledge-base-lite:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/minerva-knowledge-base-lite/assets/css/dist/minerva-kb.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/minerva-knowledge-base-lite/assets/js/minerva-kb.js?ver=1.0
+      confidence: 20
   modal-window:
     QueryParameter:
       number: 3.2.1
@@ -11132,6 +11313,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/moderation-tools-for-bbpress/css/front.css?ver=1.1.0
       - http://wp.lab/wp-content/plugins/moderation-tools-for-bbpress/js/report-post.js?ver=1.1.0
       confidence: 20
+  modula-best-grid-gallery:
+    QueryParameter:
+      number: 1.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/modula-best-grid-gallery/scripts/effects.css?ver=1.2.1
+      confidence: 10
   more-lang:
     TranslationFile:
       number: 1.2.0
