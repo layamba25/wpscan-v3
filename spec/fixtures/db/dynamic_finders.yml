@@ -9444,7 +9444,6 @@ plugins:
     QueryParameter:
       files:
       - assets/style.min.css
-      #pattern: !ruby/regexp /version=(?<v>[\d\.]+)/i
       version: true
     TranslationFile:
       class: BodyPattern

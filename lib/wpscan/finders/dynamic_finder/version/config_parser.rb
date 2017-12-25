@@ -1,10 +1,10 @@
 module WPScan
   module Finders
     module DynamicFinder
-      module WpItemVersion
+      module Version
         # Version finder using by parsing config files, such as composer.json
         # and so on
-        class ConfigParser < WPScan::Finders::DynamicFinder::WpItemVersion::Finder
+        class ConfigParser < WPScan::Finders::DynamicFinder::Version::Finder
           ALLOWED_PARSERS = [JSON, YAML].freeze
 
           # @param [ Constant ] mod

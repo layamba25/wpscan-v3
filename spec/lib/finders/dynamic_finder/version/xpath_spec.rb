@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe WPScan::Finders::DynamicFinder::WpItemVersion::JavascriptVar do
+describe WPScan::Finders::DynamicFinder::Version::Xpath do
   module WPScan
     module Finders
-      module PluginVersion
+      module Version
         # Needed to be able to test the below
         module Rspec
         end
@@ -11,25 +11,25 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::JavascriptVar do
     end
   end
 
-  let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
-  let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::JavascriptVar }
-  let(:finder_config) { { 'pattern' => /some version: (?<v>[\d\.]+)/i } }
-  let(:default)       { { 'xpath' => '//script[not(@src)]', 'confidence' => 60 } }
+  let(:finder_module) { WPScan::Finders::Version::Rspec }
+  let(:finder_class)  { WPScan::Finders::Version::Rspec::Xpath }
+  let(:finder_config) { { 'xpath' => "//div/h3[@class='version-number']" } }
+  let(:default)       { { 'pattern' => /\A(?<v>[\d\.]+)/i, 'confidence' => 40 } }
 
-  before { described_class.create_child_class(finder_module, :JavascriptVar, finder_config) }
-  after  { finder_module.send(:remove_const, :JavascriptVar) }
+  before { described_class.create_child_class(finder_module, :Xpath, finder_config) }
+  after  { finder_module.send(:remove_const, :Xpath) }
 
   describe '.create_child_class' do
     context 'when no PATH and CONFIDENCE' do
       it 'contains the expected constants to their default values' do
         # Doesn't work, dunno why
-        # expect(finder_module.const_get(:JavascriptVar)).to be_a described_class
+        # expect(finder_module.const_get(:Xpath)).to be_a described_class
         # expect(finder_class.is_a?(described_class)).to eql true
         # expect(finder_class).to be_a described_class
 
-        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::XPATH).to eql finder_config['xpath']
 
-        expect(finder_class::XPATH).to eql default['xpath']
+        expect(finder_class::PATTERN).to eql default['pattern']
         expect(finder_class::CONFIDENCE).to eql default['confidence']
         expect(finder_class::PATH).to eql nil
       end
@@ -39,32 +39,32 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::JavascriptVar do
       let(:finder_config) { super().merge('confidence' => 30) }
 
       it 'contains the expected constants' do
-        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::XPATH).to eql finder_config['xpath']
         expect(finder_class::CONFIDENCE).to eql finder_config['confidence']
 
-        expect(finder_class::XPATH).to eql default['xpath']
+        expect(finder_class::PATTERN).to eql default['pattern']
         expect(finder_class::PATH).to eql nil
       end
     end
 
     context 'when PATH' do
-      let(:finder_config) { super().merge('path' => 'file.html') }
+      let(:finder_config) { super().merge('path' => 'file.txt') }
 
       it 'contains the expected constants' do
-        expect(finder_class::PATTERN).to eql finder_config['pattern']
+        expect(finder_class::XPATH).to eql finder_config['xpath']
         expect(finder_class::PATH).to eql finder_config['path']
 
+        expect(finder_class::PATTERN).to eql default['pattern']
         expect(finder_class::CONFIDENCE).to eql default['confidence']
-        expect(finder_class::XPATH).to eql default['xpath']
       end
     end
 
-    context 'when XPATH' do
-      let(:finder_config) { super().merge('xpath' => '//script') }
+    context 'when PATTERN' do
+      let(:finder_config) { super().merge('pattern' => /Version: (?<v>[\d\.]+)/i) }
 
       it 'contains the expected constants' do
-        expect(finder_class::PATTERN).to eql finder_config['pattern']
         expect(finder_class::XPATH).to eql finder_config['xpath']
+        expect(finder_class::PATTERN).to eql finder_config['pattern']
 
         expect(finder_class::PATH).to eql nil
         expect(finder_class::CONFIDENCE).to eql default['confidence']

@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe WPScan::Finders::DynamicFinder::WpItemVersion::QueryParameter do
+describe WPScan::Finders::DynamicFinder::Version::QueryParameter do
   module WPScan
     module Finders
-      module PluginVersion
+      module Version
         # Needed to be able to test the below
         module Rspec
         end
@@ -11,8 +11,8 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::QueryParameter do
     end
   end
 
-  let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
-  let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::QueryParameter }
+  let(:finder_module) { WPScan::Finders::Version::Rspec }
+  let(:finder_class)  { WPScan::Finders::Version::Rspec::QueryParameter }
   let(:finder_config) { { 'files' => %w[f1 f2] } }
   let(:default)       { { 'pattern' => /(?:v|ver|version)\=(?<v>[\d\.]+)/i, 'confidence_per_occurence' => 10 } }
 

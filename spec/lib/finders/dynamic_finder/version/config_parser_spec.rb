@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe WPScan::Finders::DynamicFinder::WpItemVersion::ConfigParser do
+describe WPScan::Finders::DynamicFinder::Version::ConfigParser do
   module WPScan
     module Finders
-      module PluginVersion
+      module Version
         # Needed to be able to test the below
         module Rspec
         end
@@ -11,8 +11,8 @@ describe WPScan::Finders::DynamicFinder::WpItemVersion::ConfigParser do
     end
   end
 
-  let(:finder_module) { WPScan::Finders::PluginVersion::Rspec }
-  let(:finder_class)  { WPScan::Finders::PluginVersion::Rspec::ConfigParser }
+  let(:finder_module) { WPScan::Finders::Version::Rspec }
+  let(:finder_class)  { WPScan::Finders::Version::Rspec::ConfigParser }
   let(:finder_config) { { 'key' => 'some-key', 'path' => 'file.json' } }
   let(:default)       { { 'pattern' => /(?<v>[\d\.]+)/i, 'confidence' => 40 } }
 

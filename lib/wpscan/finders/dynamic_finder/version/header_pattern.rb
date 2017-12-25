@@ -1,9 +1,9 @@
 module WPScan
   module Finders
     module DynamicFinder
-      module WpItemVersion
+      module Version
         # Version finder using Header Pattern method
-        class HeaderPattern < WPScan::Finders::DynamicFinder::WpItemVersion::Finder
+        class HeaderPattern < WPScan::Finders::DynamicFinder::Version::Finder
           # @param [ Constant ] mod
           # @param [ Constant ] klass
           # @param [ Hash ] config

@@ -1,10 +1,10 @@
 module WPScan
   module Finders
     module DynamicFinder
-      module WpItemVersion
+      module Version
         # Version finder in Comment, which is basically an Xpath one with a default
         # Xpath of //comment()
-        class Comment < WPScan::Finders::DynamicFinder::WpItemVersion::Xpath
+        class Comment < WPScan::Finders::DynamicFinder::Version::Xpath
           # @param [ Constant ] mod
           # @param [ Constant ] klass
           # @param [ Hash ] config

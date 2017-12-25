@@ -1,9 +1,9 @@
 module WPScan
   module Finders
     module DynamicFinder
-      module WpItemVersion
+      module Version
         # Version finder using Header Pattern method
-        class QueryParameter < WPScan::Finders::DynamicFinder::WpItemVersion::Finder
+        class QueryParameter < WPScan::Finders::DynamicFinder::Version::Finder
           # @param [ Constant ] mod
           # @param [ Constant ] klass
           # @param [ Hash ] config
@@ -33,20 +33,10 @@ module WPScan
             end
           end
 
-          # @return [ Regexp ]
-          def path_pattern
-            @path_pattern ||= %r{
-              #{Regexp.escape(target.blog.plugins_dir)}/
-              #{Regexp.escape(target.slug)}/
-              (?:#{self.class::FILES.join('|')})\z
-            }ix
-          end
-
           # @param [ Typhoeus::Response ] response
           # @return [ Hash ]
           def scan_response(response)
             found = {}
-            xpath = "//link[contains(@href,'#{target.slug}')]|//script[contains(@src,'#{target.slug}')]"
 
             target.in_scope_urls(response, xpath) do |url, _tag|
               uri = Addressable::URI.parse(url)
@@ -59,6 +49,16 @@ module WPScan
             end
 
             found
+          end
+
+          # @return [ String ]
+          def xpath
+            @xpath ||= '//link|//script'
+          end
+
+          # @return [ Regexp ]
+          def path_pattern
+            @path_pattern ||= %r{/(?:#{self.class::FILES.join('|')})\z}i
           end
         end
       end

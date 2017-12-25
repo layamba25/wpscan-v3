@@ -1,7 +1,7 @@
 module WPScan
   module Finders
     module DynamicFinder
-      module WpItemVersion
+      module Version
         # To be used as a base when creating
         # a dynamic finder to find the version of a WP Item (such as theme/plugin)
         class Finder < Finders::DynamicFinder::Finder

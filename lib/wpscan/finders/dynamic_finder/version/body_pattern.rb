@@ -1,10 +1,10 @@
 module WPScan
   module Finders
     module DynamicFinder
-      module WpItemVersion
+      module Version
         # Version finder using Body Pattern method. Tipically used when the response is not
         # an HTML doc and Xpath can't be used
-        class BodyPattern < WPScan::Finders::DynamicFinder::WpItemVersion::Finder
+        class BodyPattern < WPScan::Finders::DynamicFinder::Version::Finder
           # @param [ Constant ] mod
           # @param [ Constant ] klass
           # @param [ Hash ] config
