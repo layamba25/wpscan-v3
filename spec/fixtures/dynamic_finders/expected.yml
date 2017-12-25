@@ -5294,6 +5294,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/dynamic-seo-child-pages/lang/dynamic-seo-child-pages.pot,
         Match: ''ect-Id-Version: Dynamic SEO Child Pages 1.1'''
+  easily-generate-rest-api-url:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easily-generate-rest-api-url/public/css/generate-rest-api-url-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/easily-generate-rest-api-url/public/js/generate-rest-api-url-public.js?ver=1.0.0
+      confidence: 20
   easing-slider:
     TranslationFile:
       number: 3.0.8
@@ -7154,14 +7162,16 @@ plugins:
       - http://wp.lab/wp-content/plugins/football-match-tracker/assets/js/ref-js.js?ver=1.0
   football-pool:
     QueryParameter:
-      number: 2.6.4
+      number: 2.6.5
       found_by: Query Parameter (Passive Detection)
-      confidence: 40
+      confidence: 60
       interesting_entries:
-      - http://wp.lab/wp-content/plugins/football-pool/assets/pool.css?ver=2.6.4
-      - http://wp.lab/wp-content/plugins/football-pool/assets/colorbox/colorbox.css?ver=2.6.4
-      - http://wp.lab/wp-content/plugins/football-pool/assets/pool.min.js?ver=2.6.4
-      - http://wp.lab/wp-content/plugins/football-pool/assets/colorbox/jquery.colorbox-min.js?ver=2.6.4
+      - http://wp.lab/wp-content/plugins/football-pool/assets/pool.css?ver=2.6.5
+      - http://wp.lab/wp-content/plugins/football-pool/assets/colorbox/colorbox.css?ver=2.6.5
+      - http://wp.lab/wp-content/plugins/football-pool/assets/pool.min.js?ver=2.6.5
+      - http://wp.lab/wp-content/plugins/football-pool/assets/colorbox/jquery.colorbox-min.js?ver=2.6.5
+      - http://wp.lab/wp-content/plugins/football-pool/assets/libs/colorbox/colorbox.css?ver=2.6.5
+      - http://wp.lab/wp-content/plugins/football-pool/assets/libs/colorbox/jquery.colorbox-min.js?ver=2.6.5
   footer-mega-grid-columns:
     QueryParameter:
       number: 1.1.1
@@ -11876,6 +11886,19 @@ plugins:
       - http://wp.lab/wp-content/plugins/mz-newsticker/public/js/jquery.liMarquee.js?ver=1.0.0
       - http://wp.lab/wp-content/plugins/mz-newsticker/public/js/mz-newsticker-public.js?ver=1.0.0
       confidence: 40
+  nafeza-prayer-time:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/nafeza-prayer-time/css/widget.css?ver=1.0.0
+      confidence: 10
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/nafeza-prayer-time/languages/nafeza-prayer-time.pot,
+        Match: ''roject-Id-Version: WordPress Blank Pot v1.0.0'''
   nelio-content:
     TranslationFile:
       number: 1.4.4
@@ -12955,6 +12978,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/smart-reporter-for-wp-e-commerce/languages/smart-reporter-for-wp-e-commerce.pot,
         Match: ''-Version: Smart Reporter for e-commerce 2.9.19'''
+  smartideo:
+    QueryParameter:
+      number: 2.5.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smartideo/static/smartideo.css?ver=2.5.0
+      - http://wp.lab/wp-content/plugins/smartideo/static/smartideo.js?ver=2.5.0
+      confidence: 20
   snow-storm:
     QueryParameter:
       number: 1.4.3
@@ -13354,6 +13385,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/travelpayouts/app/public/themes/hotel/css/table-2.css?ver=0.7.4
       - http://wp.lab/wp-content/plugins/travelpayouts/app/public/themes/railway/css/main.css?ver=0.7.4
       confidence: 30
+  tweetific:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/tweetific/lang/tweetific.pot, Match: ''"Project-Id-Version:
+        Tweetific 1.0'''
   twenty-eleven-showcase-slider:
     TranslationFile:
       number: '2'
@@ -14804,6 +14842,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/wunderground/assets/css/wunderground.css?ver=2.1.3
       - http://wp.lab/wp-content/plugins/wunderground/assets/js/widget.min.js?ver=2.1.3
+  wx-custom-share:
+    TranslationFile:
+      number: 1.5.6
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wx-custom-share/languages/wx-custom-share.pot,
+        Match: ''"Project-Id-Version: WX Custom Share 1.5.6'''
   wysija-newsletters:
     QueryParameter:
       number: 2.8.1

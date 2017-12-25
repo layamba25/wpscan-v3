@@ -4181,6 +4181,12 @@ plugins:
       path: lang/dynamic-seo-child-pages.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ Dynamic\ SEO\ Child\ Pages\ (?<v>[\d\.]+)/i
       version: true
+  easily-generate-rest-api-url:
+    QueryParameter:
+      files:
+      - public/css/generate-rest-api-url-public.css
+      - public/js/generate-rest-api-url-public.js
+      version: true
   easing-slider:
     TranslationFile:
       class: BodyPattern
@@ -5647,6 +5653,8 @@ plugins:
       - assets/colorbox/colorbox.css
       - assets/pool.min.js
       - assets/colorbox/jquery.colorbox-min.js
+      - assets/libs/colorbox/colorbox.css
+      - assets/libs/colorbox/jquery.colorbox-min.js
       version: true
   footer-mega-grid-columns:
     QueryParameter:
@@ -9333,6 +9341,16 @@ plugins:
       - public/js/jquery.liMarquee.js
       - public/js/mz-newsticker-public.js
       version: true
+  nafeza-prayer-time:
+    QueryParameter:
+      files:
+      - css/widget.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nafeza-prayer-time.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ WordPress\ Blank\ Pot\ v(?<v>[\d\.]+)/i
+      version: true
   nelio-content:
     TranslationFile:
       class: BodyPattern
@@ -10205,6 +10223,12 @@ plugins:
       path: languages/smart-reporter-for-wp-e-commerce.pot
       pattern: !ruby/regexp /\-Version:\ Smart\ Reporter\ for\ e\-commerce\ (?<v>[\d\.]+)/i
       version: true
+  smartideo:
+    QueryParameter:
+      files:
+      - static/smartideo.css
+      - static/smartideo.js
+      version: true
   snow-storm:
     QueryParameter:
       files:
@@ -10518,6 +10542,12 @@ plugins:
       - app/public/themes/flight/css/table-4.css
       - app/public/themes/hotel/css/table-2.css
       - app/public/themes/railway/css/main.css
+      version: true
+  tweetific:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/tweetific.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Tweetific\ (?<v>[\d\.]+)/i
       version: true
   twenty-eleven-showcase-slider:
     TranslationFile:
@@ -11691,6 +11721,12 @@ plugins:
       files:
       - assets/css/wunderground.css
       - assets/js/widget.min.js
+      version: true
+  wx-custom-share:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wx-custom-share.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ WX\ Custom\ Share\ (?<v>[\d\.]+)/i
       version: true
   wysija-newsletters:
     QueryParameter:
