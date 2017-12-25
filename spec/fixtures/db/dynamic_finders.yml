@@ -9328,6 +9328,29 @@ plugins:
       path: languages/my-restaurant-menu.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ My\ Restaurant\ Menu\ (?<v>[\d\.]+)/i
       version: true
+  mybookprogress:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  mybooktable:
+    QueryParameter:
+      files:
+      - css/frontend-style.css
+      - styles/silver/style.css
+      version: true
+  myspeakingpage:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      version: true
+  myst-facebook-comment:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/myst-facebook-comment.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ MYST\ Facebook\ Comment\ (?<v>[\d\.]+)/i
+      version: true
   mystickymenu:
     QueryParameter:
       files:
@@ -9341,6 +9364,11 @@ plugins:
       - public/js/jquery.liMarquee.js
       - public/js/mz-newsticker-public.js
       version: true
+  n3rdskwat-mp3player:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="n3rdskwat-mp3player"]/@content
+      version: true
   nafeza-prayer-time:
     QueryParameter:
       files:
@@ -9351,19 +9379,153 @@ plugins:
       path: languages/nafeza-prayer-time.pot
       pattern: !ruby/regexp /roject\-Id\-Version:\ WordPress\ Blank\ Pot\ v(?<v>[\d\.]+)/i
       version: true
+  naked-social-share:
+    QueryParameter:
+      files:
+      - assets/js/naked-social-share.min.js
+      version: true
+  namaz-vakti:
+    QueryParameter:
+      files:
+      - assets/js/jquery.countdown.js
+      - assets/js/namazvakti.js
+      version: true
+  nanosupport:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/nanosupport.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ NanoSupport\ (?<v>[\d\.]+)/i
+      version: true
+  native-emoji:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/native-emoji.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Native\ Emoji\ (?<v>[\d\.]+)/i
+      version: true
+  natural-contact-form:
+    QueryParameter:
+      files:
+      - css/style.css
+      - js/natural-contact-form.js
+      version: true
+  naver-map:
+    QueryParameter:
+      files:
+      - naver-map.css
+      - naver-map.js
+      version: true
+  nearby-locations:
+    QueryParameter:
+      files:
+      - shared/css/nearby-locations-shared.css
+      - public/css/nearby-locations-public.css
+      - shared/js/nearby-locations-shared.js
+      - public/js/nearby-locations-public.js
+      version: true
+  necessary-tools:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  nelio-ab-testing:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nelio-ab-testing.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Nelio\ A\/B\ Testing\ (?<v>[\d\.]+)/i
+      version: true
   nelio-content:
     TranslationFile:
       class: BodyPattern
       path: languages/nelio-content.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Nelio\ Content\ (?<v>[\d\.]+)/i
       version: true
+  nelio-featured-posts:
+    QueryParameter:
+      files:
+      - assets/style.min.css
+      #pattern: !ruby/regexp /version=(?<v>[\d\.]+)/i
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nelio-featured-posts.pot
+      pattern: !ruby/regexp /roject\-Id\-Version:\ Nelio\ Featured\ Posts\ (?<v>[\d\.]+)/i
+      version: true
+  neo-bootstrap-carousel:
+    QueryParameter:
+      files:
+      - public/css/neo-bootstrap-carousel-public.css
+      - public/js/neo-bootstrap-carousel-public.js
+      version: true
+  nepali-calendar:
+    QueryParameter:
+      files:
+      - assets/css/nepali-calendar.css
+      - assets/css/nepali-calendar-frontend.css
+      - assets/js/frontend/nepali-calendar.min.js
+      - assets/js/frontend/nepali-calendar-frontend.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nepali-calendar.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Nepali\ Calendar\ (?<v>[\d\.]+)/i
+      version: true
   neptune-style-element:
     Comment:
       pattern: !ruby/regexp /uses\ the\ Neptune\ Style\ Element\ plugin\ v(?<v>[\d\.]+)/i
       version: true
+  netbase-widgets-for-siteorigin:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  neulee:
+    QueryParameter:
+      files:
+      - public/css/neulee-public.css
+      version: true
+  new-popular-posts-widget:
+    QueryParameter:
+      files:
+      - public/css/new-popular-posts-widget-public.css
+      - public/js/new-popular-posts-widget-public.js
+      version: true
+  news-announcement-scroll:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/news-announcement-scroll.pot
+      pattern: !ruby/regexp /ct\-Id\-Version:\ News\ Announcement\ Scroll\ (?<v>[\d\.]+)/i
+      version: true
+  news-bar:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/skins/.css
+      - assets/js/frontend.js
+      version: true
   news-ticker:
     Comment:
       pattern: !ruby/regexp /START TICKER VER (?<v>[\d\.]+)/i
+      version: true
+  news-ticker-tj:
+    QueryParameter:
+      files:
+      - css/breakingNews.css
+      version: true
+  newsbooster-for-messenger:
+    QueryParameter:
+      files:
+      - public/css/font-awesome.min.css
+      - public/css/newsBooster-public.css
+      - public/js/newsBooster-public.js
+      version: true
+  newscodes-news-magazine-and-blog-elements:
+    QueryParameter:
+      files:
+      - lib/css/newscodes.css
+      - lib/css/newscodes-styles.css
+      - lib/js/newscodes.js
       version: true
   newsletter:
     QueryParameter:
@@ -9374,6 +9536,11 @@ plugins:
   nextcellent-gallery-nextgen-legacy:
     Comment:
       pattern: !ruby/regexp /<meta name="NextGEN" version="(?<v>[\d\.]+)"/i
+      version: true
+  nextgen-download-gallery:
+    QueryParameter:
+      files:
+      - css/style.css
       version: true
   nextgen-facebook:
     QueryParameter:
@@ -9394,10 +9561,111 @@ plugins:
     Comment:
       pattern: !ruby/regexp /<meta name="NextGEN" version="(?<v>[\d\.]+)"/i
       version: true
+  nextgen-public-deletor:
+    QueryParameter:
+      files:
+      - ngdupstyle.css
+      version: true
+  nextgen-scrollgallery:
+    Comment:
+      pattern: !ruby/regexp /nextgen\ scrollGallery\ (?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - scrollGallery/css/scrollGallery.css
+      - scrollGallery/css/scrollGallery_greyDesign.css
+      version: true
+  nggimagerotation:
+    QueryParameter:
+      files:
+      - view.css
+      - view.js
+      version: true
   nginx-helper:
     Comment:
       pattern: !ruby/regexp /Cached using Nginx-Helper|Visit https?:\/\/wordpress.org\/extend\/plugins\/nginx-helper\/faq\/
         for more details/i
+  nice-infoboxes:
+    QueryParameter:
+      files:
+      - includes/assets/css/font-awesome.min.css
+      - public/assets/css/nice-infoboxes.css
+      version: true
+  nice-likes:
+    QueryParameter:
+      files:
+      - public/assets/css/nice-likes.css
+      - public/assets/fonts/fontello-font-awesome/css/fontello.css
+      - public/assets/js/min/nice-likes.min.js
+      version: true
+  nice-login-register-widget:
+    QueryParameter:
+      files:
+      - css/pw-login-widget.css
+      - js/pw-login-widget.js
+      - js/ajax-authentication.js
+      version: true
+  nice-navigation:
+    QueryParameter:
+      files:
+      - styles.css
+      - script.js
+      version: true
+  nice-portfolio:
+    QueryParameter:
+      files:
+      - public/assets/css/nice-portfolio.css
+      - public/assets/js/min/nice-portfolio.min.js
+      version: true
+  nice-team:
+    QueryParameter:
+      files:
+      - public/assets/css/nice-team.css
+      version: true
+  nice-testimonials:
+    QueryParameter:
+      files:
+      - public/assets/css/nice-testimonials.css
+      version: true
+  nice-titles:
+    Comment:
+      pattern: !ruby/regexp /Generated\ by\ Nice\ Titles\ (?<v>[\d\.]+)/i
+      version: true
+  nicebackgrounds:
+    TranslationFile:
+      class: BodyPattern
+      path: nicebackgrounds.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Nice\ Backgrounds\ (?<v>[\d\.]+)/i
+      version: true
+  nicechat:
+    QueryParameter:
+      files:
+      - public/js/nicechat-cart-service.js
+      version: true
+  nimble-portfolio:
+    QueryParameter:
+      files:
+      - includes/sort.js
+      - includes/prettyphoto/prettyphoto.js
+      - includes/prettyphoto/nimble-prettyPhoto.js
+      version: true
+  no-copy:
+    QueryParameter:
+      files:
+      - no-copy.js
+      version: true
+  noakes-menu-manager:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  nofollow-for-external-link-tap:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ TODO\ (?<v>[\d\.]+)/i
+      version: true
   nokaut-offers-box:
     QueryParameter:
       files:
