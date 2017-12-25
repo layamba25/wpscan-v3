@@ -1,5 +1,8 @@
 require 'spec_helper'
 
+# If this file is tested alone (rspec path-to-this-file), then there will be an error about
+# constants not being intilialized. This is due to the Dynamic Finders.
+
 describe WPScan::Finders::WpVersion::Base do
   subject(:wp_version) { described_class.new(target) }
   let(:target)         { WPScan::Target.new(url) }
@@ -8,14 +11,19 @@ describe WPScan::Finders::WpVersion::Base do
   describe '#finders' do
     let(:expected) do
       %w[
-        MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers
+        RSSGenerator AtomGenerator HomepageStylesheetNumbers
         InstallStylesheetNumbers UpgradeStylesheetNumbers RDFGenerator Readme
-        SitemapGenerator OpmlGenerator AddthisJavascriptVar EmojiSettings UniqueFingerprinting
+        UniqueFingerprinting
       ]
     end
 
+    let(:expected_dynamic_finders) { WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.keys }
+
     it 'contains the expected finders' do
-      expect(wp_version.finders.map { |f| f.class.to_s.demodulize }).to eq expected
+      finders = wp_version.finders.map { |f| f.class.to_s.demodulize }
+
+      expect(finders).to match_array expected + expected_dynamic_finders
+      expect(finders.last).to eql 'UniqueFingerprinting'
     end
   end
 end

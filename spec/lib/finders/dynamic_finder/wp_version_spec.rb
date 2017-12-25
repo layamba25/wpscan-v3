@@ -13,8 +13,7 @@ end
 WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.each do |finder_class, config|
   finder_super_class = config['class'] ? config['class'] : finder_class
 
-  # TODO: update the df_tested_class_constant to have the slug as optional
-  describe df_tested_class_constant('WpVersion', slug, finder_class) do
+  describe df_tested_class_constant('WpVersion', finder_class) do
     subject(:finder) { described_class.new(target) }
     let(:target)     { WPScan::Target.new('http://wp.lab/') }
     let(:fixtures)   { File.join(DYNAMIC_FINDERS_FIXTURES, 'wp_version') }
@@ -24,11 +23,7 @@ WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.each do |finder_c
     let(:stubbed_response) { { body: '' } }
 
     describe '#passive' do
-      before do
-        stub_request(:get, target.url).to_return(stubbed_response)
-
-        expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
-      end
+      before { stub_request(:get, target.url).to_return(stubbed_response) }
 
       if config['path']
         context 'when PATH' do
@@ -63,7 +58,7 @@ WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.each do |finder_c
       let(:fixtures) { File.join(super(), finder_class.underscore) }
 
       before do
-        expect(target).to receive(:content_dir).at_least(1).and_return('wp-content')
+        allow(target).to receive(:sub_dir).and_return(nil)
 
         stub_request(:get, target.url(config['path'])).to_return(stubbed_response) if config['path']
       end

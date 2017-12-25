@@ -31,8 +31,12 @@ def df_expected_all
   YAML.safe_load(File.read(File.join(DYNAMIC_FINDERS_FIXTURES, 'expected.yml')))
 end
 
-def df_tested_class_constant(type, slug, finder_class)
-  "WPScan::Finders::#{type}::#{classify_slug(slug)}::#{classify_slug(finder_class)}".constantize
+def df_tested_class_constant(type, finder_class, slug = nil)
+  if slug
+    "WPScan::Finders::#{type}::#{classify_slug(slug)}::#{classify_slug(finder_class)}".constantize
+  else
+    "WPScan::Finders::#{type}::#{classify_slug(finder_class)}".constantize
+  end
 end
 
 def df_stubbed_response(fixture, finder_super_class)

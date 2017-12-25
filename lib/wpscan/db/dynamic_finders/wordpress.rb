@@ -50,7 +50,7 @@ module WPScan
             # users with old version of WPScan will still be able to scan blogs
             # when updating the DB but not the tool
             next if version_finder_module.constants.include?(finder_class.to_sym) ||
-                    !ALLOWED_CLASSES.include?(klass.to_sym)
+                    !allowed_classes.include?(klass.to_sym)
 
             version_finder_super_class(klass).create_child_class(version_finder_module, finder_class.to_sym, config)
           end

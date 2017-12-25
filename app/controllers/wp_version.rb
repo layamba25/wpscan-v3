@@ -15,6 +15,10 @@ module WPScan
         ]
       end
 
+      def before_scan
+        WPScan::DB::DynamicFinders::Wordpress.create_versions_finders
+      end
+
       def run
         output(
           'version',

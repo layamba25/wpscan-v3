@@ -28,7 +28,7 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
   configs.each do |finder_class, config|
     finder_super_class = config['class'] ? config['class'] : finder_class
 
-    describe df_tested_class_constant('PluginVersion', slug, finder_class) do
+    describe df_tested_class_constant('PluginVersion', finder_class, slug) do
       subject(:finder) { described_class.new(plugin) }
       let(:plugin)     { WPScan::Plugin.new(slug, target) }
       let(:target)     { WPScan::Target.new('http://wp.lab/') }
