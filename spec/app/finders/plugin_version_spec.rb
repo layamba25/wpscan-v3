@@ -29,7 +29,7 @@ describe WPScan::Finders::PluginVersion::Base do
         }
       end
 
-      WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |plugin_slug, configs|
+      WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |plugin_slug, configs|
         context "when #{plugin_slug} plugin" do
           let(:slug) { plugin_slug }
 

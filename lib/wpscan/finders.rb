@@ -11,6 +11,7 @@ require 'wpscan/finders/dynamic_finder/version/javascript_var'
 require 'wpscan/finders/dynamic_finder/version/query_parameter'
 require 'wpscan/finders/dynamic_finder/version/config_parser'
 require 'wpscan/finders/dynamic_finder/wp_item_version'
+require 'wpscan/finders/dynamic_finder/wp_version'
 
 module WPScan
   # Custom Finders

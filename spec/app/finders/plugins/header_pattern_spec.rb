@@ -36,7 +36,7 @@ describe WPScan::Finders::Plugins::HeaderPattern do
       it 'returns the expected plugins' do
         @expected = []
 
-        WPScan::DB::DynamicPluginFinders.passive_header_pattern_finder_configs.each_key do |slug|
+        WPScan::DB::DynamicFinders::Plugin.passive_header_pattern_finder_configs.each_key do |slug|
           @expected << plugin(slug)
         end
       end
