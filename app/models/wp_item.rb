@@ -11,6 +11,8 @@ module WPScan
 
     attr_reader :uri, :slug, :detection_opts, :version_detection_opts, :blog, :db_data
 
+    delegate :homepage_res, :xpath_pattern_from_page, :in_scope_urls, to: :blog
+
     # @param [ String ] slug The plugin/theme slug
     # @param [ Target ] blog The targeted blog
     # @param [ Hash ] opts

@@ -5,11 +5,22 @@ module WPScan
         # To be used as a base when creating
         # a dynamic finder to find the version of a WP Item (such as theme/plugin)
         class Finder < Finders::DynamicFinder::Finder
-          # @param [ Hash ] opts
-          def passive(opts = {})
-            return if self.class::PATH
+          protected
 
-            find(target.blog.homepage_res, opts)
+          # @param [ String ] number
+          # @param [ Hash ] finding_opts
+          # @return [ WPScan::Version ]
+          def create_version(number, finding_opts)
+            WPScan::Version.new(number, version_finding_opts(finding_opts))
+          end
+
+          # @param [ Hash ] opts
+          # @retutn [ Hash ]
+          def version_finding_opts(opts)
+            opts[:found_by]   ||= found_by
+            opts[:confidence] ||= self.class::CONFIDENCE
+
+            opts
           end
         end
       end

@@ -23,7 +23,7 @@ module WPScan
           # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            target.blog.xpath_pattern_from_page(
+            target.xpath_pattern_from_page(
               self.class::XPATH, self.class::PATTERN, response
             ) do |match_data, _node|
               next unless (version_number = version_number_from_match_data(match_data))
@@ -33,10 +33,8 @@ module WPScan
               match = match_data.to_s
               match = match[/.*?(.{,20}#{Regexp.escape(version_number)}.{,20}).*/, 1] if match.size > 50
 
-              return WPScan::Version.new(
+              return create_version(
                 version_number,
-                found_by: found_by,
-                confidence: self.class::CONFIDENCE,
                 interesting_entries: ["#{response.effective_url}, Match: '#{match}'"]
               )
             end

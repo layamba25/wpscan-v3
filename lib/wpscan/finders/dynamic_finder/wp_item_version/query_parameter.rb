@@ -25,9 +25,8 @@ module WPScan
             # Multiple versions may appear, even though very unlikely,
             # but specs would need to be reworked to handle that. Kind of a TODO.
             scan_response(response).each do |version_number, occurences|
-              return WPScan::Version.new(
+              return create_version(
                 version_number,
-                found_by: found_by,
                 confidence: self.class::CONFIDENCE_PER_OCCURENCE * occurences.size,
                 interesting_entries: occurences
               )
@@ -49,7 +48,7 @@ module WPScan
             found = {}
             xpath = "//link[contains(@href,'#{target.slug}')]|//script[contains(@src,'#{target.slug}')]"
 
-            target.blog.in_scope_urls(response, xpath) do |url, _tag|
+            target.in_scope_urls(response, xpath) do |url, _tag|
               uri = Addressable::URI.parse(url)
 
               next unless uri.path =~ path_pattern && uri.query&.match(self.class::PATTERN)

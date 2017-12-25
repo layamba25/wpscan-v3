@@ -25,10 +25,8 @@ module WPScan
             return unless response.headers && response.headers[self.class::HEADER]
             return unless response.headers[self.class::HEADER].to_s =~ self.class::PATTERN
 
-            WPScan::Version.new(
+            create_version(
               Regexp.last_match[:v],
-              found_by: found_by,
-              confidence: self.class::CONFIDENCE,
               interesting_entries: ["#{response.effective_url}, Match: '#{Regexp.last_match}'"]
             )
           end

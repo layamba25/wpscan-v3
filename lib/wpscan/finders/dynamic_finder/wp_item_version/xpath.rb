@@ -22,15 +22,13 @@ module WPScan
           # @param [ Hash ] opts
           # @return [ Version ]
           def find(response, _opts = {})
-            target.blog.xpath_pattern_from_page(
+            target.xpath_pattern_from_page(
               self.class::XPATH, self.class::PATTERN, response
             ) do |match_data, _node|
               next unless match_data[:v]
 
-              return WPScan::Version.new(
+              return create_version(
                 match_data[:v],
-                found_by: found_by,
-                confidence: self.class::CONFIDENCE,
                 interesting_entries: ["#{response.effective_url}, Match: '#{match_data}'"]
               )
             end
