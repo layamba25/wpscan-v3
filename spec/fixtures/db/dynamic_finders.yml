@@ -10080,6 +10080,39 @@ plugins:
       - assets/css/frontend.css
       - assets/js/frontend.min.js
       version: true
+  organic-customizer-widgets:
+    QueryParameter:
+      files:
+      - public/css/organic-widgets-public.css
+      - public/js/organic-widgets-public.js
+      version: true
+  original-image-handler:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/blockx-oih-nl_NL.po
+      pattern: !ruby/regexp /\-Version:\ BlockX\ Original\ Image\ Handler\ (?<v>[\d\.]+)/i
+      version: true
+  os-bxslider:
+    QueryParameter:
+      files:
+      - plugins/bxslider/jquery.bxslider.min.js
+      - js/frontend-min.js
+      version: true
+  os-image-gallery:
+    QueryParameter:
+      files:
+      - js/frontend-min.js
+      version: true
+  os-materializecss-popup:
+    QueryParameter:
+      files:
+      - js/custom-min.js
+      version: true
+  os-pricing-tables:
+    QueryParameter:
+      files:
+      - js/custom-min.js
+      version: true
   oscar-hotel-booking-engine:
     QueryParameter:
       files:
@@ -10096,11 +10129,71 @@ plugins:
       path: lang/oss-upload.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ OSS\ Upload\ (?<v>[\d\.]+)/i
       version: true
+  ot-flatsome-vertical-menu:
+    QueryParameter:
+      files:
+      - assets/css/ot-vertical-menu.css
+      - assets/js/ot-vertical-menu.js
+      version: true
+  our-services-showcase:
+    QueryParameter:
+      files:
+      - inc/style/sc_our_services.css
+      - inc/style/font-awesome.min.css
+      - inc/style/animate.min.css
+      - inc/script/carousel.js
+      - inc/script/sc_our_services.js
+      version: true
+  outboundlinks:
+    QueryParameter:
+      files:
+      - js/outbound.js
+      version: true
+  oxygen-visual-site-builder:
+    QueryParameter:
+      files:
+      - component-framework/style.css
+      version: true
+  p2-control-enter-command-enter-submit:
+    QueryParameter:
+      files:
+      - p2-control-enter-command-enter-submit.js
+      version: true
+  p2-new-post-categories:
+    QueryParameter:
+      files:
+      - style.css
+      - functions.js
+      version: true
   pablo-career:
     QueryParameter:
       files:
       - public/css/pablo-career-public.css
       - public/css/dashicons.min.css
+      version: true
+  packpin-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/packpin-widget.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Packpin\ Widget\ (?<v>[\d\.]+)/i
+      version: true
+  packpin-woocommerce-shipment-tracking:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/packpin-woocommerce-shipment-tracking.pot
+      pattern: !ruby/regexp /:\ Packpin\ Woocommerce\ Shipment\ Tracking\ (?<v>[\d\.]+)/i
+      version: true
+  page-builder-sandwich:
+    QueryParameter:
+      files:
+      - page_builder_sandwich/css/style.min.css
+      - page_builder_sandwich/js/min/frontend-min.js
+      version: true
+  page-keys:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/page-keys.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Page\ Keys\ (?<v>[\d\.]+)/i
       version: true
   page-list:
     QueryParameter:
@@ -10117,11 +10210,61 @@ plugins:
       files:
       - assets/css/style.min.css
       version: true
+  page2images-visual-link:
+    QueryParameter:
+      files:
+      - js/p2i.thumbnails.js
+      version: true
+  pagenator:
+    QueryParameter:
+      files:
+      - public/assets/css/pagenator.css
+      - public/assets/js/public.js
+      version: true
+  pagination-test-drive:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pagination-test-drive.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Pagination\ Test\ Drive\ (?<v>[\d\.]+)/i
+      version: true
+  paginator:
+    Comment:
+      pattern: !ruby/regexp /Script\ Generated\ By\ Paginator\ (?<v>[\d\.]+)/i
+      version: true
+  paid-downloads:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
   paid-member-subscriptions:
     QueryParameter:
       files:
       - assets/css/style-front-end.css
       - assets/js/front-end.js
+      version: true
+  pal-for-edd:
+    QueryParameter:
+      files:
+      - public/css/pal-for-edd-public.css
+      - public/js/pal-for-edd-public.js
+      - public/js/pal-for-edd-public-blockUI.js
+      version: true
+  pal-shopping-cart:
+    QueryParameter:
+      files:
+      - public/css/paypal-shopping-cart-public.css
+      - admin/css/jquery-customselect.css
+      - public/css/colorbox.css
+      - public/js/paypal-shopping-cart-public.js
+      - public/js/paypal-shopping-cart-public-blockUI.js
+      - admin/js/jquery-customselect.js
+      - public/js/jquery.colorbox.js
+      version: true
+  palmodule-paypal-payment-for-woocoomerce:
+    QueryParameter:
+      files:
+      - public/css/palmodule-paypal-payment-for-woocoomerce-public.css
+      - public/js/palmodule-paypal-payment-for-woocoomerce-public.js
       version: true
   panopress:
     Comment:
@@ -10138,17 +10281,80 @@ plugins:
       path: languages/papi-compatibility-for-wpml.pot
       pattern: !ruby/regexp /Id\-Version:\ Papi\ compatibility\ for\ WPML\ (?<v>[\d\.]+)/i
       version: true
+  paragon-profile:
+    QueryParameter:
+      files:
+      - css/bootstrap.min.css
+      - css/paragoncss.css
+      version: true
+  parallax-scrolling-enllax-js:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/parallax_scrolling_enllax-hu_HU.po
+      pattern: !ruby/regexp /d\-Version:\ Parallax\ Scrolling\ Enllax\.js\ (?<v>[\d\.]+)/i
+      version: true
+  parcelware:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/parcelware.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Parcelware\ (?<v>[\d\.]+)/i
+      version: true
+  parsedown-importer:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  partner-manager:
+    QueryParameter:
+      files:
+      - public/css/slick.css
+      - public/css/partner-manager-public.css
+      - public/js/slick.min.js
+      - public/js/partner-manager-public.js
+      version: true
+  passbeemedia-web-push-notifications:
+    Comment:
+      pattern: !ruby/regexp /Chrome Browser Push\. \(v\ (?<v>[\d\.]+)\) \- https?:\/\/passbeemedia\.com/i
+      version: true
+  password-confirm-action:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/password-confirm-action.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ password\-confirm\-action\ (?<v>[\d\.]+)/i
+      version: true
+  past-events-extension:
+    QueryParameter:
+      files:
+      - public/css/past-events-extension-public.css
+      version: true
   paypal-for-woocommerce:
     TranslationFile:
       class: BodyPattern
       path: i18n/languages/paypal-for-woocommerce-en_US.po
       pattern: !ruby/regexp /ject\-Id\-Version:\ PayPal\ for\ WooCommerce\ (?<v>[\d\.]+)/i
       version: true
+  paypal-ipn:
+    QueryParameter:
+      files:
+      - public/js/paypal-ipn-for-wordpress-public-bn.js
+      version: true
+  paypal-security:
+    QueryParameter:
+      files:
+      - public/js/paypal-security-public.js
+      version: true
   paypal-wp-button-manager:
     QueryParameter:
       files:
       - public/css/paypal-wp-button-manager-public.css
       - public/js/paypal-wp-button-manager-public.js
+      version: true
+  pd-helper:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
       version: true
   pdf-forms-for-contact-form-7:
     TranslationFile:

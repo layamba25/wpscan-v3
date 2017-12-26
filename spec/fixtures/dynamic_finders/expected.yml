@@ -12817,6 +12817,50 @@ plugins:
       - http://wp.lab/wp-content/plugins/orcsnet-from-inditip/assets/css/frontend.css?ver=1.0.3
       - http://wp.lab/wp-content/plugins/orcsnet-from-inditip/assets/js/frontend.min.js?ver=1.0.3
       confidence: 20
+  organic-customizer-widgets:
+    QueryParameter:
+      number: 1.1.10
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/organic-customizer-widgets/public/css/organic-widgets-public.css?ver=1.1.10
+      - http://wp.lab/wp-content/plugins/organic-customizer-widgets/public/js/organic-widgets-public.js?ver=1.1.10
+      confidence: 20
+  original-image-handler:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/original-image-handler/lang/blockx-oih-nl_NL.po,
+        Match: ''-Version: BlockX Original Image Handler 1.0.0'''
+  os-bxslider:
+    QueryParameter:
+      number: '2.6'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/os-bxslider/plugins/bxslider/jquery.bxslider.min.js?ver=2.6
+      - http://wp.lab/wp-content/plugins/os-bxslider/js/frontend-min.js?ver=2.6
+      confidence: 20
+  os-image-gallery:
+    QueryParameter:
+      number: '1.3'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/os-image-gallery/js/frontend-min.js?ver=1.3
+      confidence: 10
+  os-materializecss-popup:
+    QueryParameter:
+      number: '1.3'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/os-materializecss-popup/js/custom-min.js?ver=1.3
+      confidence: 10
+  os-pricing-tables:
+    QueryParameter:
+      number: '1.2'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/os-pricing-tables/js/custom-min.js?ver=1.2
+      confidence: 10
   oscar-hotel-booking-engine:
     QueryParameter:
       number: 1.1.1
@@ -12838,6 +12882,54 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/oss-upload/lang/oss-upload.po, Match: ''"Project-Id-Version:
         OSS Upload 3.5'''
+  ot-flatsome-vertical-menu:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ot-flatsome-vertical-menu/assets/css/ot-vertical-menu.css?ver=1.1.0
+      - http://wp.lab/wp-content/plugins/ot-flatsome-vertical-menu/assets/js/ot-vertical-menu.js?ver=1.1.0
+      confidence: 20
+  our-services-showcase:
+    QueryParameter:
+      number: '2.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/our-services-showcase/inc/style/sc_our_services.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/our-services-showcase/inc/style/font-awesome.min.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/our-services-showcase/inc/style/animate.min.css?ver=2.0
+      - http://wp.lab/wp-content/plugins/our-services-showcase/inc/script/carousel.js?ver=2.0
+      - http://wp.lab/wp-content/plugins/our-services-showcase/inc/script/sc_our_services.js?ver=2.0
+      confidence: 50
+  outboundlinks:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/outboundlinks/js/outbound.js?ver=1.0.0
+      confidence: 10
+  oxygen-visual-site-builder:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/oxygen-visual-site-builder/component-framework/style.css?ver=1.0
+      confidence: 10
+  p2-control-enter-command-enter-submit:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/p2-control-enter-command-enter-submit/p2-control-enter-command-enter-submit.js?ver=0.1
+      confidence: 10
+  p2-new-post-categories:
+    QueryParameter:
+      number: '0.3'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/p2-new-post-categories/style.css?ver=0.3
+      - http://wp.lab/wp-content/plugins/p2-new-post-categories/functions.js?ver=0.3
+      confidence: 20
   pablo-career:
     QueryParameter:
       number: 1.0.3
@@ -12846,6 +12938,35 @@ plugins:
       - http://wp.lab/wp-content/plugins/pablo-career/public/css/pablo-career-public.css?ver=1.0.3
       - http://wp.lab/wp-content/plugins/pablo-career/public/css/dashicons.min.css?ver=1.0.3
       confidence: 20
+  packpin-widget:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/packpin-widget/lang/packpin-widget.pot,
+        Match: ''"Project-Id-Version: Packpin Widget 1.0.0'''
+  packpin-woocommerce-shipment-tracking:
+    TranslationFile:
+      number: 1.2.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/packpin-woocommerce-shipment-tracking/languages/packpin-woocommerce-shipment-tracking.pot,
+        Match: '': Packpin Woocommerce Shipment Tracking 1.2.2'''
+  page-builder-sandwich:
+    QueryParameter:
+      number: 4.4.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/page-builder-sandwich/page_builder_sandwich/css/style.min.css?ver=4.4.3
+      - http://wp.lab/wp-content/plugins/page-builder-sandwich/page_builder_sandwich/js/min/frontend-min.js?ver=4.4.3
+      confidence: 20
+  page-keys:
+    TranslationFile:
+      number: 1.3.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/page-keys/languages/page-keys.pot, Match:
+        ''"Project-Id-Version: Page Keys 1.3.1'''
   page-list:
     QueryParameter:
       number: '5.1'
@@ -12867,6 +12988,41 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/page-views-count/assets/css/style.min.css?ver=2.0.2
       confidence: 10
+  page2images-visual-link:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/page2images-visual-link/js/p2i.thumbnails.js?ver=1.0.0
+      confidence: 10
+  pagenator:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pagenator/public/assets/css/pagenator.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/pagenator/public/assets/js/public.js?ver=1.0.0
+      confidence: 20
+  pagination-test-drive:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/pagination-test-drive/languages/pagination-test-drive.pot,
+        Match: ''oject-Id-Version: Pagination Test Drive 1.1'''
+  paginator:
+    Comment:
+      number: 0.2.4
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Script Generated By Paginator 0.2.4'''
+  paid-downloads:
+    QueryParameter:
+      number: '3.15'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/paid-downloads/css/style.css?ver=3.15
+      confidence: 10
   paid-member-subscriptions:
     QueryParameter:
       number: 1.6.3
@@ -12874,6 +13030,36 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/paid-member-subscriptions/assets/css/style-front-end.css?ver=1.6.3
       - http://wp.lab/wp-content/plugins/paid-member-subscriptions/assets/js/front-end.js?ver=1.6.3
+      confidence: 20
+  pal-for-edd:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pal-for-edd/public/css/pal-for-edd-public.css?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/pal-for-edd/public/js/pal-for-edd-public.js?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/pal-for-edd/public/js/pal-for-edd-public-blockUI.js?ver=1.0.6
+      confidence: 30
+  pal-shopping-cart:
+    QueryParameter:
+      number: 1.2.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/public/css/paypal-shopping-cart-public.css?ver=1.2.6
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/admin/css/jquery-customselect.css?ver=1.2.6
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/public/css/colorbox.css?ver=1.2.6
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/public/js/paypal-shopping-cart-public.js?ver=1.2.6
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/public/js/paypal-shopping-cart-public-blockUI.js?ver=1.2.6
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/admin/js/jquery-customselect.js?ver=1.2.6
+      - http://wp.lab/wp-content/plugins/pal-shopping-cart/public/js/jquery.colorbox.js?ver=1.2.6
+      confidence: 70
+  palmodule-paypal-payment-for-woocoomerce:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/palmodule-paypal-payment-for-woocoomerce/public/css/palmodule-paypal-payment-for-woocoomerce-public.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/palmodule-paypal-payment-for-woocoomerce/public/js/palmodule-paypal-payment-for-woocoomerce-public.js?ver=1.0.5
       confidence: 20
   panopress:
     Comment:
@@ -12895,6 +13081,65 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/papi-compatibility-for-wpml/languages/papi-compatibility-for-wpml.pot,
         Match: ''Id-Version: Papi compatibility for WPML 1.0.7'''
+  paragon-profile:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/paragon-profile/css/bootstrap.min.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/paragon-profile/css/paragoncss.css?ver=1.1
+      confidence: 20
+  parallax-scrolling-enllax-js:
+    TranslationFile:
+      number: 0.0.5
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/parallax-scrolling-enllax-js/lang/parallax_scrolling_enllax-hu_HU.po,
+        Match: ''d-Version: Parallax Scrolling Enllax.js 0.0.5'''
+  parcelware:
+    TranslationFile:
+      number: 1.0.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/parcelware/languages/parcelware.pot, Match:
+        ''"Project-Id-Version: Parcelware 1.0.1'''
+  parsedown-importer:
+    ComposerFile:
+      number: 1.0.8
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/parsedown-importer/package.json, Match:
+        ''1.0.8'''
+  partner-manager:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/partner-manager/public/css/slick.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/partner-manager/public/css/partner-manager-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/partner-manager/public/js/slick.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/partner-manager/public/js/partner-manager-public.js?ver=1.0.0
+      confidence: 40
+  passbeemedia-web-push-notifications:
+    Comment:
+      number: 1.0.0
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Chrome Browser Push. (v 1.0.0) - http://passbeemedia.com'''
+  password-confirm-action:
+    TranslationFile:
+      number: 0.2.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/password-confirm-action/languages/password-confirm-action.pot,
+        Match: ''ect-Id-Version: password-confirm-action 0.2.0'''
+  past-events-extension:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/past-events-extension/public/css/past-events-extension-public.css?ver=1.0.1
+      confidence: 10
   paypal-for-woocommerce:
     TranslationFile:
       number: 1.4.7
@@ -12902,6 +13147,20 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/paypal-for-woocommerce/i18n/languages/paypal-for-woocommerce-en_US.po,
         Match: ''ject-Id-Version: PayPal for WooCommerce 1.4.7'''
+  paypal-ipn:
+    QueryParameter:
+      number: 1.1.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/paypal-ipn/public/js/paypal-ipn-for-wordpress-public-bn.js?ver=1.1.2
+      confidence: 10
+  paypal-security:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/paypal-security/public/js/paypal-security-public.js?ver=1.0.2
+      confidence: 10
   paypal-wp-button-manager:
     QueryParameter:
       number: 1.1.0
@@ -12909,6 +13168,14 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/paypal-wp-button-manager/public/css/paypal-wp-button-manager-public.css?ver=1.1.0
       - http://wp.lab/wp-content/plugins/paypal-wp-button-manager/public/js/paypal-wp-button-manager-public.js?ver=1.1.0
+      confidence: 20
+  pd-helper:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pd-helper/assets/css/frontend.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/pd-helper/assets/js/frontend.min.js?ver=1.1
       confidence: 20
   pdf-forms-for-contact-form-7:
     TranslationFile:
