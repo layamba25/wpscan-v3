@@ -15,7 +15,8 @@ wordpress:
     number: 3.8.1
     found_by: Dropdown Menu Widget Comment (Passive Detection)
     interesting_entries:
-    - 'http://wp.lab/, Match: ''Dropdown Menu Widget Styles by shailan (http://metinsaylan.com) v1.9.6 on wp3.8.1'''
+    - 'http://wp.lab/, Match: ''Dropdown Menu Widget Styles by shailan (http://metinsaylan.com)
+      v1.9.6 on wp3.8.1'''
   EmojiSettings:
     number: 3.8.1
     found_by: Emoji Settings (Passive Detection)
@@ -7315,6 +7316,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/frontend-dashboard-captcha/languages/frontend-dashboard-captcha.pot,
         Match: ''-Id-Version: Frontend Dashboard Captcha 1.1.1'''
+  frontend-dashboard-templates:
+    TranslationFile:
+      number: '1.4'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/frontend-dashboard-templates/languages/frontend-dashboard-templates.pot,
+        Match: ''d-Version: Frontend Dashboard Templates 1.4'''
   frontend-dialog:
     QueryParameter:
       number: 1.0.0
@@ -13242,6 +13250,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/sidebar-login/languages/sidebar-login.pot,
         Match: ''"Project-Id-Version: Sidebar Login 2.7.3'''
+  simple-age-restriction-warning:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/simple-age-restriction-warning/assets/simple-age-restriction-warning-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/simple-age-restriction-warning/assets/simple-age-restriction-warning-public.js?ver=1.0.0
+      confidence: 20
   simple-featured-image-finder:
     TranslationFile:
       number: '1.0'
@@ -13341,6 +13357,16 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css.gzip?v=3.1.8.4
       - http://wp.lab/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js?v=3.1.8.4
+  skt-skill-bar:
+    QueryParameter:
+      number: '1.5'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/skt-skill-bar/skill_bar/circle/jquery.easy-pie-chart.js?ver=1.5
+      - http://wp.lab/wp-content/plugins/skt-skill-bar/skill_bar/circle/custom.js?ver=1.5
+      - http://wp.lab/wp-content/plugins/skt-skill-bar/skill_bar/gage/justgage.js?ver=1.5
+      - http://wp.lab/wp-content/plugins/skt-skill-bar/skill_bar/gage/raphael-2.1.4.min.js?ver=1.5
+      confidence: 40
   slidedeck:
     QueryParameter:
       number: 5.1.5
@@ -14751,6 +14777,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/wp-mappost/public/css/wp-mappost-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/wp-mappost/public/js/wp-mappost-public.js?ver=1.0.0
+  wp-markdown:
+    TranslationFile:
+      number: 1.6.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wp-markdown/languages/wp-markdown.pot, Match:
+        ''"Project-Id-Version: wp-markdown 1.6.0'''
   wp-megamenu:
     QueryParameter:
       number: 1.1.2

@@ -13,7 +13,8 @@ wordpress:
     version: true
   DropdownMenuWidgetComment:
     class: Comment
-    pattern: !ruby/regexp /Dropdown Menu Widget Styles by shailan \([^\)]+\) v[\d\.]+ on wp(?<v>[\d\.]+)/i
+    pattern: !ruby/regexp /Dropdown Menu Widget Styles by shailan \([^\)]+\) v[\d\.]+
+      on wp(?<v>[\d\.]+)/i
     version: true
   EmojiSettings:
     class: JavascriptVar
@@ -30,13 +31,13 @@ wordpress:
   OpmlGenerator:
     class: Comment
     path: wp-links-opml.php
-    pattern: !ruby/regexp /\Agenerator="wordpress/(?<v>[\d\.]+)"\z/i
+    pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
     confidence: 80
     version: true
   SitemapGenerator:
     class: Comment
     path: sitemap.xml
-    pattern: !ruby/regexp /\Agenerator="wordpress/(?<v>[\d\.]+)"\z/i
+    pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
     confidence: 80
     version: true
 plugins:
@@ -5776,6 +5777,12 @@ plugins:
       path: languages/frontend-dashboard-captcha.pot
       pattern: !ruby/regexp /\-Id\-Version:\ Frontend\ Dashboard\ Captcha\ (?<v>[\d\.]+)/i
       version: true
+  frontend-dashboard-templates:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/frontend-dashboard-templates.pot
+      pattern: !ruby/regexp /d\-Version:\ Frontend\ Dashboard\ Templates\ (?<v>[\d\.]+)/i
+      version: true
   frontend-dialog:
     QueryParameter:
       files:
@@ -10433,6 +10440,12 @@ plugins:
       path: languages/sidebar-login.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Sidebar\ Login\ (?<v>[\d\.]+)/i
       version: true
+  simple-age-restriction-warning:
+    QueryParameter:
+      files:
+      - assets/simple-age-restriction-warning-public.css
+      - assets/simple-age-restriction-warning-public.js
+      version: true
   simple-featured-image-finder:
     TranslationFile:
       class: BodyPattern
@@ -10510,6 +10523,14 @@ plugins:
       files:
       - res/css/language-selector.css.gzip
       - res/js/jquery.cookie.js
+      version: true
+  skt-skill-bar:
+    QueryParameter:
+      files:
+      - skill_bar/circle/jquery.easy-pie-chart.js
+      - skill_bar/circle/custom.js
+      - skill_bar/gage/justgage.js
+      - skill_bar/gage/raphael-2.1.4.min.js
       version: true
   slidedeck:
     QueryParameter:
@@ -11641,6 +11662,12 @@ plugins:
       files:
       - public/css/wp-mappost-public.css
       - public/js/wp-mappost-public.js
+      version: true
+  wp-markdown:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-markdown.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ wp\-markdown\ (?<v>[\d\.]+)/i
       version: true
   wp-megamenu:
     QueryParameter:
