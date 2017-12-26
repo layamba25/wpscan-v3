@@ -2,7 +2,7 @@ module WPScan
   module Finders
     module DynamicFinder
       module Version
-        # Version finder using Header Pattern method
+        # Version finder using QueryParameter method
         class QueryParameter < WPScan::Finders::DynamicFinder::Version::Finder
           # @param [ Constant ] mod
           # @param [ Constant ] klass
@@ -12,6 +12,7 @@ module WPScan
               klass, Class.new(self) do
                 const_set(:PATH, config['path'])
                 const_set(:FILES, config['files'])
+                const_set(:XPATH, config['xpath'])
                 const_set(:PATTERN, config['pattern'] || /(?:v|ver|version)\=(?<v>[\d\.]+)/i)
                 const_set(:CONFIDENCE_PER_OCCURENCE, config['confidence_per_occurence'] || 10)
               end
@@ -53,7 +54,7 @@ module WPScan
 
           # @return [ String ]
           def xpath
-            @xpath ||= '//link|//script'
+            @xpath ||= self.class::XPATH || '//link[@href]|//script[@src]'
           end
 
           # @return [ Regexp ]

@@ -29,7 +29,8 @@ module WPScan
           end
 
           def xpath
-            @xpath ||= "//link[contains(@href,'#{target.slug}')]|//script[contains(@src,'#{target.slug}')]"
+            @xpath ||= self.class::XPATH ||
+                       "//link[contains(@href,'#{target.slug}')]|//script[contains(@src,'#{target.slug}')]"
           end
         end
 

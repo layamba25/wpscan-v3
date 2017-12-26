@@ -18,10 +18,6 @@ module WPScan
           include Finder
         end
 
-        # class ConfigParser < WPScan::Finders::DynamicFinder::Version::ConfigParser
-        #  include Finder
-        # end
-
         class HeaderPattern < WPScan::Finders::DynamicFinder::Version::HeaderPattern
           include Finder
         end
@@ -32,6 +28,26 @@ module WPScan
 
         class QueryParameter < WPScan::Finders::DynamicFinder::Version::QueryParameter
           include Finder
+
+          # TODO: How to have the PATTERN to config['pattern] || /ver=(?<v>[\d\.]+)/i w/o
+          # redefining all the create_child_class method ?
+        end
+
+        class WpItemQueryParameter < QueryParameter
+          # TODO: How to have the PATTERN to config['pattern] || /ver=(?<v>[\d\.]+)/i w/o
+          # redefining all the create_child_class method ?
+
+          def xpath
+            @xpath ||= self.class::XPATH ||
+                       "//link[contains(@href,'#{target.todo}')]|//script[contains(@src,'#{target.todo}')]"
+          end
+
+          def path_pattern
+            @pattern ||= %r{
+              (?:#{Regexp.escape(target.plugins_dir)}|#{Regexp.escape(target.themes_dir)})/
+              [^/]+/
+            }ix
+          end
         end
 
         class Xpath < WPScan::Finders::DynamicFinder::Version::Xpath

@@ -7,8 +7,16 @@ module WPScan
           @db_data ||= super['wordpress'] || {} # TODO: use the class name so it can be put in the Base
         end
 
+        # @return [ Constant ]
         def self.version_finder_module
           Finders::WpVersion
+        end
+
+        # @return [ Array<Symbol> ]
+        def allowed_classes
+          @allowed_classes ||= %i[
+            Comment Xpath HeaderPattern BodyPattern JavascriptVar QueryParameter WpItemQueryParameter
+          ]
         end
 
         # @param [ Symbol ] finder_class

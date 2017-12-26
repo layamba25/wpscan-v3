@@ -12,6 +12,7 @@ module WPScan
           @db_data ||= YAML.safe_load(File.read(db_file), [Regexp])
         end
 
+        # @return [ Array<Symbol> ]
         def self.allowed_classes
           @allowed_classes ||= %i[Comment Xpath HeaderPattern BodyPattern JavascriptVar QueryParameter ConfigParser]
         end
