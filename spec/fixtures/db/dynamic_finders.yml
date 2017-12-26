@@ -9718,6 +9718,163 @@ plugins:
       - assets/css/nokaut-offers-box.css
       - assets/js/nokaut-offers-box.js
       version: true
+  nooz:
+    QueryParameter:
+      files:
+      - inc/assets/front.css
+      version: true
+  notes-postwidgets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/Notes-PostWidgets-sv_SE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Notes\ PostWidgets\ (?<v>[\d\.]+)/i
+      version: true
+  notes-widget-wrapper:
+    QueryParameter:
+      files:
+      - public/css/notes-widget-wrapper-public.css
+      - public/js/notes-widget-wrapper-public.js
+      version: true
+  notification-box-lite:
+    QueryParameter:
+      files:
+      - css/notification-box.css
+      - js/notification-box.js
+      version: true
+  notify-connect-par-jm-crea:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[contains(@name, "Notify Connect")]/@content
+      version: true
+  notifyit:
+    QueryParameter:
+      files:
+      - css/ns-style.min.css
+      - js/modernizr.custom.js
+      - js/classie.js
+      - js/notificationFx.js
+      - js/script.js
+      version: true
+  notifyme:
+    QueryParameter:
+      files:
+      - js/notifyme.js
+      version: true
+  novelist:
+    QueryParameter:
+      files:
+      - templates/novelist-front-end.min.css
+      version: true
+  now-watching:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="now-watching-version"]/@content
+      version: true
+  ns-category-widget:
+    QueryParameter:
+      files:
+      - public/assets/css/themes/default/style.css
+      - public/assets/js/jstree.min.js
+      - public/assets/js/jstree.state.js
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ns-category-widget.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ NS\ Category\ Widget\ (?<v>[\d\.]+)/i
+      version: true
+  ns-mistercorporate:
+    QueryParameter:
+      files:
+      - css/mistercorporate-contact-style.css
+      version: true
+  ns-slidebar-sliding-panel-sidebar:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  ns-tweet:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ns-tweet.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ NS\ Tweet\ (?<v>[\d\.]+)/i
+      version: true
+  nt-redirect:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/nt-redirect-vi_VN.po
+      pattern: !ruby/regexp /epath:\ D:\\\\projects\\\\nt\-redirect\\\\tags\\\\(?<v>[\d\.]+)/i
+      version: true
+  numix-post-slider:
+    QueryParameter:
+      files:
+      - public/assets/css/numix-slider.css
+      - public/assets/js/jquery.numix-slider.min.js
+      version: true
+  nuno-sarmento-api-to-post:
+    QueryParameter:
+      files:
+      - assets/css/nuno-sarmento-atp.css
+      version: true
+  nuno-sarmento-simple-contact-form:
+    QueryParameter:
+      files:
+      - "/assets/css/ns-simple-contact-form.css"
+      version: true
+  nwa:
+    QueryParameter:
+      files:
+      - public/css/nwa-public.css
+      - public/js/nwa-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nwa.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Navionics\-WebAPI\ (?<v>[\d\.]+)/i
+      version: true
+  nxtbridge-ledger:
+    QueryParameter:
+      files:
+      - css/nxtbridge-bootstrap.min.css
+      - css/font-awesome.min.css
+      - css/style.min.css
+      - nxtbridge.min.js
+      version: true
+  obituary-assistant-by-funeral-home-website-solutions:
+    Comment:
+      pattern: !ruby/regexp /\/obituary\-assistant\-by\-funeral\-home\-website\-solutions\/public\/css\/florist\-one\-flower\-delivery\-public\-old\-browser\.css\?ver=(?<v>[\d\.]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - public/css/jquery-ui.css
+      - public/css/fhw-solutions-obituaries-public.css
+      - public/captcha/src/jquery.simpleCaptcha.css
+      - public/css/slicknav.css
+      - public/css/florist-one-flower-delivery-public.css
+      - public/js/jquery.validate.js
+      - public/js/fhw-solutions-obituaries-main.js
+      - public/js/fhw-solutions-obituaries-photo-gallery.js
+      - public/js/fhw-solutions-obituaries-condolences.js
+      - public/js/jquery.slicknav.min.js
+      - public/js/jquery.history.js
+      - public/js/florist-one-flower-delivery-public.js
+      - public/js/resizeSensor.js
+      - public/js/elementQueries.js
+      - public/js/jquery.cookie.js
+      - public/captcha/src/jquery.simpleCaptcha.js
+      version: true
+  ocr-one:
+    QueryParameter:
+      files:
+      - public/css/ocr-one-public.css
+      - public/js/ocr-one-public.js
+      version: true
+  odds-widget:
+    QueryParameter:
+      files:
+      - js/ow-frontend.js
+      version: true
   oembed-travis:
     TranslationFile:
       class: BodyPattern
@@ -9730,11 +9887,20 @@ plugins:
       - public/assets/css/public.css
       - public/assets/js/public.js
       version: true
+  official-mailerlite-sign-up-forms:
+    QueryParameter:
+      files:
+      - assets/css/mailerlite_forms.css
+      version: true
   offline-shell:
     TranslationFile:
       class: BodyPattern
       path: lang/offline-shell.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Offline\ Shell\ (?<v>[\d\.]+)/i
+      version: true
+  og:
+    Comment:
+      pattern: !ruby/regexp /OG:\ (?<v>[\d\.]+)/i
       version: true
   oik:
     TranslationFile:
@@ -9748,6 +9914,12 @@ plugins:
       path: languages/oik-bwtrace-en_GB.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ oik\ bwtrace\ (?<v>[\d\.]+)/i
       version: true
+  oik-nivo-slider:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/oik-nivo-slider-en_GB.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ oik\-nivo\-slider\ (?<v>[\d\.]+)/i
+      version: true
   okv-oauth:
     TranslationFile:
       class: BodyPattern
@@ -9759,11 +9931,33 @@ plugins:
       files:
       - assets/js/shortcodes.js
       version: true
+  omniads:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="omniads"]/@content
+      version: true
+      pattern: !ruby/regexp /omniads\/(?<v>[\d\.]+)/i
   one-click-demo-import:
     TranslationFile:
       class: BodyPattern
       path: languages/pt-ocdi.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ One\ Click\ Demo\ Import\ (?<v>[\d\.]+)/i
+      version: true
+  onetwotrip:
+    QueryParameter:
+      files:
+      - public/css/wp-ott-public.css
+      - public/js/wp-ott-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-ott.pot
+      pattern: !ruby/regexp /"Plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  online-lesson-booking-system:
+    QueryParameter:
+      files:
+      - front.js
       version: true
   online-restaurant-reservation:
     QueryParameter:
@@ -9787,6 +9981,54 @@ plugins:
       path: package-lock.json
       key: version
       version: true
+  only-rest-api:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/only-rest-api.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Only\ REST\ API\ (?<v>[\d\.]+)/i
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  ontario-hst-calculator:
+    QueryParameter:
+      files:
+      - cc-ontario-hst-calculator.js
+      version: true
+  open-badge-factory:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/badgeos.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Open\ Badge\ Factory\ (?<v>[\d\.]+)/i
+      version: true
+  open-external-links-in-new-window:
+    QueryParameter:
+      files:
+      - oelinw.js
+      version: true
+  open-source-emoji:
+    QueryParameter:
+      files:
+      - pub/js/emoji.min.js
+      version: true
+  opera-share-button:
+    QueryParameter:
+      files:
+      - css/opera-buttons.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/opera-share-button.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Opera\ Share\ Button\ (?<v>[\d\.]+)/i
+      version: true
+  opes-wp-ads-manager:
+    QueryParameter:
+      files:
+      - inc/front/assets/css/style-front.css
+      - inc/front/assets/js/script-front-stats.js
+      version: true
   opml-importer:
     TranslationFile:
       class: BodyPattern
@@ -9798,9 +10040,39 @@ plugins:
       pattern: !ruby/regexp /var OptimizePress\s*=\s*{(?<json>.+?(?=};))};/i
       version: true
       version_key: version
+  optimum-review-feed:
+    QueryParameter:
+      files:
+      - public/css/swiper.min.css
+      - public/css/optimum-review-feed-public.css
+      - public/js/swiper.min.js
+      - public/js/optimum-review-feed-public.js
+      version: true
   optin-monster:
     Comment:
       pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>[\d\.]+))? -/i'
+      version: true
+  optinengine-email-optins-lead-generation:
+    QueryParameter:
+      files:
+      - dist/client/app.js
+      version: true
+  options-definitely:
+    TranslationFile:
+      class: BodyPattern
+      path: vendor/felixarntz/wpdlib/languages/wpdlib-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ wpdlib\ (?<v>[\d\.]+)/i
+      version: true
+  orangebox:
+    QueryParameter:
+      files:
+      - js/orangebox.min.js
+      version: true
+  orbis:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/orbis.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Orbis\ (?<v>[\d\.]+)/i
       version: true
   orcsnet-from-inditip:
     QueryParameter:

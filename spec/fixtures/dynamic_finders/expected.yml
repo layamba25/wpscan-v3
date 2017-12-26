@@ -12361,6 +12361,206 @@ plugins:
       - http://wp.lab/wp-content/plugins/nokaut-offers-box/assets/css/nokaut-offers-box.css?ver=1.3.13
       - http://wp.lab/wp-content/plugins/nokaut-offers-box/assets/js/nokaut-offers-box.js?ver=1.3.13
       confidence: 20
+  nooz:
+    QueryParameter:
+      number: 0.14.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/nooz/inc/assets/front.css?ver=0.14.1
+      confidence: 10
+  notes-postwidgets:
+    TranslationFile:
+      number: 1.0.8
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/notes-postwidgets/languages/Notes-PostWidgets-sv_SE.po,
+        Match: ''"Project-Id-Version: Notes PostWidgets 1.0.8'''
+  notes-widget-wrapper:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/notes-widget-wrapper/public/css/notes-widget-wrapper-public.css?ver=1.1.0
+      - http://wp.lab/wp-content/plugins/notes-widget-wrapper/public/js/notes-widget-wrapper-public.js?ver=1.1.0
+      confidence: 20
+  notification-box-lite:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/notification-box-lite/css/notification-box.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/notification-box-lite/js/notification-box.js?ver=1.0
+      confidence: 20
+  notify-connect-par-jm-crea:
+    MetaTag:
+      number: '2.5'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''2.5'''
+  notifyit:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/notifyit/css/ns-style.min.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/notifyit/js/modernizr.custom.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/notifyit/js/classie.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/notifyit/js/notificationFx.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/notifyit/js/script.js?ver=1.0.0
+      confidence: 50
+  notifyme:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/notifyme/js/notifyme.js?ver=1.0
+      confidence: 10
+  novelist:
+    QueryParameter:
+      number: 1.1.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/novelist/templates/novelist-front-end.min.css?ver=1.1.5
+      confidence: 10
+  now-watching:
+    MetaTag:
+      number: '1.1'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''1.1'''
+  ns-category-widget:
+    QueryParameter:
+      number: 3.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ns-category-widget/public/assets/css/themes/default/style.css?ver=3.0.0
+      - http://wp.lab/wp-content/plugins/ns-category-widget/public/assets/js/jstree.min.js?ver=3.0.0
+      - http://wp.lab/wp-content/plugins/ns-category-widget/public/assets/js/jstree.state.js?ver=3.0.0
+      - http://wp.lab/wp-content/plugins/ns-category-widget/public/assets/js/public.js?ver=3.0.0
+      confidence: 40
+    TranslationFile:
+      number: 3.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/ns-category-widget/languages/ns-category-widget.pot,
+        Match: ''"Project-Id-Version: NS Category Widget 3.0.0'''
+  ns-mistercorporate:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ns-mistercorporate/css/mistercorporate-contact-style.css?ver=1.0.0
+      confidence: 10
+  ns-slidebar-sliding-panel-sidebar:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ns-slidebar-sliding-panel-sidebar/css/frontend.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/ns-slidebar-sliding-panel-sidebar/js/frontend.js?ver=1.0.0
+      confidence: 20
+  ns-tweet:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/ns-tweet/languages/ns-tweet.pot, Match:
+        ''"Project-Id-Version: NS Tweet 1.0'''
+  nt-redirect:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/nt-redirect/lang/nt-redirect-vi_VN.po, Match:
+        ''epath: D:\\projects\\nt-redirect\\tags\\1.1'''
+  numix-post-slider:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/numix-post-slider/public/assets/css/numix-slider.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/numix-post-slider/public/assets/js/jquery.numix-slider.min.js?ver=1.0.2
+      confidence: 20
+  nuno-sarmento-api-to-post:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/nuno-sarmento-api-to-post/assets/css/nuno-sarmento-atp.css?ver=1.0.0
+      confidence: 10
+  nuno-sarmento-simple-contact-form:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/nuno-sarmento-simple-contact-form//assets/css/ns-simple-contact-form.css?ver=1.0.0
+      confidence: 10
+  nwa:
+    QueryParameter:
+      number: 0.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/nwa/public/css/nwa-public.css?ver=0.1.0
+      - http://wp.lab/wp-content/plugins/nwa/public/js/nwa-public.js?ver=0.1.0
+      confidence: 20
+    TranslationFile:
+      number: 0.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/nwa/languages/nwa.pot, Match: ''"Project-Id-Version:
+        Navionics-WebAPI 0.1.0'''
+  nxtbridge-ledger:
+    QueryParameter:
+      number: 1.3.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/nxtbridge-ledger/css/nxtbridge-bootstrap.min.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/nxtbridge-ledger/css/font-awesome.min.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/nxtbridge-ledger/css/style.min.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/nxtbridge-ledger/nxtbridge.min.js?ver=1.3.0
+      confidence: 40
+  obituary-assistant-by-funeral-home-website-solutions:
+    Comment:
+      number: 1.9.1
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''/obituary-assistant-by-funeral-home-website-solutions/public/css/florist-one-flower-delivery-public-old-browser.css?ver=1.9.1'''
+    QueryParameter:
+      number: 1.9.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/css/jquery-ui.css?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/css/fhw-solutions-obituaries-public.css?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/captcha/src/jquery.simpleCaptcha.css?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/css/slicknav.css?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/css/florist-one-flower-delivery-public.css?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/jquery.validate.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/fhw-solutions-obituaries-main.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/fhw-solutions-obituaries-photo-gallery.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/fhw-solutions-obituaries-condolences.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/jquery.slicknav.min.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/jquery.history.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/florist-one-flower-delivery-public.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/resizeSensor.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/elementQueries.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/js/jquery.cookie.js?ver=1.9.1
+      - http://wp.lab/wp-content/plugins/obituary-assistant-by-funeral-home-website-solutions/public/captcha/src/jquery.simpleCaptcha.js?ver=1.9.1
+      confidence: 100
+  ocr-one:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ocr-one/public/css/ocr-one-public.css?ver=1.0.4
+      - http://wp.lab/wp-content/plugins/ocr-one/public/js/ocr-one-public.js?ver=1.0.4
+      confidence: 20
+  odds-widget:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/odds-widget/js/ow-frontend.js?ver=1.0.1
+      confidence: 10
   oembed-travis:
     TranslationFile:
       number: 0.3.8
@@ -12376,6 +12576,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/offers-for-woocommerce/public/assets/css/public.css?ver=1.4.8.2
       - http://wp.lab/wp-content/plugins/offers-for-woocommerce/public/assets/js/public.js?ver=1.4.8.2
       confidence: 20
+  official-mailerlite-sign-up-forms:
+    QueryParameter:
+      number: 1.2.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/official-mailerlite-sign-up-forms/assets/css/mailerlite_forms.css?ver=1.2.2
+      confidence: 10
   offline-shell:
     TranslationFile:
       number: 0.4.0
@@ -12383,6 +12590,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/offline-shell/lang/offline-shell.pot, Match:
         ''"Project-Id-Version: Offline Shell 0.4.0'''
+  og:
+    Comment:
+      number: 2.4.7
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''OG: 2.4.7'''
   oik:
     TranslationFile:
       number: 3.2.3
@@ -12397,6 +12610,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/oik-bwtrace/languages/oik-bwtrace-en_GB.po,
         Match: ''"Project-Id-Version: oik bwtrace 2.1.1'''
+  oik-nivo-slider:
+    TranslationFile:
+      number: 1.15.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/oik-nivo-slider/languages/oik-nivo-slider-en_GB.po,
+        Match: ''"Project-Id-Version: oik-nivo-slider 1.15.0'''
   okv-oauth:
     TranslationFile:
       number: '1.0'
@@ -12411,6 +12631,12 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/olevmedia-shortcodes/assets/js/shortcodes.js?ver=1.1.9
+  omniads:
+    MetaTag:
+      number: '0.54'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''omniads/0.54'''
   one-click-demo-import:
     TranslationFile:
       number: 2.4.0
@@ -12418,6 +12644,27 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/one-click-demo-import/languages/pt-ocdi.pot,
         Match: ''oject-Id-Version: One Click Demo Import 2.4.0'''
+  onetwotrip:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/onetwotrip/public/css/wp-ott-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/onetwotrip/public/js/wp-ott-public.js?ver=1.0.0
+      confidence: 20
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/onetwotrip/languages/wp-ott.pot, Match:
+        ''"Plugin v1.0.0'''
+  online-lesson-booking-system:
+    QueryParameter:
+      number: 0.8.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/online-lesson-booking-system/front.js?ver=0.8.4
+      confidence: 10
   online-restaurant-reservation:
     QueryParameter:
       number: 1.0.0
@@ -12444,6 +12691,67 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/online-restaurant-reservation/package-lock.json,
         Match: ''1.0.0'''
+  only-rest-api:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/only-rest-api/languages/only-rest-api.pot,
+        Match: ''"Project-Id-Version: Only REST API 1.0.0'''
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/only-rest-api/package.json, Match: ''1.0.0'''
+  ontario-hst-calculator:
+    QueryParameter:
+      number: 0.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/ontario-hst-calculator/cc-ontario-hst-calculator.js?ver=0.1.0
+      confidence: 10
+  open-badge-factory:
+    TranslationFile:
+      number: 1.4.7.5
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/open-badge-factory/languages/badgeos.pot,
+        Match: ''"Project-Id-Version: Open Badge Factory 1.4.7.5'''
+  open-external-links-in-new-window:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/open-external-links-in-new-window/oelinw.js?ver=1.0.0
+      confidence: 10
+  open-source-emoji:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/open-source-emoji/pub/js/emoji.min.js?theme=android&ver=1.0.6
+      confidence: 10
+  opera-share-button:
+    QueryParameter:
+      number: 0.1.5.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/opera-share-button/css/opera-buttons.css?ver=0.1.5.1
+      confidence: 10
+    TranslationFile:
+      number: 0.1.5.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/opera-share-button/languages/opera-share-button.pot,
+        Match: ''"Project-Id-Version: Opera Share Button 0.1.5.1'''
+  opes-wp-ads-manager:
+    QueryParameter:
+      number: 1.2.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/opes-wp-ads-manager/inc/front/assets/css/style-front.css?ver=1.2.0
+      - http://wp.lab/wp-content/plugins/opes-wp-ads-manager/inc/front/assets/js/script-front-stats.js?ver=1.2.0
+      confidence: 20
   opml-importer:
     TranslationFile:
       number: '0.2'
@@ -12457,12 +12765,50 @@ plugins:
       found_by: Javascript Var (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''zepress","version":"2.5.7","script_debug":".m'''
+  optimum-review-feed:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/optimum-review-feed/public/css/swiper.min.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/optimum-review-feed/public/css/optimum-review-feed-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/optimum-review-feed/public/js/swiper.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/optimum-review-feed/public/js/optimum-review-feed-public.js?ver=1.0.0
+      confidence: 40
   optin-monster:
     Comment:
       number: 2.0.2.2
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''OptinMonster WordPress plugin v2.0.2.2 -'''
+  optinengine-email-optins-lead-generation:
+    QueryParameter:
+      number: 2.2.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/optinengine-email-optins-lead-generation/dist/client/app.js?v=2.2.3&ver=20161118
+      confidence: 10
+  options-definitely:
+    TranslationFile:
+      number: 0.6.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/options-definitely/vendor/felixarntz/wpdlib/languages/wpdlib-de_DE.po,
+        Match: ''"Project-Id-Version: wpdlib 0.6.7'''
+  orangebox:
+    QueryParameter:
+      number: 3.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/orangebox/js/orangebox.min.js?ver=3.0.0
+      confidence: 10
+  orbis:
+    TranslationFile:
+      number: 1.3.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/orbis/languages/orbis.pot, Match: ''"Project-Id-Version:
+        Orbis 1.3.3'''
   orcsnet-from-inditip:
     QueryParameter:
       number: 1.0.3
