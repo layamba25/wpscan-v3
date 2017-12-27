@@ -4,7 +4,7 @@ module WPScan
       class Wordpress < Base
         # @return [ Hash ]
         def self.db_data
-          @db_data ||= super['wordpress'] || {} # TODO: use the class name so it can be put in the Base
+          @db_data ||= super['wordpress'] || {}
         end
 
         # @return [ Constant ]

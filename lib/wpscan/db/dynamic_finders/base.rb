@@ -9,7 +9,8 @@ module WPScan
 
         # @return [ Hash ]
         def self.db_data
-          @db_data ||= YAML.safe_load(File.read(db_file), [Regexp])
+          # true allows aliases to be loaded
+          @db_data ||= YAML.safe_load(File.read(db_file), [Regexp], [], true)
         end
 
         # @return [ Array<Symbol> ]

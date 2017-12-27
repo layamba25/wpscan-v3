@@ -112,10 +112,8 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
           end
 
           context 'when the version is not detected' do
-            # TODO: Maybe a no_version.ext file in the fixtures dir to make
-            # sure the pattern doesn't match some junk ?
-            it 'returns nil' do
-              expect(finder.aggressive).to eql nil
+            it 'returns nil or an empty array' do
+              expect(finder.aggressive).to eql finder_super_class == 'QueryParameter' ? [] : nil
             end
           end
         else

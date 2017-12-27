@@ -34,6 +34,45 @@ wordpress:
     pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
     confidence: 80
     version: true
+  MostCommonWpIncludesQueryParameterInHomepage: &MostCommonWpIncludesQueryParameter
+    class: QueryParameter
+    xpath: //link[contains(@href,"wp-includes")]|//script[contains(@src,"wp-includes")]
+    files:
+    - wp-includes/js/wp-embed.min.js
+    - wp-includes/css/dashicons.min.css
+    - wp-includes/js/comment-reply.min.js
+    confidence_per_occurence: 30
+    version: true
+  CommonWpIncludesQueryParameterInHomepage:
+    <<: *MostCommonWpIncludesQueryParameter
+    files:
+    - wp-includes/css/buttons.min.css
+    - wp-includes/css/admin-bar.min.css
+    - wp-includes/js/wp-util.min.js
+    - wp-includes/js/wp-backbone.min.js
+    - wp-includes/js/utils.min.js
+    - wp-includes/js/thickbox/thickbox.css
+    - wp-includes/js/wp-a11y.min.js
+    - wp-includes/js/mediaelement/wp-mediaelement.min.css
+    - wp-includes/js/mediaelement/wp-mediaelement.min.js
+    - wp-includes/js/mediaelement/mediaelement-migrate.min.js
+    - wp-includes/js/mediaelement/wp-playlist.min.js
+    - wp-includes/js/wp-ajax-response.min.js
+    - wp-includes/css/wp-pointer.min.css
+    confidence_per_occurence: 10
+  QueryParameterInInstallPage: &QueryParameterInInstallPage
+    class: QueryParameter
+    path: wp-admin/install.php
+    xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]
+    files:
+    - wp-includes/css/buttons.min.css
+    - wp-includes/css/dashicons.min.css
+    - wp-admin/css/install.min.css
+    confidence_per_occurence: 20
+    version: true
+  QueryParameterInUpgradePage:
+    <<: *QueryParameterInInstallPage
+    path: wp-admin/upgrade.php
   SitemapGenerator:
     class: Comment
     path: sitemap.xml

@@ -46,6 +46,7 @@ module WPScan
             @pattern ||= %r{
               (?:#{Regexp.escape(target.plugins_dir)}|#{Regexp.escape(target.themes_dir)})/
               [^/]+/
+              .*\.(?:css|js)\z
             }ix
           end
         end

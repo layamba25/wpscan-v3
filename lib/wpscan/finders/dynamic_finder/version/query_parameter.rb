@@ -21,7 +21,7 @@ module WPScan
 
           # @param [ Typhoeus::Response ] response
           # @param [ Hash ] opts
-          # @return [ Array<Version> ]
+          # @return [ Array<Version>, nil ]
           def find(response, _opts = {})
             found = []
 
@@ -33,7 +33,7 @@ module WPScan
               )
             end
 
-            found
+            found.compact
           end
 
           # @param [ Typhoeus::Response ] response

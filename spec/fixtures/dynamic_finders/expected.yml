@@ -35,6 +35,47 @@ wordpress:
     confidence: 80
     interesting_entries:
     - 'http://wp.lab/wp-links-opml.php, Match: ''generator="WordPress/4.0"'''
+  MostCommonWpIncludesQueryParameterInHomepage:
+    number: 3.8.1
+    found_by: Most Common Wp Includes Query Parameter In Homepage (Passive Detection)
+    confidence: 90
+    interesting_entries:
+    - http://wp.lab/wp-includes/js/wp-embed.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/css/dashicons.min.css?ver=3.8.1
+    - http://wp.lab/wp-includes/js/comment-reply.min.js?ver=3.8.1
+  CommonWpIncludesQueryParameterInHomepage:
+    number: 3.8.1
+    found_by: Common Wp Includes Query Parameter In Homepage (Passive Detection)
+    confidence: 100
+    interesting_entries:
+    - http://wp.lab/wp-includes/css/buttons.min.css?ver=3.8.1
+    - http://wp.lab/wp-includes/css/admin-bar.min.css?ver=3.8.1
+    - https://wp.lab/wp-includes/js/wp-util.min.js?ver=3.8.1
+    - https://wp.lab/wp-includes/js/wp-backbone.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/js/utils.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/js/thickbox/thickbox.css?ver=3.8.1
+    - http://wp.lab/wp-includes/js/wp-a11y.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=3.8.1
+    - http://wp.lab/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/js/mediaelement/wp-playlist.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/js/wp-ajax-response.min.js?ver=3.8.1
+    - http://wp.lab/wp-includes/css/wp-pointer.min.css?ver=3.8.1
+  QueryParameterInInstallPage:
+    number: 3.8.1
+    found_by: Query Parameter In Install Page (Aggressive Detection)
+    confidence: 60
+    interesting_entries:
+    - http://wp.lab/wp-includes/css/buttons.min.css?ver=3.8.1
+    - http://wp.lab/wp-admin/css/install.min.css?ver=3.8.1
+    - http://wp.lab/wp-includes/css/dashicons.min.css?ver=3.8.1
+  QueryParameterInUpgradePage:
+    number: 3.8.1
+    found_by: Query Parameter In Upgrade Page (Aggressive Detection)
+    confidence: 40
+    interesting_entries:
+    - http://wp.lab/wp-includes/css/buttons.min.css?ver=3.8.1
+    - http://wp.lab/wp-admin/css/install.min.css?ver=3.8.1
   SitemapGenerator:
     number: 4.0
     found_by: Sitemap Generator (Aggressive Detection)
