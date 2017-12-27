@@ -1146,6 +1146,12 @@ plugins:
       files:
       - js/aspen2wx_jslib.js
       version: true
+  asterisk-web-callback:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/z_asteriskcallback-ru_RU.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ z_asteriskcallback\ (?<v>[\d\.]+)/i
+      version: true
   astickypostorderer:
     Comment:
       pattern: !ruby/regexp '/AStickyPostOrderER \(Version: (?<v>[\d\.]+)\)/i'
@@ -11023,6 +11029,11 @@ plugins:
       path: languages/smart-manager-for-wp-e-commerce.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Smart\ Manager\ (?<v>[\d\.]+)/i
       version: true
+  smart-marketing-for-wp:
+    QueryParameter:
+      files:
+      - public/css/egoi-for-wp-public.css
+      version: true
   smart-reporter-for-wp-e-commerce:
     TranslationFile:
       class: BodyPattern
@@ -11674,6 +11685,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  woo-one-click-upsell-funnel:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce_one_click_upsell_funnel-en_US.po
+      pattern: !ruby/regexp /on:\ WooCommerce\ One\ Click\ Upsell\ Funnel\ (?<v>[\d\.]+)/i
+      version: true
   woo-paypal-gateway:
     QueryParameter:
       files:
@@ -12217,6 +12234,11 @@ plugins:
       - polls-css.css
       - polls-js.js
       version: true
+  wp-post-comment-rating:
+    QueryParameter:
+      files:
+      - js/custom.js
+      version: true
   wp-postratings:
     QueryParameter:
       files:
@@ -12595,6 +12617,11 @@ plugins:
     QueryParameter:
       files:
       - js/zerospam.js
+      version: true
+  zerowp-social-profiles:
+    QueryParameter:
+      files:
+      - assets/css/styles.css
       version: true
   zodiacpress:
     TranslationFile:
