@@ -34,7 +34,13 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
       let(:target)     { WPScan::Target.new('http://wp.lab/') }
       let(:fixtures)   { File.join(DYNAMIC_FINDERS_FIXTURES, 'plugin_version') }
 
-      let(:expected)   { expected_all[slug][finder_class] }
+      let(:expected) do
+        if expected_all[slug][finder_class].is_a?(Hash)
+          [expected_all[slug][finder_class]]
+        else
+          expected_all[slug][finder_class]
+        end
+      end
 
       let(:stubbed_response) { { body: '' } }
 
@@ -60,15 +66,17 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
               )
             end
 
-            it 'returns the expected version from the homepage' do
-              version = finder.passive
+            it 'returns the expected version/s from the homepage' do
+              [*finder.passive].each_with_index do |version, index|
+                expected_version = expected.at(index)
 
-              expect(version).to be_a WPScan::Version
-              expect(version.number).to eql expected['number'].to_s
-              expect(version.found_by).to eql expected['found_by']
-              expect(version.interesting_entries).to match_array expected['interesting_entries']
+                expect(version).to be_a WPScan::Version
+                expect(version.number).to eql expected_version['number'].to_s
+                expect(version.found_by).to eql expected_version['found_by']
+                expect(version.interesting_entries).to match_array expected_version['interesting_entries']
 
-              expect(version.confidence).to eql expected['confidence'] if expected['confidence']
+                expect(version.confidence).to eql expected_version['confidence'] if expected_version['confidence']
+              end
             end
           end
         end
@@ -90,14 +98,16 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
             end
 
             it 'returns the expected version' do
-              version = finder.aggressive
+              [*finder.aggressive].each_with_index do |version, index|
+                expected_version = expected.at(index)
 
-              expect(version).to be_a WPScan::Version
-              expect(version.number).to eql expected['number'].to_s
-              expect(version.found_by).to eql expected['found_by']
-              expect(version.interesting_entries).to match_array expected['interesting_entries']
+                expect(version).to be_a WPScan::Version
+                expect(version.number).to eql expected_version['number'].to_s
+                expect(version.found_by).to eql expected_version['found_by']
+                expect(version.interesting_entries).to match_array expected_version['interesting_entries']
 
-              expect(version.confidence).to eql expected['confidence'] if expected['confidence']
+                expect(version.confidence).to eql expected_version['confidence'] if expected_version['confidence']
+              end
             end
           end
 

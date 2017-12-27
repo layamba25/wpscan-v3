@@ -21,17 +21,19 @@ module WPScan
 
           # @param [ Typhoeus::Response ] response
           # @param [ Hash ] opts
-          # @return [ Version ]
+          # @return [ Array<Version> ]
           def find(response, _opts = {})
-            # Multiple versions may appear, even though very unlikely,
-            # but specs would need to be reworked to handle that. Kind of a TODO.
+            found = []
+
             scan_response(response).each do |version_number, occurences|
-              return create_version(
+              found << create_version(
                 version_number,
                 confidence: self.class::CONFIDENCE_PER_OCCURENCE * occurences.size,
                 interesting_entries: occurences
               )
             end
+
+            found
           end
 
           # @param [ Typhoeus::Response ] response
