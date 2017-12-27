@@ -13,7 +13,7 @@ module WPScan
         end
 
         # @return [ Array<Symbol> ]
-        def allowed_classes
+        def self.allowed_classes
           @allowed_classes ||= %i[
             Comment Xpath HeaderPattern BodyPattern JavascriptVar QueryParameter WpItemQueryParameter
           ]

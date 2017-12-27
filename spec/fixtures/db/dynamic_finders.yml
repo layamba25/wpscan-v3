@@ -36,7 +36,7 @@ wordpress:
     version: true
   MostCommonWpIncludesQueryParameterInHomepage: &MostCommonWpIncludesQueryParameter
     class: QueryParameter
-    xpath: //link[contains(@href,"wp-includes")]|//script[contains(@src,"wp-includes")]
+    xpath: //link[contains(@href,"wp-includes/")]|//script[contains(@src,"wp-includes/")]
     files:
     - wp-includes/js/wp-embed.min.js
     - wp-includes/css/dashicons.min.css
@@ -60,6 +60,10 @@ wordpress:
     - wp-includes/js/wp-ajax-response.min.js
     - wp-includes/css/wp-pointer.min.css
     confidence_per_occurence: 10
+  PluginAndThemeQueryParameterInHomepage:
+    class: WpItemQueryParameter
+    pattern: !ruby/regexp /ver=(?<v>[\d\.]+)/i
+    version: true
   QueryParameterInInstallPage: &QueryParameterInInstallPage
     class: QueryParameter
     path: wp-admin/install.php
