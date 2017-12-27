@@ -22,6 +22,11 @@ wordpress:
     pattern: !ruby/regexp /wp\-includes\\\/js\\\/wp\-emoji\-release\.min\.js\?ver=(?<v>[\d\.]+)/i
     confidence: 70
     version: true
+  LimelightStorefrontJavascript:
+    class: Xpath
+    xpath: //script[not(@src) and contains(., 'limelightTracker')]
+    pattern: !ruby/regexp /'limelightTracker\.set', 'dimension3', '(?<v>[\d\.]+)'/i
+    version: true
   MetaGenerator:
     class: Xpath
     xpath: //meta[@name="generator"]/@content
@@ -82,6 +87,11 @@ wordpress:
     path: sitemap.xml
     pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
     confidence: 80
+    version: true
+  StrongTestimonialsComment:
+    class: Xpath
+    xpath: //comment()[contains(., 'Strong Testimonials')]
+    pattern: !ruby/regexp '/versions: WordPress (?<v>[\d\.]+) \|/i'
     version: true
 plugins:
   10centmail-subscription-management-and-analytics:

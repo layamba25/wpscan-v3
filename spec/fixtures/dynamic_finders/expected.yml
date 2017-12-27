@@ -23,6 +23,11 @@ wordpress:
     confidence: 70
     interesting_entries:
     - 'http://wp.lab/, Match: ''wp-includes\/js\/wp-emoji-release.min.js?ver=3.8.1'''
+  LimelightStorefrontJavascript:
+    number: 3.8.1
+    found_by: Limelight Storefront Javascript (Passive Detection)
+    interesting_entries:
+    - "http://wp.lab/, Match: ''limelightTracker.set', 'dimension3', '3.8.1''"
   MetaGenerator:
     number: 3.8.1
     found_by: Meta Generator (Passive Detection)
@@ -90,6 +95,11 @@ wordpress:
     confidence: 80
     interesting_entries:
     - 'http://wp.lab/sitemap.xml, Match: ''generator="Wordpress/4.0"'''
+  StrongTestimonialsComment:
+    number: 4.0
+    found_by:  Strong Testimonials Comment (Passive Detection)
+    interesting_entries:
+    - 'http://wp.lab/, Match: ''versions: WordPress 4.0 |'''
 plugins:
   10centmail-subscription-management-and-analytics:
     MetaTag:
