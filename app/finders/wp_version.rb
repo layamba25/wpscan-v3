@@ -2,9 +2,6 @@ require_relative 'wp_version/rss_generator'
 require_relative 'wp_version/atom_generator'
 require_relative 'wp_version/rdf_generator'
 require_relative 'wp_version/readme'
-require_relative 'wp_version/homepage_stylesheet_numbers'
-require_relative 'wp_version/install_stylesheet_numbers'
-require_relative 'wp_version/upgrade_stylesheet_numbers'
 require_relative 'wp_version/unique_fingerprinting'
 
 module WPScan
@@ -29,10 +26,7 @@ module WPScan
         # @param [ WPScan::Target ] target
         def initialize(target)
           (WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.keys +
-            %w[
-              RSSGenerator AtomGenerator HomepageStylesheetNumbers InstallStylesheetNumbers
-              UpgradeStylesheetNumbers RDFGenerator Readme UniqueFingerprinting
-            ]
+            %w[RSSGenerator AtomGenerator RDFGenerator Readme UniqueFingerprinting]
           ).each do |finder_name|
             finders << WpVersion.const_get(finder_name.to_sym).new(target)
           end

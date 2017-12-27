@@ -9,13 +9,7 @@ describe WPScan::Finders::WpVersion::Base do
   let(:url)            { 'http://ex.lo/' }
 
   describe '#finders' do
-    let(:expected) do
-      %w[
-        RSSGenerator AtomGenerator HomepageStylesheetNumbers
-        InstallStylesheetNumbers UpgradeStylesheetNumbers RDFGenerator Readme
-        UniqueFingerprinting
-      ]
-    end
+    let(:expected) { %w[RSSGenerator AtomGenerator RDFGenerator Readme UniqueFingerprinting] }
 
     let(:expected_dynamic_finders) { WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.keys }
 
