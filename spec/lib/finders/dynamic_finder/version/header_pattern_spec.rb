@@ -14,7 +14,7 @@ describe WPScan::Finders::DynamicFinder::Version::HeaderPattern do
   let(:finder_module) { WPScan::Finders::Version::Rspec }
   let(:finder_class)  { WPScan::Finders::Version::Rspec::HeaderPattern }
   let(:finder_config) { { 'header' => 'Location' } }
-  let(:default)       { { 'confidence' => 30 } }
+  let(:default)       { { 'confidence' => 60 } }
 
   before { described_class.create_child_class(finder_module, :HeaderPattern, finder_config) }
   after  { finder_module.send(:remove_const, :HeaderPattern) }

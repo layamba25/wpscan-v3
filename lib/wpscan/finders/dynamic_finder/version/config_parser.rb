@@ -17,7 +17,7 @@ module WPScan
                 const_set(:PARSER, config['parser'])
                 const_set(:KEY, config['key'])
                 const_set(:PATTERN, config['pattern'] || /(?<v>[\d\.]+)/i)
-                const_set(:CONFIDENCE, config['confidence'] || 40)
+                const_set(:CONFIDENCE, config['confidence'] || 70)
               end
             )
           end

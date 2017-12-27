@@ -13,7 +13,7 @@ module WPScan
               klass, Class.new(self) do
                 const_set(:PATH, config['path'])
                 const_set(:PATTERN, config['pattern'])
-                const_set(:CONFIDENCE, config['confidence'] || 30)
+                const_set(:CONFIDENCE, config['confidence'] || 60)
               end
             )
           end

@@ -4,7 +4,6 @@ wordpress:
     class: JavascriptVar
     xpath: //script[@data-cfasync="false"]
     pattern: !ruby/regexp /wp_blog_version\s*=\s*"(?<v>[\d\.]+)";/i
-    confidence: 70
     version: true
   CardealerpressHeader:
     class: HeaderPattern
@@ -20,7 +19,6 @@ wordpress:
     class: JavascriptVar
     xpath: //script[contains(text(), "wpemojiSettings")]
     pattern: !ruby/regexp /wp\-includes\\\/js\\\/wp\-emoji\-release\.min\.js\?ver=(?<v>[\d\.]+)/i
-    confidence: 70
     version: true
   LimelightStorefrontJavascript:
     class: Xpath
@@ -31,13 +29,11 @@ wordpress:
     class: Xpath
     xpath: //meta[@name="generator"]/@content
     pattern: !ruby/regexp /wordPress (?<v>[\d\.]+)/i
-    confidence: 80
     version: true
   OpmlGenerator:
     class: Comment
     path: wp-links-opml.php
     pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
-    confidence: 80
     version: true
   MostCommonWpIncludesQueryParameterInHomepage: &MostCommonWpIncludesQueryParameter
     class: QueryParameter
@@ -86,7 +82,6 @@ wordpress:
     class: Comment
     path: sitemap.xml
     pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
-    confidence: 80
     version: true
   StrongTestimonialsComment:
     class: Xpath

@@ -14,7 +14,7 @@ describe WPScan::Finders::DynamicFinder::Version::BodyPattern do
   let(:finder_module) { WPScan::Finders::Version::Rspec }
   let(:finder_class)  { WPScan::Finders::Version::Rspec::BodyPattern }
   let(:finder_config) { { 'pattern' => /aaa/i } }
-  let(:default)       { { 'confidence' => 30 } }
+  let(:default)       { { 'confidence' => 60 } }
 
   before { described_class.create_child_class(finder_module, :BodyPattern, finder_config) }
   after  { finder_module.send(:remove_const, :BodyPattern) }

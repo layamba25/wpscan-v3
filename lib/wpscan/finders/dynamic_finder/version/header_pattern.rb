@@ -13,7 +13,7 @@ module WPScan
                 const_set(:PATH, config['path'])
                 const_set(:HEADER, config['header'])
                 const_set(:PATTERN, config['pattern'])
-                const_set(:CONFIDENCE, config['confidence'] || 30)
+                const_set(:CONFIDENCE, config['confidence'] || 60)
               end
             )
           end

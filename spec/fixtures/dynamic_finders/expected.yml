@@ -3,7 +3,6 @@ wordpress:
   AddthisJavascript:
     number: 3.8.1
     found_by: Addthis Javascript (Passive Detection)
-    confidence: 70
     interesting_entries:
     - 'http://wp.lab/, Match: ''wp_blog_version = "3.8.1";'''
   CardealerpressHeader:
@@ -20,7 +19,6 @@ wordpress:
   EmojiSettings:
     number: 3.8.1
     found_by: Emoji Settings (Passive Detection)
-    confidence: 70
     interesting_entries:
     - 'http://wp.lab/, Match: ''wp-includes\/js\/wp-emoji-release.min.js?ver=3.8.1'''
   LimelightStorefrontJavascript:
@@ -31,13 +29,11 @@ wordpress:
   MetaGenerator:
     number: 3.8.1
     found_by: Meta Generator (Passive Detection)
-    confidence: 80
     interesting_entries:
     - 'http://wp.lab/, Match: ''WordPress 3.8.1'''
   OpmlGenerator:
     number: 4.0
     found_by: Opml Generator (Aggressive Detection)
-    confidence: 80
     interesting_entries:
     - 'http://wp.lab/wp-links-opml.php, Match: ''generator="WordPress/4.0"'''
   MostCommonWpIncludesQueryParameterInHomepage:
@@ -92,7 +88,6 @@ wordpress:
   SitemapGenerator:
     number: 4.0
     found_by: Sitemap Generator (Aggressive Detection)
-    confidence: 80
     interesting_entries:
     - 'http://wp.lab/sitemap.xml, Match: ''generator="Wordpress/4.0"'''
   StrongTestimonialsComment:
