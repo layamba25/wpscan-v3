@@ -10506,11 +10506,57 @@ plugins:
       pattern: !ruby/regexp /var peepsodata\s*=\s*{(?<json>.+?(?=,"login_)),"login_/i
       version_key: version
       version: true
+  perelandra-sermons:
+    QueryParameter:
+      files:
+      - assets/dist/css/main.css
+      - vendor/fitVids/jquery.fitvids.js
+      - assets/src/js/main.js
+      version: true
+  persian-quote-of-the-day-by-sokhanak:
+    QueryParameter:
+      files:
+      - public/css/sokhanak-public.css
+      - public/js/sokhanak-public.js
+      version: true
   persian-woocommerce:
     TranslationFile:
       class: BodyPattern
       path: languages/woocommerce.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WooCommerce\ (?<v>[\d\.]+)/i
+      version: true
+  personal-contact-info-widget:
+    QueryParameter:
+      files:
+      - css/wp-styles.css
+      version: true
+  personal-fundraiser:
+    TranslationFile:
+      class: BodyPattern
+      path: translations/pfund-ro_RO.po
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Personal\ Fundraiser\ (?<v>[\d\.]+)/i
+      version: true
+  pgreca-chat:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pgreca_chat-it_IT.po
+      pattern: !ruby/regexp /notification\ for\ new\ message\.\ \ \(in\ ver\.\ (?<v>[\d\.]+)/i
+      version: true
+  phanes-care-initiative:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  phanes-payments:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      version: true
+  photection:
+    QueryParameter:
+      files:
+      - public/resources/build/photection.css
+      - public/resources/build/photection.js
       version: true
   photo-gallery:
     QueryParameter:
@@ -10521,6 +10567,68 @@ plugins:
       - js/jquery.mobile.js
       - js/jquery.mCustomScrollbar.concat.min.js
       - js/bwg_gallery_box.js
+      version: true
+  photo-swipe:
+    QueryParameter:
+      files:
+      - lib/photoswipe.css
+      - lib/default-skin/default-skin.css
+      - lib/photoswipe.min.js
+      - lib/photoswipe-ui-default.min.js
+      - js/photoswipe.js
+      version: true
+  photonic:
+    QueryParameter:
+      files:
+      - include/scripts/lightslider/css/lightslider.css
+      - include/css/photonic.css
+      - include/scripts/lightslider/lightslider.min.js
+      - include/scripts/.min.js
+      - include/scripts/photonic.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/photonic.po
+      pattern: !ruby/regexp /SmugMug,\ 500px,\ Zenfolio\ and\ Instagram\ (?<v>[\d\.]+)/i
+      version: true
+  phzoom:
+    QueryParameter:
+      files:
+      - phzoom.js
+      version: true
+  picasa-express-x2:
+    QueryParameter:
+      files:
+      - pe2-display.css
+      version: true
+  picsascii:
+    QueryParameter:
+      files:
+      - public/css/picsascii-public.min.css
+      version: true
+  pigeon-pack:
+    QueryParameter:
+      files:
+      - "/css/pigeonpack.min.css"
+      - "/js/pigeonpack.min.js"
+      version: true
+  piklist:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Piklist\ (?<v>[\d\.]+)/i
+  pinboard-bookmarks:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pinboard-bookmarks.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pinboard\ Bookmarks\ (?<v>[\d\.]+)/i
+      version: true
+  pinq-inquiry-management-solution:
+    QueryParameter:
+      files:
+      - public/css/picalunchpinq-public.css
+      - public/js/picalunchpinq-public.js
       version: true
   pinterest-pin-it-button:
     QueryParameter:
@@ -10539,15 +10647,83 @@ plugins:
       path: languages/pixel-caffeine.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Pixel\ Caffeine\ (?<v>[\d\.]+)/i
       version: true
+  pixopoint-menu:
+    Comment:
+      pattern: !ruby/regexp /PixoPoint\ Menu\ Plugin\ v(?<v>[\d\.]+)/i
+      version: true
+  pixproof:
+    QueryParameter:
+      files:
+      - css/inuit.css
+      - css/mangnific-popup.css
+      - js/public.js
+      version: true
+  pj-jquery-ui-helper:
+    QueryParameter:
+      files:
+      - css/themes//minified/jquery-ui.min.css
+      version: true
+  pj-news-ticker:
+    QueryParameter:
+      files:
+      - public/css/pj-news-ticker.css
+      - public/js/pj-news-ticker.js
+      version: true
+  placester:
+    QueryParameter:
+      files:
+      - placester-search/js/jquery.address.js
+      - placester-search/js/listings.js
+      version: true
   platinum-seo-pack:
     Comment:
       pattern: !ruby/regexp /platinum\ seo\ pack\ (?<v>[\d\.]+)/i
+      version: true
+  plinks:
+    QueryParameter:
+      files:
+      - plinks.css
+      version: true
+  plugin-bundles:
+    QueryParameter:
+      files:
+      - assets/js/bndls.js
+      version: true
+  plugin-grouper:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  plugin-info-cards:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-info-cards.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Plugin\ Info\ Cards\ (?<v>[\d\.]+)/i
+      version: true
+  plugin-kontakt:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/pk-de_DE.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Plugin:\ Kontakt\ v(?<v>[\d\.]+)/i
       version: true
   plugin-reviews:
     QueryParameter:
       files:
       - plugin-reviews.css
       - plugin-reviews.js
+      version: true
+  plugmatter-pricing-table:
+    QueryParameter:
+      files:
+      - css/pmpt_responsivegrid.css
+      - css/pmpt_buttons.css
+      - js/pmpt_frontend.js
+      version: true
+  pocket-articles-collection:
+    QueryParameter:
+      files:
+      - pocketarticles-collection.css
       version: true
   podamibe-2checkout:
     QueryParameter:
@@ -10568,17 +10744,60 @@ plugins:
       - assets/pac-calendar.css
       - assets/pac-front-style.css
       version: true
+  podcastde-wordpress-plugin:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/podcastde.pot
+      pattern: !ruby/regexp /Id\-Version:\ podcast\.de\ Plugin\ Standards\ (?<v>[\d\.]+)/i
+      version: true
   podlove-podcasting-plugin-for-wordpress:
     QueryParameter:
       files:
       - css/admin-font.css
       - js/frontend.js
       version: true
+  podlove-web-player:
+    QueryParameter:
+      files:
+      - static/podlove-web-player.min.css
+      - static/podlove-web-player.min.js
+      version: true
+  pojo-accessibility:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pojo-accessibility.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ pojo\-accessibility\ (?<v>[\d\.]+)/i
+      version: true
+  pojo-builder-animation:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pb-animation.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ pojo\-builder\-animation\ (?<v>[\d\.]+)/i
+      version: true
+  pojo-lightbox:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pojo-lightbox.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ pojo\-lightbox\ (?<v>[\d\.]+)/i
+      version: true
+  pojo-news-ticker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pojo-news-ticker.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ pojo\-news\-ticker\ (?<v>[\d\.]+)/i
+      version: true
   pojo-sidebars:
     TranslationFile:
       class: BodyPattern
       path: languages/pojo-sidebars.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ pojo\-sidebars\ (?<v>[\d\.]+)/i
+      version: true
+  polldirectory:
+    QueryParameter:
+      files:
+      - css/font-awesome-4.2.0/css/font-awesome.min.css
+      - css/user.css
+      - js/admin.js
       version: true
   popup-maker:
     QueryParameter:
