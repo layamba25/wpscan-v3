@@ -22,7 +22,7 @@ wordpress:
     version: true
   LimelightStorefrontJavascript:
     class: Xpath
-    xpath: "//script[not(@src) and contains(., 'limelightTracker')]"
+    xpath: //script[not(@src) and contains(., "limelightTracker")]
     pattern: !ruby/regexp /'limelightTracker\.set', 'dimension3', '(?<v>\d+\.[\.\d]+)'/i
     version: true
   MetaGenerator:
@@ -93,7 +93,7 @@ wordpress:
     version: true
   StrongTestimonialsComment:
     class: Xpath
-    xpath: "//comment()[contains(., 'Strong Testimonials')]"
+    xpath: //comment()[contains(., "Strong Testimonials")]
     pattern: !ruby/regexp '/versions: WordPress (?<v>\d+\.[\.\d]+) \|/i'
     version: true
 plugins:
@@ -10540,7 +10540,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/pgreca_chat-it_IT.po
-      pattern: !ruby/regexp /notification\ for\ new\ message\.\ \ \(in\ ver\.\ (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp '/Project-Id-Version: pgreca_chat (?<v>\d+\.[\.\d]+)/i'
       version: true
   phanes-care-initiative:
     QueryParameter:

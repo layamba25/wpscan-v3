@@ -13377,11 +13377,11 @@ plugins:
         Match: ''Project-Id-Version: Personal Fundraiser 0.8.3'''
   pgreca-chat:
     TranslationFile:
-      number: '0.8'
+      number: '0.7'
       found_by: Translation File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/pgreca-chat/languages/pgreca_chat-it_IT.po,
-        Match: ''notification for new message.  (in ver. 0.8'''
+        Match: ''Project-Id-Version: pgreca_chat 0.7'''
   phanes-care-initiative:
     QueryParameter:
       number: 1.0.0
