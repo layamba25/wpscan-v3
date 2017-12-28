@@ -12,7 +12,7 @@ module WPScan
               klass, Class.new(self) do
                 const_set(:PATH, config['path'])
                 const_set(:XPATH, config['xpath'])
-                const_set(:PATTERN, config['pattern'] || /\A(?<v>[\d\.]+)/i)
+                const_set(:PATTERN, config['pattern'] || /\A(?<v>\d+\.[\.\d]+)/)
                 const_set(:CONFIDENCE, config['confidence'] || 60)
               end
             )

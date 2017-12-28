@@ -16,7 +16,7 @@ module WPScan
                 const_set(:PATH, config['path'])
                 const_set(:PARSER, config['parser'])
                 const_set(:KEY, config['key'])
-                const_set(:PATTERN, config['pattern'] || /(?<v>[\d\.]+)/i)
+                const_set(:PATTERN, config['pattern'] || /(?<v>\d+\.[\.\d]+)/)
                 const_set(:CONFIDENCE, config['confidence'] || 70)
               end
             )
