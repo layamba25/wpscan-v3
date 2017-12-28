@@ -10799,10 +10799,55 @@ plugins:
       - css/user.css
       - js/admin.js
       version: true
+  pootle-page-builder:
+    QueryParameter:
+      files:
+      - css/front.css
+      version: true
+  popeye:
+    QueryParameter:
+      files:
+      - jquery/jquery.popeye.css
+      - styles/example-plain/style.css
+      - jquery/jquery.popeye-2.0.4.min.js
+      version: true
+  popliup:
+    QueryParameter:
+      files:
+      - assets/css/popliup-popup-basic.css
+      version: true
+  popular-post-google-analytics-real-time:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/popularpostrealtime.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ PopularPostRealTime\ (?<v>[\d\.]+)/i
+      version: true
+  popular-widget:
+    QueryParameter:
+      files:
+      - _css/pop-widget.css
+      - _js/pop-widget.js
+      version: true
+  popup-anything-on-click:
+    QueryParameter:
+      files:
+      - assets/css/popupaoc-public-style.css
+      version: true
+  popup-lightbox:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/popup-lightbox-en.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Popup\ Lightbox\ (?<v>[\d\.]+)/i
+      version: true
   popup-maker:
     QueryParameter:
       files:
       - deprecated/assets/css/site.min.css
+      version: true
+  popup-on-click:
+    QueryParameter:
+      files:
+      - public/js/popup-on-click-public.js
       version: true
   popup-scroll:
     QueryParameter:
@@ -10812,11 +10857,39 @@ plugins:
       - public/assets/js/jquery-cookie/jquery.cookie.js
       - public/assets/js/public.js
       version: true
+  popup4phone:
+    QueryParameter:
+      files:
+      - css/popup4phone.css
+      - vendor/bootstrap-partial/bootstrap-partial.css
+      - vendor/bootstrap-partial/bootstrap-theme-partial.css
+      - js/popup4phone.js
+      version: true
+  popupper-v10:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/popupper-v10-es_ES.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ popupper\-v10\ (?<v>[\d\.]+)/i
+      version: true
   popups:
     QueryParameter:
       files:
       - public/assets/css/public.css
       - public/assets/js/min/public-min.js
+      version: true
+  portfolio-and-projects:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/wp-pap-public.css
+      - assets/css/portfolio.jquery.css
+      version: true
+  portfolio-designer-lite:
+    QueryParameter:
+      files:
+      - css/jquery.fancybox.css
+      - css/font-awesome.min.css
+      - css/style.css
       version: true
   portfolio-gallery-by-ims:
     QueryParameter:
@@ -10825,12 +10898,182 @@ plugins:
       - public/css/elastic_grid.min.css
       - public/js/ims-portfolio-public.js
       version: true
+  portfolio-toolkit:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/portfolio-toolkit.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Portfolio\ Toolkit\ (?<v>[\d\.]+)/i
+      version: true
   post-and-page-builder:
     QueryParameter:
       files:
       - assets/css/editor-fe.min.css
       - assets/js/jquery-stellar/jquery.stellar.js
       - assets/js/editor/public.min.js
+      version: true
+  post-bookmarks:
+    QueryParameter:
+      files:
+      - _inc/css/post_bkmarks.css
+      version: true
+  post-carousel:
+    QueryParameter:
+      files:
+      - public/assets/css/slick.css
+      - public/assets/css/spfont.css
+      - public/assets/css/style.css
+      - public/assets/js/slick.min.js
+      version: true
+  post-co-authors:
+    QueryParameter:
+      files:
+      - public/css/post-co-authors-public.css
+      - public/js/post-co-authors-public.js
+      version: true
+  post-comment-validation:
+    QueryParameter:
+      files:
+      - public/css/post-comment-validation-public.css
+      - public/js/post-comment-validation-public.js
+      version: true
+  post-content-shortcodes:
+    QueryParameter:
+      files:
+      - styles/default-styles.css
+      version: true
+  post-display:
+    QueryParameter:
+      files:
+      - js/owl.carousel.js
+      version: true
+  post-display-counter:
+    QueryParameter:
+      files:
+      - js/post-display-counter.js
+      version: true
+  post-featured-font-icon:
+    QueryParameter:
+      files:
+      - css/icon-picker.css
+      - "/js/icon-picker.js"
+      version: true
+  post-filters-by-digitize:
+    QueryParameter:
+      files:
+      - js/dg-posts-filter.js
+      version: true
+  post-grid-and-filter-ultimate:
+    QueryParameter:
+      files:
+      - assets/css/pgafu-public.css
+      version: true
+  post-hit-counter:
+    QueryParameter:
+      files:
+      - assets/css/widget.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/post-hit-counter.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ Hit\ Counter\ (?<v>[\d\.]+)/i
+      version: true
+  post-index:
+    TranslationFile:
+      class: BodyPattern
+      path: post-index.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ Index\ (?<v>[\d\.]+)/i
+      version: true
+  post-length-indicator:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/post-length-indicator-en_GB.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Post\ Length\ Indicator\ v(?<v>[\d\.]+)/i
+      version: true
+  post-likerator:
+    QueryParameter:
+      files:
+      - javascript/post-likerator.js
+      version: true
+  post-list-generator:
+    QueryParameter:
+      files:
+      - post-list-generator.css
+      - next-page.js
+      version: true
+  post-notif:
+    QueryParameter:
+      files:
+      - public/js/post-notif-public.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/post-notif-de_DE_formal.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ Notif\ (?<v>[\d\.]+)/i
+      version: true
+  post-ratings:
+    QueryParameter:
+      files:
+      - assets/jquery.raty.css
+      - js/post-ratings.js
+      - assets/jquery.raty.js
+      version: true
+  post-revision-workflow:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/post-revision-workflow.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Post\ Revision\ Workflow\ (?<v>[\d\.a-z]+)/i
+      version: true
+  post-slider-wd:
+    QueryParameter:
+      files:
+      - css/wdps_frontend.css
+      - css/wdps_effects.css
+      - js/jquery.mobile.js
+      - js/wdps_frontend.js
+      version: true
+  post-sliders:
+    QueryParameter:
+      files:
+      - js/owl.carousel.js
+      version: true
+  post-theming:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/post-theming.pot
+      pattern: !ruby/regexp /on\ of\ the\ WordPress\ plugin\ Post\ Theming\ (?<v>[\d\.]+)/i
+      version: true
+  post-thumbnail-from-url:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/post-thumbnail-from-url-en_GB.po
+      pattern: !ruby/regexp /ct\-Id\-Version:\ Post\ thumbnail\ from\ url\ v(?<v>[\d\.]+)/i
+      version: true
+  post-timeline:
+    QueryParameter:
+      files:
+      - public/css/post-timeline.css
+      - public/css/bootstrap.min.css
+      - public/css/bootstrap-theme.min.css
+      - public/js/libs_new.js
+      - public/js/post-timeline.js
+      version: true
+  post-to-queue:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/post-to-queue.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Post\ to\ Queue\ (?<v>[\d\.]+)/i
+      version: true
+  post-type-information:
+    QueryParameter:
+      files:
+      - public/css/gs-post-type-information-public.css
+      - public/js/gs-post-type-information-public.js
+      version: true
+  post-type-requirements-checklist:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/aptrc.pot
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Requirements\ Checklist\ (?<v>[\d\.]+)/i
       version: true
   post-types-definitely:
     TranslationFile:
@@ -10843,10 +11086,59 @@ plugins:
       files:
       - css/frontend.css
       version: true
+  posts:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/posts.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Posts\ (?<v>[\d\.]+)/i
+      version: true
+  posts-data-table:
+    QueryParameter:
+      files:
+      - assets/css/posts-data-table.min.css
+      - assets/js/posts-data-table.min.js
+      version: true
+  posts-in-category-widget:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  posts-in-sidebar:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/posts-in-sidebar.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Posts\ in\ Sidebar\ (?<v>[\d\.]+)/i
+      version: true
+  posts-slider-shortcode:
+    QueryParameter:
+      files:
+      - js/owl.carousel.js
+      version: true
+  posttube:
+    Comment:
+      pattern: !ruby/regexp /Generated\ By\ PostTube\ (?<v>[\d\.]+)/i
+      version: true
+  potenza-slider:
+    QueryParameter:
+      files:
+      - css/ps-style.css
+      - js/ps-script.js
+      version: true
   powerpack-lite:
     QueryParameter:
       files:
       - assets/css/pwpc-public.css
+      version: true
+  pp-express-wc4jp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pp-express-wc4jp.pot
+      pattern: !ruby/regexp /\-Version:\ PayPal\ Express\ Checkout\ WC4JP\ (?<v>[\d\.]+)/i
+      version: true
+  ppm-accordion:
+    QueryParameter:
+      files:
+      - js/ppm-accordion-active.js
       version: true
   pramadillo-activecampaign-email-preference-center:
     QueryParameter:
@@ -11345,7 +11637,7 @@ plugins:
     Changelog:
       class: BodyPattern
       path: changelog.md
-      pattern: !ruby/regexp /(?:#|\*)\s?(?<v>[\d\.]+)/
+      pattern: !ruby/regexp /(?:#|\*)\s?(?<v>\d(?:\.\d)+)/
       version: true
     QueryParameter:
       files:
