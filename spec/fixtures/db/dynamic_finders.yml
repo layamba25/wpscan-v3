@@ -22,7 +22,7 @@ wordpress:
     version: true
   LimelightStorefrontJavascript:
     class: Xpath
-    xpath: //script[not(@src) and contains(., 'limelightTracker')]
+    xpath: "//script[not(@src) and contains(., 'limelightTracker')]"
     pattern: !ruby/regexp /'limelightTracker\.set', 'dimension3', '(?<v>[\d\.]+)'/i
     version: true
   MetaGenerator:
@@ -35,17 +35,18 @@ wordpress:
     path: wp-links-opml.php
     pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>[\d\.]+)"\z/i
     version: true
-  MostCommonWpIncludesQueryParameterInHomepage: &MostCommonWpIncludesQueryParameter
+  MostCommonWpIncludesQueryParameterInHomepage:
     class: QueryParameter
     xpath: //link[contains(@href,"wp-includes/")]|//script[contains(@src,"wp-includes/")]
     files:
     - wp-includes/js/wp-embed.min.js
     - wp-includes/css/dashicons.min.css
     - wp-includes/js/comment-reply.min.js
-    confidence_per_occurence: 30
+    confidence_per_occurence: 40
     version: true
   CommonWpIncludesQueryParameterInHomepage:
-    <<: *MostCommonWpIncludesQueryParameter
+    class: QueryParameter
+    xpath: //link[contains(@href,"wp-includes/")]|//script[contains(@src,"wp-includes/")]
     files:
     - wp-includes/css/buttons.min.css
     - wp-includes/css/admin-bar.min.css
@@ -61,11 +62,12 @@ wordpress:
     - wp-includes/js/wp-ajax-response.min.js
     - wp-includes/css/wp-pointer.min.css
     confidence_per_occurence: 10
+    version: true
   PluginAndThemeQueryParameterInHomepage:
     class: WpItemQueryParameter
     pattern: !ruby/regexp /ver=(?<v>[\d\.]+)/i
     version: true
-  QueryParameterInInstallPage: &QueryParameterInInstallPage
+  QueryParameterInInstallPage:
     class: QueryParameter
     path: wp-admin/install.php
     xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]
@@ -73,11 +75,17 @@ wordpress:
     - wp-includes/css/buttons.min.css
     - wp-includes/css/dashicons.min.css
     - wp-admin/css/install.min.css
-    confidence_per_occurence: 20
+    confidence_per_occurence: 30
     version: true
   QueryParameterInUpgradePage:
-    <<: *QueryParameterInInstallPage
+    class: QueryParameter
     path: wp-admin/upgrade.php
+    xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]
+    files:
+    - wp-includes/css/buttons.min.css
+    - wp-admin/css/install.min.css
+    confidence_per_occurence: 30
+    version: true
   SitemapGenerator:
     class: Comment
     path: sitemap.xml
@@ -85,7 +93,7 @@ wordpress:
     version: true
   StrongTestimonialsComment:
     class: Xpath
-    xpath: //comment()[contains(., 'Strong Testimonials')]
+    xpath: "//comment()[contains(., 'Strong Testimonials')]"
     pattern: !ruby/regexp '/versions: WordPress (?<v>[\d\.]+) \|/i'
     version: true
 plugins:
@@ -2102,6 +2110,36 @@ plugins:
       - css/calendar.css
       - css/skins/traditional.css
       version: true
+  booking-activities:
+    QueryParameter:
+      files:
+      - lib/fullcalendar/fullcalendar.min.css
+      - lib/fullcalendar/fullcalendar.print.min.css
+      - css/global.min.css
+      - css/bookings.min.css
+      - css/woocommerce.min.css
+      - lib/jquery-ui/themes/booking-activities/jquery-ui.min.css
+      - css/frontend.min.css
+      - js/global-var.min.js
+      - lib/fullcalendar/moment.min.js
+      - lib/fullcalendar/fullcalendar.min.js
+      - lib/fullcalendar/locale-all.js
+      - js/global-functions.min.js
+      - js/booking-system-functions.min.js
+      - js/booking-system.min.js
+      - js/booking-system-dialogs.min.js
+      - js/booking-method-calendar.min.js
+      - js/bookings-functions.min.js
+      - js/bookings-dialogs.min.js
+      - js/woocommerce-global.min.js
+      - js/shortcodes.min.js
+      - js/woocommerce-frontend.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/booking-activities.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Booking\ Activities\ (?<v>[\d\.]+)/i
+      version: true
   booking-manager:
     QueryParameter:
       files:
@@ -3682,6 +3720,7 @@ plugins:
       files:
       - resources/cf7msm.css
       - resources/cf7msm.js
+      - resources/cf7msm.min.js
       version: true
   contact-form-7-signature-addon:
     QueryParameter:
@@ -4097,6 +4136,13 @@ plugins:
     QueryParameter:
       files:
       - css/bib.min.css
+      version: true
+  deeper-comments:
+    QueryParameter:
+      files:
+      - views/css/package/iconfonts.css
+      - views/css/deeper.min.css
+      - views/js/deeper.min.js
       version: true
   defender-security:
     TranslationFile:
@@ -5007,6 +5053,12 @@ plugins:
       - public/css/essential-widgets-public.css
       - public/js/essential-widgets-public.js
       version: true
+  ethereumico:
+    QueryParameter:
+      files:
+      - ethereum-ico.css
+      - ethereum-ico.js
+      version: true
   etsy-shop:
     QueryParameter:
       files:
@@ -5370,6 +5422,12 @@ plugins:
       - css/default.css
       - js/vote.js
       - js/faq_wd_front_end.js
+      version: true
+  fastdev:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   favicon-generator:
     MetaTag:
@@ -10491,6 +10549,25 @@ plugins:
       - plugin-reviews.css
       - plugin-reviews.js
       version: true
+  podamibe-2checkout:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/2co.min.js
+      - js/frontend.js
+      version: true
+  podamibe-advertisement-management:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  podamibe-appointment-calendar:
+    QueryParameter:
+      files:
+      - assets/pac-calendar.css
+      - assets/pac-front-style.css
+      version: true
   podlove-podcasting-plugin-for-wordpress:
     QueryParameter:
       files:
@@ -11353,6 +11430,12 @@ plugins:
       path: languages/theme-junkie-custom-css.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ TJ\ Custom\ CSS\ (?<v>[\d\.]+)/i
       version: true
+  theme-junkie-portfolio-content:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/theme-junkie-portfolio-content.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Junkie\ Portfolio\ (?<v>[\d\.]+)/i
+      version: true
   theme-my-login:
     TranslationFile:
       class: BodyPattern
@@ -11663,6 +11746,12 @@ plugins:
       - css/frontend/font-awesome/font-awesome.css
       - css/frontend/mwd-animate.css
       - js/mwd_main_frontend.js
+      version: true
+  wd-twitter-feed:
+    QueryParameter:
+      files:
+      - assets/css/twitter-feed.min.css
+      - assets/js/twitter-feed.min.js
       version: true
   WeatherIcon:
     Comment:
@@ -12171,6 +12260,11 @@ plugins:
       - assets/css/style.css
       - assets/js/lemme-know.js
       version: true
+  wp-list-pages-by-custom-taxonomy:
+    QueryParameter:
+      files:
+      - css/pbytax-style.css
+      version: true
   wp-live-chat-support:
     QueryParameter:
       files:
@@ -12660,6 +12754,11 @@ plugins:
       files:
       - assets/css/style.css
       - assets/js/jquery.equalizer.js
+      version: true
+  zero-bs-crm:
+    QueryParameter:
+      files:
+      - js/ZeroBSCRM.public.global.min.js
       version: true
   zero-spam:
     QueryParameter:
