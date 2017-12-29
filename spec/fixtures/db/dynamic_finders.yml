@@ -1845,6 +1845,12 @@ plugins:
       path: languages/bing-translator-bg_BG.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ Bing\ Translator\ (?<v>\d+\.[\.\d]+)/i
       version: true
+  bio-links:
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
+      version: true
   bitcoin-address:
     QueryParameter:
       files:
@@ -8449,6 +8455,12 @@ plugins:
       files:
       - css/style.css
       version: true
+  lorem-user-generator:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/lorem-user-generator.pot
+      pattern: !ruby/regexp /opyright\ \(C\)\ 2017\ Lorem\ User\ Generator\ v(?<v>\d+\.[\.\d]+)/i
+      version: true
   lowermedia-sticky-js-menus:
     QueryParameter:
       files:
@@ -8767,8 +8779,8 @@ plugins:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
-      pattern: !ruby/regexp /MasterSlider\ (?<v>\d+\.[\.\d]+)\ \-\ Responsive\ Touch\ Image\
-        Slider\ \|\ avt\.li\/msf/i
+      pattern: !ruby/regexp /MasterSlider\ (?<v>\d+\.[\.\d]+)\ \-\ Responsive\ Touch\
+        Image\ Slider\ \|\ avt\.li\/msf/i
   material-design-icons:
     QueryParameter:
       files:
@@ -10066,6 +10078,15 @@ plugins:
       path: languages/wp-ott.pot
       pattern: !ruby/regexp /"Plugin\ v(?<v>\d+\.[\.\d]+)/i
       version: true
+  onionbuzz-viral-quiz:
+    QueryParameter:
+      files:
+      - static/frontend/css/frontend.css
+      - static/vendors/animations/animations.css
+      - static/vendors/pnotify/pnotify.min.js
+      - static/vendors/sharer/sharer.js
+      - static/frontend/js/frontend.js
+      version: true
   online-lesson-booking-system:
     QueryParameter:
       files:
@@ -10162,7 +10183,8 @@ plugins:
       version: true
   optin-monster:
     Comment:
-      pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>\d+\.[\.\d]+))? -/i'
+      pattern: !ruby/regexp '/OptinMonster(?: WordPress plugin v(?<v>\d+\.[\.\d]+))?
+        -/i'
       version: true
   optinengine-email-optins-lead-generation:
     QueryParameter:
@@ -11124,6 +11146,12 @@ plugins:
       - css/ps-style.css
       - js/ps-script.js
       version: true
+  powered-cache:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/powered-cache.pot
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Powered\ Cache\ Premium\ (?<v>\d+\.[\.\d]+)/i
+      version: true
   powerpack-lite:
     QueryParameter:
       files:
@@ -11974,6 +12002,12 @@ plugins:
       files:
       - assets/css/slick.css
       - assets/css/slick-slider-style.css
+      version: true
+  tinycoffee:
+    QueryParameter:
+      files:
+      - css/tinycoffee.min.css
+      - js/tinycoffee.min.js
       version: true
   to-top:
     QueryParameter:
@@ -13225,6 +13259,13 @@ plugins:
       class: BodyPattern
       path: languages/yikes-inc-easy-mailchimp-extender.pot
       pattern: !ruby/regexp /sion:\ yikes\-inc\-easy\-mailchimp\-extender\ (?<v>\d+\.[\.\d]+)/i
+      version: true
+  yith-infinite-scrolling:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/yith.infinitescroll.min.js
+      - assets/js/yith-infs.min.js
       version: true
   yottie-lite:
     QueryParameter:

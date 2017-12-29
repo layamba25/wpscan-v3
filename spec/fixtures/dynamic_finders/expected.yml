@@ -2333,6 +2333,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/bing-translator/languages/bing-translator-bg_BG.po,
         Match: ''Project-Id-Version: Bing Translator 1.0'''
+  bio-links:
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/bio-links/package-lock.json, Match: ''1.0.0'''
   bitcoin-address:
     QueryParameter:
       number: 0.8.1
@@ -10698,6 +10704,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/loomisoft-button-widget/css/style.css?ver=1.2.1
       confidence: 10
+  lorem-user-generator:
+    TranslationFile:
+      number: 1.0.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/lorem-user-generator/languages/lorem-user-generator.pot,
+        Match: ''opyright (C) 2017 Lorem User Generator v1.0.1'''
   lowermedia-sticky-js-menus:
     QueryParameter:
       number: 3.1.0
@@ -12776,6 +12789,17 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/onetwotrip/languages/wp-ott.pot, Match:
         ''"Plugin v1.0.0'''
+  onionbuzz-viral-quiz:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/onionbuzz-viral-quiz/static/frontend/css/frontend.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/onionbuzz-viral-quiz/static/vendors/animations/animations.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/onionbuzz-viral-quiz/static/vendors/pnotify/pnotify.min.js?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/onionbuzz-viral-quiz/static/vendors/sharer/sharer.js?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/onionbuzz-viral-quiz/static/frontend/js/frontend.js?ver=1.0.5
+      confidence: 50
   online-lesson-booking-system:
     QueryParameter:
       number: 0.8.4
@@ -14129,6 +14153,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/potenza-slider/css/ps-style.css?ver=1.0
       - http://wp.lab/wp-content/plugins/potenza-slider/js/ps-script.js?ver=1.0
       confidence: 20
+  powered-cache:
+    TranslationFile:
+      number: '1.2'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/powered-cache/languages/powered-cache.pot,
+        Match: ''oject-Id-Version: Powered Cache Premium 1.2'''
   powerpack-lite:
     QueryParameter:
       number: '1.1'
@@ -15187,6 +15218,14 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/timeline-and-history-slider/assets/css/slick.css?ver=1.2.4
       - http://wp.lab/wp-content/plugins/timeline-and-history-slider/assets/css/slick-slider-style.css?ver=1.2.4
+  tinycoffee:
+    QueryParameter:
+      number: 0.3.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/tinycoffee/css/tinycoffee.min.css?ver=0.3.0
+      - http://wp.lab/wp-content/plugins/tinycoffee/js/tinycoffee.min.js?ver=0.3.0
+      confidence: 20
   to-top:
     QueryParameter:
       number: 1.5.4
@@ -16735,6 +16774,15 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/yikes-inc-easy-mailchimp-extender/languages/yikes-inc-easy-mailchimp-extender.pot,
         Match: ''sion: yikes-inc-easy-mailchimp-extender 6.3.29'''
+  yith-infinite-scrolling:
+    QueryParameter:
+      number: 1.0.9
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/yith-infinite-scrolling/assets/css/frontend.css?ver=1.0.9
+      - http://wp.lab/wp-content/plugins/yith-infinite-scrolling/assets/js/yith.infinitescroll.min.js?ver=1.0.9
+      - http://wp.lab/wp-content/plugins/yith-infinite-scrolling/assets/js/yith-infs.min.js?ver=1.0.9
+      confidence: 30
   yottie-lite:
     QueryParameter:
       number: 1.3.2
