@@ -11553,10 +11553,75 @@ plugins:
       files:
       - js/q2w3-fixed-widget.min.js
       version: true
+  qbot-question-answer:
+    QueryParameter:
+      files:
+      - css//style.css
+      version: true
   qlik-sense:
     QueryParameter:
       files:
       - index.js
+      version: true
+  qq-weather:
+    Comment:
+      pattern: !ruby/regexp '/v(?<v>\d+\.[\.\d]+): https?:\/\/www\.webucd\.com\/qq\-weather/i'
+      version: true
+  qr-code-scan-me-anywhere:
+    Comment:
+      pattern: !ruby/regexp /Social QR Code Scan Me Anywhere (?<v>\d+\.[\.\d]+)/i
+      version: true
+  qr-code-tag:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/qrctwp-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: QR Code Tag v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  qstomizer-custom-product-designer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/qstomizer-es_ES.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Qstomizer v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  quae-map:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/pl_PL.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: quae_map (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  quatriceps:
+    QueryParameter:
+      files:
+      - quatriceps.css
+      - quatriceps.js
+      version: true
+  quick-chat:
+    QueryParameter:
+      files:
+      - js/jquery.c00kie.js
+      - js/quick-chat-load.js
+      version: true
+  quick-count:
+    QueryParameter:
+      files:
+      - js/quick-count-load-frontend.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/quick-count.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Quick Count (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  quick-event-calendar:
+    QueryParameter:
+      files:
+      - css/calendar.css
+      - calendar.js
+      version: true
+  quick-toolbar:
+    QueryParameter:
+      files:
+      - "/css/ecmqt-admin-styles.css"
+      - "/js/ecmqt-scripts.js"
       version: true
   quotes-collection:
     QueryParameter:
@@ -12634,8 +12699,7 @@ plugins:
       version: true
   wonderm00ns-simple-facebook-open-graph-tags:
     Comment:
-      pattern: !ruby/regexp /Facebook Open Graph, Google\+ and Twitter Card Tags
-        (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /Facebook Open Graph, Google\+ and Twitter Card Tags (?<v>\d+\.[\.\d]+)/i
       version: true
   wonka-slide:
     QueryParameter:
