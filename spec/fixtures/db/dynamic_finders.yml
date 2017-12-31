@@ -1440,7 +1440,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/awesome-surveys-hu_HU.po
-      pattern: !ruby/regexp /\# \ awesome\-surveys\.pot \(Awesome Surveys (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /\#  awesome\-surveys\.pot \(Awesome Surveys (?<v>\d+\.[\.\d]+)/i
       version: true
   awesome-twitter-feeds:
     QueryParameter:
@@ -3955,7 +3955,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: lang/Cryptex.pot
-      pattern: !ruby/regexp /Project\-Id\-Version:\ Cryptex \ (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Cryptex  (?<v>\d+\.[\.\d]+)/i
       version: true
   css3-buttons:
     TranslationFile:
@@ -4993,7 +4993,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: lang/Enlighter.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ Enlighter \ (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Enlighter  (?<v>\d+\.[\.\d]+)/i
       version: true
   entry-views:
     TranslationFile:
@@ -5161,8 +5161,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: lang/event-tickets-cs_CZ.po
-      pattern: !ruby/regexp /\#\-\#\-\# \ event\-tickets\.pot \(Event Tickets\
-        (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /\#\-\#\-\#  event\-tickets\.pot \(Event Tickets (?<v>\d+\.[\.\d]+)/i
       version: true
   eventpress:
     TranslationFile:
@@ -5379,7 +5378,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: lang/family-law-express-headlines.po
-      pattern: !ruby/regexp /t\-Id\-Version:\ Family Law Express News\\\\ (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /t\-Id\-Version:\ Family Law Express News\\ (?<v>\d+\.[\.\d]+)/i
       version: true
   fanbridge-signup:
     QueryParameter:
@@ -7677,7 +7676,7 @@ plugins:
       version: true
     InvalidTrackerComment:
       class: Comment
-      pattern: !ruby/regexp /acker ID \ is invalid; Wordpress Plugin v(?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /acker ID  is invalid; Wordpress Plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
       files:
@@ -11195,11 +11194,48 @@ plugins:
       files:
       - public/js/public.js
       version: true
+  prayers:
+    QueryParameter:
+      files:
+      - elements/css/prayer.css
+      version: true
+  precise-plugin-updater:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  prediction-league:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="Prediction League"]/@content
+      version: true
+  preloader-for-website:
+    QueryParameter:
+      files:
+      - assets/css/plwao-front.css
+      version: true
+  preloading:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-pre-loading-domain-es_ES.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pre Loading (?<v>\d+\.[\.\d]+)/i
+      version: true
+  premium-seo-pack:
+    Comment:
+      pattern: !ruby/regexp /Premium SEO Pack Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
   presbooks-openstax-import:
     ComposerFile:
       class: ConfigParser
       path: composer.json
       key: version
+      version: true
+  press-tube:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/press-tube.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Press Tube (?<v>\d+\.[\.\d]+)/i
       version: true
   pressbooks-cc-export:
     ComposerFile:
@@ -11219,16 +11255,117 @@ plugins:
       path: composer.json
       key: version
       version: true
+  pressforward:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   pretty-link:
     TranslationFile:
       class: BodyPattern
       path: i18n/pretty-link.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Pretty Links (?<v>\d+\.[\.\d]+)/i
       version: true
+  printedly:
+    QueryParameter:
+      files:
+      - public/css/printedly-public.css
+      - public/js/printedly-public.js
+      version: true
+  prism-syntax-highlighter:
+    QueryParameter:
+      files:
+      - prism/default.css
+      - prism/prism.js
+      version: true
+  privacy-cookie-law:
+    QueryParameter:
+      files:
+      - public/css/privacy-cookie-law-public.css
+      - public/js/privacy-cookie-law-public.js
+      version: true
+  pro-adblock:
+    QueryParameter:
+      files:
+      - assets/css/padb-style.css
+      - gads.js
+      version: true
+  pro-vip:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/provip-fa_IR.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pro\-VIP v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  processing-js:
+    QueryParameter:
+      files:
+      - js/processing.min.js
+      version: true
+  processing-js-easy:
+    QueryParameter:
+      files:
+      - processing.js
+      version: true
+  product-brands-for-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/product-brands-for-woocommerce.pot
+      pattern: !ruby/regexp /Version:\ Product Brands For WooCommerce (?<v>\d+\.[\.\d]+)/i
+      version: true
+  product-lister-amazon:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ced-amazon-lister-en_US.po
+      pattern: !ruby/regexp /oject\-Id\-Version:\ Amazon Product Lister (?<v>\d+\.[\.\d]+)/i
+      version: true
+  product-lister-walmart:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ced-umb-en_US.po
+      pattern: !ruby/regexp /ject\-Id\-Version:\ Walmart Product Lister (?<v>\d+\.[\.\d]+)/i
+      version: true
+  product-qa-for-woocommerce:
+    QueryParameter:
+      files:
+      - public/js/faq-public.js
+      version: true
+  product-review:
+    QueryParameter:
+      files:
+      - public/assets/css/product-review-public.css
+      - public/assets/css/responsive.css
+      - public/assets/js/product-review-public.js
+      version: true
+  product-showcase:
+    QueryParameter:
+      files:
+      - public/css/event-showcase-public.css
+      - public/js/event-showcase-public.js
+      version: true
+  product-specifications:
+    QueryParameter:
+      files:
+      - assets/css/front-styles.css
+      version: true
+  professional-contact-form:
+    QueryParameter:
+      files:
+      - assets/stylesheets/pcf-front-inputs.css
+      - assets/stylesheets/pcf-front-layout.css
+      - assets/stylesheets/pcf-front-response.css
+      - assets/scripts/pcf-front.js
+      version: true
   profile-builder:
     QueryParameter:
       files:
       - assets/css/style-front-end.css
+      version: true
+  profile-tabs-for-ultimate-member:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/profile-tabs-for-ultimate-member-hi.po
+      pattern: !ruby/regexp /Version:\ Ultimate Member \- Profile Tabs (?<v>\d+\.[\.\d]+)/i
       version: true
   profilepress:
     QueryParameter:
@@ -11240,6 +11377,11 @@ plugins:
       - "/theme/default/js/jquery.tooltipster.min.js"
       - "/theme/default/js/pp-theme.js"
       - "/theme/default/js/initial.min.js"
+      version: true
+  program-output:
+    QueryParameter:
+      files:
+      - public/css/style.css
       version: true
   progressive-images:
     QueryParameter:
@@ -11253,17 +11395,51 @@ plugins:
       - public/css/project-donations-public.css
       - public/js/project-donations-public.js
       version: true
+  projects-by-serge-liatko:
+    QueryParameter:
+      files:
+      - css/styles.css
+      version: true
   projects-by-woothemes:
     QueryParameter:
       files:
       - assets/css/woo-projects.css
       - assets/css/woo-projects-handheld.css
       version: true
+  promociones-tap:
+    QueryParameter:
+      files:
+      - public/assets/css/modal.css
+      - public/assets/js/modal.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/promociones-tap.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ TODO (?<v>\d+\.[\.\d]+)/i
+      version: true
+  pronamic-client:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pronamic_client.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pronamic Client (?<v>\d+\.[\.\d]+)/i
+      version: true
+  pronamic-companies:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pronamic_companies.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pronamic Companies (?<v>\d+\.[\.\d]+)/i
+      version: true
   pronamic-events:
     TranslationFile:
       class: BodyPattern
       path: languages/pronamic-events.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Pronamic Events (?<v>\d+\.[\.\d]+)/i
+      version: true
+  pronamic-framework:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pronamic_framework.pot
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ Pronamic Framework (?<v>\d+\.[\.\d]+)/i
       version: true
   pronamic-ideal:
     TranslationFile:
@@ -11283,6 +11459,86 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /PropertyHive (?<v>\d+\.[\.\d]+)/i
+  protect-wp-config-from-phishing-attacks:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/protect-wp-config-from-phishing-attacks-fr_FR.po
+      pattern: !ruby/regexp /on:\ WordPress\.com Stats Smiley Remover v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  protect-wp-videos:
+    QueryParameter:
+      files:
+      - public/css/protect-ur-videos-public.css
+      - public/js/videojs-errors-3.0.2/videojs-errors.js
+      - public/js/protect-ur-videos-public.js
+      - public/js/protect-ur-videos-util.js
+      version: true
+  proteusthemes-mailchimp-widget:
+    QueryParameter:
+      files:
+      - assets/css/main.css
+      version: true
+  prove-you-are-a-human-ruh-captcha-plugin:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/RUH-ru_RU.po
+      pattern: !ruby/regexp /"Project\-Id\-Version:\ RUH Captcha, (?<v>\d+\.[\.\d]+)/i
+      version: true
+  ptest-personality-tests-for-wordpress:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="PTest"]/@content
+      version: true
+  publish-date-datepicker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pddp.pot
+      pattern: !ruby/regexp /ect\-Id\-Version:\ Publish Date DatePicker (?<v>\d+\.[\.\d]+)/i
+      version: true
+  publish2:
+    QueryParameter:
+      files:
+      - js/pagination.js
+      version: true
+  publishing-checklist:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  pubmed-posts:
+    QueryParameter:
+      files:
+      - style.css
+      - script.js
+      version: true
+  purplesalad:
+    TranslationFile:
+      class: BodyPattern
+      path: purplesalad.pot
+      pattern: !ruby/regexp /\-Version:\ PurpleSalad Restaurant Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+  push-notification-for-wp-by-pushassist:
+    Comment:
+      pattern: !ruby/regexp /Plugin version (?<v>\d+\.[\.\d]+) \- https?:\/\/pushassist\.com/i
+      version: true
+  push-notification-sender:
+    QueryParameter:
+      files:
+      - public/css/push-notification-sender-public.css
+      - public/js/push-notification-sender-public.js
+      version: true
+  pushpress-integration:
+    QueryParameter:
+      files:
+      - css/pushpress.css
+      version: true
+  pushquote:
+    QueryParameter:
+      files:
+      - css/pullquote.css
+      - js/pullquote.js
+      version: true
   pwacommerce:
     ComposerFile:
       class: ConfigParser
@@ -11853,8 +12109,8 @@ plugins:
       class: Xpath
       xpath: //meta[@name="StageShow"]/@content
       version: true
-      pattern: !ruby/regexp /StageShow for WordPress by Malcolm Shergold \-\
-        Ver:(?<v>\d+\.[\.\d]+) \- BoxOfficeURL:/i
+      pattern: !ruby/regexp /StageShow for WordPress by Malcolm Shergold \- Ver:(?<v>\d+\.[\.\d]+)
+        \- BoxOfficeURL:/i
   stagtools:
     QueryParameter:
       files:
@@ -12378,8 +12634,8 @@ plugins:
       version: true
   wonderm00ns-simple-facebook-open-graph-tags:
     Comment:
-      pattern: !ruby/regexp /Facebook Open Graph, Google\+ and Twitter Card\
-        Tags (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /Facebook Open Graph, Google\+ and Twitter Card Tags
+        (?<v>\d+\.[\.\d]+)/i
       version: true
   wonka-slide:
     QueryParameter:

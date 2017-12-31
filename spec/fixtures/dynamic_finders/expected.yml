@@ -14217,6 +14217,46 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/pramadillo-activecampaign-email-preference-center/public/js/public.js?ver=1.0.5
       confidence: 10
+  prayers:
+    QueryParameter:
+      number: 0.9.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/prayers/elements/css/prayer.css?ver=0.9.0
+      confidence: 10
+  precise-plugin-updater:
+    ComposerFile:
+      number: 1.0.2
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/precise-plugin-updater/package.json, Match:
+        ''1.0.2'''
+  prediction-league:
+    MetaTag:
+      number: 2.1.2
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''2.1.2'''
+  preloader-for-website:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/preloader-for-website/assets/css/plwao-front.css?ver=1.0.0
+      confidence: 10
+  preloading:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/preloading/lang/wp-pre-loading-domain-es_ES.po,
+        Match: ''"Project-Id-Version: Pre Loading 1.0'''
+  premium-seo-pack:
+    Comment:
+      number: 1.2.005
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Premium SEO Pack Plugin 1.2.005'''
   presbooks-openstax-import:
     ComposerFile:
       number: 0.1.3
@@ -14224,6 +14264,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/presbooks-openstax-import/composer.json,
         Match: ''0.1.3'''
+  press-tube:
+    TranslationFile:
+      number: 0.0.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/press-tube/languages/press-tube.pot, Match:
+        ''"Project-Id-Version: Press Tube 0.0.3'''
   pressbooks-cc-export:
     ComposerFile:
       number: 0.1.0
@@ -14244,6 +14291,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/pressbooks-textbook/composer.json, Match:
         ''3.1.6'''
+  pressforward:
+    ComposerFile:
+      number: 5.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/pressforward/package.json, Match: ''5.0.0'''
   pretty-link:
     TranslationFile:
       number: 2.1.2
@@ -14251,6 +14304,121 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/pretty-link/i18n/pretty-link.pot, Match:
         ''"Project-Id-Version: Pretty Links 2.1.2'''
+  printedly:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/printedly/public/css/printedly-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/printedly/public/js/printedly-public.js?ver=1.0.0
+      confidence: 20
+  prism-syntax-highlighter:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/prism-syntax-highlighter/prism/default.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/prism-syntax-highlighter/prism/prism.js?ver=1.0
+      confidence: 20
+  privacy-cookie-law:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/privacy-cookie-law/public/css/privacy-cookie-law-public.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/privacy-cookie-law/public/js/privacy-cookie-law-public.js?ver=1.0.1
+      confidence: 20
+  pro-adblock:
+    QueryParameter:
+      number: 1.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pro-adblock/assets/css/padb-style.css?ver=1.2.1
+      - http://wp.lab/wp-content/plugins/pro-adblock/gads.js?ver=1.2.1
+      confidence: 20
+  pro-vip:
+    TranslationFile:
+      number: 0.1.4
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/pro-vip/languages/provip-fa_IR.po, Match:
+        ''"Project-Id-Version: Pro-VIP v0.1.4'''
+  processing-js:
+    QueryParameter:
+      number: 1.6.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/processing-js/js/processing.min.js?ver=1.6.6
+      confidence: 10
+  processing-js-easy:
+    QueryParameter:
+      number: 1.4.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/processing-js-easy/processing.js?ver=1.4.1
+      confidence: 10
+  product-brands-for-woocommerce:
+    TranslationFile:
+      number: '0.7'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/product-brands-for-woocommerce/languages/product-brands-for-woocommerce.pot,
+        Match: ''Version: Product Brands For WooCommerce 0.7'''
+  product-lister-amazon:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/product-lister-amazon/languages/ced-amazon-lister-en_US.po,
+        Match: ''oject-Id-Version: Amazon Product Lister 1.0.0'''
+  product-lister-walmart:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/product-lister-walmart/languages/ced-umb-en_US.po,
+        Match: ''ject-Id-Version: Walmart Product Lister 1.0.0'''
+  product-qa-for-woocommerce:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/product-qa-for-woocommerce/public/js/faq-public.js?ver=1.0.0
+      confidence: 10
+  product-review:
+    QueryParameter:
+      number: 1.2.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/product-review/public/assets/css/product-review-public.css?ver=1.2.3
+      - http://wp.lab/wp-content/plugins/product-review/public/assets/css/responsive.css?ver=1.2.3
+      - http://wp.lab/wp-content/plugins/product-review/public/assets/js/product-review-public.js?ver=1.2.3
+      confidence: 30
+  product-showcase:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/product-showcase/public/css/event-showcase-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/product-showcase/public/js/event-showcase-public.js?ver=1.0.0
+      confidence: 20
+  product-specifications:
+    QueryParameter:
+      number: 0.3.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/product-specifications/assets/css/front-styles.css?ver=0.3.2
+      confidence: 10
+  professional-contact-form:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/professional-contact-form/assets/stylesheets/pcf-front-inputs.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/professional-contact-form/assets/stylesheets/pcf-front-layout.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/professional-contact-form/assets/stylesheets/pcf-front-response.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/professional-contact-form/assets/scripts/pcf-front.js?ver=1.0.0
+      confidence: 40
   profile-builder:
     QueryParameter:
       number: 2.7.1
@@ -14258,6 +14426,13 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/profile-builder/assets/css/style-front-end.css?ver=2.7.1
+  profile-tabs-for-ultimate-member:
+    TranslationFile:
+      number: 1.2.8
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/profile-tabs-for-ultimate-member/languages/profile-tabs-for-ultimate-member-hi.po,
+        Match: ''Version: Ultimate Member - Profile Tabs 1.2.8'''
   profilepress:
     QueryParameter:
       number: 0.0.7
@@ -14271,6 +14446,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/profilepress//theme/default/js/pp-theme.js?ver=0.0.7
       - http://wp.lab/wp-content/plugins/profilepress//theme/default/js/initial.min.js?ver=0.0.7
       confidence: 70
+  program-output:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/program-output/public/css/style.css?ver=1.0.0
+      confidence: 10
   progressive-images:
     QueryParameter:
       number: 0.0.5
@@ -14287,6 +14469,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/project-donations/public/css/project-donations-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/project-donations/public/js/project-donations-public.js?ver=1.0.0
       confidence: 20
+  projects-by-serge-liatko:
+    QueryParameter:
+      number: '0.5'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/projects-by-serge-liatko/css/styles.css?ver=0.5
+      confidence: 10
   projects-by-woothemes:
     QueryParameter:
       number: 1.5.0
@@ -14295,6 +14484,34 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/projects-by-woothemes/assets/css/woo-projects.css?ver=1.5.0
       - http://wp.lab/wp-content/plugins/projects-by-woothemes/assets/css/woo-projects-handheld.css?ver=1.5.0
+  promociones-tap:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/promociones-tap/public/assets/css/modal.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/promociones-tap/public/assets/js/modal.js?ver=1.0.0
+      confidence: 20
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/promociones-tap/languages/promociones-tap.pot,
+        Match: ''"Project-Id-Version: TODO 1.0.0'''
+  pronamic-client:
+    TranslationFile:
+      number: 1.3.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/pronamic-client/languages/pronamic_client.pot,
+        Match: ''"Project-Id-Version: Pronamic Client 1.3.1'''
+  pronamic-companies:
+    TranslationFile:
+      number: 1.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/pronamic-companies/languages/pronamic_companies.pot,
+        Match: ''"Project-Id-Version: Pronamic Companies 1.1.1'''
   pronamic-events:
     TranslationFile:
       number: 1.2.4
@@ -14302,6 +14519,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/pronamic-events/languages/pronamic-events.pot,
         Match: ''"Project-Id-Version: Pronamic Events 1.2.4'''
+  pronamic-framework:
+    TranslationFile:
+      number: 1.4.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/pronamic-framework/languages/pronamic_framework.pot,
+        Match: ''"Project-Id-Version: Pronamic Framework 1.4.7'''
   pronamic-ideal:
     TranslationFile:
       number: 4.7.0
@@ -14323,6 +14547,108 @@ plugins:
       found_by: Meta Tag (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''PropertyHive 1.4.13'''
+  protect-wp-config-from-phishing-attacks:
+    TranslationFile:
+      number: '15.01'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/protect-wp-config-from-phishing-attacks/langs/protect-wp-config-from-phishing-attacks-fr_FR.po,
+        Match: ''on: WordPress.com Stats Smiley Remover v15.01'''
+  protect-wp-videos:
+    QueryParameter:
+      number: 1.1.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/protect-wp-videos/public/css/protect-ur-videos-public.css?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/protect-wp-videos/public/js/videojs-errors-3.0.2/videojs-errors.js?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/protect-wp-videos/public/js/protect-ur-videos-public.js?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/protect-wp-videos/public/js/protect-ur-videos-util.js?ver=1.1.2
+      confidence: 40
+  proteusthemes-mailchimp-widget:
+    QueryParameter:
+      number: 1.0.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/proteusthemes-mailchimp-widget/assets/css/main.css?ver=1.0.3
+      confidence: 10
+  prove-you-are-a-human-ruh-captcha-plugin:
+    TranslationFile:
+      number: 0.0.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/prove-you-are-a-human-ruh-captcha-plugin/languages/RUH-ru_RU.po,
+        Match: ''"Project-Id-Version: RUH Captcha, 0.0.1'''
+  ptest-personality-tests-for-wordpress:
+    MetaTag:
+      number: '1.3'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''1.3'''
+  publish-date-datepicker:
+    TranslationFile:
+      number: '2.2'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/publish-date-datepicker/languages/pddp.pot,
+        Match: ''ect-Id-Version: Publish Date DatePicker 2.2'''
+  publish2:
+    QueryParameter:
+      number: 1.5.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/publish2/js/pagination.js?ver=1.5.1
+      confidence: 10
+  publishing-checklist:
+    ComposerFile:
+      number: 0.1.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/publishing-checklist/package.json, Match:
+        ''0.1.0'''
+  pubmed-posts:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pubmed-posts/style.css?ver=1.1.1
+      - http://wp.lab/wp-content/plugins/pubmed-posts/script.js?ver=1.1.1
+      confidence: 20
+  purplesalad:
+    TranslationFile:
+      number: 0.7.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/purplesalad/purplesalad.pot, Match: ''-Version:
+        PurpleSalad Restaurant Plugin 0.7.2'''
+  push-notification-for-wp-by-pushassist:
+    Comment:
+      number: 2.2.5
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Plugin version 2.2.5 - https://pushassist.com'''
+  push-notification-sender:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/push-notification-sender/public/css/push-notification-sender-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/push-notification-sender/public/js/push-notification-sender-public.js?ver=1.0.0
+      confidence: 20
+  pushpress-integration:
+    QueryParameter:
+      number: 1.6.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pushpress-integration/css/pushpress.css?ver=1.6.6
+      confidence: 10
+  pushquote:
+    QueryParameter:
+      number: '1.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/pushquote/css/pullquote.css?ver=1.1
+      - http://wp.lab/wp-content/plugins/pushquote/js/pullquote.js?ver=1.1
+      confidence: 20
   pwacommerce:
     ComposerFile:
       number: '0.1'
