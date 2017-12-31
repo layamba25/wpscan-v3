@@ -12381,11 +12381,6 @@ plugins:
       pattern: !ruby/regexp /Facebook\ Open\ Graph,\ Google\+\ and\ Twitter\ Card\
         Tags\ (?<v>\d+\.[\.\d]+)/i
       version: true
-    TranslationFile:
-      class: BodyPattern
-      path: lang/wonderm00ns-simple-facebook-open-graph-tags.pot
-      pattern: !ruby/regexp /msgid\ "Should\ not\ be\ needed\ on\ version\ (?<v>\d+\.[\.\d]+)/i
-      version: true
   wonka-slide:
     QueryParameter:
       files:

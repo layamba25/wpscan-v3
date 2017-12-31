@@ -15694,12 +15694,6 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/, Match: ''Facebook Open Graph, Google+ and Twitter Card Tags
         2.1.5'''
-    TranslationFile:
-      number: '2.2'
-      found_by: Translation File (Aggressive Detection)
-      interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/wonderm00ns-simple-facebook-open-graph-tags/lang/wonderm00ns-simple-facebook-open-graph-tags.pot,
-        Match: ''msgid "Should not be needed on version 2.2'''
   wonka-slide:
     QueryParameter:
       number: 1.0.0
