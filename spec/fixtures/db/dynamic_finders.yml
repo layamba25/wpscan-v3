@@ -2879,6 +2879,12 @@ plugins:
       - include/js/custom-list.js
       - include/js/custom-owlCarousel-detail.js
       version: true
+  catch-infinite-scroll:
+    QueryParameter:
+      files:
+      - public/css/catch-infinite-scroll-public.css
+      - public/js/catch-infinite-scroll-public.js
+      version: true
   catch-instagram-feed-gallery-widget:
     QueryParameter:
       files:
@@ -3025,6 +3031,12 @@ plugins:
       class: BodyPattern
       path: lib/codestar-framework/languages/bn_BD.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ Codestar\ Framework\ (?<v>\d+\.[\.\d]+)/i
+      version: true
+  cc-mu-plugins-loader:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   cc-ontario-tax-calculator:
     QueryParameter:
@@ -4239,6 +4251,12 @@ plugins:
       class: BodyPattern
       path: languages/pixterme.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Pixter\ Me\ (?<v>\d+\.[\.\d]+)/i
+      version: true
+  dispensary-age-verification:
+    QueryParameter:
+      files:
+      - public/css/dispensary-age-verification-public.css
+      - public/js/dispensary-age-verification-public.js
       version: true
   display-featured-image-genesis:
     TranslationFile:
@@ -10821,6 +10839,10 @@ plugins:
       - css/user.css
       - js/admin.js
       version: true
+  poor-mans-wp-seo:
+    Comment:
+      pattern: !ruby/regexp /Poor\ Man's\ WordPress\ SEO\ (?<v>\d+\.[\.\d]+)/i
+      version: true
   pootle-page-builder:
     QueryParameter:
       files:
@@ -12154,6 +12176,17 @@ plugins:
       path: package.json
       key: version
       version: true
+  video-central:
+    QueryParameter:
+      files:
+      - assets/frontend/css/video-js.css
+      - templates/default/css/grid.css
+      - templates/default/css/style.css
+      - templates/default/css/font-awesome.css
+      - assets/frontend/js/video-js.js
+      - templates/default/js/plugins.min.js
+      - templates/default/js/main.min.js
+      version: true
   video-embed-thumbnail-generator:
     QueryParameter:
       files:
@@ -12244,6 +12277,11 @@ plugins:
       class: BodyPattern
       path: watu.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Watu\ Quiz\ (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wbounce:
+    QueryParameter:
+      files:
+      - frontend/js/min/wbounce.min.js
       version: true
   wc-age-verification:
     TranslationFile:
@@ -12342,6 +12380,11 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Facebook\ Open\ Graph,\ Google\+\ and\ Twitter\ Card\
         Tags\ (?<v>\d+\.[\.\d]+)/i
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wonderm00ns-simple-facebook-open-graph-tags.pot
+      pattern: !ruby/regexp /msgid\ "Should\ not\ be\ needed\ on\ version\ (?<v>\d+\.[\.\d]+)/i
       version: true
   wonka-slide:
     QueryParameter:
@@ -12799,11 +12842,21 @@ plugins:
       path: lang/wp-last-login-pt_PT.po
       pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
       version: true
+  wp-lazy-loader:
+    QueryParameter:
+      files:
+      - js/wplazyload.js
+      version: true
   wp-lemme-know:
     QueryParameter:
       files:
       - assets/css/style.css
       - assets/js/lemme-know.js
+      version: true
+  wp-linkedin:
+    QueryParameter:
+      files:
+      - style.css
       version: true
   wp-list-pages-by-custom-taxonomy:
     QueryParameter:
@@ -13047,6 +13100,13 @@ plugins:
       class: ConfigParser
       path: composer.json
       key: version
+      version: true
+  wp-thumbgallery:
+    QueryParameter:
+      files:
+      - css/jquery.mb.gallery.min.css
+      - js/jquery.mb.gallery.js
+      - js/thumbGallery-init.js
       version: true
   wp-ticket:
     MetaTag:

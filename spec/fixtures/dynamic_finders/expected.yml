@@ -3621,6 +3621,14 @@ plugins:
       - http://wp.lab/wp-content/plugins/case-study/include/js/wow.js?ver=1.0
       - http://wp.lab/wp-content/plugins/case-study/include/js/custom-list.js?ver=1.0
       - http://wp.lab/wp-content/plugins/case-study/include/js/custom-owlCarousel-detail.js?ver=1.0
+  catch-infinite-scroll:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/catch-infinite-scroll/public/css/catch-infinite-scroll-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/catch-infinite-scroll/public/js/catch-infinite-scroll-public.js?ver=1.0.0
+      confidence: 20
   catch-instagram-feed-gallery-widget:
     QueryParameter:
       number: '1.1'
@@ -3813,6 +3821,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/cc-manga-comic-reader/lib/codestar-framework/languages/bn_BD.po,
         Match: ''Project-Id-Version: Codestar Framework 1.0.0'''
+  cc-mu-plugins-loader:
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/cc-mu-plugins-loader/composer.json, Match:
+        ''1.0.0'''
   cc-ontario-tax-calculator:
     QueryParameter:
       number: 0.2015.1
@@ -5335,6 +5350,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/disable-right-click-powered-by-pixterme/languages/pixterme.pot,
         Match: ''Project-Id-Version: Pixter Me 1.2'''
+  dispensary-age-verification:
+    QueryParameter:
+      number: '1.6'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.css?ver=1.6
+      - http://wp.lab/wp-content/plugins/dispensary-age-verification/public/js/dispensary-age-verification-public.js?ver=1.6
+      confidence: 20
   display-featured-image-genesis:
     TranslationFile:
       number: 2.6.3
@@ -13734,6 +13757,12 @@ plugins:
       - http://wp.lab/wp-content/plugins/polldirectory/css/user.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/polldirectory/js/admin.js?ver=1.0.0
       confidence: 30
+  poor-mans-wp-seo:
+    Comment:
+      number: 1.0.4
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Poor Man''s WordPress SEO 1.0.4'''
   pootle-page-builder:
     QueryParameter:
       number: 5.1.0
@@ -15401,6 +15430,19 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/validated/package.json, Match: ''2.1.2'''
+  video-central:
+    QueryParameter:
+      number: 1.3.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/video-central/assets/frontend/css/video-js.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/video-central/templates/default/css/grid.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/video-central/templates/default/css/style.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/video-central/templates/default/css/font-awesome.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/video-central/assets/frontend/js/video-js.js?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/video-central/templates/default/js/plugins.min.js?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/video-central/templates/default/js/main.min.js?ver=1.3.0
+      confidence: 70
   video-embed-thumbnail-generator:
     QueryParameter:
       number: 4.6.20
@@ -15517,6 +15559,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/watu/watu.pot, Match: ''"Project-Id-Version:
         Watu Quiz 2.9.8'''
+  wbounce:
+    QueryParameter:
+      number: '1.8'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wbounce/frontend/js/min/wbounce.min.js?ver=1.8
+      confidence: 10
   wc-age-verification:
     TranslationFile:
       number: 1.0.2
@@ -15645,6 +15694,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/, Match: ''Facebook Open Graph, Google+ and Twitter Card Tags
         2.1.5'''
+    TranslationFile:
+      number: '2.2'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wonderm00ns-simple-facebook-open-graph-tags/lang/wonderm00ns-simple-facebook-open-graph-tags.pot,
+        Match: ''msgid "Should not be needed on version 2.2'''
   wonka-slide:
     QueryParameter:
       number: 1.0.0
@@ -16203,6 +16258,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wp-last-login/lang/wp-last-login-pt_PT.po,
         Match: ''"Plural-Forms: nplurals=2'''
+  wp-lazy-loader:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-lazy-loader/js/wplazyload.js?ver=1.0
+      confidence: 10
   wp-lemme-know:
     QueryParameter:
       number: 0.4.0
@@ -16211,6 +16273,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/wp-lemme-know/assets/css/style.css?ver=0.4.0
       - http://wp.lab/wp-content/plugins/wp-lemme-know/assets/js/lemme-know.js?ver=0.4.0
       confidence: 20
+  wp-linkedin:
+    QueryParameter:
+      number: '2.7'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-linkedin/style.css?ver=2.7
+      confidence: 10
   wp-list-pages-by-custom-taxonomy:
     QueryParameter:
       number: 1.4.9
@@ -16517,6 +16586,15 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wp-team-list/composer.json, Match: ''2.0.1'''
+  wp-thumbgallery:
+    QueryParameter:
+      number: 1.0.7
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-thumbgallery/css/jquery.mb.gallery.min.css?ver=1.0.7
+      - http://wp.lab/wp-content/plugins/wp-thumbgallery/js/jquery.mb.gallery.js?ver=1.0.7
+      - http://wp.lab/wp-content/plugins/wp-thumbgallery/js/thumbGallery-init.js?ver=1.0.7
+      confidence: 30
   wp-ticket:
     MetaTag:
       number: 5.4.0
