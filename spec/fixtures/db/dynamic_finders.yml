@@ -65,7 +65,6 @@ wordpress:
     version: true
   PluginAndThemeQueryParameterInHomepage:
     class: WpItemQueryParameter
-    pattern: !ruby/regexp /ver=(?<v>\d+\.[\.\d]+)/i
     version: true
   QueryParameterInInstallPage:
     class: QueryParameter

@@ -7,18 +7,9 @@ module WPScan
         class ConfigParser < WPScan::Finders::DynamicFinder::Version::Finder
           ALLOWED_PARSERS = [JSON, YAML].freeze
 
-          # @param [ Constant ] mod
-          # @param [ Constant ] klass
-          # @param [ Hash ] config
-          def self.create_child_class(mod, klass, config)
-            mod.const_set(
-              klass, Class.new(self) do
-                const_set(:PATH, config['path'])
-                const_set(:PARSER, config['parser'])
-                const_set(:KEY, config['key'])
-                const_set(:PATTERN, config['pattern'] || /(?<v>\d+\.[\.\d]+)/)
-                const_set(:CONFIDENCE, config['confidence'] || 70)
-              end
+          def self.child_class_constants
+            @child_class_constants ||= super.merge(
+              PARSER: nil, KEY: nil, PATTERN: /(?<v>\d+\.[\.\d]+)/, CONFIDENCE: 70
             )
           end
 

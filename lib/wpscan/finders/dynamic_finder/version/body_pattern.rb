@@ -5,17 +5,9 @@ module WPScan
         # Version finder using Body Pattern method. Tipically used when the response is not
         # an HTML doc and Xpath can't be used
         class BodyPattern < WPScan::Finders::DynamicFinder::Version::Finder
-          # @param [ Constant ] mod
-          # @param [ Constant ] klass
-          # @param [ Hash ] config
-          def self.create_child_class(mod, klass, config)
-            mod.const_set(
-              klass, Class.new(self) do
-                const_set(:PATH, config['path'])
-                const_set(:PATTERN, config['pattern'])
-                const_set(:CONFIDENCE, config['confidence'] || 60)
-              end
-            )
+          # @return [ Hash ]
+          def self.child_class_constants
+            @child_class_constants ||= super().merge(PATTERN: nil, CONFIDENCE: 60)
           end
 
           # @param [ Typhoeus::Response ] response

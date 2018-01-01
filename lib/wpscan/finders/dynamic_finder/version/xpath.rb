@@ -4,17 +4,10 @@ module WPScan
       module Version
         # Version finder using Xpath method
         class Xpath < WPScan::Finders::DynamicFinder::Version::Finder
-          # @param [ Constant ] mod
-          # @param [ Constant ] klass
-          # @param [ Hash ] config
-          def self.create_child_class(mod, klass, config)
-            mod.const_set(
-              klass, Class.new(self) do
-                const_set(:PATH, config['path'])
-                const_set(:XPATH, config['xpath'])
-                const_set(:PATTERN, config['pattern'] || /\A(?<v>\d+\.[\.\d]+)/)
-                const_set(:CONFIDENCE, config['confidence'] || 60)
-              end
+          # @return [ Hash ]
+          def self.child_class_constants
+            @child_class_constants ||= super().merge(
+              XPATH: nil, PATTERN: /\A(?<v>\d+\.[\.\d]+)/, CONFIDENCE: 60
             )
           end
 

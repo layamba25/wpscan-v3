@@ -29,14 +29,13 @@ module WPScan
         class QueryParameter < WPScan::Finders::DynamicFinder::Version::QueryParameter
           include Finder
 
-          # TODO: How to have the PATTERN to config['pattern] || /ver=(?<v>[\d\.]+)/i w/o
-          # redefining all the create_child_class method ?
+          # @return [ Hash ]
+          def self.child_class_constants
+            @child_class_constants ||= super().merge(PATTERN: /ver\=(?<v>\d+\.[\.\d]+)/i)
+          end
         end
 
         class WpItemQueryParameter < QueryParameter
-          # TODO: How to have the PATTERN to config['pattern] || /ver=(?<v>[\d\.]+)/i w/o
-          # redefining all the create_child_class method ?
-
           def xpath
             @xpath ||= self.class::XPATH ||
                        "//link[contains(@href,'#{target.plugins_dir}') or contains(@href,'#{target.themes_dir}')]|" \

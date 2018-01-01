@@ -4,18 +4,11 @@ module WPScan
       module Version
         # Version finder using JavaScript Variable method
         class JavascriptVar < WPScan::Finders::DynamicFinder::Version::Finder
-          # @param [ Constant ] mod
-          # @param [ Constant ] klass
-          # @param [ Hash ] config
-          def self.create_child_class(mod, klass, config)
-            mod.const_set(
-              klass, Class.new(self) do
-                const_set(:PATH, config['path'])
-                const_set(:XPATH, config['xpath'] || '//script[not(@src)]')
-                const_set(:PATTERN, config['pattern'])
-                const_set(:CONFIDENCE, config['confidence'] || 60)
-                const_set(:VERSION_KEY, config['version_key'])
-              end
+          # @return [ Hash ]
+          def self.child_class_constants
+            @child_class_constants ||= super().merge(
+              XPATH: '//script[not(@src)]', VERSION_KEY: nil,
+              PATTERN: nil, CONFIDENCE: 60
             )
           end
 
