@@ -28,7 +28,7 @@ module WPScan
 
               return create_version(
                 version_number,
-                interesting_entries: ["#{response.effective_url}, Match: '#{match}'"]
+                interesting_entries: ["#{response.effective_url}, Match: '#{match.strip}'"]
               )
             end
             nil
