@@ -11623,11 +11623,182 @@ plugins:
       - "/css/ecmqt-admin-styles.css"
       - "/js/ecmqt-scripts.js"
       version: true
+  quickseo-by-squirrly:
+    Comment:
+      pattern: !ruby/regexp /Quick SEO Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+  quietly:
+    Comment:
+      pattern: !ruby/regexp /QWP v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  quizmaster-grades:
+    QueryParameter:
+      files:
+      - assets/css/quizmaster_grades.css
+      - assets/js/quizmaster_grades.js
+      version: true
+  quizmaster-progress-bar:
+    QueryParameter:
+      files:
+      - css/progress-bar.css
+      - js/progress_bar.js
+      version: true
   quotes-collection:
     QueryParameter:
       files:
       - css/quotes-collection.css
       - js/quotes-collection.js
+      version: true
+  quotes-llama:
+    QueryParameter:
+      files:
+      - quotes-llama.js
+      version: true
+  r-cool-social-buttons:
+    QueryParameter:
+      files:
+      - assets/cool-share/plugin.css
+      version: true
+  r3df-copyright-message:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  ra-shortcodes-bundle:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  radio-buttons-for-taxonomies:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/radio-buttons-for-taxonomies.pot
+      pattern: !ruby/regexp '/d\-Version: Radio Buttons for Taxonomies (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  random-banner:
+    QueryParameter:
+      files:
+      - assets/style/bc_rb_global.css
+      - assets/style/animate.css
+      - assets/style/owl.carousel.css
+      - assets/style/owl.theme.default.css
+      - assets/style/owl.transitions.css
+      - assets/script/bc_rb_global.js
+      - assets/script/owl.carousel.js
+      version: true
+  random-content-shortcode:
+    QueryParameter:
+      files:
+      - random-content-shortcode.js
+      version: true
+  random-posts-mp3-player-sharebutton:
+    Comment:
+      pattern: !ruby/regexp '/4 in 1 Widget v(?<v>\d+\.[\.\d]+): Random Posts, Mp3 Player,/i'
+      version: true
+  random-quote-of-the-day:
+    QueryParameter:
+      files:
+      - includes/assets/css/public.css
+      - includes/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/random-quote-of-the-day.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rate:
+    QueryParameter:
+      files:
+      - js/rate.js
+      version: true
+  rating-plus:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ratingplus.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Rating Plus (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rating-writing:
+    QueryParameter:
+      files:
+      - css/gcrw.css
+      version: true
+  ravelry-projects-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ravelry-projects-widget.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: Ravelry projects widget (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rdp-google-custom-search:
+    QueryParameter:
+      files:
+      - pl/style/gsc.default-en.css
+      - pl/style/gsc.default.css
+      - pl/style/rdp-gcs.style.css
+      - pl/js/script.global.js
+      version: true
+  rdp-ingroups:
+    QueryParameter:
+      files:
+      - pl/js/script.global.js
+      version: true
+  rdp-linkedin-login:
+    QueryParameter:
+      files:
+      - pl/js/script.global.js
+      version: true
+  rdp-wiki-embed:
+    QueryParameter:
+      files:
+      - pl/css/wiki-embed.css
+      - pl/css/style.css
+      version: true
+  rdp-wiki-press-embed:
+    QueryParameter:
+      files:
+      - resources/css/wiki-embed.css
+      version: true
+  re-abolish-slavery-ribbon:
+    QueryParameter:
+      files:
+      - css/style.css
+      - javascript/functions.js
+      version: true
+  reactive-mortgage-calculator:
+    QueryParameter:
+      files:
+      - site/resources/materialize.css
+      - site/resources/app.css
+      version: true
+  read-offline:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/read-offline.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Read Offline (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  real-accessability:
+    QueryParameter:
+      files:
+      - real-accessability.css
+      - real-accessability.js
+      version: true
+  real-content-locker:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      - assets/js/front.js
+      version: true
+  really-static:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/default.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Really\-static (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  realtime-comments:
+    QueryParameter:
+      files:
+      - css/style.css
+      - js/script.js
       version: true
   recencio-book-reviews:
     QueryParameter:
@@ -11642,7 +11813,7 @@ plugins:
       version: true
   recents-post-widget-extended:
     Comment:
-      pattern: !ruby/regexp /Generated by https?:\/\/wordpress.org\/plugins\/recent-posts-widget-extended/i
+      pattern: !ruby/regexp /Generated by https?:\/\/wordpress.org\/plugins\/recent\-posts\-widget\-extended/i
   recipe-hero:
     QueryParameter:
       files:
@@ -11839,6 +12010,16 @@ plugins:
   search-everything:
     JavascriptVar:
       pattern: !ruby/regexp /window\._se_plugin_version = '(?<v>\d+\.[\.\d]+)';/i
+      version: true
+  semantic-linkbacks:
+    QueryParameter:
+      files:
+      - css/semantic-linkbacks.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/semantic-linkbacks.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Semantic\-Linkbacks (?<v>\d+\.[\.\d]+)/i'
       version: true
   sendpulse-email-marketing-newsletter:
     ComposerFile:
@@ -12294,6 +12475,12 @@ plugins:
       files:
       - css/style.css
       version: true
+  telaalbums:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/jssor.slider-23.1.5.min.js
+      version: true
   testimonials-widget:
     TranslationFile:
       class: BodyPattern
@@ -12351,6 +12538,12 @@ plugins:
       files:
       - css/tinycoffee.min.css
       - js/tinycoffee.min.js
+      version: true
+  tk-event-weather:
+    QueryParameter:
+      files:
+      - css/tk-event-weather.css
+      - vendor/climacons-webfont/climacons-webfont/climacons-font.css
       version: true
   to-top:
     QueryParameter:
@@ -12675,6 +12868,14 @@ plugins:
       class: BodyPattern
       path: languages/weforms.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ weForms (?<v>\d+\.[\.\d]+)/i
+      version: true
+  weight-loss-tracker:
+    QueryParameter:
+      files:
+      - css/ws-ls.min.css
+      - css/jquery-ui.min.css
+      - css/tabs.min.css
+      - css/tabs.flat.min.css
       version: true
   whats-new-genarator:
     QueryParameter:

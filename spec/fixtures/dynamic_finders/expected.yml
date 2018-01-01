@@ -14757,6 +14757,34 @@ plugins:
       - http://wp.lab/wp-content/plugins/quick-toolbar//css/ecmqt-admin-styles.css?ver=0.4
       - http://wp.lab/wp-content/plugins/quick-toolbar//js/ecmqt-scripts.js?ver=0.4
       confidence: 20
+  quickseo-by-squirrly:
+    Comment:
+      number: 1.1.008
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Quick SEO Plugin 1.1.008'''
+  quietly:
+    Comment:
+      number: 3.0.2
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''QWP v3.0.2'''
+  quizmaster-grades:
+    QueryParameter:
+      number: 0.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/quizmaster-grades/assets/css/quizmaster_grades.css?ver=0.0.1
+      - http://wp.lab/wp-content/plugins/quizmaster-grades/assets/js/quizmaster_grades.js?ver=0.0.1
+      confidence: 20
+  quizmaster-progress-bar:
+    QueryParameter:
+      number: 0.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/quizmaster-progress-bar/css/progress-bar.css?ver=0.0.1
+      - http://wp.lab/wp-content/plugins/quizmaster-progress-bar/js/progress_bar.js?ver=0.0.1
+      confidence: 20
   quotes-collection:
     QueryParameter:
       number: 2.0.9
@@ -14765,6 +14793,202 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/quotes-collection/css/quotes-collection.css?ver=2.0.9
       - http://wp.lab/wp-content/plugins/quotes-collection/js/quotes-collection.js?ver=2.0.9
+  quotes-llama:
+    QueryParameter:
+      number: '0.7'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/quotes-llama/quotes-llama.js?ver=0.7
+      confidence: 10
+  r-cool-social-buttons:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/r-cool-social-buttons/assets/cool-share/plugin.css?ver=1.0
+      confidence: 10
+  r3df-copyright-message:
+    QueryParameter:
+      number: 1.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/r3df-copyright-message/css/style.css?ver=1.1.0
+      confidence: 10
+  ra-shortcodes-bundle:
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/ra-shortcodes-bundle/package.json, Match:
+        ''1.0.0'''
+  radio-buttons-for-taxonomies:
+    TranslationFile:
+      number: 1.7.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/radio-buttons-for-taxonomies/languages/radio-buttons-for-taxonomies.pot,
+        Match: ''d-Version: Radio Buttons for Taxonomies 1.7.7'''
+  random-banner:
+    QueryParameter:
+      number: '4.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/random-banner/assets/style/bc_rb_global.css?ver=4.0
+      - http://wp.lab/wp-content/plugins/random-banner/assets/style/animate.css?ver=4.0
+      - http://wp.lab/wp-content/plugins/random-banner/assets/style/owl.carousel.css?ver=4.0
+      - http://wp.lab/wp-content/plugins/random-banner/assets/style/owl.theme.default.css?ver=4.0
+      - http://wp.lab/wp-content/plugins/random-banner/assets/style/owl.transitions.css?ver=4.0
+      - http://wp.lab/wp-content/plugins/random-banner/assets/script/bc_rb_global.js?ver=4.0
+      - http://wp.lab/wp-content/plugins/random-banner/assets/script/owl.carousel.js?ver=4.0
+      confidence: 70
+  random-content-shortcode:
+    QueryParameter:
+      number: 1.3.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/random-content-shortcode/random-content-shortcode.js?ver=1.3.3
+      confidence: 10
+  random-posts-mp3-player-sharebutton:
+    Comment:
+      number: 1.4.1
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''4 in 1 Widget v1.4.1: Random Posts, Mp3 Player,'''
+  random-quote-of-the-day:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/random-quote-of-the-day/includes/assets/css/public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/random-quote-of-the-day/includes/assets/js/public.js?ver=1.0.0
+      confidence: 20
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/random-quote-of-the-day/languages/random-quote-of-the-day.pot,
+        Match: ''"Project-Id-Version: TODO 1.0.0'''
+  rate:
+    QueryParameter:
+      number: '0.4'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rate/js/rate.js?ver=0.4
+      confidence: 10
+  rating-plus:
+    TranslationFile:
+      number: 1.0.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/rating-plus/languages/ratingplus.po, Match:
+        ''"Project-Id-Version: Rating Plus 1.0.1'''
+  rating-writing:
+    QueryParameter:
+      number: 1.2.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rating-writing/css/gcrw.css?ver=1.2.4
+      confidence: 10
+  ravelry-projects-widget:
+    TranslationFile:
+      number: '1.1'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/ravelry-projects-widget/languages/ravelry-projects-widget.pot,
+        Match: ''ect-Id-Version: Ravelry projects widget 1.1'''
+  rdp-google-custom-search:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rdp-google-custom-search/pl/style/gsc.default-en.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/rdp-google-custom-search/pl/style/gsc.default.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/rdp-google-custom-search/pl/style/rdp-gcs.style.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/rdp-google-custom-search/pl/js/script.global.js?ver=1.0.0
+      confidence: 40
+  rdp-ingroups:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rdp-ingroups/pl/js/script.global.js?ver=1.0.6
+      confidence: 10
+  rdp-linkedin-login:
+    QueryParameter:
+      number: 1.6.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rdp-linkedin-login/pl/js/script.global.js?ver=1.6.3
+      confidence: 10
+  rdp-wiki-embed:
+    QueryParameter:
+      number: 1.2.11
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rdp-wiki-embed/pl/css/wiki-embed.css?ver=1.2.11
+      - http://wp.lab/wp-content/plugins/rdp-wiki-embed/pl/css/style.css?ver=1.2.11
+      confidence: 20
+  rdp-wiki-press-embed:
+    QueryParameter:
+      number: 2.4.7
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rdp-wiki-press-embed/resources/css/wiki-embed.css?ver=2.4.7
+      confidence: 10
+  re-abolish-slavery-ribbon:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/re-abolish-slavery-ribbon/css/style.css?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/re-abolish-slavery-ribbon/javascript/functions.js?ver=1.0.6
+      confidence: 20
+  reactive-mortgage-calculator:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/reactive-mortgage-calculator/site/resources/materialize.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/reactive-mortgage-calculator/site/resources/app.css?ver=1.0
+      confidence: 20
+  read-offline:
+    TranslationFile:
+      number: 0.7.7
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/read-offline/languages/read-offline.pot,
+        Match: ''"Project-Id-Version: Read Offline 0.7.7'''
+  real-accessability:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/real-accessability/real-accessability.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/real-accessability/real-accessability.js?ver=1.0
+      confidence: 20
+  real-content-locker:
+    QueryParameter:
+      number: 1.9.299
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/real-content-locker/assets/css/front.css?ver=1.9.299
+      - http://wp.lab/wp-content/plugins/real-content-locker/assets/js/front.js?ver=1.9.299
+      confidence: 20
+  really-static:
+    TranslationFile:
+      number: '0.31'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/really-static/languages/default.po, Match:
+        ''"Project-Id-Version: Really-static 0.31'''
+  realtime-comments:
+    QueryParameter:
+      number: '0.8'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/realtime-comments/css/style.css?ver=0.8
+      - http://wp.lab/wp-content/plugins/realtime-comments/js/script.js?ver=0.8
+      confidence: 20
   recencio-book-reviews:
     QueryParameter:
       number: 1.3.0
@@ -15018,6 +15242,19 @@ plugins:
       found_by: Javascript Var (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''window._se_plugin_version = ''8.1.9'';'''
+  semantic-linkbacks:
+    QueryParameter:
+      number: 3.7.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.7.4
+      confidence: 10
+    TranslationFile:
+      number: 3.7.4
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/semantic-linkbacks/languages/semantic-linkbacks.pot,
+        Match: ''"Project-Id-Version: Semantic-Linkbacks 3.7.4'''
   sendpulse-email-marketing-newsletter:
     ComposerFile:
       number: 2.1.0
@@ -15594,6 +15831,14 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/taxonomy-images/css/style.css?ver=0.9.6
+  telaalbums:
+    QueryParameter:
+      number: 1.4.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/telaalbums/public/assets/css/public.css?ver=1.4.6
+      - http://wp.lab/wp-content/plugins/telaalbums/public/assets/js/jssor.slider-23.1.5.min.js?ver=1.4.6
+      confidence: 20
   testimonials-widget:
     TranslationFile:
       number: 3.4.2
@@ -15665,6 +15910,14 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/tinycoffee/css/tinycoffee.min.css?ver=0.3.0
       - http://wp.lab/wp-content/plugins/tinycoffee/js/tinycoffee.min.js?ver=0.3.0
+      confidence: 20
+  tk-event-weather:
+    QueryParameter:
+      number: 1.5.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/tk-event-weather/css/tk-event-weather.css?ver=1.5.4
+      - http://wp.lab/wp-content/plugins/tk-event-weather/vendor/climacons-webfont/climacons-webfont/climacons-font.css?ver=1.5.4
       confidence: 20
   to-top:
     QueryParameter:
@@ -16070,6 +16323,16 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/weforms/languages/weforms.pot, Match: ''"Project-Id-Version:
         weForms 1.2.3'''
+  weight-loss-tracker:
+    QueryParameter:
+      number: 5.2.23
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/weight-loss-tracker/css/ws-ls.min.css?ver=5.2.23
+      - http://wp.lab/wp-content/plugins/weight-loss-tracker/css/jquery-ui.min.css?ver=5.2.23
+      - http://wp.lab/wp-content/plugins/weight-loss-tracker/css/tabs.min.css?ver=5.2.23
+      - http://wp.lab/wp-content/plugins/weight-loss-tracker/css/tabs.flat.min.css?ver=5.2.23
+      confidence: 40
   whats-new-genarator:
     QueryParameter:
       number: 2.0.1
