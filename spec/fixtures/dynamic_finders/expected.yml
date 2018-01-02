@@ -11171,6 +11171,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/material-faq-manager/assets/css/mfm_style.css?ver=1.0
       - http://wp.lab/wp-content/plugins/material-faq-manager/assets/js/mfm_script.js?ver=1.0
       confidence: 20
+  material-testimonials:
+    QueryParameter:
+      number: '1.5'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/material-testimonials/css/style.css?ver=1.5
+      confidence: 10
   materializer:
     ComposerFile:
       number: 0.2.0
@@ -15239,6 +15246,79 @@ plugins:
       - http://wp.lab/wp-content/plugins/reserveren-via-couverts/assets/css/couverts.min.css?ver=1.0.5
       - http://wp.lab/wp-content/plugins/reserveren-via-couverts/assets/js/couverts.min.js?ver=1.0.5
       confidence: 20
+  resource-library:
+    Comment:
+      number: 0.1.2
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''resource-library/inc/fontello/css/fontello-ie7.css?ver=0.1.2'''
+    QueryParameter:
+      number: 0.1.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/resource-library/inc/fontello/css/fontello.css?ver=0.1.2
+      - http://wp.lab/wp-content/plugins/resource-library/inc/front.css?ver=0.1.2
+      - http://wp.lab/wp-content/plugins/resource-library/inc/front.js?ver=0.1.2
+      confidence: 30
+  responsive-album-and-image-gallery-lightbox:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-album-and-image-gallery-lightbox/assets/css/magnific-popup.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/responsive-album-and-image-gallery-lightbox/assets/css/slick.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/responsive-album-and-image-gallery-lightbox/assets/css/raigl-public.css?ver=1.0
+      confidence: 30
+  responsive-attention-box:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-attention-box/js/alert.js?ver=1.0
+      confidence: 10
+  responsive-customizer:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/responsive-customizer/languages/wp-responsive-customizer-en_US.po,
+        Match: ''ersion: WordPress Responsive Customizer 1.0.0'''
+  responsive-embed-videos:
+    QueryParameter:
+      number: 0.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-embed-videos/js/rev.js?ver=0.0.1
+      confidence: 10
+  responsive-gallery-grid:
+    QueryParameter:
+      number: 2.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-gallery-grid/css/style.css?ver=2.0.5
+      confidence: 10
+  responsive-grid-gallery-with-custom-links:
+    QueryParameter:
+      number: 0.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-grid-gallery-with-custom-links/css/rggcl.css?ver=0.1.1
+      confidence: 10
+  responsive-header-image-slider:
+    QueryParameter:
+      number: 3.0.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-header-image-slider/css/responsiveimgslider.css?ver=3.0.3
+      - http://wp.lab/wp-content/plugins/responsive-header-image-slider/js/jquery.slides.min.js?ver=3.0.3
+      confidence: 20
+  responsive-jquery-slider:
+    TranslationFile:
+      number: 1.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/responsive-jquery-slider/languages/responsive-jquery-slider.pot,
+        Match: ''ct-Id-Version: Responsive jQuery Slider 1.1.1'''
   responsive-lightbox:
     QueryParameter:
       number: 1.7.2
@@ -15248,6 +15328,50 @@ plugins:
       - http://wp.lab/wp-content/plugins/responsive-lightbox/assets/swipebox/css/swipebox.min.css?ver=1.7.2
       - http://wp.lab/wp-content/plugins/responsive-lightbox/assets/swipebox/js/jquery.swipebox.min.js?ver=1.7.2
       - http://wp.lab/wp-content/plugins/responsive-lightbox/js/front.js?ver=1.7.2
+  responsive-lightbox2:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-lightbox2/js/lightbox.js?ver=1.0.2
+      confidence: 10
+  responsive-mobile-menu:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-mobile-menu/public/css/rmm-responsive-mobile-menu-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/responsive-mobile-menu/public/js/rmm-responsive-mobile-menu-public.js?ver=1.0.0
+      confidence: 20
+  responsive-news-scroller:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-news-scroller/public/css/wpr-theme.css?ver=1.0.0
+      confidence: 10
+  responsive-portfolio-image-gallery:
+    QueryParameter:
+      number: 1.0.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-portfolio-image-gallery/assets/css/rcpig_grid_light.css?ver=1.0.6
+      - http://wp.lab/wp-content/plugins/responsive-portfolio-image-gallery/assets/js/rcpig_grid.min.js?ver=1.0.6
+      confidence: 20
+  responsive-posts-widget:
+    QueryParameter:
+      number: 1.0.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-posts-widget/responsive-posts-widget.css?ver=1.0.3
+      confidence: 10
+  responsive-pricing-table:
+    QueryParameter:
+      number: 1.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-pricing-table/assets/css/style.css?ver=1.2.1
+      confidence: 10
   responsive-video-shortcodes:
     ComposerFile:
       number: 1.2.5
@@ -15255,6 +15379,69 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/responsive-video-shortcodes/composer.json,
         Match: ''1.2.5'''
+  responsive-video-ultimate:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-video-ultimate/js/jquery.fitvids.js?ver=1.0
+      confidence: 10
+  responsive-videos-fitvids:
+    QueryParameter:
+      number: 2.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-videos-fitvids/assets/js/jQuery.fitVids.js?ver=2.1.0
+      confidence: 10
+  responsive-widgets:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-widgets/public/assets/css/public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/responsive-widgets/public/assets/js/public.js?ver=1.0.0
+      confidence: 20
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/responsive-widgets/languages/plugin-name.pot,
+        Match: ''"Project-Id-Version: TODO 1.0.0'''
+  responsive-youtube-video-player-and-iframe:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/responsive-youtube-video-player-and-iframe/public/css/wp-yrvp-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/responsive-youtube-video-player-and-iframe/public/js/wp-yrvp-public.js?ver=1.0.0
+      confidence: 20
+  resrc:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/resrc/public/assets/css/public.css?ver=1.0.0
+      confidence: 10
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/resrc/languages/resrc.pot, Match: ''"Project-Id-Version:
+        1.0.0'''
+  rest-api-enabler:
+    TranslationFile:
+      number: 1.1.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/rest-api-enabler/languages/rest-api-enabler.pot,
+        Match: ''"Project-Id-Version: REST API Enabler 1.1.0'''
+  rest-api-link-manager:
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/rest-api-link-manager/package.json, Match:
+        ''1.0.0'''
   restaurant-reservations:
     TranslationFile:
       number: 1.7.6
@@ -15357,6 +15544,20 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/rp-ads-manager/languages/rp-ads-manager-ru.po,
         Match: ''ect-Id-Version: RedPic ADS Manager Lite 1.0.0'''
+  rpb-chessboard:
+    QueryParameter:
+      number: 5.1.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/fonts/chess-fonts.css?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/css/rpbchess-ui-chessboard.css?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/css/rpbchess-ui-chessgame.css?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/css/frontend.css?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/js/rpbchess-core.min.js?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/js/rpbchess-ui-chessboard.min.js?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/js/rpbchess-pgn.min.js?ver=5.1.5
+      - http://wp.lab/wp-content/plugins/rpb-chessboard/js/rpbchess-ui-chessgame.min.js?ver=5.1.5
+      confidence: 80
   rss-importer:
     TranslationFile:
       number: '0.2'
@@ -15453,6 +15654,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/sendpulse-email-marketing-newsletter/package.json,
         Match: ''2.1.0'''
+  seo-engine:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/seo-engine/i18n/languages/seo-engine.pot,
+        Match: ''"Project-Id-Version: SEO Engine 1.0.0'''
   seostack:
     Comment:
       number: 1.0.1
@@ -16488,6 +16696,21 @@ plugins:
       - http://wp.lab/wp-content/plugins/wd-twitter-feed/assets/css/twitter-feed.min.css?ver=3.0.7
       - http://wp.lab/wp-content/plugins/wd-twitter-feed/assets/js/twitter-feed.min.js?ver=3.0.7
       confidence: 20
+  weather-forecast:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/weather-forecast/public/css/weather-forecast-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/weather-forecast/public/js/jquery.simpleWeather.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/weather-forecast/public/js/weather-forecast-public.js?ver=1.0.0
+      confidence: 30
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/weather-forecast/i18n/languages/weather-forecast.pot,
+        Match: ''"Project-Id-Version: Weather Forecast 1.0.0'''
   WeatherIcon:
     Comment:
       number: 2.99.102
@@ -17462,12 +17685,19 @@ plugins:
       - 'http://wp.lab/, Match: ''Wp Ticket v5.4.0 - https://emdplugins.com'''
   wp-to-steemit:
     QueryParameter:
-      number: 1.0.0
+      number: 1.0.1
       found_by: Query Parameter (Passive Detection)
-      confidence: 20
+      confidence: 40
       interesting_entries:
-      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/css/posttosteemit-public.css?ver=1.0.0
-      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/js/posttosteemit-public.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/css/posttosteemit-public.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/js/posttosteemit-public.js?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/css/pts.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/wp-to-steemit/public/js/dist/bundle.js?ver=1.0.1
+    ComposerFile:
+      number: 1.0.1
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wp-to-steemit/package.json, Match: ''1.0.1'''
   wp-travel:
     TranslationFile:
       number: 1.0.5

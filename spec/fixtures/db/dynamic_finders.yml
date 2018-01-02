@@ -8819,6 +8819,11 @@ plugins:
       - assets/css/mfm_style.css
       - assets/js/mfm_script.js
       version: true
+  material-testimonials:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
   materializer:
     ComposerFile:
       class: ConfigParser
@@ -9752,7 +9757,7 @@ plugins:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
-      pattern: !ruby/regexp /NGFB (?<v>\d+\.[\.\d]+)\/G/i
+      pattern: !ruby/regexp /NGFB (?<v>\d+\.[\.\d]+)\/[a-z]/i
     TranslationFile:
       class: BodyPattern
       path: languages/nextgen-facebook-fr_FR.po
@@ -12000,6 +12005,62 @@ plugins:
       - assets/css/couverts.min.css
       - assets/js/couverts.min.js
       version: true
+  resource-library:
+    Comment:
+      xpath: //comment()[contains(., "resource-library")]
+      pattern: !ruby/regexp /resource\-library\/inc\/fontello\/css\/fontello\-ie7\.css\?ver=(?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - inc/fontello/css/fontello.css
+      - inc/front.css
+      - inc/front.js
+      version: true
+  responsive-album-and-image-gallery-lightbox:
+    QueryParameter:
+      files:
+      - assets/css/magnific-popup.css
+      - assets/css/slick.css
+      - assets/css/raigl-public.css
+      version: true
+  responsive-attention-box:
+    QueryParameter:
+      files:
+      - js/alert.js
+      version: true
+  responsive-customizer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-responsive-customizer-en_US.po
+      pattern: !ruby/regexp '/ersion: WordPress Responsive Customizer (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  responsive-embed-videos:
+    QueryParameter:
+      files:
+      - js/rev.js
+      version: true
+  responsive-gallery-grid:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  responsive-grid-gallery-with-custom-links:
+    QueryParameter:
+      files:
+      - css/rggcl.css
+      version: true
+  responsive-header-image-slider:
+    QueryParameter:
+      files:
+      - css/responsiveimgslider.css
+      - js/jquery.slides.min.js
+      version: true
+  responsive-jquery-slider:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/responsive-jquery-slider.pot
+      pattern: !ruby/regexp '/ct\-Id\-Version: Responsive jQuery Slider (?<v>\d+\.[\.\d]+)/i'
+      version: true
   responsive-lightbox:
     QueryParameter:
       files:
@@ -12007,10 +12068,91 @@ plugins:
       - assets/swipebox/js/jquery.swipebox.min.js
       - js/front.js
       version: true
+  responsive-lightbox2:
+    QueryParameter:
+      files:
+      - js/lightbox.js
+      version: true
+  responsive-mobile-menu:
+    QueryParameter:
+      files:
+      - public/css/rmm-responsive-mobile-menu-public.css
+      - public/js/rmm-responsive-mobile-menu-public.js
+      version: true
+  responsive-news-scroller:
+    QueryParameter:
+      files:
+      - public/css/wpr-theme.css
+      version: true
+  responsive-portfolio-image-gallery:
+    QueryParameter:
+      files:
+      - assets/css/rcpig_grid_light.css
+      - assets/js/rcpig_grid.min.js
+      version: true
+  responsive-posts-widget:
+    QueryParameter:
+      files:
+      - responsive-posts-widget.css
+      version: true
+  responsive-pricing-table:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
   responsive-video-shortcodes:
     ComposerFile:
       class: ConfigParser
       path: composer.json
+      key: version
+      version: true
+  responsive-video-ultimate:
+    QueryParameter:
+      files:
+      - js/jquery.fitvids.js
+      version: true
+  responsive-videos-fitvids:
+    QueryParameter:
+      files:
+      - assets/js/jQuery.fitVids.js
+      version: true
+  responsive-widgets:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  responsive-youtube-video-player-and-iframe:
+    QueryParameter:
+      files:
+      - public/css/wp-yrvp-public.css
+      - public/js/wp-yrvp-public.js
+      version: true
+  resrc:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/resrc.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rest-api-enabler:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/rest-api-enabler.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: REST API Enabler (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rest-api-link-manager:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
       key: version
       version: true
   restaurant-reservations:
@@ -12098,6 +12240,18 @@ plugins:
       path: languages/rp-ads-manager-ru.po
       pattern: !ruby/regexp /ect\-Id\-Version:\ RedPic ADS Manager Lite (?<v>\d+\.[\.\d]+)/i
       version: true
+  rpb-chessboard:
+    QueryParameter:
+      files:
+      - fonts/chess-fonts.css
+      - css/rpbchess-ui-chessboard.css
+      - css/rpbchess-ui-chessgame.css
+      - css/frontend.css
+      - js/rpbchess-core.min.js
+      - js/rpbchess-ui-chessboard.min.js
+      - js/rpbchess-pgn.min.js
+      - js/rpbchess-ui-chessgame.min.js
+      version: true
   rss-importer:
     TranslationFile:
       class: BodyPattern
@@ -12175,6 +12329,12 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  seo-engine:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/seo-engine.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SEO Engine (?<v>\d+\.[\.\d]+)/i'
       version: true
   seostack:
     Comment:
@@ -12999,6 +13159,18 @@ plugins:
       - assets/css/twitter-feed.min.css
       - assets/js/twitter-feed.min.js
       version: true
+  weather-forecast:
+    QueryParameter:
+      files:
+      - public/css/weather-forecast-public.css
+      - public/js/jquery.simpleWeather.js
+      - public/js/weather-forecast-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/weather-forecast.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Weather Forecast (?<v>\d+\.[\.\d]+)/i'
+      version: true
   WeatherIcon:
     Comment:
       pattern: !ruby/regexp /Powered by WeatherIcon v(?<v>\d+\.[\.\d]+) \|/i
@@ -13784,6 +13956,13 @@ plugins:
       files:
       - public/css/posttosteemit-public.css
       - public/js/posttosteemit-public.js
+      - public/css/pts.css
+      - public/js/dist/bundle.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   wp-travel:
     TranslationFile:
@@ -13929,7 +14108,7 @@ plugins:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
-      pattern: !ruby/regexp /WPSSO Core (?<v>\d+\.[\.\d]+)\/G/i
+      pattern: !ruby/regexp /WPSSO Core (?<v>\d+\.[\.\d]+)\/[a-z]/i
     TranslationFile:
       class: BodyPattern
       path: languages/wpsso-fr_FR.po
