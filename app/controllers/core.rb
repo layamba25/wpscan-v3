@@ -46,7 +46,7 @@ module WPScan
       end
 
       def before_scan
-        output('banner') unless parsed_options[:no_banner]
+        output('banner') unless parsed_options[:banner] == false
 
         update_db if update_db_required?
         setup_cache
