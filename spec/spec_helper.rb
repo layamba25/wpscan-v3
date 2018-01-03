@@ -50,6 +50,14 @@ end
 require 'wpscan'
 require 'shared_examples'
 
+def rspec_parsed_options(args)
+  controllers = WPScan::Controller.constants.reject { |c| c == :Base }.reduce(WPScan::Controllers.new) do |a, sym|
+    a << WPScan::Controller.const_get(sym).new
+  end
+
+  controllers.option_parser.results(args.split(' '))
+end
+
 # TODO: remove when https://github.com/bblimke/webmock/issues/552 fixed
 #       Also remove from CMSScanner
 # rubocop:disable all

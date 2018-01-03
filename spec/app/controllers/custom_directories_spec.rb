@@ -3,7 +3,8 @@ require 'spec_helper'
 describe WPScan::Controller::CustomDirectories do
   subject(:controller) { described_class.new }
   let(:target_url)     { 'http://ex.lo/' }
-  let(:parsed_options) { { url: target_url } }
+  let(:parsed_options) { rspec_parsed_options(cli_args) }
+  let(:cli_args)       { "--url #{target_url}" }
 
   before do
     WPScan::Browser.reset
@@ -33,7 +34,7 @@ describe WPScan::Controller::CustomDirectories do
     end
 
     context 'when content_dir found/supplied' do
-      let(:parsed_options) { super().merge(wp_content_dir: 'wp-content') }
+      let(:cli_args) { "#{super()} --wp-content-dir wp-content" }
 
       it 'does not raise any error' do
         expect { controller.before_scan }.to_not raise_error

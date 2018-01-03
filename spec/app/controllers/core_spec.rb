@@ -3,7 +3,8 @@ require 'spec_helper'
 describe WPScan::Controller::Core do
   subject(:core)       { described_class.new }
   let(:target_url)     { 'http://ex.lo/' }
-  let(:parsed_options) { { url: target_url } }
+  let(:parsed_options) { rspec_parsed_options(cli_args) }
+  let(:cli_args)       { "--url #{target_url}" }
 
   before do
     WPScan::Browser.reset
@@ -52,7 +53,7 @@ describe WPScan::Controller::Core do
     context 'when --server' do
       %i[apache iis nginx].each do |server|
         context "when #{server}" do
-          let(:parsed_options) { super().merge(server: server) }
+          let(:cli_args) { "#{super()} --server #{server}" }
 
           it "loads the #{server.capitalize} module and returns :#{server}" do
             @stubbed_server = [:Apache, nil, :IIS, :Nginx].sample
@@ -68,7 +69,7 @@ describe WPScan::Controller::Core do
       before { expect(core.local_db).to receive(:missing_files?).ordered.and_return(true) }
 
       context 'when --no-update' do
-        let(:parsed_options) { super().merge(update: false) }
+        let(:cli_args) { "#{super()} --no-update" }
 
         it 'raises an error' do
           expect { core.update_db_required? }. to raise_error(WPScan::MissingDatabaseFile)
@@ -80,23 +81,23 @@ describe WPScan::Controller::Core do
       end
     end
 
-    context 'when no missing files' do
+    context 'when not missing files' do
       before { expect(core.local_db).to receive(:missing_files?).ordered.and_return(false) }
 
       context 'when --update' do
-        let(:parsed_options) { super().merge(update: true) }
+        let(:cli_args) { "#{super()} --update" }
 
         its(:update_db_required?) { should eql true }
       end
 
       context 'when --no-update' do
-        let(:parsed_options) { super().merge(update: false) }
+        let(:cli_args) { "#{super()} --no-update" }
 
         its(:update_db_required?) { should eql false }
       end
 
       context 'when user_interation (i.e cli output)' do
-        let(:parsed_options) { super().merge(format: 'cli') }
+        let(:cli_args) { "#{super()} --format cli" }
 
         context 'when the db is up-to-date' do
           before { expect(core.local_db).to receive(:outdated?).and_return(false) }
@@ -126,7 +127,7 @@ describe WPScan::Controller::Core do
       end
 
       context 'when no user_interation' do
-        let(:parsed_options) { super().merge(format: 'json') }
+        let(:cli_args) { "#{super()} --format json" }
 
         its(:update_db_required?) { should eql false }
       end
@@ -154,7 +155,7 @@ describe WPScan::Controller::Core do
       end
 
       context 'when the --url is not supplied' do
-        let(:parsed_options) { { update: true } }
+        let(:cli_args) { '--update' }
 
         it 'calls the formatter when started and finished to update the db and exit' do
           expect { core.before_scan }.to raise_error(SystemExit)
@@ -162,7 +163,7 @@ describe WPScan::Controller::Core do
       end
 
       context 'when --url is supplied' do
-        let(:parsed_options) { super().merge(update: true) }
+        let(:cli_args) { "#{super()} --update" }
 
         before do
           expect(core).to receive(:load_server_module)
@@ -259,7 +260,7 @@ describe WPScan::Controller::Core do
       end
 
       context 'when --force' do
-        let(:parsed_options) { super().merge(force: true) }
+        let(:cli_args) { "#{super()} --force" }
 
         it 'does not raise any error' do
           expect { core.before_scan }.to_not raise_error

@@ -10,7 +10,8 @@ end
 describe WPScan::Controller::WpVersion do
   subject(:controller) { described_class.new }
   let(:target_url)     { 'http://ex.lo/' }
-  let(:parsed_options) { { url: target_url } }
+  let(:parsed_options) { rspec_parsed_options(cli_args) }
+  let(:cli_args)       { "--url #{target_url}" }
 
   before do
     WPScan::Browser.reset
@@ -41,7 +42,7 @@ describe WPScan::Controller::WpVersion do
 
     %i[mixed passive aggressive].each do |mode|
       context "when --detection-mode #{mode}" do
-        let(:parsed_options) { super().merge(detection_mode: mode) }
+        let(:cli_args) { "#{super()} --detection-mode #{mode}" }
 
         [WPScan::WpVersion.new('4.0')].each do |version|
           context "when version = #{version}" do
@@ -54,16 +55,14 @@ describe WPScan::Controller::WpVersion do
     end
 
     context 'when --wp-version-all supplied' do
-      let(:parsed_options) { super().merge(wp_version_all: true) }
+      let(:cli_args) { "#{super()} --wp-version-all" }
       let(:stubbed) { WPScan::WpVersion.new('3.9.1') }
 
       it_calls_the_formatter_with_the_correct_parameter(WPScan::WpVersion.new('3.9.1'))
     end
 
     context 'when --wp-version-detection mode supplied' do
-      let(:parsed_options) do
-        super().merge(detection_mode: :mixed, wp_version_detection: :passive)
-      end
+      let(:cli_args) { "#{super()} --detection-mode mixed --wp-version-detection passive" }
       let(:stubbed) { WPScan::WpVersion.new('4.1') }
 
       it_calls_the_formatter_with_the_correct_parameter(WPScan::WpVersion.new('4.1'))
