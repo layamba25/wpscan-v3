@@ -5380,6 +5380,14 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/ditty-news-ticker/assets/fontastic/styles.css?ver=2.1.10
       - http://wp.lab/wp-content/plugins/ditty-news-ticker/assets/css/style.css?ver=2.1.10
+  docspress:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/docspress/assets/css/style.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/docspress/assets/js/script.js?ver=1.0.0
+      confidence: 20
   document-gallery:
     QueryParameter:
       number: 4.4.3
@@ -15997,6 +16005,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/solr-power/solr-for-wordpress-on-pantheon.pot,
         Match: ''"Project-Id-Version: solr-power 1.4.1'''
+  sp-client-document-manager:
+    QueryParameter:
+      number: 2.8.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sp-client-document-manager/style.css?ver=2.8.8
+      confidence: 10
   sp-news-and-widget:
     QueryParameter:
       number: 3.3.4
@@ -16230,6 +16245,14 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/taxonomy-images/css/style.css?ver=0.9.6
+  teachpress:
+    QueryParameter:
+      number: 6.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/teachpress/js/frontend.js?ver=6.2.1
+      - http://wp.lab/wp-content/plugins/teachpress/styles/teachpress_front.css?ver=6.2.1
+      confidence: 20
   telaalbums:
     QueryParameter:
       number: 1.4.6
@@ -16571,6 +16594,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/vk-all-in-one-expansion-unit/css/vkExUnit_style.css?ver=5.7.8
       - http://wp.lab/wp-content/plugins/vk-all-in-one-expansion-unit/js/all.min.js?ver=5.7.8
+  vk-link-target-controller:
+    QueryParameter:
+      number: 1.3.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/vk-link-target-controller/js/script.js?ver=1.3.0
+      confidence: 10
   voice-search:
     QueryParameter:
       number: 1.2.1
@@ -16775,6 +16805,33 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/widgets-for-siteorigin/css/defaults.css?ver=1.3.3
+  wolfnet-idx-for-wordpress:
+    QueryParameter:
+      number: 1.17.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/css/wolfnet.min.css?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/css/wolfnetAgentPages.min.css?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/lib/icomoon/style.css?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/css/wolfnet.birch.min.css?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/css/wolfnet.theme.custom.php?widgetTheme=birch&colors=333&opacity=80&ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/wolfnetSwipe.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.tooltip.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/wolfnet.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.wolfnetThumbnailScroller.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.wolfnetScrollingItems.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.wolfnetQuickSearch.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.wolfnetSmartsearch.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.imagesloaded.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.wolfnetListingGrid.min.js?ver=1.17.3
+      - http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/public/js/jquery.wolfnetToolbar.min.js?ver=1.17.3
+      confidence: 100
+    ComposerFile:
+      number: 1.17.3
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wolfnet-idx-for-wordpress/package.json,
+        Match: ''1.17.3'''
   wonderm00ns-simple-facebook-open-graph-tags:
     Comment:
       number: 2.1.5
@@ -16843,6 +16900,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/woo-price-per-word/languages/woocommerce-price-per-word.pot,
         Match: ''-Id-Version: WooCommerce Price Per Word 1.2.1'''
+  woo-sale-funnel:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/woo-sale-funnel/languages/mwb-sale-funnel-en_US.po,
+        Match: ''ect-Id-Version: Woocommerce Sale Funnel 1.0.0'''
   woo-smart-quick-view:
     QueryParameter:
       number: 1.0.0
@@ -17110,6 +17174,16 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''WordPress Social Login 2.2.3.'''
+  wordpress-tooltips:
+    QueryParameter:
+      number: 4.9.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wordpress-tooltips/js/qtip2/jquery.qtip.min.css?ver=4.9.1
+      - http://wp.lab/wp-content/plugins/wordpress-tooltips/js/jdirectory/directory.css?ver=4.9.1
+      - http://wp.lab/wp-content/plugins/wordpress-tooltips/js/qtip2/jquery.qtip.min.js?ver=4.9.1
+      - http://wp.lab/wp-content/plugins/wordpress-tooltips/js/jdirectory/jquery.directory.js?ver=4.9.1
+      confidence: 40
   wow-analytics:
     Comment:
       number: 2.1.0

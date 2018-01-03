@@ -4275,6 +4275,12 @@ plugins:
       - assets/fontastic/styles.css
       - assets/css/style.css
       version: true
+  docspress:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/script.js
+      version: true
   document-gallery:
     QueryParameter:
       files:
@@ -12602,6 +12608,11 @@ plugins:
       path: solr-for-wordpress-on-pantheon.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ solr\-power (?<v>\d+\.[\.\d]+)/i
       version: true
+  sp-client-document-manager:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
   sp-news-and-widget:
     QueryParameter:
       files:
@@ -12783,6 +12794,12 @@ plugins:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  teachpress:
+    QueryParameter:
+      files:
+      - js/frontend.js
+      - styles/teachpress_front.css
       version: true
   telaalbums:
     QueryParameter:
@@ -13060,6 +13077,11 @@ plugins:
       - css/vkExUnit_style.css
       - js/all.min.js
       version: true
+  vk-link-target-controller:
+    QueryParameter:
+      files:
+      - js/script.js
+      version: true
   voice-search:
     QueryParameter:
       files:
@@ -13219,6 +13241,30 @@ plugins:
       files:
       - css/defaults.css
       version: true
+  wolfnet-idx-for-wordpress:
+    QueryParameter:
+      files:
+      - public/css/wolfnet.min.css
+      - public/css/wolfnetAgentPages.min.css
+      - public/lib/icomoon/style.css
+      - public/css/wolfnet.birch.min.css
+      - public/css/wolfnet.theme.custom.php
+      - public/js/wolfnetSwipe.min.js
+      - public/js/jquery.tooltip.min.js
+      - public/js/wolfnet.min.js
+      - public/js/jquery.wolfnetThumbnailScroller.min.js
+      - public/js/jquery.wolfnetScrollingItems.min.js
+      - public/js/jquery.wolfnetQuickSearch.min.js
+      - public/js/jquery.wolfnetSmartsearch.min.js
+      - public/js/jquery.imagesloaded.min.js
+      - public/js/jquery.wolfnetListingGrid.min.js
+      - public/js/jquery.wolfnetToolbar.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   wonderm00ns-simple-facebook-open-graph-tags:
     Comment:
       pattern: !ruby/regexp /Facebook Open Graph, Google\+ and Twitter Card Tags (?<v>\d+\.[\.\d]+)/i
@@ -13272,6 +13318,12 @@ plugins:
       class: BodyPattern
       path: languages/woocommerce-price-per-word.pot
       pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce Price Per Word (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woo-sale-funnel:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mwb-sale-funnel-en_US.po
+      pattern: !ruby/regexp '/ect\-Id\-Version: Woocommerce Sale Funnel (?<v>\d+\.[\.\d]+)/i'
       version: true
   woo-smart-quick-view:
     QueryParameter:
@@ -13490,6 +13542,14 @@ plugins:
   wordpress-social-login:
     Comment:
       pattern: !ruby/regexp /WordPress Social Login (?<v>\d+\.[\.\d]+)./i
+      version: true
+  wordpress-tooltips:
+    QueryParameter:
+      files:
+      - js/qtip2/jquery.qtip.min.css
+      - js/jdirectory/directory.css
+      - js/qtip2/jquery.qtip.min.js
+      - js/jdirectory/jquery.directory.js
       version: true
   wow-analytics:
     Comment:
