@@ -13541,7 +13541,7 @@ plugins:
       version: true
   wordpress-social-login:
     Comment:
-      pattern: !ruby/regexp /WordPress Social Login (?<v>\d+\.[\.\d]+)./i
+      pattern: !ruby/regexp /WordPress Social Login (?<v>\d+\.[\.\d]+)\./i
       version: true
   wordpress-tooltips:
     QueryParameter:

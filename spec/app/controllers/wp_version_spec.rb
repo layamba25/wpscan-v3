@@ -7,6 +7,20 @@ def it_calls_the_formatter_with_the_correct_parameter(version)
   end
 end
 
+describe WPScan::Finders::WpVersionFinders do
+  subject(:finders) { described_class.new }
+
+  describe 'filter_findings' do
+    context 'when super returns false (nothing found)' do
+      before do
+        expect_any_instance_of(WPScan::Finders::UniqueFinders).to receive(:filter_findings).and_return(false)
+      end
+
+      its(:filter_findings) { should be false }
+    end
+  end
+end
+
 describe WPScan::Controller::WpVersion do
   subject(:controller) { described_class.new }
   let(:target_url)     { 'http://ex.lo/' }
