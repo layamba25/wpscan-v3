@@ -14,7 +14,7 @@ module WPScan
       def filter_findings
         best_finding = super
 
-        best_finding.confidence >= 40 ? best_finding : false
+        best_finding && best_finding.confidence >= 40 ? best_finding : false
       end
     end
 
