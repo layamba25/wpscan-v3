@@ -12598,9 +12598,34 @@ plugins:
       - admin/css/sassy-social-share-svg.css
       - public/js/sassy-social-share-public.js
       version: true
+  sb-login:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/sb-login.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SB Login (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  scand-osticket-connector:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/scand-osticket-connector-ru_RU.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: osTicket Connector (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  scheduled-pages-dashboard-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/scheduled-pages-dashboard-widget-en_GB.po
+      pattern: !ruby/regexp '/sion: Scheduled Pages Dashboard Widget v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   schema:
     Comment:
       pattern: !ruby/regexp /te is optimized with the Schema plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  schemaninja:
+    QueryParameter:
+      files:
+      - style.css
+      - assets/font-awesome/css/font-awesome.min.css
+      - assets/css/circle.css
       version: true
   schemify:
     TranslationFile:
@@ -12608,11 +12633,73 @@ plugins:
       path: languages/schemify.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Schemify (?<v>\d+\.[\.\d]+)/i
       version: true
+  scode-by-mojwp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/scode-ru_RU.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: sCode (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  scottcart:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      - assets/js/cart.js
+      - assets/js/purchase_confirmation.js
+      - assets/js/single_product.js
+      - assets/js/jquery.zoom.min.js
+      - assets/js/tabs.js
+      - assets/js/account.js
+      - assets/js/jquery.validate.js
+      version: true
+  scr-camping-key-europe-purchase:
+    QueryParameter:
+      files:
+      - assets/js/cke-lightbox.js
+      version: true
+  scratchblocks-for-wp:
+    QueryParameter:
+      files:
+      - lib/scratchblocks2.css
+      - lib/scratchblocks2.js
+      version: true
+  screen-reader-text-theme-support:
+    QueryParameter:
+      files:
+      - assets/css/main.css
+      version: true
+  screenshot-machine-shortcode:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/screenshot-machine-shortcode.pot
+      pattern: !ruby/regexp '/ion: JSM''s Screenshot Machine Shortcode (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  scroll-popup:
+    QueryParameter:
+      files:
+      - js/jquery.cornerslider.js
+      version: true
+  scroll-top:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/scroll-top.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Scroll Top (?<v>\d+\.[\.\d]+)/i'
+      version: true
   scrybs-translation:
     QueryParameter:
       files:
       - public/css/scrybs-public.css
       - public/js/scrybs-public.js
+      version: true
+  search-and-navigation-popup:
+    QueryParameter:
+      files:
+      - assets/css/sanpop-public-style.css
+      version: true
+  search-boxes-integration-for-booking-affiliates:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/basb_text_domain.pot
+      pattern: !ruby/regexp /oxes integration for Booking affiliates (?<v>\d+\.[\.\d]+)/i
       version: true
   search-by-algolia-instant-relevant-results:
     TranslationFile:
@@ -12624,6 +12711,62 @@ plugins:
     JavascriptVar:
       pattern: !ruby/regexp /window\._se_plugin_version = '(?<v>\d+\.[\.\d]+)';/i
       version: true
+  search-google:
+    QueryParameter:
+      files:
+      - css/search-google.css
+      - js/search-google.js
+      version: true
+  search-results-optimizer:
+    QueryParameter:
+      files:
+      - assets/css/searchresultsoptimizer.css
+      - assets/js/searchresultsoptimizer.min.js
+      version: true
+  search-with-azure:
+    QueryParameter:
+      files:
+      - public/css/azure-search-public.css
+      version: true
+  searchwp-live-ajax-search:
+    QueryParameter:
+      files:
+      - assets/styles/style.css
+      - assets/javascript/build/searchwp-live-search.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  secure-downloads:
+    QueryParameter:
+      files:
+      - css/client.css
+      - css/popover.css
+      - css/calendar.css
+      version: true
+  selfie:
+    QueryParameter:
+      files:
+      - Selfie/Public/css/selfie.css
+      - Selfie/Public/js/selfie-fe.js
+      version: true
+  sell-digital-downloads:
+    QueryParameter:
+      files:
+      - css/isell_style.css
+      version: true
+  selz-ecommerce:
+    QueryParameter:
+      files:
+      - dist/css/styles.css
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   semantic-linkbacks:
     QueryParameter:
       files:
@@ -12634,17 +12777,70 @@ plugins:
       path: languages/semantic-linkbacks.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Semantic\-Linkbacks (?<v>\d+\.[\.\d]+)/i'
       version: true
+  semantify-it:
+    QueryParameter:
+      files:
+      - public/css/semantify_it-public.css
+      - public/js/semantify_it-public.js
+      version: true
+  send-2-my-mail:
+    QueryParameter:
+      files:
+      - public/js/b2reader-public.js
+      version: true
+  send-facebook-notification:
+    QueryParameter:
+      files:
+      - public/css/fb-notify-public.css
+      - public/js/fb-notify-public.js
+      version: true
+  send-files:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/script.js
+      version: true
+  send-to-kindle:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/send-to-kindle.pot
+      pattern: !ruby/regexp '/oject\-Id\-Version: Amazon Send to Kindle (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  send24:
+    QueryParameter:
+      files:
+      - assets/css/popup.css
+      - assets/js/frontend-main.js
+      version: true
   sendpulse-email-marketing-newsletter:
     ComposerFile:
       class: ConfigParser
       path: package.json
       key: version
       version: true
+  seo-check:
+    QueryParameter:
+      files:
+      - css/widget-report.css
+      - js/base.js
+      version: true
   seo-engine:
     TranslationFile:
       class: BodyPattern
       path: i18n/languages/seo-engine.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: SEO Engine (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  seo-searchterms-admin:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
+  seo-tag-cloud:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/seo-tag-cloud.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: SEO Tag Cloud Widget (?<v>\d+\.[\.\d]+)/i'
       version: true
   seostack:
     Comment:
@@ -12653,6 +12849,12 @@ plugins:
     QueryParameter:
       files:
       - js/seostack.frontend.js
+      version: true
+  series:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/series.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Series (?<v>\d+\.[\.\d]+)/i'
       version: true
   seriously-simple-podcasting:
     QueryParameter:
@@ -12667,6 +12869,23 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Seriously Simple Podcasting (?<v>\d+\.[\.\d]+)/i
+  sewn-in-notifications:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/scripts.js
+      version: true
+  sewn-in-post-delete:
+    QueryParameter:
+      files:
+      - assets/js/sewn-in-post-delete.js
+      version: true
+  sezame:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sezame.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Sezame (?<v>\d+\.[\.\d]+)/i'
+      version: true
   share-this-image:
     QueryParameter:
       files:
