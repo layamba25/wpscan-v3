@@ -1167,6 +1167,18 @@ plugins:
       - css/font-awesome/css/font-awesome.min.css
       - js/amo.js
       version: true
+  art-picture-gallery:
+    QueryParameter:
+      files:
+      - assets/js/masonry.pkgd.min.js
+      - assets/js/imagesloaded.pkgd.min.js
+      - js/art_widgets.js
+      - assets/dist/js/bootstrap.min.js
+      - apg.class/file-upload/js/blueimp-gallery.min.js
+      - apg.class/file-upload/js/blueimp-gallery-fullscreen.js
+      - apg.class/file-upload/js/blueimp-gallery-indicator.js
+      - apg.class/file-upload/js/jquery.blueimp-gallery.js
+      version: true
   as-store-locator:
     QueryParameter:
       files:
@@ -1671,6 +1683,11 @@ plugins:
     QueryParameter:
       files:
       - public/css/bee-quick-gallery-public.css
+      version: true
+  beepress:
+    QueryParameter:
+      files:
+      - lib/beepress.css
       version: true
   before-after-image-slider-lite:
     QueryParameter:
@@ -5468,6 +5485,10 @@ plugins:
       files:
       - assets/css/favorites.css
       - assets/js/favorites.min.js
+      version: true
+  fb-analytics:
+    Comment:
+      pattern: !ruby/regexp /Facebook Analytics \- fba plugin\- v(?<v>\d+\.[\.\d]+) \-/i
       version: true
   fb-photo-sync:
     QueryParameter:
@@ -12264,6 +12285,12 @@ plugins:
       path: languages/rss-importer.pot
       pattern: !ruby/regexp /on of the WordPress plugin RSS Importer (?<v>\d+\.[\.\d]+)/i
       version: true
+  rsvpmaker:
+    TranslationFile:
+      class: BodyPattern
+      path: translations/rsvpmaker.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: RSVPMaker (?<v>\d+\.[\.\d]+)/i'
+      version: true
   s2member:
     QueryParameter:
       files:
@@ -12554,6 +12581,12 @@ plugins:
       files:
       - snow-storm.js
       version: true
+  social-booster:
+    QueryParameter:
+      files:
+      - public/css/social-booster-public.css
+      - public/js/social-booster-public.js
+      version: true
   social-count-plus:
     TranslationFile:
       class: BodyPattern
@@ -12812,6 +12845,11 @@ plugins:
       class: BodyPattern
       path: languages/testimonials-widget.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Testimonials Widget (?<v>\d+\.[\.\d]+)/i
+      version: true
+  the-beyond:
+    QueryParameter:
+      files:
+      - src/embed.js
       version: true
   the-events-calendar:
     TranslationFile:
@@ -13332,6 +13370,12 @@ plugins:
       - assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
       - assets/libs/magnific-popup/jquery.magnific-popup.min.js
       version: true
+  woo-smart-wishlist:
+    QueryParameter:
+      files:
+      - assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
+      - assets/js/frontend.js
+      version: true
   woo-variation-swatches:
     QueryParameter:
       files:
@@ -13783,6 +13827,12 @@ plugins:
       - assets/css/slick.css
       - assets/css/logo-showcase.css
       version: true
+  wp-mail-ses:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/default.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: wp\-mail\-ses (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-maintenance-mode:
     TranslationFile:
       class: BodyPattern
@@ -14075,6 +14125,15 @@ plugins:
   wp-video-lightbox:
     JavascriptVar:
       pattern: !ruby/regexp /WP_VIDEO_LIGHTBOX_VERSION\s*=\s*"(?<v>\d+\.[\.\d]+)";/i
+      version: true
+  wp-yelp-review-slider:
+    QueryParameter:
+      files:
+      - public/css/wpyelp_w3.css
+      - public/css/wprs_unslider.css
+      - public/css/wprs_unslider-dots.css
+      - public/js/wprev-public.js
+      - public/js/wprs-unslider-min.js
       version: true
   wp-yomigana:
     ComposerFile:

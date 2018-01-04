@@ -1450,6 +1450,20 @@ plugins:
       - http://wp.lab/wp-content/plugins/arrange-multisite-order/css/style.css?ver=1.0
       - http://wp.lab/wp-content/plugins/arrange-multisite-order/css/font-awesome/css/font-awesome.min.css?ver=1.0
       - http://wp.lab/wp-content/plugins/arrange-multisite-order/js/amo.js?ver=1.0
+  art-picture-gallery:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/assets/js/masonry.pkgd.min.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/assets/js/imagesloaded.pkgd.min.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/js/art_widgets.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/assets/dist/js/bootstrap.min.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/apg.class/file-upload/js/blueimp-gallery.min.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/apg.class/file-upload/js/blueimp-gallery-fullscreen.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/apg.class/file-upload/js/blueimp-gallery-indicator.js?ver=1.0
+      - http://wp.lab/wp-content/plugins/art-picture-gallery/apg.class/file-upload/js/jquery.blueimp-gallery.js?ver=1.0
+      confidence: 80
   as-store-locator:
     QueryParameter:
       number: 1.5.6
@@ -2115,6 +2129,13 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/bee-quick-gallery/public/css/bee-quick-gallery-public.css?ver=1.0.0
+  beepress:
+    QueryParameter:
+      number: 3.2.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/beepress/lib/beepress.css?ver=3.2.0
+      confidence: 10
   before-after-image-slider-lite:
     QueryParameter:
       number: 2.1.1
@@ -6890,6 +6911,12 @@ plugins:
       - http://wp.lab/wp-content/plugins/favorites/assets/css/favorites.css?ver=2.1.6
       - http://wp.lab/wp-content/plugins/favorites/assets/js/favorites.min.js?ver=2.1.6
       confidence: 20
+  fb-analytics:
+    Comment:
+      number: '1.0'
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Facebook Analytics - fba plugin- v1.0 -'''
   fb-photo-sync:
     QueryParameter:
       number: 0.5.8
@@ -15573,6 +15600,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/rss-importer/languages/rss-importer.pot,
         Match: ''on of the WordPress plugin RSS Importer 0.2'''
+  rsvpmaker:
+    TranslationFile:
+      number: 5.1.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/rsvpmaker/translations/rsvpmaker.pot, Match:
+        ''"Project-Id-Version: RSVPMaker 5.1.3'''
   s2member:
     QueryParameter:
       number: '170722'
@@ -15937,6 +15971,14 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/snow-storm/snow-storm.js?ver=1.4.3
+  social-booster:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/social-booster/public/css/social-booster-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/social-booster/public/js/social-booster-public.js?ver=1.0.0
+      confidence: 20
   social-count-plus:
     TranslationFile:
       number: 3.4.1
@@ -16268,6 +16310,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/testimonials-widget/languages/testimonials-widget.pot,
         Match: ''Project-Id-Version: Testimonials Widget 3.4.2'''
+  the-beyond:
+    QueryParameter:
+      number: 0.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/the-beyond/src/embed.js?ver=0.1.0
+      confidence: 10
   the-events-calendar:
     TranslationFile:
       number: 4.6.6
@@ -16916,6 +16965,14 @@ plugins:
       - http://wp.lab/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.min.js?ver=1.0.0
       - http://wp.lab/wp-content/plugins/woo-smart-quick-view/assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js?ver=1.0.0
       - http://wp.lab/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/jquery.magnific-popup.min.js?ver=1.0.0
+  woo-smart-wishlist:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/woo-smart-wishlist/assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/woo-smart-wishlist/assets/js/frontend.js?ver=1.0.0
+      confidence: 20
   woo-variation-swatches:
     QueryParameter:
       number: 1.0.0
@@ -17472,6 +17529,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/wp-logo-showcase-responsive-slider-slider/assets/css/slick.css?ver=1.3.3
       - http://wp.lab/wp-content/plugins/wp-logo-showcase-responsive-slider-slider/assets/css/logo-showcase.css?ver=1.3.3
+  wp-mail-ses:
+    TranslationFile:
+      number: 0.0.4
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wp-mail-ses/languages/default.pot, Match:
+        ''"Project-Id-Version: wp-mail-ses 0.0.4'''
   wp-maintenance-mode:
     TranslationFile:
       number: 2.0.9
@@ -17834,6 +17898,17 @@ plugins:
       found_by: Javascript Var (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''WP_VIDEO_LIGHTBOX_VERSION="1.8.5";'''
+  wp-yelp-review-slider:
+    QueryParameter:
+      number: '2.8'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-yelp-review-slider/public/css/wpyelp_w3.css?ver=2.8
+      - http://wp.lab/wp-content/plugins/wp-yelp-review-slider/public/css/wprs_unslider.css?ver=2.8
+      - http://wp.lab/wp-content/plugins/wp-yelp-review-slider/public/css/wprs_unslider-dots.css?ver=2.8
+      - http://wp.lab/wp-content/plugins/wp-yelp-review-slider/public/js/wprev-public.js?ver=2.8
+      - http://wp.lab/wp-content/plugins/wp-yelp-review-slider/public/js/wprs-unslider-min.js?ver=2.8
+      confidence: 50
   wp-yomigana:
     ComposerFile:
       number: 1.3.0
