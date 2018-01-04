@@ -5488,7 +5488,8 @@ plugins:
       version: true
   fb-analytics:
     Comment:
-      pattern: !ruby/regexp /Facebook Analytics \- fba plugin\- v(?<v>\d+\.[\.\d]+) \-/i
+      pattern: !ruby/regexp /Facebook Analytics \- fba plugin\- v(?<v>\d+\.[\.\d]+)
+        \-/i
       version: true
   fb-photo-sync:
     QueryParameter:
@@ -10512,6 +10513,7 @@ plugins:
       version: true
   passbeemedia-web-push-notifications:
     Comment:
+      xpath: //comment()[contains(., "passbeemedia.com")]
       pattern: !ruby/regexp /Chrome Browser Push\. \(v (?<v>\d+\.[\.\d]+)\) \- https?:\/\/passbeemedia\.com/i
       version: true
   password-confirm-action:
@@ -11566,6 +11568,7 @@ plugins:
       version: true
   push-notification-for-wp-by-pushassist:
     Comment:
+      xpath: //comment()[contains(., "pushassist.com")]
       pattern: !ruby/regexp /Plugin version (?<v>\d+\.[\.\d]+) \- https?:\/\/pushassist\.com/i
       version: true
   push-notification-sender:
@@ -12216,6 +12219,18 @@ plugins:
       path: package-lock.json
       key: version
       version: true
+  restore-admin-header:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/default.po
+      pattern: !ruby/regexp '/oject\-Id\-Version: Restore Admin Header v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  resume-page:
+    TranslationFile:
+      class: BodyPattern
+      path: libs/custom-meta-boxes/languages/cmb-fi.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Custom Meta Boxes (?<v>\d+\.[\.\d]+)/i'
+      version: true
   retainly:
     QueryParameter:
       files:
@@ -12223,6 +12238,29 @@ plugins:
       - js/jquery.uniform.min.js
       - js/custom.js
       - js/idle-timer.min.js
+      version: true
+  review-buddypress-groups:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-group-reviews-en_US.po
+      pattern: !ruby/regexp '/ct\-Id\-Version: Review BuddyPress Groups (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  review-content-type:
+    QueryParameter:
+      files:
+      - assets/css/frontend.min.css
+      - assets/js/frontend.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/review-content-type.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Review Content Type (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  reviewpress:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      - assets/js/front-main.js
       version: true
   revised-publishing-status:
     ComposerFile:
@@ -12256,16 +12294,114 @@ plugins:
       pattern: !ruby/regexp /\AVersion (?<v>\d+\.[\.\d]+).*\z/i
       version: true
       confidence: 80
+  revue:
+    QueryParameter:
+      files:
+      - revue.js
+      version: true
+  rewrite-flush-button:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/rewrite-flush-button.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: Rewrite Flush Button (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rexpansive-page-builder:
+    QueryParameter:
+      files:
+      - public/css/public.css
+      - public/js/plugins.js
+      - public/js/public.js
+      version: true
+  riddle-playful-content-on-the-go:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      version: true
+  riloadr-for-wordpress:
+    QueryParameter:
+      files:
+      - includes/riloadr.wp.jquery.min.js
+      version: true
   ringotel-messenger-customer-chat:
     QueryParameter:
       files:
       - messenger-customer-chat.js
+      version: true
+  rk-hreview-for-wp:
+    QueryParameter:
+      files:
+      - css/rk-wp-hreview.css
+      version: true
+  robo-maps:
+    QueryParameter:
+      files:
+      - public/css/robo-maps-public.css
+      - public/js/robo-maps-public.js
+      version: true
+  rocket-reader-speed-reader:
+    Comment:
+      xpath: //comment()[contains(., "Rocket Reader")]
+      pattern: !ruby/regexp /START Rocket Reader v(?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/rr_rocket_reader_fe.min.css
+      - js/rr_rocket_reader.min.js
+      version: true
+  rokka-integration:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/rokka-integration-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: rokka\-integration (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  roknewsflash:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/roknewsflash.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: RokNewsFlash (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  role-based-storage-limiter:
+    QueryParameter:
+      files:
+      - public/css/role-based-storage-limiter-public.css
+      - public/js/role-based-storage-limiter-public.js
+      version: true
+  role-quick-changer:
+    QueryParameter:
+      files:
+      - assets/js/rqc.main.min.js
+      version: true
+  rolo-slider:
+    QueryParameter:
+      files:
+      - assets/js/owl.carousel.min.js
+      - assets/js/rolo.js
+      version: true
+  roost-for-bloggers:
+    Comment:
+      xpath: //comment()[contains(., "goroost.com")]
+      pattern: !ruby/regexp /and Firefox\. \(v (?<v>\d+\.[\.\d]+)\) \- https?:\/\/goroost\.com/i
+      version: true
+  rot13-encoderdecoder:
+    QueryParameter:
+      files:
+      - js/rot13-encoderdecoder.js
+      version: true
+  rounded-tag-cloud:
+    QueryParameter:
+      files:
+      - style.css
       version: true
   rp-ads-manager:
     TranslationFile:
       class: BodyPattern
       path: languages/rp-ads-manager-ru.po
       pattern: !ruby/regexp /ect\-Id\-Version:\ RedPic ADS Manager Lite (?<v>\d+\.[\.\d]+)/i
+      version: true
+  rp-news-ticker:
+    QueryParameter:
+      files:
+      - liScroll.min.js
       version: true
   rpb-chessboard:
     QueryParameter:
@@ -12279,17 +12415,117 @@ plugins:
       - js/rpbchess-pgn.min.js
       - js/rpbchess-ui-chessgame.min.js
       version: true
+  rs-custom-popup:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+  rs-google-analytics:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+  rs-members:
+    QueryParameter:
+      files:
+      - assets/css/main.css
+      - assets/css/dtpicker.css
+      - assets/js/rs-login-widget.js
+      - assets/js/dtpicker.js
+      version: true
+  rs-social-sidebar:
+    QueryParameter:
+      files:
+      - public/css/rs-social-sidebar-public.css
+      - public/js/rs-social-sidebar-public.js
+      version: true
+  rs-twitter-follow-popup:
+    QueryParameter:
+      files:
+      - public/css/rs-twitter-follow-popup-public.css
+      - public/js/rs-twitter-follow-popup-public.js
+      version: true
+  rs-user-access:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+  rss-antenna:
+    QueryParameter:
+      files:
+      - rss-antenna.css
+      version: true
   rss-importer:
     TranslationFile:
       class: BodyPattern
       path: languages/rss-importer.pot
       pattern: !ruby/regexp /on of the WordPress plugin RSS Importer (?<v>\d+\.[\.\d]+)/i
       version: true
+  rss-synchronization:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      version: true
+  rsv-360-view:
+    QueryParameter:
+      files:
+      - jquery.reel.js
+      - jquery.mousewheel.min.js
+      version: true
+  rsv-slider:
+    QueryParameter:
+      files:
+      - owl.carousel.min.js
+      version: true
   rsvpmaker:
     TranslationFile:
       class: BodyPattern
       path: translations/rsvpmaker.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: RSVPMaker (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  rt-wp-logo-slider:
+    QueryParameter:
+      files:
+      - assets/css/wplogoslider.css
+      version: true
+  rtwidgets:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  rubytabs-lite:
+    QueryParameter:
+      files:
+      - ruby/rubytabs.css
+      - ruby/ruby.animate.css
+      - ruby/rubytabs.js
+      version: true
+  run-log:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/run-log-he_IL.po
+      pattern: !ruby/regexp /\#\. \#\-\#\-\#\-\#\-\#  run\-log\-code\.pot \(Run Log
+        (?<v>\d+\.[\.\d]+)/i
+      version: true
+  rvvideos:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/rvvideos-fr_FR.po
+      pattern: !ruby/regexp /gin\.pot \(RVVideos \- RestoVisio's videos (?<v>\d+\.[\.\d]+)/i
+      version: true
+  ryviu:
+    QueryParameter:
+      files:
+      - assets/js/local-ryviu.js
+      version: true
+  s-buttonz:
+    Comment:
+      xpath: //comment()[contains(., "S-ButtonZ")]
+      pattern: !ruby/regexp /S\-ButtonZ (?<v>\d+\.[\.\d]+)/i
       version: true
   s2member:
     QueryParameter:
@@ -12302,11 +12538,45 @@ plugins:
       path: src/includes/translations/s2member.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\  (?<v>\d+\.[\.\d]+)/i
       version: true
+  s3-secure-url:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/s3-secure-url.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  safari-push:
+    QueryParameter:
+      files:
+      - js/safari-push.min.js
+      version: true
   safe-redirect-manager:
     TranslationFile:
       class: BodyPattern
       path: lang/safe-redirect-manager.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ Safe Redirect Manager (?<v>\d+\.[\.\d]+)/i
+      version: true
+  samba-videos:
+    QueryParameter:
+      files:
+      - public/css/samba-videos-public.css
+      - public/js/samba-videos-public.js
+      version: true
+  samuweb-related-questions:
+    QueryParameter:
+      files:
+      - samuweb-related-questions-style.css
+      - samuweb-related-questions.js
+      version: true
+  samuweb-skim-blog:
+    QueryParameter:
+      files:
+      - samuweb-skim-blog-style.css
+      - samuweb-skim-blog.js
       version: true
   saphali-woocommerce-lite:
     MetaTag:
@@ -12314,6 +12584,13 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Saphali Lite (?<v>\d+\.[\.\d]+)/i
+  sapphire-rms:
+    QueryParameter:
+      files:
+      - public/css/bootstrap-datetimepicker.min.css
+      - public/css/SapphireRMS-public.css
+      - public/js/SapphireRMS-public.js
+      version: true
   sassy-social-share:
     QueryParameter:
       files:
