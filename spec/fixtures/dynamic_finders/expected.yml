@@ -1210,6 +1210,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/annonces/includes/css/annonce.css?ver=1.2.0.7
       - http://wp.lab/wp-content/plugins/annonces/includes/css/fileuploader.css?ver=1.2.0.7
       - http://wp.lab/wp-content/plugins/annonces/includes/js/swfobject.js?ver=1.2.0.7
+  annoto:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/annoto/src/js/annoto.js?ver=1.0
+      confidence: 10
   announce-on-publish:
     TranslationFile:
       number: 2016.10.30
@@ -1411,7 +1418,7 @@ plugins:
     QueryParameter:
       number: 1.17.12.08.03
       found_by: Query Parameter (Passive Detection)
-      confidence: 80
+      confidence: 90
       interesting_entries:
       - http://wp.lab/wp-content/plugins/aretk-crea/public/css/jquery-public-ui.css?ver=1.17.12.08.03
       - http://wp.lab/wp-content/plugins/aretk-crea/public/css/aretk-crea-public.css?ver=1.17.12.08.03
@@ -1421,6 +1428,7 @@ plugins:
       - http://wp.lab/wp-content/plugins/aretk-crea/public/js/jquery.bxslider.js?ver=1.17.12.08.03
       - http://wp.lab/wp-content/plugins/aretk-crea/public/js/nouislider.min.js?ver=1.17.12.08.03
       - http://wp.lab/wp-content/plugins/aretk-crea/public/js/modernizr.js?ver=1.17.12.08.03
+      - http://wp.lab/wp-content/plugins/aretk-crea/public/js/aretk-crea-public.js?ver=1.17.12.08.03
   ari-fancy-lightbox:
     QueryParameter:
       number: 1.2.8
@@ -2240,6 +2248,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/better-yourls/languages/better-yourls.pot,
         Match: ''Project-Id-Version: Better YOURLS 2.2.4'''
+  bft-autoresponder:
+    TranslationFile:
+      number: 2.4.8
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/bft-autoresponder/bft-autoresponder.pot,
+        Match: ''n: Arigato Autoresponder and Newsletter 2.4.8'''
   bg-biblie-references:
     QueryParameter:
       number: 3.13.2
@@ -2698,12 +2713,14 @@ plugins:
     QueryParameter:
       number: '8.1'
       found_by: Query Parameter (Passive Detection)
-      confidence: 40
+      confidence: 60
       interesting_entries:
       - http://wp.lab/wp-content/plugins/booking/css/client.css?ver=8.1
       - http://wp.lab/wp-content/plugins/booking/css/timeline.css?ver=8.1
       - http://wp.lab/wp-content/plugins/booking/css/calendar.css?ver=8.1
       - http://wp.lab/wp-content/plugins/booking/css/skins/traditional.css?ver=8.1
+      - http://wp.lab/wp-content/plugins/booking/js/wpbc_vars.js?ver=8.1
+      - http://wp.lab/wp-content/plugins/booking/js/client.js?ver=8.1
   booking-activities:
     QueryParameter:
       number: 1.2.2
@@ -3080,6 +3097,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/brightcove-video-connect/languages/brightcove.pot,
         Match: ''ct-Id-Version: Brightcove Video Connect 1.3.2'''
+  brix-page-builder:
+    TranslationFile:
+      number: 1.3.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/brix-page-builder/languages/brix.pot, Match:
+        ''"Project-Id-Version: Brix Builder 1.3.3'''
   browser-theme-colors:
     QueryParameter:
       number: 1.0.0
@@ -9080,6 +9104,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/indieweb-post-kinds/languages/post_kinds.pot,
         Match: ''"Project-Id-Version: Post Kinds 2.7.4'''
+  inespay-payment:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/inespay-payment/languages/inespay-es_ES.po,
+        Match: ''"Project-Id-Version: Inespay payment 1.0.0'''
   infogalore-file-folders:
     QueryParameter:
       number: '1.0'
@@ -11189,6 +11220,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/, Match: ''MasterSlider 3.4.1 - Responsive Touch Image Slider
         | avt.li/msf'''
+  masy-gallery:
+    QueryParameter:
+      number: '1.5'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/masy-gallery/js/macy.min.js?ver=1.5
+      confidence: 10
   material-design-icons:
     QueryParameter:
       number: 0.0.5
@@ -16701,6 +16739,14 @@ plugins:
       found_by: Comment (Passive Detection)
       interesting_entries:
       - 'http://wp.lab/, Match: ''themes using Speed Booster Pack Plugin v3.6.1'''
+  speedy-video:
+    QueryParameter:
+      number: 1.0.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/speedy-video/public/css/speedyvideo-public.css?ver=1.0.1
+      - http://wp.lab/wp-content/plugins/speedy-video/public/js/speedyvideo-public.js?ver=1.0.1
+      confidence: 20
   spider-event-calendar:
     QueryParameter:
       number: 1.5.56
@@ -17161,6 +17207,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/universam-demo/assets/js/chat.js?ver=4.50.02
       - http://wp.lab/wp-content/plugins/universam-demo/assets/js/bootstrap/bootstrap.js?ver=4.50.02
       confidence: 100
+  upstream:
+    TranslationFile:
+      number: 1.13.5
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/upstream/languages/upstream.pot, Match:
+        ''"Project-Id-Version: UpStream v1.13.5'''
   user-access-manager:
     QueryParameter:
       number: 2.1.9

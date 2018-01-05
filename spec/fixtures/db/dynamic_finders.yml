@@ -980,6 +980,11 @@ plugins:
       - includes/css/fileuploader.css
       - includes/js/swfobject.js
       version: true
+  annoto:
+    QueryParameter:
+      files:
+      - src/js/annoto.js
+      version: true
   announce-on-publish:
     TranslationFile:
       class: BodyPattern
@@ -1143,6 +1148,7 @@ plugins:
       - public/js/jquery.bxslider.js
       - public/js/nouislider.min.js
       - public/js/modernizr.js
+      - public/js/aretk-crea-public.js
       version: true
   ari-fancy-lightbox:
     QueryParameter:
@@ -1773,6 +1779,12 @@ plugins:
       path: languages/better-yourls.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Better YOURLS (?<v>\d+\.[\.\d]+)/i
       version: true
+  bft-autoresponder:
+    TranslationFile:
+      class: BodyPattern
+      path: bft-autoresponder.pot
+      pattern: !ruby/regexp '/n: Arigato Autoresponder and Newsletter (?<v>\d+\.[\.\d]+)/i'
+      version: true
   bg-biblie-references:
     QueryParameter:
       files:
@@ -2131,6 +2143,8 @@ plugins:
       - css/timeline.css
       - css/calendar.css
       - css/skins/traditional.css
+      - js/wpbc_vars.js
+      - js/client.js
       version: true
   booking-activities:
     QueryParameter:
@@ -2443,6 +2457,12 @@ plugins:
       class: BodyPattern
       path: languages/brightcove.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ Brightcove Video Connect (?<v>\d+\.[\.\d]+)/i
+      version: true
+  brix-page-builder:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/brix.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Brix Builder (?<v>\d+\.[\.\d]+)/i'
       version: true
   browser-theme-colors:
     QueryParameter:
@@ -7177,6 +7197,12 @@ plugins:
       path: languages/post_kinds.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Post Kinds (?<v>\d+\.[\.\d]+)/i
       version: true
+  inespay-payment:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/inespay-es_ES.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Inespay payment (?<v>\d+\.[\.\d]+)/i'
+      version: true
   infogalore-file-folders:
     QueryParameter:
       files:
@@ -8834,6 +8860,11 @@ plugins:
       version: true
       pattern: !ruby/regexp /MasterSlider (?<v>\d+\.[\.\d]+) \- Responsive Touch\
         Image Slider \| avt\.li\/msf/i
+  masy-gallery:
+    QueryParameter:
+      files:
+      - js/macy.min.js
+      version: true
   material-design-icons:
     QueryParameter:
       files:
@@ -13152,6 +13183,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /themes using Speed Booster Pack Plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
+  speedy-video:
+    QueryParameter:
+      files:
+      - public/css/speedyvideo-public.css
+      - public/js/speedyvideo-public.js
+      version: true
   spider-event-calendar:
     QueryParameter:
       files:
@@ -13517,6 +13554,12 @@ plugins:
       - assets/js/product-filter.js
       - assets/js/chat.js
       - assets/js/bootstrap/bootstrap.js
+      version: true
+  upstream:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/upstream.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: UpStream v(?<v>\d+\.[\.\d]+)/i'
       version: true
   user-access-manager:
     QueryParameter:
