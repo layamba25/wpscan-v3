@@ -720,6 +720,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/advanced-database-cleaner/languages/advanced-db-cleaner.pot,
         Match: ''Project-Id-Version: Advanced Database Cleaner 2.0.0'''
+  advanced-forms-paypal-payment-buttons:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/advanced-forms-paypal-payment-buttons/public/css/advanced-forms-paypal-payment-buttons-public.css?ver=1.0.0
+      confidence: 10
   advanced-plugin-search:
     QueryParameter:
       number: 0.0.1
@@ -3795,6 +3802,23 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/cbxwooextendedorders/languages/cbxwooextendedorders-en_GB.po,
         Match: ''ersion: CBX Woo Extended Order Display v2.0.0'''
+  cbxwpreadymix:
+    QueryParameter:
+      number: 1.0.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/vendor/owl-carousel/assets/owl.carousel.min.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/vendor/owl-carousel/assets/owl.theme.default.min.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/css/cbxwpreadymix-public.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/css/cbxwpreadymixbootstrap.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/css/cbxwpreadymix-team.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/css/cbxwpreadymix-testimonial.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/css/cbxwpreadymix-brand.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/css/cbxwpreadymix-portfolio.css?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/js/cbxwpreadymix-public.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/vendor/owl-carousel/owl.carousel.min.js?ver=1.0.2
+      - http://wp.lab/wp-content/plugins/cbxwpreadymix/public/vendor/isotope/isotope.pkgd.min.js?ver=1.0.2
+      confidence: 100
   cbxwpslack:
     TranslationFile:
       number: 1.2.0
@@ -3802,6 +3826,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/cbxwpslack/languages/cbxwpslack-en_GB.po,
         Match: ''Project-Id-Version: CBX WPSlack v1.2.0'''
+  cc-auto-activate-plugins:
+    ComposerFile:
+      number: 1.1.1
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/cc-auto-activate-plugins/composer.json,
+        Match: ''1.1.1'''
   cc-bmi-calculator:
     QueryParameter:
       number: 0.1.0
@@ -5023,6 +5054,13 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/crelly-slider/css/crellyslider.css?ver=1.2.3
       - http://wp.lab/wp-content/plugins/crelly-slider/js/jquery.crellyslider.min.js?ver=1.2.3
+  cresta-whatsapp-chat:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/cresta-whatsapp-chat/css/cresta-whatsapp-chat-front-css.css?ver=1.0.0
+      confidence: 10
   crosswordsearch:
     TranslationFile:
       number: 1.0.2
@@ -5310,6 +5348,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/depublish-posts/lang/wp-depublish-posts.pot,
         Match: ''"Project-Id-Version: Depublish Posts 1.0.0'''
+  device-detect:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/device-detect/languages/device-detect-fr_FR.po,
+        Match: ''"Project-Id-Version: Device Detect 1.0'''
   dexonline-searchbox:
     TranslationFile:
       number: '1.0'
@@ -7543,6 +7588,15 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/frontend-dialog/package.json, Match: ''1.0.0'''
+  fusion:
+    QueryParameter:
+      number: 1.3.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/fusion/includes/css/fusion-bootstrap.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/fusion/includes/css/fusion-core.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/fusion/includes/js/fusion-core.js?ver=1.3.0
+      confidence: 30
   gallery-lightbox-slider:
     QueryParameter:
       number: 1.0.0.29
@@ -10304,6 +10358,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/lead-to-clio/lang/lead-to-clio.pot, Match:
         ''"Project-Id-Version: lead_to_clio 1.0'''
+  leaflet-map:
+    QueryParameter:
+      number: 2.9.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/leaflet-map/scripts/construct-leaflet-map.min.js?ver=2.9.1
+      confidence: 10
   leaky-paywall:
     QueryParameter:
       number: 4.10.3
@@ -11703,6 +11764,14 @@ plugins:
       - http://wp.lab/wp-content/plugins/moderation-tools-for-bbpress/css/front.css?ver=1.1.0
       - http://wp.lab/wp-content/plugins/moderation-tools-for-bbpress/js/report-post.js?ver=1.1.0
       confidence: 20
+  modern-footnotes:
+    QueryParameter:
+      number: 1.1.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/modern-footnotes/styles.min.css?ver=1.1.2
+      - http://wp.lab/wp-content/plugins/modern-footnotes/modern-footnotes.min.js?ver=1.1.2
+      confidence: 20
   modula-best-grid-gallery:
     QueryParameter:
       number: 1.2.1
@@ -12583,6 +12652,13 @@ plugins:
       - http://wp.lab/wp-content/plugins/nimble-portfolio/includes/prettyphoto/prettyphoto.js?ver=3.0.1
       - http://wp.lab/wp-content/plugins/nimble-portfolio/includes/prettyphoto/nimble-prettyPhoto.js?ver=3.0.1
       confidence: 30
+  nivo-slider-lite:
+    ComposerFile:
+      number: 2.1.1
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/nivo-slider-lite/package-lock.json, Match:
+        ''2.1.1'''
   no-copy:
     QueryParameter:
       number: 1.1.4

@@ -612,6 +612,11 @@ plugins:
       path: languages/advanced-db-cleaner.pot
       pattern: !ruby/regexp '/Project\-Id\-Version: Advanced Database Cleaner (?<v>\d+\.[\.\d]+)/i'
       version: true
+  advanced-forms-paypal-payment-buttons:
+    QueryParameter:
+      files:
+      - public/css/advanced-forms-paypal-payment-buttons-public.css
+      version: true
   advanced-plugin-search:
     QueryParameter:
       files:
@@ -3015,11 +3020,32 @@ plugins:
       path: languages/cbxwooextendedorders-en_GB.po
       pattern: !ruby/regexp /ersion:\ CBX Woo Extended Order Display v(?<v>\d+\.[\.\d]+)/i
       version: true
+  cbxwpreadymix:
+    QueryParameter:
+      files:
+      - public/vendor/owl-carousel/assets/owl.carousel.min.css
+      - public/vendor/owl-carousel/assets/owl.theme.default.min.css
+      - public/css/cbxwpreadymix-public.css
+      - public/css/cbxwpreadymixbootstrap.css
+      - public/css/cbxwpreadymix-team.css
+      - public/css/cbxwpreadymix-testimonial.css
+      - public/css/cbxwpreadymix-brand.css
+      - public/css/cbxwpreadymix-portfolio.css
+      - public/js/cbxwpreadymix-public.js
+      - public/vendor/owl-carousel/owl.carousel.min.js
+      - public/vendor/isotope/isotope.pkgd.min.js
+      version: true
   cbxwpslack:
     TranslationFile:
       class: BodyPattern
       path: languages/cbxwpslack-en_GB.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ CBX WPSlack v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  cc-auto-activate-plugins:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   cc-bmi-calculator:
     QueryParameter:
@@ -3974,6 +4000,11 @@ plugins:
       - css/crellyslider.css
       - js/jquery.crellyslider.min.js
       version: true
+  cresta-whatsapp-chat:
+    QueryParameter:
+      files:
+      - css/cresta-whatsapp-chat-front-css.css
+      version: true
   crosswordsearch:
     TranslationFile:
       class: BodyPattern
@@ -4215,6 +4246,12 @@ plugins:
       class: BodyPattern
       path: lang/wp-depublish-posts.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Depublish Posts (?<v>\d+\.[\.\d]+)/i
+      version: true
+  device-detect:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/device-detect-fr_FR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Device Detect (?<v>\d+\.[\.\d]+)/i'
       version: true
   dexonline-searchbox:
     TranslationFile:
@@ -5976,6 +6013,13 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  fusion:
+    QueryParameter:
+      files:
+      - includes/css/fusion-bootstrap.css
+      - includes/css/fusion-core.css
+      - includes/js/fusion-core.js
       version: true
   gallery-lightbox-slider:
     QueryParameter:
@@ -8139,6 +8183,11 @@ plugins:
       path: lang/lead-to-clio.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ lead_to_clio (?<v>\d+\.[\.\d]+)/i
       version: true
+  leaflet-map:
+    QueryParameter:
+      files:
+      - scripts/construct-leaflet-map.min.js
+      version: true
   leaky-paywall:
     QueryParameter:
       files:
@@ -9230,6 +9279,12 @@ plugins:
       - css/front.css
       - js/report-post.js
       version: true
+  modern-footnotes:
+    QueryParameter:
+      files:
+      - styles.min.css
+      - modern-footnotes.min.js
+      version: true
   modula-best-grid-gallery:
     QueryParameter:
       files:
@@ -9913,6 +9968,12 @@ plugins:
       - includes/sort.js
       - includes/prettyphoto/prettyphoto.js
       - includes/prettyphoto/nimble-prettyPhoto.js
+      version: true
+  nivo-slider-lite:
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
       version: true
   no-copy:
     QueryParameter:
