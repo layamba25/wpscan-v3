@@ -17822,6 +17822,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/woocommerce-follow-up-emails/changelog.txt,
         Match: ''2017-10-03 - version 4.5.2'''
+  woocommerce-for-japan:
+    TranslationFile:
+      number: 1.2.19
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/woocommerce-for-japan/i18n/woocommerce-for-japan.pot,
+        Match: ''oject-Id-Version: WooCommerce For Japan 1.2.19'''
   woocommerce-gateway-paypal-powered-by-braintree:
     TranslationFile:
       number: 2.0.4
@@ -18023,6 +18030,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wp-author-slug/lang/wp-author-slug-de_DE.po,
         Match: ''"Plural-Forms: nplurals=2'''
+  wp-bannerize-pro:
+    QueryParameter:
+      number: 1.2.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-bannerize-pro/public/css/wp-bannerize.min.css?ver=1.2.5
+      confidence: 10
   wp-bunvc:
     QueryParameter:
       number: 1.0.1
@@ -18444,6 +18458,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wp-product-review/languages/wp-product-review.pot,
         Match: ''ject-Id-Version: WP Product Review Lite 3.3.0'''
+    ComposerFile:
+      number: 3.3.2
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wp-product-review/package-lock.json, Match:
+        ''3.3.2'''
   wp-property:
     QueryParameter:
       number: 2.2.0.3

@@ -14049,6 +14049,12 @@ plugins:
       path: changelog.txt
       pattern: !ruby/regexp /[\d\-]{8,} \- version (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-for-japan:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/woocommerce-for-japan.pot
+      pattern: !ruby/regexp '/oject\-Id\-Version: WooCommerce For Japan (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woocommerce-gateway-paypal-powered-by-braintree:
     TranslationFile:
       class: BodyPattern
@@ -14210,6 +14216,11 @@ plugins:
       class: BodyPattern
       path: lang/wp-author-slug-de_DE.po
       pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-bannerize-pro:
+    QueryParameter:
+      files:
+      - public/css/wp-bannerize.min.css
       version: true
   wp-bunvc:
     QueryParameter:
@@ -14545,6 +14556,11 @@ plugins:
       class: BodyPattern
       path: languages/wp-product-review.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ WP Product Review Lite (?<v>\d+\.[\.\d]+)/i
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
       version: true
   wp-property:
     QueryParameter:
