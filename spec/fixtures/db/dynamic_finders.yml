@@ -1397,6 +1397,18 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Autoresponder1 plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
+  autoship-cloud:
+    QueryParameter:
+      files:
+      - styles/style.css
+      - WebChat/botchat.css
+      - js/autoship.js
+      - js/select-frequency-dialog.js
+      - js/select-next-occurrence-dialog.js
+      - js/schedule-cart.js
+      - js/product-schedule-options.js
+      - WebChat/botchat.js
+      version: true
   avatars-meta-box:
     TranslationFile:
       class: BodyPattern
@@ -5135,6 +5147,11 @@ plugins:
       path: i18n/languages/wp-erp.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP ERP (?<v>\d+\.[\.\d]+)/i
       version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
+      version: true
   eshop-shipping-extension:
     QueryParameter:
       files:
@@ -5973,6 +5990,12 @@ plugins:
       - js/lib/jstz.js
       - js/src/flp-submit.js
       - js/src/flp-stats.js
+      version: true
+  front-end-pm:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/front-end-pm.pot
+      pattern: !ruby/regexp /"Front End PM (?<v>\d+\.[\.\d]+)/i
       version: true
   frontend-dashboard:
     QueryParameter:
@@ -7080,6 +7103,12 @@ plugins:
       files:
       - assets/css/front.css
       - assets/js/front.js
+      version: true
+  illdy-companion:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   ilmenite-cookie-consent:
     QueryParameter:
@@ -8559,6 +8588,12 @@ plugins:
       - public/assets/css/slick.css
       - public/assets/css/font-awesome.min.css
       - public/assets/css/style.css
+      version: true
+  logo-showcase-creative:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/ccs-cls-public-style.css
       version: true
   logo-showcase-for-visual-composer:
     TranslationFile:
@@ -10692,6 +10727,11 @@ plugins:
       - vendor/fitVids/jquery.fitvids.js
       - assets/src/js/main.js
       version: true
+  perfect-pullquotes:
+    QueryParameter:
+      files:
+      - perfect-pullquotes.css
+      version: true
   persian-quote-of-the-day-by-sokhanak:
     QueryParameter:
       files:
@@ -12776,6 +12816,12 @@ plugins:
       path: languages/scroll-top.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Scroll Top (?<v>\d+\.[\.\d]+)/i'
       version: true
+  scrolltotop:
+    QueryParameter:
+      files:
+      - assets/css/styles.min.css
+      - assets/js/scripts.min.js
+      version: true
   scrybs-translation:
     QueryParameter:
       files:
@@ -13981,6 +14027,7 @@ plugins:
       files:
       - assets/css/frontend.min.css
       - assets/js/frontend.min.js
+      - assets/css/frontend-tooltip.min.css
       version: true
     ComposerFile:
       class: ConfigParser
@@ -14227,6 +14274,12 @@ plugins:
       files:
       - public/js/bunvc-autorun-allpack.js
       version: true
+  wp-cdnjs-reborn:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-cdnjs-reborn-fr_FR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP CDNjs Reborn (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-coupons-and-deals:
     QueryParameter:
       files:
@@ -14356,6 +14409,12 @@ plugins:
       files:
       - public/js/wp-hide-post-public.js
       version: true
+  wp-hotel-booking:
+    QueryParameter:
+      files:
+      - includes/plugins/wp-hotel-booking-extra/inc/assets/css/site.css
+      - includes/plugins/wp-hotel-booking-extra/inc/assets/js/site.js
+      version: true
   wp-hotelier:
     QueryParameter:
       files:
@@ -14449,6 +14508,12 @@ plugins:
       class: BodyPattern
       path: languages/wp-maintenance-mode-sv_SE.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ WP Maintenance Mode (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-mapgrip:
+    QueryParameter:
+      files:
+      - public/css/mapgrip-public.css
+      - public/js/mapgrip-public.js
       version: true
   wp-mappost:
     QueryParameter:
@@ -14892,6 +14957,12 @@ plugins:
     QueryParameter:
       files:
       - css/validationEngine.jquery.css
+      version: true
+  yesno:
+    QueryParameter:
+      files:
+      - css/style.css
+      - js/yesno.js
       version: true
   yikes-inc-easy-mailchimp-extender:
     TranslationFile:
