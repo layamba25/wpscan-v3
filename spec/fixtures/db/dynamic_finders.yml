@@ -419,6 +419,12 @@ plugins:
       files:
       - ad_short.css
       version: true
+  add-amazon-block:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   add-cookie-notice:
     QueryParameter:
       files:
@@ -4247,6 +4253,11 @@ plugins:
       path: languages/wpdef-default.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ WP Defender Pro (?<v>\d+\.[\.\d]+)/i
       version: true
+  delightful-downloads:
+    QueryParameter:
+      files:
+      - assets/css/delightful-downloads.min.css
+      version: true
   demo-bar:
     TranslationFile:
       class: BodyPattern
@@ -4416,6 +4427,13 @@ plugins:
     QueryParameter:
       files:
       - js/autocomplete.js
+      version: true
+  dsubscribers:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/jquery.validate.min.js
+      - assets/js/frontend.js
       version: true
   duplicate-page-and-post:
     QueryParameter:
@@ -5991,6 +6009,11 @@ plugins:
       - js/src/flp-submit.js
       - js/src/flp-stats.js
       version: true
+  foxyshop:
+    QueryParameter:
+      files:
+      - css/foxyshop.css
+      version: true
   front-end-pm:
     TranslationFile:
       class: BodyPattern
@@ -6036,6 +6059,18 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  frontier-post:
+    QueryParameter:
+      files:
+      - frontier-post.css
+      version: true
+  fundpress:
+    QueryParameter:
+      files:
+      - assets/js/frontend/site.min.js
+      - inc/libraries/magnific-popup/jquery.magnific-popup.min.js
+      - inc/gateways/stripe/jquery.payment.min.js
       version: true
   fusion:
     QueryParameter:
@@ -10688,6 +10723,11 @@ plugins:
       path: languages/wpcf7-pdf-forms.pot
       pattern: !ruby/regexp /on:\ PDF Forms Filler for Contact Form 7 (?<v>\d+\.[\.\d]+)/i
       version: true
+  pdf-print:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      version: true
   peepso-core:
     QueryParameter:
       files:
@@ -11308,6 +11348,12 @@ plugins:
     QueryParameter:
       files:
       - css/frontend.css
+      version: true
+  postmatic:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/Postmatic.pot
+      pattern: !ruby/regexp /"(?<v>\d+\.[\.\d]+)/i
       version: true
   posts:
     TranslationFile:
@@ -13094,6 +13140,15 @@ plugins:
       - assets/simple-age-restriction-warning-public.css
       - assets/simple-age-restriction-warning-public.js
       version: true
+  simple-events-calendar:
+    Comment:
+      xpath: //comment()[contains(., "Simple Events Calendar")]
+      pattern: !ruby/regexp /Simple Events Calendar (?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - simple-events-calendar.css
+      version: true
   simple-featured-image-finder:
     TranslationFile:
       class: BodyPattern
@@ -13128,6 +13183,11 @@ plugins:
       path: languages/default.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ Simple Sidebar Manager (?<v>\d+\.[\.\d]+)/i
       version: true
+  simple-slideshow-manager:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
   simple-social-buttons:
     QueryParameter:
       files:
@@ -13138,6 +13198,11 @@ plugins:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  simple-student-result:
+    QueryParameter:
+      files:
+      - css/ssr_style.css
       version: true
   simple-user-adding:
     TranslationFile:
@@ -13150,6 +13215,11 @@ plugins:
       files:
       - assets/css/twenty-fifteen.css
       - assets/js/site-reviews.js
+      version: true
+  sitebuilder-dynamic-components:
+    QueryParameter:
+      files:
+      - assets/scripts/sb-dc.js
       version: true
   sitemap:
     QueryParameter:
@@ -13171,6 +13241,12 @@ plugins:
       files:
       - res/css/language-selector.css.gzip
       - res/js/jquery.cookie.js
+      version: true
+  sitewit-engagement-analytics:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sitewit-engagement-analytics.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: Search Engine Marketing (?<v>\d+\.[\.\d]+)/i'
       version: true
   skt-skill-bar:
     QueryParameter:
@@ -13700,6 +13776,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  vc-mailchimp:
+    QueryParameter:
+      files:
+      - libs/jquery.growl/javascripts/jquery.growl.js
+      - assets/js/frontend.js
+      version: true
   video-central:
     QueryParameter:
       files:
@@ -14208,6 +14290,10 @@ plugins:
     JavascriptVar:
       pattern: !ruby/regexp /window\._wp_rp_plugin_version = '(?<v>\d+\.[\.\d]+)';/i
       version: true
+  wordpress-connect:
+    Comment:
+      pattern: !ruby/regexp /Wordpress Connect ?(?:Like Button|Comments|FBJS)? v(?<v>\d+\.[\.\d]+)/i
+      version: true
   wordpress-importer:
     TranslationFile:
       class: BodyPattern
@@ -14332,6 +14418,11 @@ plugins:
       - public/css/wp-ehesive-public.css
       - public/js/wp-ehesive-public.js
       version: true
+  wp-events-manager:
+    QueryParameter:
+      files:
+      - inc/libraries//magnific-popup/js/jquery.magnific-popup.min.js
+      version: true
   wp-facebook-reviews:
     QueryParameter:
       files:
@@ -14341,6 +14432,11 @@ plugins:
       - public/css/wprs_unslider-dots.css
       - public/js/wprev-public.js
       - public/js/wprs-unslider-min.js
+      version: true
+  wp-fb-autoconnect:
+    QueryParameter:
+      files:
+      - style.css
       version: true
   wp-fb-feeds:
     TranslationFile:
@@ -14375,6 +14471,14 @@ plugins:
     QueryParameter:
       files:
       - css/styles.css
+      version: true
+  wp-gallery-extra:
+    QueryParameter:
+      files:
+      - assets/css/front.css
+      - assets/css/custom.css
+      - assets/js/plugins.js
+      - assets/js/front.js
       version: true
   wp-gistpen:
     QueryParameter:
@@ -14463,6 +14567,11 @@ plugins:
       files:
       - assets/css/style.css
       - assets/js/lemme-know.js
+      version: true
+  wp-link-list:
+    QueryParameter:
+      files:
+      - assets/css/wp-link-list.css
       version: true
   wp-linkedin:
     QueryParameter:
@@ -14661,6 +14770,12 @@ plugins:
       path: languages/wp-simple-seo.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP Simple SEO (?<v>\d+\.[\.\d]+)/i
       version: true
+  wp-social-invitations:
+    QueryParameter:
+      files:
+      - public/assets/css/wsi-public.css
+      - public/assets/js/wsi-public.js
+      version: true
   wp-socializer:
     Comment:
       pattern: !ruby/regexp /WP Socializer (?<v>\d+\.[\.\d]+)/i
@@ -14717,6 +14832,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /This site runs WP Super Minify plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
+  wp-syntax:
+    QueryParameter:
+      files:
+      - css/wp-syntax.css
+      - js/wp-syntax.js
+      version: true
   wp-table-reloaded:
     TranslationFile:
       class: BodyPattern
@@ -14754,6 +14875,10 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  wp-topbar:
+    Comment:
+      pattern: !ruby/regexp /WP\-TopBar_(?<v>\d+\.[\.\d]+)/i
       version: true
   wp-travel:
     TranslationFile:
@@ -14957,6 +15082,11 @@ plugins:
     QueryParameter:
       files:
       - css/validationEngine.jquery.css
+      version: true
+  xili-language:
+    Comment:
+      xpath: //comment()[contains(., "xili-language")]
+      pattern: !ruby/regexp /website powered with xili\-language v\. (?<v>\d+\.[\.\d]+)/i
       version: true
   yesno:
     QueryParameter:
