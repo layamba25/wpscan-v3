@@ -449,6 +449,12 @@ plugins:
       path: languages/additional-content.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Additional Content (?<v>\d+\.[\.\d]+)/i
       version: true
+  addon-elements-for-elementor-page-builder:
+    QueryParameter:
+      files:
+      - assets/js/animated-main.js
+      - assets/js/eae.js
+      version: true
   addons-for-beaver-builder:
     QueryParameter:
       files:
@@ -1414,6 +1420,7 @@ plugins:
       - js/schedule-cart.js
       - js/product-schedule-options.js
       - WebChat/botchat.js
+      - js/product-page.js
       version: true
   avatars-meta-box:
     TranslationFile:
@@ -2426,6 +2433,11 @@ plugins:
       path: languages/bp-sticky-groups.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ BP Sticky Groups (?<v>\d+\.[\.\d]+)/i
       version: true
+  bp-user-to-do-list:
+    QueryParameter:
+      files:
+      - assets/js/tempust.js
+      version: true
   bp-xprofile-rich-text-field:
     TranslationFile:
       class: BodyPattern
@@ -2747,6 +2759,12 @@ plugins:
       files:
       - assets/css/buyblo-box.css
       - assets/js/buyblo-box.js
+      version: true
+  buymeacoffee:
+    QueryParameter:
+      files:
+      - public/css/buy-me-a-coffee-public.css
+      - public/js/buy-me-a-coffee-public.js
       version: true
   buzz-instagram-feed:
     QueryParameter:
@@ -5138,6 +5156,12 @@ plugins:
       files:
       - css/more-embeds.css
       version: true
+  epic-spinners:
+    QueryParameter:
+      files:
+      - public/css/epic-spinners-public.css
+      - public/js/epic-spinners-public.js
+      version: true
   epoch:
     QueryParameter:
       files:
@@ -6222,6 +6246,13 @@ plugins:
       - public/css/geotarget-public.css
       - public/js/geotarget-public.js
       - public/js/ddslick.js
+      version: true
+  get-affiliate-link:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/price-display-helpers.js
+      - js/main.gal.js
       version: true
   get-my-tweets-uk:
     QueryParameter:
@@ -13167,6 +13198,16 @@ plugins:
       files:
       - client/css/app.css
       version: true
+  simple-location:
+    QueryParameter:
+      files:
+      - css/location.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/simple-location.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simple Location (?<v>\d+\.[\.\d]+)/i'
+      version: true
   simple-page-sidebars:
     TranslationFile:
       class: BodyPattern
@@ -13539,6 +13580,11 @@ plugins:
       path: package.json
       key: version
       version: true
+  taskbreaker-project-management:
+    QueryParameter:
+      files:
+      - assets//css/style.css
+      version: true
   taxonomy-images:
     QueryParameter:
       files:
@@ -13769,6 +13815,14 @@ plugins:
       class: BodyPattern
       path: languages/user-feedback.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ User Feedback (?<v>\d+\.[\.\d]+)/i
+      version: true
+  user-registration:
+    QueryParameter:
+      files:
+      - assets/css/user-registration.css
+      - assets/css/user-registration-smallscreen.css
+      - assets/js/frontend/user-registration.min.js
+      - assets/js/frontend/password-strength-meter.min.js
       version: true
   validated:
     ComposerFile:
@@ -14046,6 +14100,12 @@ plugins:
       class: BodyPattern
       path: i18n/languages/woo-better-usability.pot
       pattern: !ruby/regexp /d\-Version:\ WooCommerce Better Usability (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woo-category-slider-by-pluginever:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/woo-category-slider.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Woo Category Slider (?<v>\d+\.[\.\d]+)/i'
       version: true
   woo-moip-official:
     TranslationFile:
@@ -14412,6 +14472,12 @@ plugins:
   wp-easy-gallery:
     Comment:
       pattern: !ruby/regexp /WP Easy Gallery:/i
+  wp-easy-notices:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   wp-ehesive:
     QueryParameter:
       files:
@@ -14742,6 +14808,12 @@ plugins:
       - static/styles/wp_properties.css
       - static/scripts/wpp.global.js
       version: true
+  wp-responsive-recent-post-slider:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/recent-post-style.css
+      version: true
   wp-rocket:
     Comment:
       pattern: !ruby/regexp /Performance optimized by WP Rocket/i
@@ -14763,6 +14835,11 @@ plugins:
   wp-seo-structured-data-schema:
     Comment:
       pattern: !ruby/regexp /gleton's WP SEO Structured Data Plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-show-posts:
+    QueryParameter:
+      files:
+      - css/wp-show-posts-min.css
       version: true
   wp-simple-seo:
     TranslationFile:
@@ -14895,6 +14972,12 @@ plugins:
       - public/js/wprev-public.js
       - public/js/wprs-unslider-min.js
       version: true
+  wp-typography:
+    QueryParameter:
+      files:
+      - js/jquery.selection.min.js
+      - js/clean_clipboard.min.js
+      version: true
   wp-ulike:
     QueryParameter:
       files:
@@ -14904,6 +14987,23 @@ plugins:
       class: BodyPattern
       path: lang/wp-ulike.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP ULike (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-ultimate-post-grid:
+    QueryParameter:
+      files:
+      - css/filter.css
+      - css/pagination.css
+      - css/grid.css
+      - css/layout_base.css
+      - vendor/isotope/isotope.pkgd.min.js
+      - js/grid.js
+      version: true
+  wp-ultimate-recipe:
+    QueryParameter:
+      files:
+      - assets/wpurp-public-forced.css
+      - vendor/font-awesome/css/font-awesome.min.css
+      - assets/wpurp-public.js
       version: true
   wp-upstream:
     ComposerFile:
