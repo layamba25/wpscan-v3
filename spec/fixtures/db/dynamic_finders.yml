@@ -13118,16 +13118,71 @@ plugins:
       path: languages/sezame.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Sezame (?<v>\d+\.[\.\d]+)/i'
       version: true
+  shadowbox:
+    Comment:
+      xpath: //comment()[contains(., "shadowbox")]
+      pattern: !ruby/regexp /WP shadowbox Plugin version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  shaplatools:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  share-buttons:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/share_buttons-ru_RU.po
+      pattern: !ruby/regexp /D:\\\\plugin share\-buttons\\\\share\-buttons (?<v>\d+\.[\.\d]+)/i
+      version: true
+  share-decentral:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/share-decentral-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Share Decentral v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   share-this-image:
     QueryParameter:
       files:
       - assets/css/sti.css
       - assets/js/sti.js
       version: true
+  share-to-social-bookmarking:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
   shareaholic:
     MetaTag:
       class: Xpath
       xpath: //meta[@name="shareaholic:wp_version"]/@content
+      version: true
+  shareboost:
+    QueryParameter:
+      files:
+      - css/public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: lang/shareboost-wordpress.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  shared-whiteboard:
+    QueryParameter:
+      files:
+      - helper.js
+      version: true
+  sharewhere:
+    QueryParameter:
+      files:
+      - includes/assets/lib/magnific-popup/magnific-popup.css
+      - includes/assets/main/css/wpls.min.css
+      - includes/assets/lib/magnific-popup/jquery.magnific-popup.min.js
+      - includes/assets/main/js/wpls.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sharewhere.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: ShareWhere (?<v>\d+\.[\.\d]+)/i'
       version: true
   shiftnav-responsive-mobile-menu:
     QueryParameter:
@@ -13146,6 +13201,45 @@ plugins:
       pattern: !ruby/regexp /var shiftnav_data = {(?<json>.+?(?=};))}/i
       version_key: v
       version: true
+  shlwhenneed:
+    QueryParameter:
+      files:
+      - shlwhenneed.js
+      version: true
+  shoot-the-zombie:
+    QueryParameter:
+      files:
+      - scripts.js
+      version: true
+  shop-menu:
+    QueryParameter:
+      files:
+      - shop-menu.css
+      - next-page.js
+      version: true
+  shop-page-wp:
+    QueryParameter:
+      files:
+      - assets/css/shop-page-wp-grid.css
+      - assets/css/shop-page-wp-base-styles.css
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  shortcake-bakery:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/shortcake-bakery.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Shortcake Bakery (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  shortcode-developer:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/scd.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Shortcode Developer (?<v>\d+\.[\.\d]+)/i'
+      version: true
   shortcode-ui:
     TranslationFile:
       class: BodyPattern
@@ -13158,11 +13252,81 @@ plugins:
       path: languages/shortcode-widget.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Shortcode Widget (?<v>\d+\.[\.\d]+)/i
       version: true
+  shortcodes-for-buddypress:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/shortcodes-for-bp-en_US.po
+      pattern: !ruby/regexp '/t\-Id\-Version: Shortcodes For BuddyPress (?<v>\d+\.[\.\d]+)/i'
+      version: true
   shortcodes-for-woocommerce:
     TranslationFile:
       class: BodyPattern
       path: languages/shortcodes-for-woocommerce.pot
       pattern: !ruby/regexp /\-Id\-Version:\ Shortcodes for WooCommerce (?<v>\d+\.[\.\d]+)/i
+      version: true
+  shortest-website-monetization:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
+  shortnit:
+    Comment:
+      xpath: //comment()[contains(., "Shortn.It")]
+      pattern: !ruby/regexp /Shortn\.It version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  show-me-the-admin:
+    QueryParameter:
+      files:
+      - assets/css/show-me-the-admin.min.css
+      - assets/js/show-me-the-admin.min.js
+      version: true
+  show-more-p2:
+    QueryParameter:
+      files:
+      - show-more-p2.js
+      version: true
+  show-post-in-lightbox:
+    QueryParameter:
+      files:
+      - ostlightbox/js/ostlightbox.js
+      version: true
+  show-posts:
+    QueryParameter:
+      files:
+      - atw-posts-style.min.css
+      version: true
+  showcase-visual-composer-addon:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      version: true
+  shownotes:
+    QueryParameter:
+      files:
+      - static/shownotes.js
+      version: true
+  shutter-reloaded:
+    QueryParameter:
+      files:
+      - "/shutter-reloaded.js"
+      version: true
+  side-by-side:
+    QueryParameter:
+      files:
+      - style.css
+      - script.min.js
+      version: true
+  side-matter:
+    QueryParameter:
+      files:
+      - css/side-matter.css
+      - js/side-matter.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/side-matter.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Side Matter (?<v>\d+\.[\.\d]+)/i'
       version: true
   side-menu:
     QueryParameter:
@@ -13182,6 +13346,45 @@ plugins:
       path: languages/sidebar-login.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Sidebar Login (?<v>\d+\.[\.\d]+)/i
       version: true
+  sidebar-post:
+    QueryParameter:
+      files:
+      - nexusframework/css/general.css
+      - js/spost.js
+      version: true
+  sidebar-widget-collapser:
+    QueryParameter:
+      files:
+      - SidebarCollapserScript.js
+      version: true
+  sideposts:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  sighted-invoice-manager:
+    QueryParameter:
+      files:
+      - public/css/sighted-invoice-manager-public.css
+      - public/js/sighted-invoice-manager-public.js
+      version: true
+  similar-post-title-checker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sp-post-title-fa_IR.po
+      pattern: !ruby/regexp '/\-Id\-Version: Similar post\-title checker (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simple-ab-testing:
+    QueryParameter:
+      files:
+      - public/css/wordpress-ab-testing-public.css
+      - public/js/wordpress-ab-testing-public.js
+      version: true
+  simple-accordion:
+    QueryParameter:
+      files:
+      - js/mam-accordion.js
+      version: true
   simple-age-restriction-warning:
     QueryParameter:
       files:
@@ -13192,6 +13395,39 @@ plugins:
     QueryParameter:
       files:
       - assets/css/simple-author-box.min.css
+      version: true
+  simple-category-posts-widget:
+    QueryParameter:
+      files:
+      - css/p2hc-category-posts.css
+      version: true
+  simple-colorbox:
+    Comment:
+      xpath: //comment()[contains(., "Simple Colorbox")]
+      pattern: !ruby/regexp /Simple Colorbox Plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  simple-contact-form-revisited-plugin:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/simple-contact-form-revisited-plugin.js
+      version: true
+  simple-cookie-law:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/simple_cookie_law.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simple Cookie Law (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simple-cookie-notification-bar:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      - assets/js/script.js
+      version: true
+  simple-debug-info-panel:
+    QueryParameter:
+      files:
+      - assets/js/simple-debug.js
       version: true
   simple-events-calendar:
     Comment:
@@ -14399,6 +14635,7 @@ plugins:
       version: true
   wordpress-connect:
     Comment:
+      xpath: //comment()[contains(., "Connect")]
       pattern: !ruby/regexp /Wordpress Connect ?(?:Like Button|Comments|FBJS)? v(?<v>\d+\.[\.\d]+)/i
       version: true
   wordpress-importer:
