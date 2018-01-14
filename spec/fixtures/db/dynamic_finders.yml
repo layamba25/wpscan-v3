@@ -1560,6 +1560,12 @@ plugins:
       files:
       - style.css
       version: true
+  ba-book-everything:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ba-book-everything.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: BA Book Everything (?<v>\d+\.[\.\d]+)/i'
+      version: true
   ba-event:
     TranslationFile:
       class: BodyPattern
@@ -3076,6 +3082,11 @@ plugins:
       class: BodyPattern
       path: languages/cbxwpslack-en_GB.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ CBX WPSlack v(?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - public/css/cbxwpslack-public.css
+      - public/js/cbxwpslack-public.js
       version: true
   cc-auto-activate-plugins:
     ComposerFile:
@@ -7526,6 +7537,12 @@ plugins:
       files:
       - lib/ipanorama.css
       - lib/ipanorama.wp.css
+      version: true
+  ipros24-notices:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ipros24-notices-ru_RU.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: iPROS24 Notices (?<v>\d+\.[\.\d]+)/i'
       version: true
   is-circular-photo-gallery:
     QueryParameter:
@@ -13171,6 +13188,11 @@ plugins:
       - assets/simple-age-restriction-warning-public.css
       - assets/simple-age-restriction-warning-public.js
       version: true
+  simple-author-box:
+    QueryParameter:
+      files:
+      - assets/css/simple-author-box.min.css
+      version: true
   simple-events-calendar:
     Comment:
       xpath: //comment()[contains(., "Simple Events Calendar")]
@@ -13303,6 +13325,14 @@ plugins:
       - css/slidedeck.css
       - js/jail.js
       - js/slidedeck-public.js
+      version: true
+  slider-and-carousel-plus-widget-for-instagram:
+    QueryParameter:
+      files:
+      - assets/css/font-awesome.min.css
+      - assets/css/magnific-popup.css
+      - assets/css/slick.css
+      - assets/css/iscwp-public.css
       version: true
   smart-manager-for-wp-e-commerce:
     TranslationFile:
@@ -13965,6 +13995,12 @@ plugins:
       path: languages/wc-order-search-admin.pot
       pattern: !ruby/regexp /e Order Search Admin powered by Algolia (?<v>\d+\.[\.\d]+)/i
       version: true
+  wc-pedido-minimo:
+    TranslationFile:
+      class: BodyPattern
+      path: inc/languages/wc-pedido-minimo.pot
+      pattern: !ruby/regexp '/\-Id\-Version: WooCommerce Pedido M[^n]nimo (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wc-shortcodes:
     QueryParameter:
       files:
@@ -14061,6 +14097,11 @@ plugins:
       files:
       - css/defaults.css
       version: true
+  withinweb-php-keycodes:
+    QueryParameter:
+      files:
+      - public/js/withinweb_wwkc_keycodes_public_bn.js
+      version: true
   wolfnet-idx-for-wordpress:
     QueryParameter:
       files:
@@ -14094,6 +14135,12 @@ plugins:
       files:
       - public/css/wonka-slide-public.css
       - public/js/wonka-slide-public.js
+      version: true
+  woo-authorize-net:
+    QueryParameter:
+      files:
+      - public/css/woo-authorizenet-public.css
+      - public/js/woo-authorizenet-public.js
       version: true
   woo-better-usability:
     TranslationFile:
@@ -14484,6 +14531,14 @@ plugins:
       - public/css/wp-ehesive-public.css
       - public/js/wp-ehesive-public.js
       version: true
+  wp-event-manager:
+    QueryParameter:
+      files:
+      - assets/js/bootstrap/js/bootstrap.min.js
+      - assets/js/jquery-timepicker/jquery.timepicker.min.js
+      - assets/js/jquery-timepicker/bootstrap-datepicker.js
+      - assets/js/common.min.js
+      version: true
   wp-events-manager:
     QueryParameter:
       files:
@@ -14846,6 +14901,12 @@ plugins:
       class: BodyPattern
       path: languages/wp-simple-seo.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP Simple SEO (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-smartcrop:
+    QueryParameter:
+      files:
+      - css/image-renderer.css
+      - js/jquery.wp-smartcrop.min.js
       version: true
   wp-social-invitations:
     QueryParameter:
