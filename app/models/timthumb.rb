@@ -18,9 +18,7 @@ module WPScan
     #
     # @return [ WPScan::Version, false ]
     def version(opts = {})
-      if @version.nil?
-        @version = Finders::TimthumbVersion::Base.find(self, version_detection_opts.merge(opts))
-      end
+      @version = Finders::TimthumbVersion::Base.find(self, version_detection_opts.merge(opts)) if @version.nil?
 
       @version
     end

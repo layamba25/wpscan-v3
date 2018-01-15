@@ -52,7 +52,12 @@ module WPScan
         output('@info', msg: enum_message('plugins')) if user_interaction?
         # Enumerate the plugins & find their versions to avoid doing that when #version
         # is called in the view
-        plugins = target.plugins(opts).each(&:version)
+        plugins = target.plugins(opts)
+
+        output('@info', msg: 'Checking Plugin Versions') if user_interaction? && !plugins.empty?
+
+        plugins.each(&:version)
+
         plugins.select!(&:vulnerable?) if parsed_options[:enumerate][:vulnerable_plugins]
 
         output('plugins', plugins: plugins)
@@ -90,7 +95,12 @@ module WPScan
         output('@info', msg: enum_message('themes')) if user_interaction?
         # Enumerate the themes & find their versions to avoid doing that when #version
         # is called in the view
-        themes = target.themes(opts).each(&:version)
+        themes = target.themes(opts)
+
+        output('@info', msg: 'Checking Theme Versions') if user_interaction? && !themes.empty?
+
+        themes.each(&:version)
+
         themes.select!(&:vulnerable?) if parsed_options[:enumerate][:vulnerable_themes]
 
         output('themes', themes: themes)

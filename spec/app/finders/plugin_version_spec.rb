@@ -1,5 +1,8 @@
 require 'spec_helper'
 
+# If this file is tested alone (rspec path-to-this-file), then there will be an error about
+# constants not being intilialized. This is due to the Dynamic Finders.
+
 describe WPScan::Finders::PluginVersion::Base do
   subject(:plugin_version) { described_class.new(plugin) }
   let(:plugin)             { WPScan::Plugin.new(slug, target) }
@@ -29,7 +32,7 @@ describe WPScan::Finders::PluginVersion::Base do
         }
       end
 
-      WPScan::DB::DynamicPluginFinders.versions_finders_configs.each do |plugin_slug, configs|
+      WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |plugin_slug, configs|
         context "when #{plugin_slug} plugin" do
           let(:slug) { plugin_slug }
 

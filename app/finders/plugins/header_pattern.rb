@@ -14,7 +14,7 @@ module WPScan
 
           return found if headers.empty?
 
-          DB::DynamicPluginFinders.passive_header_pattern_finder_configs.each do |slug, configs|
+          DB::DynamicFinders::Plugin.passive_header_pattern_finder_configs.each do |slug, configs|
             configs.each do |klass, config|
               next unless headers[config['header']] && headers[config['header']].to_s =~ config['pattern']
 

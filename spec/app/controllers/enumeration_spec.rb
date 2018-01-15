@@ -3,10 +3,15 @@ require 'spec_helper'
 describe WPScan::Controller::Enumeration do
   subject(:controller) { described_class.new }
   let(:target_url)     { 'http://wp.lab/' }
-  let(:parsed_options) { { url: target_url } }
+  let(:parsed_options) { rspec_parsed_options(cli_args) }
+  let(:cli_args)       { "--url #{target_url}" }
 
   before do
     WPScan::Browser.reset
+
+    ## For the --passwords options
+    allow_any_instance_of(OptParseValidator::OptPath).to receive(:check_file)
+
     described_class.parsed_options = parsed_options
   end
 
@@ -26,7 +31,7 @@ describe WPScan::Controller::Enumeration do
         let(:type) { t }
 
         context 'when vulnerable' do
-          let(:parsed_options) { super().merge(enumerate: { :"vulnerable_#{type}" => true }) }
+          let(:cli_args) { "#{super()} -e v#{type[0]}" }
 
           it 'returns the expected string' do
             @expected = "Enumerating Vulnerable #{type.capitalize}"
@@ -34,7 +39,7 @@ describe WPScan::Controller::Enumeration do
         end
 
         context 'when all' do
-          let(:parsed_options) { super().merge(enumerate: { :"all_#{type}" => true }) }
+          let(:cli_args) { "#{super()} -e a#{type[0]}" }
 
           it 'returns the expected string' do
             @expected = "Enumerating All #{type.capitalize}"
@@ -42,7 +47,7 @@ describe WPScan::Controller::Enumeration do
         end
 
         context 'when most popular' do
-          let(:parsed_options) { super().merge(enumerate: { type.to_sym => true }) }
+          let(:cli_args) { "#{super()} -e #{type[0]}" }
 
           it 'returns the expected string' do
             @expected = "Enumerating Most Popular #{type.capitalize}"
@@ -71,7 +76,7 @@ describe WPScan::Controller::Enumeration do
     after { controller.enum_users }
 
     context 'when --enumerate has been supplied' do
-      let(:parsed_options) { super().merge(enumerate: { users: (1..10) }) }
+      let(:cli_args) { "#{super()} -e u1-10" }
 
       it 'calls the target.users with the correct range' do
         expect(controller.target).to receive(:users).with(hash_including(range: (1..10)))
@@ -79,7 +84,7 @@ describe WPScan::Controller::Enumeration do
     end
 
     context 'when --passwords supplied but no --username or --usernames' do
-      let(:parsed_options) { super().merge(passwords: 'some-file.txt') }
+      let(:cli_args) { "#{super()} --passwords some-file.txt" }
 
       it 'calls the target.users with the default range' do
         expect(controller.target).to receive(:users).with(hash_including(range: (1..10)))
@@ -89,8 +94,8 @@ describe WPScan::Controller::Enumeration do
 
   describe '#before_scan' do
     it 'creates the Dynamic Finders' do
-      expect(WPScan::DB::DynamicPluginFinders).to receive(:create_versions_finders)
-      expect(WPScan::DB::DynamicThemeFinders).to receive(:create_versions_finders)
+      expect(WPScan::DB::DynamicFinders::Plugin).to receive(:create_versions_finders)
+      expect(WPScan::DB::DynamicFinders::Theme).to receive(:create_versions_finders)
 
       controller.before_scan
     end
@@ -104,7 +109,7 @@ describe WPScan::Controller::Enumeration do
     end
 
     context 'when --passwords supplied but no --username or --usernames' do
-      let(:parsed_options) { super().merge(passwords: 'some-file.txt') }
+      let(:cli_args) { "#{super()} --passwords some-file.txt" }
 
       it 'calls the enum_users' do
         expect(controller).to receive(:enum_users)
@@ -115,9 +120,9 @@ describe WPScan::Controller::Enumeration do
     context 'when :enumerate' do
       after { controller.run }
 
-      %i[plugins all_plugins vulnerable_plugins].each do |option|
+      %i[p ap vp].each do |option|
         context "when #{option}" do
-          let(:parsed_options) { super().merge(enumerate: { option => true }) }
+          let(:cli_args) { "#{super()} -e #{option}" }
 
           it 'calls the #enum_plugins' do
             expect(controller).to receive(:enum_plugins)
@@ -125,9 +130,9 @@ describe WPScan::Controller::Enumeration do
         end
       end
 
-      %i[themes all_themes vulnerable_themes].each do |option|
+      %i[t at vt].each do |option|
         context option.to_s do
-          let(:parsed_options) { super().merge(enumerate: { option => true }) }
+          let(:cli_args) { "#{super()} -e #{option}" }
 
           it 'calls the #enum_themes' do
             expect(controller).to receive(:enum_themes)
@@ -135,9 +140,9 @@ describe WPScan::Controller::Enumeration do
         end
       end
 
-      %i[timthumbs config_backups medias users].each do |option|
+      { timthumbs: 'tt', config_backups: 'cb', medias: 'm', users: 'u' }.each do |option, shortname|
         context "when #{option}" do
-          let(:parsed_options) { super().merge(enumerate: { option => true }) }
+          let(:cli_args) { "#{super()} -e #{shortname}" }
 
           it "calls the ##{option}" do
             expect(controller).to receive("enum_#{option}".to_sym)

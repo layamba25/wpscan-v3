@@ -46,14 +46,12 @@ module WPScan
       end
 
       def before_scan
-        output('banner')
+        output('banner') unless parsed_options[:banner] == false
 
         update_db if update_db_required?
-
-        super(false) # disable banner output
-
+        setup_cache
+        check_target_availability
         load_server_module
-
         check_wordpress_state
       end
 

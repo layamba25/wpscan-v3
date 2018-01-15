@@ -6,8 +6,8 @@ module WPScan
     # Enumeration Controller
     class Enumeration < CMSScanner::Controller::Base
       def before_scan
-        DB::DynamicPluginFinders.create_versions_finders
-        DB::DynamicThemeFinders.create_versions_finders
+        DB::DynamicFinders::Plugin.create_versions_finders
+        DB::DynamicFinders::Theme.create_versions_finders
       end
 
       def run

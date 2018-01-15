@@ -50,8 +50,23 @@ module WPScan
           plugins_uri.to_s
         end
 
+        # @return [ String ]
+        def themes_dir
+          @themes_dir ||= "#{content_dir}/themes"
+        end
+
+        # @return [ Addressable::URI ]
+        def themes_uri
+          uri.join("#{themes_dir}/")
+        end
+
+        # @return [ String ]
+        def themes_url
+          themes_uri.to_s
+        end
+
         # TODO: Factorise the code and the content_dir one ?
-        # @return [ String, False ] The sub_dir is found, false otherwise
+        # @return [ String, False ] String of the sub_dir found, false otherwise
         # @note: nil can not be returned here, otherwise if there is no sub_dir
         #        the check would be done each time
         def sub_dir

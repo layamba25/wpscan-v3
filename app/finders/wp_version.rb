@@ -1,15 +1,8 @@
-require_relative 'wp_version/meta_generator'
 require_relative 'wp_version/rss_generator'
 require_relative 'wp_version/atom_generator'
 require_relative 'wp_version/rdf_generator'
 require_relative 'wp_version/readme'
-require_relative 'wp_version/sitemap_generator'
-require_relative 'wp_version/opml_generator'
-require_relative 'wp_version/homepage_stylesheet_numbers'
-require_relative 'wp_version/install_stylesheet_numbers'
-require_relative 'wp_version/upgrade_stylesheet_numbers'
 require_relative 'wp_version/unique_fingerprinting'
-require_relative 'wp_version/addthis_javascript_var'
 
 module WPScan
   module Finders
@@ -21,7 +14,7 @@ module WPScan
       def filter_findings
         best_finding = super
 
-        best_finding.confidence >= 40 ? best_finding : false
+        best_finding && best_finding.confidence >= 40 ? best_finding : false
       end
     end
 
@@ -32,12 +25,10 @@ module WPScan
 
         # @param [ WPScan::Target ] target
         def initialize(target)
-          %i[
-            MetaGenerator RSSGenerator AtomGenerator HomepageStylesheetNumbers InstallStylesheetNumbers
-            UpgradeStylesheetNumbers RDFGenerator Readme SitemapGenerator OpmlGenerator
-            AddthisJavascriptVar UniqueFingerprinting
-          ].each do |sym|
-            finders << WpVersion.const_get(sym).new(target)
+          (WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.keys +
+            %w[RSSGenerator AtomGenerator RDFGenerator Readme UniqueFingerprinting]
+          ).each do |finder_name|
+            finders << WpVersion.const_get(finder_name.to_sym).new(target)
           end
         end
 

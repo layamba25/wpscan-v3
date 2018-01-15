@@ -1,8 +1,8 @@
 AllCops:
   TargetRubyVersion: 2.3
   Exclude:
-    - '*.gemspec'
-    - 'vendor/**/*'
+  - '*.gemspec'
+  - 'vendor/**/*'
 ClassVars:
   Enabled: false
 LineLength:
@@ -15,10 +15,14 @@ Metrics/AbcSize:
   Max: 25
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**/*'
+  - 'spec/**/*'
 Metrics/ClassLength:
   Max: 150
 Metrics/CyclomaticComplexity:
   Max: 8
+Style/Documentation:
+  Enabled: false
 Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/FormatStringToken:
   Enabled: false

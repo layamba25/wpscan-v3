@@ -1,12 +1,12 @@
 require 'spec_helper'
 
 describe WPScan::Plugin do
-  subject(:plugin) { described_class.new(slug, target, opts) }
+  subject(:plugin) { described_class.new(slug, blog, opts) }
   let(:slug)       { 'spec' }
-  let(:target)     { WPScan::Target.new('http://wp.lab/') }
+  let(:blog)       { WPScan::Target.new('http://wp.lab/') }
   let(:opts)       { {} }
 
-  before { expect(target).to receive(:content_dir).and_return('wp-content') }
+  before { expect(blog).to receive(:content_dir).and_return('wp-content') }
 
   describe '#new' do
     its(:url) { should eql 'http://wp.lab/wp-content/plugins/spec/' }

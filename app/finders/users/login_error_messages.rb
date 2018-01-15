@@ -17,10 +17,7 @@ module WPScan
           found = []
 
           usernames(opts).each do |username|
-            res = target.do_login(username, SecureRandom.hex[0, 8])
-
-            return found unless res.code == 200
-
+            res   = target.do_login(username, SecureRandom.hex[0, 8])
             error = res.html.css('div#login_error').text.strip
 
             return found if error.empty? # Protection plugin / error disabled

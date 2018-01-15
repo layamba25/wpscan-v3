@@ -3,7 +3,8 @@ require 'spec_helper'
 describe WPScan::Controller::BruteForce do
   subject(:controller) { described_class.new }
   let(:target_url)     { 'http://ex.lo/' }
-  let(:parsed_options) { { url: target_url } }
+  let(:parsed_options) { rspec_parsed_options(cli_args) }
+  let(:cli_args)       { "--url #{target_url}" }
 
   before do
     WPScan::Browser.reset
@@ -28,7 +29,7 @@ describe WPScan::Controller::BruteForce do
     end
 
     context 'when --usernames' do
-      let(:parsed_options) { super().merge(usernames: %w[admin editor]) }
+      let(:cli_args) { "#{super()} --usernames admin,editor" }
 
       it 'returns an array with the users' do
         expected = %w[admin editor].reduce([]) do |a, e|

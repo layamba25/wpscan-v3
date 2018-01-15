@@ -53,6 +53,10 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
   end
 
   describe '#aggressive' do
+    its(:aggressive) { should be nil }
+  end
+
+  xdescribe '#aggressive' do
     # TODO: Maybe also stub all paths to an empty body and expect an empty array ?
 
     before do
@@ -84,7 +88,7 @@ shared_examples WPScan::Finders::DynamicFinder::WpItems::Finder do
       end
     end
 
-    it 'retuns the expected plugins' do
+    it 'returns the expected plugins' do
       expect(finder.aggressive).to match_array(@expected.map { |item| eql(item) })
     end
   end
