@@ -232,6 +232,12 @@ plugins:
     QueryParameter:
       files:
       - css/frontend.css
+      - js/frontend.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: academic-bloggers-toolkit.pot
+      pattern: !ruby/regexp /ght \(C\) 2018 Academic Blogger's Toolkit (?<v>\d+\.[\.\d]+)/i
       version: true
   accesspress-anonymous-post:
     QueryParameter:
@@ -6726,6 +6732,19 @@ plugins:
       - includes/js/gspeech_pro.js
       - includes/js/gspeech.js
       version: true
+  gt3-photo-video-gallery:
+    QueryParameter:
+      files:
+      - assets/css/blueimp-gallery.css
+      - assets/css/blueimp-gallery-video.css
+      - assets/css/hover.css
+      - css/gt3pg.css
+      - assets/js/blueimp-gallery.js
+      - assets/js/blueimp-gallery-video.js
+      - assets/js/blueimp-gallery-vimeo.js
+      - assets/js/blueimp-gallery-youtube.js
+      - js/gt3pg.js
+      version: true
   guardian-news-headlines:
     QueryParameter:
       files:
@@ -7537,6 +7556,12 @@ plugins:
       files:
       - lib/ipanorama.css
       - lib/ipanorama.wp.css
+      version: true
+  ipros24-google-translate-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ipros24-google-translate-ru_RU.po
+      pattern: !ruby/regexp '/ct\-Id\-Version: iPROS24 Google Translate (?<v>\d+\.[\.\d]+)/i'
       version: true
   ipros24-notices:
     TranslationFile:
@@ -8482,6 +8507,12 @@ plugins:
       class: BodyPattern
       path: lang/link-roundups.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ link\-roundups (?<v>\d+\.[\.\d]+)/i
+      version: true
+  link-to-wp-files:
+    QueryParameter:
+      files:
+      - public/css/pda-wp-magic-link-public.css
+      - public/js/pda-wp-magic-link-public.js
       version: true
   linker:
     TranslationFile:
@@ -10759,6 +10790,13 @@ plugins:
       - public/css/paypal-wp-button-manager-public.css
       - public/js/paypal-wp-button-manager-public.js
       version: true
+  paytium:
+    QueryParameter:
+      files:
+      - public/css/public.css
+      - public/js/parsley.min.js
+      - public/js/public.js
+      version: true
   pd-helper:
     QueryParameter:
       files:
@@ -11928,6 +11966,14 @@ plugins:
     QueryParameter:
       files:
       - quotes-llama.js
+      version: true
+  qwiz-online-quizzes-and-flashcards:
+    QueryParameter:
+      files:
+      - qwiz.js
+      - qwizcards.js
+      - jquery.ui.touch-punch.min.js
+      - qwiz_qcards_common.js
       version: true
   r-cool-social-buttons:
     QueryParameter:
@@ -13429,6 +13475,17 @@ plugins:
       files:
       - assets/js/simple-debug.js
       version: true
+  simple-easy-google-analytics:
+    QueryParameter:
+      files:
+      - public/js/simple-easy-google-analytics-public.js
+      version: true
+  simple-emoji-reactions:
+    QueryParameter:
+      files:
+      - public/css/simple-emoji-reactions-public.css
+      - public/js/simple-emoji-reactions-public.js
+      version: true
   simple-events-calendar:
     Comment:
       xpath: //comment()[contains(., "Simple Events Calendar")]
@@ -13438,11 +13495,49 @@ plugins:
       files:
       - simple-events-calendar.css
       version: true
+  simple-expires:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/simple-expires.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simple expires (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simple-facebook:
+    QueryParameter:
+      files:
+      - css/simple-facebook.css
+      version: true
+  simple-facebook-feeds:
+    QueryParameter:
+      files:
+      - assets/css/sff_plugin_style.css
+      - admin/assets/css/font-awesome.css
+      version: true
+  simple-facebook-twitter-widget:
+    QueryParameter:
+      files:
+      - js/simple-facebook-page-root.js
+      version: true
+  simple-fading-testimonials-widget:
+    QueryParameter:
+      files:
+      - public/css/sft-public.min.css
+      - public/js/sft-public.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/simple-fading-testimonials-es_ES.po
+      pattern: !ruby/regexp '/\-Id\-Version: Simple Fading Testimonials (?<v>\d+\.[\.\d]+)/i'
+      version: true
   simple-featured-image-finder:
     TranslationFile:
       class: BodyPattern
       path: languages/default.pot
       pattern: !ruby/regexp /d\-Version:\ Simple Featured Image Finder (?<v>\d+\.[\.\d]+)/i
+      version: true
+  simple-folio:
+    QueryParameter:
+      files:
+      - public/css/simple-folio-public.css
       version: true
   simple-follow-me-social-buttons-widget:
     QueryParameter:
@@ -13451,10 +13546,32 @@ plugins:
       - assets/css/icons.css
       - assets/js/front-widget.js
       version: true
+  simple-iframe-buster:
+    QueryParameter:
+      files:
+      - js/iframe-buster.js
+      version: true
+  simple-image-sizes:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   simple-lightbox:
     QueryParameter:
       files:
       - client/css/app.css
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  simple-load-more:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/simple-load-more.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Easy Load More (?<v>\d+\.[\.\d]+)/i'
       version: true
   simple-location:
     QueryParameter:
@@ -13466,15 +13583,63 @@ plugins:
       path: languages/simple-location.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Simple Location (?<v>\d+\.[\.\d]+)/i'
       version: true
+  simple-owl-carousel:
+    QueryParameter:
+      files:
+      - public/css/simple-owl-carousel-public.css
+      version: true
   simple-page-sidebars:
     TranslationFile:
       class: BodyPattern
       path: languages/simple-page-sidebars.pot
       pattern: !ruby/regexp /roject\-Id\-Version:\ Simple Page Sidebars (?<v>\d+\.[\.\d]+)/i
       version: true
+  simple-pagination:
+    QueryParameter:
+      files:
+      - css/default.css
+      version: true
+  simple-pop-up:
+    QueryParameter:
+      files:
+      - "/assets/js/smp-scipt.js"
+      version: true
+  simple-post-box:
+    QueryParameter:
+      files:
+      - css/simplepost-box-style.css
+      version: true
+  simple-post-gmaps:
+    QueryParameter:
+      files:
+      - lib/geoxml3.js
+      - inc/ressources/spgm-map.min.js
+      version: true
+  simple-responsive-images:
+    QueryParameter:
+      files:
+      - "/ressources/js/responsive.min.js"
+      version: true
+  simple-scroll-to-top:
+    Comment:
+      xpath: //comment()[contains(., "Simple Scroll")]
+      pattern: !ruby/regexp /Simple Scroll To Top (?<v>\d+\.[\.\d]+) by/i
+      version: true
   simple-share-button-adder:
     Comment:
       pattern: !ruby/regexp /Simple Share Buttons Adder \((?<v>\d+\.[\.\d]+)\)/i
+      version: true
+  simple-share-sticky:
+    QueryParameter:
+      files:
+      - simple-share-sticky.css
+      - simple-share-sticky.js
+      version: true
+  simple-sharing:
+    QueryParameter:
+      files:
+      - public/css/exxica-simple-sharing-public.css
+      - public/js/exxica-simple-sharing-public.js
       version: true
   simple-sidebar-manager:
     TranslationFile:
@@ -13498,10 +13663,44 @@ plugins:
       files:
       - css/style.css
       version: true
+  simple-social-sharing-buttons:
+    QueryParameter:
+      files:
+      - public/css/wp-scsb-public.css
+      - public/js/wp-scsb-public.js
+      version: true
+  simple-staff-list:
+    QueryParameter:
+      files:
+      - public/css/simple-staff-list-public.css
+      - public/js/simple-staff-list-public.js
+      version: true
   simple-student-result:
     QueryParameter:
       files:
       - css/ssr_style.css
+      version: true
+  simple-support-system:
+    QueryParameter:
+      files:
+      - public/css/simple-support-system-public.css
+      - public/js/simple-support-system-public.js
+      version: true
+  simple-team:
+    QueryParameter:
+      files:
+      - css/simple-team.css
+      version: true
+  simple-tel-tracking:
+    QueryParameter:
+      files:
+      - tracking-code.js
+      version: true
+  simple-testimonials-showcase:
+    QueryParameter:
+      files:
+      - public/css/simple-testimonials-showcase-public.css
+      - public/js/simple-testimonials-showcase-public.js
       version: true
   simple-user-adding:
     TranslationFile:
@@ -13509,16 +13708,123 @@ plugins:
       path: languages/simple-user-adding.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Simple User Adding (?<v>\d+\.[\.\d]+)/i
       version: true
+  simple-word-count-and-reading-time:
+    QueryParameter:
+      files:
+      - js/swcart-scripts.js
+      version: true
+  simple-youtube-embed:
+    QueryParameter:
+      files:
+      - jquery.waitforimages.min.js
+      - jquery.prettyembed.min.js
+      - jquery.fitvids.js
+      version: true
+  simplegal:
+    TranslationFile:
+      class: BodyPattern
+      path: simplegal-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SimpleGal v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simplelightbox:
+    QueryParameter:
+      files:
+      - dist/simple-lightbox.min.js
+      - resources/js/setup.simplelightbox.js
+      version: true
+  simplemodal-contact-form-smcf:
+    QueryParameter:
+      files:
+      - css/smcf.css
+      - js/smcf.js
+      version: true
+  simplemodal-login:
+    QueryParameter:
+      files:
+      - css/default.css
+      - js/default.js
+      version: true
+  simplest-gallery:
+    Comment:
+      xpath: //comment()[contains(., "Simplest Gallery")]
+      pattern: !ruby/regexp /Added by Simplest Gallery Plugin v\. (?<v>\d+\.[\.\d]+)/i
+      version: true
+  simply-snow:
+    QueryParameter:
+      files:
+      - assets/js/simply-snow.js
+      version: true
+  simply-social-links:
+    TranslationFile:
+      class: BodyPattern
+      path: simply-social-links.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Simply Social Links (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simply-static:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/simply-static.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simply Static (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simvoicing:
+    TranslationFile:
+      class: BodyPattern
+      path: simvoicing.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simvoicing (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  sinm-scroll-to-top:
+    QueryParameter:
+      files:
+      - js/jquery.scrollUp.min.js
+      - js/active.js
+      version: true
+  sis-handball:
+    QueryParameter:
+      files:
+      - public/js/sis-handball-public.js
+      version: true
+  site-announcements:
+    QueryParameter:
+      files:
+      - public/css/cw-site-announcements-public.css
+      - public/css/animate.css
+      - public/js/js.cookie.js
+      version: true
   site-reviews:
     QueryParameter:
       files:
       - assets/css/twenty-fifteen.css
       - assets/js/site-reviews.js
       version: true
+  site-search-360:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  site-speed-monitor:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/site-speed-monitor.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Site Speed Monitor (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  site-watch:
+    QueryParameter:
+      files:
+      - styles/easy-pie-ibc-styles.css
+      - js/ezp_ibc.js
+      - js/ezp_ibc_trk.js
+      version: true
   sitebuilder-dynamic-components:
     QueryParameter:
       files:
       - assets/scripts/sb-dc.js
+      version: true
+  siteimprove:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/siteimprove.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Siteimprove Plugin (?<v>\d+\.[\.\d]+)/i'
       version: true
   sitemap:
     QueryParameter:
@@ -13839,6 +14145,12 @@ plugins:
       - assets/leaflet/css/leaflet.css
       - assets/jquery-ui/themes/base/jquery-ui.min.css
       - assets/style.css
+      version: true
+  tag-groups:
+    QueryParameter:
+      files:
+      - css/jquery-ui.structure.min.css
+      - css/ui-gray/jquery-ui.theme.min.css
       version: true
   talkjs:
     ComposerFile:
@@ -15039,6 +15351,11 @@ plugins:
       files:
       - assist/css/style.min.css
       - assist/css/font-awesome.min.css
+      version: true
+  wp-notes-widget:
+    QueryParameter:
+      files:
+      - public/css/wp-notes-public.css
       version: true
   wp-paginate:
     QueryParameter:
