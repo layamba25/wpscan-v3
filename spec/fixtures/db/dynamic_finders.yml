@@ -13853,6 +13853,27 @@ plugins:
       path: languages/sitewit-engagement-analytics.pot
       pattern: !ruby/regexp '/ect\-Id\-Version: Search Engine Marketing (?<v>\d+\.[\.\d]+)/i'
       version: true
+  sj-cornerstone-addon:
+    QueryParameter:
+      files:
+      - "/assets/styles/sjc-frontend.css"
+      version: true
+  skillbars:
+    QueryParameter:
+      files:
+      - js/shortcodes_skillbar.js
+      version: true
+  skimlinks:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/skimlinks.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Skimlinks (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  skip-to:
+    QueryParameter:
+      files:
+      - js/SkipTo.min.js
+      version: true
   skt-skill-bar:
     QueryParameter:
       files:
@@ -13861,7 +13882,38 @@ plugins:
       - skill_bar/gage/justgage.js
       - skill_bar/gage/raphael-2.1.4.min.js
       version: true
+  slate:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/slate.pot
+      pattern: !ruby/regexp '/t\-Id\-Version: SVG_Logo_and_Text_Effects (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  slickr-flickr:
+    QueryParameter:
+      files:
+      - styles/public.css
+      - scripts/public.js
+      version: true
   slidedeck:
+    QueryParameter:
+      files:
+      - css/slidedeck.css
+      - js/jail.js
+      - js/slidedeck-public.js
+      version: true
+  slidedeck-lite-for-wordpress:
+    QueryParameter:
+      files:
+      - lib/jquery-mousewheel/jquery.mousewheel.min.js
+      - lib/slidedeck.jquery.lite.pack.js
+      version: true
+  slidedeck2:
+    QueryParameter:
+      files:
+      - css/slidedeck.css
+      - js/slidedeck-public.js
+      version: true
+  slidedeck3:
     QueryParameter:
       files:
       - css/slidedeck.css
@@ -13876,6 +13928,68 @@ plugins:
       - assets/css/slick.css
       - assets/css/iscwp-public.css
       version: true
+  sliderme:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/slider-me-en_GB.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: slider\.me v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  sliderspack-all-in-one-image-sliders:
+    QueryParameter:
+      files:
+      - assets/css/wp-spaios-public.css
+      version: true
+  slideshow:
+    QueryParameter:
+      files:
+      - slideshow.css
+      - slideshow.js
+      version: true
+  sliding-tags:
+    QueryParameter:
+      files:
+      - assets/js/scripts.js
+      version: true
+  slidr:
+    QueryParameter:
+      files:
+      - js/slidr.js
+      version: true
+  slimbox-2-slideshow:
+    QueryParameter:
+      files:
+      - tss.css
+      - tss.min.js
+      version: true
+  slkz-breadcrumbs:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/slkz-breadcrumbs-fr_FR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SlkZ Breadcrumbs (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  smart-codegrape-widget:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  smart-faq:
+    QueryParameter:
+      files:
+      - css/skin1.css
+      - js/smartfaq.min.js
+      version: true
+  smart-logo-showcase-lite:
+    QueryParameter:
+      files:
+      - css/font-awesome.min.css
+      - css/owl.carousel.css
+      - css/tooltipster.bundle.css
+      - css/smls-frontend-style.css
+      - css/smls-responsive.css
+      - js/owl.carousel.js
+      - js/tooltipster.bundle.js
+      - js/smls-frontend-script.js
+      version: true
   smart-manager-for-wp-e-commerce:
     TranslationFile:
       class: BodyPattern
@@ -13887,11 +14001,40 @@ plugins:
       files:
       - public/css/egoi-for-wp-public.css
       version: true
+  smart-navbar:
+    QueryParameter:
+      files:
+      - includes/css/smart_nav.css
+      - includes/js/smart-nav.js
+      version: true
+  smart-overlay:
+    QueryParameter:
+      files:
+      - smart-overlay.js
+      version: true
+  smart-post-like:
+    QueryParameter:
+      files:
+      - spr.js
+      version: true
+  smart-post-rating:
+    QueryParameter:
+      files:
+      - spr.js
+      version: true
   smart-reporter-for-wp-e-commerce:
     TranslationFile:
       class: BodyPattern
       path: languages/smart-reporter-for-wp-e-commerce.pot
       pattern: !ruby/regexp /\-Version:\ Smart Reporter for e\-commerce (?<v>\d+\.[\.\d]+)/i
+      version: true
+  smartcat-video-image-slider:
+    QueryParameter:
+      files:
+      - assets/css/camera.css
+      - assets/css/style.css
+      - assets/js/camera.min.js
+      - assets/js/script.js
       version: true
   smartideo:
     QueryParameter:
@@ -13899,10 +14042,102 @@ plugins:
       - static/smartideo.css
       - static/smartideo.js
       version: true
+  smartifw:
+    QueryParameter:
+      files:
+      - assets/css/smart_ifw_site.css
+      version: true
+  smarttouchinteractive-form-builder:
+    Comment:
+      xpath: //comment()[contains(., 'name="sti"')]
+      pattern: !ruby/regexp /<meta name="sti" version="(?<v>\d+\.[\.\d]+)" \/>/i
+      version: true
+  smilebox-widget:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/smile-pingback.js
+      version: true
+  smooth-gallery-replacement:
+    QueryParameter:
+      files:
+      - scripts/History.js
+      version: true
+  smooth-page-scroll-updown-buttons:
+    QueryParameter:
+      files:
+      - assets/js/smooth-page-scroll-updown-buttons.min.js
+      - assets/js/addButtons.js
+      version: true
+  smooth-scroll-by-wpos:
+    QueryParameter:
+      files:
+      - assets/css/ssbywpos-style.css
+      - assets/js/wp-ssbywpos-public.js
+      version: true
+  sms-notification-for-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/Repute-SMS-en_US.po
+      pattern: !ruby/regexp '/roject\-Id\-Version: SMS for WooCommerce v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  smslist:
+    QueryParameter:
+      files:
+      - css/style.css
+      - js/numberAction.js
+      version: true
+  smurfify:
+    QueryParameter:
+      files:
+      - scripts.js
+      version: true
+  sn-google-plus:
+    Comment:
+      xpath: //comment()[contains(., "SN Google Plus")]
+      pattern: !ruby/regexp /SN Google Plus (?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/retioSlider.css
+      version: true
+  sniperpress-mail:
+    QueryParameter:
+      files:
+      - public/css/sniperpress-mail-public.css
+      - public/js/sniperpress-mail-public.js
+      version: true
+  snippets-done-right:
+    QueryParameter:
+      files:
+      - assets/sdr-front.css
+      - assets/sdr-front.js
+      version: true
+  snipzine-slider:
+    QueryParameter:
+      files:
+      - themes/all.css
+      version: true
   snow-storm:
     QueryParameter:
       files:
       - snow-storm.js
+      version: true
+  snowy:
+    QueryParameter:
+      files:
+      - js/jquery.snow.js
+      - js/snowy.js
+      version: true
+  sns-subscription-form-for-amazon-web-services-push-notifications:
+    QueryParameter:
+      files:
+      - script.js
+      version: true
+  socail-profile-linking:
+    QueryParameter:
+      files:
+      - includes/css/spl-styles.css
       version: true
   social-booster:
     QueryParameter:

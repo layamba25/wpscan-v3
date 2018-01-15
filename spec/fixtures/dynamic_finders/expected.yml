@@ -17597,6 +17597,34 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/sitewit-engagement-analytics/languages/sitewit-engagement-analytics.pot,
         Match: ''ect-Id-Version: Search Engine Marketing 2.5.0'''
+  sj-cornerstone-addon:
+    QueryParameter:
+      number: 0.1.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sj-cornerstone-addon//assets/styles/sjc-frontend.css?ver=0.1.0
+      confidence: 10
+  skillbars:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/skillbars/js/shortcodes_skillbar.js?ver=1.0
+      confidence: 10
+  skimlinks:
+    TranslationFile:
+      number: '1.3'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/skimlinks/languages/skimlinks.pot, Match:
+        ''"Project-Id-Version: Skimlinks 1.3'''
+  skip-to:
+    QueryParameter:
+      number: 2.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/skip-to/js/SkipTo.min.js?ver=2.0.0
+      confidence: 10
   skt-skill-bar:
     QueryParameter:
       number: '1.5'
@@ -17607,6 +17635,21 @@ plugins:
       - http://wp.lab/wp-content/plugins/skt-skill-bar/skill_bar/gage/justgage.js?ver=1.5
       - http://wp.lab/wp-content/plugins/skt-skill-bar/skill_bar/gage/raphael-2.1.4.min.js?ver=1.5
       confidence: 40
+  slate:
+    TranslationFile:
+      number: 1.3.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/slate/languages/slate.pot, Match: ''t-Id-Version:
+        SVG_Logo_and_Text_Effects 1.3.0'''
+  slickr-flickr:
+    QueryParameter:
+      number: 2.5.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slickr-flickr/styles/public.css?ver=2.5.4
+      - http://wp.lab/wp-content/plugins/slickr-flickr/scripts/public.js?ver=2.5.4
+      confidence: 20
   slidedeck:
     QueryParameter:
       number: 5.1.5
@@ -17615,6 +17658,31 @@ plugins:
       - http://wp.lab/wp-content/plugins/slidedeck/css/slidedeck.css?ver=5.1.5
       - http://wp.lab/wp-content/plugins/slidedeck/js/jail.js?ver=5.1.5
       - http://wp.lab/wp-content/plugins/slidedeck/js/slidedeck-public.js?ver=5.1.5
+      confidence: 30
+  slidedeck-lite-for-wordpress:
+    QueryParameter:
+      number: 1.4.8
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slidedeck-lite-for-wordpress/lib/jquery-mousewheel/jquery.mousewheel.min.js?ver=1.4.8
+      - http://wp.lab/wp-content/plugins/slidedeck-lite-for-wordpress/lib/slidedeck.jquery.lite.pack.js?ver=1.4.8
+      confidence: 20
+  slidedeck2:
+    QueryParameter:
+      number: 2.3.21
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slidedeck2/css/slidedeck.css?ver=2.3.21
+      - http://wp.lab/wp-content/plugins/slidedeck2/js/slidedeck-public.js?ver=2.3.21
+      confidence: 20
+  slidedeck3:
+    QueryParameter:
+      number: 4.5.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slidedeck3/css/slidedeck.css?ver=4.5.2
+      - http://wp.lab/wp-content/plugins/slidedeck3/js/jail.js?ver=4.5.2
+      - http://wp.lab/wp-content/plugins/slidedeck3/js/slidedeck-public.js?ver=4.5.2
       confidence: 30
   slider-and-carousel-plus-widget-for-instagram:
     QueryParameter:
@@ -17626,6 +17694,86 @@ plugins:
       - http://wp.lab/wp-content/plugins/slider-and-carousel-plus-widget-for-instagram/assets/css/slick.css?ver=1.3
       - http://wp.lab/wp-content/plugins/slider-and-carousel-plus-widget-for-instagram/assets/css/iscwp-public.css?ver=1.3
       confidence: 40
+  sliderme:
+    TranslationFile:
+      number: 1.0.0
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/sliderme/lang/slider-me-en_GB.po, Match:
+        ''"Project-Id-Version: slider.me v1.0.0'''
+  sliderspack-all-in-one-image-sliders:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sliderspack-all-in-one-image-sliders/assets/css/wp-spaios-public.css?ver=1.1.1
+      confidence: 10
+  slideshow:
+    QueryParameter:
+      number: '0.1'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slideshow/slideshow.css?ver=0.1
+      - http://wp.lab/wp-content/plugins/slideshow/slideshow.js?ver=0.1
+      confidence: 20
+  sliding-tags:
+    QueryParameter:
+      number: '1.8'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sliding-tags/assets/js/scripts.js?ver=1.8
+      confidence: 10
+  slidr:
+    QueryParameter:
+      number: '1.4'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slidr/js/slidr.js?ver=1.4
+      confidence: 10
+  slimbox-2-slideshow:
+    QueryParameter:
+      number: 1.2.2
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/slimbox-2-slideshow/tss.css?ver=1.2.2
+      - http://wp.lab/wp-content/plugins/slimbox-2-slideshow/tss.min.js?ver=1.2.2
+      confidence: 20
+  slkz-breadcrumbs:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/slkz-breadcrumbs/languages/slkz-breadcrumbs-fr_FR.po,
+        Match: ''"Project-Id-Version: SlkZ Breadcrumbs 1.0'''
+  smart-codegrape-widget:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-codegrape-widget/css/style.css?ver=1.0.0
+      confidence: 10
+  smart-faq:
+    QueryParameter:
+      number: '1.4'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-faq/css/skin1.css?ver=1.4
+      - http://wp.lab/wp-content/plugins/smart-faq/js/smartfaq.min.js?ver=1.4
+      confidence: 20
+  smart-logo-showcase-lite:
+    QueryParameter:
+      number: 1.0.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/css/font-awesome.min.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/css/owl.carousel.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/css/tooltipster.bundle.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/css/smls-frontend-style.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/css/smls-responsive.css?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/js/owl.carousel.js?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/js/tooltipster.bundle.js?ver=1.0.5
+      - http://wp.lab/wp-content/plugins/smart-logo-showcase-lite/js/smls-frontend-script.js?ver=1.0.5
+      confidence: 80
   smart-manager-for-wp-e-commerce:
     TranslationFile:
       number: 3.15.0
@@ -17640,6 +17788,35 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/smart-marketing-for-wp/public/css/egoi-for-wp-public.css?ver=2.0.0
       confidence: 10
+  smart-navbar:
+    QueryParameter:
+      number: 0.2.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-navbar/includes/css/smart_nav.css?ver=0.2.0
+      - http://wp.lab/wp-content/plugins/smart-navbar/includes/js/smart-nav.js?ver=0.2.0
+      confidence: 20
+  smart-overlay:
+    QueryParameter:
+      number: '0.7'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-overlay/smart-overlay.js?ver=0.7
+      confidence: 10
+  smart-post-like:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-post-like/spr.js?ver=1.0.0
+      confidence: 10
+  smart-post-rating:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smart-post-rating/spr.js?ver=1.0.0
+      confidence: 10
   smart-reporter-for-wp-e-commerce:
     TranslationFile:
       number: 2.9.19
@@ -17647,6 +17824,16 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/smart-reporter-for-wp-e-commerce/languages/smart-reporter-for-wp-e-commerce.pot,
         Match: ''-Version: Smart Reporter for e-commerce 2.9.19'''
+  smartcat-video-image-slider:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smartcat-video-image-slider/assets/css/camera.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/smartcat-video-image-slider/assets/css/style.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/smartcat-video-image-slider/assets/js/camera.min.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/smartcat-video-image-slider/assets/js/script.js?ver=1.0.0
+      confidence: 40
   smartideo:
     QueryParameter:
       number: 2.5.0
@@ -17655,6 +17842,107 @@ plugins:
       - http://wp.lab/wp-content/plugins/smartideo/static/smartideo.css?ver=2.5.0
       - http://wp.lab/wp-content/plugins/smartideo/static/smartideo.js?ver=2.5.0
       confidence: 20
+  smartifw:
+    QueryParameter:
+      number: 1.0.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smartifw/assets/css/smart_ifw_site.css?ver=1.0.4
+      confidence: 10
+  smarttouchinteractive-form-builder:
+    Comment:
+      number: 1.1.8
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''<meta name="sti" version="1.1.8" />'''
+  smilebox-widget:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smilebox-widget/assets/css/style.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/smilebox-widget/assets/js/smile-pingback.js?ver=1.0
+      confidence: 20
+  smooth-gallery-replacement:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smooth-gallery-replacement/scripts/History.js?ver=1.0
+      confidence: 10
+  smooth-page-scroll-updown-buttons:
+    QueryParameter:
+      number: '1.3'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smooth-page-scroll-updown-buttons/assets/js/smooth-page-scroll-updown-buttons.min.js?ver=1.3
+      - http://wp.lab/wp-content/plugins/smooth-page-scroll-updown-buttons/assets/js/addButtons.js?ver=1.3
+      confidence: 20
+  smooth-scroll-by-wpos:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smooth-scroll-by-wpos/assets/css/ssbywpos-style.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/smooth-scroll-by-wpos/assets/js/wp-ssbywpos-public.js?ver=1.0
+      confidence: 20
+  sms-notification-for-woocommerce:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/sms-notification-for-woocommerce/languages/Repute-SMS-en_US.po,
+        Match: ''roject-Id-Version: SMS for WooCommerce v1.0'''
+  smslist:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smslist/css/style.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/smslist/js/numberAction.js?ver=1.0.0
+      confidence: 20
+  smurfify:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/smurfify/scripts.js?ver=1.0.0
+      confidence: 10
+  sn-google-plus:
+    Comment:
+      number: 1.5.3
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''SN Google Plus 1.5.3'''
+    QueryParameter:
+      number: 1.5.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sn-google-plus/css/retioSlider.css?ver=1.5.3
+      confidence: 10
+  sniperpress-mail:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sniperpress-mail/public/css/sniperpress-mail-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/sniperpress-mail/public/js/sniperpress-mail-public.js?ver=1.0.0
+      confidence: 20
+  snippets-done-right:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/snippets-done-right/assets/sdr-front.css?ver=1.0
+      - http://wp.lab/wp-content/plugins/snippets-done-right/assets/sdr-front.js?ver=1.0
+      confidence: 20
+  snipzine-slider:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/snipzine-slider/themes/all.css?ver=1.0.0
+      confidence: 10
   snow-storm:
     QueryParameter:
       number: 1.4.3
@@ -17662,6 +17950,28 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/snow-storm/snow-storm.js?ver=1.4.3
+  snowy:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/snowy/js/jquery.snow.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/snowy/js/snowy.js?ver=1.0.0
+      confidence: 20
+  sns-subscription-form-for-amazon-web-services-push-notifications:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/sns-subscription-form-for-amazon-web-services-push-notifications/script.js?ver=1.0
+      confidence: 10
+  socail-profile-linking:
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/socail-profile-linking/includes/css/spl-styles.css?ver=1.0
+      confidence: 10
   social-booster:
     QueryParameter:
       number: 1.0.0
