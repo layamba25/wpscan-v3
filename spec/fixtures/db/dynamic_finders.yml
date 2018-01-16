@@ -2357,6 +2357,12 @@ plugins:
       path: languages/bp-avatar-suggestions.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ BP Avatar Suggestions (?<v>\d+\.[\.\d]+)/i
       version: true
+  bp-block-users:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-block-users.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: BP Block Users (?<v>\d+\.[\.\d]+)/i'
+      version: true
   bp-bookmarklet:
     TranslationFile:
       class: BodyPattern
@@ -2368,6 +2374,12 @@ plugins:
       class: BodyPattern
       path: languages/bp-add-group-types.pot
       pattern: !ruby/regexp /\-Version:\ BuddyPress Create Group Types (?<v>\d+\.[\.\d]+)/i
+      version: true
+  bp-emails-for-bbp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-emails-for-bbp.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: BP Emails for BBP (?<v>\d+\.[\.\d]+)/i'
       version: true
   bp-forum-notifier:
     TranslationFile:
@@ -6145,6 +6157,12 @@ plugins:
       files:
       - public/css/game-showcase-public.css
       - public/js/game-showcase-public.js
+      version: true
+  game-users-share-buttons:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   gaming-delivery-network:
     QueryParameter:
@@ -14156,10 +14174,86 @@ plugins:
       files:
       - assets/css/social-icons.css
       version: true
+  social-links-group:
+    QueryParameter:
+      files:
+      - css/animate.css
+      - css/font-awesome.css
+      version: true
+  social-maven:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/social-maven.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Social Maven (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  social-media-aggregator:
+    QueryParameter:
+      files:
+      - js/im-social-aggregator.js
+      version: true
+  social-media-followers-counter:
+    QueryParameter:
+      files:
+      - css/style.css
+      version: true
+  social-media-links:
+    QueryParameter:
+      files:
+      - public/css/social-media-public.css
+      - public/js/social-media-public.js
+      version: true
+  social-media-widget-icon:
+    QueryParameter:
+      files:
+      - assets/js/wpssiw-script.js
+      version: true
+  social-medias-connect:
+    Comment:
+      xpath: //comment()[contains(., "social medias connect")]
+      pattern: !ruby/regexp /social medias connect V(?<v>\d+\.[\.\d]+)/i
+      version: true
+  social-mentions:
+    QueryParameter:
+      files:
+      - css/front-end.css
+      version: true
+  social-nation-itsme-login:
+    QueryParameter:
+      files:
+      - assets/css/social-nation-itsme-login.css
+      version: true
+  social-networks-links-by-performance-foundry:
+    QueryParameter:
+      files:
+      - assets/css/font-awesome.min.css
+      - assets/css/foundrysl.css
+      version: true
   social-polls-by-opinionstage:
     QueryParameter:
       files:
       - public/js/shortcodes.js
+      version: true
+  social-proof-testimonials-slider:
+    QueryParameter:
+      files:
+      - public/css/social-proof-slider-public.css
+      version: true
+  social-share-and-social-locker-arsocial:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/arsocial_lite-en_US.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: ARSocial Lite v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  social-share-by-jm-crea:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[contains(@name, "Social Share By JM")]/@content
+      version: true
+  social-sharing-buttons-and-counters:
+    QueryParameter:
+      files:
+      - assets/css/jc-social-sharing.css
+      - assets/js/jc-social-sharing.js
       version: true
   social-warfare:
     Comment:
@@ -14169,6 +14263,17 @@ plugins:
       files:
       - css/style.min.css
       - js/script.min.js
+      version: true
+  social-wiggle:
+    QueryParameter:
+      files:
+      - css/socialwiggle.css
+      - js/socialwiggle.js
+      version: true
+  sociofluid:
+    Comment:
+      xpath: //comment()[contains(., "SocioFluid")]
+      pattern: !ruby/regexp /Required by SocioFluid (?<v>\d+\.[\.\d]+) plugin/i
       version: true
   socketlabs:
     QueryParameter:
@@ -14188,6 +14293,17 @@ plugins:
       - static/css/css.css
       - static/js.js
       version: true
+  solidres:
+    QueryParameter:
+      files:
+      - assets/js/site.js
+      - assets/js/common.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/solidres.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Solidres (?<v>\d+\.[\.\d]+)/i'
+      version: true
   solr-power:
     ComposerFile:
       class: ConfigParser
@@ -14199,10 +14315,45 @@ plugins:
       path: solr-for-wordpress-on-pantheon.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ solr\-power (?<v>\d+\.[\.\d]+)/i
       version: true
+  solutions-invoice-manager:
+    QueryParameter:
+      files:
+      - public/css/solutions-invoice-manager-public.css
+      - public/js/solutions-invoice-manager-public.js
+      version: true
+  some-maps:
+    QueryParameter:
+      files:
+      - css/some-maps.css
+      - js/some-maps.js
+      version: true
+  son-of-gifv:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/son-of-gifv.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Son of GIFV (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  source-affix:
+    QueryParameter:
+      files:
+      - css/public.css
+      version: true
   sp-client-document-manager:
     QueryParameter:
       files:
       - style.css
+      version: true
+  sp-faq:
+    QueryParameter:
+      files:
+      - css/jquery.accordion.css
+      - js/jquery.accordion.js
+      version: true
+  sp-header-image-slider:
+    QueryParameter:
+      files:
+      - css/jquery.bxslider.css
+      - js/jquery.bxslider.min.js
       version: true
   sp-news-and-widget:
     QueryParameter:
@@ -14210,15 +14361,64 @@ plugins:
       - css/stylenews.css
       - js/jquery.newstape.js
       version: true
+  spam-blip:
+    TranslationFile:
+      class: BodyPattern
+      path: locale/spambl_l10n.pot
+      pattern: !ruby/regexp /\# Spam_BLIP (?<v>\d+\.[\.\d]+)/i
+      version: true
+  spanish-quote-of-the-day-frase-del-dia:
+    QueryParameter:
+      files:
+      - css/spanish-quotes.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/spanish-quote-of-the-day-frase-del-dia.pot
+      pattern: !ruby/regexp /Spanish Quotes of the Day \(Frase del D[^a]a\) (?<v>\d+\.[\.\d]+)/i
+      version: true
+  spantext:
+    QueryParameter:
+      files:
+      - "/css/spantext.css"
+      version: true
+  sparky-logos:
+    QueryParameter:
+      files:
+      - admin/sl-admin-style.css
+      version: true
+  special-admins:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   speed-booster-pack:
     Comment:
       pattern: !ruby/regexp /themes using Speed Booster Pack Plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  speed-bumps:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/speed-bumps.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Speed\-bumps (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  speed-up-lazy-load:
+    QueryParameter:
+      files:
+      - js/lazy-load.min.js
       version: true
   speedy-video:
     QueryParameter:
       files:
       - public/css/speedyvideo-public.css
       - public/js/speedyvideo-public.js
+      version: true
+  sphere-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/SphereManager-ja.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SphereManager(?<v>\d+\.[\.\d]+)/i'
       version: true
   spider-event-calendar:
     QueryParameter:
@@ -14227,6 +14427,28 @@ plugins:
       - elements/calendar-setup.js
       - elements/calendar_function.js
       - elements/calendar-jos.css
+      version: true
+  splash-popup-for-woocommerce:
+    QueryParameter:
+      files:
+      - js/frontend.js
+      version: true
+  sponsor-banners:
+    QueryParameter:
+      files:
+      - public/css/sponsor-public.css
+      - public/js/sponsor-public.js
+      version: true
+  sponsors-slideshow-widget:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  sports-address-book:
+    QueryParameter:
+      files:
+      - assets/css/sports-address-book.css
+      - assets/js/sports-address-book.js
       version: true
   sportspress:
     QueryParameter:
@@ -14239,13 +14461,64 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /SportsPress (?<v>\d+\.[\.\d]+)/i
+  sportspress-for-cricket:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /SportsPress for Cricket (?<v>\d+\.[\.\d]+)/i
+    QueryParameter:
+      files:
+      - js/sportspress-cricket.js
+      version: true
+  sportsteam-widget:
+    QueryParameter:
+      files:
+      - css/sportsteam-widget.css
+      version: true
+  spreaker-shortcode:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   sprout-invoices:
     Comment:
       pattern: !ruby/regexp /Sprout Invoices v(?<v>\d+\.[\.\d]+)/i
       version: true
+  spyr-bar:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  square-thumbnails:
+    QueryParameter:
+      files:
+      - public/css/square-thumbnails-public.css
+      - public/js/square-thumbnails-public.js
+      version: true
+  squelch-tabs-and-accordions-shortcodes:
+    QueryParameter:
+      files:
+      - css/jquery-ui/jquery-ui-1.11.4/smoothness/jquery-ui.theme.min.css
+      - css/squelch-tabs-and-accordions.css
+      - js/squelch-tabs-and-accordions.js
+      version: true
   squirrly-seo:
     Comment:
       pattern: !ruby/regexp /Squirrly SEO Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+  srizon-instagram-album:
+    QueryParameter:
+      files:
+      - site/resources/materialize.css
+      - site/resources/app.css
+      version: true
+  stack-slider-3d-image-slider:
+    QueryParameter:
+      files:
+      - assets/css/swiper.min.css
+      - assets/css/wp-sk-public.css
       version: true
   staff-list:
     QueryParameter:
@@ -14260,6 +14533,12 @@ plugins:
       - js/common.js
       - js/SC_Script.js
       - js/responsive.js
+      version: true
+  staffer:
+    QueryParameter:
+      files:
+      - public/css/staffer-styles.css
+      - public/js/staffer-scripts.js
       version: true
   stageshow:
     QueryParameter:
@@ -14284,11 +14563,51 @@ plugins:
       path: package.json
       key: version
       version: true
+  statbadge:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="statbadge"]/@content
+      version: true
+      pattern: !ruby/regexp /statbadge\/(?<v>\d+\.[\.\d]+)/i
+  status-buddy:
+    QueryParameter:
+      files:
+      - public/css/status-buddy-public.css
+      - public/js/status-buddy-public.js
+      version: true
+  steemit-feed:
+    QueryParameter:
+      files:
+      - public/css/steemit-feed-public.css
+      - public/js/spin.min.js
+      version: true
+  steemit-scroller:
+    QueryParameter:
+      files:
+      - public/css/steemit-scroller-public.css
+      - public/lightbox/lightbox.min.css
+      - public/css/owl.carousel.css
+      - public/css/owl.theme.default.css
+      - public/js/spin.min.js
+      - public/lightbox/lightbox.min.js
+      - public/js/owl.carousel.min.js
+      version: true
+  stella-flags:
+    QueryParameter:
+      files:
+      - "/css/styles.css"
+      version: true
   sticky-menu-or-anything-on-scroll:
     QueryParameter:
       files:
       - assets/js/jq-sticky-anything.min.js
       - assets/js/stickThis.js
+      version: true
+  sticky-posts-dashboard-widget:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sticky-posts-dashboard-widget-de_DE.po
+      pattern: !ruby/regexp '/\-Version: Sticky Post Dashboard Widget v(?<v>\d+\.[\.\d]+)/i'
       version: true
   sticky-tax:
     TranslationFile:
@@ -14296,11 +14615,42 @@ plugins:
       path: languages/sticky-tax.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Sticky Tax (?<v>\d+\.[\.\d]+)/i
       version: true
+  stickyadmin:
+    QueryParameter:
+      files:
+      - lib/css/sticky-fonts.css
+      - lib/css/sticky-adminbar.css
+      - lib/css/sticky-tooltips.css
+      - lib/js/sticky-adminbar.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/stickyadmin.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: StickyAdmin (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  stock-manager-pro:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/stockmanager-nl_NL.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Stock Manager Pro (?<v>\d+\.[\.\d]+)/i'
+      version: true
   stock-ticker:
     QueryParameter:
       files:
       - assets/css/stock-ticker.css
       - assets/js/jquery.stockticker.min.js
+      version: true
+  storefront-jetpack:
+    QueryParameter:
+      files:
+      - public/css/sfjp-public.css
+      - public/js/sfjp-public.js
+      version: true
+  storefront-lines-and-circles:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/storefront-extension-boilerplate.pot
+      pattern: !ruby/regexp '/d\-Version: Storefront Lines And Circles (?<v>\d+\.[\.\d]+)/i'
       version: true
   storefront-product-sharing:
     TranslationFile:
@@ -14319,6 +14669,12 @@ plugins:
       path: languages/wp-storemapper.pot
       pattern: !ruby/regexp /t\-Id\-Version:\ Storemapper for WordPress (?<v>\d+\.[\.\d]+)/i
       version: true
+  stray-quotes:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/stray-quotes-da_DK.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Stray Random Quotes (?<v>\d+\.[\.\d]+)/i'
+      version: true
   stream:
     Comment:
       pattern: !ruby/regexp /Stream WordPress user activity plugin v(?<v>\d+\.[\.\d]+)/i
@@ -14326,6 +14682,101 @@ plugins:
   strong-testimonials:
     Comment:
       pattern: !ruby/regexp /:\ WordPress 4\.9\.1 \| Strong Testimonials (?<v>\d+\.[\.\d]+)/i
+      version: true
+  style-press:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/style-press.pot
+      pattern: !ruby/regexp /ion of the WordPress plugin Style Press (?<v>\d+\.[\.\d]+)/i
+      version: true
+  styles-for-wp-pagenavi-addon:
+    QueryParameter:
+      files:
+      - assets/css/sfwppa-style.css
+      version: true
+  stylish-author-bio:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/fr.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Stylish Author Bio (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  subpagelister:
+    QueryParameter:
+      files:
+      - css/subpagelister.css
+      version: true
+  subscribe-and-connect:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      version: true
+  subscribe-here-widget:
+    Comment:
+      pattern: !ruby/regexp /Required by Subscribe Here Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+  subscribe-now:
+    QueryParameter:
+      files:
+      - css/main.css
+      - js/empty.js
+      version: true
+  subtitles:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/subtitles-en_US.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Subtitles (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  subversion-log:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/subversion-log.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  suffice-toolkit:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/suffice-toolkit.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Suffice Toolkit (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  suffusion-bbpress-pack:
+    QueryParameter:
+      files:
+      - include/css/bbpress.css
+      version: true
+  suffusion-shortcodes:
+    QueryParameter:
+      files:
+      - include/css/suffusion-shortcodes.css
+      version: true
+  supapress:
+    QueryParameter:
+      files:
+      - includes/css/styles.min.css
+      version: true
+  supaz-text-headlines:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - js/frontend.js
+      version: true
+  super-blog-pack:
+    QueryParameter:
+      files:
+      - js/ts-post-stats.js
+      version: true
+  super-booking-calendar:
+    QueryParameter:
+      files:
+      - inc/fullcalendar.min.css
+      - inc/moment.min.js
+      - inc/fullcalendar.min.js
+      - inc/script.js
+      version: true
+  super-simple-gmaps:
+    QueryParameter:
+      files:
+      - css/super-simple-gmaps.css
+      - js/super-simple-gmaps.js
       version: true
   super-socializer:
     QueryParameter:
@@ -14337,10 +14788,80 @@ plugins:
       - js/front/facebook/commenting.js
       - js/front/sharing/sharing.js
       version: true
+  super-stripe:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/super-stripe.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Buy Now for Stripe (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  superpack:
+    QueryParameter:
+      files:
+      - assets/css/shortcodes.min.css
+      - assets/css/widgets.min.css
+      version: true
+  superslider-milkbox:
+    Comment:
+      xpath: //comment()[contains(., "Superslider-Milkbox")]
+      pattern: !ruby/regexp /is part of the Superslider\-Milkbox v(?<v>\d+\.[\.\d]+)
+        plugin/i
+      version: true
+  supportifywp:
+    QueryParameter:
+      files:
+      - public/css/styles.min.css
+      - public/js/scripts.min.js
+      version: true
   surbma-smooth-scroll:
     QueryParameter:
       files:
       - js/surbma-smooth-scroll.js
+      version: true
+  sv-sticky-menu:
+    QueryParameter:
+      files:
+      - js/sv-sticky-menu.min.js
+      version: true
+  swa-alexa:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/swa-alexa-fa_IR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: swa\-alexa (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  sweepstakes:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sw-es_ES.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Sweepstakes (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  swfput:
+    QueryParameter:
+      files:
+      - evhh5v/evhh5v.css
+      - evhh5v/front.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: locale/swfput_l10n-en_US.po
+      pattern: !ruby/regexp /\# swfput (?<v>\d+\.[\.\d]+)/i
+      version: true
+  swh-users-only:
+    TranslationFile:
+      class: BodyPattern
+      path: content/languages/swh_uo-fa_IR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SWH Users Only (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  swim-it-up-tabela-de-recordes:
+    QueryParameter:
+      files:
+      - public/css/swimitup-recordes-public.css
+      - public/js/swimitup-recordes-public.js
+      version: true
+  swiper-slider-and-carousel:
+    QueryParameter:
+      files:
+      - assets/css/swiper.min.css
+      - assets/css/wp-ssc-public.css
       version: true
   sympose:
     QueryParameter:
@@ -14353,6 +14874,12 @@ plugins:
       path: languages/sympose.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Sympose (?<v>\d+\.[\.\d]+)/i
       version: true
+  synchi:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/synchi-ru_RU.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Synchi v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   syndication-links:
     QueryParameter:
       files:
@@ -14362,6 +14889,31 @@ plugins:
       class: BodyPattern
       path: languages/syndication-links.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Syndication Links (?<v>\d+\.[\.\d]+)/i
+      version: true
+  syntax-highlighter-mt:
+    QueryParameter:
+      files:
+      - styles/shCore.css
+      - styles/shThemeDefault.css
+      - scripts/shCore.js
+      - scripts/shAutoloader.js
+      - brushTypes.js
+      version: true
+  tabify-edit-screen:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tabify-edit-screen.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Tabify Edit Screen (?<v>\d+\.[\.\d]+)/i'
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  table-generator:
+    QueryParameter:
+      files:
+      - css/style.css
       version: true
   table-maker:
     QueryParameter:
@@ -14373,6 +14925,12 @@ plugins:
       files:
       - css/default.min.css
       version: true
+  tabs-widget-for-page-builder:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tabs-widget-for-page-builder.pot
+      pattern: !ruby/regexp '/d\-Version: Tabs Widget for Page Builder (?<v>\d+\.[\.\d]+)/i'
+      version: true
   tabulate:
     QueryParameter:
       files:
@@ -14381,11 +14939,55 @@ plugins:
       - assets/jquery-ui/themes/base/jquery-ui.min.css
       - assets/style.css
       version: true
+  tackthis:
+    QueryParameter:
+      files:
+      - "/frontend/js/scripts.js"
+      version: true
   tag-groups:
     QueryParameter:
       files:
       - css/jquery-ui.structure.min.css
       - css/ui-gray/jquery-ui.theme.min.css
+      version: true
+  tagged-sitemap:
+    QueryParameter:
+      files:
+      - tagged-sitemap.js
+      version: true
+  taghound-media-tagger:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  tagmyskill:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/en_US-tagMySkill.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: tagMySkill (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  tagregator:
+    QueryParameter:
+      files:
+      - css/front-end.css
+      - javascript/front-end.js
+      version: true
+  tailor-portfolio:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  tailtarget:
+    Comment:
+      xpath: //comment()[contains(., "TailTarget")]
+      pattern: !ruby/regexp /tailtarget\.com plugin TailTarget DMP v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  take-notice:
+    QueryParameter:
+      files:
+      - assets/css/take-notice.css
       version: true
   talkjs:
     ComposerFile:
@@ -14393,15 +14995,67 @@ plugins:
       path: package.json
       key: version
       version: true
+  talks-add-on-for-the-events-calendar:
+    QueryParameter:
+      files:
+      - public/assets/css/event-talks-public.css
+      - public/assets/js/event-talks-public.js
+      version: true
+  tap-cookies:
+    QueryParameter:
+      files:
+      - public/assets/js/jquery.cookie.js
+      - public/assets/js/toastr.min.js
+      version: true
+  tashortcodes:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  task-manager:
+    QueryParameter:
+      files:
+      - core/asset/css/frontend.css
+      - core/asset/js/frontend.min.js
+      version: true
   taskbreaker-project-management:
     QueryParameter:
       files:
       - assets//css/style.css
       version: true
+  taxonomy-icons:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/taxonomy-icons.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Taxonomy Icons (?<v>\d+\.[\.\d]+)/i'
+      version: true
   taxonomy-images:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  tcbd-alert:
+    QueryParameter:
+      files:
+      - css/tcbd-alert.css
+      - js/tcbd-alert.js
+      version: true
+  tcbd-calculator:
+    QueryParameter:
+      files:
+      - css/calculator.css
+      - js/calculator.js
+      version: true
+  tcbd-tooltip:
+    QueryParameter:
+      files:
+      - js/active.js
       version: true
   teachpress:
     QueryParameter:
@@ -14409,11 +15063,70 @@ plugins:
       - js/frontend.js
       - styles/teachpress_front.css
       version: true
+  team-view:
+    QueryParameter:
+      files:
+      - public/css/team-view-public.css
+      - public/js/team-view-public.js
+      version: true
+  team-view-by-innvonix-technologies:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/owl.carousel.min.js
+      version: true
+  teamstuff-calendar:
+    QueryParameter:
+      files:
+      - public/css/teamstuff-calendar-public.css
+      - public/js/teamstuff-calendar.js
+      - public/js/teamstuff-calendar-public.js
+      version: true
+  teg-twitter-api:
+    QueryParameter:
+      files:
+      - assets/css/frontend-teg-twitter-api.css
+      - assets/js/frontend/teg-twitter-api-frontend.min.js
+      version: true
+  teg-wp-dialog:
+    QueryParameter:
+      files:
+      - assets/css/remodal-default-theme.css
+      - assets/css/remodal.css
+      - assets/css/teg-wp-dialog-frontend.css
+      - assets/js/nifty_modal/classie.min.js
+      - assets/js/nifty_modal/modalEffects.min.js
+      - assets/js/remodal/remodal.min.js
+      - assets/js/frontend/teg-wp-dialog-frontend.min.js
+      version: true
   telaalbums:
     QueryParameter:
       files:
       - public/assets/css/public.css
       - public/assets/js/jssor.slider-23.1.5.min.js
+      version: true
+  teledirwidgets:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="teledirwidgets"]/@content
+      version: true
+      pattern: !ruby/regexp /teledirwidgets\/(?<v>\d+\.[\.\d]+)/i
+  temporary-access-for-users:
+    QueryParameter:
+      files:
+      - public/css/temporary-access-for-users-public.css
+      - public/js/temporary-access-for-users-public.js
+      version: true
+  tennis-court-bookings:
+    QueryParameter:
+      files:
+      - assets/css/rncbc_calendar.css
+      version: true
+  terrys-commentary:
+    QueryParameter:
+      files:
+      - default.css
+      - tooltip.js
       version: true
   testimonials-widget:
     TranslationFile:
@@ -14421,10 +15134,49 @@ plugins:
       path: languages/testimonials-widget.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Testimonials Widget (?<v>\d+\.[\.\d]+)/i
       version: true
+  text-hover:
+    QueryParameter:
+      files:
+      - assets/text-hover.js
+      version: true
+  text-modules:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/text-modules-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Text Modules v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  tf-numbers-number-counter-animaton:
+    QueryParameter:
+      files:
+      - assets/js/tf_numbers.js
+      version: true
+  tf-song-list:
+    QueryParameter:
+      files:
+      - assets/css/tf-song-list.css
+      version: true
+  th23-user-management:
+    QueryParameter:
+      files:
+      - th23-user-management.css
+      - th23-user-management.js
+      version: true
+  that-was-helpful:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/that-was-helpful.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: That Was Helpful (?<v>\d+\.[\.\d]+)/i'
+      version: true
   the-beyond:
     QueryParameter:
       files:
       - src/embed.js
+      version: true
+  the-contento:
+    QueryParameter:
+      files:
+      - public/css/wp-contento-public.css
+      - public/js/wp-contento-public.js
       version: true
   the-events-calendar:
     TranslationFile:
@@ -14432,11 +15184,45 @@ plugins:
       path: lang/the-events-calendar.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ The Events Calendar (?<v>\d+\.[\.\d]+)/i
       version: true
+  the-post-grid:
+    QueryParameter:
+      files:
+      - assets/css/thepostgrid.css
+      version: true
+  the-seo-framework-extension-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: language/the-seo-framework-extension-manager.pot
+      pattern: !ruby/regexp '/: The SEO Framework \- Extension Manager (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  the-tweet-button:
+    QueryParameter:
+      files:
+      - public/css/tweet-button-public.css
+      - public/js/twitter-widgets.js
+      - public/js/tweet-button-public.js
+      version: true
+  theatre:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Theater (?<v>\d+\.[\.\d]+)/i
+    QueryParameter:
+      files:
+      - js/main.js
+      version: true
   theme-junkie-custom-css:
     TranslationFile:
       class: BodyPattern
       path: languages/theme-junkie-custom-css.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ TJ Custom CSS (?<v>\d+\.[\.\d]+)/i
+      version: true
+  theme-junkie-features-content:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tjfc.po
+      pattern: !ruby/regexp '/\-Version: Theme Junkie Features Content (?<v>\d+\.[\.\d]+)/i'
       version: true
   theme-junkie-portfolio-content:
     TranslationFile:
@@ -14444,11 +15230,28 @@ plugins:
       path: languages/theme-junkie-portfolio-content.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Junkie Portfolio (?<v>\d+\.[\.\d]+)/i
       version: true
+  theme-junkie-shortcodes:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tj-shortcodes.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TJ Shortcodes (?<v>\d+\.[\.\d]+)/i'
+      version: true
   theme-my-login:
     TranslationFile:
       class: BodyPattern
       path: languages/theme-my-login.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Theme My Login (?<v>\d+\.[\.\d]+)/i
+      version: true
+  theme-roulette:
+    QueryParameter:
+      files:
+      - "/assets/js/src/theme_roulette.js"
+      version: true
+  themefarmer-woocommerce-quick-view:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/themefarmer-woocommerce-quick-view.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: (?<v>\d+\.[\.\d]+)/i'
       version: true
   themegrill-demo-importer:
     TranslationFile:
@@ -14456,10 +15259,42 @@ plugins:
       path: languages/themegrill-demo-importer.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ ThemeGrill Demo Importer (?<v>\d+\.[\.\d]+)/i
       version: true
+  themepacific-review-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tp_wpreview_pro.pot
+      pattern: !ruby/regexp /hemepacific WordPress Review Plugin Pro (?<v>\d+\.[\.\d]+)/i
+      version: true
+  themepaste-secure-admin:
+    QueryParameter:
+      files:
+      - css/wptpsa-frontend.css
+      version: true
+  themify-builder-lite:
+    QueryParameter:
+      files:
+      - themify/js/main.min.js
+      version: true
+  themify-shortcodes:
+    QueryParameter:
+      files:
+      - themify/js/main.js
+      version: true
+  thesis-openhook:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/thesis-openhook.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: OpenHook (?<v>\d+\.[\.\d]+)/i'
+      version: true
   thirstyaffiliates:
     QueryParameter:
       files:
       - js/app/ta.js
+      version: true
+  thq-connect:
+    QueryParameter:
+      files:
+      - css/style.css
       version: true
   ticketmaster:
     QueryParameter:
@@ -15338,6 +16173,12 @@ plugins:
       - public/js/wprev-public.js
       - public/js/wprs-unslider-min.js
       version: true
+  wp-fail2ban-redux:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-fail2ban-redux.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Fail2Ban Redux (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-fb-autoconnect:
     QueryParameter:
       files:
@@ -15679,6 +16520,12 @@ plugins:
   wp-seo-structured-data-schema:
     Comment:
       pattern: !ruby/regexp /gleton's WP SEO Structured Data Plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-session-manager:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   wp-show-posts:
     QueryParameter:
