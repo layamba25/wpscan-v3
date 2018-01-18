@@ -15630,11 +15630,37 @@ plugins:
       - public/css/turbo-widgets-public.css
       - public/js/turbo-widgets-public.js
       version: true
+  tv-streaming:
+    QueryParameter:
+      files:
+      - tv.css
+      - tv-min.js
+      version: true
+  tw-recent-posts-widget:
+    QueryParameter:
+      files:
+      - tw-recent-posts-widget.css
+      version: true
+  tweet-map:
+    QueryParameter:
+      files:
+      - css/tweetmap.css
+      version: true
+  tweet-stimonials:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
   tweetific:
     TranslationFile:
       class: BodyPattern
       path: lang/tweetific.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Tweetific (?<v>\d+\.[\.\d]+)/i
+      version: true
+  tweetview-widget:
+    QueryParameter:
+      files:
+      - js/tweetview-min.js
       version: true
   twenty-eleven-showcase-slider:
     TranslationFile:
@@ -15642,17 +15668,149 @@ plugins:
       path: lang/obenland-wp-xx_XX.pot
       pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
       version: true
+  twenty20:
+    QueryParameter:
+      files:
+      - assets/css/twenty20.css
+      - assets/js/jquery.twenty20.js
+      - assets/js/jquery.event.move.js
+      version: true
+  twinfield:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/twinfield.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Twinfield (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  twitch-status:
+    QueryParameter:
+      files:
+      - css/twitch-status.css
+      - font/fontello/css/fontello.css
+      - font/fontello/css/animation.css
+      - js/twitch-status.js
+      version: true
+  twitpic:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="twitpic"]/@content
+      version: true
+      pattern: !ruby/regexp /twitpic\/(?<v>\d+\.[\.\d]+)/i
+  twitter-account-box:
+    QueryParameter:
+      files:
+      - public/styles/twitteraccountbox.css
+      - public/vendor/fontello-tab/css/twitter-account-box.css
+      - public/js/twitter-account-box.min.js
+      version: true
+  twitter-anywhere-plus:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tap-es_ES.po
+      pattern: !ruby/regexp '/ject\-Id\-Version: Twitter @Anywhere Plus (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  twitter-trackbacks-bar:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/twitter_trackback-fr_FR.po
+      pattern: !ruby/regexp '/ject\-Id\-Version: Twitter TrackBacks Bar (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  twittergrid:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="twittergrid"]/@content
+      version: true
+      pattern: !ruby/regexp /twittergrid\/(?<v>\d+\.[\.\d]+)/i
+  twitterwidget:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="twitterwidget"]/@content
+      version: true
+      pattern: !ruby/regexp /twitterwidget\/(?<v>\d+\.[\.\d]+)/i
+  twitvid:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="twitvid"]/@content
+      version: true
+      pattern: !ruby/regexp /twitvid\/(?<v>\d+\.[\.\d]+)/i
+  typeform:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   typekit-fonts-for-wordpress:
     TranslationFile:
       class: BodyPattern
       path: languages/typekit-fonts-for-wordpress.pot
       pattern: !ruby/regexp /Id\-Version:\ Typekit Fonts for WordPress (?<v>\d+\.[\.\d]+)/i
       version: true
+  typo3-importer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/typo3-importer.pot
+      pattern: !ruby/regexp '/ject\-Id\-Version: TYPO3 tt_news Importer (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  u-more-recent-posts:
+    QueryParameter:
+      files:
+      - inc/style.css
+      - inc/script.js
+      version: true
   ucare-support-system:
     QueryParameter:
       files:
       - assets/css/wp-widgets.css
       - assets/css/login.css
+      version: true
+  ucat-next-story:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
+      version: true
+  ufhealth-require-image-alt-tags:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ufhealth-require-image-alt-tags.pot
+      pattern: !ruby/regexp '/rsion: UF Health Require Image Alt Tags (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  uix-page-builder:
+    QueryParameter:
+      files:
+      - uixpb_templates/css/uix-page-builder.min.css
+      - uixpb_templates/js/uix-page-builder.min.js
+      version: true
+  uix-products:
+    QueryParameter:
+      files:
+      - assets/css/uix-products.css
+      - assets/js/uix-products.js
+      version: true
+  uix-shortcodes:
+    QueryParameter:
+      files:
+      - assets/css/shortcodes.css
+      - assets/js/uix-shortcodes.js
+      version: true
+  uix-slideshow:
+    QueryParameter:
+      files:
+      - assets/css/uix-slideshow.css
+      - assets/js/uix-slideshow.js
+      version: true
+  ultimate-author-box-lite:
+    QueryParameter:
+      files:
+      - css/frontend.css
+      - css/uab-responsive.css
+      - css/font-awesome.min.css
+      - js/frontend.js
+      version: true
+  ultimate-back-to-top:
+    QueryParameter:
+      files:
+      - nyams_ultimate_button.css
+      - nyams_ultimate_button.js
       version: true
   ultimate-form-builder-lite:
     QueryParameter:
@@ -15678,17 +15836,122 @@ plugins:
       - assets/css/um.min.css
       - assets/js/um.min.js
       version: true
+  ultimate-modal:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ultimate-modal.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Ultimate Modal (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  ultimate-multi-design-video-carousel:
+    QueryParameter:
+      files:
+      - css/umdc-style.css
+      - js/slider_min.js
+      - js/jquery.gbs_slider.js
+      version: true
+  ultimate-news-plus-widget:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/ccs-news-style.css
+      version: true
   ultimate-page-builder:
     MetaTag:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Ultimate Page Builder \- (?<v>\d+\.[\.\d]+)/i
+  ultimate-pdf-invoice:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ultimate-pdf-invoice-zh_CN.po
+      pattern: !ruby/regexp '/oject\-Id\-Version: Ultimate PDF Invoice v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  ultimate-popunder:
+    QueryParameter:
+      files:
+      - assets/lanund.js
+      - assets/ultimate-popunder.js
+      version: true
+  ultimate-post-list:
+    QueryParameter:
+      files:
+      - public/js/ultimate-post-list-public.js
+      version: true
+  ultimate-post-thumbnails:
+    QueryParameter:
+      files:
+      - js/front.js
+      - inc/prettyphoto/js/front.prettyphoto.js
+      version: true
+  ultimate-recent-posts:
+    QueryParameter:
+      files:
+      - lib/slider/camera.css
+      - lib/carousel/owl.carousel.css
+      - lib/carousel/owl.theme.css
+      - lib/carousel/owl.transitions.css
+      - style/default.css
+      - lib/slider/jquery.easing.1.3.js
+      - lib/slider/camera.min.js
+      - lib/carousel/owl.carousel.min.js
+      - script/sc_urp_script.js
+      version: true
+  ultimate-rotator:
+    QueryParameter:
+      files:
+      - ultimate-rotator.css
+      version: true
+  ultimate-widgets-light:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      version: true
+  um-plug:
+    QueryParameter:
+      files:
+      - prop/print.css
+      - prop/medium.css
+      - prop/small.css
+      version: true
+  um-user-switching:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/um-user-switching.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: UM User Switching (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  unfc-normalize:
+    Comment:
+      xpath: //comment()[contains(., "unfc-normalize")]
+      pattern: !ruby/regexp /\/unfc\-normalize\/js\/ie8\.min\.js\?ver=(?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - js/unfc-normalize.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/unfc-normalize.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: UNFC No[^r]rmalize (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  unik-ultimate-pricing-table:
+    QueryParameter:
+      files:
+      - assets/css/bootstrap.min.css
+      - assets/css/style.css
+      version: true
   unipress-api:
     QueryParameter:
       files:
       - "/css/unipress.css"
       - "/js/unipress.js"
+      version: true
+  unique-hover-slider-plus:
+    QueryParameter:
+      files:
+      - assets/css/stylesheet.min.css
+      - assets/js/vendor.js
+      - assets/js/script.js
       version: true
   units:
     QueryParameter:
@@ -15715,6 +15978,8 @@ plugins:
       - assets/js/product-filter.js
       - assets/js/chat.js
       - assets/js/bootstrap/bootstrap.js
+      - assets/js/tab.js
+      - assets/js/bootstrap.js
       version: true
   upstream:
     TranslationFile:
