@@ -1444,6 +1444,13 @@ plugins:
       files:
       - assets/pagecount.min.js
       version: true
+  awebooking:
+    QueryParameter:
+      files:
+      - "/assets/css/awebooking.css"
+      - "/assets/js/front-end/awebooking.js"
+      - "/assets/js/front-end/booking-handler.js"
+      version: true
   aweos-wp-lock:
     ComposerFile:
       class: ConfigParser
@@ -4470,6 +4477,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /es by shailan \(http:\/\/metinsaylan\.com\) v(?<v>\d+\.[\.\d]+)/i
       version: true
+  dropshipping-xox:
+    QueryParameter:
+      files:
+      - public/css/dropshipping-xox-public.css
+      - public/js/dropshipping-xox-public.js
+      version: true
   dsidxpress:
     QueryParameter:
       files:
@@ -4746,6 +4759,12 @@ plugins:
       class: BodyPattern
       path: languages/easy-social-sharing.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Easy Social Sharing (?<v>\d+\.[\.\d]+)/i
+      version: true
+  easy-support-videos:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easy-support-videos.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: Easy Support Videos (?<v>\d+\.[\.\d]+)/i'
       version: true
   easy-swipebox:
     QueryParameter:
@@ -10269,6 +10288,11 @@ plugins:
       files:
       - "/assets/css/ns-simple-contact-form.css"
       version: true
+  nutritionwp:
+    QueryParameter:
+      files:
+      - public/css/nutritionwp-public.css
+      version: true
   nwa:
     QueryParameter:
       files:
@@ -11869,6 +11893,24 @@ plugins:
       files:
       - css/pullquote.css
       - js/pullquote.js
+      version: true
+  pw-woocommerce-bogo-free:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pimwick.pot
+      pattern: !ruby/regexp '/ct\-Id\-Version: PW WooCommerce BOGO Free (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  pw-woocommerce-lets-export:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pimwick.pot
+      pattern: !ruby/regexp '/d\-Version: PW WooCommerce Let''s Export! (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  pw-woocommerce-on-sale:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pimwick.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: PW WooCommerce On Sale! (?<v>\d+\.[\.\d]+)/i'
       version: true
   pwacommerce:
     ComposerFile:
@@ -14287,6 +14329,13 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Software Issue Manager v(?<v>\d+\.[\.\d]+) \- https:\/\/emdplugins\.com/i
+  sola-testimonials:
+    QueryParameter:
+      files:
+      - js/jquery.form-validator.min.js
+      - js/sola_t_frontend.js
+      - js/imgLiquid-min.js
+      version: true
   sold-alerts:
     QueryParameter:
       files:
@@ -15296,10 +15345,41 @@ plugins:
       files:
       - css/style.css
       version: true
+  thumbnail-crop-position:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/thumb_crop_position-es_ES.po
+      pattern: !ruby/regexp '/ect\-Id\-Version: Thumbnail Crop Position (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  ticker-ultimate:
+    QueryParameter:
+      files:
+      - assets/css/wptu-front.css
+      version: true
+  tickera-event-ticketing-system:
+    QueryParameter:
+      files:
+      - css/front.css
+      - css/font-awesome.min.css
+      - js/cart.js
+      - js/jquery.validate.min.js
+      version: true
+  ticketea:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/ticketea.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Ticketea (?<v>\d+\.[\.\d]+)/i'
+      version: true
   ticketmaster:
     QueryParameter:
       files:
       - public/js/ticketmaster-nomodal.js
+      version: true
+  timed-content:
+    QueryParameter:
+      files:
+      - css/timed-content.css
+      - js/timed-content.js
       version: true
   timeline-and-history-slider:
     QueryParameter:
@@ -15307,11 +15387,45 @@ plugins:
       - assets/css/slick.css
       - assets/css/slick-slider-style.css
       version: true
+  timeline-twitter-feed:
+    QueryParameter:
+      files:
+      - res/css/timeline-twitter-feed-frontend.css
+      version: true
+  timelines:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/tl-pt_BR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Timelines (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  timezonecalculator:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="TimeZoneCalculator"]/@content
+      version: true
+  tiny-youtube-post-widget:
+    QueryParameter:
+      files:
+      - public/css/tiny-youtube-post-widget-public.css
+      - public/js/tiny-youtube-post-widget-public.js
+      version: true
   tinycoffee:
     QueryParameter:
       files:
       - css/tinycoffee.min.css
       - js/tinycoffee.min.js
+      version: true
+  titan-framework-icon:
+    QueryParameter:
+      files:
+      - assets/css/font-awesome.min.css
+      - assets/css/fontawesome-iconpicker.min.css
+      - assets/js/fontawesome-iconpicker.js
+      version: true
+  tizra-connect:
+    QueryParameter:
+      files:
+      - assets/css/tizra-connect.css
       version: true
   tk-event-weather:
     QueryParameter:
@@ -15319,11 +15433,50 @@ plugins:
       - css/tk-event-weather.css
       - vendor/climacons-webfont/climacons-webfont/climacons-font.css
       version: true
+  tkc-posts-selected-widget:
+    QueryParameter:
+      files:
+      - css/tkc-posts-selected.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tkc-posts-selected.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TKC Posts Selected (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  tkc-sliced-post:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tkc-sliced-post.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TKC Sliced Post (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  tm-timeline:
+    QueryParameter:
+      files:
+      - css/tm-timeline.css
+      version: true
   to-top:
     QueryParameter:
       files:
       - public/css/to-top-public.css
       - public/js/to-top-public.js
+      version: true
+  toggle-list:
+    QueryParameter:
+      files:
+      - css/style.min.css
+      - js/toggle-list.min.js
+      version: true
+  tokenad:
+    QueryParameter:
+      files:
+      - public/css/token-ad-admin.css
+      - public/js/token-ad-public.js
+      version: true
+  toms-guide-download:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tomsguide-widget-fr_FR.po
+      pattern: !ruby/regexp '/roject\-Id\-Version: Tom''s guide Download (?<v>\d+\.[\.\d]+)/i'
       version: true
   toot:
     TranslationFile:
@@ -15331,6 +15484,77 @@ plugins:
       path: lang/toot.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Toot (?<v>\d+\.[\.\d]+)/i
       version: true
+  top-commenters-gravatar:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  top-list:
+    QueryParameter:
+      files:
+      - public/css/top-list-public.css
+      - public/js/top-list-public.js
+      version: true
+  top-page-fb-likebox:
+    QueryParameter:
+      files:
+      - assets/js/plugin-custom-script.js
+      version: true
+  topup-plus:
+    Comment:
+      xpath: //comment()[contains(., "TopUp Plus")]
+      pattern: !ruby/regexp /TopUp Plus Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - style.css
+      - js/top_up-min.js
+      version: true
+  tp-travel-package:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tp-travel-package.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TP Travel Package (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  track-package:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/track-package.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  tractis-identity-verifications:
+    QueryParameter:
+      files:
+      - css/tractis_auth.css
+      version: true
+  trail-manager:
+    QueryParameter:
+      files:
+      - public/css/trail-manager-public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/trail-manager.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Trail Manager (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  traktivity:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  transifex-live-integration:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/transifex-live-integration.pot
+      pattern: !ruby/regexp '/Version: International SEO by Transifex (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  transifex-wp-translation:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /Transifex WP Translation ver:(?<v>\d+\.[\.\d]+)/i
   translatepress-multilingual:
     QueryParameter:
       files:
@@ -15339,12 +15563,72 @@ plugins:
       - assets/css/trp-jquery-ui.css
       - assets/js/trp-language-switcher.js
       version: true
+  translation-tester:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/translation-tester.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Translation Tester (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  translator:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="translator"]/@content
+      version: true
+      pattern: !ruby/regexp /translator\/(?<v>\d+\.[\.\d]+)/i
+  trash-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/trash-manager.pot
+      pattern: !ruby/regexp /n of the WordPress plugin Trash Manager (?<v>\d+\.[\.\d]+)/i
+      version: true
   travelpayouts:
     QueryParameter:
       files:
       - app/public/themes/flight/css/table-4.css
       - app/public/themes/hotel/css/table-2.css
       - app/public/themes/railway/css/main.css
+      - app/public/themes/flight/css/TPFontsIntro.css
+      - app/public/themes/flight/css/table-1.css
+      - app/public/themes/hotel/css/table-7.css
+      version: true
+  treeview-on-contents:
+    QueryParameter:
+      files:
+      - js/jquery.treeview.js
+      - css/jquery.treeview.css
+      version: true
+  trendmd:
+    Comment:
+      xpath: //comment()[contains(., "TrendMD")]
+      pattern: !ruby/regexp /TrendMD v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  tripadvisor-stream:
+    QueryParameter:
+      files:
+      - js/tripadvisorstream.0.2.js
+      version: true
+  ts-widget-pack:
+    QueryParameter:
+      files:
+      - css/ts-widget-pack.min.css
+      - js/ts-widget-pack.min.js
+      version: true
+  ttt-devices:
+    QueryParameter:
+      files:
+      - js/ttt-devices.js
+      version: true
+  tumblr-crosspostr:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/tumblr-crosspostr.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Tumblr Crosspostr (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  turbo-widgets:
+    QueryParameter:
+      files:
+      - public/css/turbo-widgets-public.css
+      - public/js/turbo-widgets-public.js
       version: true
   tweetific:
     TranslationFile:
@@ -16684,6 +16968,11 @@ plugins:
       class: BodyPattern
       path: lang/wp-ulike.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP ULike (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-ultimate-crypto:
+    QueryParameter:
+      files:
+      - public/css/public.min.css
       version: true
   wp-ultimate-post-grid:
     QueryParameter:
