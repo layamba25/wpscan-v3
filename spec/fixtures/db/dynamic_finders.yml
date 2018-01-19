@@ -1822,6 +1822,12 @@ plugins:
       path: languages/better-rest-api-featured-images.pot
       pattern: !ruby/regexp /ersion:\ Better REST API Featured Images (?<v>\d+\.[\.\d]+)/i
       version: true
+  better-wp-security:
+    HistoryLog:
+      class: BodyPattern
+      path: history.txt
+      pattern: !ruby/regexp /^(?<v>\d+\.[\.\d]+) \- [\d\-]+(?!.*\d+\.[\.\d]+ \- [\d\-]+)/im
+      version: true
   better-yourls:
     TranslationFile:
       class: BodyPattern
@@ -8929,6 +8935,12 @@ plugins:
       - css/magic-slider.css
       - bxslider/jquery.bxslider.min.js
       version: true
+  mailchimp-for-wp:
+    ChangeLog:
+      class: BodyPattern
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /^\#\#\#\# (?<v>\d+\.[\.\d]+) \- [^\r\n]+$/i
+      version: true
   mailchimp-subscribe-widget:
     QueryParameter:
       files:
@@ -15981,11 +15993,60 @@ plugins:
       - assets/js/tab.js
       - assets/js/bootstrap.js
       version: true
+  unsupported-browser-notification:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/oe-sb-vi_VN.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Supported Browser (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  unveil-lazy-load:
+    QueryParameter:
+      files:
+      - js/jquery.optimum-lazy-load.min.js
+      version: true
+  unwrap-images:
+    QueryParameter:
+      files:
+      - script.js
+      version: true
+  update-order-until-hold:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ced-update-order-onhold-en_US.po
+      pattern: !ruby/regexp '/ect\-Id\-Version: Update Order Until Hold (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  update-stat:
+    QueryParameter:
+      files:
+      - updatestat.css
+      version: true
+  updated-today-plugin:
+    QueryParameter:
+      files:
+      - styles.css
+      version: true
   upstream:
     TranslationFile:
       class: BodyPattern
       path: languages/upstream.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: UpStream v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  upunzipper:
+    QueryParameter:
+      files:
+      - public/css/upunzipper-public.css
+      - public/js/upunzipper-public.js
+      version: true
+  uquery-widget:
+    Comment:
+      xpath: //comment()[contains(., "uquery-widget")]
+      pattern: !ruby/regexp /uQuery Widget v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  used-media-identifier:
+    QueryParameter:
+      files:
+      - public/css/used-media-identifier-public.css
+      - public/js/used-media-identifier-public.js
       version: true
   user-access-manager:
     QueryParameter:
@@ -16013,6 +16074,24 @@ plugins:
       path: languages/user-feedback.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ User Feedback (?<v>\d+\.[\.\d]+)/i
       version: true
+  user-frontend-post-submit:
+    QueryParameter:
+      files:
+      - public/bootstrap/css/bootstrap.min.css
+      - public/bootstrap/css/bootstrap-theme.min.css
+      - public/css/vs-anonymous-post-public.css
+      - public/cropper/css/cropper.css
+      - public/js/jQuery.validation.1.10.0.js
+      - public/js/vs-anonymous-post-public.js
+      - public/bootstrap/js/bootstrap.min.js
+      - public/cropper/js/cropper.js
+      - public/js/custom-select.js
+      version: true
+  user-meta-display:
+    QueryParameter:
+      files:
+      - assets/js/scripts-user_meta_display.js
+      version: true
   user-registration:
     QueryParameter:
       files:
@@ -16020,6 +16099,55 @@ plugins:
       - assets/css/user-registration-smallscreen.css
       - assets/js/frontend/user-registration.min.js
       - assets/js/frontend/password-strength-meter.min.js
+      version: true
+  userdocs:
+    QueryParameter:
+      files:
+      - public/css/userdocs-public.css
+      version: true
+  users-activity:
+    QueryParameter:
+      files:
+      - asset/css/style.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/users-activity.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Users Activity (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  utubevideo-gallery:
+    QueryParameter:
+      files:
+      - css/front_style.min.css
+      - js/frontend.min.js
+      version: true
+  uvisualize:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+[a-z]*)/i
+      version: true
+  va-social-buzz:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      - assets/js/script.min.js
+      version: true
+  vacation-rentals:
+    QueryParameter:
+      files:
+      - assets/js/custom/login-register-reset.js
+      - assets/js/custom/edit-profile.js
+      - assets/js/custom/submit-booking.js
+      - assets/js/custom/submit-post.js
+      - assets/js/custom/favorite.js
+      version: true
+  vadi-faq:
+    QueryParameter:
+      files:
+      - css/jquery.accordion.css
+      - js/jquery.accordion.js
       version: true
   validated:
     ComposerFile:
@@ -16033,6 +16161,93 @@ plugins:
       - libs/jquery.growl/javascripts/jquery.growl.js
       - assets/js/frontend.js
       version: true
+  vdz-show-more:
+    QueryParameter:
+      files:
+      - assets/vdz_show_more.css
+      - assets/vdz_show_more.js
+      version: true
+  vector-slider:
+    QueryParameter:
+      files:
+      - assets/lib/slider/slick.css
+      - assets/lib/fontawesome/css/font-awesome.css
+      - assets/lib/slider/slick-theme.css
+      - assets/css/vs-slider.css
+      - assets/lib/slider/slick.js
+      - assets/js/vs-slider.js
+      version: true
+  velocity:
+    QueryParameter:
+      files:
+      - core/js/velocity.min.js
+      version: true
+  vendi-wp-markdown:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/vendi-wp-markdown.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Vendi WP Markdown (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  verbatim:
+    QueryParameter:
+      files:
+      - "/css/verbatim.css"
+      - "/js/verbatim.js"
+      version: true
+  vertical-center:
+    QueryParameter:
+      files:
+      - js/vertical-center-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/vertical-center.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Vertical Center (?<v>\d+\.[\.\d]+)/i'
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  vertical-image-menu:
+    Comment:
+      pattern: !ruby/regexp /Vertical Image Menu (?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - verticalImageMenu.css
+      version: true
+  vertical-related-posts:
+    QueryParameter:
+      files:
+      - css/vertical-related-posts.css
+      version: true
+  very-fast-loading:
+    Comment:
+      pattern: !ruby/regexp /This site runs Very Fast Loading plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  very-simple-slider:
+    QueryParameter:
+      files:
+      - css/very-simple-slider.css
+      version: true
+  viavi-wp-timeline:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/VAV-wp-timeline-tr_TR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: my\-pluginname (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  video-background:
+    QueryParameter:
+      files:
+      - css/pushlabs-vidbg.css
+      version: true
+  video-blogger:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/video-blogger-zh_CN.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Video Blogger v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   video-central:
     QueryParameter:
       files:
@@ -16043,6 +16258,17 @@ plugins:
       - assets/frontend/js/video-js.js
       - templates/default/js/plugins.min.js
       - templates/default/js/main.min.js
+      version: true
+  video-destacado:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  video-embed-optimizer:
+    QueryParameter:
+      files:
+      - "/styles/styles.css"
       version: true
   video-embed-thumbnail-generator:
     QueryParameter:
@@ -16057,9 +16283,45 @@ plugins:
       - css/responsive-video.css
       - js/rvs-loading.js
       version: true
+  videojs-hls-player:
+    Comment:
+      xpath: //comment()[contains(., "videojs-hls-player")]
+      pattern: !ruby/regexp /Video\.js HLS Plugin v(?<v>\d+\.[\.\d]+) \-/i
+      version: true
+    QueryParameter:
+      files:
+      - videojs-contrib-hls/videojs-contrib-hls.min.js
+      - videojs-airplay/videojs.airplay.js
+      - videojs-hls-player.js
+      version: true
+  videojs-html5-player:
+    Comment:
+      xpath: //comment()[contains(., "videojs-html5-player")]
+      pattern: !ruby/regexp /Videojs HTML5 Player plugin v(?<v>\d+\.[\.\d]+) \-/i
+      version: true
+    QueryParameter:
+      files:
+      - videojs/video.min.js
+      version: true
+  vinteotv-video-ads:
+    QueryParameter:
+      files:
+      - modules/js/front.js
+      version: true
   vipers-video-quicktags:
     Comment:
       pattern: !ruby/regexp /Vipers Video Quicktags v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  viral-loops-wp-integration:
+    QueryParameter:
+      files:
+      - assets/css/button-styles.css
+      version: true
+  visideign-login:
+    QueryParameter:
+      files:
+      - js/login.js
+      - js/blockui.js
       version: true
   visual-form-builder:
     Comment:
