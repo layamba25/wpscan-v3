@@ -16211,6 +16211,7 @@ plugins:
       version: true
   vertical-image-menu:
     Comment:
+      xpath: //comment()[contains(., "Vertical Image Menu")]
       pattern: !ruby/regexp /Vertical Image Menu (?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -16224,6 +16225,7 @@ plugins:
       version: true
   very-fast-loading:
     Comment:
+      xpath: //comment()[contains(., "Very Fast Loading")]
       pattern: !ruby/regexp /This site runs Very Fast Loading plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   very-simple-slider:
