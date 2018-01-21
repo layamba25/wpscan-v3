@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form 7 Elementor Addon\n"
+"POT-Creation-Date: 2017-09-28 11:12+0300\n"
+"PO-Revision-Date: 2017-09-28 11:13+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: webinside-elementor-contact-form-7-addon.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: elements/contactus.php:13 elements/contactus.php:29
+msgid "Contact Form 7"
+msgstr "צור קשר 7"
+
+#: elements/contactus.php:37 elements/contactus.php:96
+msgid "Form Title"
+msgstr "כותרת"
+
+#: elements/contactus.php:44
+msgid "Select Form"
+msgstr "בחירת טופס"
+
+#: elements/contactus.php:54
+msgid "Thankyou Page"
+msgstr "עמוד תודה"
+
+#: elements/contactus.php:103
+msgid "Title HTML Tag"
+msgstr "תג HTML כותרת"
+
+#: elements/contactus.php:106
+msgid "H1"
+msgstr ""
+
+#: elements/contactus.php:107
+msgid "H2"
+msgstr ""
+
+#: elements/contactus.php:108
+msgid "H3"
+msgstr ""
+
+#: elements/contactus.php:109
+msgid "H4"
+msgstr ""
+
+#: elements/contactus.php:110
+msgid "H5"
+msgstr ""
+
+#: elements/contactus.php:111
+msgid "H6"
+msgstr ""
+
+#: elements/contactus.php:112
+msgid "div"
+msgstr ""
+
+#: elements/contactus.php:113
+msgid "span"
+msgstr ""
+
+#: elements/contactus.php:114
+msgid "p"
+msgstr ""
+
+#: elements/contactus.php:122
+msgid "Title Color"
+msgstr "צבע כותרת"
+
+#: elements/contactus.php:149
+msgid "Label Style"
+msgstr "עיצוב תווית"
+
+#: elements/contactus.php:156
+msgid "Label Color"
+msgstr "צבע התווית"
+
+#: elements/contactus.php:182
+msgid "Field Style"
+msgstr "עיצוב שדה"
+
+#: elements/contactus.php:189 elements/contactus.php:311
+msgid "Padding"
+msgstr "שוליים פנימיים"
+
+#: elements/contactus.php:200 elements/contactus.php:322
+msgid "Margin"
+msgstr "שוליים חיצוניים"
+
+#: elements/contactus.php:211
+msgid "Fields Width"
+msgstr "רוחב שדות"
+
+#: elements/contactus.php:238 elements/contactus.php:360
+msgid "Text Color"
+msgstr "צבע טקסט"
+
+#: elements/contactus.php:255
+msgid "Background Color"
+msgstr "צבע רקע"
+
+#: elements/contactus.php:278 elements/contactus.php:435
+msgid "Box Border"
+msgstr "מסגרת"
+
+#: elements/contactus.php:288 elements/contactus.php:445
+msgid "Border Radius"
+msgstr "רדיוס המסגרת"
+
+#: elements/contactus.php:304
+msgid "Button Style"
+msgstr "עיצוב כפתור"
+
+#: elements/contactus.php:333
+msgid "Button Size"
+msgstr "גודל הכפתור"
+
+#: elements/contactus.php:374
+msgid "Hover Text Color"
+msgstr "צבע טקסט במעבר עכבר"
+
+#: elements/contactus.php:389
+msgid "Background-color"
+msgstr "צבע רקע"
+
+#: elements/contactus.php:403
+msgid "Hover Background color"
+msgstr "צבע רקע במעבר עכבר"
+
+#. Plugin Name of the plugin/theme
+msgid "WI Contact Form 7 for Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.webinside.co.il/cf7-elementor-addon"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Custom Contact Form 7 Designer for Elementor Websites"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Webinside"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.webinside.co.il/"
+msgstr ""
+
+#~ msgid "Title"
+#~ msgstr "כותרת"
+
+#~ msgid "Fields Style"
+#~ msgstr "סגנון שדות"
+
+#~ msgid "Button"
+#~ msgstr "כפתור"
+
+#~ msgid "Custom element for Elementor Websites"
+#~ msgstr "רכיב טופס יצירת קשר 7 מותאם אישית עבור Elementor"
+
+#~ msgid "Yair Efrat"
+#~ msgstr "יאיר אפרת"
