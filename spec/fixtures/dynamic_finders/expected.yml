@@ -5641,7 +5641,7 @@ plugins:
       number: 1.9.6
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''es by shailan (http://metinsaylan.com) v1.9.6'''
+      - 'http://wp.lab/, Match: ''by shailan (http://metinsaylan.com) v1.9.6'''
   dropshipping-xox:
     QueryParameter:
       number: 3.1.8
@@ -6059,13 +6059,13 @@ plugins:
       number: '1.32'
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''rsionFinder use easytoolbox.net version 1.32'''
+      - 'http://wp.lab/, Match: ''use easytoolbox.net version 1.32'''
   easy-video-player:
     Comment:
       number: 1.1.7
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''ated with the Easy Video Player plugin v1.1.7'''
+      - 'http://wp.lab/, Match: ''the Easy Video Player plugin v1.1.7'''
   easy-widget-columns:
     QueryParameter:
       number: 1.2.1

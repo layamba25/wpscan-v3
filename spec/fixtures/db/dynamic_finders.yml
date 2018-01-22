@@ -510,6 +510,7 @@ plugins:
       version: true
   addthis:
     Comment:
+      xpath: //comment()[contains(., "AddThis")]
       pattern: !ruby/regexp /AddThis Settings Begin/i
     JavascriptVar:
       xpath: //script[@data-cfasync="false"]
@@ -707,6 +708,7 @@ plugins:
       version: true
   affiliates-manager:
     Comment:
+      xpath: //comment()[contains(., "Affiliates Manager")]
       pattern: !ruby/regexp /Affiliates Manager plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   affilicious:
@@ -747,6 +749,7 @@ plugins:
       version: true
   ahalogy-wp:
     Comment:
+      xpath: //comment()[contains(., "Ahalogy")]
       pattern: !ruby/regexp /Ahalogy wordpress plugin \[version (?<v>\d+\.[\.\d]+)\]/i
       version: true
   ainow:
@@ -870,10 +873,12 @@ plugins:
       version: true
   all-in-one-seo-pack:
     Comment:
+      xpath: //comment()[contains(., "all in one seo")]
       pattern: !ruby/regexp '/\A\/?all in one seo pack(?: (?<v>[^\s]+) by)?/i'
       version: true
   all-in-one-wp-solution:
     Comment:
+      xpath: //comment()[contains(., "All In One WP Solution")]
       pattern: !ruby/regexp /by All In One WP Solution Plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   alligator-popup:
@@ -989,10 +994,12 @@ plugins:
       version: true
   ank-simplified-ga:
     Comment:
+      xpath: //comment()[contains(., "GA Tracking")]
       pattern: !ruby/regexp /GA Tracking ends \(v(?<v>\d+\.[\.\d]+)\)/i
       version: true
     DisabledComment:
       class: Comment
+      xpath: //comment()[contains(., "GA ID")]
       pattern: !ruby/regexp '/Google Analytics is disabled, Reason: GA ID is not set
         \(v(?<v>\d+\.[\.\d]+)\)/i'
       version: true
@@ -1119,6 +1126,7 @@ plugins:
       version: true
   arabic-webfonts:
     Comment:
+      xpath: //comment()[contains(., "arabic-webfonts")]
       pattern: !ruby/regexp /arabic-webfonts v(?<v>\d+\.[\.\d]+) styles/i
       version: true
   archive-akkordion:
@@ -1250,6 +1258,7 @@ plugins:
       version: true
   astickypostorderer:
     Comment:
+      xpath: //comment()[contains(., "AStickyPostOrderER")]
       pattern: !ruby/regexp '/AStickyPostOrderER \(Version: (?<v>\d+\.[\.\d]+)\)/i'
       version: true
   astra-sites:
@@ -1305,6 +1314,7 @@ plugins:
       version: true
   auction-nudge:
     Comment:
+      xpath: //comment()[contains(., "AN")]
       pattern: !ruby/regexp /AN v(?<v>\d+\.[\.\d]+)/i
       version: true
   audio-player-with-playlist-ultimate:
@@ -1349,6 +1359,7 @@ plugins:
       version: true
   author-geolocation:
     Comment:
+      xpath: //comment()[contains(., "geoLocation")]
       pattern: !ruby/regexp /Author geoLocation \- (?<v>\d+\.[\.\d]+):/i
       version: true
   author-recommended-posts:
@@ -1413,6 +1424,7 @@ plugins:
       version: true
   autoresponder1:
     Comment:
+      xpath: //comment()[contains(., "Autoresponder1")]
       pattern: !ruby/regexp /Autoresponder1 plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   autoship-cloud:
@@ -1459,6 +1471,7 @@ plugins:
       version: true
   awesome-google-analytics:
     Comment:
+      xpath: //comment()[contains(., "Google Analytics")]
       pattern: !ruby/regexp /Awesome Google Analytics by CodeBrothers, version (?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -1478,6 +1491,7 @@ plugins:
       version: true
   awesome-photo-gallery:
     Comment:
+      xpath: //comment()[contains(., "Photo Gallery")]
       pattern: !ruby/regexp /Awesome Photo Gallery by CodeBrothers version (?<v>\d+\.[\.\d]+)/i
       version: true
   awesome-scrollbar:
@@ -1509,6 +1523,7 @@ plugins:
       version: true
   awesomepress:
     Comment:
+      xpath: //comment()[contains(., "awesomepress")]
       pattern: !ruby/regexp /\/awesomepress\/assets\/css\/font\-awesome\-ie7\.min\.css\?ver=(?<v>\d+\.[\.\d]+)/i
       version: true
   aws-cookies-popup:
@@ -1605,6 +1620,7 @@ plugins:
       version: true
   bad-behavior:
     Comment:
+      xpath: //comment()[contains(., "Bad Behavior")]
       pattern: !ruby/regexp /Bad Behavior (?<v>\d+\.[\.\d]+)/i
       version: true
   badge-creator-free:
@@ -1674,6 +1690,7 @@ plugins:
       version: true
   bbpress-latest-discussion:
     Comment:
+      xpath: //comment()[contains(., "BBpress")]
       pattern: !ruby/regexp /BBpress Latest Discussions v(?<v>\d+\.[\.\d]+)/i
       version: true
   bbpress-topic-location:
@@ -1790,6 +1807,7 @@ plugins:
       version: true
   better-backgrounds:
     Comment:
+      xpath: //comment()[contains(., "Better Backgrounds")]
       pattern: !ruby/regexp /Better Backgrounds (?<v>\d+\.[\.\d]+)/i
       version: true
   better-comments-reply-manager:
@@ -2086,6 +2104,7 @@ plugins:
       version: true
   bmo-expo:
     Comment:
+      xpath: //comment()[contains(., "BMo The Gallery")]
       pattern: !ruby/regexp /BMo The Gallery \- Version (?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -2628,6 +2647,7 @@ plugins:
       version: true
   bubble-seo:
     Comment:
+      xpath: //comment()[contains(., "Bubble SEO")]
       pattern: !ruby/regexp /WordPress Bubble SEO  plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   buddy-views:
@@ -2908,6 +2928,7 @@ plugins:
       version: true
   canalplan-ac:
     Comment:
+      xpath: //comment()[contains(., "Canalplan")]
       pattern: !ruby/regexp '/Canalplan AC code revision : (?<v>\d+\.[\.\d]+)/i'
       version: true
   canvaspop-photo-printing-api:
@@ -3013,6 +3034,7 @@ plugins:
       version: true
   catch-web-tools:
     Comment:
+      xpath: //comment()[contains(., "Catch Web Tools")]
       pattern: !ruby/regexp /Catch Web Tools v(?<v>\d+\.[\.\d]+)/i
       version: true
   category-post-slider:
@@ -3145,6 +3167,7 @@ plugins:
       version: true
   cc-child-pages:
     Comment:
+      xpath: //comment()[contains(., "cc-child-pages")]
       pattern: !ruby/regexp /\/cc-child-pages\/includes\/css\/styles\.ie\.css\?ver=(?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -3198,6 +3221,7 @@ plugins:
       version: true
   cc-scripts:
     Comment:
+      xpath: //comment()[contains(., "CC-Scripts")]
       pattern: !ruby/regexp /CC-Scripts (?<v>\d+\.[\.\d]+)/i
       version: true
   ccr-client-testimonials:
@@ -3214,6 +3238,7 @@ plugins:
       version: true
   cdn-tools:
     Comment:
+      xpath: //comment()[contains(., "CDN Tools")]
       pattern: !ruby/regexp /CDN Tools v(?<v>\d+\.[\.\d]+)/i
       version: true
   cf-geoplugin:
@@ -3469,6 +3494,7 @@ plugins:
       version: true
   clean-archives-reloaded:
     Comment:
+      xpath: //comment()[contains(., "Clean Archives")]
       pattern: !ruby/regexp /Clean Archives Reloaded v(?<v>\d+\.[\.\d]+)/i
       version: true
   cleaner-gallery:
@@ -3519,6 +3545,7 @@ plugins:
       version: true
   clicky-analytics:
     Comment:
+      xpath: //comment()[contains(., "Clicky Analytics")]
       pattern: !ruby/regexp /Clicky Analytics v(?<v>\d+\.[\.\d]+)/i
       version: true
   client-carousel:
@@ -3675,6 +3702,7 @@ plugins:
       version: true
   collapsing-archives:
     Comment:
+      xpath: //comment()[contains(., "Collapsible Archive")]
       pattern: !ruby/regexp /Collapsible Archive Widget/i
   colored-vote-polls:
     QueryParameter:
@@ -3800,10 +3828,12 @@ plugins:
       version: true
   compact-wp-audio-player:
     Comment:
+      xpath: //comment()[contains(., "Audio player")]
       pattern: !ruby/regexp /WP Audio player plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   complete-open-graph:
     Comment:
+      xpath: //comment()[contains(., "Complete Open Graph")]
       pattern: !ruby/regexp /Complete Open Graph plugin\. \(v(?<v>\d+\.[\.\d]+)\)/i
       version: true
     ComposerFile:
@@ -3935,6 +3965,7 @@ plugins:
       version: true
   content-protector:
     Comment:
+      xpath: //comment()[contains(., "Content Protector")]
       pattern: !ruby/regexp /Content Protector plugin v\. (?<v>\d+\.[\.\d]+)/i
       version: true
   content-switcher:
@@ -4158,6 +4189,7 @@ plugins:
       version: true
   custom-facebook-feed:
     Comment:
+      xpath: //comment()[contains(., "Facebook Feed")]
       pattern: !ruby/regexp /Custom Facebook Feed/i
     QueryParameter:
       files:
@@ -4487,7 +4519,8 @@ plugins:
       version: true
   dropdown-menu-widget:
     Comment:
-      pattern: !ruby/regexp /es by shailan \(http:\/\/metinsaylan\.com\) v(?<v>\d+\.[\.\d]+)/i
+      xpath: //comment()[contains(., "Dropdown Menu")]
+      pattern: !ruby/regexp /by shailan \(http:\/\/metinsaylan\.com\) v(?<v>\d+\.[\.\d]+)/i
       version: true
   dropshipping-xox:
     QueryParameter:
@@ -4519,6 +4552,7 @@ plugins:
       version: true
   dynamic-content-gallery-plugin:
     Comment:
+      xpath: //comment()[contains(., "Content Gallery")]
       pattern: !ruby/regexp /Dynamic Content Gallery plugin version (?<v>\d+\.[\.\d]+)/i
       version: true
   dynamic-seo-child-pages:
@@ -4546,6 +4580,7 @@ plugins:
       version: true
   easy-adsense-lite:
     Comment:
+      xpath: //comment()[contains(., "AdSense")]
       pattern: !ruby/regexp /Easy Plugin for AdSense V(?<v>\d+\.[\.\d]+)/i
       version: true
   easy-blog-ideas:
@@ -4607,6 +4642,7 @@ plugins:
       version: true
   easy-fancybox:
     Comment:
+      xpath: //comment()[contains(., "FancyBox")]
       pattern: !ruby/regexp /Easy FancyBox (?<v>\d+\.[\.\d]+) using/i
       version: true
     QueryParameter:
@@ -4817,11 +4853,13 @@ plugins:
       version: true
   easy-toolbox:
     Comment:
-      pattern: !ruby/regexp /rsionFinder use easytoolbox\.net version (?<v>\d+\.[\.\d]+)/i
+      xpath: //comment()[contains(., "easytoolbox")]
+      pattern: !ruby/regexp /use easytoolbox\.net version (?<v>\d+\.[\.\d]+)/i
       version: true
   easy-video-player:
     Comment:
-      pattern: !ruby/regexp /ated with the Easy Video Player plugin v(?<v>\d+\.[\.\d]+)/i
+      xpath: //comment()[contains(., "Easy Video Player")]
+      pattern: !ruby/regexp /the Easy Video Player plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   easy-widget-columns:
     QueryParameter:
@@ -5169,6 +5207,7 @@ plugins:
       version: true
   enhanced-links:
     Comment:
+      xpath: //comment()[contains(., "Enhanced Links")]
       pattern: !ruby/regexp /\A(?:Start|End) Of Script Generated By Enhanced Links/i
   enlighter:
     QueryParameter:
@@ -5369,6 +5408,7 @@ plugins:
       version: true
   events-calendar:
     Comment:
+      xpath: //comment()[contains(., "Events-Calendar")]
       pattern: !ruby/regexp '/Generated By Events-Calendar - Version: (?<v>\d+\.[\.\d]+)/i'
       version: true
   events-manager-osm:
@@ -5439,6 +5479,7 @@ plugins:
       version: true
   ewsel-lightbox-for-galleries:
     Comment:
+      xpath: //comment()[contains(., "Ewsel Lightbox")]
       pattern: !ruby/regexp /Ewsel Lightbox For Galleries v(?<v>\d+\.[\.\d]+)/i
       version: true
   excalibur-paywall:
@@ -5535,6 +5576,7 @@ plugins:
       version: true
   facebook-Comment:
     Comment:
+      xpath: //comment()[contains(., "Facebook Comments")]
       pattern: !ruby/regexp /Facebook Comments Plugin for WordPress/i
   facebook-like-box-lightbox:
     QueryParameter:
@@ -5549,6 +5591,7 @@ plugins:
       version: true
   facebook-like-thumbnail:
     Comment:
+      xpath: //comment()[contains(., "Facebook Like")]
       pattern: !ruby/regexp /Facebook Like Thumbnail \(v(?<v>\d+\.[\.\d]+)\)/i
       version: true
   facebook-like-toolbar:
@@ -5619,6 +5662,7 @@ plugins:
       version: true
   fancybox-plus:
     Comment:
+      xpath: //comment()[contains(., "Fancybox Plus")]
       pattern: !ruby/regexp /Fancybox Plus Plugin (?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -5664,6 +5708,7 @@ plugins:
       version: true
   fb-analytics:
     Comment:
+      xpath: //comment()[contains(., "fba")]
       pattern: !ruby/regexp /Facebook Analytics \- fba plugin\- v(?<v>\d+\.[\.\d]+)
         \-/i
       version: true
@@ -5794,10 +5839,12 @@ plugins:
       version: true
   fixpress:
     Comment:
+      xpath: //comment()[contains(., "FixPress")]
       pattern: !ruby/regexp /Using FixPress v(?<v>\d+\.[\.\d]+)/i
       version: true
   flamingtext-logo:
     Comment:
+      xpath: //comment()[contains(., "FlamingText")]
       pattern: !ruby/regexp /FlamingText plugin v(?<v>\d+\.[\.\d]+)/i
       version: true
   flare:
@@ -5808,6 +5855,7 @@ plugins:
       version: true
   flash-album-gallery:
     Comment:
+      xpath: //comment()[contains(., "Flagallery")]
       pattern: !ruby/regexp /<meta name='Grand Flagallery' content='(?<v>\d+\.[\.\d]+)'/i
       version: true
     QueryParameter:
@@ -5878,6 +5926,7 @@ plugins:
       version: true
   float-to-top-button:
     Comment:
+      xpath: //comment()[contains(., "Float to Top")]
       pattern: !ruby/regexp /Float to Top Button v(?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -5888,6 +5937,7 @@ plugins:
       version: true
   floatbox-plus:
     Comment:
+      xpath: //comment()[contains(., "Floatbox")]
       pattern: !ruby/regexp /Floatbox Plus Plugin (?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
@@ -5962,6 +6012,7 @@ plugins:
       version: true
   font-awesome:
     Comment:
+      xpath: //comment()[contains(., "font-awesome")]
       pattern: !ruby/regexp /\/font\-awesome\/assets\/css\/font\-awesome\-ie7\.min\.css\?ver=(?<v>\d+\.[\.\d]+)/i
       version: true
     QueryParameter:
