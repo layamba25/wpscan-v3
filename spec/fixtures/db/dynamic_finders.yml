@@ -7103,6 +7103,12 @@ plugins:
       path: languages/wphb-default.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Hummingbird Pro (?<v>\d+\.[\.\d]+)/i
       version: true
+  hummingtree-wrapper:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   hybrid-gallery:
     QueryParameter:
       files:
@@ -16637,6 +16643,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  wds-themes-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wds-themes-manager.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: wds\-theme\-manager (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wdv-mailchimp-ajax:
     TranslationFile:
       class: BodyPattern
@@ -17201,6 +17213,12 @@ plugins:
       - public/css/woo-open-graph-public.css
       - public/js/woo-open-graph-public.js
       version: true
+  woo-paypal-express-checkout:
+    QueryParameter:
+      files:
+      - public/css/woo-paypal-express-checkout-public.css
+      - public/js/woo-paypal-express-checkout-public.js
+      version: true
   woo-paypal-gateway:
     QueryParameter:
       files:
@@ -17210,6 +17228,18 @@ plugins:
       class: BodyPattern
       path: languages/woo-paypal-gateway.pot
       pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce PayPal Gateway (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woo-planned-pricing:
+    QueryParameter:
+      files:
+      - public/css/woocommerce-planned-pricing-public.css
+      - public/js/woocommerce-planned-pricing-public.js
+      version: true
+  woo-postcode-shipping:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   woo-price-per-word:
     QueryParameter:
@@ -17221,11 +17251,66 @@ plugins:
       path: languages/woocommerce-price-per-word.pot
       pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce Price Per Word (?<v>\d+\.[\.\d]+)/i
       version: true
+  woo-product-add-tab:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-add-tab-ru_RU.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Woocommerce Add Tab (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woo-product-disable:
+    QueryParameter:
+      files:
+      - public/css/woo-product-disable-public.css
+      - public/js/woo-product-disable-public.js
+      version: true
+  woo-product-hover-popup-image:
+    QueryParameter:
+      files:
+      - public/css/hover-popup-public.css
+      - public/js/hover-popup-public.js
+      version: true
+  woo-product-qty-and-price-updater:
+    QueryParameter:
+      files:
+      - public/css/tekonto-woo-qtyprice-updater-public.css
+      - public/js/tekonto-woo-qtyprice-updater-public.js
+      version: true
+  woo-product-social-sharing:
+    QueryParameter:
+      files:
+      - public/css/wc_ss_btns-public.css
+      - public/css/icons/socicon.css
+      - public/css/fa/css/font-awesome.min.css
+      - public/js/wc_ss_btns-public.js
+      version: true
+  woo-products-coming-soon:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  woo-responsive-product-category:
+    QueryParameter:
+      files:
+      - assets/metismenu/metisMenu.min.js
+      - assets/woo-metismenu.js
+      version: true
   woo-sale-funnel:
     TranslationFile:
       class: BodyPattern
       path: languages/mwb-sale-funnel-en_US.po
       pattern: !ruby/regexp '/ect\-Id\-Version: Woocommerce Sale Funnel (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woo-shop-customizer:
+    QueryParameter:
+      files:
+      - public/css/woocommerce-shop-customizer-public.css
+      - public/js/woocommerce-shop-customizer-public.js
+      version: true
+  woo-slick-related-product-slider:
+    QueryParameter:
+      files:
+      - assets/css/wpwrps-public.css
+      - assets/css/slick.css
       version: true
   woo-smart-quick-view:
     QueryParameter:
@@ -17239,6 +17324,17 @@ plugins:
       files:
       - assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
       - assets/js/frontend.js
+      version: true
+  woo-super-product-box:
+    QueryParameter:
+      files:
+      - assets/js/jquery.wspbox.js
+      version: true
+  woo-talkwithtext:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/talkwithtext-sms-notification-for-woo-australia.pot
+      pattern: !ruby/regexp /Text SMS Notification for Woo Australia (?<v>\d+\.[\.\d]+)/i
       version: true
   woo-variation-swatches:
     QueryParameter:
@@ -17257,6 +17353,18 @@ plugins:
       class: BodyPattern
       path: languages/woo-wallet.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wooclientzone-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wooclientzone.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: WooClientZone Lite v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocod-load-more-post:
+    TranslationFile:
+      class: BodyPattern
+      path: language/woocod-load-more-post.pot
+      pattern: !ruby/regexp '/oject\-Id\-Version: Woocod load more post (?<v>\d+\.[\.\d]+)/i'
       version: true
   woocom-cc-invoice:
     QueryParameter:
@@ -17290,6 +17398,18 @@ plugins:
       path: languages/woocommerce-accommodation-bookings.pot
       pattern: !ruby/regexp /ion:\ WooCommerce Accommodation Bookings (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-bcash:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-bcash.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WooCommerce Bcash (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-collapsing-categories:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wa_wcc_txt-en_US.po
+      pattern: !ruby/regexp '/ion: WooCommerce collapsing categories v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   woocommerce-correios:
     TranslationFile:
       class: BodyPattern
@@ -17302,11 +17422,60 @@ plugins:
       path: i18n/languages/woocommerce-customizer.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ WooCommerce Customizer (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-darwin-pricing-integration:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  woocommerce-delete-expired-coupons:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  woocommerce-domination:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-domination.pot
+      pattern: !ruby/regexp '/ject\-Id\-Version: WooCommerce Domination (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-easy-booking-system:
+    TranslationFile:
+      class: BodyPattern
+      path: wceb.pot
+      pattern: !ruby/regexp /"Welcome to Easy Booking (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-embed:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wc-embed.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-embed-slides:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  woocommerce-extra-accounts-fields:
+    QueryParameter:
+      files:
+      - public/css/jquery-ui.css
+      - public/css/woocommerce-extra-public.css
+      - public/js/front-custom.js
+      version: true
   woocommerce-extra-checkout-fields-for-brazil:
     TranslationFile:
       class: BodyPattern
       path: languages/woocommerce-extra-checkout-fields-for-brazil.pot
       pattern: !ruby/regexp /mmerce Extra Checkout Fields for Brazil (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-flipper:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-flipper-en_GB.po
+      pattern: !ruby/regexp '/oject\-Id\-Version: WooCommerce  Flipper v(?<v>\d+\.[\.\d]+)/i'
       version: true
   woocommerce-follow-up-emails:
     Changelog:
@@ -17326,6 +17495,12 @@ plugins:
       path: i18n/languages/woocommerce-gateway-paypal-powered-by-braintree.pot
       pattern: !ruby/regexp /rce PayPal Powered by Braintree Gateway (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-google-analytics-integration:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   woocommerce-grid-list-toggle:
     TranslationFile:
       class: BodyPattern
@@ -17344,11 +17519,29 @@ plugins:
       path: langs/woocommerce-jetpack.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ Booster for WooCommerce (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-mesasix-stripe-payment-extension:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-moip:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-moip.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WooCommerce Moip (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woocommerce-multilingual:
     QueryParameter:
       files:
       - res/css/otgs-ico.css
       - res/css/management.css
+      version: true
+  woocommerce-mundipagg:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-mundipagg.pot
+      pattern: !ruby/regexp '/oject\-Id\-Version: WooCommerce MundiPagg (?<v>\d+\.[\.\d]+)/i'
       version: true
   woocommerce-novalnet-gateway:
     TranslationFile:
@@ -17356,11 +17549,52 @@ plugins:
       path: i18n/languages/wc-novalnet.pot
       pattern: !ruby/regexp /Novalnet payment plugin \- WooCommerce \- (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-order-search-by-transaction-id:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/wc-ost.pot
+      pattern: !ruby/regexp /Commerce Order Search by Transaction ID (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-pagarme:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-pagarme.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: WooCommerce Pagar\.me (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woocommerce-pagseguro:
     TranslationFile:
       class: BodyPattern
       path: languages/woocommerce-pagseguro.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ WooCommerce PagSeguro (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-payment-discounts:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-payment-discounts.pot
+      pattern: !ruby/regexp /ooCommerce Discounts Per Payment Method (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-payment-fees:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  woocommerce-pop-recarga:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-pop-recarga.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: WooCommerce POP Recarga (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-product-addon:
+    TranslationFile:
+      class: BodyPattern
+      path: locale/nm-personalizedproduct.po
+      pattern: !ruby/regexp '/\#: nm\-woocommerce\-personalized\-product\-v(?<v>\d+\.[\.\d]+)/i'
       version: true
   woocommerce-product-archive-customiser:
     TranslationFile:
@@ -17368,11 +17602,37 @@ plugins:
       path: languages/woocommerce-product-archive-customiser.pot
       pattern: !ruby/regexp /WooCommerce Product Archive Customiser (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-product-archive-image-slider:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-product-archive-image-slider-en_GB.po
+      pattern: !ruby/regexp /oCommerce Product Archive Image Slider v(?<v>\d+\.[\.\d]+)/i
+      version: true
   woocommerce-product-fees:
     TranslationFile:
       class: BodyPattern
       path: languages/woocommerce-product-fees.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ WooCommerce Product Fees (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-product-samples:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wcs.pot
+      pattern: !ruby/regexp '/Id\-Version: WooCommerce Product Samples (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-products-designer:
+    QueryParameter:
+      files:
+      - public/css/wpd-public.css
+      - admin/css/simplegrid.min.css
+      - public/css/wpd-common.css
+      - admin/css/tooltip.min.css
+      - admin/js/colorpicker/css/colorpicker.min.css
+      - public/js/modal/modal.min.css
+      - "/admin/js/tooltip.js"
+      - admin/js/colorpicker/js/colorpicker.min.js
+      - public/js/wpd-public.js
+      - public/js/modal/modal.min.js
       version: true
   woocommerce-quantity-increment:
     TranslationFile:
@@ -17404,6 +17664,54 @@ plugins:
       path: languages/woocommerce-simple-registration.pot
       pattern: !ruby/regexp /on:\ Simple Registration for WooCommerce (?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-single-product-checkout:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-single-product-checkout.pot
+      pattern: !ruby/regexp '/on: WooCommerce Single Product Checkout (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woocommerce-variation-details-on-page-product:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  woocommerce-wholesale-prices:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-wholesale-prices.pot
+      pattern: !ruby/regexp /rsion of WooCommerce Wholesale Prices \( (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-zooming-image:
+    QueryParameter:
+      files:
+      - assets/js/main.js
+      version: true
+  woomizer:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  woosaleskit-bar:
+    QueryParameter:
+      files:
+      - assets/css/font-awesome.min.css
+      - public/css/woosaleskit_bar-public.css
+      - public/js/woosaleskit_bar-public.js
+      version: true
+  wooshipping-delivery:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wooshipping-delivery-ko_KR.po
+      pattern: !ruby/regexp '/ject\-Id\-Version: WooShipping \- Delivery (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wootheme-testimonials-to-testimonials:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wootheme-testimonials-to-testimonials.pot
+      pattern: !ruby/regexp /WooTheme Testimonials Migrator (?<v>\d+\.[\.\d]+)/i
+      version: true
   word-switcher:
     QueryParameter:
       files:
@@ -17418,6 +17726,12 @@ plugins:
       - public/css/wordlift-public.css
       - public/js/wordlift-public.js
       version: true
+  wordpoints:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wordpoints-lt.po
+      pattern: !ruby/regexp /\. \#\-\#\-\#\-\#\-\#  wordpoints\.pot \(WordPoints (?<v>\d+\.[\.\d]+)/i
+      version: true
   wordpress-23-related-posts-plugin:
     QueryParameter:
       files:
@@ -17425,6 +17739,12 @@ plugins:
       version: true
     JavascriptVar:
       pattern: !ruby/regexp /window\._wp_rp_plugin_version = '(?<v>\d+\.[\.\d]+)';/i
+      version: true
+  wordpress-carrinho-moip:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/wp_shopping_cart-en_US.po
+      pattern: !ruby/regexp '/ct\-Id\-Version: wordpress\-carrinho\-moip v(?<v>\d+\.[\.\d]+)/i'
       version: true
   wordpress-connect:
     Comment:
@@ -17446,6 +17766,12 @@ plugins:
       files:
       - public/css/wpp.css
       version: true
+  wordpress-print-this-section:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wordpress-print-this-section.pot
+      pattern: !ruby/regexp '/d\-Version: WordPress Print This Section (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wordpress-seo:
     Comment:
       pattern: !ruby/regexp '/optimized with the Yoast(?: WordPress)? SEO plugin v(?<v>[^\s]+)
@@ -17463,6 +17789,21 @@ plugins:
     Comment:
       pattern: !ruby/regexp /WordPress Social Login (?<v>\d+\.[\.\d]+)\./i
       version: true
+  wordpress-store-locator-location-finder:
+    Comment:
+      xpath: //comment()[contains(., "Google Maps Store Locator")]
+      pattern: !ruby/regexp /Google Maps Store Locator for WordPress \(v(?<v>\d+\.[\.\d]+)\)/i
+      version: true
+  wordpress-tabs-slides:
+    QueryParameter:
+      files:
+      - easytabs/css/easy-responsive-tabs.css
+      - style/default.css
+      - hacks.css
+      - ts/tabs_slides.js
+      - ts/tabs_slides_opt_loader.js
+      - easytabs/js/easyResponsiveTabs.js
+      version: true
   wordpress-tooltips:
     QueryParameter:
       files:
@@ -17471,15 +17812,167 @@ plugins:
       - js/qtip2/jquery.qtip.min.js
       - js/jdirectory/jquery.directory.js
       version: true
+  wordpress-tweaks:
+    TranslationFile:
+      class: BodyPattern
+      path: translations/wordpress-tweaks.pot
+      pattern: !ruby/regexp /s tweak was removed in WordPress Tweaks (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wordpresscom-stats-smiley-remover:
+    QueryParameter:
+      files:
+      - css/wordpresscom-stats-smiley-remover.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: langs/wordpresscom-stats-smiley-remover-fr_FR.po
+      pattern: !ruby/regexp '/on: WordPress\.com Stats Smiley Remover v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  world-cup-predictor:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/world-cup-predictor.pot
+      pattern: !ruby/regexp /he WordPress plugin World Cup Predictor (?<v>\d+\.[\.\d]+)/i
+      version: true
+  world-flags:
+    QueryParameter:
+      files:
+      - css/wf.css
+      - js/wf.jq.js
+      version: true
+  world-mosques:
+    QueryParameter:
+      files:
+      - wm-styles.css
+      version: true
+  world-of-warcraft-recent-achievements:
+    QueryParameter:
+      files:
+      - js/achiev.js
+      version: true
+  world-population-counter:
+    QueryParameter:
+      files:
+      - includes/js/number-format.js
+      - includes/js/counter-ajax.js
+      version: true
+  worldweather-pro:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/worldweather-pro.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WorldWeather Pro (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wow-analytics:
     Comment:
       pattern: !ruby/regexp '/\AWOW Async(?: for Wordpress)? Tracking Code|WOW Plugin
         Version (?<v>[\d\.^\s]+)/i'
       version: true
+  wow-armory-character:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wow_armory_character.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: WoW Armory Character (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-1-slider:
+    QueryParameter:
+      files:
+      - css/wp1s-frontend-style.css
+      - css/jquery.bxslider.css
+      - css/wp1s-responsive.css
+      - js/jquery.fitvids.js
+      - js/jquery.bxslider.min.js
+      - js/wp1s-frontend-script.js
+      version: true
+  wp-2-stage-login:
+    QueryParameter:
+      files:
+      - js/gl-ajax-actions.js
+      version: true
+  wp-accordion-with-categories:
+    QueryParameter:
+      files:
+      - shortcode/css/jquery.accordion.css
+      - shortcode/js/jquery.accordion.js
+      version: true
+  wp-activity:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-activity.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP\-Activity (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-admin-notification:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-admin-notification-ja.po
+      pattern: !ruby/regexp '/oject\-Id\-Version: WP Admin Notification (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-admin-smart-search:
+    QueryParameter:
+      files:
+      - assets/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js
+      - assets/js/main.js
+      version: true
+  wp-advertize-it:
+    QueryParameter:
+      files:
+      - javascript/wp-advertize-it.js
+      version: true
+  wp-affiliate-linker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-affiliate-linker.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: WP Affiliate Linker (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-aiwis:
+    QueryParameter:
+      files:
+      - public/css/wp-aiwis-public.css
+      version: true
+  wp-ajax-edit-comments:
+    QueryParameter:
+      files:
+      - js/jquery.colorbox.min.js
+      - js/jquery.atd.textarea.js
+      - js/frontend.js
+      version: true
+  wp-all-in-one-admin-bar:
+    QueryParameter:
+      files:
+      - public/assets/js/jquery.hoverIntent.minified.js
+      - public/assets/js/jquery.cookie.js
+      version: true
   wp-applink:
     QueryParameter:
       files:
       - assets/css/wp-applink.css
+      version: true
+  wp-appointments:
+    QueryParameter:
+      files:
+      - app/assets/front-end/css/font-awesome.min.css
+      - app/assets/front-end/css/bootstrap.min.css
+      - app/assets/front-end/css/bootstrap-datepicker.min.css
+      - app/assets/front-end/css/flags.css
+      - app/assets/front-end/css/style.css
+      - app/assets/front-end/css/responsive.css
+      - app/assets/front-end/css/color.css
+      version: true
+  wp-author-box:
+    QueryParameter:
+      files:
+      - public/css/wp-author-box-public.css
+      - public/js/wp-author-box-public.js
+      version: true
+  wp-author-profile-box-lite:
+    QueryParameter:
+      files:
+      - public/css/wp-author-profile-box-lite-public.css
+      - public/js/wp-author-profile-box-lite-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-author-profile-box-lite.pot
+      pattern: !ruby/regexp '/\-Id\-Version: WP Author Profile Box Lite (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-author-slug:
     TranslationFile:
@@ -17487,21 +17980,202 @@ plugins:
       path: lang/wp-author-slug-de_DE.po
       pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
       version: true
+  wp-author-status:
+    QueryParameter:
+      files:
+      - css/author_status.css
+      version: true
+  wp-auto-login-with-recapcha:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      version: true
+  wp-avim:
+    Comment:
+      xpath: //comment()[contains(., "WP-AVIM")]
+      pattern: !ruby/regexp /Generated By WP\-AVIM (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-awesome-city-weather-report:
+    QueryParameter:
+      files:
+      - public/css/wp-awesome-insta-widget-public.css
+      - public/js/wp-awesome-insta-widget-public.js
+      version: true
   wp-bannerize-pro:
     QueryParameter:
       files:
       - public/css/wp-bannerize.min.css
+      version: true
+  wp-before-after-viewer:
+    QueryParameter:
+      files:
+      - css/wpba.css
+      - js/jquery.ui.touch-punch.min.js
+      - js/jquery.beforeafter-1.4.min.js
+      - js/wpba.js
+      version: true
+  wp-best-faq:
+    QueryParameter:
+      files:
+      - includes/css/best-faq-front.css
+      version: true
+  wp-better-attachments:
+    QueryParameter:
+      files:
+      - assets/css/wpba-frontend.css
+      version: true
+  wp-better-calendar:
+    QueryParameter:
+      files:
+      - public/css/wp-better-calendar-public.css
+      - public/js/wp-better-calendar-public.js
+      version: true
+  wp-bible:
+    Comment:
+      xpath: //comment()[contains(., "WP-Bible")]
+      pattern: !ruby/regexp /WP\-Bible plugin version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-biographia:
+    Comment:
+      xpath: //comment()[contains(., "WP Biographia")]
+      pattern: !ruby/regexp /WP Biographia v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-blockade:
+    QueryParameter:
+      files:
+      - addons/video/styles.css
+      - addons/glyphicon/font/glyphicons-halflings.css
+      - addons/glyphicon/styles.css
+      - addons/map/styles.css
+      - addons/breakout/blockade-breakout.js
+      pattern: !ruby/regexp /ver=v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-blog-and-widgets:
+    QueryParameter:
+      files:
+      - css/styleblog.css
+      version: true
+  wp-blog-manager-lite:
+    QueryParameter:
+      files:
+      - css/owl.carousel.css
+      - css/font-awesome.min.css
+      - css/wpbm-frontend.css
+      - css/wpbm-responsive.css
+      - js/owl.carousel.js
+      - js/owl.carousel.1.js
+      - js/wpbm-frontend.js
+      version: true
+  wp-bootstrap-carousel:
+    QueryParameter:
+      files:
+      - css/carousel.min.css
+      version: true
+  wp-brand-identity-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-bunvc:
     QueryParameter:
       files:
       - public/js/bunvc-autorun-allpack.js
       version: true
+  wp-business-essentials:
+    QueryParameter:
+      files:
+      - public/css/wp-business-essentials-public.css
+      version: true
+  wp-car-manager:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      version: true
+  wp-carousel:
+    TranslationFile:
+      class: BodyPattern
+      path: language/en_UK.po
+      pattern: !ruby/regexp /msgid "In WP Carousel (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-category-posts-list:
+    QueryParameter:
+      files:
+      - static/css/wp-cat-list-theme.css
+      - static/css/wp-cat-list-light.css
+      - static/css/wp-cat-list-dark.css
+      - static/css/wp-cat-list-giant-gold-fish.css
+      - static/css/wp-cat-list-adrift-in-dreams.css
+      version: true
+  wp-category-tag-could:
+    QueryParameter:
+      files:
+      - css/wpctc.min.css
+      - javascript/jquery.tagcanvas.min.js
+      - javascript/wpctc.tagcanvas.min.js
+      - javascript/jquery.style.min.js
+      - javascript/wp-category-tag-cloud.min.js
+      version: true
+  wp-catergory-show:
+    TranslationFile:
+      class: BodyPattern
+      path: translations/wpcs_catshow-pt_BR.po
+      pattern: !ruby/regexp '/Version: Wordpress Plugin Category Show (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-cdnjs-reborn:
     TranslationFile:
       class: BodyPattern
       path: languages/wp-cdnjs-reborn-fr_FR.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: WP CDNjs Reborn (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-child-theme-generator:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-child-theme-generator.pot
+      pattern: !ruby/regexp '/ct\-Id\-Version: WP Child Theme Generator (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-cirrus:
+    QueryParameter:
+      files:
+      - cirrusCloud.css
+      - wp_cirrus_gwt/wp_cirrus_gwt.nocache.js
+      version: true
+  wp-clanwars:
+    QueryParameter:
+      files:
+      - js/jquery.cookie.pack.js
+      - js/tabs.js
+      - js/public.js
+      - css/site.css
+      - css/widget.css
+      version: true
+  wp-club-manager:
+    QueryParameter:
+      files:
+      - assets/css/wpclubmanager.css
+      - assets/js/frontend/wpclubmanager.min.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /WP Club Manager (?<v>\d+\.[\.\d]+)/i
+  wp-code-highlightjs:
+    QueryParameter:
+      files:
+      - styles/default.css
+      - highlight.common.pack.js
+      version: true
+  wp-collab-lite:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-collab.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-coupons-and-deals:
     QueryParameter:
@@ -18232,6 +18906,10 @@ plugins:
     QueryParameter:
       files:
       - js/scripts.min.js
+      version: true
+  wppm-google-webmaster-tools:
+    Comment:
+      pattern: !ruby/regexp /wppm Google Webmaster Tools v(?<v>\d+\.[\.\d]+)/i
       version: true
   wpshopgermany-free:
     Comment:
