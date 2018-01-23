@@ -4338,6 +4338,11 @@ plugins:
       files:
       - css/bib.min.css
       version: true
+  debug-bar-constants:
+    QueryParameter:
+      files:
+      - js/jquery.ui.totop.min.js
+      version: true
   deeper-comments:
     QueryParameter:
       files:
@@ -4493,6 +4498,12 @@ plugins:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       pattern: !ruby/regexp /WordPress Download Manager (?<v>\d+\.[\.\d]+)/i
+      version: true
+  download-monitor:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/download-monitor.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Download Monitor (?<v>\d+\.[\.\d]+)/i'
       version: true
   download-plugins-dashboard:
     TranslationFile:
@@ -8162,6 +8173,11 @@ plugins:
       files:
       - css/front.css
       - js/front.js
+      version: true
+  kirki:
+    QueryParameter:
+      files:
+      - modules/webfonts/kirki-webfonts.js
       version: true
   kitchenbug:
     WikiIE8Comment:
@@ -12644,6 +12660,11 @@ plugins:
       path: languages/default.po
       pattern: !ruby/regexp '/oject\-Id\-Version: Restore Admin Header v(?<v>\d+\.[\.\d]+)/i'
       version: true
+  resume-builder:
+    QueryParameter:
+      files:
+      - "/assets/css/style.css"
+      version: true
   resume-page:
     TranslationFile:
       class: BodyPattern
@@ -13583,6 +13604,11 @@ plugins:
       files:
       - assets/simple-age-restriction-warning-public.css
       - assets/simple-age-restriction-warning-public.js
+      version: true
+  simple-attribution:
+    QueryParameter:
+      files:
+      - assets/css/simple-attribution.min.css
       version: true
   simple-author-box:
     QueryParameter:
@@ -15421,6 +15447,12 @@ plugins:
       files:
       - themify/js/main.js
       version: true
+  themify-store-locator:
+    QueryParameter:
+      files:
+      - assets/css/themify-store-locator-style.css
+      - assets/js/user_js.js
+      version: true
   thesis-openhook:
     TranslationFile:
       class: BodyPattern
@@ -15753,12 +15785,6 @@ plugins:
     QueryParameter:
       files:
       - js/tweetview-min.js
-      version: true
-  twenty-eleven-showcase-slider:
-    TranslationFile:
-      class: BodyPattern
-      path: lang/obenland-wp-xx_XX.pot
-      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
       version: true
   twenty20:
     QueryParameter:
@@ -16970,6 +16996,12 @@ plugins:
       - css/customstyle.css
       - js/tab-active.js
       version: true
+  wgauge:
+    QueryParameter:
+      files:
+      - public/css/wgauge-public.css
+      - public/js/wgauge-public.js
+      version: true
   whats-new-genarator:
     QueryParameter:
       files:
@@ -18025,12 +18057,6 @@ plugins:
       path: languages/wp-author-profile-box-lite.pot
       pattern: !ruby/regexp '/\-Id\-Version: WP Author Profile Box Lite (?<v>\d+\.[\.\d]+)/i'
       version: true
-  wp-author-slug:
-    TranslationFile:
-      class: BodyPattern
-      path: lang/wp-author-slug-de_DE.po
-      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
-      version: true
   wp-author-status:
     QueryParameter:
       files:
@@ -18228,6 +18254,44 @@ plugins:
       path: languages/wp-collab.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
       version: true
+  wp-collectiveaccess:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/collectiveaccess-fr_FR.po
+      pattern: !ruby/regexp '/roject\-Id\-Version: WP\-CollectiveAccess v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-colorbox:
+    QueryParameter:
+      files:
+      - jquery.colorbox-min.js
+      - wp-colorbox.js
+      version: true
+  wp-colored-coding:
+    QueryParameter:
+      files:
+      - css/rainbow-themes/technicolor.css
+      version: true
+  wp-comments-form-validation:
+    QueryParameter:
+      files:
+      - assets/css/public.css
+      version: true
+  wp-copy-logger-highlighter:
+    QueryParameter:
+      files:
+      - js/logger.js
+      version: true
+  wp-countdown-timer:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/plugin-name.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-coupons-and-deals:
     QueryParameter:
       files:
@@ -18235,11 +18299,34 @@ plugins:
       - assets/js/clipboard.min.js
       - assets/js/main.js
       version: true
+  wp-course-manager:
+    TranslationFile:
+      class: BodyPattern
+      path: wp-course-manager.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Course Manager (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-cprotext:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wp-cprotext-fr_FR.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP\-CPROTEXT (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-crm:
     ComposerFile:
       class: ConfigParser
       path: package-lock.json
       key: version
+      version: true
+  wp-cron-cleaner:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-cron-cleaner.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Cron Cleaner (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-cufon:
+    Comment:
+      xpath: //comment()[contains(., "WP-Cufon")]
+      pattern: !ruby/regexp /WP\-Cufon Plugin (?<v>\d+\.[\.\d]+)/i
       version: true
   wp-currencies:
     ComposerFile:
@@ -18247,11 +18334,88 @@ plugins:
       path: composer.json
       key: version
       version: true
+  wp-currency-rate:
+    QueryParameter:
+      files:
+      - css/public.css
+      - js/public.js
+      version: true
+  wp-current-date-post-slider:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/recent-post-style.css
+      version: true
+  wp-custom-register-login:
+    QueryParameter:
+      files:
+      - public/css/wp-custom-register-login-public.css
+      - public/css/bootstrap.min.css
+      - public/css/formValidation.min.css
+      - public/js/wp-custom-register-login-public.js
+      - public/js/bootstrap.min.js
+      - public/js/validator/formValidation.min.js
+      - public/js/validator/bootstrap-validator.min.js
+      version: true
   wp-customer-reviews:
     QueryParameter:
       files:
       - css/wp-customer-reviews-generated.css.php
       - js/wp-customer-reviews.js
+      version: true
+  wp-dashboard-beacon:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-dashboard-beacon.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Dashboard Beacon (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-database-error-manager:
+    QueryParameter:
+      files:
+      - public/css/wp-db-error-manager-public.css
+      - public/js/wp-db-error-manager-public.js
+      version: true
+  wp-deadlines:
+    QueryParameter:
+      files:
+      - public/assets/css/wp-deadlines-public.css
+      - public/assets/js/js.cookie.js
+      - public/assets/js/moment.min.js
+      - public/assets/js/jquery.countdown.min.js
+      - public/assets/js/wp-deadlines-public.js
+      version: true
+  wp-design-maps-places:
+    QueryParameter:
+      files:
+      - css/wpdmp.min.css
+      version: true
+  wp-dev-dashboard:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-dev-dashboard.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Dev Dashboard (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-dialog:
+    QueryParameter:
+      files:
+      - diydialog.js
+      - skins/default.css
+      version: true
+  wp-disable-comments:
+    QueryParameter:
+      files:
+      - javascript/wp-disable-comments.js
+      version: true
+  wp-disable-right-click:
+    QueryParameter:
+      files:
+      - js/wp-disable-right-click.js
+      version: true
+  wp-discord:
+    QueryParameter:
+      files:
+      - public/css/wp-discord.css
+      - public/js/wp-discord.js
       version: true
   wp-dispensary:
     QueryParameter:
@@ -18259,12 +18423,51 @@ plugins:
       - public/css/wp-dispensary-public.css
       - public/js/wp-dispensary-public.js
       version: true
+  wp-distraction-free-view:
+    QueryParameter:
+      files:
+      - assets/css/overlay.css
+      version: true
+  wp-doge-mode:
+    QueryParameter:
+      files:
+      - doge.min.js
+      version: true
+  wp-downloadmanager:
+    QueryParameter:
+      files:
+      - download-css.css
+      version: true
+  wp-dropkick:
+    QueryParameter:
+      files:
+      - DropKick/css/dropkick.css
+      - DropKick/dropkick.js
+      - public/js/wp-dropkick-public.js
+      version: true
+  wp-ds-blog-map:
+    TranslationFile:
+      class: BodyPattern
+      path: wp-ds-blogmap-ru_RU.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP DS Blog Map v(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-easter-egg:
+    QueryParameter:
+      files:
+      - lib/wp-easter-egg.js
+      version: true
   wp-easy-contact:
     MetaTag:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /WP Easy Contact v(?<v>\d+\.[\.\d]+) \- https:\/\/emdplugins\.com/i
+  wp-easy-embed:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-easy-embed.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Easy Embed (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-easy-events:
     MetaTag:
       class: Xpath
@@ -18280,11 +18483,42 @@ plugins:
       path: package.json
       key: version
       version: true
+  wp-easy-responsive-tabs-to-accordion:
+    QueryParameter:
+      files:
+      - js/easyResponsiveTabs.js
+      version: true
+  wp-easy-tooltips:
+    QueryParameter:
+      files:
+      - js/wpetp.js
+      version: true
+  wp-editor-comments-plus:
+    QueryParameter:
+      files:
+      - dist/assets/wpEditorCommentsPlus.js
+      version: true
   wp-ehesive:
     QueryParameter:
       files:
       - public/css/wp-ehesive-public.css
       - public/js/wp-ehesive-public.js
+      version: true
+  wp-elusive-iconfont:
+    Comment:
+      xpath: //comment()[contains(., "wp-elusive-iconfont")]
+      pattern: !ruby/regexp /\/wp-elusive-iconfont\/assets\/css\/elusive\-webfont\-ie7\.css\?ver=(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-email:
+    QueryParameter:
+      files:
+      - email-css.css
+      - email-js.js
+      version: true
+  wp-errata:
+    QueryParameter:
+      files:
+      - jcedit.min.js
       version: true
   wp-event-manager:
     QueryParameter:
@@ -18294,10 +18528,42 @@ plugins:
       - assets/js/jquery-timepicker/bootstrap-datepicker.js
       - assets/js/common.min.js
       version: true
+  wp-eventpress:
+    QueryParameter:
+      files:
+      - eventpress-files/assets/css/font-awesome-4.3.0/css/font-awesome.min.css
+      - eventpress-files/assets/css/epstrap.css
+      - eventpress-files/assets/css/epfront.css
+      - eventpress-files/assets/css/event-front.css
+      - eventpress-files/assets/js/ep-front.js
+      - eventpress-files/assets/js/event-front.js
+      version: true
   wp-events-manager:
     QueryParameter:
       files:
       - inc/libraries//magnific-popup/js/jquery.magnific-popup.min.js
+      version: true
+  wp-excel-2-db:
+    QueryParameter:
+      files:
+      - public/css/wp-excel-2-db-public.css
+      - public/js/wp-excel-2-db-public.js
+      version: true
+  wp-exit-optin:
+    QueryParameter:
+      files:
+      - "/js/scripts.js"
+      version: true
+  wp-extended-search:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-extended-search.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Extended Search (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-facebook-like-send-open-graph-meta:
+    Comment:
+      xpath: //comment()[contains(., "Facebook Like Send")]
+      pattern: !ruby/regexp /Facebook Like Send & Open Graph Meta v(?<v>\d+\.[\.\d]+)/i
       version: true
   wp-facebook-reviews:
     QueryParameter:
@@ -18314,6 +18580,22 @@ plugins:
       class: BodyPattern
       path: languages/wp-fail2ban-redux.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: WP Fail2Ban Redux (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-fancybox:
+    QueryParameter:
+      files:
+      - dist/jquery.fancybox.min.js
+      version: true
+  wp-fancybox-3:
+    QueryParameter:
+      files:
+      - assets/css/jquery.fancybox.min.css
+      - assets/js/jquery.fancybox.min.js
+      version: true
+  wp-fart:
+    QueryParameter:
+      files:
+      - fartscroll.js
       version: true
   wp-fb-autoconnect:
     QueryParameter:
@@ -18337,6 +18619,18 @@ plugins:
       path: languages/wp-featherlight.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP Featherlight (?<v>\d+\.[\.\d]+)/i
       version: true
+  wp-featured-content-and-slider:
+    QueryParameter:
+      files:
+      - assets/css/featured-content-style.css
+      - assets/css/slick.css
+      version: true
+  wp-featured-entries:
+    TranslationFile:
+      class: BodyPattern
+      path: locale/jh-featured-es_ES.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: jh\-featured v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-feed-post-thumbnail:
     ComposerFile:
       class: ConfigParser
@@ -18354,6 +18648,67 @@ plugins:
       files:
       - css/styles.css
       version: true
+  wp-flickity:
+    QueryParameter:
+      files:
+      - assets/wp-flickity-custom-frontend.css
+      version: true
+  wp-floating-menu:
+    QueryParameter:
+      files:
+      - js/frontend.js
+      version: true
+  wp-floating-notifications:
+    QueryParameter:
+      files:
+      - js/script.js
+      version: true
+  wp-font-awesome:
+    QueryParameter:
+      files:
+      - font-awesome/css/font-awesome.min.css
+      version: true
+  wp-foundation-shortcodes:
+    QueryParameter:
+      files:
+      - stylesheets/app.css
+      - js/app.js
+      version: true
+  wp-fragmention:
+    QueryParameter:
+      files:
+      - assets/css/fragmention.css
+      - assets/js/fragmention.min.js
+      version: true
+  wp-front-end-login-and-register:
+    QueryParameter:
+      files:
+      - public/css/wp-mp-register-login-public.css
+      - public/css/bootstrap.min.css
+      - public/css/formValidation.min.css
+      - public/js/wp-mp-register-login-public.js
+      - public/js/bootstrap.min.js
+      - public/js/validator/formValidation.min.js
+      - public/js/validator/bootstrap-validator.min.js
+      version: true
+  wp-frontend-submit:
+    QueryParameter:
+      files:
+      - public/css/wp-frontend-submit-public.css
+      - public/js/wp-frontend-submit-public.js
+      version: true
+  wp-full-stripe-free:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-full-stripe-free.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: WP Full Stripe Free (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-fullcalendar:
+    QueryParameter:
+      files:
+      - includes/css/main.css
+      - includes/js/main.js
+      version: true
   wp-gallery-extra:
     QueryParameter:
       files:
@@ -18361,6 +18716,25 @@ plugins:
       - assets/css/custom.css
       - assets/js/plugins.js
       - assets/js/front.js
+      version: true
+  wp-gallery-metabox:
+    QueryParameter:
+      files:
+      - public/css/wp-gallery-metabox-public.css
+      - public/js/wp-gallery-metabox-public.js
+      version: true
+  wp-generate-password:
+    QueryParameter:
+      files:
+      - public/css/wpgenerapass-public.css
+      - public/js/wpgenerapass-public.js
+      version: true
+  wp-geo:
+    QueryParameter:
+      files:
+      - css/wp-geo.css
+      - js/tooltip.js
+      - js/wp-geo.v3.js
       version: true
   wp-gistpen:
     QueryParameter:
@@ -18370,6 +18744,18 @@ plugins:
       - assets/css/web.min.css
       - assets/js/prism.min.js
       version: true
+  wp-glossary-hover:
+    QueryParameter:
+      files:
+      - public/assets/css/public.css
+      - public/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css
+      - public/assets/js/public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/en_US.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Glossary Hover v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   wp-google-analytics-events:
     QueryParameter:
       files:
@@ -18378,11 +18764,26 @@ plugins:
   wp-google-fonts:
     Comment:
       pattern: !ruby/regexp /by Wordpress Google Fonts/i
-  wp-google-suggest:
+  wp-google-places-review-slider:
+    QueryParameter:
+      files:
+      - public/css/wprev-public_template1.css
+      - public/css/wprev_w3.css
+      - public/css/wprs_unslider.css
+      - public/css/wprs_unslider-dots.css
+      - public/js/wprev-public.js
+      - public/js/wprs-unslider-min.js
+      version: true
+  wp-grande-vitorinha:
+    QueryParameter:
+      files:
+      - public/css/wp-grande-vitorinha-public.css
+      version: true
+  wp-graphviz:
     TranslationFile:
       class: BodyPattern
-      path: lang/wp-google-suggest-sr_RS.po
-      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
+      path: lang/wp-graphviz.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP_Graphviz (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-healthcheck:
     TranslationFile:
@@ -18412,6 +18813,52 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Easy WP Hotelier (?<v>\d+\.[\.\d]+)/i
+  wp-hotkeys:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-hotkeys.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Hotkeys (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-hotwords:
+    Comment:
+      xpath: //comment()[contains(., "WP-HOTWords")]
+      pattern: !ruby/regexp '/WP\-HOTWords vers[^o]o: (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-hrms:
+    QueryParameter:
+      files:
+      - assets/css/bootstrap.min.css
+      - assets/css/public.css
+      - assets/css/font-awesome.min.css
+      version: true
+  wp-image-embeds:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-image-embeds.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP_Image_Embeds (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-image-utils:
+    QueryParameter:
+      files:
+      - css/wpiu.css
+      version: true
+  wp-image-zoooom:
+    QueryParameter:
+      files:
+      - assets/js/jquery.image_zoom.min.js
+      - assets/js/image_zoom-init.js
+      version: true
+  wp-images-upload-on-piclect:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/kuaza_pic_up_lang-tr_TR.po
+      pattern: !ruby/regexp /sgid "<strong>Plugin version:<\/strong> v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-inventory-manager:
+    QueryParameter:
+      files:
+      - js/wpinventory.js
+      version: true
   wp-invoice:
     QueryParameter:
       files:
@@ -18432,12 +18879,6 @@ plugins:
       class: BodyPattern
       path: languages/wp-job-manager-contact-listing.pot
       pattern: !ruby/regexp /ion:\ Contact Listing for WP Job Manager (?<v>\d+\.[\.\d]+)/i
-      version: true
-  wp-last-login:
-    TranslationFile:
-      class: BodyPattern
-      path: lang/wp-last-login-pt_PT.po
-      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
       version: true
   wp-lazy-loader:
     QueryParameter:
@@ -18606,7 +19047,7 @@ plugins:
       version: true
   wp-postviews:
     Comment:
-      pattern: !ruby/regexp /Script Generated By WP-PostViews/i
+      pattern: !ruby/regexp /Script Generated By WP\-PostViews/i
   wp-pro-quiz:
     QueryParameter:
       files:
@@ -18629,6 +19070,12 @@ plugins:
       - static/styles/wp_properties.css
       - static/scripts/wpp.global.js
       version: true
+  wp-remote-site-search:
+    QueryParameter:
+      files:
+      - public/assets/js/multisite-search.js
+      - public/assets/js/ms-trigger.js
+      version: true
   wp-responsive-recent-post-slider:
     QueryParameter:
       files:
@@ -18643,11 +19090,6 @@ plugins:
       files:
       - css/wpss-search-suggest.css
       - js/wpss-search-suggest.js
-      version: true
-    TranslationFile:
-      class: BodyPattern
-      path: lang/wp-search-suggest-cs_CZ.po
-      pattern: !ruby/regexp /"Plural\-Forms:\ nplurals=(?<v>\d+\.[\.\d]+)/i
       version: true
   wp-seo-pro:
     Comment:
@@ -18708,13 +19150,7 @@ plugins:
       version: true
   wp-spamfree:
     Comment:
-      pattern: !ruby/regexp /WP-SpamFree v(?<v>\d+\.[\.\d]+)/i
-      version: true
-  wp-spid-italia:
-    TranslationFile:
-      class: BodyPattern
-      path: lib/locales/it/LC_MESSAGES/messages.po
-      pattern: !ruby/regexp /msgstr "Metadati Shib (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /WP\-SpamFree v(?<v>\d+\.[\.\d]+)/i
       version: true
   wp-stateless:
     ComposerFile:
