@@ -2794,6 +2794,10 @@ plugins:
       path: languages/WPBDM.pot
       pattern: !ruby/regexp /t\-Id\-Version:\ Business Directory Plugin (?<v>\d+\.[\.\d]+)/i
       version: true
+    QueryParameter:
+      files:
+      - assets/css/widgets.min.css
+      version: true
   business-era-extension:
     QueryParameter:
       files:
@@ -4268,6 +4272,11 @@ plugins:
       path: composer.json
       key: version
       version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cuar.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Customer Area (?<v>\d+\.[\.\d]+)/i'
+      version: true
   customer-chat-for-facebook:
     QueryParameter:
       files:
@@ -4384,6 +4393,12 @@ plugins:
       class: BodyPattern
       path: languages/device-detect-fr_FR.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: Device Detect (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  devvn-image-hotspot:
+    QueryParameter:
+      files:
+      - frontend/css/ihotspot.min.css
+      - frontend/js/jquery.ihotspot.min.js
       version: true
   dexonline-searchbox:
     TranslationFile:
@@ -4807,6 +4822,14 @@ plugins:
       files:
       - css/easyscroll-main.css
       - js/easyscroll-main.js
+      version: true
+  easy-side-tab-cta:
+    QueryParameter:
+      files:
+      - css/frontend/est-frontend.css
+      - css/jquery.mCustomScrollbar.css
+      - js/frontend/est-frontend.js
+      - js/jquery.mCustomScrollbar.concat.min.js
       version: true
   easy-similar-posts:
     TranslationFile:
@@ -11955,6 +11978,11 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /PropertyHive (?<v>\d+\.[\.\d]+)/i
+  protect-pages-posts:
+    QueryParameter:
+      files:
+      - public/css/prevent_ur_pages-public.css
+      version: true
   protect-wp-config-from-phishing-attacks:
     TranslationFile:
       class: BodyPattern
@@ -12715,6 +12743,7 @@ plugins:
     QueryParameter:
       files:
       - "/assets/css/style.css"
+      - assets/css/style.min.css
       version: true
   resume-page:
     TranslationFile:
@@ -13338,6 +13367,12 @@ plugins:
       class: BodyPattern
       path: lang/seo-tag-cloud.pot
       pattern: !ruby/regexp '/roject\-Id\-Version: SEO Tag Cloud Widget (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  seo-wordpress:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   seostack:
     Comment:
@@ -19056,6 +19091,7 @@ plugins:
       - js/wplc_u.js
       - js/md5.js
       - js/themes/modern.js
+      - js/wplc_u_node_events.js
       version: true
   wp-load-list:
     QueryParameter:
@@ -19510,6 +19546,8 @@ plugins:
       - assets/css/public/public.min.css
       - templates/recipe/simple/simple.min.css
       - assets/js/public.js
+      - dist/public.css
+      - dist/public.js
       version: true
   wp-redditjs:
     QueryParameter:
