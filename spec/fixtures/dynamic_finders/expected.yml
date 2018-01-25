@@ -11584,6 +11584,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/masburti-flickr-gallery/languages/masburti-flickr-gallery-pl_PL.po,
         Match: ''ct-Id-Version: Masburti Flickr Gallery v1.1'''
+  mashshare-networks:
+    QueryParameter:
+      number: 2.4.5
+      found_by: Query Parameter (Passive Detection)
+      confidence: 20
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mashshare-networks/assets/css/mashnet.min.css?ver=2.4.5
+      - http://wp.lab/wp-content/plugins/mashshare-networks/assets/js/mashnet.min.js?ver=2.4.5
   mashsharer:
     QueryParameter:
       number: 3.4.7

@@ -9205,6 +9205,12 @@ plugins:
       path: languages/masburti-flickr-gallery-pl_PL.po
       pattern: !ruby/regexp /ct\-Id\-Version:\ Masburti Flickr Gallery v(?<v>\d+\.[\.\d]+)/i
       version: true
+  mashshare-networks:
+    QueryParameter:
+      files:
+      - assets/css/mashnet.min.css
+      - assets/js/mashnet.min.js
+      version: true
   mashsharer:
     QueryParameter:
       files:
