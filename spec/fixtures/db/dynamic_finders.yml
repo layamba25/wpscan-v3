@@ -17135,12 +17135,6 @@ plugins:
       - public/js/bootstrap.min.js
       - public/js/whoteaches-portal-public.js
       version: true
-  wi-contact-form-7-for-elementor:
-    TranslationFile:
-      class: BodyPattern
-      path: languages/wi_cf7_elementor-he_IL.po
-      pattern: !ruby/regexp '/"X\-Poedit\-KeywordsList: __;_e;_n:(?<v>\d+\.[\.\d]+),2;_x:(?<v>\d+\.[\.\d]+)/i'
-      version: true
   widget-alias:
     TranslationFile:
       class: BodyPattern
@@ -17774,12 +17768,6 @@ plugins:
       class: BodyPattern
       path: languages/woocommerce-pop-recarga.pot
       pattern: !ruby/regexp '/ect\-Id\-Version: WooCommerce POP Recarga (?<v>\d+\.[\.\d]+)/i'
-      version: true
-  woocommerce-product-addon:
-    TranslationFile:
-      class: BodyPattern
-      path: locale/nm-personalizedproduct.po
-      pattern: !ruby/regexp '/\#: nm\-woocommerce\-personalized\-product\-v(?<v>\d+\.[\.\d]+)/i'
       version: true
   woocommerce-product-archive-customiser:
     TranslationFile:
@@ -20963,12 +20951,6 @@ plugins:
     QueryParameter:
       files:
       - assets/css/styles.css
-      version: true
-  zigaform-form-builder-lite:
-    TranslationFile:
-      class: BodyPattern
-      path: i18n/languages/backend/wprockf-de_DE.po
-      pattern: !ruby/regexp /id "Styles Font Menu requires WordPress (?<v>\d+\.[\.\d]+)/i
       version: true
   ziyarat-ashura:
     QueryParameter:
