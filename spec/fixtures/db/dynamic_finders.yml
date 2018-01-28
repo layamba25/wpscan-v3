@@ -21,7 +21,7 @@ wordpress:
     pattern: !ruby/regexp /wp\-includes\\\/js\\\/wp\-emoji\-release\.min\.js\?ver=(?<v>\d+\.[\.\d]+)/i
     version: true
   LimelightStorefrontJavascript:
-    class: Xpath
+    class: JavascriptVar
     xpath: //script[not(@src) and contains(., "limelightTracker")]
     pattern: !ruby/regexp /'limelightTracker\.set', 'dimension3', '(?<v>\d+\.[\.\d]+)'/i
     version: true
@@ -91,7 +91,7 @@ wordpress:
     pattern: !ruby/regexp /\Agenerator="wordpress\/(?<v>\d+\.[\.\d]+)"\z/i
     version: true
   StrongTestimonialsComment:
-    class: Xpath
+    class: Comment
     xpath: //comment()[contains(., "Strong Testimonials")]
     pattern: !ruby/regexp '/versions: WordPress (?<v>\d+\.[\.\d]+) \|/i'
     version: true
@@ -210,6 +210,13 @@ plugins:
       - css/admin.css
       - js/interact.js
       - js/admin-bar.js
+      version: true
+  a3-lazy-load:
+    QueryParameter:
+      files:
+      - assets/js/jquery.lazyloadxt.min.js
+      - assets/js/jquery.lazyloadxt.srcset.min.js
+      - assets/js/jquery.lazyloadxt.extend.js
       version: true
   abc-notation:
     VersionInFilename:
@@ -873,7 +880,6 @@ plugins:
       version: true
   all-in-one-seo-pack:
     Comment:
-      xpath: //comment()[contains(., "all in one seo")]
       pattern: !ruby/regexp '/\A\/?all in one seo pack(?: (?<v>[^\s]+) by)?/i'
       version: true
   all-in-one-wp-solution:
@@ -3896,6 +3902,7 @@ plugins:
     QueryParameter:
       files:
       - coldskins/coldskin-default.css
+      pattern: !ruby/regexp /ver=(?<v>[\d\.]+)/i
       version: true
   contact-form-7:
     QueryParameter:
@@ -4106,6 +4113,11 @@ plugins:
     QueryParameter:
       files:
       - js/lib.core.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   crea-listings:
     TranslationFile:
@@ -4609,6 +4621,11 @@ plugins:
       files:
       - assets/css/public.min.css
       - assets/js/public.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   easy-adsense-lite:
     Comment:
@@ -5659,7 +5676,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: lang/family-law-express-headlines.po
-      pattern: !ruby/regexp /t\-Id\-Version:\ Family Law Express News\\ (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /t\-Id\-Version:\ Family Law Express News\\\\ (?<v>\d+\.[\.\d]+)/i
       version: true
   fanbridge-signup:
     QueryParameter:
@@ -7743,6 +7760,7 @@ plugins:
     QueryParameter:
       files:
       - scripts/bootstrap.js
+      pattern: !ruby/regexp /ver=(?<v>[\d\.]+)/i
       version: true
   issuem:
     QueryParameter:
@@ -8683,6 +8701,10 @@ plugins:
       - includes/assets/limelight-traffic-attribution.min.js
       - includes/assets/main.js
       version: true
+    JavascriptVar:
+      xpath: //script[not(@src) and contains(., "limelightTracker")]
+      pattern: !ruby/regexp /'limelightTracker\.set', 'dimension4', '(?<v>\d+\.[\.\d]+)'/i
+      version: true
   link-exchange-lite:
     TranslationFile:
       class: BodyPattern
@@ -9340,6 +9362,11 @@ plugins:
       files:
       - public/css/media-credit.css
       version: true
+  media-element-html5-video-and-audio-player:
+    QueryParameter:
+      files:
+      - mediaelement/v4/mediaelement-and-player.min.js
+      version: true
   media-folder:
     QueryParameter:
       files:
@@ -9544,6 +9571,11 @@ plugins:
       class: BodyPattern
       path: languages/militant-moderates-css-parent-selector-mmps.pot
       pattern: !ruby/regexp /tant Moderates CSS Parent Selector MMPS (?<v>\d+\.[\.\d]+)/i
+      version: true
+    JavascriptVar:
+      xpath: //script[not(@src) and contains(., "mmps_ExternalOptions")]
+      pattern: !ruby/regexp /var mmps_ExternalOptions\s*=\s*{(?<json>.+?(?=};))};/mi
+      version_key: version
       version: true
   mime-types-extended:
     TranslationFile:
@@ -10726,6 +10758,7 @@ plugins:
     QueryParameter:
       files:
       - dist/client/app.js
+      pattern: !ruby/regexp /v=(?<v>\d+\.[\.\d]+)/i
       version: true
   options-definitely:
     TranslationFile:
@@ -11127,6 +11160,7 @@ plugins:
     QueryParameter:
       files:
       - assets/css/front.css
+      pattern: !ruby/regexp /ver=(?<v>[\d\.]+)/i
       version: true
   photection:
     QueryParameter:
@@ -12142,6 +12176,11 @@ plugins:
       files:
       - index.js
       version: true
+    JavascriptVar:
+      xpath: //script[not(@src) and contains(., "qs_host")]
+      pattern: !ruby/regexp /var vars = {(?<json>.+?(?=};))}/i
+      version_key: version
+      version: true
   qq-weather:
     Comment:
       pattern: !ruby/regexp '/v(?<v>\d+\.[\.\d]+): https?:\/\/www\.webucd\.com\/qq\-weather/i'
@@ -13087,12 +13126,12 @@ plugins:
     QueryParameter:
       files:
       - s2member-o.php
-      pattern: !ruby/regexp /ver=(?<v>\d+\.[\.\d]+)\-/i
+      pattern: !ruby/regexp /ver=(?<v>[\d\.]+)\-/i
       version: true
     TranslationFile:
       class: BodyPattern
       path: src/includes/translations/s2member.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\  (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /"Project\-Id\-Version:\  (?<v>[\d\.]+)/i
       version: true
   s3-secure-url:
     QueryParameter:
@@ -14221,6 +14260,10 @@ plugins:
       - js/jail.js
       - js/slidedeck-public.js
       version: true
+    JavascriptVar:
+      xpath: //script[not(@src) and contains(., "slideDeck")]
+      pattern: !ruby/regexp /window\.slideDeck2Version = "(?<v>\d+\.[\.\d]+)";/i
+      version: true
   slider-and-carousel-plus-widget-for-instagram:
     QueryParameter:
       files:
@@ -14670,7 +14713,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/spanish-quote-of-the-day-frase-del-dia.pot
-      pattern: !ruby/regexp /Spanish Quotes of the Day \(Frase del D[^a]a\) (?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /Spanish Quotes of the Day \(Frase del D[^a]+a\) (?<v>\d+\.[\.\d]+)/i
       version: true
   spantext:
     QueryParameter:
@@ -16183,7 +16226,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: languages/unfc-normalize.pot
-      pattern: !ruby/regexp '/"Project\-Id\-Version: UNFC No[^r]rmalize (?<v>\d+\.[\.\d]+)/i'
+      pattern: !ruby/regexp '/"Project\-Id\-Version: UNFC No[^r]+rmalize (?<v>\d+\.[\.\d]+)/i'
       version: true
   unik-ultimate-pricing-table:
     QueryParameter:
@@ -16776,7 +16819,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: inc/languages/wc-pedido-minimo.pot
-      pattern: !ruby/regexp '/\-Id\-Version: WooCommerce Pedido M[^n]nimo (?<v>\d+\.[\.\d]+)/i'
+      pattern: !ruby/regexp '/\-Id\-Version: WooCommerce Pedido M[^n]+nimo (?<v>\d+\.[\.\d]+)/i'
       version: true
   wc-responsive-video:
     QueryParameter:
@@ -18949,7 +18992,7 @@ plugins:
   wp-hotwords:
     Comment:
       xpath: //comment()[contains(., "WP-HOTWords")]
-      pattern: !ruby/regexp '/WP\-HOTWords vers[^o]o: (?<v>\d+\.[\.\d]+)/i'
+      pattern: !ruby/regexp '/WP\-HOTWords vers[^o]+o: (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-hrms:
     QueryParameter:
@@ -19593,7 +19636,7 @@ plugins:
     TranslationFile:
       class: BodyPattern
       path: includes/translations/wp-redirects.pot
-      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Redirects (?<v>\d+\.[\.\d]+)/i'
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Redirects (?<v>[\d\.]+)/i'
       version: true
   wp-relevant-ads:
     QueryParameter:
@@ -19703,6 +19746,7 @@ plugins:
       files:
       - css/wpss-search-suggest.css
       - js/wpss-search-suggest.js
+      pattern: !ruby/regexp /ver=(?<v>[\d\.]+)/i
       version: true
   wp-seedbank:
     TranslationFile:

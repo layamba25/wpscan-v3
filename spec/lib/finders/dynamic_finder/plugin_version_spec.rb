@@ -67,7 +67,11 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
             end
 
             it 'returns the expected version/s from the homepage' do
-              [*finder.passive].each_with_index do |version, index|
+              found = [*finder.passive]
+
+              expect(found).to_not be_empty
+
+              found.each_with_index do |version, index|
                 expected_version = expected.at(index)
 
                 expect(version).to be_a WPScan::Version
@@ -98,7 +102,11 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
             end
 
             it 'returns the expected version' do
-              [*finder.aggressive].each_with_index do |version, index|
+              found = [*finder.aggressive]
+
+              expect(found).to_not be_empty
+
+              found.each_with_index do |version, index|
                 expected_version = expected.at(index)
 
                 expect(version).to be_a WPScan::Version
