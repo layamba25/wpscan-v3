@@ -1135,6 +1135,11 @@ plugins:
       xpath: //comment()[contains(., "arabic-webfonts")]
       pattern: !ruby/regexp /arabic-webfonts v(?<v>\d+\.[\.\d]+) styles/i
       version: true
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
+      version: true
   archive-akkordion:
     QueryParameter:
       files:
@@ -4148,6 +4153,12 @@ plugins:
       path: languages/crosswordsearch.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ crosswordsearch (?<v>\d+\.[\.\d]+)/i
       version: true
+  crs-post-title-shortener:
+    QueryParameter:
+      files:
+      - public/css/crs-post-title-shortener-public.css
+      - public/js/crs-post-title-shortener-public.js
+      version: true
   cryout-serious-slider:
     QueryParameter:
       files:
@@ -6098,9 +6109,10 @@ plugins:
       - free/css/foobox.free.min.css
       - free/js/foobox.free.min.js
       version: true
-    JavascriptVar:
-      pattern: !ruby/regexp /Run FooBox FREE \(v(?<v>\d+\.[\.\d]+)\)/i
+    CommentInJavascript:
+      class: Xpath
       xpath: //script[@type="text/foobox"]
+      pattern: !ruby/regexp /Run FooBox FREE \(v(?<v>\d+\.[\.\d]+)\)/i
       version: true
   food-and-drink-menu:
     TranslationFile:
@@ -6251,6 +6263,13 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  frontend-posts:
+    QueryParameter:
+      files:
+      - public/css/frontend_posts-public.css
+      - public/js/frontend_posts-public.js
+      - public/js/jQuery.Validate.min.js
       version: true
   frontier-post:
     QueryParameter:
@@ -6915,6 +6934,12 @@ plugins:
     QueryParameter:
       files:
       - guardian_headlines.css
+      version: true
+  gutenbee:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   h5p:
     QueryParameter:
@@ -7803,6 +7828,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  iugu-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/iugu-woocommerce.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WooCommerce iugu (?<v>\d+\.[\.\d]+)/i'
+      version: true
   ivisa-travel:
     QueryParameter:
       files:
@@ -7860,6 +7891,11 @@ plugins:
       class: BodyPattern
       path: languages/woocommerce-jet-integration-en_US.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Jet Set GO (?<v>\d+\.[\.\d]+)/i
+      version: true
+  jetpack:
+    QueryParameter:
+      files:
+      - css/jetpack.css
       version: true
   jetstash-connect:
     ComposerFile:
@@ -8217,6 +8253,10 @@ plugins:
       xpath: //comment()[contains(., "keyword-statistics")]
       pattern: !ruby/regexp /a inserted by keyword\-statistics\-plugin (?<v>\d+\.[\.\d]+)/i
       version: true
+  keywords-highlight-tool:
+    Xpath:
+      xpath: //script[not(@src) and contains(., "keywords-highlight-tool")]
+      pattern: !ruby/regexp /\/keywords\-highlight\-tool\/highlight\.js\?v=(?<v>\d+\.[\.\d]+)/i
   kia-subtitle:
     TranslationFile:
       class: BodyPattern
@@ -12390,6 +12430,13 @@ plugins:
       files:
       - css/style.css
       - javascript/functions.js
+      version: true
+  react-and-share:
+    QueryParameter:
+      files:
+      - assets/css/styles.css
+      - assets/js/js.cookie.min.js
+      - assets/js/rns.js
       version: true
   reactive-mortgage-calculator:
     QueryParameter:
@@ -18688,6 +18735,12 @@ plugins:
     QueryParameter:
       files:
       - jcedit.min.js
+      version: true
+  wp-event-aggregator:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-event-aggregator.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: WP Event Aggregator (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-event-manager:
     QueryParameter:
