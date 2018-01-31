@@ -1450,6 +1450,7 @@ plugins:
       - js/product-schedule-options.js
       - WebChat/botchat.js
       - js/product-page.js
+      - js/schedule-options.js
       version: true
   avatars-meta-box:
     TranslationFile:
@@ -5646,6 +5647,11 @@ plugins:
     Comment:
       xpath: //comment()[contains(., "Facebook Comments")]
       pattern: !ruby/regexp /Facebook Comments Plugin for WordPress/i
+  facebook-conversion-pixel:
+    QueryParameter:
+      files:
+      - pixel-cat.min.js
+      version: true
   facebook-like-box-lightbox:
     QueryParameter:
       files:
@@ -6275,6 +6281,13 @@ plugins:
     QueryParameter:
       files:
       - frontier-post.css
+      version: true
+  fullscreen-galleria:
+    QueryParameter:
+      files:
+      - galleria-fs-b.css
+      - galleria-fs.js
+      - galleria-fs-theme.js
       version: true
   fundpress:
     QueryParameter:
@@ -8085,6 +8098,12 @@ plugins:
       path: jsj-gallery-slideshow.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ JSJ Gallery Slideshow (?<v>\d+\.[\.\d]+)/i
       version: true
+  jsm-block-filter-output:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/jsm-block-filter-output.pot
+      pattern: !ruby/regexp '/t\-Id\-Version: JSM''s Block Filter Output (?<v>\d+\.[\.\d]+)/i'
+      version: true
   jsm-show-registered-shortcodes:
     TranslationFile:
       class: BodyPattern
@@ -8612,6 +8631,12 @@ plugins:
       path: languages/leyka-bank-order-ru_RU.po
       pattern: !ruby/regexp /t\-Id\-Version:\ Leyka Bank Order gateway v(?<v>\d+\.[\.\d]+)/i
       version: true
+  lf-hiker:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   lh-framebreaker:
     QueryParameter:
       files:
@@ -8986,6 +9011,12 @@ plugins:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  loops-n-slides:
+    QueryParameter:
+      files:
+      - _inc/css/loopsns-loop.css
+      - _inc/js/loopsns-loop.js
       version: true
   lorem-user-generator:
     TranslationFile:
@@ -10887,6 +10918,12 @@ plugins:
       - inc/script/carousel.js
       - inc/script/sc_our_services.js
       version: true
+  our-team-enhanced:
+    QueryParameter:
+      files:
+      - assets/css/common.css
+      - assets/css/widgets.css
+      version: true
   outboundlinks:
     QueryParameter:
       files:
@@ -12220,6 +12257,12 @@ plugins:
       xpath: //script[not(@src) and contains(., "qs_host")]
       pattern: !ruby/regexp /var vars = {(?<json>.+?(?=};))}/i
       version_key: version
+      version: true
+  qoob:
+    ComposerFile:
+      class: ConfigParser
+      path: qoob/package-lock.json
+      key: version
       version: true
   qq-weather:
     Comment:
@@ -14319,6 +14362,13 @@ plugins:
       - assets/css/slick.css
       - assets/css/iscwp-public.css
       version: true
+  slider-spider:
+    QueryParameter:
+      files:
+      - public/css/slider-spider-public.css
+      - public/css/swiper.min.css
+      - public/js/slider-spider-public.js
+      version: true
   sliderme:
     TranslationFile:
       class: BodyPattern
@@ -16322,6 +16372,12 @@ plugins:
       - assets/js/tab.js
       - assets/js/bootstrap.js
       version: true
+  unmask:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
+      version: true
   unsupported-browser-notification:
     TranslationFile:
       class: BodyPattern
@@ -17036,6 +17092,11 @@ plugins:
       files:
       - public/css/woo-review-collector-public.css
       - public/js/woo-review-collector-public.js
+      version: true
+  webba-booking-lite:
+    QueryParameter:
+      files:
+      - frontend/js/wbk-frontend.js
       version: true
   webcamconsult:
     QueryParameter:
@@ -18507,6 +18568,14 @@ plugins:
       class: BodyPattern
       path: languages/plugin-name.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-counter-up:
+    QueryParameter:
+      files:
+      - public/css/wp-counter-up-public.css
+      - public/js/waypoints.min.js
+      - public/js/jquery.counterup.min.js
+      - public/js/wp-counter-up-public.js
       version: true
   wp-coupons-and-deals:
     QueryParameter:
