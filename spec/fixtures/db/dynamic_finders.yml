@@ -1032,6 +1032,16 @@ plugins:
       files:
       - resources/css/awpcpstyle.css
       version: true
+    Ie6Comment:
+      class: Comment
+      xpath: //comment()[contains(., "another-wordpress-classifieds-plugin")]
+      pattern: !ruby/regexp /\/resources\/css\/awpcpstyle\-ie\-6\.css\?ver=(?<v>\d+\.[\.\d]+)/i
+      version: true
+    Ie7Comment:
+      class: Comment
+      xpath: //comment()[contains(., "another-wordpress-classifieds-plugin")]
+      pattern: !ruby/regexp /\/resources\/css\/awpcpstyle\-lte\-ie\-7\.css\?ver=(?<v>\d+\.[\.\d]+)/i
+      version: true
   anspress-question-answer:
     QueryParameter:
       files:
@@ -2603,6 +2613,14 @@ plugins:
       path: languages/brozzme-fullwidth-divi.pot
       pattern: !ruby/regexp /Fullwidth and Automatic Layout in Divi (?<v>\d+\.[\.\d]+)/i
       version: true
+  bs-faq:
+    QueryParameter:
+      files:
+      - public/css/bs_faq_plugin-public.css
+      - public/css/bs_faq_my_css.css
+      - public/js/bs_faq_plugin-public.js
+      - public/js/bs_faq_my_js.js
+      version: true
   bsf-docs:
     QueryParameter:
       files:
@@ -3125,6 +3143,7 @@ plugins:
       - public/css/cbxgooglemap-public.css
       - public/js/jqcbxgooglemap.js
       - public/js/cbxgooglemap-public.js
+      - public/css/cbxgooglemap-public.min.css
       version: true
   cbxinstaphotos:
     QueryParameter:
@@ -3157,6 +3176,8 @@ plugins:
       - public/js/cbxwpreadymix-public.js
       - public/vendor/owl-carousel/owl.carousel.min.js
       - public/vendor/isotope/isotope.pkgd.min.js
+      - public/css/cbxwpreadymix.min.css
+      - public/js/cbxwpreadymix.min.js
       version: true
   cbxwpslack:
     TranslationFile:
@@ -3281,6 +3302,16 @@ plugins:
       class: BodyPattern
       path: languages/contact-form-7-editor-button.pot
       pattern: !ruby/regexp /"Button v (?<v>\d+\.[\.\d]+)/i
+      version: true
+  cf7-facebook-contactor:
+    QueryParameter:
+      files:
+      - assets/js/fb-contactor.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/gsconnector-en_US.po
+      pattern: !ruby/regexp '/ject\-Id\-Version: Google Sheet Coneector (?<v>\d+\.[\.\d]+)/i'
       version: true
   cf7-google-sheets-connector:
     TranslationFile:
@@ -3455,6 +3486,12 @@ plugins:
     QueryParameter:
       files:
       - public/assets/js/public.js
+      version: true
+  chrissy:
+    QueryParameter:
+      files:
+      - assets/front.css
+      - assets/front.js
       version: true
   chroma-lightbox:
     QueryParameter:
@@ -4032,6 +4069,9 @@ plugins:
       - core/css/converse.css
       - css/wordpress-fix.css
       - core/converse-no-jquery.min.js
+      - core/css/converse.min.css
+      - core/css/mobile.min.css
+      - core/converse.min.js
       version: true
   convertiser-widgets:
     TranslationFile:
@@ -5499,6 +5539,18 @@ plugins:
       - css/ecfaq-frontend.css
       - js/efaq-frontend.js
       version: true
+  everest-forms:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/everest-forms.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: EverestForms (?<v>\d+\.[\.\d]+)/i'
+      version: true
+    QueryParameter:
+      files:
+      - assets/css/jquery-ui-datepicker/jquery-ui-datepicker.css
+      - assets/css/everest-forms.css
+      - assets/js/frontend/everest-forms.min.js
+      version: true
   everest-gallery-lite:
     QueryParameter:
       files:
@@ -6461,6 +6513,11 @@ plugins:
       - js/price-display-helpers.js
       - js/main.gal.js
       version: true
+  get-directions:
+    QueryParameter:
+      files:
+      - frontend/css/frontend.css
+      version: true
   get-my-tweets-uk:
     QueryParameter:
       files:
@@ -6589,6 +6646,12 @@ plugins:
     QueryParameter:
       files:
       - css/shortcode.css
+      version: true
+  go-board-sgf-viewer:
+    QueryParameter:
+      files:
+      - js/noUiSlider.8.0.2/nouislider.min.js
+      - js/board.js
       version: true
   go-gallery:
     QueryParameter:
@@ -7035,6 +7098,12 @@ plugins:
       - public/assets/css/hayyabuild.min.css
       - public/assets/libs/bootstrap/js/bootstrap.min.js
       - public/assets/js/hayyabuild.min.js
+      version: true
+  header-footer-elementor:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/header-footer-elementor.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: Header Footer Elementor (?<v>\d+\.[\.\d]+)/i'
       version: true
   headspace2:
     Comment:
@@ -8925,6 +8994,7 @@ plugins:
     QueryParameter:
       files:
       - public/js/min.js
+      - assets/js/min.js
       version: true
   lock-my-bp:
     TranslationFile:
@@ -8943,6 +9013,12 @@ plugins:
       class: BodyPattern
       path: languages/loftloader.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ LoftLoader (?<v>\d+\.[\.\d]+)/i
+      version: true
+  loftysms:
+    QueryParameter:
+      files:
+      - public/css/wp-loftysms-public.css
+      - public/js/wp-loftysms-public.js
       version: true
   logic-hop:
     QueryParameter:
@@ -10183,6 +10259,12 @@ plugins:
       files:
       - assets/js/naked-social-share.min.js
       version: true
+  namaste-lms:
+    TranslationFile:
+      class: BodyPattern
+      path: namaste.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Namaste! LMS (?<v>\d+\.[\.\d]+)/i'
+      version: true
   namaz-vakti:
     QueryParameter:
       files:
@@ -10626,6 +10708,12 @@ plugins:
       - public/js/elementQueries.js
       - public/js/jquery.cookie.js
       - public/captcha/src/jquery.simpleCaptcha.js
+      version: true
+  oboxmedia-ads:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   ocr-one:
     QueryParameter:
@@ -13839,6 +13927,12 @@ plugins:
       - public/css/sighted-invoice-manager-public.css
       - public/js/sighted-invoice-manager-public.js
       version: true
+  sightmill-nps:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/sightmill-nps.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: SightMill NPS (?<v>\d+\.[\.\d]+)/i'
+      version: true
   similar-post-title-checker:
     TranslationFile:
       class: BodyPattern
@@ -14012,6 +14106,12 @@ plugins:
       class: BodyPattern
       path: languages/simple-location.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Simple Location (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  simple-mapbox-data:
+    QueryParameter:
+      files:
+      - public/css/simple-mapbox-data-public.css
+      - public/js/simple-mapbox-data-public.js
       version: true
   simple-owl-carousel:
     QueryParameter:
@@ -17968,6 +18068,12 @@ plugins:
       path: languages/woocommerce-product-archive-image-slider-en_GB.po
       pattern: !ruby/regexp /oCommerce Product Archive Image Slider v(?<v>\d+\.[\.\d]+)/i
       version: true
+  woocommerce-product-dependencies:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-product-dependencies.pot
+      pattern: !ruby/regexp '/rsion: WooCommerce Product Dependencies (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woocommerce-product-fees:
     TranslationFile:
       class: BodyPattern
@@ -18934,6 +19040,13 @@ plugins:
       - public/css/wp-file-search-public.css
       - public/js/wp-file-search-public.js
       version: true
+  wp-file-word-counter:
+    QueryParameter:
+      files:
+      - public/css/wfwc-uploadfile.css
+      - public/js/wfwc-uploadfile.min.js
+      - public/js/wfwc-public.js
+      version: true
   wp-flexible-map:
     QueryParameter:
       files:
@@ -19226,6 +19339,12 @@ plugins:
       files:
       - assets/css/style.css
       - assets/js/lemme-know.js
+      version: true
+  wp-lemniscus:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
       version: true
   wp-license-manager:
     QueryParameter:
@@ -19693,6 +19812,11 @@ plugins:
       files:
       - public/css/wp-quick-image-public.css
       - public/js/wp-quick-image-public.js
+      version: true
+  wp-quip:
+    QueryParameter:
+      files:
+      - css/plugin.css
       version: true
   wp-quiz-importer:
     QueryParameter:
@@ -20659,6 +20783,12 @@ plugins:
       class: BodyPattern
       path: lang/wpkitchen-fb-album.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: wpKitchen FB Album (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wplauncher:
+    QueryParameter:
+      files:
+      - public/css/wplauncher-public.css
+      - public/js/wplauncher-public.js
       version: true
   wplb-widget-total:
     TranslationFile:
