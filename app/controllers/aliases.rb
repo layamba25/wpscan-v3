@@ -4,7 +4,8 @@ module WPScan
     class Aliases < CMSScanner::Controller::Base
       def cli_options
         [
-          OptAlias.new(['--stealthy'], alias_for: '--random-user-agent --detection-mode passive')
+          OptAlias.new(['--stealthy'],
+                       alias_for: '--random-user-agent --detection-mode passive --plugins-version-detection passive')
         ]
       end
     end
