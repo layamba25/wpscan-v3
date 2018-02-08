@@ -26,7 +26,8 @@ module WPScan
               m:  OptIntegerRange.new(['--medias', 'Media ids range. e.g m1-15'], value_if_empty: '1-100')
             },
             value_if_empty: 'vp,vt,tt,cb,u,m',
-            incompatible: [%i[vp ap p], %i[vt at t]]
+            incompatible: [%i[vp ap p], %i[vt at t]],
+            default: { all_plugins: true, config_backups: true }
           ),
           OptRegexp.new(
             [
@@ -46,7 +47,7 @@ module WPScan
           OptChoice.new(
             ['--plugins-detection MODE',
              'Use the supplied mode to enumerate Plugins, instead of the global (--detection-mode) mode.'],
-            choices: %w[mixed passive aggressive], normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym, default: :passive
           ),
           OptBoolean.new(
             ['--plugins-version-all',

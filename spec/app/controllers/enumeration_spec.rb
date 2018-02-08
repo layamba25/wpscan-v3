@@ -103,17 +103,24 @@ describe WPScan::Controller::Enumeration do
 
   describe '#run' do
     context 'when no :enumerate' do
-      it 'returns nil' do
-        expect(controller.run).to eql nil
+      before do
+        expect(controller).to receive(:enum_plugins)
+        expect(controller).to receive(:enum_config_backups)
+
+        expect(parsed_options[:plugins_detection]).to eql :passive
       end
-    end
 
-    context 'when --passwords supplied but no --username or --usernames' do
-      let(:cli_args) { "#{super()} --passwords some-file.txt" }
-
-      it 'calls the enum_users' do
-        expect(controller).to receive(:enum_users)
+      it 'calls enum_plugins and enum_config_backups' do
         controller.run
+      end
+
+      context 'when --passwords supplied but no --username or --usernames' do
+        let(:cli_args) { "#{super()} --passwords some-file.txt" }
+
+        it 'calls the enum_users' do
+          expect(controller).to receive(:enum_users)
+          controller.run
+        end
       end
     end
 

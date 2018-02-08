@@ -113,7 +113,9 @@ Pull the repo with ```docker pull wpscanteam/wpscan-v3```
 
 # Usage
 
-Open a terminal and type ```wpscan --help``` (if you built wpscan from the source, you should type the command outside of the git repo)
+```wpscan --url blog.tld``` This will scan the blog using default options with a good compromise between speed and accuracy. For example, the plugins will be checked passively but their version with a mixed detection mode (passively + aggressively). Potential config backup files will also be checked, along with other interesting findings. If a more stealthy approach is required, then ```wpscan --stealthy --url blog.tld``` can be used.
+
+For more options, open a terminal and type ```wpscan --help``` (if you built wpscan from the source, you should type the command outside of the git repo)
 
 The DB is located at ~/.wpscan/db
 
