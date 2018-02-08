@@ -20,7 +20,9 @@ module WPScan
 
             parsers.each do |parser|
               begin
-                return parser.respond_to?(:safe_load) ? parser.safe_load(body) : parser.load(body)
+                parsed = parser.respond_to?(:safe_load) ? parser.safe_load(body) : parser.load(body)
+
+                return parsed if parsed.is_a?(Hash)
               rescue StandardError
                 next
               end

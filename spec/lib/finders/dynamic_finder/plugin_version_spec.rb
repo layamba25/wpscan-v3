@@ -42,7 +42,7 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
         end
       end
 
-      let(:stubbed_response) { { body: '' } }
+      let(:stubbed_response) { { body: 'aa' } }
 
       describe '#passive' do
         before do
