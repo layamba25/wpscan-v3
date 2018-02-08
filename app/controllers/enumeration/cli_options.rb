@@ -58,7 +58,7 @@ module WPScan
             ['--plugins-version-detection MODE',
              'Use the supplied mode to check plugins versions instead of the --detection-mode ' \
              'or --plugins-detection modes.'],
-            choices: %w[mixed passive aggressive], normalize: :to_sym
+            choices: %w[mixed passive aggressive], normalize: :to_sym, default: :mixed
           )
         ]
       end

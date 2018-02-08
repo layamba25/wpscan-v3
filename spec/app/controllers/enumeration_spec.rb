@@ -57,6 +57,14 @@ describe WPScan::Controller::Enumeration do
     end
   end
 
+  describe '#default_optss' do
+    context 'when no --enumerate' do
+      it 'contains the correct version_detection' do
+        expect(controller.default_opts('plugins')[:version_detection]).to include(mode: :mixed)
+      end
+    end
+  end
+
   describe '#cli_options' do
     it 'contains the correct options' do
       expect(controller.cli_options.map(&:to_sym)).to eql(
