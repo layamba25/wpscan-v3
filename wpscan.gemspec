@@ -54,7 +54,7 @@ Gem::Specification.new do |s|
 
   # Already required by CMSScanner, so version restrictions loosen
   s.add_dependency 'activesupport', '~> 5.1'
-  s.add_dependency 'opt_parse_validator', '~>0.0.15.1' # delete when cms scanner .39.1 released
+  s.add_dependency 'opt_parse_validator', '~>0.0.15.2' # delete when cms scanner .39.1 released
   s.add_dependency 'yajl-ruby', '~> 1.3'
 
   s.add_development_dependency 'bundler', '~> 1.6'

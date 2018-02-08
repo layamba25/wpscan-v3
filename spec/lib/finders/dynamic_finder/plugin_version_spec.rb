@@ -59,27 +59,35 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
           end
         else
           context 'when no PATH' do
-            let(:stubbed_response) do
-              df_stubbed_response(
-                File.join(fixtures, "#{finder_super_class.underscore}_passive_all.html"),
-                finder_super_class
-              )
+            context 'when the version is detected' do
+              let(:stubbed_response) do
+                df_stubbed_response(
+                  File.join(fixtures, "#{finder_super_class.underscore}_passive_all.html"),
+                  finder_super_class
+                )
+              end
+
+              it 'returns the expected version/s from the homepage' do
+                found = [*finder.passive]
+
+                expect(found).to_not be_empty
+
+                found.each_with_index do |version, index|
+                  expected_version = expected.at(index)
+
+                  expect(version).to be_a WPScan::Version
+                  expect(version.number).to eql expected_version['number'].to_s
+                  expect(version.found_by).to eql expected_version['found_by']
+                  expect(version.interesting_entries).to match_array expected_version['interesting_entries']
+
+                  expect(version.confidence).to eql expected_version['confidence'] if expected_version['confidence']
+                end
+              end
             end
 
-            it 'returns the expected version/s from the homepage' do
-              found = [*finder.passive]
-
-              expect(found).to_not be_empty
-
-              found.each_with_index do |version, index|
-                expected_version = expected.at(index)
-
-                expect(version).to be_a WPScan::Version
-                expect(version.number).to eql expected_version['number'].to_s
-                expect(version.found_by).to eql expected_version['found_by']
-                expect(version.interesting_entries).to match_array expected_version['interesting_entries']
-
-                expect(version.confidence).to eql expected_version['confidence'] if expected_version['confidence']
+            context 'when the version is not detected' do
+              it 'returns nil or an empty array' do
+                expect(finder.passive).to eql finder_super_class == 'QueryParameter' ? [] : nil
               end
             end
           end
