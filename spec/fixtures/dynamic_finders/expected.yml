@@ -10920,6 +10920,24 @@ plugins:
       - http://wp.lab/wp-content/plugins/layered-pop/js/script.js?ver=0.11
       confidence: 40
   LayerSlider:
+    QueryParameter:
+      number: 6.5.7
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/LayerSlider/static/layerslider/css/layerslider.css?ver=6.5.7
+      - http://wp.lab/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.kreaturamedia.jquery.js?ver=6.5.7
+      - http://wp.lab/wp-content/plugins/LayerSlider/static/layerslider/js/layerslider.transitions.js?ver=6.5.7
+      confidence: 30
+    MetaGenerator:
+      number: 6.5.7
+      found_by: Meta Generator (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''Powered by LayerSlider 6.5.7 -'''
+    JavascriptVar:
+      number: 6.5.7
+      found_by: Javascript Var (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''sliderVersion: ''6.5.7'''''
     LocaleTranslationFile:
       number: 5.2.0
       found_by: Locale Translation File (Aggressive Detection)

@@ -8729,6 +8729,21 @@ plugins:
       - js/script.js
       version: true
   LayerSlider:
+    QueryParameter:
+      files:
+      - static/layerslider/css/layerslider.css
+      - static/layerslider/js/layerslider.kreaturamedia.jquery.js
+      - static/layerslider/js/layerslider.transitions.js
+      version: true
+    MetaGenerator:
+      class: Xpath
+      xpath: //meta[@name="generator" and contains(@content, "LayerSlider")]/@content
+      pattern: !ruby/regexp /Powered by LayerSlider (?<v>\d+\.[\.\d]+) \-/i
+      version: true
+    JavascriptVar:
+      xpath: //script[@data-cfasync="false" and contains(., "layerslider")]
+      pattern: !ruby/regexp '/sliderVersion: ''(?<v>\d+\.[\.\d]+)''/i'
+      version: true
     LocaleTranslationFile:
       class: BodyPattern
       path: locales/LayerSlider-en_US.po

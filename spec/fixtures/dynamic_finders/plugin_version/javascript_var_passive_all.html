@@ -205,6 +205,20 @@ var jpibfi_options = {"hover":{"siteTitle":"The Joules Journal","image_selector"
 </script>
 
 
+<!-- LayerSlider -->
+<script data-cfasync="false" type="text/javascript">var lsjQuery = jQuery;</script><script data-cfasync="false" type="text/javascript">
+lsjQuery(document).ready(function() {
+if(typeof lsjQuery.fn.layerSlider == "undefined") {
+if( window._layerSlider && window._layerSlider.showNotice) {
+window._layerSlider.showNotice('layerslider_3','jquery');
+}
+} else {
+lsjQuery("#layerslider_3").layerSlider({createdWith: '6.5.7', sliderVersion: '6.5.7', hideUnder: 0, hideOver: 100000, popupWidth: 640, popupHeight: 360, skinsPath: 'http://xxxx/wp-content/plugins/LayerSlider/static/layerslider/skins/'});
+}
+});
+</script>
+
+
 <!-- limb-gallery -->
 <script>
     var grsWpUploaderUrl = 'http://wp.lab/wp-content/uploads/',
