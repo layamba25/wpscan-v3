@@ -6824,8 +6824,12 @@ plugins:
       pattern: !ruby/regexp /Google Analytics Tracking by Google Analyticator (?<v>\d+\.[\.\d]+):/i
       version: true
   google-analytics-dashboard-for-wp:
+    QueryParameter:
+      files:
+      - front/js/tracking-analytics-events.js
+      version: true
     Comment:
-      pattern: !ruby/regexp /GADWP v(?<v>\d+\.[\.\d]+) Universal Tracking/i
+      pattern: !ruby/regexp /GADWP v(?<v>\d+\.[\.\d]+) Universal/i
       version: true
   google-analytics-for-wordpress:
     YoastComment:

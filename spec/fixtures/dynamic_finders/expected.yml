@@ -8530,11 +8530,17 @@ plugins:
       - 'http://wp.lab/, Match: ''Google Analytics Tracking by Google Analyticator
         6.4.8:'''
   google-analytics-dashboard-for-wp:
+    QueryParameter:
+      number: 5.2.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/google-analytics-dashboard-for-wp/front/js/tracking-analytics-events.js?ver=5.2.1
+      confidence: 10
     Comment:
       number: 4.4.4
       found_by: Comment (Passive Detection)
       interesting_entries:
-      - 'http://wp.lab/, Match: ''GADWP v4.4.4 Universal Tracking'''
+      - 'http://wp.lab/, Match: ''GADWP v4.4.4 Universal'''
   google-analytics-for-wordpress:
     YoastComment:
       number: 5.3.3
