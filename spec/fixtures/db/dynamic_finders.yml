@@ -4672,6 +4672,11 @@ plugins:
       path: languages/dokan-invoice.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Dokan \- PDF Invoice (?<v>\d+\.[\.\d]+)/i
       version: true
+  double-opt-in-for-download:
+    QueryParameter:
+      files:
+      - public/assets/css/style.css
+      version: true
   download-manager:
     MetaGenerator:
       class: Xpath

@@ -5823,6 +5823,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/dokan-invoice/languages/dokan-invoice.pot,
         Match: ''Project-Id-Version: Dokan - PDF Invoice 1.1.0'''
+  double-opt-in-for-download:
+    QueryParameter:
+      number: 2.1.6
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/double-opt-in-for-download/public/assets/css/style.css?ver=2.1.6
   download-manager:
     MetaGenerator:
       number: 2.9.59
