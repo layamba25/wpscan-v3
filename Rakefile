@@ -5,16 +5,16 @@ require 'bundler/gem_tasks'
 exec = []
 
 begin
-  require 'rspec/core/rake_task'
-  RSpec::Core::RakeTask.new(:spec)
-  exec << :spec
+  require 'rubocop/rake_task'
+  RuboCop::RakeTask.new
+  exec << :rubocop
 rescue LoadError
 end
 
 begin
-  require 'rubocop/rake_task'
-  RuboCop::RakeTask.new
-  exec << :rubocop
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec)
+  exec << :spec
 rescue LoadError
 end
 
