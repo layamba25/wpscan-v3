@@ -25,8 +25,9 @@ module WPScan
 
         # @param [ WPScan::Target ] target
         def initialize(target)
-          (WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.keys +
-            %w[RSSGenerator AtomGenerator RDFGenerator Readme UniqueFingerprinting]
+          (%w[RSSGenerator AtomGenerator RDFGenerator] +
+           WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.keys +
+           %w[Readme UniqueFingerprinting]
           ).each do |finder_name|
             finders << WpVersion.const_get(finder_name.to_sym).new(target)
           end

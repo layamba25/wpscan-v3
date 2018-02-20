@@ -17,6 +17,8 @@ describe WPScan::Finders::WpVersion::Base do
       finders = wp_version.finders.map { |f| f.class.to_s.demodulize }
 
       expect(finders).to match_array expected + expected_dynamic_finders
+
+      expect(finders.first).to eql 'RSSGenerator'
       expect(finders.last).to eql 'UniqueFingerprinting'
     end
   end
