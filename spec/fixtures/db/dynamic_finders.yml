@@ -313,6 +313,17 @@ plugins:
       files:
       - assets/css/wp-aas-public.css
       version: true
+  accordion-for-wp:
+    QueryParameter:
+      files:
+      - public/css/afwp-accordion-public.css
+      - public/js/afwp-accordion-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/accordion-for-wp.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: Accordion for WordPress (?<v>\d+\.[\.\d]+)/i'
+      version: true
   acf-content-analysis-for-yoast-seo:
     ComposerFile:
       class: ConfigParser
@@ -788,6 +799,12 @@ plugins:
       - assets/css/public.css
       - assets/js/screenfull.js
       - assets/js/public.js
+      version: true
+  ajax-contact-forms:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/acfw30-en_US.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: Ajax Contact Forms v(?<v>\d+\.[\.\d]+)/i'
       version: true
   ajax-dropdowns:
     QueryParameter:
@@ -1734,6 +1751,11 @@ plugins:
     QueryParameter:
       files:
       - public/js/barebones-twitter-public.js
+      version: true
+  basepress:
+    QueryParameter:
+      files:
+      - icons/icons.css
       version: true
   bazz-callback-widget:
     QueryParameter:
@@ -4287,6 +4309,7 @@ plugins:
       files:
       - css/crellyslider.css
       - js/jquery.crellyslider.min.js
+      - css/crellyslider.min.css
       version: true
   cresta-whatsapp-chat:
     QueryParameter:
@@ -9330,6 +9353,18 @@ plugins:
       files:
       - lowermedia.sticky.min.js
       version: true
+  lsx-projects:
+    QueryParameter:
+      files:
+      - assets/css/vendor/slick.css
+      - assets/css/lsx-projects.css
+      - assets/js/lsx-projects.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   ltd-tickets:
     QueryParameter:
       files:
@@ -9937,6 +9972,12 @@ plugins:
       path: i18n/languages/mg-wc-stripe.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ mg wc Stripe (?<v>\d+\.[\.\d]+)/i
       version: true
+  mhstudio-hubspotform:
+    QueryParameter:
+      files:
+      - public/css/mhs-hubspotform-public.css
+      - public/js/mhs-hubspotform-public.js
+      version: true
   micro-archive-widget:
     QueryParameter:
       files:
@@ -10371,6 +10412,12 @@ plugins:
       files:
       - js/dropzone.js
       - js/cf7mu-multiupload-front.js
+      version: true
+  music-press-pro:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/music-press-pro.pot
+      pattern: !ruby/regexp /msgid "Version (?<v>\d+\.[\.\d]+)/i
       version: true
   muslim-prayer-time-bd:
     QueryParameter:
@@ -11160,6 +11207,11 @@ plugins:
       files:
       - dist/client/app.js
       pattern: !ruby/regexp /v=(?<v>\d+\.[\.\d]+)/i
+      version: true
+  optinpoint-lite:
+    QueryParameter:
+      files:
+      - public/assets/js/public.js
       version: true
   options-definitely:
     TranslationFile:
@@ -13026,6 +13078,12 @@ plugins:
       - public/js/notify.min.js
       - public/js/sales-motivator-woocommerce-public.js
       version: true
+  remote-medias-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/remote-medias-lite.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: remote\-medias\-lite (?<v>\d+\.[\.\d]+)/i'
+      version: true
   remove-extra-media:
     TranslationFile:
       class: BodyPattern
@@ -14818,6 +14876,17 @@ plugins:
       - slideshow.css
       - slideshow.js
       version: true
+  slideshow-posts:
+    QueryParameter:
+      files:
+      - public/css/cw-slideshow-public.css
+      - public/js/cw-slideshow-public.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cw-slideshow.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Slideshow Posts (?<v>\d+\.[\.\d]+)/i'
+      version: true
   sliding-tags:
     QueryParameter:
       files:
@@ -15043,6 +15112,11 @@ plugins:
     QueryParameter:
       files:
       - assets/css/social-icons.css
+      version: true
+  social-icons-lite:
+    QueryParameter:
+      files:
+      - assets/css/social-icons-lite.css
       version: true
   social-links-group:
     QueryParameter:
@@ -15622,6 +15696,16 @@ plugins:
     QueryParameter:
       files:
       - assets/css/frontend.css
+      version: true
+  subscribe-bar-youtube:
+    QueryParameter:
+      files:
+      - assets/css/custom.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/youtube-subscribe-bar.pot
+      pattern: !ruby/regexp '/oject\-Id\-Version: YouTube Subscribe Bar (?<v>\d+\.[\.\d]+)/i'
       version: true
   subscribe-here-widget:
     Comment:
@@ -16385,6 +16469,25 @@ plugins:
       - style.css
       - js/top_up-min.js
       version: true
+  total-team-lite:
+    QueryParameter:
+      files:
+      - assets/css/front-end.css
+      - assets/css/jquery-ui.css
+      - assets/css/animate.css
+      - assets/css/owl.carousel.css
+      - assets/css/owl.theme.default.min.css
+      - assets/css/jquery.mCustomScrollbar.css
+      - assets/css/colorbox.css
+      - assets/js/frontend.js
+      - assets/js/simple-skillbar.js
+      - assets/js/owl.carousel.js
+      - assets/js/owl.animate.js
+      - assets/js/owl.autoplay.js
+      - assets/js/owl.navigation.js
+      - assets/js/jquery.mCustomScrollbar.concat.min.js
+      - assets/js/jquery.colorbox.js
+      version: true
   tp-travel-package:
     TranslationFile:
       class: BodyPattern
@@ -16465,6 +16568,12 @@ plugins:
       - app/public/themes/flight/css/TPFontsIntro.css
       - app/public/themes/flight/css/table-1.css
       - app/public/themes/hotel/css/table-7.css
+      version: true
+  treethereum:
+    QueryParameter:
+      files:
+      - treethereumplugin.css
+      - treethereumplugin.js
       version: true
   treeview-on-contents:
     QueryParameter:
@@ -16860,6 +16969,7 @@ plugins:
       - assets/js/bootstrap/bootstrap.js
       - assets/js/tab.js
       - assets/js/bootstrap.js
+      - assets/js/rating.js
       version: true
   unmask:
     ComposerFile:
@@ -16994,6 +17104,12 @@ plugins:
       class: BodyPattern
       path: languages/userswp-en_US.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: UsersWP (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  utm-dot-codes:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/utm-dot-codes.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: utm\.codes (?<v>\d+\.[\.\d]+)/i'
       version: true
   utubevideo-gallery:
     QueryParameter:
@@ -18308,6 +18424,12 @@ plugins:
       path: lang/wa_wcc_txt-en_US.po
       pattern: !ruby/regexp '/ion: WooCommerce collapsing categories v(?<v>\d+\.[\.\d]+)/i'
       version: true
+  woocommerce-conversion-tracking:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-conversion-tracking.pot
+      pattern: !ruby/regexp '/ersion: WooCommerce Conversion Tracking (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woocommerce-correios:
     TranslationFile:
       class: BodyPattern
@@ -18403,6 +18525,12 @@ plugins:
       class: BodyPattern
       path: i18n/languages/woocommerce-gateway-paypal-powered-by-braintree.pot
       pattern: !ruby/regexp /rce PayPal Powered by Braintree Gateway (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woocommerce-gateway-stripe:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-gateway-stripe.pot
+      pattern: !ruby/regexp '/\-Id\-Version: WooCommerce Stripe Gateway (?<v>\d+\.[\.\d]+)/i'
       version: true
   woocommerce-google-analytics-integration:
     ComposerFile:
@@ -21433,6 +21561,12 @@ plugins:
       class: BodyPattern
       path: languages/wptelegram-fa_IR.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP Telegram (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wptelegram-widget:
+    QueryParameter:
+      files:
+      - public/css/wptelegram-widget-public.css
+      - public/js/wptelegram-widget-public.js
       version: true
   wptouch:
     Comment:
