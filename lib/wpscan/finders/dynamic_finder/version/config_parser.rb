@@ -22,13 +22,13 @@ module WPScan
               begin
                 parsed = parser.respond_to?(:safe_load) ? parser.safe_load(body) : parser.load(body)
 
-                return parsed if parsed.is_a?(Hash)
+                return parsed if parsed.is_a?(Hash) || parsed.is_a?(Array)
               rescue StandardError
                 next
               end
             end
 
-            nil # Make sure nil is returned in case none of the parsers manage to parse the body correctly
+            nil # Make sure nil is returned in case none of the parsers managed to parse the body correctly
           end
 
           # No Passive way
@@ -39,8 +39,10 @@ module WPScan
           # @return [ Version ]
           def find(response, _opts = {})
             parsed_body = parse(response.body)
+            # Create indexes for the #dig, digits are converted to integers
+            indexes     = self.class::KEY.split(':').map { |e| e == e.to_i.to_s ? e.to_i : e }
 
-            return unless (data = parsed_body&.dig(*self.class::KEY.split(':'))) && data =~ self.class::PATTERN
+            return unless (data = parsed_body&.dig(*indexes)) && data =~ self.class::PATTERN
 
             create_version(
               Regexp.last_match[:v],
