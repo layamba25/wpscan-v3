@@ -444,6 +444,11 @@ plugins:
       path: js/ad-inserter.js
       pattern: !ruby/regexp /var javascript_version = "(?<v>\d+\.[\.\d]+)";/i
       version: true
+    StyleVar:
+      class: BodyPattern
+      path: css/ad-inserter.css
+      pattern: !ruby/regexp /font\-family:\ "(?<v>\d+\.[\.\d]+)"; \/\* Used for version number/i
+      version: true
   ad-music-player-lite:
     TranslationFile:
       class: BodyPattern
@@ -1865,6 +1870,12 @@ plugins:
       - public/js/select2/select2.full.min.js
       - public/js/beautiful-taxonomy-filters-public.js
       version: true
+  beaver-builder-lite-version:
+    ChangeLog:
+      class: BodyPattern
+      path: changelog.txt
+      pattern: !ruby/regexp /<h4>(?<v>\d+\.[\.\d]+) \- [\d\/]{8,}</h4>/i
+      version: true
   beaverlodge-pushmenu:
     TranslationFile:
       class: BodyPattern
@@ -2935,6 +2946,12 @@ plugins:
       path: languages/bulk-term-editor.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Bulk Term Editor (?<v>\d+\.[\.\d]+)/i
       version: true
+  bulletproof-security:
+    ConfigComment:
+      class: BodyPattern
+      path: admin/htaccess/wpadmin-secure.htaccess
+      pattern: !ruby/regexp /\#\s+ BULLETPROOF (?<v>\d+\.[\.\d]+)/i
+      version: true
   buscape-wp-related-products:
     TranslationFile:
       class: BodyPattern
@@ -3610,6 +3627,12 @@ plugins:
       - frontend/css/chessgame-shizzle-frontend.css
       - frontend/js/chessgame-shizzle-frontend.js
       version: true
+  child-theme-configurator:
+    JavascriptComment:
+      class: BodyPattern
+      path: js/chldthmcfg.js
+      pattern: !ruby/regexp /\*\s+ Version:\ (?<v>\d+\.[\.\d]+)/i
+      version: true
   chiliforms:
     QueryParameter:
       files:
@@ -3836,6 +3859,11 @@ plugins:
       class: BodyPattern
       path: languages/cmb2.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ CMB2 (?<v>\d+\.[\.\d]+)/i
+      version: true
+    ChangeLog:
+      class: BodyPattern
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /\#\# \[(?<v>\d+\.[\.\d]+) \- [\d\-]{8,}\]/i
       version: true
   cnhk-slideshow:
     QueryParameter:
@@ -4296,6 +4324,11 @@ plugins:
       - css/cli-style.css
       - js/cookielawinfo.js
       version: true
+    JavascriptComment:
+      class: BodyPattern
+      path: js/cookielawinfo.js
+      pattern: !ruby/regexp /plugin version (?<v>\d+\.[\.\d]+)/i
+      version: true
   cookie-law-script-italiano:
     QueryParameter:
       files:
@@ -4519,6 +4552,17 @@ plugins:
       files:
       - public/css/theme_rm_matchmytheme.css
       - public/css/style_rm_front_end.css
+      version: true
+  custom-sidebars:
+    JavascriptComment:
+      class: BodyPattern
+      path: assets/js/cs-visibility.js
+      pattern: !ruby/regexp /Custom Sidebars \- v(?<v>\d+\.[\.\d]+)/i
+      version: true
+    StyleComment:
+      class: BodyPattern
+      path: assets/css/cs-visibility.min.css
+      pattern: !ruby/regexp /Custom Sidebars \- v(?<v>\d+\.[\.\d]+)/i
       version: true
   custom-template-lifterlms:
     TranslationFile:
@@ -4762,6 +4806,12 @@ plugins:
       path: languages/display-featured-image-genesis.pot
       pattern: !ruby/regexp /ion:\ Display Featured Image for Genesis (?<v>\d+\.[\.\d]+)/i
       version: true
+  display-posts-shortcode:
+    ChangeLog:
+      class: BodyPattern
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /\#\#\# \[(?<v>\d+\.[\.\d]+)\]/i
+      version: true
   display-taxes-on-product-page-woocommerce:
     TranslationFile:
       class: BodyPattern
@@ -4981,6 +5031,12 @@ plugins:
       class: BodyPattern
       path: lang/easy-featured-images-hu_HU.po
       pattern: !ruby/regexp /oject\-Id\-Version:\ Easy Featured Images v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  easy-google-fonts:
+    JavascriptComment:
+      class: BodyPattern
+      path: assets/js/admin.js
+      pattern: !ruby/regexp /\* @version (?<v>\d+\.[\.\d]+)/i
       version: true
   easy-heads-up-bar:
     QueryParameter:
@@ -5488,6 +5544,11 @@ plugins:
       path: languages/email-subscribers-pt_BR.po
       pattern: !ruby/regexp /ersion:\ Email Subscribers & Newsletters (?<v>\d+\.[\.\d]+)/i
       confidence: 20
+      version: true
+    ChangeLog:
+      class: BodyPattern
+      path: changelog.txt
+      pattern: !ruby/regexp /\*Version (?<v>\d+\.[\.\d]+)\*/i
       version: true
   email-subscribers-advanced-form:
     TranslationFile:
@@ -6430,6 +6491,11 @@ plugins:
       files:
       - css/font-awesome.min.css
       version: true
+    StyleComment:
+      class: BodyPattern
+      path: css/font-awesome.css
+      pattern: !ruby/regexp /Font Awesome (?<v>\d+\.[\.\d]+) by @davegandy/i
+      version: true
   fontawesome-anywhere:
     QueryParameter:
       files:
@@ -7086,6 +7152,16 @@ plugins:
       - assets/js/default-calendar.min.js
       - assets/js/vendor/imagesloaded.pkgd.min.js
       version: true
+    JavascriptComment:
+      class: BodyPattern
+      path: assets/js/default-calendar.min.js
+      pattern: !ruby/regexp /Simple Calendar \- (?<v>\d+\.[\.\d]+)/i
+      version: true
+    StyleComment:
+      class: BodyPattern
+      path: assets/css/default-calendar-grid.min.css
+      pattern: !ruby/regexp /Simple Calendar \- (?<v>\d+\.[\.\d]+)/i
+      version: true
   google-captcha:
     QueryParameter:
       files:
@@ -7135,6 +7211,12 @@ plugins:
       - public/css/cws-google-picasa-pro-public.css
       - public/css/lightbox/lightbox.css
       - public/js/cws-google-picasa-pro-public.js
+      version: true
+  google-sitemap-generator:
+    DocumentationFile:
+      class: BodyPattern
+      path: documentation.txt
+      pattern: !ruby/regexp /^[\d\-]{8,}\s+(?<v>\d+\.[\.\d]+)(?!.*[\d\-]{8,}\s+\d+\.[\.\d]+)/mi
       version: true
   googleanalyticscounter:
     MetaTag:
@@ -8157,6 +8239,12 @@ plugins:
       - js/maps/jquery.vmap..js
       - js/interactive-map.js
       version: true
+  intergeo-maps:
+    StyleComment:
+      class: BodyPattern
+      path: css/frontend.css
+      pattern: !ruby/regexp /Version:\ (?<v>\d+\.[\.\d]+)/i
+      version: true
   invitations-for-slack:
     QueryParameter:
       files:
@@ -8256,10 +8344,10 @@ plugins:
       - public/assets/js/box.js
       version: true
   ithemes-sync:
-    TranslationFile:
+    ChangeLog:
       class: BodyPattern
-      path: lang/ithemes-sync.pot
-      pattern: !ruby/regexp /"Project\-Id\-Version:\ iThemes Sync (?<v>\d+\.[\.\d]+)/i
+      path: history.txt
+      pattern: !ruby/regexp /^(?<v>\d+\.[\.\d]+) \- [\d\-]{8,} \-(?!.*\d+\.[\.\d]+ \- [\d\-]{8,} \-)/mi
       version: true
   ithoughts-tooltip-glossary:
     ComposerFile:
@@ -9386,6 +9474,11 @@ plugins:
       path: languages/loco-translate.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Loco Translate (?<v>\d+\.[\.\d]+)/i'
       version: true
+    StyleBackgroundUrl:
+      class: BodyPattern
+      path: pub/css/poview.css
+      pattern: !ruby/regexp /gif\?v=(?<v>\d+\.[\.\d]+)/i
+      version: true
   locus:
     TranslationFile:
       class: BodyPattern
@@ -9410,10 +9503,10 @@ plugins:
       - public/js/ajax-methods.min.js
       version: true
   login-customizer:
-    TranslationFile:
+    ChangeLog:
       class: BodyPattern
-      path: languages/login-customizer.pot
-      pattern: !ruby/regexp /d\-Version:\ Custom Login Page Customizer (?<v>\d+\.[\.\d]+)/i
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /### v?(?<v>\d+\.[\.\d]+) \- [\d\-\/]{8,}/i
       version: true
   login-designer:
     MetaTag:
@@ -11540,6 +11633,11 @@ plugins:
       files:
       - js/page-scroll-to-id.min.js
       version: true
+    JavascriptComment:
+      class: BodyPattern
+      path: js/page-scroll-to-id.min.js
+      pattern: !ruby/regexp /Page scroll to id \- version (?<v>\d+\.[\.\d]+)/i
+      version: true
   page-views-count:
     QueryParameter:
       files:
@@ -11658,6 +11756,12 @@ plugins:
       class: BodyPattern
       path: languages/password-confirm-action.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ password\-confirm\-action (?<v>\d+\.[\.\d]+)/i
+      version: true
+  password-protected:
+    ChangeLog:
+      class: BodyPattern
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /## \[(?<v>\d+\.[\.\d]+)\] \- [\d\-]{8,}/i
       version: true
   past-events-extension:
     QueryParameter:
@@ -11882,6 +11986,17 @@ plugins:
     QueryParameter:
       files:
       - css/public.css
+      version: true
+  pirate-forms:
+    ChangeLog:
+      class: BodyPattern
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /### v(?<v>\d+\.[\.\d]+) \- [\d\-]{8,}/i
+      version: true
+    StyleComment:
+      class: BodyPattern
+      path: public/css/front.css
+      pattern: !ruby/regexp /Version:\ (?<v>\d+\.[\.\d]+)/i
       version: true
   pitch-and-match:
     QueryParameter:
@@ -12338,6 +12453,12 @@ plugins:
       class: BodyPattern
       path: languages/aptrc.pot
       pattern: !ruby/regexp /ject\-Id\-Version:\ Requirements Checklist (?<v>\d+\.[\.\d]+)/i
+      version: true
+  post-type-switcher:
+    ChangeLog:
+      class: BodyPattern
+      path: CHANGELOG.md
+      pattern: !ruby/regexp /## (?<v>\d+\.[\.\d]+)/i
       version: true
   post-types-definitely:
     TranslationFile:
@@ -13598,6 +13719,12 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  revision-control:
+    ChangeLog:
+      class: BodyPattern
+      path: changelog.txt
+      pattern: !ruby/regexp /= (?<v>\d+\.[\.\d]+) =/i
       version: true
   revslider:
     Comment:
@@ -15681,6 +15808,12 @@ plugins:
       - site/resources/materialize.css
       - site/resources/app.css
       version: true
+  ssl-insecure-content-fixer:
+    ChangeLog:
+      class: BodyPattern
+      path: changelog.md
+      pattern: !ruby/regexp /### (?<v>\d+\.[\.\d]+), [\d\-]{8,}/i
+      version: true
   stack-slider-3d-image-slider:
     QueryParameter:
       files:
@@ -15922,6 +16055,12 @@ plugins:
       files:
       - css/main.css
       - js/empty.js
+      version: true
+  subscribe2:
+    ChangeLog:
+      class: BodyPattern
+      path: ChangeLog.txt
+      pattern: !ruby/regexp /= (?<v>\d+\.[\.\d]+) =/
       version: true
   subtitles:
     TranslationFile:
@@ -16466,6 +16605,12 @@ plugins:
       class: BodyPattern
       path: languages/themegrill-demo-importer.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ ThemeGrill Demo Importer (?<v>\d+\.[\.\d]+)/i
+      version: true
+  themeisle-companion:
+    StyleComment:
+      class: BodyPattern
+      path: core/assets/css/orbit-fox-admin.css
+      pattern: !ruby/regexp /Version:\ (?<v>\d+\.[\.\d]+)/i
       version: true
   themepacific-review-lite:
     TranslationFile:
@@ -18177,6 +18322,17 @@ plugins:
       class: BodyPattern
       path: languages/gocarousel-es_ES.po
       pattern: !ruby/regexp '/ion: GoCarousel Bootstrap using Nextgen (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  widget-css-classes:
+    JavascriptComment:
+      class: BodyPattern
+      path: js/widget-css-classes.js
+      pattern: !ruby/regexp /@version (?<v>\d+\.[\.\d]+)/i
+      version: true
+    StyleComment:
+      class: BodyPattern
+      path: css/widget-css-classes.css
+      pattern: !ruby/regexp /@version (?<v>\d+\.[\.\d]+)/i
       version: true
   widget-for-eventbrite-api:
     QueryParameter:
