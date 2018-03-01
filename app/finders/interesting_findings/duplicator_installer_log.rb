@@ -8,7 +8,7 @@ module WPScan
           url = target.url('installer-log.txt')
           res = Browser.get(url)
 
-          return unless res.body =~ /DUPLICATOR INSTALL-LOG/
+          return unless res.body.match?(/DUPLICATOR INSTALL-LOG/)
 
           WPScan::InterestingFinding.new(
             url,

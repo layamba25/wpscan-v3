@@ -18,7 +18,7 @@ module WPScan
             pattern     = %r{#{escaped_url}(.+?)\/(?:themes|plugins|uploads)\/}i
 
             in_scope_urls(homepage_res) do |url|
-              return @content_dir = Regexp.last_match[1] if url.match(pattern)
+              return @content_dir = Regexp.last_match[1] if url.match?(pattern)
             end
           end
 
@@ -75,7 +75,7 @@ module WPScan
             pattern     = %r{#{escaped_url}(.+?)\/(?:xmlrpc\.php|wp\-includes\/)}i
 
             in_scope_urls(homepage_res) do |url|
-              return @sub_dir = Regexp.last_match[1] if url.match(pattern)
+              return @sub_dir = Regexp.last_match[1] if url.match?(pattern)
             end
 
             @sub_dir = false
@@ -92,9 +92,9 @@ module WPScan
         def url(path = nil)
           return @uri.to_s unless path
 
-          if path =~ %r{wp\-content/plugins}i
+          if path.match?(%r{wp\-content/plugins}i)
             path.gsub!('wp-content/plugins', plugins_dir)
-          elsif path =~ /wp\-content/i
+          elsif path.match?(/wp\-content/i)
             path.gsub!('wp-content', content_dir)
           elsif path[0] != '/' && sub_dir
             path = "#{sub_dir}/#{path}"

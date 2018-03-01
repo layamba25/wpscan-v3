@@ -97,13 +97,13 @@ module WPScan
 
       # @param [ Typhoeus::Response ] response
       def output_error(response)
-        return if response.body =~ /login_error/i
+        return if response.body.match?(/login_error/i)
 
         error = if response.timed_out?
                   'Request timed out.'
                 elsif response.code.zero?
                   "No response from remote server. WAF/IPS? (#{response.return_message})"
-                elsif response.code.to_s =~ /^50/
+                elsif response.code.to_s.match?(/^50/)
                   'Server error, try reducing the number of threads.'
                 else
                   "Unknown response received Code: #{response.code}\n Body: #{response.body}"
