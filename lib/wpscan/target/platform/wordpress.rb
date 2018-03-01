@@ -23,11 +23,11 @@ module WPScan
           # res = Browser.get(url)
 
           in_scope_urls(homepage_res) do |url|
-            return true if Addressable::URI.parse(url).path.match?(WORDPRESS_PATTERN)
+            return true if Addressable::URI.parse(url).path.match(WORDPRESS_PATTERN)
           end
 
           homepage_res.html.css('meta[name="generator"]').each do |node|
-            return true if node['content'].match?(/wordpress/i)
+            return true if node['content'] =~ /wordpress/i
           end
 
           return true unless comments_from_page(/wordpress/i, homepage_res).empty?
@@ -41,7 +41,7 @@ module WPScan
         end
 
         def wordpress_hosted?
-          uri.host.match?(/wordpress.com$/i) ? true : false
+          uri.host =~ /wordpress.com$/i ? true : false
         end
 
         # @param [ String ] username

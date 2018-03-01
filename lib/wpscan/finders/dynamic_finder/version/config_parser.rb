@@ -19,11 +19,13 @@ module WPScan
             parsers = ALLOWED_PARSERS.include?(self.class::PARSER) ? [self.class::PARSER] : ALLOWED_PARSERS
 
             parsers.each do |parser|
-              parsed = parser.respond_to?(:safe_load) ? parser.safe_load(body) : parser.load(body)
+              begin
+                parsed = parser.respond_to?(:safe_load) ? parser.safe_load(body) : parser.load(body)
 
-              return parsed if parsed.is_a?(Hash) || parsed.is_a?(Array)
-            rescue StandardError
-              next
+                return parsed if parsed.is_a?(Hash) || parsed.is_a?(Array)
+              rescue StandardError
+                next
+              end
             end
 
             nil # Make sure nil is returned in case none of the parsers managed to parse the body correctly

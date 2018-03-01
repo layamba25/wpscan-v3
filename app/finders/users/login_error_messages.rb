@@ -22,7 +22,7 @@ module WPScan
 
             return found if error.empty? # Protection plugin / error disabled
 
-            next unless error.match?(/The password you entered for the username|Incorrect Password/i)
+            next unless error =~ /The password you entered for the username|Incorrect Password/i
 
             found << WPScan::User.new(username, found_by: found_by, confidence: 100)
           end

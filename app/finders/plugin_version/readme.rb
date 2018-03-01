@@ -48,7 +48,7 @@ module WPScan
 
           number = Regexp.last_match[1]
 
-          number if number.match?(/[0-9]+/)
+          number if number =~ /[0-9]+/
         end
 
         # @param [ String ] body
@@ -64,9 +64,11 @@ module WPScan
           extracted_versions = extracted_versions.select { |x| x =~ /[0-9]+/ }
 
           sorted = extracted_versions.sort do |x, y|
-            Gem::Version.new(x) <=> Gem::Version.new(y)
-          rescue StandardError
-            0
+            begin
+              Gem::Version.new(x) <=> Gem::Version.new(y)
+            rescue StandardError
+              0
+            end
           end
 
           sorted.last
