@@ -28,7 +28,9 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
   configs.each do |finder_class, config|
     finder_super_class = config['class'] ? config['class'] : finder_class
 
-    describe df_tested_class_constant('PluginVersion', finder_class, slug) do
+    # The QueryParameter specs are slow given the huge fixture file
+    # If someone find a fix for that, please share!
+    describe df_tested_class_constant('PluginVersion', finder_class, slug), slow: true do
       subject(:finder) { described_class.new(plugin) }
       let(:plugin)     { WPScan::Plugin.new(slug, target) }
       let(:target)     { WPScan::Target.new('http://wp.lab/') }
@@ -44,7 +46,7 @@ WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, confi
 
       let(:stubbed_response) { { body: 'aa' } }
 
-      describe '#passive' do
+      describe '#passive', slow: true do
         before do
           stub_request(:get, target.url).to_return(stubbed_response)
 
