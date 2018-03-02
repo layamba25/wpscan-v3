@@ -48,6 +48,8 @@ module WPScan
       end
 
       def before_scan
+        @last_update = local_db.last_update
+
         maybe_output_banner_help_and_version # From CMS Scanner
 
         update_db if update_db_required?
