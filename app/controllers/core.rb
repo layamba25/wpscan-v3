@@ -4,14 +4,16 @@ module WPScan
     class Core < CMSScanner::Controller::Core
       # @return [ Array<OptParseValidator::Opt> ]
       def cli_options
-        [OptURL.new(['--url URL', 'The URL of the blog to scan'], required_unless: :update, default_protocol: 'http')] +
+        [OptURL.new(['--url URL', 'The URL of the blog to scan'],
+                    required_unless: %i[update help version], default_protocol: 'http')] +
           super.drop(1) + # delete the --url from CMSScanner
           [
             OptChoice.new(['--server SERVER', 'Force the supplied server module to be loaded'],
                           choices: %w[apache iis nginx],
                           normalize: %i[downcase to_sym]),
             OptBoolean.new(['--force', 'Do not check if the target is running WordPress']),
-            OptBoolean.new(['--[no-]update', 'Wether or not to update the Database'], required_unless: :url)
+            OptBoolean.new(['--[no-]update', 'Wether or not to update the Database'],
+                           required_unless: %i[url help version])
           ]
       end
 
@@ -46,7 +48,9 @@ module WPScan
       end
 
       def before_scan
-        output('banner') unless parsed_options[:banner] == false
+        @last_update = local_db.last_update
+
+        maybe_output_banner_help_and_version # From CMS Scanner
 
         update_db if update_db_required?
         setup_cache

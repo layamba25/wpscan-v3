@@ -22,7 +22,7 @@ describe WPScan::Controller::Core do
 
       # Ensures the :url is the first one and is correctly setup
       expect(cli_options.first.to_sym).to eql :url
-      expect(cli_options.first.required_unless).to eql [:update]
+      expect(cli_options.first.required_unless).to match_array %i[update help version]
     end
   end
 
