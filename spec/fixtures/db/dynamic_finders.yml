@@ -736,6 +736,12 @@ plugins:
       path: languages/itt_testimonial_textdomain-en_US.po
       pattern: !ruby/regexp /Version:\ iThemeland Testimonial For WP v(?<v>\d+\.[\.\d]+)/i
       version: true
+  advanced-testimonials:
+    QueryParameter:
+      files:
+      - public/css/advanced-testimonial-public.css
+      - public/js/advanced-testimonial-public.js
+      version: true
   advanced-theme-search:
     QueryParameter:
       files:
@@ -857,6 +863,11 @@ plugins:
     QueryParameter:
       files:
       - "/assets/css/ajaxd.css"
+      version: true
+  ajax-filter-posts:
+    QueryParameter:
+      files:
+      - assets/js/ajax-filter-posts.js
       version: true
   ajax-load-more-by-bkker-theme:
     QueryParameter:
@@ -2080,6 +2091,12 @@ plugins:
       - includes/js/biblefox-blog.js
       - includes/js/jquery-qtip/jquery.qtip-1.0.0-rc3-custom.min.js
       - includes/js/tooltips.js
+      version: true
+  bigly-dropship:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   billbee-auftragsabwicklung-warenwirtschaft-automatisierung:
     QueryParameter:
@@ -4377,6 +4394,12 @@ plugins:
       files:
       - js/cookieok.min.js
       version: true
+  cookie-optin-interface:
+    QueryParameter:
+      files:
+      - public/css/coii-public.css
+      - public/js/coii-public.js
+      version: true
   cookiebar:
     QueryParameter:
       files:
@@ -4596,6 +4619,12 @@ plugins:
       path: assets/css/cs-visibility.min.css
       pattern: !ruby/regexp /Custom Sidebars \- v(?<v>\d+\.[\.\d]+)/i
       version: true
+  custom-template-learndash:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/custom-template-learndash.pot
+      pattern: !ruby/regexp '/\-Version: Custom Template for LearnDash (?<v>\d+\.[\.\d]+)/i'
+      version: true
   custom-template-lifterlms:
     TranslationFile:
       class: BodyPattern
@@ -4730,6 +4759,11 @@ plugins:
       files:
       - assets/css/delightful-downloads.min.css
       version: true
+  delucks-seo:
+    Comment:
+      xpath: //comment()[contains(., "DELUCKS SEO Plugin")]
+      pattern: !ruby/regexp '/LUCKS SEO Plugin for WordPress Version: (?<v>\d+\.[\.\d]+)/i'
+      version: true
   demo-bar:
     TranslationFile:
       class: BodyPattern
@@ -4843,6 +4877,12 @@ plugins:
       files:
       - public/css/dispensary-age-verification-public.css
       - public/js/dispensary-age-verification-public.js
+      version: true
+  dispensary-tinctures:
+    QueryParameter:
+      files:
+      - public/css/wpd-tinctures-public.css
+      - public/js/wpd-tinctures-public.js
       version: true
   display-featured-image-genesis:
     TranslationFile:
@@ -5366,6 +5406,12 @@ plugins:
       files:
       - assets/css/edd-ajax-search.min.css
       - assets/js/edd-ajax-search.min.js
+      version: true
+  edd-card:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/edd-card.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: EDD Card (?<v>\d+\.[\.\d]+)/i'
       version: true
   edd-changelog:
     QueryParameter:
@@ -6300,6 +6346,12 @@ plugins:
       files:
       - public/css/pivotal-feedback-form-public.css
       - public/js/pivotal-feedback-form-public.js
+      version: true
+  feeds-of-twitter:
+    QueryParameter:
+      files:
+      - assets/css/gstw_vendors.min.css
+      - assets/css/gs-twitter-custom.css
       version: true
   feedweber:
     QueryParameter:
@@ -7637,6 +7689,11 @@ plugins:
     QueryParameter:
       files:
       - css/front.css
+      version: true
+  hello-bar-wp:
+    QueryParameter:
+      files:
+      - assets/js/frontend.js
       version: true
   helppress:
     QueryParameter:
@@ -9422,6 +9479,12 @@ plugins:
       files:
       - css/lp-style.css
       version: true
+  liquid-connect:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/liquid-connect-ja.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: liquid\-connect v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   listig:
     ComposerFile:
       class: ConfigParser
@@ -9682,6 +9745,18 @@ plugins:
       - assets/css/vendor/slick.css
       - assets/css/lsx-projects.css
       - assets/js/lsx-projects.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  lsx-team:
+    QueryParameter:
+      files:
+      - assets/css/vendor/slick.css
+      - assets/css/lsx-team.css
+      - assets/js/lsx-team.min.js
       version: true
     ComposerFile:
       class: ConfigParser
@@ -15420,6 +15495,7 @@ plugins:
     QueryParameter:
       files:
       - smart-overlay.js
+      - assets/smart-overlay.js
       version: true
   smart-post-like:
     QueryParameter:
@@ -16552,6 +16628,12 @@ plugins:
       - js/frontend.js
       - styles/teachpress_front.css
       version: true
+  team-members-for-elementor:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/team-members-for-elementor.pot
+      pattern: !ruby/regexp '/\-Id\-Version: Team Members for Elementor (?<v>\d+\.[\.\d]+)/i'
+      version: true
   team-view:
     QueryParameter:
       files:
@@ -16705,6 +16787,12 @@ plugins:
     QueryParameter:
       files:
       - js/main.js
+      version: true
+  thematic-maps:
+    QueryParameter:
+      files:
+      - public/css/thematic-maps-public.css
+      - public/js/thematic-maps-public.js
       version: true
   theme-junkie-custom-css:
     TranslationFile:
@@ -17312,6 +17400,15 @@ plugins:
       path: admin/framework/languages/bn_BD.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Codestar Framework (?<v>\d+\.[\.\d]+)/i
       version: true
+  ultimate-live-cricket-lite:
+    QueryParameter:
+      files:
+      - lib/bootstrap4/css/bootstrap.min.css
+      - css/style.css
+      - css/media-query.css
+      - lib/bootstrap4/js/bootstrap.min.js
+      - js/script.js
+      version: true
   ultimate-member:
     QueryParameter:
       files:
@@ -17399,6 +17496,12 @@ plugins:
     QueryParameter:
       files:
       - assets/css/style.min.css
+      version: true
+  ultimeter:
+    QueryParameter:
+      files:
+      - public/css/ultimeter-public.css
+      - public/js/ultimeter-public.js
       version: true
   um-plug:
     QueryParameter:
@@ -18632,6 +18735,11 @@ plugins:
       - engine/wonderpluginsliderskins.js
       - engine/wonderpluginslider.js
       version: true
+  wonderplugin-video-embed:
+    QueryParameter:
+      files:
+      - engine/wonderpluginvideoembed.js
+      version: true
   wonka-slide:
     QueryParameter:
       files:
@@ -19729,6 +19837,14 @@ plugins:
       path: languages/wp-cdnjs-reborn-fr_FR.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: WP CDNjs Reborn (?<v>\d+\.[\.\d]+)/i'
       version: true
+  wp-cfg-leaderboard:
+    QueryParameter:
+      files:
+      - js/jsgrid/jsgrid.min.css
+      - js/jsgrid/jsgrid-theme.min.css
+      - css/style.css
+      - js/jsgrid/jsgrid.min.js
+      version: true
   wp-child-theme-generator:
     TranslationFile:
       class: BodyPattern
@@ -19749,6 +19865,12 @@ plugins:
       - js/public.js
       - css/site.css
       - css/widget.css
+      version: true
+  wp-classifieds-listings:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-classifieds-listings.po
+      pattern: !ruby/regexp '/ect\-Id\-Version: WP Classifieds Listings (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-club-manager:
     QueryParameter:
@@ -21564,6 +21686,12 @@ plugins:
       path: languages/wp-to-weibo-zh_CN.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: (?<v>\d+\.[\.\d]+)/i'
       version: true
+  wp-tocjs:
+    QueryParameter:
+      files:
+      - assets/css/tocjs.css
+      - assets/js/tocjs.min.js
+      version: true
   wp-tooltips:
     QueryParameter:
       files:
@@ -21814,6 +21942,12 @@ plugins:
     QueryParameter:
       files:
       - css/main.css
+      version: true
+  wpb-floating-menu-or-categories:
+    QueryParameter:
+      files:
+      - assets/css/main.css
+      - assets/js/main.js
       version: true
   wpb-image-widget:
     QueryParameter:
