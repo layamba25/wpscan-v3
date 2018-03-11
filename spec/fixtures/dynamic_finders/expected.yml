@@ -2190,6 +2190,12 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/background-music-player-lite/languages/plugin-name.pot,
         Match: ''Project-Id-Version: TODO 1.0.0'''
+  backupbuddy:
+    HistoryLog:
+      number: 7.0.5.0
+      found_by: History Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/backupbuddy/history.txt, Match: ''7.0.5.0 - 2016-03-04'''
   bad-behavior:
     Comment:
       number: 2.2.20

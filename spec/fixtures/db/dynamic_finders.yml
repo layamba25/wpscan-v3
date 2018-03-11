@@ -1763,6 +1763,12 @@ plugins:
       path: languages/plugin-name.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ TODO (?<v>\d+\.[\.\d]+)/i
       version: true
+  backupbuddy:
+    HistoryLog:
+      class: BodyPattern
+      path: history.txt
+      pattern: !ruby/regexp /^(?<v>\d+\.[\.\d]+) \- [\d\-]+(?!.*\d+\.[\.\d]+ \- [\d\-]+)/mi
+      version: true
   bad-behavior:
     Comment:
       xpath: //comment()[contains(., "Bad Behavior")]
