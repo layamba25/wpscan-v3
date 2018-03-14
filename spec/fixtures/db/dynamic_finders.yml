@@ -7450,10 +7450,250 @@ plugins:
       - gravity-forms-reset-button.js
       version: true
   gravityforms:
-    Changelog:
+    ChangeLog:
       path: change_log.txt
       class: BodyPattern
       pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+    QueryParameter:
+      files:
+      - css/formreset.min.css
+      - css/formsmain.min.css
+      - css/readyclass.min.css
+      - css/browsers.min.css
+      - js/jquery.json.min.js
+      - js/gravityforms.min.js
+      - js/conditional_logic.min.js
+      - js/placeholders.jquery.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/gravityforms.pot
+      pattern: !ruby/regexp /Project\-Id\-Version:\ Gravity Forms (?<v>\d+\.[\.\d]+)/i
+  gravityformsactivecampaign:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsagilecrm:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsauthorizenet:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  gravityformsaweber:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformsbatchbook:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsbreeze:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformscampaignmonitor:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformscampfire:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformscapsulecrm:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformscleverreach:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformscoupons:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformsdropbox:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformsemma:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformsfreshbooks:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformsgetresponse:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformshelpscout:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformshighrise:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformshipchat:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsicontact:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsmadmimi:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsmailchimp:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformspartialentries:
+    QueryParameter:
+      files:
+      - js/partial-entries.js
+      - js/partial-entries.min.js
+      version: true
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformspaypal:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformspaypalpaymentspro:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformspaypalpro:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  gravityformspolls:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  gravityformsquiz:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  gravityformssignature:
+    QueryParameter:
+      files:
+      - includes/super_signature/ss.js
+      version: true
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  gravityformsslack:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformsstripe:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformssurvey:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformstrello:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
+      version: true
+  gravityformstwilio:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformsuserregistration:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformszapier:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /\# (?<v>\d+\.[\.\d]+) \| [\d\-]{10}/
+      version: true
+  gravityformszohocrm:
+    ChangeLog:
+      class: BodyPattern
+      path: change_log.txt
+      pattern: !ruby/regexp /(?<v>\d+\.[\.\d]+)/
       version: true
   greedycoupon:
     QueryParameter:

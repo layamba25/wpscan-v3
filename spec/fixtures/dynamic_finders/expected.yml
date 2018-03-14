@@ -9289,12 +9289,295 @@ plugins:
       - http://wp.lab/wp-content/plugins/gravity-forms-reset-button/gravity-forms-reset-button.js?ver=1.0
       confidence: 10
   gravityforms:
-    Changelog:
+    ChangeLog:
       number: 2.2.5.5
-      found_by: Changelog (Aggressive Detection)
+      found_by: Change Log (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/gravityforms/change_log.txt, Match: ''Version
         2.2.5.5'''
+    QueryParameter:
+      number: 2.2.5.5
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.2.5.5
+      - http://wp.lab/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.2.5.5
+      confidence: 80
+    TranslationFile:
+      number: 2.2.6.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'https://wp.lab/wp-content/plugins/gravityforms/languages/gravityforms.pot,
+        Match: ''Project-Id-Version: Gravity Forms 2.2.6.1'''
+  gravityformsactivecampaign:
+    ChangeLog:
+      number: 1.4.4
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsactivecampaign/change_log.txt,
+        Match: ''1.4.4'''
+  gravityformsagilecrm:
+    ChangeLog:
+      number: 1.1.3
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsagilecrm/change_log.txt, Match:
+        ''1.1.3'''
+  gravityformsauthorizenet:
+    ChangeLog:
+      number: 2.4.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsauthorizenet/change_log.txt, Match:
+        ''Version 2.4.2'''
+  gravityformsaweber:
+    ChangeLog:
+      number: 2.6.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsaweber/change_log.txt, Match:
+        ''# 2.6.1 | 2018-01-23'''
+  gravityformsbatchbook:
+    ChangeLog:
+      number: 1.2.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsbatchbook/change_log.txt, Match:
+        ''1.2.2'''
+  gravityformsbreeze:
+    ChangeLog:
+      number: 1.2.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsbreeze/change_log.txt, Match:
+        ''1.2.1'''
+  gravityformscampaignmonitor:
+    ChangeLog:
+      number: 3.6.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformscampaignmonitor/change_log.txt,
+        Match: ''# 3.6.2 | 2018-02-06'''
+  gravityformscampfire:
+    ChangeLog:
+      number: 1.2.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformscampfire/change_log.txt, Match:
+        ''# 1.2.1 | 2018-01-30'''
+  gravityformscapsulecrm:
+    ChangeLog:
+      number: 1.2.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformscapsulecrm/change_log.txt, Match:
+        ''1.2.1'''
+  gravityformscleverreach:
+    ChangeLog:
+      number: 1.3.5
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformscleverreach/change_log.txt, Match:
+        ''1.3.5'''
+  gravityformscoupons:
+    ChangeLog:
+      number: 2.6.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformscoupons/change_log.txt, Match:
+        ''# 2.6.2 | 2018-01-30'''
+  gravityformsdropbox:
+    ChangeLog:
+      number: 2.0.5
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsdropbox/change_log.txt, Match:
+        ''# 2.0.5 | 2018-02-05'''
+  gravityformsemma:
+    ChangeLog:
+      number: 1.2.3
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsemma/change_log.txt, Match: ''#
+        1.2.3 | 2018-02-21'''
+  gravityformsfreshbooks:
+    ChangeLog:
+      number: 2.5.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsfreshbooks/change_log.txt, Match:
+        ''# 2.5.2 | 2018-01-23'''
+  gravityformsgetresponse:
+    ChangeLog:
+      number: 1.1.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsgetresponse/change_log.txt, Match:
+        ''1.1.2'''
+  gravityformshelpscout:
+    ChangeLog:
+      number: 1.4.5
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformshelpscout/change_log.txt, Match:
+        ''# 1.4.5 | 2018-02-05'''
+  gravityformshighrise:
+    ChangeLog:
+      number: 1.2.3
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformshighrise/change_log.txt, Match:
+        ''# 1.2.3 | 2018-02-05'''
+  gravityformshipchat:
+    ChangeLog:
+      number: 1.1.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformshipchat/change_log.txt, Match:
+        ''1.1.2'''
+  gravityformsicontact:
+    ChangeLog:
+      number: 1.2.5
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsicontact/change_log.txt, Match:
+        ''1.2.5'''
+  gravityformsmadmimi:
+    ChangeLog:
+      number: 1.1.3
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsmadmimi/change_log.txt, Match:
+        ''1.1.3'''
+  gravityformsmailchimp:
+    ChangeLog:
+      number: 4.2.6
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsmailchimp/change_log.txt, Match:
+        ''4.2.6 | 2018-02-23'''
+  gravityformspartialentries:
+    QueryParameter:
+      number: 1.1.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gravityformspartialentries/js/partial-entries.js?ver=1.1.1
+      - http://wp.lab/wp-content/plugins/gravityformspartialentries/js/partial-entries.min.js?ver=1.1.1
+      confidence: 20
+    ChangeLog:
+      number: 1.1.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformspartialentries/change_log.txt,
+        Match: ''# 1.1.1 | 2018-02-22'''
+  gravityformspaypal:
+    ChangeLog:
+      number: 2.9.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformspaypal/change_log.txt, Match:
+        ''Version 2.9.1'''
+  gravityformspaypalpaymentspro:
+    ChangeLog:
+      number: 2.3.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformspaypalpaymentspro/change_log.txt,
+        Match: ''# 2.3.1 | 2018-01-31'''
+  gravityformspaypalpro:
+    ChangeLog:
+      number: 1.8.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformspaypalpro/change_log.txt, Match:
+        ''Version 1.8.1'''
+  gravityformspolls:
+    ChangeLog:
+      number: 3.1.4
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformspolls/change_log.txt, Match: ''Version
+        3.1.4'''
+  gravityformsquiz:
+    ChangeLog:
+      number: 3.1.7
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsquiz/change_log.txt, Match: ''Version
+        3.1.7'''
+  gravityformssignature:
+    QueryParameter:
+      number: 3.4.1
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/gravityformssignature/includes/super_signature/ss.js?ver=3.4.1
+      confidence: 10
+    ChangeLog:
+      number: 3.4.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformssignature/change_log.txt, Match:
+        ''Version 3.4.1'''
+  gravityformsslack:
+    ChangeLog:
+      number: 1.7.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsslack/change_log.txt, Match: ''1.7.2'''
+  gravityformsstripe:
+    ChangeLog:
+      number: 2.4.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsstripe/change_log.txt, Match:
+        ''# 2.4.1 | 2018-02-13'''
+  gravityformssurvey:
+    ChangeLog:
+      number: 3.2.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformssurvey/change_log.txt, Match:
+        ''# 3.2.2 | 2018-01-31'''
+  gravityformstrello:
+    ChangeLog:
+      number: 1.2.2
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformstrello/change_log.txt, Match:
+        ''1.2.2'''
+  gravityformstwilio:
+    ChangeLog:
+      number: 2.4.4
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformstwilio/change_log.txt, Match:
+        ''# 2.4.4 | 2018-01-31'''
+  gravityformsuserregistration:
+    ChangeLog:
+      number: 3.9.1
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformsuserregistration/change_log.txt,
+        Match: ''# 3.9.1 | 2018-02-02'''
+  gravityformszapier:
+    ChangeLog:
+      number: 2.1.5
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformszapier/change_log.txt, Match:
+        ''# 2.1.5 | 2018-01-31'''
+  gravityformszohocrm:
+    ChangeLog:
+      number: 1.4.10
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gravityformszohocrm/change_log.txt, Match:
+        ''1.4.10'''
   greedycoupon:
     QueryParameter:
       number: 1.0.4
