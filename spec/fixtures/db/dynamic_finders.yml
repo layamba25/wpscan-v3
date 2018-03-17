@@ -804,6 +804,11 @@ plugins:
       path: package.json
       key: version
       version: true
+  afs-analytics-for-woocommerce:
+    Comment:
+      xpath: //comment()[contains(., "FS Analytic")]
+      pattern: !ruby/regexp /FS Analytic  V7\- Plugin for WooCommerce (?<v>\d+\.[\.\d]+)/i
+      version: true
   age-gate:
     QueryParameter:
       files:
@@ -1322,6 +1327,12 @@ plugins:
       - public/assets/js/public.js
       - public/assets/js/libs/jquery.darktooltip.min.js
       - public/assets/js/libs/js.cookie.js
+      version: true
+  armember-membership:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ARMember-en_US.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: ARMember Lite v(?<v>\d+\.[\.\d]+)/i'
       version: true
   arrange-multisite-order:
     QueryParameter:
@@ -3994,6 +4005,16 @@ plugins:
       files:
       - codecolorer.css
       version: true
+  codeincept-portfolio:
+    QueryParameter:
+      files:
+      - public/css/slick.css
+      - public/css/slick-theme.css
+      - public/css/font-awesome.min.css
+      - public/css/advanced-portfolio-public.css
+      - public/js/isotope.min.js
+      - public/js/advanced-portfolio-public.js
+      version: true
   codeprey-mi-video-popup:
     QueryParameter:
       files:
@@ -5492,6 +5513,11 @@ plugins:
       path: languages/editorial-access-manager.pot
       pattern: !ruby/regexp /ct\-Id\-Version:\ Editorial Access Manager (?<v>\d+\.[\.\d]+)/i
       version: true
+  edublogify-contact-form:
+    QueryParameter:
+      files:
+      - public/css/mystyle.css
+      version: true
   educator:
     QueryParameter:
       files:
@@ -5821,6 +5847,12 @@ plugins:
       class: ConfigParser
       path: package-lock.json
       key: version
+      version: true
+  erp-pdf-invoice:
+    TranslationFile:
+      class: BodyPattern
+      path: i18n/languages/wp-erp-pdf.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: WP ERP \- PDF Invoice (?<v>\d+\.[\.\d]+)/i'
       version: true
   eshop-shipping-extension:
     QueryParameter:
@@ -6929,6 +6961,18 @@ plugins:
       - public/js/gdpr-public.js
       - includes/js/gdpr-common.js
       version: true
+  gdpr-personal-data-reports:
+    QueryParameter:
+      files:
+      - public/css/gdpr-personal-data-reports-public.css
+      - public/js/gdpr-personal-data-reports-public.js
+      version: true
+  gdpr-tools:
+    QueryParameter:
+      files:
+      - public/css/gdpr-tools-public.css
+      - public/js/gdpr-tools-public.js
+      version: true
   geneanet-embedded-individual:
     QueryParameter:
       files:
@@ -7795,6 +7839,12 @@ plugins:
       - gswps-files/assets/js/owl.carousel.min.js
       - gswps-files/assets/js/gswps.custom.js
       - gswps-files/assets/js/modernizr.custom.js
+      version: true
+  gs-youtube-gallery:
+    QueryParameter:
+      files:
+      - gs-youtubegalleries-files/assets/css/gs_youtubegalleries_custom_bootstrap.css
+      - gs-youtubegalleries-files/assets/css/gs_youtubegalleries_custom.css
       version: true
   gspeech:
     QueryParameter:
@@ -9985,12 +10035,35 @@ plugins:
       files:
       - lowermedia.sticky.min.js
       version: true
+  lsx-banners:
+    QueryParameter:
+      files:
+      - assets/css/lsx-banners.css
+      - assets/js/vendor/jquery.touchSwipe.min.js
+      - assets/js/lsx-banners.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   lsx-projects:
     QueryParameter:
       files:
       - assets/css/vendor/slick.css
       - assets/css/lsx-projects.css
       - assets/js/lsx-projects.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  lsx-sharing:
+    QueryParameter:
+      files:
+      - assets/css/lsx-sharing.css
+      - assets/js/lsx-sharing.min.js
       version: true
     ComposerFile:
       class: ConfigParser
@@ -11643,6 +11716,12 @@ plugins:
       files:
       - public/css/nutritionwp-public.css
       version: true
+  nuttifox-support:
+    QueryParameter:
+      files:
+      - public/css/nuttifox-support-public.css
+      - public/js/nuttifox-support-public.js
+      version: true
   nwa:
     QueryParameter:
       files:
@@ -13016,6 +13095,19 @@ plugins:
       path: composer.json
       key: version
       version: true
+  press-events:
+    QueryParameter:
+      files:
+      - assets/css/magnific-popup/magnific-popup.css
+      - assets/css/press-events.css
+      - assets/css/menu.css
+      - assets/js/frontend/press-events.min.js
+      version: true
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content[contains(., "Press Events")]
+      version: true
+      pattern: !ruby/regexp /Press Events (?<v>\d+\.[\.\d]+)/i
   press-tube:
     TranslationFile:
       class: BodyPattern
@@ -13449,6 +13541,11 @@ plugins:
       path: languages/qstomizer-es_ES.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: Qstomizer v(?<v>\d+\.[\.\d]+)/i'
       version: true
+  quadmenu:
+    QueryParameter:
+      files:
+      - assets/frontend/js/quadmenu.min.js
+      version: true
   quae-map:
     TranslationFile:
       class: BodyPattern
@@ -13720,6 +13817,11 @@ plugins:
       files:
       - assets/css/frontend.css
       - assets/js/frontend.js
+      version: true
+  recent-posts-widget-designer:
+    QueryParameter:
+      files:
+      - assets/css/recent-post-widget-style.css
       version: true
   recent-shots-widget:
     QueryParameter:
@@ -16626,6 +16728,12 @@ plugins:
       files:
       - js/sv-sticky-menu.min.js
       version: true
+  svg-map-by-saedi:
+    QueryParameter:
+      files:
+      - public/css/svg-map-by-saedi-public.css
+      - public/js/svg-map-by-saedi-public.js
+      version: true
   swa-alexa:
     TranslationFile:
       class: BodyPattern
@@ -18262,6 +18370,12 @@ plugins:
       - scripts/ubivox.public.js
       - libs/jquery.cookie.js
       version: true
+  vvbc-in-store-product-categories:
+    QueryParameter:
+      files:
+      - public/css/vvbc-in-store-product-categories-public.css
+      - public/js/vvbc-in-store-product-categories-public.js
+      version: true
   vzaar-media-management:
     MetaTag:
       class: Xpath
@@ -18453,6 +18567,12 @@ plugins:
       files:
       - public/css/wc-trinicargo-shipping-public.css
       - public/js/wc-trinicargo-shipping-public.js
+      version: true
+  wc-victoriabank:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wc-victoriabank.pot
+      pattern: !ruby/regexp /ooCommerce VictoriaBank Payment Gateway (?<v>\d+\.[\.\d]+)/i
       version: true
   wcsociality:
     QueryParameter:
@@ -18853,6 +18973,11 @@ plugins:
       path: languages/jetpack-es_ES.po
       pattern: !ruby/regexp /\# Translation of (?<v>\d+\.[\.\d]+)/i
       version: true
+  widgets-bundle:
+    QueryParameter:
+      files:
+      - framework/public/css/public.css
+      version: true
   widgets-for-siteorigin:
     QueryParameter:
       files:
@@ -19041,6 +19166,12 @@ plugins:
       files:
       - assets/js/frontend.js
       version: true
+  woo-boxberry-integration:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/boxberry-ru_RU.po
+      pattern: !ruby/regexp '/ct\-Id\-Version: Boxberry for WooCommerce (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woo-braintree-payment:
     QueryParameter:
       files:
@@ -19209,6 +19340,12 @@ plugins:
     QueryParameter:
       files:
       - assets/css/style.css
+      version: true
+  woo-refund-and-exchange-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-refund-and-exchange-lite-en_US.po
+      pattern: !ruby/regexp '/ion: WooCommerce Refund & Exchange Lite\-(?<v>\d+\.[\.\d]+)/i'
       version: true
   woo-responsive-product-category:
     QueryParameter:
@@ -19672,6 +19809,11 @@ plugins:
       class: BodyPattern
       path: languages/wootheme-testimonials-to-testimonials.pot
       pattern: !ruby/regexp /WooTheme Testimonials Migrator (?<v>\d+\.[\.\d]+)/i
+      version: true
+  word-balloon:
+    QueryParameter:
+      files:
+      - css/word_balloon_user.css
       version: true
   word-switcher:
     QueryParameter:
@@ -21380,6 +21522,17 @@ plugins:
       path: languages/wp-random-post-inside-bn_BD.po
       pattern: !ruby/regexp '/oject\-Id\-Version: WP Random Post Inside (?<v>\d+\.[\.\d]+)/i'
       version: true
+  wp-recall:
+    QueryParameter:
+      files:
+      - assets/js/core.js
+      - assets/js/scripts.js
+      - add-on/rating-system/js/scripts.js
+      - add-on/feed/js/scripts.js
+      - add-on/publicpost/js/scripts.js
+      - add-on/rcl-chat/js/ion.sound.min.js
+      - add-on/rcl-chat/js/scripts.js
+      version: true
   wp-recaptcha-appsaur:
     QueryParameter:
       files:
@@ -21453,6 +21606,17 @@ plugins:
       files:
       - public/css/customizer-end-point-public.css
       - public/js/customizer-end-point-public.js
+      version: true
+  wp-restaurant-listings:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/wp-restaurant-listings.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-restaurant-listings.pot
+      pattern: !ruby/regexp '/ject\-Id\-Version: WP Restaurant Listings (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-restaurant-manager:
     MetaTag:
