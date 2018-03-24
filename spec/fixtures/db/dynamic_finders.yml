@@ -682,6 +682,7 @@ plugins:
     QueryParameter:
       files:
       - assets/awb/awb.css
+      - assets/awb/awb.min.css
       version: true
   advanced-cf7-db:
     QueryParameter:
@@ -2258,6 +2259,12 @@ plugins:
       files:
       - assets/css/slick.css
       - assets/css/bdpw-public.css
+      version: true
+  blog-designer-wp-post-and-widget:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/bdwpw-public.css
       version: true
   bloglovin-follow:
     TranslationFile:
@@ -6140,6 +6147,12 @@ plugins:
       path: languages/extensive-vc.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Extensive VC (?<v>\d+\.[\.\d]+)/i
       version: true
+  extra-privacy-for-elementor:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
+      version: true
   extraordinary-comments:
     QueryParameter:
       files:
@@ -7116,6 +7129,12 @@ plugins:
       - css/frontend.css
       - js/price-display-helpers.js
       - js/main.gpc.js
+      version: true
+  getdeals:
+    QueryParameter:
+      files:
+      - public/js/unserialize.js
+      - public/js/getdeals.js
       version: true
   getmecooking-recipe-template:
     QueryParameter:
@@ -10082,6 +10101,13 @@ plugins:
       path: package.json
       key: version
       version: true
+  lsx-testimonials:
+    QueryParameter:
+      files:
+      - assets/css/vendor/slick.css
+      - assets/css/lsx-testimonials.css
+      - assets/js/lsx-testimonials.min.js
+      version: true
   ltd-tickets:
     QueryParameter:
       files:
@@ -10563,6 +10589,12 @@ plugins:
       class: BodyPattern
       path: languages/medium.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Medium (?<v>\d+\.[\.\d]+)/i
+      version: true
+  mega-store-companion:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/mega-store-companion.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: Mega Store Companion (?<v>\d+\.[\.\d]+)/i'
       version: true
   megamenu:
     QueryParameter:
@@ -13853,6 +13885,12 @@ plugins:
       files:
       - stylesheets/recipecan.css
       - stylesheets/print.css
+      version: true
+  recombee-recommendation-engine:
+    TranslationFile:
+      class: BodyPattern
+      path: includes/assets/languages/menu-page-ru_RU.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Listable (?<v>\d+\.[\.\d]+)/i'
       version: true
   recommender:
     ComposerFile:
@@ -17428,6 +17466,25 @@ plugins:
       - assets/js/jquery.mCustomScrollbar.concat.min.js
       - assets/js/jquery.colorbox.js
       version: true
+  tour-operator-search:
+    QueryParameter:
+      files:
+      - assets/css/to-search.css
+      - assets/js/vendor/jquery.touchSwipe.min.js
+      - assets/js/vendor/jquery.slideandswipe.min.js
+      - assets/js/to-search.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  tour-operator-team:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   tp-travel-package:
     TranslationFile:
       class: BodyPattern
@@ -17525,6 +17582,12 @@ plugins:
     Comment:
       xpath: //comment()[contains(., "TrendMD")]
       pattern: !ruby/regexp /TrendMD v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  triggerbee:
+    QueryParameter:
+      files:
+      - src/triggerbee.js
+      - src/triggerbee_forms.js
       version: true
   tripadvisor-stream:
     QueryParameter:
@@ -19184,6 +19247,12 @@ plugins:
       path: i18n/languages/woo-category-slider.pot
       pattern: !ruby/regexp '/Project\-Id\-Version: Woo Category Slider (?<v>\d+\.[\.\d]+)/i'
       version: true
+  woo-correios-calculo-de-frete-na-pagina-do-produto:
+    QueryParameter:
+      files:
+      - public/css/woocommerce-correios-calculo-de-frete-na-pagina-do-produto-public.css
+      - public/js/woocommerce-correios-calculo-de-frete-na-pagina-do-produto-public.js
+      version: true
   woo-delivery-scheduler:
     QueryParameter:
       files:
@@ -19976,6 +20045,20 @@ plugins:
       path: languages/wow_armory_character.pot
       pattern: !ruby/regexp '/roject\-Id\-Version: WoW Armory Character (?<v>\d+\.[\.\d]+)/i'
       version: true
+  wowquestionnaire:
+    QueryParameter:
+      files:
+      - public/vendor/font-awesome/css/font-awesome.min.css
+      - public/vendor/sweetalert2/sweetalert2.min.css
+      - public/vendor/int-tel-input/css/intlTelInput.css
+      - public/css/wow-questionnaire-public.min.css
+      - public/vendor/sweetalert2/sweetalert2.min.js
+      - public/vendor/detectmobilebrowser.js
+      - public/vendor/int-tel-input/js/intlTelInput.min.js
+      - public/vendor/radialIndicator/radialIndicator.min.js
+      - public/vendor/maonster/maonster.form.min.js
+      - public/js/wow-questionnaire-public.min.js
+      version: true
   wp-1-slider:
     QueryParameter:
       files:
@@ -20162,6 +20245,12 @@ plugins:
       - js/owl.carousel.js
       - js/owl.carousel.1.js
       - js/wpbm-frontend.js
+      version: true
+  wp-bodymovin:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-bodymovin.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Bodymovin (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-bootstrap-carousel:
     QueryParameter:
@@ -21601,6 +21690,12 @@ plugins:
       - assets/css/slick.css
       - assets/css/recent-post-style.css
       version: true
+  wp-responsive-table:
+    QueryParameter:
+      files:
+      - public/css/wp-responsive-table-styles.css
+      - public/js/wp-responsive-table-public.js
+      version: true
   wp-rest-theme-mod-endpoint:
     QueryParameter:
       files:
@@ -23037,6 +23132,18 @@ plugins:
     QueryParameter:
       files:
       - assets/css/styles.css
+      version: true
+  zigaform-calculator-cost-estimation-form-builder-lite:
+    LinkInHomepage:
+      class: Xpath
+      xpath: //a[@title="Wordpress Calculator & Cost Estimation"]/@href
+      pattern: !ruby/regexp /https?:\/\/zigaform\.com/\?uifm_v=(?<v>\d+\.[\.\d]+)/i
+      version: true
+  zigaform-form-builder-lite:
+    LinkInHomepage:
+      class: Xpath
+      xpath: //a[@title="Wordpress Form Builder"]/@href
+      pattern: !ruby/regexp /https?:\/\/zigaform\.com/\?uifm_v=(?<v>\d+\.[\.\d]+)/i
       version: true
   ziyarat-ashura:
     QueryParameter:
