@@ -2307,6 +2307,15 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/bb-header-footer/languages/bb-header-footer.pot,
         Match: ''d-Version: Beaver Builder Header Footer 1.1.6'''
+  bb-plugin:
+    QueryParameter:
+      number: 2.0.6.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/bb-plugin/css/jquery.bxslider.css?ver=2.0.6.3
+      - http://wp.lab/wp-content/plugins/bb-plugin/js/jquery.bxslider.js?ver=2.0.6.3
+      - http://wp.lab/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.0.6.3
+      - http://wp.lab/wp-content/plugins/bb-plugin/js/jquery.imagesloaded.min.js?ver=2.0.6.3
   bbpress:
     QueryParameter:
       number: 2.5.14
