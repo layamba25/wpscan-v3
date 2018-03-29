@@ -35,7 +35,7 @@ module WPScan
         return target.users unless parsed_options[:usernames]
 
         parsed_options[:usernames].reduce([]) do |acc, elem|
-          acc << User.new(elem.chomp)
+          acc << CMSScanner::User.new(elem.chomp)
         end
       end
 

@@ -18,7 +18,7 @@ module WPScan
 
             next unless username
 
-            found << WPScan::User.new(
+            found << CMSScanner::User.new(
               username,
               id: id,
               found_by: format(found_by_msg, found_by),
@@ -76,7 +76,7 @@ module WPScan
         # @return [ String, nil ] The username found
         def username_from_response(res)
           # Permalink enabled
-          target.in_scope_urls(res, '//link|//a') do |url|
+          target.in_scope_urls(res, '//link/@href|//a/@href') do |url|
             username = username_from_author_url(url)
             return username if username
           end

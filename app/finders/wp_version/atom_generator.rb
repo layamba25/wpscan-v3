@@ -26,7 +26,7 @@ module WPScan
         end
 
         def passive_urls_xpath
-          '//link[@rel="alternate" and @type="application/atom+xml"]'
+          '//link[@rel="alternate" and @type="application/atom+xml"]/@href'
         end
 
         def aggressive_urls(_opts = {})

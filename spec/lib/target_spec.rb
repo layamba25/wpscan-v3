@@ -76,7 +76,7 @@ describe WPScan::Target do
 
     context 'when users' do
       before do
-        target.instance_variable_set(:@users, [WPScan::User.new('u1'), WPScan::User.new('u2')])
+        target.instance_variable_set(:@users, [CMSScanner::User.new('u1'), CMSScanner::User.new('u2')])
       end
 
       context 'when no passwords' do

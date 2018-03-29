@@ -37,9 +37,10 @@ module WPScan
 
         class WpItemQueryParameter < QueryParameter
           def xpath
-            @xpath ||= self.class::XPATH ||
-                       "//link[contains(@href,'#{target.plugins_dir}') or contains(@href,'#{target.themes_dir}')]|" \
-                       "//script[contains(@src,'#{target.plugins_dir}') or contains(@src,'#{target.themes_dir}')]"
+            @xpath ||=
+              self.class::XPATH ||
+              "//link[contains(@href,'#{target.plugins_dir}') or contains(@href,'#{target.themes_dir}')]/@href" \
+              "|//script[contains(@src,'#{target.plugins_dir}') or contains(@src,'#{target.themes_dir}')]/@src"
           end
 
           def path_pattern

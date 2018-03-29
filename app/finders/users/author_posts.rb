@@ -10,7 +10,7 @@ module WPScan
           found_by_msg = 'Author Posts - %s (Passive Detection)'
 
           usernames(opts).reduce([]) do |a, e|
-            a << WPScan::User.new(
+            a << CMSScanner::User.new(
               e[0],
               found_by: format(found_by_msg, e[1]),
               confidence: e[2]
@@ -43,7 +43,7 @@ module WPScan
         def potential_usernames(res)
           usernames = []
 
-          target.in_scope_urls(res, '//a', %w[href]) do |url, node|
+          target.in_scope_urls(res, '//a/@href') do |url, node|
             uri = Addressable::URI.parse(url)
 
             if uri.path =~ %r{/author/([^/\b]+)/?\z}i

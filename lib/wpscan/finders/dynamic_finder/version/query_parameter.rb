@@ -48,7 +48,7 @@ module WPScan
 
           # @return [ String ]
           def xpath
-            @xpath ||= self.class::XPATH || '//link[@href]|//script[@src]'
+            @xpath ||= self.class::XPATH || '//link[@href]/@href|//script[@src]/@src'
           end
 
           # @return [ Regexp ]

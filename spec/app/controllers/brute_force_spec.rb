@@ -33,7 +33,7 @@ describe WPScan::Controller::BruteForce do
 
       it 'returns an array with the users' do
         expected = %w[admin editor].reduce([]) do |a, e|
-          a << WPScan::User.new(e)
+          a << CMSScanner::User.new(e)
         end
 
         expect(controller.users).to eql expected

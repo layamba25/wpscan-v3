@@ -37,7 +37,7 @@ wordpress:
     version: true
   MostCommonWpIncludesQueryParameterInHomepage:
     class: QueryParameter
-    xpath: //link[contains(@href,"wp-includes/")]|//script[contains(@src,"wp-includes/")]
+    xpath: //link[contains(@href,"wp-includes/")]/@href|//script[contains(@src,"wp-includes/")]/@src
     files:
     - wp-includes/js/wp-embed.min.js
     - wp-includes/css/dashicons.min.css
@@ -46,7 +46,7 @@ wordpress:
     version: true
   CommonWpIncludesQueryParameterInHomepage:
     class: QueryParameter
-    xpath: //link[contains(@href,"wp-includes/")]|//script[contains(@src,"wp-includes/")]
+    xpath: //link[contains(@href,"wp-includes/")]/@href|//script[contains(@src,"wp-includes/")]/@src
     files:
     - wp-includes/css/buttons.min.css
     - wp-includes/css/admin-bar.min.css
@@ -69,7 +69,7 @@ wordpress:
   QueryParameterInInstallPage:
     class: QueryParameter
     path: wp-admin/install.php
-    xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]
+    xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]/@href
     files:
     - wp-includes/css/buttons.min.css
     - wp-includes/css/dashicons.min.css
@@ -79,7 +79,7 @@ wordpress:
   QueryParameterInUpgradePage:
     class: QueryParameter
     path: wp-admin/upgrade.php
-    xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]
+    xpath: //link[contains(@href,"wp-includes/css/") or contains(@href,"wp-admin/css/")]/@href
     files:
     - wp-includes/css/buttons.min.css
     - wp-admin/css/install.min.css
