@@ -5,7 +5,7 @@ shared_examples 'WordPress::CustomDirectories' do
   describe '#content_dir' do
     {
       default: 'wp-content', https: 'wp-content', custom_w_spaces: 'custom content spaces',
-      relative_one: 'wp-content', relative_two: 'wp-content'
+      relative_one: 'wp-content', relative_two: 'wp-content', cache: 'wp-content'
     }.each do |file, expected|
       it "returns #{expected} for #{file}.html" do
         fixture = File.join(fixtures, "#{file}.html")
