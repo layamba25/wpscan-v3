@@ -18,6 +18,11 @@ module WPScan
       false
     end
 
+    # @return [ XMLRPC, nil ]
+    def xmlrpc
+      @xmlrpc ||= interesting_findings&.select { |f| f.is_a?(WPScan::XMLRPC) }.first
+    end
+
     # @param [ Hash ] opts
     #
     # @return [ WpVersion, false ] The WpVersion found or false if not detected
