@@ -1,11 +1,12 @@
 module WPScan
   module Finders
     module Passwords
-      # Password attack against the XMLRPC interface with multicall method
+      # Password attack against the XMLRPC interface with the multicall method
       # WP < 4.4 is vulnerable to such attack
       class XMLRPCMulticall < CMSScanner::Finders::Finder
         # @param [ Array<User> ] users
         # @param [ Array<String> ] passwords
+        #
         # @return [ Typhoeus::Response ]
         def do_multi_call(users, passwords)
           methods = []
@@ -23,7 +24,7 @@ module WPScan
         # @param [ Array<String> ] passwords
         # @param [ Hash ] opts
         # @option opts [ Boolean ] :show_progression
-        # @option opts [ Integer ] :max_passwords
+        # @option opts [ Integer ] :multicall_max_passwords
         #
         # @yield [ CMSScanner::User ] When a valid combination is found
         #
@@ -32,7 +33,7 @@ module WPScan
         # rubocop:disable all
         def attack(users, passwords, opts = {})
           wordlist_index         = 0
-          max_passwords          = opts[:max_passwords] || 500
+          max_passwords          = opts[:multicall_max_passwords]
           current_passwords_size = passwords_size(max_passwords, users.size)
 
           create_progress_bar(total: (passwords.size / current_passwords_size.round(1)).ceil,
@@ -49,7 +50,7 @@ module WPScan
 
             progress_bar.increment
 
-            check_and_output_error(res)
+            check_and_output_errors(res)
 
             # Avoid to parse the response and iterate over all the structs in the document
             # if there isn't any tag matching a valid combination
@@ -87,7 +88,7 @@ module WPScan
           max_passwords / users_size
         end
 
-        def check_and_output_error(response)
+        def check_and_output_errors(response)
           progress_bar.log("Incorrect response: #{res.code} / #{res.return_message}") unless res.code == 200
 
           progress_bar.log('Parsing error, might be caused by a too high --max-passwords value (such as >= 2k)') if res.body =~ /parse error. not well formed/i

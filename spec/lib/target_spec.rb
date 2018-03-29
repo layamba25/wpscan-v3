@@ -6,6 +6,35 @@ describe WPScan::Target do
 
   it_behaves_like WPScan::Target::Platform::WordPress
 
+  describe 'xmlrpc' do
+    before do
+      allow(target).to receive(:sub_dir)
+
+      expect(target).to receive(:interesting_findings).and_return(interesting_findings)
+    end
+
+    context 'when no interesting_findings' do
+      let(:interesting_findings) { [] }
+
+      its(:xmlrpc) { should be_nil }
+    end
+
+    context 'when interesting_findings' do
+      let(:interesting_findings) { ['aa', CMSScanner::RobotsTxt.new(target.url)] }
+
+      context 'when no XMLRPC' do
+        its(:xmlrpc) { should be_nil }
+      end
+
+      context 'when XMLRPC' do
+        let(:xmlrpc) { WPScan::XMLRPC.new(target.url('xmlrpc.php')) }
+        let(:interesting_findings) { super() << xmlrpc }
+
+        its(:xmlrpc) { should eq xmlrpc }
+      end
+    end
+  end
+
   %i[wp_version main_theme plugins themes timthumbs config_backups medias users].each do |method|
     describe "##{method}" do
       before do

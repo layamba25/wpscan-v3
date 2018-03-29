@@ -16,7 +16,8 @@ describe WPScan::Controller::PasswordAttack do
     its(:cli_options) { should be_a Array }
 
     it 'contains to correct options' do
-      expect(controller.cli_options.map(&:to_sym)).to eq %i[passwords usernames]
+      expect(controller.cli_options.map(&:to_sym))
+        .to eq(%i[passwords usernames multicall_max_passwords password_attack])
     end
   end
 
@@ -54,6 +55,44 @@ describe WPScan::Controller::PasswordAttack do
   end
 
   describe '#attacker' do
-    xit
+    before do
+      expect(controller.target).to receive(:xmlrpc).and_return(xmlrpc)
+    end
+
+    context 'when --password-attack provided' do
+      let(:xmlrpc)   { WPScan::XMLRPC.new("#{target_url}/xmlrpc.php") }
+      let(:cli_args) { "#{super()} --password-attack #{attack}" }
+
+      context 'when wp-login' do
+        let(:attack) { 'wp-login' }
+
+        it 'returns the correct object' do
+          expect(controller.attacker).to be_a WPScan::Finders::Passwords::WpLogin
+          expect(controller.attacker.target).to be_a WPScan::Target
+        end
+      end
+
+      context 'when xmlrpc' do
+        let(:attack) { 'xmlrpc' }
+
+        it 'returns the correct object' do
+          expect(controller.attacker).to be_a WPScan::Finders::Passwords::XMLRPC
+          expect(controller.attacker.target).to be_a WPScan::XMLRPC
+        end
+      end
+
+      context 'when xmlrpc-multicall' do
+        let(:attack) { 'xmlrpc-multicall' }
+
+        it 'returns the correct object' do
+          expect(controller.attacker).to be_a WPScan::Finders::Passwords::XMLRPCMulticall
+          expect(controller.attacker.target).to be_a WPScan::XMLRPC
+        end
+      end
+    end
+
+    context 'when automatic detection' do
+      xit
+    end
   end
 end
