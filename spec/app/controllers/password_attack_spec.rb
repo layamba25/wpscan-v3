@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe WPScan::Controller::BruteForce do
+describe WPScan::Controller::PasswordAttack do
   subject(:controller) { described_class.new }
   let(:target_url)     { 'http://ex.lo/' }
   let(:parsed_options) { rspec_parsed_options(cli_args) }
@@ -45,19 +45,15 @@ describe WPScan::Controller::BruteForce do
     xit
   end
 
-  describe '#output_error' do
-    xit
-  end
-
   describe '#run' do
     context 'when no --passwords is supplied' do
-      it 'does not run the brute forcer' do
+      it 'does not run the attacker' do
         expect(controller.run).to eql nil
       end
     end
   end
 
-  describe '#brute_force' do
+  describe '#attacker' do
     xit
   end
 end

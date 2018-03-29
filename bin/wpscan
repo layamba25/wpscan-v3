@@ -9,7 +9,7 @@ WPScan::Scan.new do |s|
     WPScan::Controller::WpVersion.new <<
     WPScan::Controller::MainTheme.new <<
     WPScan::Controller::Enumeration.new <<
-    WPScan::Controller::BruteForce.new <<
+    WPScan::Controller::PasswordAttack.new <<
     WPScan::Controller::Aliases.new
 
   s.run

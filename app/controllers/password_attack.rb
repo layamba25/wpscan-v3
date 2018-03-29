@@ -1,16 +1,16 @@
 module WPScan
   module Controller
-    # Brute Force Controller
-    class BruteForce < CMSScanner::Controller::Base
+    # Password Attack Controller
+    class PasswordAttack < CMSScanner::Controller::Base
       def cli_options
         [
           OptFilePath.new(
             ['--passwords FILE-PATH', '-P',
-             'List of passwords to use during the brute forcing.',
-             'If no --username/s option supplied, user enumeration will be run'],
+             'List of passwords to use during the password attack.',
+             'If no --username/s option supplied, user enumeration will be run.'],
             exists: true
           ),
-          OptSmartList.new(['--usernames LIST', '-U', 'List of usernames to use during the brute forcing'])
+          OptSmartList.new(['--usernames LIST', '-U', 'List of usernames to use during the password attack.'])
         ]
       end
 
@@ -43,6 +43,7 @@ module WPScan
         xmlrpc = target.xmlrpc
 
         @attacker = if xmlrpc&.enabled? && xmlrpc.available_methods.include?('wp.getUsersBlogs')
+                      # TODO: if WP < 4.4, load the multicall
                       WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
                     else
                       WPScan::Finders::Passwords::WpLogin.new(target)
