@@ -1417,6 +1417,12 @@ plugins:
       - public/css/atlas-specialist.min.css
       - public/js/atlas-specialist.min.js
       version: true
+  atr-woo-global-price-options:
+    QueryParameter:
+      files:
+      - public/css/atr-woo-global-price-options-public.css
+      - public/js/atr-woo-global-price-options-public.js
+      version: true
   attachment-file-icons:
     TranslationFile:
       class: BodyPattern
@@ -4479,6 +4485,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  course-wizard-for-sensei:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   cpt-list:
     QueryParameter:
       files:
@@ -5086,6 +5098,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  easy-ad-picker:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/easyadpicker-nl_NL.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: millionare (?<v>\d+\.[\.\d]+)/i'
+      version: true
   easy-adsense-lite:
     Comment:
       xpath: //comment()[contains(., "AdSense")]
@@ -5537,6 +5555,12 @@ plugins:
     QueryParameter:
       files:
       - assets/public/css/base.css
+      version: true
+  efavourite-posts:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/efavourite-posts.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: EFavourite Posts (?<v>\d+\.[\.\d]+)/i'
       version: true
   effective-bio-boxes:
     QueryParameter:
@@ -6648,6 +6672,11 @@ plugins:
       path: languages/flush-opcache.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP OPcache (?<v>\d+\.[\.\d]+)/i
       version: true
+  fobi-chatbot:
+    QueryParameter:
+      files:
+      - public/js/embed.min.js
+      version: true
   folding-stats-plus:
     TranslationFile:
       class: BodyPattern
@@ -6981,6 +7010,14 @@ plugins:
       - public/css/gdpr-public.css
       - public/js/gdpr-public.js
       - includes/js/gdpr-common.js
+      - assets/css/gdpr-public.css
+      - assets/js/gdpr-public.js
+      version: true
+  gdpr-compliance:
+    QueryParameter:
+      files:
+      - public/css/gdpr-compliance-public.css
+      - public/js/gdpr-compliance-public.js
       version: true
   gdpr-personal-data-reports:
     QueryParameter:
@@ -7171,6 +7208,13 @@ plugins:
     QueryParameter:
       files:
       - public/js/gifload-public.js
+      version: true
+  gift-voucher:
+    QueryParameter:
+      files:
+      - assets/js/jquery.validate.min.js
+      - assets/js/jquery.steps.min.js
+      - assets/js/voucher-script.js
       version: true
   gigpress:
     Comment:
@@ -8643,6 +8687,12 @@ plugins:
       files:
       - public/js/fitvids-fluid-video-public.js
       version: true
+  instant-annotation:
+    QueryParameter:
+      files:
+      - public/css/ia-public.css
+      - public/js/ia-public.js
+      version: true
   instant-weekly-roundup:
     QueryParameter:
       files:
@@ -9440,6 +9490,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  kuroneko-pay:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
+      version: true
   kvl-localization:
     QueryParameter:
       files:
@@ -9690,6 +9746,12 @@ plugins:
       files:
       - js/lri.js
       - js/jquery.touchSwipe.min.js
+      version: true
+  lightning-publisher:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   lightview-plus:
     QueryParameter:
@@ -10028,6 +10090,12 @@ plugins:
       path: languages/it_vc_logo_showcase-en_US.po
       pattern: !ruby/regexp /rsion:\ iThemeland Logo Showcase for VC v(?<v>\d+\.[\.\d]+)/i
       version: true
+  logo-showcase-with-slick-slider:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/lswss-public.css
+      version: true
   loks-monetization:
     QueryParameter:
       files:
@@ -10073,6 +10141,26 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  lsx-blog-customizer:
+    QueryParameter:
+      files:
+      - assets/css/vendor/owl.carousel.min.css
+      - assets/css/vendor/slick.css
+      - assets/css/lsx-blog-customizer.css
+      - assets/js/vendor/owl.carousel.min.js
+      - assets/js/lsx-blog-customizer.min.js
+      version: true
+  lsx-customizer:
+    QueryParameter:
+      files:
+      - assets/css/lsx-customizer.css
+      - assets/js/lsx-customizer.min.js
+      version: true
+  lsx-geo-content:
+    QueryParameter:
+      files:
+      - assets/css/geo-content.css
       version: true
   lsx-projects:
     QueryParameter:
@@ -10614,6 +10702,11 @@ plugins:
       files:
       - css/style.css
       version: true
+  meks-easy-maps:
+    QueryParameter:
+      files:
+      - public/css/map.css
+      version: true
   meks-flexible-shortcodes:
     QueryParameter:
       files:
@@ -11006,6 +11099,16 @@ plugins:
       files:
       - includes/css/theme.min.css
       - bootstrap/bootstrap-grid.min.css
+      version: true
+  motopress-hotel-booking-lite:
+    QueryParameter:
+      files:
+      - vendors/kbwood/datepick/jquery.datepick.css
+      - assets/css/mphb.min.css
+      - vendors/canjs/can.custom.min.js
+      - vendors/kbwood/datepick/jquery.plugin.min.js
+      - vendors/kbwood/datepick/jquery.datepick.min.js
+      - assets/js/public/mphb.min.js
       version: true
   motopress-slider-lite:
     JavascriptVar:
@@ -12918,6 +13021,11 @@ plugins:
       files:
       - javascript/post-likerator.js
       version: true
+  post-list-designer:
+    QueryParameter:
+      files:
+      - assets/css/bld-public.css
+      version: true
   post-list-generator:
     QueryParameter:
       files:
@@ -13065,6 +13173,15 @@ plugins:
       files:
       - css/ps-style.css
       - js/ps-script.js
+      version: true
+  power-forms-builder:
+    QueryParameter:
+      files:
+      - public/css/power-forms-public.min.css
+      - public/js/power-forms-jquery.validate.min.js
+      - public/js/power-forms-jquery.dataTables.min.js
+      - public/js/power-forms-dataTables.buttons.min.js
+      - public/js/power-forms-public.min.js
       version: true
   powered-cache:
     TranslationFile:
@@ -14380,6 +14497,12 @@ plugins:
       files:
       - public/css/robo-maps-public.css
       - public/js/robo-maps-public.js
+      version: true
+  rock-convert:
+    QueryParameter:
+      files:
+      - inc/frontend/css/rock-convert-frontend.css
+      - inc/frontend/js/rock-convert-frontend.js
       version: true
   rocket-reader-speed-reader:
     Comment:
@@ -16769,6 +16892,12 @@ plugins:
       files:
       - js/surbma-smooth-scroll.js
       version: true
+  survais:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   sv-sticky-menu:
     QueryParameter:
       files:
@@ -17473,6 +17602,12 @@ plugins:
       - assets/js/owl.navigation.js
       - assets/js/jquery.mCustomScrollbar.concat.min.js
       - assets/js/jquery.colorbox.js
+      version: true
+  tour-operator-maps:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   tour-operator-search:
     QueryParameter:
@@ -19249,6 +19384,14 @@ plugins:
       - public/css/woo-braintree-public.css
       - public/js/woo-braintree-public.js
       version: true
+  woo-cart-items-bulk-deletion:
+    QueryParameter:
+      files:
+      - public/css/wcibd-public.css
+      - public/css/jquery-confirm.min.css
+      - public/js/wcibd-public.js
+      - public/js/jquery-confirm.min.js
+      version: true
   woo-category-slider-by-pluginever:
     TranslationFile:
       class: BodyPattern
@@ -19286,6 +19429,12 @@ plugins:
       class: BodyPattern
       path: languages/woo-facturadirecta.pot
       pattern: !ruby/regexp '/\-Id\-Version: WooCommerce FacturaDirecta (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woo-gift-cards-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce_gift_cards_lite-en_US.po
+      pattern: !ruby/regexp '/Id\-Version: Woocommerce Gift Cards Lite (?<v>\d+\.[\.\d]+)/i'
       version: true
   woo-infoplus-connect:
     TranslationFile:
@@ -19344,6 +19493,12 @@ plugins:
       path: languages/woo-paypal-gateway.pot
       pattern: !ruby/regexp /\-Id\-Version:\ WooCommerce PayPal Gateway (?<v>\d+\.[\.\d]+)/i
       version: true
+  woo-pixelpay-gateway:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-gateway-pixelpay.pot
+      pattern: !ruby/regexp '/d\-Version: WooCommerce PixelPay Gateway (?<v>\d+\.[\.\d]+)/i'
+      version: true
   woo-planned-pricing:
     QueryParameter:
       files:
@@ -19371,6 +19526,12 @@ plugins:
       class: BodyPattern
       path: languages/woocommerce-add-tab-ru_RU.po
       pattern: !ruby/regexp '/Project\-Id\-Version: Woocommerce Add Tab (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  woo-product-barcode-label-printing:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woo-product-barcode-label-printing.pot
+      pattern: !ruby/regexp /Commerce Product Barcode Label Printing (?<v>\d+\.[\.\d]+)/i
       version: true
   woo-product-disable:
     QueryParameter:
@@ -20402,10 +20563,22 @@ plugins:
       files:
       - css/rainbow-themes/technicolor.css
       version: true
+  wp-comment-designer-lite:
+    QueryParameter:
+      files:
+      - css/wpcd-frontend.css
+      - js/wpcd-frontend.js
+      - js/wpcd-comment-form/wpcd_form_frontend.js
+      version: true
   wp-comments-form-validation:
     QueryParameter:
       files:
       - assets/css/public.css
+      version: true
+  wp-cookie-law-info:
+    QueryParameter:
+      files:
+      - assets/js/jquery.wcl.min.js
       version: true
   wp-cookie-user-info:
     QueryParameter:
@@ -20966,6 +21139,17 @@ plugins:
       class: BodyPattern
       path: languages/wp-healthcheck.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP Healthcheck (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-help-desk:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   wp-hide-post:
     QueryParameter:
@@ -22641,6 +22825,16 @@ plugins:
       files:
       - css/wplike2get.min.css
       version: true
+  wpm-email:
+    QueryParameter:
+      files:
+      - public/css/wpm-email-public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpm-email-it_IT.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WPM\-Email (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wpmbytplayer:
     QueryParameter:
       files:
@@ -23078,6 +23272,11 @@ plugins:
       files:
       - ytSubscribe.js
       version: true
+  yumjam-masonry-layout-for-posts-and-custom-post-types:
+    QueryParameter:
+      files:
+      - js/front.js
+      version: true
   yuzo-related-post:
     QueryParameter:
       files:
@@ -23145,13 +23344,13 @@ plugins:
     LinkInHomepage:
       class: Xpath
       xpath: //a[@title="Wordpress Calculator & Cost Estimation"]/@href
-      pattern: !ruby/regexp /https?:\/\/zigaform\.com/\?uifm_v=(?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /https?:\/\/zigaform\.com\/\?uifm_v=(?<v>\d+\.[\.\d]+)/i
       version: true
   zigaform-form-builder-lite:
     LinkInHomepage:
       class: Xpath
       xpath: //a[@title="Wordpress Form Builder"]/@href
-      pattern: !ruby/regexp /https?:\/\/zigaform\.com/\?uifm_v=(?<v>\d+\.[\.\d]+)/i
+      pattern: !ruby/regexp /https?:\/\/zigaform\.com\/\?uifm_v=(?<v>\d+\.[\.\d]+)/i
       version: true
   ziyarat-ashura:
     QueryParameter:
