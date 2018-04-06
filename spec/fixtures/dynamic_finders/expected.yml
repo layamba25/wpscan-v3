@@ -28895,6 +28895,107 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/wpsso/languages/wpsso-fr_FR.po, Match: ''"Project-Id-Version:
         WPSSO Core 3.48.8'''
+  wpsso-am:
+    MetaTag:
+      number: 1.8.2
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''WPSSO AM 1.8.2/'''
+    TranslationFile:
+      number: 1.8.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-am/languages/wpsso-am.pot, Match:
+        ''oject-Id-Version: WPSSO Mobile App Meta 1.8.2'''
+  wpsso-breadcrumbs:
+    TranslationFile:
+      number: 1.1.3
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-breadcrumbs/languages/wpsso-breadcrumbs.pot,
+        Match: ''ersion: WPSSO Schema Breadcrumbs Markup 1.1.3'''
+  wpsso-organization:
+    TranslationFile:
+      number: 1.2.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-organization/languages/wpsso-organization.pot,
+        Match: ''t-Id-Version: WPSSO Organization Markup 1.2.2'''
+  wpsso-plm:
+    TranslationFile:
+      number: 2.5.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-plm/languages/wpsso-plm.pot, Match:
+        ''lace / Location and Local Business Meta 2.5.2'''
+  wpsso-ratings-and-reviews:
+    TranslationFile:
+      number: 1.3.4
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-ratings-and-reviews/languages/wpsso-ratings-and-reviews.pot,
+        Match: ''t-Id-Version: WPSSO Ratings and Reviews 1.3.4'''
+  wpsso-rrssb:
+    QueryParameter:
+      number: 1.6.4
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wpsso-rrssb/css/ext/rrssb.min.css?ver=1.6.4
+      - http://wp.lab/wp-content/plugins/wpsso-rrssb/js/ext/rrssb.min.js?ver=1.6.4
+      confidence: 20
+    TranslationFile:
+      number: 1.6.4
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-rrssb/languages/wpsso-rrssb.pot, Match:
+        ''"1.6.4'''
+  wpsso-schema-json-ld:
+    TranslationFile:
+      number: 1.24.6
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-schema-json-ld/languages/wpsso-schema-json-ld.pot,
+        Match: ''Id-Version: WPSSO Schema JSON-LD Markup 1.24.6'''
+  wpsso-ssb:
+    TranslationFile:
+      number: 2.6.4
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-ssb/languages/wpsso-ssb.pot, Match:
+        ''d-Version: WPSSO Social Sharing Buttons 2.6.4'''
+  wpsso-strip-schema-microdata:
+    Comment:
+      number: 1.3.2
+      found_by: Comment (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''WpssoSsmFilters::strip_schema_microdata v1.3.2'''
+    TranslationFile:
+      number: 1.3.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-strip-schema-microdata/languages/wpsso-strip-schema-microdata.pot,
+        Match: ''d-Version: WPSSO Strip Schema Microdata 1.3.2'''
+  wpsso-tune-image-editors:
+    TranslationFile:
+      number: 1.1.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-tune-image-editors/languages/wpsso-tune-image-editors.pot,
+        Match: ''Id-Version: WPSSO Tune WP Image Editors 1.1.1'''
+  wpsso-tweet-a-quote:
+    TranslationFile:
+      number: 1.2.1
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-tweet-a-quote/languages/wpsso-tweet-a-quote-fr_FR.po,
+        Match: ''Project-Id-Version: WPSSO Tweet a Quote 1.2.1'''
+  wpsso-user-locale:
+    TranslationFile:
+      number: 1.2.2
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/wpsso-user-locale/languages/wpsso-user-locale.pot,
+        Match: ''-Id-Version: WPSSO User Locale Selector 1.2.2'''
   wpstatuscake:
     TranslationFile:
       number: 1.0.11

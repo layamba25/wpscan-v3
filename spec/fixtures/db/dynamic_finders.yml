@@ -22957,6 +22957,92 @@ plugins:
       path: languages/wpsso-fr_FR.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WPSSO Core (?<v>\d+\.[\.\d]+)/i
       version: true
+  wpsso-am:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator"]/@content
+      version: true
+      pattern: !ruby/regexp /WPSSO AM (?<v>\d+\.[\.\d]+)\//i
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-am.pot
+      pattern: !ruby/regexp '/oject\-Id\-Version: WPSSO Mobile App Meta (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-breadcrumbs:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-breadcrumbs.pot
+      pattern: !ruby/regexp '/ersion: WPSSO Schema Breadcrumbs Markup (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-organization:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-organization.pot
+      pattern: !ruby/regexp '/t\-Id\-Version: WPSSO Organization Markup (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-plm:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-plm.pot
+      pattern: !ruby/regexp /lace \/ Location and Local Business Meta (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wpsso-ratings-and-reviews:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-ratings-and-reviews.pot
+      pattern: !ruby/regexp '/t\-Id\-Version: WPSSO Ratings and Reviews (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-rrssb:
+    QueryParameter:
+      files:
+      - css/ext/rrssb.min.css
+      - js/ext/rrssb.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-rrssb.pot
+      pattern: !ruby/regexp /"(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wpsso-schema-json-ld:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-schema-json-ld.pot
+      pattern: !ruby/regexp '/Id\-Version: WPSSO Schema JSON\-LD Markup (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-ssb:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-ssb.pot
+      pattern: !ruby/regexp '/d\-Version: WPSSO Social Sharing Buttons (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-strip-schema-microdata:
+    Comment:
+      xpath: //comment()[contains(., "WpssoSsmFilters")]
+      pattern: !ruby/regexp /WpssoSsmFilters::strip_schema_microdata v(?<v>\d+\.[\.\d]+)/i
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-strip-schema-microdata.pot
+      pattern: !ruby/regexp '/d\-Version: WPSSO Strip Schema Microdata (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-tune-image-editors:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-tune-image-editors.pot
+      pattern: !ruby/regexp '/Id\-Version: WPSSO Tune WP Image Editors (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-tweet-a-quote:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-tweet-a-quote-fr_FR.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: WPSSO Tweet a Quote (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wpsso-user-locale:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpsso-user-locale.pot
+      pattern: !ruby/regexp '/\-Id\-Version: WPSSO User Locale Selector (?<v>\d+\.[\.\d]+)/i'
+      version: true
   wpstatuscake:
     TranslationFile:
       class: BodyPattern
