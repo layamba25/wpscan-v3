@@ -1332,7 +1332,7 @@ plugins:
       version: true
   arianelab:
     Comment:
-      xpath: //Comment()[contains(., "ArianeLab")]
+      xpath: //comment()[contains(., "ArianeLab")]
       pattern: !ruby/regexp /Start ArianeLab v(?<v>\d+\.[\.\d]+)/i
       version: true
   arkam-lite:
