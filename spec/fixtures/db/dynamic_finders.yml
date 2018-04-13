@@ -1063,6 +1063,12 @@ plugins:
       files:
       - public/css/amo-team-showcase-public.css
       version: true
+  amp-non-amp-auto-ads:
+    QueryParameter:
+      files:
+      - public/css/ampnonampads-public.css
+      - public/js/ampnonampads-public.js
+      version: true
   ams-page-scroll-back-to-top:
     QueryParameter:
       files:
@@ -1096,6 +1102,11 @@ plugins:
       files:
       - stylesheets/app.css
       - js/app.js
+      version: true
+  animate-everything:
+    QueryParameter:
+      files:
+      - assets/js/page.min.js
       version: true
   animated-category:
     QueryParameter:
@@ -1318,6 +1329,21 @@ plugins:
       files:
       - assets/fancybox/jquery.fancybox.min.css
       - assets/fancybox/jquery.fancybox.min.js
+      version: true
+  arianelab:
+    Comment:
+      xpath: //Comment()[contains(., "ArianeLab")]
+      pattern: !ruby/regexp /Start ArianeLab v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  arkam-lite:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ar.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Arkam (?<v>\d+\.[\.\d]+)/i'
       version: true
   arlo-training-and-event-management-system:
     QueryParameter:
@@ -2274,6 +2300,12 @@ plugins:
       - assets/css/slick.css
       - assets/css/bdpw-public.css
       version: true
+  blog-designer-pack:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/bdp-public.css
+      version: true
   blog-designer-wp-post-and-widget:
     QueryParameter:
       files:
@@ -2637,6 +2669,17 @@ plugins:
       class: BodyPattern
       path: languages/bp-emails-for-bbp.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: BP Emails for BBP (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  bp-events-calendar:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/bp-events-calendar.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: BP Events Calendar (?<v>\d+\.[\.\d]+)/i'
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   bp-forum-notifier:
     TranslationFile:
@@ -4084,6 +4127,12 @@ plugins:
       files:
       - css/supsystic-for-all-admin.css
       version: true
+  coming2live:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/coming2live.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Coming2Live (?<v>\d+\.[\.\d]+)/i'
+      version: true
   comma-diacritics:
     QueryParameter:
       files:
@@ -4557,6 +4606,11 @@ plugins:
       path: lang/Cryptex.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Cryptex  (?<v>\d+\.[\.\d]+)/i
       version: true
+  crypto-live:
+    QueryParameter:
+      files:
+      - assets/css/xgenious-crypto-live-custom.css
+      version: true
   css3-buttons:
     TranslationFile:
       class: BodyPattern
@@ -4720,6 +4774,12 @@ plugins:
       - public/css/customer-chat-for-facebook-public.css
       - public/js/customer-chat-for-facebook-public.js
       version: true
+  customify-sites:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/customify-sites.pot
+      pattern: !ruby/regexp '/ject\-Id\-Version: Customify Site Library (?<v>\d+\.[\.\d]+)/i'
+      version: true
   customizer-search:
     TranslationFile:
       class: BodyPattern
@@ -4738,6 +4798,12 @@ plugins:
       path: languages/cvi.pot
       pattern: !ruby/regexp /ion of the WordPress plugin CVI Widgets (?<v>\d+\.[\.\d]+)/i
       version: true
+  cyberpress:
+    QueryParameter:
+      files:
+      - assets/css/style.min.css
+      - assets/js/script.min.js
+      version: true
   cyclone-slider-2:
     QueryParameter:
       files:
@@ -4754,6 +4820,12 @@ plugins:
       - templates/thumbnails/script.js
       - libs/vimeo-player-js/player.js
       - js/client.js
+      version: true
+  daily-bible-readings:
+    QueryParameter:
+      files:
+      - public/js/scripts.js
+      - public/js/readmore_v2.2.0.min.js
       version: true
   danixland-countdown:
     TranslationFile:
@@ -5075,6 +5147,13 @@ plugins:
       class: BodyPattern
       path: lang/dynamic-seo-child-pages.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ Dynamic SEO Child Pages (?<v>\d+\.[\.\d]+)/i
+      version: true
+  earnware-connect:
+    QueryParameter:
+      files:
+      - public/js/earnware-lib.js
+      - public/js/earnware-tracking.js
+      - public/js/earnware-merge.js
       version: true
   easily-generate-rest-api-url:
     QueryParameter:
@@ -5975,6 +6054,11 @@ plugins:
       class: BodyPattern
       path: languages/event-importer-for-meetup-and-the-events-calendar-old.pot
       pattern: !ruby/regexp /rter for Meetup and The Events Calendar (?<v>\d+\.[\.\d]+)/i
+      version: true
+  event-master:
+    QueryParameter:
+      files:
+      - js/fullcalendar.js
       version: true
   event-organiser-csv:
     TranslationFile:
@@ -12785,6 +12869,12 @@ plugins:
       - static/podlove-web-player.min.css
       - static/podlove-web-player.min.js
       version: true
+  pointfast-website-tracking:
+    QueryParameter:
+      files:
+      - public/css/pointfast-public.css
+      - public/js/pointfast-public.js
+      version: true
   pojo-accessibility:
     TranslationFile:
       class: BodyPattern
@@ -16613,6 +16703,12 @@ plugins:
       - public/css/status-buddy-public.css
       - public/js/status-buddy-public.js
       version: true
+  stb-network-ads:
+    TranslationFile:
+      class: BodyPattern
+      path: redux-framework/inc/themecheck/lang/themeforest-check.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: ThemeForest\-Check (?<v>\d+\.[\.\d]+)/i'
+      version: true
   steemit-feed:
     QueryParameter:
       files:
@@ -17409,6 +17505,12 @@ plugins:
       path: languages/thesis-openhook.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: OpenHook (?<v>\d+\.[\.\d]+)/i'
       version: true
+  thinker-language-translator:
+    QueryParameter:
+      files:
+      - public/css/thinker-language-translator-public.min.css
+      - public/js/thinker-language-translator-public.min.js
+      version: true
   thirstyaffiliates:
     QueryParameter:
       files:
@@ -17603,7 +17705,19 @@ plugins:
       - assets/js/jquery.mCustomScrollbar.concat.min.js
       - assets/js/jquery.colorbox.js
       version: true
+  tour-operator-activities:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   tour-operator-maps:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
+  tour-operator-reviews:
     ComposerFile:
       class: ConfigParser
       path: package.json
@@ -18299,6 +18413,12 @@ plugins:
       class: BodyPattern
       path: languages/utm-dot-codes.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: utm\.codes (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  utopian-images:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      - assets/js/frontend.min.js
       version: true
   utubevideo-gallery:
     QueryParameter:
@@ -22519,6 +22639,11 @@ plugins:
       path: languages/wpuf.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP User Frontend (?<v>\d+\.[\.\d]+)/i
       version: true
+  wp-user-profile:
+    QueryParameter:
+      files:
+      - assets/css/wp-user-profile.css
+      version: true
   wp-user-rewards:
     TranslationFile:
       class: BodyPattern
@@ -23160,6 +23285,12 @@ plugins:
     QueryParameter:
       files:
       - css/validationEngine.jquery.css
+      version: true
+  xa-woocommerce-memberships:
+    QueryParameter:
+      files:
+      - public/css/xa-woocommerce-membership-public.css
+      - public/js/xa-woocommerce-membership-public.js
       version: true
   xili-floom-slideshow:
     Comment:
