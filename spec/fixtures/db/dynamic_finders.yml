@@ -16703,12 +16703,6 @@ plugins:
       - public/css/status-buddy-public.css
       - public/js/status-buddy-public.js
       version: true
-  stb-network-ads:
-    TranslationFile:
-      class: BodyPattern
-      path: redux-framework/inc/themecheck/lang/themeforest-check.pot
-      pattern: !ruby/regexp '/"Project\-Id\-Version: ThemeForest\-Check (?<v>\d+\.[\.\d]+)/i'
-      version: true
   steemit-feed:
     QueryParameter:
       files:

@@ -21022,13 +21022,6 @@ plugins:
       - http://wp.lab/wp-content/plugins/status-buddy/public/css/status-buddy-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/status-buddy/public/js/status-buddy-public.js?ver=1.0.0
       confidence: 20
-  stb-network-ads:
-    TranslationFile:
-      number: 1.0.0
-      found_by: Translation File (Aggressive Detection)
-      interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/stb-network-ads/redux-framework/inc/themecheck/lang/themeforest-check.pot,
-        Match: ''"Project-Id-Version: ThemeForest-Check 1.0.0'''
   steemit-feed:
     QueryParameter:
       number: 1.1.1
