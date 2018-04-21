@@ -835,6 +835,12 @@ plugins:
       - public/css/asl.css
       - public/js/libs_new.min.js
       version: true
+  agile-whatsapp-share:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/agile_whatsapp_share.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Whatsapp Share v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   ahalogy-wp:
     Comment:
       xpath: //comment()[contains(., "Ahalogy")]
@@ -1013,6 +1019,12 @@ plugins:
       files:
       - public/css/cnc-image-alt-tags-public.css
       - public/js/cnc-image-alt-tags-public.js
+      version: true
+  altruly-simple-diy-fundraising-for-charities-and-nonprofits:
+    QueryParameter:
+      files:
+      - public/css/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.css
+      - public/js/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.js
       version: true
   amazon-associates-link-builder:
     QueryParameter:
@@ -1794,6 +1806,12 @@ plugins:
       class: Xpath
       xpath: //meta[@name="generator"]/@content
       pattern: !ruby/regexp /with the BAAP Mobile Version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  back-in-stock-notifier-for-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/cwginstocknotifier-cz_CZ.po
+      pattern: !ruby/regexp '/Version: Back In Stock Notifier Version (?<v>\d+\.[\.\d]+)/i'
       version: true
   back-to-top-advanced:
     QueryParameter:
@@ -2894,6 +2912,11 @@ plugins:
       - css/bsbpanimated.css
       - js/front.js
       version: true
+  bst-dsgvo-cookie:
+    QueryParameter:
+      files:
+      - includes/js/scripts.js
+      version: true
   bu-navigation:
     TranslationFile:
       class: BodyPattern
@@ -3546,6 +3569,16 @@ plugins:
     Comment:
       xpath: //comment()[contains(., "CDN Tools")]
       pattern: !ruby/regexp /CDN Tools v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  cds-simple-seo:
+    Comment:
+      xpath: //comment()[contains(., "Simple SEO plugin")]
+      pattern: !ruby/regexp /optimized with the Simple SEO plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+    AnalyticsComment:
+      class: Comment
+      xpath: //comment()[contains(., "Simple SEO plugin")]
+      pattern: !ruby/regexp /Google Analytics by Simple SEO plugin (?<v>\d+\.[\.\d]+)/i
       version: true
   cf-geoplugin:
     QueryParameter:
@@ -5040,6 +5073,12 @@ plugins:
       - assets/css/style.css
       - assets/js/script.js
       version: true
+  docular:
+    QueryParameter:
+      files:
+      - public/css/docular-public.css
+      - public/js/docular-public.js
+      version: true
   document-gallery:
     QueryParameter:
       files:
@@ -6292,6 +6331,12 @@ plugins:
       - includes/css/style.css
       - includes/js/script.js
       version: true
+  fa-video-popup:
+    QueryParameter:
+      files:
+      - assets/css/public.min.css
+      - assets/js/public.min.js
+      version: true
   face-live-chat:
     QueryParameter:
       files:
@@ -7102,6 +7147,11 @@ plugins:
       files:
       - public/css/gdpr-compliance-public.css
       - public/js/gdpr-compliance-public.js
+      version: true
+  gdpr-cookie-compliance:
+    QueryParameter:
+      files:
+      - dist/scripts/main.js
       version: true
   gdpr-personal-data-reports:
     QueryParameter:
@@ -8811,6 +8861,18 @@ plugins:
       - public/js/intel-public.js
       - js/intel.js
       version: true
+  intellipush:
+    QueryParameter:
+      files:
+      - public/css/intellipush-public.css
+      - public/js/intellipush-public.js
+      - public/js/intellipush-cartAbandonment.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/intellipush.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Intellipush (?<v>\d+\.[\.\d]+)/i'
+      version: true
   intelliwidget-per-page-featured-posts-and-menus:
     QueryParameter:
       files:
@@ -9003,6 +9065,8 @@ plugins:
       files:
       - css/jquery.accordion.css
       - js/jquery.accordion.js
+      - css/wpoh-public-faq.css
+      - js/wpoh-public-faq.js
       version: true
   jekuntmeer-nl:
     TranslationFile:
@@ -10530,6 +10594,16 @@ plugins:
       path: package.json
       key: version
       version: true
+  mapple:
+    QueryParameter:
+      files:
+      - public/css/mapple-public.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mapple-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Mapple (?<v>\d+\.[\.\d]+)/i'
+      version: true
   mappress-google-maps-for-wordpress:
     Comment:
       pattern: !ruby/regexp /MapPress Easy Google Maps Version:(?<v>\d+\.[\.\d]+)/i
@@ -10882,6 +10956,12 @@ plugins:
       - js/mwl-core.js
       - js/mwl-run.js
       version: true
+  merge-minify-refresh-clear-caches:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/merge-minify-refresh-clear-caches.pot
+      pattern: !ruby/regexp '/: Merge \+ Minify \+ Refresh Clear Caches (?<v>\d+\.[\.\d]+)/i'
+      version: true
   meridian-one-features:
     QueryParameter:
       files:
@@ -10897,6 +10977,17 @@ plugins:
       files:
       - assets/css/mesh-grid-foundation.css
       - assets/js/mesh.js
+      version: true
+  message-business:
+    QueryParameter:
+      files:
+      - public/css/message-business-public.css
+      - public/js/message-business-public.js
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   meta-ographr:
     Comment:
@@ -11433,6 +11524,12 @@ plugins:
       class: BodyPattern
       path: languages/mw-wp-hacks.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ MW WP Hacks (?<v>\d+\.[\.\d]+)/i
+      version: true
+  mwb-twitter-feed-timeline-post:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mwb_twitter_for_wordpress-en_US.po
+      pattern: !ruby/regexp '/t\-Id\-Version: MWB Twitter For WordpressV(?<v>\d+\.[\.\d]+)/i'
       version: true
   mwp-side-menu:
     QueryParameter:
@@ -12994,6 +13091,12 @@ plugins:
       - public/assets/css/public.css
       - public/assets/js/min/public-min.js
       version: true
+  popups-for-divi:
+    QueryParameter:
+      files:
+      - css/front.css
+      - js/front.js
+      version: true
   portfolio-and-projects:
     QueryParameter:
       files:
@@ -13932,6 +14035,12 @@ plugins:
       path: languages/random-quote-of-the-day.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
       version: true
+  raratheme-companion:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/raratheme-companion.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: RaraTheme Companion (?<v>\d+\.[\.\d]+)/i'
+      version: true
   rate:
     QueryParameter:
       files:
@@ -14249,6 +14358,12 @@ plugins:
       class: BodyPattern
       path: languages/rescue-children-banner.pot
       pattern: !ruby/regexp '/ject\-Id\-Version: Rescue Children Banner (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  reservas-online:
+    QueryParameter:
+      files:
+      - public/css/wp-reservas-public.css
+      - public/js/wp-reservas-public.js
       version: true
   reserveren-via-couverts:
     QueryParameter:
@@ -17057,6 +17172,12 @@ plugins:
       path: lang/synchi-ru_RU.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: Synchi v(?<v>\d+\.[\.\d]+)/i'
       version: true
+  synchronized-post-publisher:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/synchronized-post-publisher-en_GB.po
+      pattern: !ruby/regexp '/Id\-Version: Synchronized Post Publisher (?<v>\d+\.[\.\d]+)/i'
+      version: true
   syndication-links:
     QueryParameter:
       files:
@@ -17545,6 +17666,15 @@ plugins:
       files:
       - public/js/ticketmaster-nomodal.js
       version: true
+  time-clock:
+    QueryParameter:
+      files:
+      - assets/css/etimeclockwp-public.css
+      - assets/js/etimeclockwp-date_time.js
+      - assets/js/etimeclockwp-clock_action.js
+      - assets/js/etimeclockwp-moment.min.js
+      - assets/js/etimeclockwp-moment.phpDateFormat.js
+      version: true
   timed-content:
     QueryParameter:
       files:
@@ -17647,6 +17777,11 @@ plugins:
       class: BodyPattern
       path: languages/tomsguide-widget-fr_FR.po
       pattern: !ruby/regexp '/roject\-Id\-Version: Tom''s guide Download (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  toolbar:
+    QueryParameter:
+      files:
+      - toolbar.css
       version: true
   toot:
     TranslationFile:
@@ -19107,6 +19242,7 @@ plugins:
       - assets/css/wshop.css
       - assets/js/wshop.min.js
       - assets/js/jquery-loading.min.js
+      - assets/js/wshop.js
       version: true
   wechat-social-login:
     QueryParameter:
@@ -19232,6 +19368,12 @@ plugins:
     QueryParameter:
       files:
       - whats-new.css
+      version: true
+  whizz:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/whizz-es_ES.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WHIZZ (?<v>\d+\.[\.\d]+)/i'
       version: true
   whois-dashboard-widget:
     QueryParameter:
@@ -21854,6 +21996,16 @@ plugins:
       files:
       - css/wpProQuiz_front.min.css
       version: true
+  wp-product-gallery-lite:
+    QueryParameter:
+      files:
+      - css/jquery.bxslider.css
+      - css/font-awesome.min.css
+      - css/wppg-frontend.css
+      - css/wppg-responsive.css
+      - js/jquery.bxslider.js
+      - js/wppg-frontend.js
+      version: true
   wp-product-review:
     TranslationFile:
       class: BodyPattern
@@ -22693,6 +22845,13 @@ plugins:
       files:
       - css/style.css
       version: true
+  wp-whydonate:
+    QueryParameter:
+      files:
+      - public/css/wp-whydonate-public.css
+      - public/js/jquery.validate.js
+      - public/js/wp-whydonate-public.js
+      version: true
   wp-wiki-tooltip:
     QueryParameter:
       files:
@@ -23189,11 +23348,23 @@ plugins:
       files:
       - css/theme-1.css
       version: true
+  wpteam-google-adsense:
+    QueryParameter:
+      files:
+      - public/css/wpteam-ggadsense-public.css
+      - public/js/wpteam-ggadsense-public.js
+      version: true
   wptelegram:
     TranslationFile:
       class: BodyPattern
       path: languages/wptelegram-fa_IR.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WP Telegram (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wptelegram-login:
+    QueryParameter:
+      files:
+      - public/css/wptelegram-login-public.min.css
+      - public/js/wptelegram-login-public.min.js
       version: true
   wptelegram-widget:
     QueryParameter:
@@ -23245,6 +23416,12 @@ plugins:
       - js/classie.js
       - js/selectFx.js
       - js/script.js
+      version: true
+  wt-woocommerce-sequential-order-numbers:
+    QueryParameter:
+      files:
+      - public/css/wt-advanced-order-number-public.css
+      - public/js/wt-advanced-order-number-public.js
       version: true
   wti-contact-back:
     QueryParameter:
