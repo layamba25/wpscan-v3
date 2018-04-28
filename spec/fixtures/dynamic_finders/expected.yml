@@ -3559,6 +3559,13 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/brozzme-blurb-lightbox-module-in-divi/languages/brozzme-lightbox-blurb-fr_FR.po,
         Match: '': Brozzme Blurb Lightbox Module in Divi 1.0'''
+  brozzme-change-username:
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/brozzme-change-username/languages/brozzme-change-username.pot,
+        Match: ''ect-Id-Version: Brozzme Change Username 1.0'''
   brozzme-colorize:
     TranslationFile:
       number: '1.00'
@@ -3955,6 +3962,14 @@ plugins:
       - http://wp.lab/wp-content/plugins/bxslider-wp/bxslider/jquery.bxslider.css?ver=2.0.0
       - http://wp.lab/wp-content/plugins/bxslider-wp/bxslider/jquery.bxslider.min.js?ver=2.0.0
       - http://wp.lab/wp-content/plugins/bxslider-wp/js/initialize.js?ver=2.0.0
+  c9-variables:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/c9-variables/public/css/c9-variables-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/c9-variables/public/js/c9-variables-public.js?ver=1.0.0
+      confidence: 20
   caascade:
     QueryParameter:
       number: 1.8.2
@@ -3993,6 +4008,24 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/caldera-forms/assets/build/css/caldera-forms-front.min.css,
         Match: ''caldera-forms - v1.5.9.1'''
+  calendarista-basic-edition:
+    MetaTag:
+      number: '1.0'
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''calendarista basic 1.0'''
+    QueryParameter:
+      number: '1.0'
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/calendarista-basic-edition/assets/scripts/bootstrap.collapse.min.js?ver=1.0
+      confidence: 10
+    TranslationFile:
+      number: '1.0'
+      found_by: Translation File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/calendarista-basic-edition/languages/calendarista-de_DE.po,
+        Match: ''"Project-Id-Version: Calendarista 1.0'''
   call-button:
     QueryParameter:
       number: '1.0'
@@ -6634,6 +6667,13 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/easy-menu-manager-wpzest/css/extra.min.css?ver=1.0.1
+  easy-multi-step-form:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/easy-multi-step-form/public/css/multi_step_reg-public.css?ver=1.0.0
+      confidence: 10
   easy-newsletter-signups:
     QueryParameter:
       number: 1.0.1
@@ -12882,6 +12922,12 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/lsx-projects/package.json, Match: ''1.1.1'''
+  lsx-search:
+    ComposerFile:
+      number: 1.0.0
+      found_by: Composer File (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/lsx-search/package.json, Match: ''1.0.0'''
   lsx-sharing:
     QueryParameter:
       number: 1.0.3
@@ -13226,6 +13272,13 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/map-for-acf/package.json, Match: ''1.3'''
+  mapfit:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mapfit/public/js/mapfit-public.js?ver=1.0.0
+      confidence: 10
   mapple:
     QueryParameter:
       number: 1.0.0
@@ -14183,6 +14236,15 @@ plugins:
       confidence: 10
       interesting_entries:
       - http://wp.lab/wp-content/plugins/mp3-jplayer/css/dark.css?ver=2.7.2
+  mp3-music-player-by-sonaar:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/mp3-music-player-by-sonaar/public/css/sonaar-music-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/mp3-music-player-by-sonaar/public/js/sonaar-music-public.js?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/mp3-music-player-by-sonaar/public/js/iron-audioplayer/iron-audioplayer.js?ver=1.0.0
+      confidence: 30
   mpcx-accordion:
     QueryParameter:
       number: 1.2.6
@@ -15368,6 +15430,14 @@ plugins:
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/opml-importer/languages/opml-importer.pot,
         Match: ''n of the WordPress plugin OPML Importer 0.2'''
+  opt-in-hound:
+    QueryParameter:
+      number: 1.4.3
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/opt-in-hound/assets/css/style-front-opt-in-hound.css?ver=1.4.3
+      - http://wp.lab/wp-content/plugins/opt-in-hound/assets/js/script-front-opt-in-hound.js?ver=1.4.3
+      confidence: 20
   OptimizePress:
     JavascriptVar:
       number: 2.5.7
@@ -19018,6 +19088,14 @@ plugins:
       - http://wp.lab/wp-content/plugins/secure-downloads/css/popover.css?ver=1.0
       - http://wp.lab/wp-content/plugins/secure-downloads/css/calendar.css?ver=1.0
       confidence: 30
+  seldos-seo:
+    QueryParameter:
+      number: 1.3.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/seldos-seo/public/css/seldos-seo-public.css?ver=1.3.0
+      - http://wp.lab/wp-content/plugins/seldos-seo/public/js/seldos-seo-public.js?ver=1.3.0
+      confidence: 20
   selfie:
     QueryParameter:
       number: 0.2.2
@@ -21026,6 +21104,12 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/sportsteam-widget/css/sportsteam-widget.css?ver=2.2.2
       confidence: 10
+  spoton-live:
+    MetaTag:
+      number: 1.2.2
+      found_by: Meta Tag (Passive Detection)
+      interesting_entries:
+      - 'http://wp.lab/, Match: ''1.2.2'''
   spreaker-shortcode:
     ComposerFile:
       number: 1.6.0
@@ -24652,6 +24736,14 @@ plugins:
       - http://wp.lab/wp-content/plugins/wonka-slide/public/css/wonka-slide-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/wonka-slide/public/js/wonka-slide-public.js?ver=1.0.0
       confidence: 20
+  wonkasoft-logout:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wonkasoft-logout/public/css/wonkasoft-logout-public.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/wonkasoft-logout/public/js/wonkasoft-logout-public.js?ver=1.0.0
+      confidence: 20
   woo-added-to-cart-notification:
     QueryParameter:
       number: 1.0.1
@@ -27250,6 +27342,14 @@ plugins:
       interesting_entries:
       - http://wp.lab/wp-content/plugins/wp-love-it/js/love-it.js?ver=1.0.0
       confidence: 10
+  wp-lucky-wheel:
+    QueryParameter:
+      number: 1.0.0
+      found_by: Query Parameter (Passive Detection)
+      interesting_entries:
+      - http://wp.lab/wp-content/plugins/wp-lucky-wheel/css/wp-lucky-wheel.css?ver=1.0.0
+      - http://wp.lab/wp-content/plugins/wp-lucky-wheel/js/wp-lucky-wheel.js?ver=1.0.0
+      confidence: 20
   wp-magic-carousel:
     QueryParameter:
       number: '1.0'

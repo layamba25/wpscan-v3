@@ -2859,6 +2859,12 @@ plugins:
       path: languages/brozzme-lightbox-blurb-fr_FR.po
       pattern: !ruby/regexp /:\ Brozzme Blurb Lightbox Module in Divi (?<v>\d+\.[\.\d]+)/i
       version: true
+  brozzme-change-username:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/brozzme-change-username.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: Brozzme Change Username (?<v>\d+\.[\.\d]+)/i'
+      version: true
   brozzme-colorize:
     TranslationFile:
       class: BodyPattern
@@ -3176,6 +3182,12 @@ plugins:
       - bxslider/jquery.bxslider.min.js
       - js/initialize.js
       version: true
+  c9-variables:
+    QueryParameter:
+      files:
+      - public/css/c9-variables-public.css
+      - public/js/c9-variables-public.js
+      version: true
   caascade:
     QueryParameter:
       files:
@@ -3205,6 +3217,21 @@ plugins:
       class: BodyPattern
       path: assets/build/css/caldera-forms-front.min.css
       pattern: !ruby/regexp /caldera\-forms \- v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  calendarista-basic-edition:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="plugins"]/@content
+      version: true
+      pattern: !ruby/regexp /calendarista basic (?<v>\d+\.[\.\d]+)/i
+    QueryParameter:
+      files:
+      - assets/scripts/bootstrap.collapse.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/calendarista-de_DE.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Calendarista (?<v>\d+\.[\.\d]+)/i'
       version: true
   call-button:
     QueryParameter:
@@ -5334,6 +5361,11 @@ plugins:
     QueryParameter:
       files:
       - css/extra.min.css
+      version: true
+  easy-multi-step-form:
+    QueryParameter:
+      files:
+      - public/css/multi_step_reg-public.css
       version: true
   easy-newsletter-signups:
     QueryParameter:
@@ -10322,6 +10354,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  lsx-search:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   lsx-sharing:
     QueryParameter:
       files:
@@ -10593,6 +10631,11 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  mapfit:
+    QueryParameter:
+      files:
+      - public/js/mapfit-public.js
       version: true
   mapple:
     QueryParameter:
@@ -11336,6 +11379,13 @@ plugins:
     QueryParameter:
       files:
       - css/dark.css
+      version: true
+  mp3-music-player-by-sonaar:
+    QueryParameter:
+      files:
+      - public/css/sonaar-music-public.css
+      - public/js/sonaar-music-public.js
+      - public/js/iron-audioplayer/iron-audioplayer.js
       version: true
   mpcx-accordion:
     QueryParameter:
@@ -12273,6 +12323,12 @@ plugins:
       class: BodyPattern
       path: languages/opml-importer.pot
       pattern: !ruby/regexp /n of the WordPress plugin OPML Importer (?<v>\d+\.[\.\d]+)/i
+      version: true
+  opt-in-hound:
+    QueryParameter:
+      files:
+      - assets/css/style-front-opt-in-hound.css
+      - assets/js/script-front-opt-in-hound.js
       version: true
   OptimizePress:
     JavascriptVar:
@@ -15152,6 +15208,12 @@ plugins:
       - css/popover.css
       - css/calendar.css
       version: true
+  seldos-seo:
+    QueryParameter:
+      files:
+      - public/css/seldos-seo-public.css
+      - public/js/seldos-seo-public.js
+      version: true
   selfie:
     QueryParameter:
       files:
@@ -16707,6 +16769,11 @@ plugins:
     QueryParameter:
       files:
       - css/sportsteam-widget.css
+      version: true
+  spoton-live:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="slp_version"]/@content
       version: true
   spreaker-shortcode:
     ComposerFile:
@@ -19579,6 +19646,12 @@ plugins:
       - public/css/wonka-slide-public.css
       - public/js/wonka-slide-public.js
       version: true
+  wonkasoft-logout:
+    QueryParameter:
+      files:
+      - public/css/wonkasoft-logout-public.css
+      - public/js/wonkasoft-logout-public.js
+      version: true
   woo-added-to-cart-notification:
     QueryParameter:
       files:
@@ -21659,6 +21732,12 @@ plugins:
     QueryParameter:
       files:
       - js/love-it.js
+      version: true
+  wp-lucky-wheel:
+    QueryParameter:
+      files:
+      - css/wp-lucky-wheel.css
+      - js/wp-lucky-wheel.js
       version: true
   wp-magic-carousel:
     QueryParameter:
