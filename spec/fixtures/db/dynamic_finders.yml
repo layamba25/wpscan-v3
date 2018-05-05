@@ -5896,6 +5896,12 @@ plugins:
       path: languages/embed-code.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Embed Code (?<v>\d+\.[\.\d]+)/i
       version: true
+  embed-sendy:
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
+      version: true
   embed-vizme:
     QueryParameter:
       files:
@@ -8186,6 +8192,12 @@ plugins:
       path: languages/hasteimpress-pt_BR.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ WordImpress (?<v>\d+\.[\.\d]+)/i
       version: true
+  hasten-companion:
+    QueryParameter:
+      files:
+      - public/css/hasten-companion-public.css
+      - public/js/hasten-companion-public.js
+      version: true
   hayyabuild:
     QueryParameter:
       files:
@@ -10008,6 +10020,12 @@ plugins:
     JavascriptVar:
       xpath: //script[not(@src) and contains(., "limelightTracker")]
       pattern: !ruby/regexp /'limelightTracker\.set', 'dimension4', '(?<v>\d+\.[\.\d]+)'/i
+      version: true
+  link-designer-lite:
+    QueryParameter:
+      files:
+      - css/edld-frontend.css
+      - js/edld-frontend.js
       version: true
   link-exchange-lite:
     TranslationFile:
@@ -12855,6 +12873,12 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Piklist (?<v>\d+\.[\.\d]+)/i
+  pillar-press-content-blocks:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   pinboard-bookmarks:
     TranslationFile:
       class: BodyPattern
@@ -14517,6 +14541,14 @@ plugins:
       files:
       - responsive-posts-widget.css
       version: true
+  responsive-pricing-info-tables:
+    QueryParameter:
+      files:
+      - assets/css/frontend/rptb_ui.css
+      - assets/css/frontend/rptb-bsgrid.min.css
+      - assets/css/frontend/animate.min.css
+      - assets/js/frontend/rptb_ui.js
+      version: true
   responsive-pricing-table:
     QueryParameter:
       files:
@@ -14813,6 +14845,12 @@ plugins:
     QueryParameter:
       files:
       - js/rot13-encoderdecoder.js
+      version: true
+  rotativa:
+    QueryParameter:
+      files:
+      - public/css/rotativa-public.css
+      - public/js/rotativa-public.js
       version: true
   rounded-tag-cloud:
     QueryParameter:
@@ -15716,6 +15754,12 @@ plugins:
       files:
       - public/css/simple-emoji-reactions-public.css
       - public/js/simple-emoji-reactions-public.js
+      version: true
+  simple-event-scheduler:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/se-scheduler.pot
+      pattern: !ruby/regexp '/ject\-Id\-Version: Simple Event Scheduler (?<v>\d+\.[\.\d]+)/i'
       version: true
   simple-events-calendar:
     Comment:
@@ -16626,6 +16670,12 @@ plugins:
       files:
       - style.css
       version: true
+  sp-display-widgets:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/sp-display-widgets-en_US.po
+      pattern: !ruby/regexp '/Project\-Id\-Version: SP Display Widgets v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   sp-faq:
     QueryParameter:
       files:
@@ -17051,6 +17101,12 @@ plugins:
       path: languages/youtube-subscribe-bar.pot
       pattern: !ruby/regexp '/oject\-Id\-Version: YouTube Subscribe Bar (?<v>\d+\.[\.\d]+)/i'
       version: true
+  subscribe-google-groups:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-google-groups-subscribe.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: Google Groups Subscribe (?<v>\d+\.[\.\d]+)/i'
+      version: true
   subscribe-here-widget:
     Comment:
       pattern: !ruby/regexp /Required by Subscribe Here Plugin (?<v>\d+\.[\.\d]+)/i
@@ -17344,6 +17400,12 @@ plugins:
       files:
       - css/front-end.css
       - javascript/front-end.js
+      version: true
+  tags-cloud-manager:
+    QueryParameter:
+      files:
+      - public/css/tcm-public.css
+      - public/js/tcm-public.js
       version: true
   tailor-portfolio:
     ComposerFile:
@@ -18386,6 +18448,12 @@ plugins:
       path: languages/um-user-switching.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: UM User Switching (?<v>\d+\.[\.\d]+)/i'
       version: true
+  underdev:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   unfc-normalize:
     Comment:
       xpath: //comment()[contains(., "unfc-normalize")]
@@ -18927,6 +18995,11 @@ plugins:
     QueryParameter:
       files:
       - css/style.css
+      version: true
+  wabi-whatsapp:
+    QueryParameter:
+      files:
+      - public/css/WabiWidget-public.css
       version: true
   waitlist-woocommerce:
     QueryParameter:
@@ -23033,6 +23106,12 @@ plugins:
     QueryParameter:
       files:
       - js/featherlight.min.js
+      version: true
+  wpc-paypal-express-checkout:
+    QueryParameter:
+      files:
+      - public/css/wpc-paypal-express-checkout-public.css
+      - public/js/wpc-paypal-express-checkout-public.js
       version: true
   wpc-paypal-pro-payments:
     QueryParameter:
