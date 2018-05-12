@@ -396,6 +396,12 @@ plugins:
       - public/css/acme-divi-modules-public.css
       - public/js/masonry.pkgd.min.js
       version: true
+  acobot-chatbot:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/acobot.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Acobot Chatbot (?<v>\d+\.[\.\d]+)/i'
+      version: true
   acquaint-owl-carousel:
     QueryParameter:
       files:
@@ -1610,6 +1616,12 @@ plugins:
       path: lang/automatic-post-categories.pot
       pattern: !ruby/regexp /t\-Id\-Version:\ Automatic Post Categories (?<v>\d+\.[\.\d]+)/i
       version: true
+  autoptimize-criticalcss:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/ao_critcss_aas.pot
+      pattern: !ruby/regexp '/sion: Autoptimize Power\-Up: CriticalCSS (?<v>\d+\.[\.\d]+)/i'
+      version: true
   autoresponder1:
     Comment:
       xpath: //comment()[contains(., "Autoresponder1")]
@@ -1866,6 +1878,12 @@ plugins:
       class: BodyPattern
       path: I18n/bn-sidebar-login.pot
       pattern: !ruby/regexp /roject\-Id\-Version:\ Bangla Sidebar Login (?<v>\d+\.[\.\d]+)/i
+      version: true
+  banner-slider-for-advertisement:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpwbs-en_US.po
+      pattern: !ruby/regexp '/rsion: Banner Slider for Advertisement v(?<v>\d+\.[\.\d]+)/i'
       version: true
   banner-system:
     QueryParameter:
@@ -2582,6 +2600,12 @@ plugins:
     QueryParameter:
       files:
       - public/css/bookwize-public.css
+      version: true
+  booster-pack-for-divi:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/en_US.po
+      pattern: !ruby/regexp '/oject\-Id\-Version: Booster Pack for Divi (?<v>\d+\.[\.\d]+)/i'
       version: true
   boot-slider:
     QueryParameter:
@@ -3389,6 +3413,12 @@ plugins:
     Comment:
       xpath: //comment()[contains(., "Catch Web Tools")]
       pattern: !ruby/regexp /Catch Web Tools v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  categorize-your-wishlist-for-woocomerceposts-custom-post-types:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/categorize-wishlist-woocomerce-posts-custom-post-types-ja.po
+      pattern: !ruby/regexp /or Woocomerce,Posts & Custom Post Types (?<v>\d+\.[\.\d]+)/i
       version: true
   category-post-slider:
     QueryParameter:
@@ -4671,6 +4701,11 @@ plugins:
       files:
       - assets/css/xgenious-crypto-live-custom.css
       version: true
+  cryptocurrency-widgets-pack:
+    QueryParameter:
+      files:
+      - assets/public/js/common.js
+      version: true
   css3-buttons:
     TranslationFile:
       class: BodyPattern
@@ -5175,6 +5210,12 @@ plugins:
       - public/css/dropshipping-xox-public.css
       - public/js/dropshipping-xox-public.js
       version: true
+  ds-suit:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/en_US.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Divi Sensei Suit (?<v>\d+\.[\.\d]+)/i'
+      version: true
   dsidxpress:
     QueryParameter:
       files:
@@ -5574,6 +5615,11 @@ plugins:
       - assets/css/eytg.css
       - assets/lib/magnific-popup/jquery.magnific-popup.min.js
       version: true
+  easycoder:
+    QueryParameter:
+      files:
+      - easycoder-min.js
+      version: true
   easyevent:
     QueryParameter:
       files:
@@ -5645,6 +5691,12 @@ plugins:
       - assets/css/animate.min.css
       - assets/css/edd-infinite-scrolling.min.css
       - assets/js/edd-infinite-scrolling.min.js
+      version: true
+  edd-mark-as-add-on:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/edd-mark-as-addon.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: EDD Mark as add\-on (?<v>\d+\.[\.\d]+)/i'
       version: true
   edd-paypal-payment:
     QueryParameter:
@@ -6709,6 +6761,16 @@ plugins:
       path: lang/flat-twitter-en_EN.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Flat Twitter (?<v>\d+\.[\.\d]+)/i
       version: true
+  flex-posts:
+    QueryParameter:
+      files:
+      - public/css/flex-posts.css
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/flex-posts.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Flex Posts (?<v>\d+\.[\.\d]+)/i'
+      version: true
   flexi-instagram-feed-lite-instagram-gallery:
     QueryParameter:
       files:
@@ -7275,6 +7337,12 @@ plugins:
       - assets/css/style.css
       - assets/css/gmw-cl-style-dep.css
       - assets/js/gmw.min.js
+      version: true
+  geo2wp:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/geo2wp.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: geo2wp (?<v>\d+\.[\.\d]+)/i'
       version: true
   geodeals-for-geodirectory:
     QueryParameter:
@@ -14666,6 +14734,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  restrict-woocommerce-reports-status:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/restrict-woocommerce-reports-status-pt_BR.po
+      pattern: !ruby/regexp '/on: Restrict WooCommerce Reports Status (?<v>\d+\.[\.\d]+)/i'
+      version: true
   resume-builder:
     QueryParameter:
       files:
@@ -15402,6 +15476,12 @@ plugins:
     Comment:
       xpath: //comment()[contains(., "shadowbox")]
       pattern: !ruby/regexp /WP shadowbox Plugin version (?<v>\d+\.[\.\d]+)/i
+      version: true
+  shapepress-dsgvo:
+    QueryParameter:
+      files:
+      - public/css/sp-dsgvo-public.css
+      - public/js/sp-dsgvo-public.js
       version: true
   shaplatools:
     QueryParameter:
@@ -16590,6 +16670,12 @@ plugins:
       - css/socialwiggle.css
       - js/socialwiggle.js
       version: true
+  socialsnap:
+    QueryParameter:
+      files:
+      - assets/css/socialsnap.css
+      - assets/js/socialsnap.js
+      version: true
   sociofluid:
     Comment:
       xpath: //comment()[contains(., "SocioFluid")]
@@ -17209,6 +17295,12 @@ plugins:
       pattern: !ruby/regexp /is part of the Superslider\-Milkbox v(?<v>\d+\.[\.\d]+)
         plugin/i
       version: true
+  support-hero:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/support-hero.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Support Hero (?<v>\d+\.[\.\d]+)/i'
+      version: true
   supportifywp:
     QueryParameter:
       files:
@@ -17514,6 +17606,11 @@ plugins:
       files:
       - assets/css/style.css
       - assets/js/owl.carousel.min.js
+      version: true
+  teams-slider-shortcode-pack:
+    QueryParameter:
+      files:
+      - assets/css/xgenious-team-slider-custom.css
       version: true
   teamstuff-calendar:
     QueryParameter:
@@ -19786,6 +19883,12 @@ plugins:
       - public/css/woo-braintree-public.css
       - public/js/woo-braintree-public.js
       version: true
+  woo-bulkbuy:
+    QueryParameter:
+      files:
+      - css/main.css
+      - js/main.js
+      version: true
   woo-cart-items-bulk-deletion:
     QueryParameter:
       files:
@@ -21907,6 +22010,11 @@ plugins:
       files:
       - css/generic-no-float.css
       version: true
+  wp-menu-icons:
+    QueryParameter:
+      files:
+      - assets/css/wpmi.css
+      version: true
   wp-messenger-customer-chat:
     QueryParameter:
       files:
@@ -22237,6 +22345,12 @@ plugins:
       files:
       - assets/css/wprc-public.css
       - assets/js/wprc-public.js
+      version: true
+  wp-recent-post-slider-with-responsive:
+    QueryParameter:
+      files:
+      - assets/css/slick.css
+      - assets/css/wprpswr-public-slider.css
       version: true
   wp-recentcomments:
     QueryParameter:
