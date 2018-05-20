@@ -1032,12 +1032,6 @@ plugins:
       - public/css/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.css
       - public/js/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.js
       version: true
-  amazing-portfolio:
-    TranslationFile:
-      class: BodyPattern
-      path: inc/framework/languages/bn_BD.po
-      pattern: !ruby/regexp '/"Project\-Id\-Version: Codestar Framework (?<v>\d+\.[\.\d]+)/i'
-      version: true
   amazon-associates-link-builder:
     QueryParameter:
       files:
