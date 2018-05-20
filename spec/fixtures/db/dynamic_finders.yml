@@ -1032,6 +1032,12 @@ plugins:
       - public/css/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.css
       - public/js/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.js
       version: true
+  amazing-portfolio:
+    TranslationFile:
+      class: BodyPattern
+      path: inc/framework/languages/bn_BD.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Codestar Framework (?<v>\d+\.[\.\d]+)/i'
+      version: true
   amazon-associates-link-builder:
     QueryParameter:
       files:
@@ -1953,6 +1959,12 @@ plugins:
       files:
       - css/bdwebteam-recent-tabs-widget.css
       version: true
+  be-shortcodes:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/be-shortcodes.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Be Shortcodes (?<v>\d+\.[\.\d]+)/i'
+      version: true
   beacon-for-helpscout:
     QueryParameter:
       files:
@@ -1981,6 +1993,12 @@ plugins:
       - public/css/beautiful-taxonomy-filters-base.min.css
       - public/js/select2/select2.full.min.js
       - public/js/beautiful-taxonomy-filters-public.js
+      version: true
+  beautimour-kit:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/beautimour-kit.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Beautimour Kit (?<v>\d+\.[\.\d]+)/i'
       version: true
   beaver-builder-lite-version:
     ChangeLog:
@@ -3622,6 +3640,12 @@ plugins:
       - assets/css/bootstrap.css
       - assets/js/bootstrap.min.js
       version: true
+  cd2-gutenberg-shortcode-preview-block:
+    ComposerFile:
+      class: ConfigParser
+      path: package-lock.json
+      key: version
+      version: true
   cdn-tools:
     Comment:
       xpath: //comment()[contains(., "CDN Tools")]
@@ -4548,6 +4572,12 @@ plugins:
       - assets/css/colors.php
       - assets/css/responsive.php
       - assets/js/cooked-functions.min.js
+      version: true
+  cookie-consent-box:
+    QueryParameter:
+      files:
+      - public/css/cookie-consent-box.css
+      - public/js/cookie-consent-box.js
       version: true
   cookie-law-info:
     QueryParameter:
@@ -9391,6 +9421,12 @@ plugins:
       path: languages/jsm-block-filter-output.pot
       pattern: !ruby/regexp '/t\-Id\-Version: JSM''s Block Filter Output (?<v>\d+\.[\.\d]+)/i'
       version: true
+  jsm-force-ssl:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/jsm-force-ssl.pot
+      pattern: !ruby/regexp '/ect\-Id\-Version: JSM''s Force SSL \/ HTTPS (?<v>\d+\.[\.\d]+)/i'
+      version: true
   jsm-show-registered-shortcodes:
     TranslationFile:
       class: BodyPattern
@@ -9744,6 +9780,12 @@ plugins:
       - js/jquery.cookie.js
       - js/kudos.js
       version: true
+  kuetemeier-essentials:
+    QueryParameter:
+      files:
+      - assets/styles/kuetemeier-essentials.min.css
+      - assets/scripts/kuetemeier-essentials-public.min.js
+      version: true
   kune-in-wp:
     ComposerFile:
       class: ConfigParser
@@ -9791,6 +9833,12 @@ plugins:
       class: BodyPattern
       path: languages/language-bar-flags.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Language Bar Flags (?<v>\d+\.[\.\d]+)/i
+      version: true
+  last-users-order-column-for-woocommerce:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woocommerce-luoc.pot
+      pattern: !ruby/regexp /Last Users Order Column for WooCommerce (?<v>\d+\.[\.\d]+)/i
       version: true
   latest-custom-post-type-updates:
     QueryParameter:
@@ -10960,6 +11008,12 @@ plugins:
       - public/css/wp-msbd-public.css
       - public/js/wp-msbd-public.js
       version: true
+  media2post:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/media2post-nl.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: media2post (?<v>\d+\.[\.\d]+)/i'
+      version: true
   mediaview:
     QueryParameter:
       files:
@@ -11026,6 +11080,12 @@ plugins:
     QueryParameter:
       files:
       - assets/css/custom/memberwunder.css
+      version: true
+  mementor-newsletter-popup:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/main.js
       version: true
   mention-comments-authors:
     QueryParameter:
@@ -11491,6 +11551,12 @@ plugins:
       files:
       - public/css/slider.min.css
       - public/js/slider.min.js
+      version: true
+  mplus-intercom-subscription:
+    QueryParameter:
+      files:
+      - assets/css/mplus-intercom-subscription-public.css
+      - assets/js/mplus-intercom-subscription-public.js
       version: true
   mq-woocommerce-products-price-bulk-edit:
     TranslationFile:
@@ -12852,6 +12918,17 @@ plugins:
       path: translations/pfund-ro_RO.po
       pattern: !ruby/regexp /Project\-Id\-Version:\ Personal Fundraiser (?<v>\d+\.[\.\d]+)/i
       version: true
+  pesapress:
+    QueryParameter:
+      files:
+      - app/assets/css/pp-public.min.css
+      - app/assets/js/pp-public.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/pesapress.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: PesaPress (?<v>\d+\.[\.\d]+)/i'
+      version: true
   pgreca-chat:
     TranslationFile:
       class: BodyPattern
@@ -13665,6 +13742,7 @@ plugins:
       files:
       - assets/css/padb-style.css
       - gads.js
+      - padb-style.css
       version: true
   pro-vip:
     TranslationFile:
@@ -15224,6 +15302,21 @@ plugins:
       files:
       - assets/css/main.css
       version: true
+  screening-questions-for-wp-job-manager:
+    QueryParameter:
+      files:
+      - assets/js/wp-job-manager-screening-questions.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/screening-questions-for-wp-job-manager.pot
+      pattern: !ruby/regexp /Screening Questions For WP Job Manager (?<v>\d+\.[\.\d]+)/i
+      version: true
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   screenshot-machine-shortcode:
     TranslationFile:
       class: BodyPattern
@@ -15319,6 +15412,12 @@ plugins:
       - css/client.css
       - css/popover.css
       - css/calendar.css
+      version: true
+  seldos-mail:
+    QueryParameter:
+      files:
+      - public/css/seldos-mail-public.css
+      - public/js/seldos-mail-public.js
       version: true
   seldos-seo:
     QueryParameter:
@@ -15790,6 +15889,12 @@ plugins:
     QueryParameter:
       files:
       - assets/css/simple-author-box.min.css
+      version: true
+  simple-blueprint-installer:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/simple-blueprint-installer.pot
+      pattern: !ruby/regexp '/\-Id\-Version: Simple blueprint installer (?<v>\d+\.[\.\d]+)/i'
       version: true
   simple-category-posts-widget:
     QueryParameter:
@@ -20553,6 +20658,11 @@ plugins:
       path: languages/wootheme-testimonials-to-testimonials.pot
       pattern: !ruby/regexp /WooTheme Testimonials Migrator (?<v>\d+\.[\.\d]+)/i
       version: true
+  woowbox:
+    QueryParameter:
+      files:
+      - assets/js/woowbox.min.js
+      version: true
   word-balloon:
     QueryParameter:
       files:
@@ -23479,6 +23589,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /wpShopGermany Version (?<v>\d+\.[\.\d]+)/i
       version: true
+  wpshopify:
+    QueryParameter:
+      files:
+      - public/js/vendor/es6-promise.auto.min.js
+      - dist/public.min.js
+      version: true
   wpslimclamp:
     QueryParameter:
       files:
@@ -23653,6 +23769,12 @@ plugins:
       class: BodyPattern
       path: lang/wptouch.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ WPtouch Mobile Plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+  wpum-delete-account:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wpum-delete-account.pot
+      pattern: !ruby/regexp '/Project\-Id\-Version: WPUM Delete Account (?<v>\d+\.[\.\d]+)/i'
       version: true
   wpum-recaptcha:
     ComposerFile:
