@@ -679,6 +679,12 @@ plugins:
       files:
       - css/adsns.css
       version: true
+  adsimple-vote:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/adsimple-vote-de_DE.po
+      pattern: !ruby/regexp /\# @version      (?<v>\d+\.[\.\d]+)/i
+      version: true
   advance-pricing-table:
     QueryParameter:
       files:
@@ -2029,6 +2035,7 @@ plugins:
       files:
       - lib/beepress.css
       - lib/beepress-pro.js
+      - lib/player.js
       version: true
   before-after-image-slider-lite:
     QueryParameter:
@@ -5234,6 +5241,12 @@ plugins:
       - public/css/dropshipping-xox-public.css
       - public/js/dropshipping-xox-public.js
       version: true
+  drug-search:
+    MetaTag:
+      class: Xpath
+      xpath: //meta[@name="generator" and contains(@content, 'Drug Search')]/@content
+      version: true
+      pattern: !ruby/regexp /Drug Search v(?<v>\d+\.[\.\d]+) \- https:\/\/emdplugins\.com/i
   ds-suit:
     TranslationFile:
       class: BodyPattern
@@ -6641,6 +6654,12 @@ plugins:
       path: composer.json
       key: version
       version: true
+  featured-image-toolkit:
+    QueryParameter:
+      files:
+      - public/css/fisr-public.css
+      - public/js/fisr-public.js
+      version: true
   featured-post-creative:
     QueryParameter:
       files:
@@ -7016,6 +7035,7 @@ plugins:
       - vendor/world-flags-sprite/stylesheets/flags32.css
       - vendor/world-flags-sprite/stylesheets/flags16.css
       - public/js/anwpfl-public.min.js
+      - public/css/styles-compatible.css
       version: true
   football-match-tracker:
     QueryParameter:
@@ -7276,6 +7296,12 @@ plugins:
     QueryParameter:
       files:
       - dist/scripts/main.js
+      version: true
+  gdpr-formidable-forms:
+    QueryParameter:
+      files:
+      - assets/public/css/formidable-gdpr-public.css
+      - assets/public/js/formidable-gdpr-public.js
       version: true
   gdpr-personal-data-reports:
     QueryParameter:
@@ -8972,6 +8998,12 @@ plugins:
     QueryParameter:
       files:
       - public/assets/css/wcis_plugin.css
+      version: true
+  instashare:
+    QueryParameter:
+      files:
+      - public/css/instashare-public.css
+      - public/js/instashare-public.js
       version: true
   instashow-lite:
     QueryParameter:
@@ -12028,6 +12060,12 @@ plugins:
     Comment:
       pattern: !ruby/regexp /Cached using Nginx-Helper|Visit https?:\/\/wordpress.org\/extend\/plugins\/nginx-helper\/faq\/
         for more details/i
+  ni-woocommerce-sales-report:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/nisalesreport-it_IT.po
+      pattern: !ruby/regexp '/d\-Version: Ni WooCommerce Sales Report v(?<v>\d+\.[\.\d]+)/i'
+      version: true
   nice-infoboxes:
     QueryParameter:
       files:
@@ -12368,6 +12406,12 @@ plugins:
       class: BodyPattern
       path: languages/pt-ocdi.pot
       pattern: !ruby/regexp /oject\-Id\-Version:\ One Click Demo Import (?<v>\d+\.[\.\d]+)/i
+      version: true
+  one-thousand-nine-hundred-and-ninety-nineify:
+    QueryParameter:
+      files:
+      - assets/css/oneK99ify.min.css
+      - assets/js/oneK99ify.min.js
       version: true
   onetwotrip:
     QueryParameter:
@@ -14122,6 +14166,12 @@ plugins:
       path: lang/pl_PL.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: quae_map (?<v>\d+\.[\.\d]+)/i'
       version: true
+  quantcast-choice:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
+      version: true
   quatriceps:
     QueryParameter:
       files:
@@ -15159,6 +15209,12 @@ plugins:
       class: BodyPattern
       path: languages/s3-secure-url.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: TODO (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  sac-digital-lite:
+    QueryParameter:
+      files:
+      - public/css/sac-digital-lite-public.css
+      - public/js/sac-digital-lite-public.js
       version: true
   safari-push:
     QueryParameter:
@@ -16513,6 +16569,12 @@ plugins:
     QueryParameter:
       files:
       - spr.js
+      version: true
+  smart-recaptcha:
+    QueryParameter:
+      files:
+      - css/re_front_end_style.css
+      - css/desktop_style.css
       version: true
   smart-reporter-for-wp-e-commerce:
     TranslationFile:
@@ -18711,6 +18773,7 @@ plugins:
       - assets/js/tab.js
       - assets/js/bootstrap.js
       - assets/js/rating.js
+      - assets/js/feedback.js
       version: true
   unlimited-addons-for-wpbakery-page-builder:
     ReleaseLog:
@@ -23804,6 +23867,12 @@ plugins:
       - js/classie.js
       - js/selectFx.js
       - js/script.js
+      version: true
+  wt-advanced-woocommerce-report:
+    QueryParameter:
+      files:
+      - public/css/wt-advanced-woocommerce-report-public.css
+      - public/js/wt-advanced-woocommerce-report-public.js
       version: true
   wt-woocommerce-sequential-order-numbers:
     QueryParameter:
