@@ -3,7 +3,6 @@
 [![Gem Version](https://badge.fury.io/rb/wpscan.svg)](https://badge.fury.io/rb/wpscan)
 [![Build Status](https://travis-ci.org/wpscanteam/wpscan-v3.svg?branch=master)](https://travis-ci.org/wpscanteam/wpscan-v3)
 [![Code Climate](https://codeclimate.com/github/wpscanteam/wpscan-v3/badges/gpa.svg)](https://codeclimate.com/github/wpscanteam/wpscan-v3)
-[![Dependency Status](https://img.shields.io/gemnasium/wpscanteam/wpscan-v3.svg)](https://gemnasium.com/wpscanteam/wpscan-v3)
 
 # LICENSE
 
