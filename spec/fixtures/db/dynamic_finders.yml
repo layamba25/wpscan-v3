@@ -652,6 +652,12 @@ plugins:
       - assets/js/mousetrap.min.js
       - assets/js/mousetrap-global-bind.min.js
       version: true
+  admin-live-search:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/admin-live-search.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Admin Live Search (?<v>\d+\.[\.\d]+)/i'
+      version: true
   admin-menu-manager:
     TranslationFile:
       class: BodyPattern
@@ -678,6 +684,11 @@ plugins:
     QueryParameter:
       files:
       - css/adsns.css
+      version: true
+  adsimple-cookie-notice:
+    QueryParameter:
+      files:
+      - css/front.css
       version: true
   adsimple-vote:
     TranslationFile:
@@ -713,6 +724,12 @@ plugins:
       class: BodyPattern
       path: languages/advanced-db-cleaner.pot
       pattern: !ruby/regexp '/Project\-Id\-Version: Advanced Database Cleaner (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  advanced-footnotes:
+    QueryParameter:
+      files:
+      - assets/css/advanced-footnotes.css
+      - assets/js/advanced-footnotes.js
       version: true
   advanced-forms-paypal-payment-buttons:
     QueryParameter:
@@ -1038,6 +1055,12 @@ plugins:
       - public/css/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.css
       - public/js/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.js
       version: true
+  amazing-portfolio:
+    TranslationFile:
+      class: BodyPattern
+      path: inc/framework/languages/cs-framework.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Codestar Framework (?<v>\d+\.[\.\d]+)/i'
+      version: true
   amazon-associates-link-builder:
     QueryParameter:
       files:
@@ -1131,6 +1154,12 @@ plugins:
     QueryParameter:
       files:
       - assets/js/page.min.js
+      version: true
+  animated-blocks:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   animated-category:
     QueryParameter:
@@ -1646,6 +1675,12 @@ plugins:
       - WebChat/botchat.js
       - js/product-page.js
       - js/schedule-options.js
+      version: true
+  avartan-slider-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/avartan-slider-lite.pot
+      pattern: !ruby/regexp /msgid "Version (?<v>\d+\.[\.\d]+)/i
       version: true
   avatars-meta-box:
     TranslationFile:
@@ -3270,6 +3305,7 @@ plugins:
     QueryParameter:
       files:
       - assets/scripts/bootstrap.collapse.min.js
+      - assets/scripts/calendarista.1.0.min.js
       version: true
     TranslationFile:
       class: BodyPattern
@@ -3661,6 +3697,11 @@ plugins:
       class: Comment
       xpath: //comment()[contains(., "Simple SEO plugin")]
       pattern: !ruby/regexp /Google Analytics by Simple SEO plugin (?<v>\d+\.[\.\d]+)/i
+      version: true
+  cenchat-comments:
+    QueryParameter:
+      files:
+      - public/js/cenchat-comments-iframe-resizer.js
       version: true
   cf-geoplugin:
     QueryParameter:
@@ -4623,6 +4664,12 @@ plugins:
       files:
       - cookiebar-latest.min.js
       version: true
+  cookiebot:
+    TranslationFile:
+      class: BodyPattern
+      path: langs/cookiebot.pot
+      pattern: !ruby/regexp /"(?<v>\d+\.[\.\d]+)/i
+      version: true
   cool-eform:
     QueryParameter:
       files:
@@ -4632,6 +4679,18 @@ plugins:
     QueryParameter:
       files:
       - quick-cool-sidebar.js
+      version: true
+  copy-the-code:
+    QueryParameter:
+      files:
+      - assets/css/copy-the-code.css
+      - assets/js/copy-the-code.js
+      version: true
+  copycontentdetector:
+    QueryParameter:
+      files:
+      - public/css/ccd-copycontentdetector-public.css
+      - public/js/ccd-copycontentdetector-public.js
       version: true
   copyfight:
     QueryParameter:
@@ -4731,6 +4790,13 @@ plugins:
     QueryParameter:
       files:
       - assets/css/xgenious-crypto-live-custom.css
+      version: true
+  crypto-ticker:
+    QueryParameter:
+      files:
+      - assets/css/stock-ticker.css
+      - assets/css/cryptocoins.css
+      - assets/js/jquery.stockticker.min.js
       version: true
   cryptocurrency-widgets-pack:
     QueryParameter:
@@ -5870,6 +5936,12 @@ plugins:
     QueryParameter:
       files:
       - js/highlighter.js
+      version: true
+  electrifying-engineering-portfolio:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/electrifying-engineering-portfolio.pot
+      pattern: !ruby/regexp '/ion: Electrifying Engineering Portfolio (?<v>\d+\.[\.\d]+)/i'
       version: true
   elegant-responsive-content-slider:
     TranslationFile:
@@ -9010,6 +9082,11 @@ plugins:
       files:
       - assets/instashow-lite/dist/jquery.instashow-lite.packaged.js
       version: true
+  integrate-firebase:
+    QueryParameter:
+      files:
+      - js/firebase.js
+      version: true
   integrate-polarsteps:
     TranslationFile:
       class: BodyPattern
@@ -9211,6 +9288,11 @@ plugins:
       class: ConfigParser
       path: package.json
       key: version
+      version: true
+  javascript-notifier:
+    QueryParameter:
+      files:
+      - css/javascript-notifier.css
       version: true
   jb-common:
     TranslationFile:
@@ -12487,6 +12569,12 @@ plugins:
       files:
       - oelinw.js
       version: true
+  open-social:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/open-social-zh_CN.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Open Social (?<v>\d+\.[\.\d]+)/i'
+      version: true
   open-source-emoji:
     QueryParameter:
       files:
@@ -13757,6 +13845,12 @@ plugins:
       path: i18n/pretty-link.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Pretty Links (?<v>\d+\.[\.\d]+)/i
       version: true
+  prices-by-user-role-lite:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/PriceByRoleLite.pot
+      pattern: !ruby/regexp '/ct\-Id\-Version: Prices By User Role Lite (?<v>\d+\.[\.\d]+)/i'
+      version: true
   printedly:
     QueryParameter:
       files:
@@ -14199,6 +14293,11 @@ plugins:
       files:
       - css/calendar.css
       - calendar.js
+      version: true
+  quick-login:
+    QueryParameter:
+      files:
+      - assets/quick-login.css
       version: true
   quick-mail:
     TranslationFile:
@@ -15463,6 +15562,11 @@ plugins:
       - css/popover.css
       - css/calendar.css
       version: true
+  seguros-promo:
+    QueryParameter:
+      files:
+      - public/css/seguros-promo-public.css
+      version: true
   seldos-mail:
     QueryParameter:
       files:
@@ -15474,6 +15578,12 @@ plugins:
       files:
       - public/css/seldos-seo-public.css
       - public/js/seldos-seo-public.js
+      version: true
+  selfhost-google-fonts:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   selfie:
     QueryParameter:
@@ -15584,6 +15694,12 @@ plugins:
     QueryParameter:
       files:
       - js/seostack.frontend.js
+      version: true
+  seotudy:
+    QueryParameter:
+      files:
+      - public/css/seotudy-public.css
+      - public/js/seotudy-public.js
       version: true
   series:
     TranslationFile:
@@ -17756,6 +17872,11 @@ plugins:
       path: i18n/languages/team-members-for-elementor.pot
       pattern: !ruby/regexp '/\-Id\-Version: Team Members for Elementor (?<v>\d+\.[\.\d]+)/i'
       version: true
+  team-ultimate:
+    QueryParameter:
+      files:
+      - public/js/team-ultimate-public.js
+      version: true
   team-view:
     QueryParameter:
       files:
@@ -17989,6 +18110,7 @@ plugins:
     QueryParameter:
       files:
       - themify/js/main.min.js
+      - themify/js/main.js
       version: true
   themify-shortcodes:
     QueryParameter:
@@ -21874,6 +21996,12 @@ plugins:
       files:
       - "/assets/css/front.css"
       - "/assets/js/front.js"
+      version: true
+  wp-image-optimizer:
+    QueryParameter:
+      files:
+      - inc/frontend/css/wp-image-optimizer-frontend.css
+      - inc/frontend/js/wp-image-optimizer-frontend.js
       version: true
   wp-image-utils:
     QueryParameter:
