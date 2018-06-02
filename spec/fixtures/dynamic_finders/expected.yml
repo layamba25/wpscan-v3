@@ -1285,13 +1285,6 @@ plugins:
       - http://wp.lab/wp-content/plugins/altruly-simple-diy-fundraising-for-charities-and-nonprofits/public/css/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.css?ver=1.0.0
       - http://wp.lab/wp-content/plugins/altruly-simple-diy-fundraising-for-charities-and-nonprofits/public/js/altruly-simple-diy-fundraising-for-charities-and-nonprofits-public.js?ver=1.0.0
       confidence: 20
-  amazing-portfolio:
-    TranslationFile:
-      number: 1.0.2
-      found_by: Translation File (Aggressive Detection)
-      interesting_entries:
-      - 'http://wp.lab/wp-content/plugins/amazing-portfolio/inc/framework/languages/cs-framework.pot,
-        Match: ''"Project-Id-Version: Codestar Framework 1.0.2'''
   amazon-associates-link-builder:
     QueryParameter:
       number: 1.4.13
