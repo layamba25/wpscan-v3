@@ -3351,6 +3351,12 @@ plugins:
       xpath: //comment()[contains(., "Canalplan")]
       pattern: !ruby/regexp '/Canalplan AC code revision : (?<v>\d+\.[\.\d]+)/i'
       version: true
+  canto:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   canvaspop-photo-printing-api:
     QueryParameter:
       files:
@@ -4219,6 +4225,11 @@ plugins:
       files:
       - codecolorer.css
       version: true
+  coded-hero-image-lite:
+    QueryParameter:
+      files:
+      - "/js/heroImage.js"
+      version: true
   codeincept-portfolio:
     QueryParameter:
       files:
@@ -4503,6 +4514,12 @@ plugins:
     QueryParameter:
       files:
       - css/form_style.css
+      version: true
+  contact-form-x:
+    QueryParameter:
+      files:
+      - js/cookies.js
+      - js/frontend.js
       version: true
   contact-us-page-contact-people:
     QueryParameter:
@@ -7294,6 +7311,13 @@ plugins:
       - assets/js/gag-tracker.js
       - assets/js/gaoptout.js
       version: true
+  gallery-and-lightbox:
+    QueryParameter:
+      files:
+      - includes/fancybox/jquery.fancybox.min.css
+      - includes/css/style.css
+      - includes/fancybox/jquery.fancybox.en.min.js
+      version: true
   gallery-lightbox-slider:
     QueryParameter:
       files:
@@ -8977,6 +9001,19 @@ plugins:
       class: BodyPattern
       path: languages/infogalore-folders.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ InfoGalore File Folders (?<v>\d+\.[\.\d]+)/i
+      version: true
+  inline-call-to-action-builder-lite:
+    QueryParameter:
+      files:
+      - css/cta-frontend.css
+      - css/cta-animation.css
+      - css/available_icons/font-awesome/font-awesome.min.css
+      - css/animate.css
+      - js/wow.js
+      - js/jquery.fittext.js
+      - js/jarallax.js
+      - js/jarallax-video.js
+      - js/cta-frontend.js
       version: true
   inline-comments:
     QueryParameter:
@@ -11463,6 +11500,12 @@ plugins:
       - styles.min.css
       - modern-footnotes.min.js
       version: true
+  modern-slider:
+    QueryParameter:
+      files:
+      - assets/css/style.css
+      - assets/js/modernSlider.js
+      version: true
   modula-best-grid-gallery:
     QueryParameter:
       files:
@@ -11502,6 +11545,12 @@ plugins:
       - public/js/vendor/element-queries/ResizeSensor.js
       - public/js/vendor/element-queries/ElementQueries.js
       - public/js/molongui-authorship.4995.min.js
+      version: true
+  momoyoga-integration:
+    QueryParameter:
+      files:
+      - css/schedule-frontend.css
+      - js/schedule.js
       version: true
   monkeyman-rewrite-analyzer:
     TranslationFile:
@@ -12198,6 +12247,12 @@ plugins:
     QueryParameter:
       files:
       - public/js/nicechat-cart-service.js
+      version: true
+  nimble-builder:
+    QueryParameter:
+      files:
+      - assets/front/css/sek-base.min.css
+      - assets/front/js/sek-main.js
       version: true
   nimble-portfolio:
     QueryParameter:
@@ -14080,6 +14135,12 @@ plugins:
       class: BodyPattern
       path: languages/RUH-ru_RU.po
       pattern: !ruby/regexp /"Project\-Id\-Version:\ RUH Captcha, (?<v>\d+\.[\.\d]+)/i
+      version: true
+  ps-ads-pro:
+    QueryParameter:
+      files:
+      - public/css/ps-ads-pro-public.css
+      - public/js/ps-ads-pro-public.js
       version: true
   ptest-personality-tests-for-wordpress:
     MetaTag:
@@ -17554,6 +17615,11 @@ plugins:
       path: i18n/super-stripe.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: Buy Now for Stripe (?<v>\d+\.[\.\d]+)/i'
       version: true
+  superior-faq:
+    QueryParameter:
+      files:
+      - css/superior-faq.css
+      version: true
   superpack:
     QueryParameter:
       files:
@@ -19397,6 +19463,12 @@ plugins:
       path: languages/wanapost-several-social-sharing-fr_FR.po
       pattern: !ruby/regexp '/rsion: WanaPost Several Social Sharing v(?<v>\d+\.[\.\d]+)/i'
       version: true
+  wasa-kredit-checkout:
+    QueryParameter:
+      files:
+      - public/css/wasa-kredit-checkout-public.css
+      - public/js/wasa-kredit-checkout-public.js
+      version: true
   wassup:
     Comment:
       pattern: !ruby/regexp /<p class="small"> WassUp (?<v>\d+\.[\.\d]+)/i
@@ -20415,6 +20487,12 @@ plugins:
       class: BodyPattern
       path: languages/talkwithtext-sms-notification-for-woo-australia.pot
       pattern: !ruby/regexp /Text SMS Notification for Woo Australia (?<v>\d+\.[\.\d]+)/i
+      version: true
+  woo-tools:
+    TranslationFile:
+      class: BodyPattern
+      path: language/language.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WooCommerce Tools (?<v>\d+\.[\.\d]+)/i'
       version: true
   woo-variation-swatches:
     QueryParameter:
@@ -23258,6 +23336,12 @@ plugins:
     QueryParameter:
       files:
       - css/twitter-wall.css
+      version: true
+  wp-typeit:
+    ComposerFile:
+      class: ConfigParser
+      path: composer.json
+      key: version
       version: true
   wp-typography:
     QueryParameter:
