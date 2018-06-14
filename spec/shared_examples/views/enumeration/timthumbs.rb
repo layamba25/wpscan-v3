@@ -1,4 +1,3 @@
-
 shared_examples 'App::Views::Enumeration::Timthumbs' do
   let(:view)     { 'timthumbs' }
   let(:timthumb) { WPScan::Timthumb }

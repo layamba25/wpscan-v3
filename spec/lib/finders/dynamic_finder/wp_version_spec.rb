@@ -11,7 +11,7 @@ describe 'Try to create the finders twice' do
 end
 
 WPScan::DB::DynamicFinders::Wordpress.versions_finders_configs.each do |finder_class, config|
-  finder_super_class = config['class'] ? config['class'] : finder_class
+  finder_super_class = config['class'] || finder_class
 
   describe df_tested_class_constant('WpVersion', finder_class) do
     subject(:finder) { described_class.new(target) }

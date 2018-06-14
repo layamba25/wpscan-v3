@@ -1,4 +1,3 @@
-
 shared_examples 'App::Views::Enumeration::Themes' do
   let(:view)   { 'themes' }
   let(:plugin) { WPScan::Theme }

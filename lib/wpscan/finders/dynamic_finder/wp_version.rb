@@ -43,7 +43,7 @@ module WPScan
           end
 
           def path_pattern
-            @pattern ||= %r{
+            @path_pattern ||= %r{
               (?:#{Regexp.escape(target.plugins_dir)}|#{Regexp.escape(target.themes_dir)})/
               [^/]+/
               .*\.(?:css|js)\z

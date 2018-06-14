@@ -1,4 +1,3 @@
-
 shared_examples 'App::Views::Enumeration::Plugins' do
   let(:view)   { 'plugins' }
   let(:plugin) { WPScan::Plugin }

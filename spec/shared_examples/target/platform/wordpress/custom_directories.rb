@@ -1,4 +1,3 @@
-
 shared_examples 'WordPress::CustomDirectories' do
   let(:fixtures) { File.join(super(), 'custom_directories') }
 

@@ -6,7 +6,7 @@ describe WPScan::Target do
 
   it_behaves_like WPScan::Target::Platform::WordPress
 
-  %i[wp_version main_theme plugins themes timthumbs config_backups medias users].each do |method|
+  %i[wp_version main_theme plugins themes timthumbs config_backups db_exports medias users].each do |method|
     describe "##{method}" do
       before do
         return_value = %i[wp_version main_theme].include?(method) ? false : []
@@ -69,6 +69,14 @@ describe WPScan::Target do
     context 'when config_backups' do
       before do
         target.instance_variable_set(:@config_backups, [WPScan::ConfigBackup.new(target.url('/a-file-url'))])
+      end
+
+      it { should be_vulnerable }
+    end
+
+    context 'when db_exports' do
+      before do
+        target.instance_variable_set(:@db_exports, [WPScan::DbExport.new(target.url('/wordpress.sql'))])
       end
 
       it { should be_vulnerable }

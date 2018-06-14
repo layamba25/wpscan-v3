@@ -4,7 +4,8 @@ module WPScan
     class Enumeration < CMSScanner::Controller::Base
       def cli_options
         cli_enum_choices + cli_plugins_opts + cli_themes_opts +
-          cli_timthumbs_opts + cli_config_backups_opts + cli_medias_opts + cli_users_opts
+          cli_timthumbs_opts + cli_config_backups_opts + cli_db_exports_opts +
+          cli_medias_opts + cli_users_opts
       end
 
       # @return [ Array<OptParseValidator::OptBase> ]
@@ -14,18 +15,19 @@ module WPScan
           OptMultiChoices.new(
             ['--enumerate [OPTS]', '-e', 'Enumeration Process'],
             choices: {
-              vp: OptBoolean.new(['--vulnerable-plugins']),
-              ap: OptBoolean.new(['--all-plugins']),
-              p:  OptBoolean.new(['--plugins']),
-              vt: OptBoolean.new(['--vulnerable-themes']),
-              at: OptBoolean.new(['--all-themes']),
-              t:  OptBoolean.new(['--themes']),
-              tt: OptBoolean.new(['--timthumbs']),
-              cb: OptBoolean.new(['--config-backups']),
-              u:  OptIntegerRange.new(['--users', 'User ids range. e.g: u1-5'], value_if_empty: '1-10'),
-              m:  OptIntegerRange.new(['--medias', 'Media ids range. e.g m1-15'], value_if_empty: '1-100')
+              vp:  OptBoolean.new(['--vulnerable-plugins']),
+              ap:  OptBoolean.new(['--all-plugins']),
+              p:   OptBoolean.new(['--plugins']),
+              vt:  OptBoolean.new(['--vulnerable-themes']),
+              at:  OptBoolean.new(['--all-themes']),
+              t:   OptBoolean.new(['--themes']),
+              tt:  OptBoolean.new(['--timthumbs']),
+              cb:  OptBoolean.new(['--config-backups']),
+              dbe: OptBoolean.new(['--db-exports']),
+              u:   OptIntegerRange.new(['--users', 'User ids range. e.g: u1-5'], value_if_empty: '1-10'),
+              m:   OptIntegerRange.new(['--medias', 'Media ids range. e.g m1-15'], value_if_empty: '1-100')
             },
-            value_if_empty: 'vp,vt,tt,cb,u,m',
+            value_if_empty: 'vp,vt,tt,cb,dbe,u,m',
             incompatible: [%i[vp ap p], %i[vt at t]],
             default: { all_plugins: true, config_backups: true }
           ),
@@ -110,7 +112,22 @@ module WPScan
           ),
           OptChoice.new(
             ['--config-backups-detection MODE',
-             'Use the supplied mode to enumerate Configs, instead of the global (--detection-mode) mode.'],
+             'Use the supplied mode to enumerate Config Backups, instead of the global (--detection-mode) mode.'],
+            choices: %w[mixed passive aggressive], normalize: :to_sym
+          )
+        ]
+      end
+
+      # @return [ Array<OptParseValidator::OptBase> ]
+      def cli_db_exports_opts
+        [
+          OptFilePath.new(
+            ['--db-exports-list FILE-PATH', 'List of DB exports\' paths to use'],
+            exists: true, default: File.join(DB_DIR, 'db_exports.txt')
+          ),
+          OptChoice.new(
+            ['--db-exports-detection MODE',
+             'Use the supplied mode to enumerate DB Exports, instead of the global (--detection-mode) mode.'],
             choices: %w[mixed passive aggressive], normalize: :to_sym
           )
         ]
