@@ -875,6 +875,12 @@ plugins:
       xpath: //comment()[contains(., "Ahalogy")]
       pattern: !ruby/regexp /Ahalogy wordpress plugin \[version (?<v>\d+\.[\.\d]+)\]/i
       version: true
+  aibuy-player:
+    QueryParameter:
+      files:
+      - public/css/aibuy_simple_content_video_player-public.css
+      - public/js/aibuy_simple_content_video_player-public.js
+      version: true
   ainow:
     QueryParameter:
       files:
@@ -1809,6 +1815,12 @@ plugins:
       - assets/css/style.css
       - assets/js/ayoshortcodes.js
       version: true
+  ays-popup-box:
+    QueryParameter:
+      files:
+      - public/css/ays-pb-public.css
+      - public/js/ays-pb-public.js
+      version: true
   azurecurve-display-after-post-content:
     QueryParameter:
       files:
@@ -1865,6 +1877,12 @@ plugins:
       files:
       - assets/style.css
       - assets/script.js
+      version: true
+  back-top:
+    TranslationFile:
+      class: BodyPattern
+      path: setting-page/languages/bn_BD.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Codestar Framework (?<v>\d+\.[\.\d]+)/i'
       version: true
   background-music-player-lite:
     TranslationFile:
@@ -2290,6 +2308,12 @@ plugins:
     QueryParameter:
       files:
       - bitvolution-image-galleria.css
+      version: true
+  bitwords-io:
+    QueryParameter:
+      files:
+      - assets/style.v3.min.css
+      - assets/script.v3.min.js
       version: true
   biz-calendar:
     QueryParameter:
@@ -3698,6 +3722,12 @@ plugins:
       xpath: //comment()[contains(., "Simple SEO plugin")]
       pattern: !ruby/regexp /Google Analytics by Simple SEO plugin (?<v>\d+\.[\.\d]+)/i
       version: true
+  cedar-map:
+    QueryParameter:
+      files:
+      - public/css/cedar-map-public.css
+      - public/js/cedar-map-public.js
+      version: true
   cenchat-comments:
     QueryParameter:
       files:
@@ -4725,6 +4755,17 @@ plugins:
       path: package.json
       key: version
       version: true
+  coupon-reveal-button:
+    QueryParameter:
+      files:
+      - css/spbcta-stylesheet-front.css
+      - js/spbcta-nm.js
+      version: true
+  course-session-for-sensei:
+    QueryParameter:
+      files:
+      - assets/css/frontend.css
+      version: true
   course-wizard-for-sensei:
     ComposerFile:
       class: ConfigParser
@@ -5265,6 +5306,11 @@ plugins:
     QueryParameter:
       files:
       - public/assets/css/style.css
+      version: true
+  doviz-bilgileri:
+    QueryParameter:
+      files:
+      - doviz-style.css
       version: true
   download-manager:
     MetaGenerator:
@@ -6252,6 +6298,12 @@ plugins:
     QueryParameter:
       files:
       - etsy-shop.css
+      version: true
+  eu-cookies-bar:
+    QueryParameter:
+      files:
+      - css/eu-cookies-bar-icons.css
+      - css/eu-cookies-bar.css
       version: true
   eu-opt-in-compliance-for-mailchimp:
     TranslationFile:
@@ -7382,6 +7434,12 @@ plugins:
       - public/css/gdpr-compliance-public.css
       - public/js/gdpr-compliance-public.js
       version: true
+  gdpr-compliance-by-supsystic:
+    QueryParameter:
+      files:
+      - modules/gdpr/css/frontend.gdpr.css
+      - modules/gdpr/js/frontend.gdpr.js
+      version: true
   gdpr-cookie-compliance:
     QueryParameter:
       files:
@@ -8198,6 +8256,13 @@ plugins:
       - assets/app/owl-carousel/owl.theme.default.min.css
       - assets/app/owl-carousel/owl.carousel.js
       version: true
+  greenmail-email-marketing:
+    QueryParameter:
+      files:
+      - public/js/scrollTo.js
+      - public/js/jquery.magnific-popup.min.js
+      - public/js/jquery.cookie.js
+      version: true
   greenturtlelab-tool:
     TranslationFile:
       class: BodyPattern
@@ -9002,6 +9067,12 @@ plugins:
       path: languages/infogalore-folders.pot
       pattern: !ruby/regexp /ect\-Id\-Version:\ InfoGalore File Folders (?<v>\d+\.[\.\d]+)/i
       version: true
+  inherit-featured-image:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/inherit-featured-image.pot
+      pattern: !ruby/regexp '/on: JSM''s Inherit Parent Featured Image (?<v>\d+\.[\.\d]+)/i'
+      version: true
   inline-call-to-action-builder-lite:
     QueryParameter:
       files:
@@ -9565,6 +9636,12 @@ plugins:
       class: BodyPattern
       path: languages/jsm-force-ssl.pot
       pattern: !ruby/regexp '/ect\-Id\-Version: JSM''s Force SSL \/ HTTPS (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  jsm-pretty-json-ld:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/jsm-pretty-json-ld.pot
+      pattern: !ruby/regexp '/roject\-Id\-Version: JSM''s Pretty JSON\-LD (?<v>\d+\.[\.\d]+)/i'
       version: true
   jsm-show-registered-shortcodes:
     TranslationFile:
@@ -10179,6 +10256,12 @@ plugins:
       - light-comment-form.css
       - light-comment-form.js
       version: true
+  light-weight-cookie-popup:
+    QueryParameter:
+      files:
+      - css/ab-cookie-popup.css
+      - js/ab-cookie-popup.min.js
+      version: true
   lightbox-photoswipe:
     QueryParameter:
       files:
@@ -10228,6 +10311,11 @@ plugins:
       class: BodyPattern
       path: languages/lightweight-youtube-channel-widget-sv_SE.po
       pattern: !ruby/regexp /ion:\ Lightweight YouTube Channel Widget (?<v>\d+\.[\.\d]+)/i
+      version: true
+  like-dislike-plus-counter:
+    QueryParameter:
+      files:
+      - assets/js/logic.js
       version: true
   likebtn-like-button:
     SpanTag:
@@ -10490,6 +10578,7 @@ plugins:
     QueryParameter:
       files:
       - public/js/ajax-methods.min.js
+      - public/css/display.css
       version: true
   login-customizer:
     ChangeLog:
@@ -10714,6 +10803,12 @@ plugins:
     QueryParameter:
       files:
       - assets/pagecount.min.js
+      version: true
+  made-in-icon-widget:
+    QueryParameter:
+      files:
+      - public/css/made-in-icon-widget-public.css
+      - public/js/made-in-icon-widget-public.js
       version: true
   mag-products-integration:
     QueryParameter:
@@ -15478,6 +15573,12 @@ plugins:
       path: languages/scode-ru_RU.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: sCode (?<v>\d+\.[\.\d]+)/i'
       version: true
+  scoreboard-widget:
+    QueryParameter:
+      files:
+      - js/jc-scores-scripts.js
+      - js/jquery.elastislide.js
+      version: true
   scottcart:
     QueryParameter:
       files:
@@ -15633,6 +15734,12 @@ plugins:
       files:
       - public/css/seldos-seo-public.css
       - public/js/seldos-seo-public.js
+      version: true
+  seldos-special-days:
+    QueryParameter:
+      files:
+      - public/css/seldos-special-days-public.css
+      - public/js/seldos-special-days-public.js
       version: true
   selfhost-google-fonts:
     ComposerFile:
@@ -16100,6 +16207,12 @@ plugins:
       files:
       - assets/simple-age-restriction-warning-public.css
       - assets/simple-age-restriction-warning-public.js
+      version: true
+  simple-ajax-search:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/simple-ajax-search.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simple Ajax Search (?<v>\d+\.[\.\d]+)/i'
       version: true
   simple-attribution:
     QueryParameter:
@@ -20016,6 +20129,11 @@ plugins:
       files:
       - frontend/css/frontend.css
       version: true
+  widget-in-content:
+    QueryParameter:
+      files:
+      - widget-in-content.css
+      version: true
   widget-visibility-without-jetpack:
     TranslationFile:
       class: BodyPattern
@@ -21178,6 +21296,11 @@ plugins:
       - app/assets/front-end/css/responsive.css
       - app/assets/front-end/css/color.css
       version: true
+  wp-associate-post-r2:
+    QueryParameter:
+      files:
+      - css/skin-standard.css
+      version: true
   wp-author-box:
     QueryParameter:
       files:
@@ -21754,6 +21877,11 @@ plugins:
     QueryParameter:
       files:
       - "/js/scripts.js"
+      version: true
+  wp-exporter-plus:
+    QueryParameter:
+      files:
+      - css/custom-style.css
       version: true
   wp-extended-search:
     TranslationFile:
@@ -22470,6 +22598,12 @@ plugins:
       files:
       - assist/css/style.min.css
       - assist/css/font-awesome.min.css
+      version: true
+  wp-night-mode:
+    QueryParameter:
+      files:
+      - public/css/wp-night-mode-public.css
+      - public/js/wp-night-mode-public.js
       version: true
   wp-notes-widget:
     QueryParameter:
