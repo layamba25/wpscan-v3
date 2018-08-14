@@ -11381,6 +11381,7 @@ plugins:
       version: true
   master-modal-login-lite:
     Comment:
+      xpath: //comment()[contains(., "MasterModalLoginLite")]
       pattern: !ruby/regexp /Qt PopUp \(MasterModalLoginLite\) v(?<v>\d+\.[\.\d]+)/i
       version: true
   master-slider:
@@ -15990,6 +15991,7 @@ plugins:
       version: true
   schema-and-structured-data-for-wp:
     Comment:
+      xpath: //comment()[contains(., "Schema And Structured Data")]
       pattern: !ruby/regexp /Schema And Structured Data For WP v(?<v>\d+\.[\.\d]+)/i
       version: true
   schemaninja:
