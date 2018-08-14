@@ -125,11 +125,23 @@ plugins:
       - public/css/jquery.w3w-autosuggest-plugin.min.css
       - public/js/jquery.w3w-autosuggest-plugin.bundle.min.js
       version: true
+  360-image:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   360-product-view:
     QueryParameter:
       files:
       - public/css/yup-360-product-public.css
       - public/js/threesixty.min.js
+      version: true
+  360-video:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
       version: true
   3d-flipbook-dflip-lite:
     QueryParameter:
@@ -723,6 +735,11 @@ plugins:
       files:
       - public/css/dc-accfw-public.css
       - public/js/dc-accfw-public.js
+      version: true
+  advanced-custom-widget:
+    QueryParameter:
+      files:
+      - assets/css/advanced-custom-widget-admin.min.css
       version: true
   advanced-database-cleaner:
     TranslationFile:
@@ -1732,6 +1749,13 @@ plugins:
       path: package.json
       key: version
       version: true
+  awesome-event-booking:
+    QueryParameter:
+      files:
+      - src/css/styles.css
+      - src/css/tablesorter.css
+      - src/js/jquery.tablesorter.min.js
+      version: true
   awesome-google-analytics:
     Comment:
       xpath: //comment()[contains(., "Google Analytics")]
@@ -1848,6 +1872,11 @@ plugins:
       - style.css
       version: true
   azurecurve-filtered-categories:
+    QueryParameter:
+      files:
+      - style.css
+      version: true
+  azurecurve-get-plugin-info:
     QueryParameter:
       files:
       - style.css
@@ -2420,6 +2449,12 @@ plugins:
       path: locale/blockq.pot
       pattern: !ruby/regexp /nslation of the WordPress plugin BlockQ (?<v>\d+\.[\.\d]+)/i
       version: true
+  blocks-ultimate:
+    ComposerFile:
+      class: ConfigParser
+      path: package.json
+      key: version
+      version: true
   blog-clock:
     QueryParameter:
       files:
@@ -2939,6 +2974,15 @@ plugins:
       class: BodyPattern
       path: lang/breadcrumb-trail.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Breadcrumb Trail (?<v>\d+\.[\.\d]+)/i
+      version: true
+  brewpress:
+    QueryParameter:
+      files:
+      - assets/js/bootstrap.bundle.min.js
+      - assets/js/bootstrap-confirmation.js
+      - assets/js/select2.min.js
+      - assets/js/easytimer.min.js
+      - assets/js/brewpress.js
       version: true
   brid-video-easy-publish:
     MetaTag:
@@ -3711,6 +3755,12 @@ plugins:
       - cc-income-tax-on.css
       - cc-income-tax-on.js
       version: true
+  cc-payment-gateway:
+    QueryParameter:
+      files:
+      - src/front/css/woo-tkp-cc-gateway-public.css
+      - src/front/js/woo-tkp-cc-gateway-public.js
+      version: true
   cc-quebec-tax-calculator:
     QueryParameter:
       files:
@@ -3823,6 +3873,12 @@ plugins:
       files:
       - styling/cforms2012.css
       - js/cforms.js
+      version: true
+  chained-quiz:
+    TranslationFile:
+      class: BodyPattern
+      path: chained-quiz.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Chained Quiz (?<v>\d+\.[\.\d]+)/i'
       version: true
   challonge:
     QueryParameter:
@@ -5188,6 +5244,11 @@ plugins:
       xpath: //comment()[contains(., "DELUCKS SEO Plugin")]
       pattern: !ruby/regexp '/LUCKS SEO Plugin for WordPress Version: (?<v>\d+\.[\.\d]+)/i'
       version: true
+  demetra-chat:
+    QueryParameter:
+      files:
+      - public/css/demetrachat-public.css
+      version: true
   demo-bar:
     TranslationFile:
       class: BodyPattern
@@ -5332,6 +5393,12 @@ plugins:
       - assets/fontastic/styles.css
       - assets/css/style.css
       version: true
+  doc8:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/docu-en_US.pot
+      pattern: !ruby/regexp /\# Copyright \(C\) 2018 DoC8 (?<v>\d+\.[\.\d]+)/i
+      version: true
   docspress:
     QueryParameter:
       files:
@@ -5355,6 +5422,12 @@ plugins:
       class: BodyPattern
       path: languages/dokan-invoice.pot
       pattern: !ruby/regexp /Project\-Id\-Version:\ Dokan \- PDF Invoice (?<v>\d+\.[\.\d]+)/i
+      version: true
+  donate-visa:
+    QueryParameter:
+      files:
+      - assets/css/donate-visa-dvsmp.css
+      - assets/js/donate-visa-dvsmp.js
       version: true
   double-opt-in-for-download:
     QueryParameter:
@@ -7153,6 +7226,12 @@ plugins:
       path: glue.json
       key: plugin_version
       version: true
+  fluid:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/fluid.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Fluid (?<v>\d+\.[\.\d]+)/i'
+      version: true
   fluid-responsive-slideshow:
     QueryParameter:
       files:
@@ -7602,6 +7681,16 @@ plugins:
       class: BodyPattern
       path: languages/genie-wp-matrimony.pot
       pattern: !ruby/regexp /"Project\-Id\-Version:\ Genie WP Matrimony (?<v>\d+\.[\.\d]+)/i
+      version: true
+  genium-gdpr-consent-popup:
+    QueryParameter:
+      files:
+      - assets/js/genium-gdpr-consent-popup.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/genium-gdpr-consent-popup.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Cookie Consent (?<v>\d+\.[\.\d]+)/i'
       version: true
   geo-hcard-map:
     QueryParameter:
@@ -8081,6 +8170,12 @@ plugins:
       files:
       - public/css/grand_popo-public.css
       - public/js/grand_popo-public.js
+      version: true
+  graph-lite:
+    QueryParameter:
+      files:
+      - public/css/graphs-lite-public.css
+      - public/js/graphs-lite-public.js
       version: true
   gravatargrid:
     MetaTag:
@@ -9587,6 +9682,12 @@ plugins:
       path: package.json
       key: version
       version: true
+  jetwidgets-for-elementor:
+    QueryParameter:
+      files:
+      - assets/css/jet-widgets.css
+      - assets/css/jet-widgets-skin.css
+      version: true
   jf-simple-coming-soon:
     TranslationFile:
       class: BodyPattern
@@ -10514,6 +10615,7 @@ plugins:
       - includes/assets/main.css
       - includes/assets/limelight-traffic-attribution.min.js
       - includes/assets/main.js
+      - classes/assets/limelight-traffic-attribution.min.js
       version: true
     JavascriptVar:
       xpath: //script[not(@src) and contains(., "limelightTracker")]
@@ -11277,6 +11379,10 @@ plugins:
       files:
       - assets/rating/rating.js
       version: true
+  master-modal-login-lite:
+    Comment:
+      pattern: !ruby/regexp /Qt PopUp \(MasterModalLoginLite\) v(?<v>\d+\.[\.\d]+)/i
+      version: true
   master-slider:
     QueryParameter:
       files:
@@ -11483,6 +11589,11 @@ plugins:
       files:
       - css/style.css
       version: true
+  memberlite-elements:
+    QueryParameter:
+      files:
+      - css/memberlite-elements.css
+      version: true
   memberwunder:
     QueryParameter:
       files:
@@ -11617,6 +11728,12 @@ plugins:
       files:
       - css/metwit-weather-widget.css
       - js/samplescript.js
+      version: true
+  mf2-feed:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mf2-feed.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: MF2 Feed (?<v>\d+\.[\.\d]+)/i'
       version: true
   mg-wc-stripe:
     TranslationFile:
@@ -11847,6 +11964,11 @@ plugins:
     QueryParameter:
       files:
       - mootools.js
+      version: true
+  moovly:
+    QueryParameter:
+      files:
+      - dist/moovly.js
       version: true
   moptin-email-subscription-optin-form:
     QueryParameter:
@@ -12156,6 +12278,12 @@ plugins:
       class: BodyPattern
       path: languages/mwb_twitter_for_wordpress-en_US.po
       pattern: !ruby/regexp '/t\-Id\-Version: MWB Twitter For WordpressV(?<v>\d+\.[\.\d]+)/i'
+      version: true
+  mwb-woocommerce-checkout-field-editor:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/mwb-woocommerce-checkout-field-editor-en_US.po
+      pattern: !ruby/regexp '/: MWB Woocommerce Checkout Field EditorV(?<v>\d+\.[\.\d]+)/i'
       version: true
   mwp-side-menu:
     QueryParameter:
@@ -13228,6 +13356,13 @@ plugins:
       path: languages/papi-compatibility-for-wpml.pot
       pattern: !ruby/regexp /Id\-Version:\ Papi compatibility for WPML (?<v>\d+\.[\.\d]+)/i
       version: true
+  papier-mache:
+    QueryParameter:
+      files:
+      - styles/papier-mache.css
+      - scripts/confetti-js/dist/index.min.js
+      - scripts/papier-mache.js
+      version: true
   paragon-profile:
     QueryParameter:
       files:
@@ -13823,6 +13958,7 @@ plugins:
       - css/jquery.fancybox.css
       - css/font-awesome.min.css
       - css/style.css
+      - css/fontawesome-all.min.css
       version: true
   portfolio-gallery-by-ims:
     QueryParameter:
@@ -14585,6 +14721,16 @@ plugins:
       path: languages/qibla-directory.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: QiblaDirectory (?<v>\d+\.[\.\d]+)/i'
       version: true
+  qibla-events:
+    QueryParameter:
+      files:
+      - assets/js/utils.min.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: languages/qibla-events.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: QiblaEvents (?<v>\d+\.[\.\d]+)/i'
+      version: true
   qlik-sense:
     QueryParameter:
       files:
@@ -14875,6 +15021,18 @@ plugins:
       - assets/css/front.css
       - assets/js/front.js
       version: true
+  real-estate-agencies:
+    QueryParameter:
+      files:
+      - public/css/real-estate-agencies-public.css
+      - public/js/real-estate-agencies-public.js
+      version: true
+  real-estate-properties:
+    QueryParameter:
+      files:
+      - public/css/real-estate-properties-public.css
+      - public/js/real-estate-properties-public.js
+      version: true
   real-estate-right-now:
     QueryParameter:
       files:
@@ -14891,6 +15049,12 @@ plugins:
       files:
       - css/style.css
       - js/script.js
+      version: true
+  rebel-slider:
+    QueryParameter:
+      files:
+      - public/css/rebel-slider-public.css
+      - public/js/rebel-slider-public.js
       version: true
   recaptcha-protected-downloads:
     TranslationFile:
@@ -15003,6 +15167,12 @@ plugins:
       class: BodyPattern
       path: CHANGELOG.md
       pattern: !ruby/regexp /\#\# (?<v>\d+\.[\.\d]+)/i
+      version: true
+  refback:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/refback.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Refback (?<v>\d+\.[\.\d]+)/i'
       version: true
   refer-a-friend-for-woocommerce-by-wpgens:
     QueryParameter:
@@ -15386,6 +15556,13 @@ plugins:
       path: languages/review-content-type.pot
       pattern: !ruby/regexp '/Project\-Id\-Version: Review Content Type (?<v>\d+\.[\.\d]+)/i'
       version: true
+  review-engine:
+    QueryParameter:
+      files:
+      - assets/css/ree-frontend-plugins.css
+      - assets/css/reviewengine-button.css
+      - assets/css/ree-frontend.css
+      version: true
   reviewpress:
     QueryParameter:
       files:
@@ -15659,6 +15836,12 @@ plugins:
       pattern: !ruby/regexp /\#\. \#\-\#\-\#\-\#\-\#  run\-log\-code\.pot \(Run Log
         (?<v>\d+\.[\.\d]+)/i
       version: true
+  russian-currency-chart:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/russian-currency-chart.pot
+      pattern: !ruby/regexp '/ject\-Id\-Version: Russian Currency Chart (?<v>\d+\.[\.\d]+)/i'
+      version: true
   rvvideos:
     TranslationFile:
       class: BodyPattern
@@ -15725,6 +15908,13 @@ plugins:
       class: BodyPattern
       path: languages/salessuckers-de_DE.po
       pattern: !ruby/regexp '/"Project\-Id\-Version: salessuckers (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  saleshybrid-forms:
+    QueryParameter:
+      files:
+      - featherlight/featherlight.css
+      - featherlight/featherlight.js
+      - handler.js
       version: true
   saleztalk:
     TranslationFile:
@@ -15797,6 +15987,10 @@ plugins:
   schema:
     Comment:
       pattern: !ruby/regexp /te is optimized with the Schema plugin v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  schema-and-structured-data-for-wp:
+    Comment:
+      pattern: !ruby/regexp /Schema And Structured Data For WP v(?<v>\d+\.[\.\d]+)/i
       version: true
   schemaninja:
     QueryParameter:
@@ -16033,6 +16227,12 @@ plugins:
       files:
       - public/js/b2reader-public.js
       version: true
+  send-emails-with-mandrill:
+    TranslationFile:
+      class: BodyPattern
+      path: lang/wpmandrill.po
+      pattern: !ruby/regexp '/"Project\-Id\-Version: wpMandrill (?<v>\d+\.[\.\d]+)/i'
+      version: true
   send-facebook-notification:
     QueryParameter:
       files:
@@ -16131,6 +16331,11 @@ plugins:
       xpath: //meta[@name="generator"]/@content
       version: true
       pattern: !ruby/regexp /Seriously Simple Podcasting (?<v>\d+\.[\.\d]+)/i
+  service-area-postcode-checker:
+    QueryParameter:
+      files:
+      - css/my_services_postcode_checker.css
+      version: true
   sewn-in-notifications:
     QueryParameter:
       files:
@@ -16495,6 +16700,12 @@ plugins:
     QueryParameter:
       files:
       - css/p2hc-category-posts.css
+      version: true
+  simple-code-block:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/simple-code-block.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: Simple Code Block (?<v>\d+\.[\.\d]+)/i'
       version: true
   simple-colorbox:
     Comment:
@@ -19098,6 +19309,11 @@ plugins:
       - inc/style.css
       - inc/script.js
       version: true
+  uamplified-io:
+    QueryParameter:
+      files:
+      - assets/css/uamp-widgets.css
+      version: true
   ucare-support-system:
     QueryParameter:
       files:
@@ -19984,6 +20200,12 @@ plugins:
       files:
       - includes/css/style.css
       version: true
+  wc-guest-checkout-single-product:
+    QueryParameter:
+      files:
+      - public/css/wc-guest-checkout-single-product-public.css
+      - public/js/wc-guest-checkout-single-product-public.js
+      version: true
   wc-moldovaagroindbank:
     TranslationFile:
       class: BodyPattern
@@ -20707,6 +20929,12 @@ plugins:
       - public/css/woocommerce-correios-calculo-de-frete-na-pagina-do-produto-public.css
       - public/js/woocommerce-correios-calculo-de-frete-na-pagina-do-produto-public.js
       version: true
+  woo-csv-price:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/woo-csv-price-fa_IR.po
+      pattern: !ruby/regexp /msgid "Version (?<v>\d+\.[\.\d]+)/i
+      version: true
   woo-delivery-scheduler:
     QueryParameter:
       files:
@@ -21344,6 +21572,16 @@ plugins:
       files:
       - assets/js/main.js
       version: true
+  woolentor-addons:
+    QueryParameter:
+      files:
+      - assets/css/bootstrap.min.css
+      - assets/css/font-awesome.min.css
+      - assets/css/slick.css
+      - assets/css/woolentor-widgets.css
+      - assets/js/popper.min.js
+      - assets/js/bootstrap.min.js
+      version: true
   woomizer:
     ComposerFile:
       class: ConfigParser
@@ -21622,6 +21860,12 @@ plugins:
       - public/assets/js/jquery.hoverIntent.minified.js
       - public/assets/js/jquery.cookie.js
       version: true
+  wp-and-divi-icons:
+    QueryParameter:
+      files:
+      - css/icons.css
+      - js/icons.js
+      version: true
   wp-applink:
     QueryParameter:
       files:
@@ -21719,6 +21963,12 @@ plugins:
     Comment:
       xpath: //comment()[contains(., "WP Biographia")]
       pattern: !ruby/regexp /WP Biographia v(?<v>\d+\.[\.\d]+)/i
+      version: true
+  wp-block-ink:
+    TranslationFile:
+      class: BodyPattern
+      path: languages/wp-block-ink.pot
+      pattern: !ruby/regexp '/"Project\-Id\-Version: WP Block Ink (?<v>\d+\.[\.\d]+)/i'
       version: true
   wp-blockade:
     QueryParameter:
@@ -22230,6 +22480,12 @@ plugins:
       class: BodyPattern
       path: languages/wp-extended-search.pot
       pattern: !ruby/regexp '/"Project\-Id\-Version: WP Extended Search (?<v>\d+\.[\.\d]+)/i'
+      version: true
+  wp-facebook-group:
+    QueryParameter:
+      files:
+      - public/css/kankoz-fg-promoter-public.css
+      - public/js/kankoz-fg-promoter-public.js
       version: true
   wp-facebook-like-send-open-graph-meta:
     Comment:
@@ -24569,6 +24825,12 @@ plugins:
       - public/css/wt-advanced-woocommerce-report-public.css
       - public/js/wt-advanced-woocommerce-report-public.js
       version: true
+  wt-smart-coupons-for-woocommerce:
+    QueryParameter:
+      files:
+      - public/css/wt-smart-coupon-public.css
+      - public/js/wt-smart-coupon-public.js
+      version: true
   wt-woocommerce-sequential-order-numbers:
     QueryParameter:
       files:
@@ -24672,6 +24934,17 @@ plugins:
     QueryParameter:
       files:
       - assets/block-front.build.js
+      version: true
+  yapsody-events-calendar:
+    QueryParameter:
+      files:
+      - includes/css/main.css
+      - includes/js/main.js
+      version: true
+    TranslationFile:
+      class: BodyPattern
+      path: includes/langs/yapsody-events-calendar-it_IT.po
+      pattern: !ruby/regexp '/ct\-Id\-Version: Yapsody Events Calendar v(?<v>\d+\.[\.\d]+)/i'
       version: true
   ycwp-qr-me:
     QueryParameter:
