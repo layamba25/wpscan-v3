@@ -24,8 +24,8 @@ module WPScan
               tt:  OptBoolean.new(['--timthumbs']),
               cb:  OptBoolean.new(['--config-backups']),
               dbe: OptBoolean.new(['--db-exports']),
-              u:   OptIntegerRange.new(['--users', 'User ids range. e.g: u1-5'], value_if_empty: '1-10'),
-              m:   OptIntegerRange.new(['--medias', 'Media ids range. e.g m1-15'], value_if_empty: '1-100')
+              u:   OptIntegerRange.new(['--users', 'User IDs range. e.g: u1-5'], value_if_empty: '1-10'),
+              m:   OptIntegerRange.new(['--medias', 'Media IDs range. e.g m1-15'], value_if_empty: '1-100')
             },
             value_if_empty: 'vp,vt,tt,cb,dbe,u,m',
             incompatible: [%i[vp ap p], %i[vt at t]],

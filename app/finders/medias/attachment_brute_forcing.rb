@@ -36,7 +36,7 @@ module WPScan
         end
 
         def create_progress_bar(opts = {})
-          super(opts.merge(title: ' Brute Forcing Attachment Ids -'))
+          super(opts.merge(title: ' Brute Forcing Attachment IDs -'))
         end
       end
     end
