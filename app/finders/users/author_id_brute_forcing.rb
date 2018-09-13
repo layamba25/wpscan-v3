@@ -44,7 +44,7 @@ module WPScan
         end
 
         def create_progress_bar(opts = {})
-          super(opts.merge(title: ' Brute Forcing Author Ids -'))
+          super(opts.merge(title: ' Brute Forcing Author IDs -'))
         end
 
         def request_params

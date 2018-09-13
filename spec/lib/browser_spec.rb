@@ -19,7 +19,7 @@ describe WPScan::Browser do
 
   describe '#user_agent' do
     context 'when not set' do
-      its(:user_agent) { should eq "WPScan v#{WPScan::VERSION} (http://wpscan.org/)" }
+      its(:user_agent) { should eq "WPScan v#{WPScan::VERSION} (https://wpscan.org/)" }
     end
 
     context 'when set' do
