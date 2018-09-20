@@ -34,8 +34,8 @@ module WPScan
           OptRegexp.new(
             [
               '--exclude-content-based REGEXP_OR_STRING',
-              'Exclude all responses having their body matching (case insensitive) during parts of the enumeration.',
-              'Regexp delimiters are not required.'
+              'Exclude all responses matching the Regexp (case insensitive) during parts of the enumeration.',
+              'Both the headers and body are checked. Regexp delimiters are not required.'
             ], options: Regexp::IGNORECASE
           )
         ]
