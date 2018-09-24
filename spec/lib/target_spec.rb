@@ -83,7 +83,7 @@ describe WPScan::Target do
 
     context 'when wp_version found' do
       context 'when not vulnerable' do
-        before { target.instance_variable_set(:@wp_version, WPScan::WpVersion.new('4.1')) }
+        before { target.instance_variable_set(:@wp_version, WPScan::WpVersion.new('4.4')) }
 
         it { should_not be_vulnerable }
       end

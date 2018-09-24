@@ -20,7 +20,7 @@ describe WPScan::WpVersion do
 
   describe '.all' do
     it 'returns the correct values' do
-      expect(described_class.all).to eql %w[4.1 4.0 3.9.1 3.8.2 3.8.1 3.8]
+      expect(described_class.all).to eql %w[4.4 4.0 3.9.1 3.8.2 3.8.1 3.8]
     end
   end
 
@@ -42,7 +42,7 @@ describe WPScan::WpVersion do
     subject(:version) { described_class.new(number) }
 
     context 'when no vulns' do
-      let(:number) { '4.1' }
+      let(:number) { '4.4' }
 
       its(:vulnerabilities) { should eql([]) }
     end

@@ -77,9 +77,9 @@ describe WPScan::Controller::WpVersion do
 
     context 'when --wp-version-detection mode supplied' do
       let(:cli_args) { "#{super()} --detection-mode mixed --wp-version-detection passive" }
-      let(:stubbed) { WPScan::WpVersion.new('4.1') }
+      let(:stubbed) { WPScan::WpVersion.new('4.4') }
 
-      it_calls_the_formatter_with_the_correct_parameter(WPScan::WpVersion.new('4.1'))
+      it_calls_the_formatter_with_the_correct_parameter(WPScan::WpVersion.new('4.4'))
     end
   end
 end

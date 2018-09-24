@@ -48,6 +48,7 @@ module WPScan
       end
 
       # @return [ CMSScanner::Finders::Finder ] The finder used to perform the attack
+      # TODO Better code (maybe separate into two methods ? automatic detection and cli based)
       def attacker
         return @attacker if @attacker
 
@@ -65,8 +66,13 @@ module WPScan
         end
 
         @attacker = if xmlrpc&.enabled? && xmlrpc.available_methods.include?('wp.getUsersBlogs')
-                      # TODO: if WP < 4.4, load the multicall
-                      WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
+                      wp_version = target.wp_version
+
+                      if wp_version && wp_version < '4.4'
+                        WPScan::Finders::Passwords::XMLRPCMulticall.new(xmlrpc)
+                      else
+                        WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
+                      end
                     else
                       WPScan::Finders::Passwords::WpLogin.new(target)
                     end
