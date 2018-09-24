@@ -3,7 +3,79 @@
 [![Gem Version](https://badge.fury.io/rb/wpscan.svg)](https://badge.fury.io/rb/wpscan)
 [![Build Status](https://travis-ci.org/wpscanteam/wpscan-v3.svg?branch=master)](https://travis-ci.org/wpscanteam/wpscan-v3)
 [![Code Climate](https://codeclimate.com/github/wpscanteam/wpscan-v3/badges/gpa.svg)](https://codeclimate.com/github/wpscanteam/wpscan-v3)
-[![Dependency Status](https://img.shields.io/gemnasium/wpscanteam/wpscan-v3.svg)](https://gemnasium.com/wpscanteam/wpscan-v3)
+[![Patreon Donate](https://img.shields.io/badge/patreon-donate-green.svg)](https://www.patreon.com/wpscan)
+
+# INSTALL
+
+## Prerequisites:
+
+- Ruby >= 2.2.2 - Recommended: 2.3.3
+- Curl >= 7.21  - Recommended: latest - FYI the 7.29 has a segfault
+- RubyGems      - Recommended: latest
+
+### From RubyGems:
+
+```
+gem install wpscan
+```
+
+### From sources:
+
+Prerequisites: Git
+
+```
+git clone https://github.com/wpscanteam/wpscan-v3 wpscan
+
+cd wpscan/
+
+bundle install && rake install
+```
+
+# Docker
+
+Pull the repo with ```docker pull wpscanteam/wpscan-v3```
+
+# Usage
+
+```wpscan --url blog.tld``` This will scan the blog using default options with a good compromise between speed and accuracy. For example, the plugins will be checked passively but their version with a mixed detection mode (passively + aggressively). Potential config backup files will also be checked, along with other interesting findings. If a more stealthy approach is required, then ```wpscan --stealthy --url blog.tld``` can be used.
+As a result, when using the ```--enumerate``` option, don't forget to set the ```--plugins-detection``` accordingly, as its default is 'passive'.
+
+For more options, open a terminal and type ```wpscan --help``` (if you built wpscan from the source, you should type the command outside of the git repo)
+
+The DB is located at ~/.wpscan/db
+
+WPScan can load all options (including the --url) from configuration files, the following locations are checked (order: first to last):
+
+* ~/.wpscan/cli_options.json
+* ~/.wpscan/cli_options.yml
+* pwd/.wpscan/cli_options.json
+* pwd/.wpscan/cli_options.yml
+
+If those files exist, options from them will be loaded and overridden if found twice.
+
+e.g:
+
+~/.wpscan/cli_options.yml:
+```
+proxy: 'http://127.0.0.1:8080'
+verbose: true
+```
+
+pwd/.wpscan/cli_options.yml:
+```
+proxy: 'socks5://127.0.0.1:9090'
+url: 'http://target.tld'
+```
+
+Running ```wpscan``` in the current directory (pwd), is the same as ```wpscan -v --proxy socks5://127.0.0.1:9090 --url http://target.tld```
+
+# PROJECT HOME
+
+[https://wpscan.org](https://wpscan.org)
+
+# VULNERABILITY DATABASE
+
+[https://wpvulndb.com](https://wpvulndb.com)
 
 # LICENSE
 
@@ -83,72 +155,3 @@ Running WPScan against websites without prior mutual consent may be illegal in y
 ### 11. Trademark
 
 The "wpscan" term is a registered trademark. This License does not grant the use of the "wpscan" trademark or the use of the WPScan logo.
-
-# INSTALL
-
-## Prerequisites:
-
-- Ruby >= 2.2.2 - Recommended: 2.3.3
-- Curl >= 7.21  - Recommended: latest - FYI the 7.29 has a segfault
-- RubyGems      - Recommended: latest
-
-
-### From RubyGems:
-
-```gem install wpscan```
-
-### From sources:
-
-Prerequisites: Git
-
-```git clone https://github.com/wpscanteam/wpscan-v3```
-
-```cd wpscan```
-
-```bundle install && rake install```
-
-# Docker
-
-Pull the repo with ```docker pull wpscanteam/wpscan-v3```
-
-# Usage
-
-```wpscan --url blog.tld``` This will scan the blog using default options with a good compromise between speed and accuracy. For example, the plugins will be checked passively but their version with a mixed detection mode (passively + aggressively). Potential config backup files will also be checked, along with other interesting findings. If a more stealthy approach is required, then ```wpscan --stealthy --url blog.tld``` can be used.
-As a result, when using the ```--enumerate``` option, don't forget to set the ```--plugins-detection``` accordingly, as its default is 'passive'.
-
-For more options, open a terminal and type ```wpscan --help``` (if you built wpscan from the source, you should type the command outside of the git repo)
-
-The DB is located at ~/.wpscan/db
-
-WPScan can load all options (including the --url) from configuration files, the following locations are checked (order: first to last):
-
-* ~/.wpscan/cli_options.json
-* ~/.wpscan/cli_options.yml
-* pwd/.wpscan/cli_options.json
-* pwd/.wpscan/cli_options.yml
-
-If those files exist, options from them will be loaded and overridden if found twice.
-
-e.g:
-
-~/.wpscan/cli_options.yml:
-```
-proxy: 'http://127.0.0.1:8080'
-verbose: true
-```
-
-pwd/.wpscan/cli_options.yml:
-```
-proxy: 'socks5://127.0.0.1:9090'
-url: 'http://target.tld'
-```
-
-Running ```wpscan``` in the current directory (pwd), is the same as ```wpscan -v --proxy socks5://127.0.0.1:9090 --url http://target.tld```
-
-# PROJECT HOME
-
-[https://wpscan.org](https://wpscan.org)
-
-# VULNERABILITY DATABASE
-
-[https://wpvulndb.com](https://wpvulndb.com)

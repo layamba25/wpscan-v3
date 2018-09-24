@@ -4,6 +4,7 @@ require_relative 'enumeration/themes'
 require_relative 'enumeration/plugins'
 require_relative 'enumeration/timthumbs'
 require_relative 'enumeration/config_backups'
+require_relative 'enumeration/db_exports'
 
 shared_examples 'App::Views::Enumeration' do
   let(:controller) { WPScan::Controller::Enumeration.new }
@@ -15,4 +16,5 @@ shared_examples 'App::Views::Enumeration' do
   it_behaves_like 'App::Views::Enumeration::Plugins'
   it_behaves_like 'App::Views::Enumeration::Timthumbs'
   it_behaves_like 'App::Views::Enumeration::ConfigBackups'
+  it_behaves_like 'App::Views::Enumeration::DbExports'
 end

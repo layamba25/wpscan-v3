@@ -33,7 +33,7 @@ describe WPScan::Finders::ConfigBackups::KnownFilenames do
         end
       end
 
-      it 'returns the expected Array<InterestingFinding>' do
+      it 'returns the expected Array<ConfigBackup>' do
         expected = []
 
         files.each do |file|

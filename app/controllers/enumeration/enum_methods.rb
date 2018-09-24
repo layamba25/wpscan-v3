@@ -136,6 +136,13 @@ module WPScan
         output('config_backups', config_backups: target.config_backups(opts))
       end
 
+      def enum_db_exports
+        opts = default_opts('db_exports').merge(list: parsed_options[:db_exports_list])
+
+        output('@info', msg: 'Enumerating DB Exports') if user_interaction?
+        output('db_exports', db_exports: target.db_exports(opts))
+      end
+
       def enum_medias
         opts = default_opts('medias').merge(range: parsed_options[:enumerate][:medias])
 

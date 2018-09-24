@@ -9,7 +9,7 @@ module WPScan
         # @option opts [ String ] :list
         # @option opts [ Boolean ] :show_progression
         #
-        # @return [ Array<InterestingFinding> ]
+        # @return [ Array<ConfigBackup> ]
         def aggressive(opts = {})
           found = []
 

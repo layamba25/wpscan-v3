@@ -12,6 +12,7 @@ module WPScan
       end
 
       return true unless [*@config_backups].empty?
+      return true unless [*@db_exports].empty?
 
       [*@users].each { |u| return true if u.password }
 
@@ -67,6 +68,13 @@ module WPScan
     # @return [ Array<ConfigBackup> ]
     def config_backups(opts = {})
       @config_backups ||= Finders::ConfigBackups::Base.find(self, opts)
+    end
+
+    # @param [ Hash ] opts
+    #
+    # @return [ Array<DBExport> ]
+    def db_exports(opts = {})
+      @db_exports ||= Finders::DbExports::Base.find(self, opts)
     end
 
     # @param [ Hash ] opts

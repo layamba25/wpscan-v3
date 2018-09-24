@@ -57,7 +57,7 @@ describe WPScan::Controller::Enumeration do
     end
   end
 
-  describe '#default_optss' do
+  describe '#default_opts' do
     context 'when no --enumerate' do
       it 'contains the correct version_detection' do
         expect(controller.default_opts('plugins')[:version_detection]).to include(mode: :mixed)
@@ -73,6 +73,7 @@ describe WPScan::Controller::Enumeration do
            themes_list themes_detection themes_version_all themes_version_detection
            timthumbs_list timthumbs_detection
            config_backups_list config_backups_detection
+           db_exports_list db_exports_detection
            medias_detection
            users_list users_detection]
       )
@@ -135,6 +136,16 @@ describe WPScan::Controller::Enumeration do
     context 'when :enumerate' do
       after { controller.run }
 
+      context 'when no option supplied' do
+        let(:cli_args) { "#{super()} -e" }
+
+        it 'calls the correct enum methods' do
+          %i[plugins themes timthumbs config_backups db_exports users medias].each do |option|
+            expect(controller).to receive("enum_#{option}".to_sym)
+          end
+        end
+      end
+
       %i[p ap vp].each do |option|
         context "when #{option}" do
           let(:cli_args) { "#{super()} -e #{option}" }
@@ -155,7 +166,7 @@ describe WPScan::Controller::Enumeration do
         end
       end
 
-      { timthumbs: 'tt', config_backups: 'cb', medias: 'm', users: 'u' }.each do |option, shortname|
+      { timthumbs: 'tt', config_backups: 'cb', db_exports: 'dbe', medias: 'm', users: 'u' }.each do |option, shortname|
         context "when #{option}" do
           let(:cli_args) { "#{super()} -e #{shortname}" }
 
