@@ -26,7 +26,7 @@ end
 
 WPScan::DB::DynamicFinders::Plugin.versions_finders_configs.each do |slug, configs|
   configs.each do |finder_class, config|
-    finder_super_class = config['class'] ? config['class'] : finder_class
+    finder_super_class = config['class'] || finder_class
 
     # The QueryParameter specs are slow given the huge fixture file
     # If someone find a fix for that, please share!

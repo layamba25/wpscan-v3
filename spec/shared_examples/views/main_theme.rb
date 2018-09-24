@@ -1,4 +1,3 @@
-
 shared_examples 'App::Views::MainTheme' do
   let(:controller) { WPScan::Controller::MainTheme.new }
   let(:tpl_vars)   { { url: target_url } }

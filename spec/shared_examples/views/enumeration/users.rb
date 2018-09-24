@@ -1,4 +1,3 @@
-
 shared_examples 'App::Views::Enumeration::Users' do
   let(:view)  { 'users' }
   let(:user)  { CMSScanner::User }

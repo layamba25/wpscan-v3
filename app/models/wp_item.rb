@@ -141,6 +141,7 @@ module WPScan
     # @return [ Boolean ]
     def directory_listing?(path = nil, params = {})
       return if detection_opts[:mode] == :passive
+
       super(path, params)
     end
 
@@ -150,6 +151,7 @@ module WPScan
     # @return [ Boolean ]
     def error_log?(path = 'error_log', params = {})
       return if detection_opts[:mode] == :passive
+
       super(path, params)
     end
   end

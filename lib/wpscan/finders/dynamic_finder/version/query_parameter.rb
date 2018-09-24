@@ -37,6 +37,7 @@ module WPScan
               uri = Addressable::URI.parse(url)
 
               next unless uri.path =~ path_pattern && uri.query&.match(self.class::PATTERN)
+
               version = Regexp.last_match[:v].to_s
 
               found[version] ||= []

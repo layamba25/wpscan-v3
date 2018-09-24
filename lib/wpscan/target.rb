@@ -20,7 +20,7 @@ module WPScan
 
     # @return [ XMLRPC, nil ]
     def xmlrpc
-      @xmlrpc ||= interesting_findings&.select { |f| f.is_a?(WPScan::XMLRPC) }.first
+      @xmlrpc ||= interesting_findings&.select { |f| f.is_a?(WPScan::XMLRPC) }&.first
     end
 
     # @param [ Hash ] opts

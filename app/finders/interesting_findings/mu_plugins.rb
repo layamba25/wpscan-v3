@@ -30,6 +30,7 @@ module WPScan
 
           return unless [200, 401, 403].include?(res.code)
           return if target.homepage_or_404?(res)
+
           # TODO: add the check for --exclude-content once implemented ?
 
           target.mu_plugins = true

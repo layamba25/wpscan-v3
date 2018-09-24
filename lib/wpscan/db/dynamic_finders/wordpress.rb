@@ -34,7 +34,7 @@ module WPScan
                     end
 
           finders.each do |finder_name, config|
-            klass = config['class'] ? config['class'] : finder_name
+            klass = config['class'] || finder_name
 
             next unless klass.to_sym == finder_class
 
@@ -51,7 +51,7 @@ module WPScan
 
         def self.create_versions_finders
           versions_finders_configs.each do |finder_class, config|
-            klass = config['class'] ? config['class'] : finder_class
+            klass = config['class'] || finder_class
 
             # Instead of raising exceptions, skip unallowed/already defined finders
             # So that, when new DF configs are put in the .yml

@@ -82,6 +82,7 @@ module WPScan
 
         res = Browser.get(url, request_params)
         raise DownloadError, res if res.timed_out? || res.code != 200
+
         res.body.chomp
       end
 
@@ -99,11 +100,13 @@ module WPScan
 
       def create_backup(filename)
         return unless File.exist?(local_file_path(filename))
+
         FileUtils.cp(local_file_path(filename), backup_file_path(filename))
       end
 
       def restore_backup(filename)
         return unless File.exist?(backup_file_path(filename))
+
         FileUtils.cp(backup_file_path(filename), local_file_path(filename))
       end
 

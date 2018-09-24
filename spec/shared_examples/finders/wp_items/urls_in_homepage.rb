@@ -1,4 +1,3 @@
-
 shared_examples 'App::Finders::WpItems::URLsInHomepage' do
   before do
     stub_request(:get, finder.target.url).to_return(body: File.read(File.join(fixtures, file)))
