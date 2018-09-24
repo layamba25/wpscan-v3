@@ -26,7 +26,7 @@ module WPScan
 
         if user_interaction?
           output('@info',
-                 msg: "Performing password attack on #{finder.titleize} against #{users.size} user/s")
+                 msg: "Performing password attack on #{attacker.titleize} against #{users.size} user/s")
         end
 
         attack_opts = {
