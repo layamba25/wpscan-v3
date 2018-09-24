@@ -17,7 +17,7 @@ module WPScan
             end
           end
 
-          target.multi_call(*methods).run
+          target.multi_call(methods).run
         end
 
         # @param [ Array<CMSScanner::User> ] users
@@ -88,7 +88,8 @@ module WPScan
           max_passwords / users_size
         end
 
-        def check_and_output_errors(response)
+        # @param [ Typhoeus::Response ] res
+        def check_and_output_errors(res)
           progress_bar.log("Incorrect response: #{res.code} / #{res.return_message}") unless res.code == 200
 
           progress_bar.log('Parsing error, might be caused by a too high --max-passwords value (such as >= 2k)') if res.body =~ /parse error. not well formed/i
