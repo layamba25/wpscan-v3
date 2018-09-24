@@ -48,34 +48,42 @@ module WPScan
       end
 
       # @return [ CMSScanner::Finders::Finder ] The finder used to perform the attack
-      # TODO Better code (maybe separate into two methods ? automatic detection and cli based)
       def attacker
-        return @attacker if @attacker
+        @attacker ||= attacker_from_cli_options || attacker_from_automatic_detection
+      end
 
-        xmlrpc = target.xmlrpc
+      # @return [ WPScan::XMLRPC ]
+      def xmlrpc
+        @xmlrpc ||= target.xmlrpc
+      end
 
-        if parsed_options[:password_attack]
-          return @attacker = case parsed_options[:password_attack]
-                             when :wp_login
-                               WPScan::Finders::Passwords::WpLogin.new(target)
-                             when :xmlrpc
-                               WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
-                             when :xmlrpc_multicall
-                               WPScan::Finders::Passwords::XMLRPCMulticall.new(xmlrpc)
-                             end
+      # @return [ CMSScanner::Finders::Finder ]
+      def attacker_from_cli_options
+        return unless parsed_options[:password_attack]
+
+        case parsed_options[:password_attack]
+        when :wp_login
+          WPScan::Finders::Passwords::WpLogin.new(target)
+        when :xmlrpc
+          WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
+        when :xmlrpc_multicall
+          WPScan::Finders::Passwords::XMLRPCMulticall.new(xmlrpc)
         end
+      end
 
-        @attacker = if xmlrpc&.enabled? && xmlrpc.available_methods.include?('wp.getUsersBlogs')
-                      wp_version = target.wp_version
+      # @return [ CMSScanner::Finders::Finder ]
+      def attacker_from_automatic_detection
+        if xmlrpc&.enabled? && xmlrpc.available_methods.include?('wp.getUsersBlogs')
+          wp_version = target.wp_version
 
-                      if wp_version && wp_version < '4.4'
-                        WPScan::Finders::Passwords::XMLRPCMulticall.new(xmlrpc)
-                      else
-                        WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
-                      end
-                    else
-                      WPScan::Finders::Passwords::WpLogin.new(target)
-                    end
+          if wp_version && wp_version < '4.4'
+            WPScan::Finders::Passwords::XMLRPCMulticall.new(xmlrpc)
+          else
+            WPScan::Finders::Passwords::XMLRPC.new(xmlrpc)
+          end
+        else
+          WPScan::Finders::Passwords::WpLogin.new(target)
+        end
       end
 
       # @return [ Array<Users> ] The users to brute force
