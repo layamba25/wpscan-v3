@@ -8777,6 +8777,13 @@ plugins:
       path: package.json
       key: version
       version: true
+  gutenberg:
+    ChangeLog:
+      class: BodyPattern
+      path: changelog.txt
+      pattern: !ruby/regexp /^= (?<v>\d+\.[\.\d]+)/i
+      confidence: 90
+      version: true
   h5p:
     QueryParameter:
       files:
