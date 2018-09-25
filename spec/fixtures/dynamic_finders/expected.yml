@@ -10934,6 +10934,12 @@ plugins:
       found_by: Composer File (Aggressive Detection)
       interesting_entries:
       - 'http://wp.lab/wp-content/plugins/gutenbee/package.json, Match: ''1.0.0'''
+  gutenberg:
+    ChangeLog:
+      number: 3.9.0
+      found_by: Change Log (Aggressive Detection)
+      interesting_entries:
+      - 'http://wp.lab/wp-content/plugins/gutenberg/changelog.txt, Match: ''= 3.9.0'''
   h5p:
     QueryParameter:
       number: 1.10.0
