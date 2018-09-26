@@ -1,8 +1,0 @@
-<% if @version -%>
-"version": {
-  "number": <%= @version.number.to_json %>,
-  <%= render('@finding', item: @version) -%>
-},
-<% else -%>
-"version": null,
-<% end -%>
